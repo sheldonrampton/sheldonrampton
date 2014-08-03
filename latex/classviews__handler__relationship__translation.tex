@@ -1,0 +1,72 @@
+\hypertarget{classviews__handler__relationship__translation}{
+\section{views\_\-handler\_\-relationship\_\-translation Class Reference}
+\label{classviews__handler__relationship__translation}\index{views\_\-handler\_\-relationship\_\-translation@{views\_\-handler\_\-relationship\_\-translation}}
+}
+Inheritance diagram for views\_\-handler\_\-relationship\_\-translation::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4cm]{classviews__handler__relationship__translation}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__handler__relationship__translation_0bf8fe73b167b63fd5ac38bd5e8b1efe}{option\_\-definition} ()
+\item 
+\hyperlink{classviews__handler__relationship__translation_ca4668f3619b0fc6182e12cbaf38b633}{options\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__handler__relationship__translation_f1e8ba159a9b04199ff03cad304ca1e4}{query} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Handles relationships for content translation sets and provides multiple options. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__handler__relationship__translation_0bf8fe73b167b63fd5ac38bd5e8b1efe}{
+\index{views\_\-handler\_\-relationship\_\-translation@{views\_\-handler\_\-relationship\_\-translation}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!views_handler_relationship_translation@{views\_\-handler\_\-relationship\_\-translation}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-relationship\_\-translation::option\_\-definition ()}}
+\label{classviews__handler__relationship__translation_0bf8fe73b167b63fd5ac38bd5e8b1efe}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented from \hyperlink{classviews__handler__relationship_7e7b7a0056836612aa50a60575a3d549}{views\_\-handler\_\-relationship}.\hypertarget{classviews__handler__relationship__translation_ca4668f3619b0fc6182e12cbaf38b633}{
+\index{views\_\-handler\_\-relationship\_\-translation@{views\_\-handler\_\-relationship\_\-translation}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!views_handler_relationship_translation@{views\_\-handler\_\-relationship\_\-translation}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-relationship\_\-translation::options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler__relationship__translation_ca4668f3619b0fc6182e12cbaf38b633}
+
+
+Add a translation selector. 
+
+Reimplemented from \hyperlink{classviews__handler__relationship_08cc3f5947964d936b5e88d198f82c30}{views\_\-handler\_\-relationship}.\hypertarget{classviews__handler__relationship__translation_f1e8ba159a9b04199ff03cad304ca1e4}{
+\index{views\_\-handler\_\-relationship\_\-translation@{views\_\-handler\_\-relationship\_\-translation}!query@{query}}
+\index{query@{query}!views_handler_relationship_translation@{views\_\-handler\_\-relationship\_\-translation}}
+\subsubsection[{query}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-relationship\_\-translation::query ()}}
+\label{classviews__handler__relationship__translation_f1e8ba159a9b04199ff03cad304ca1e4}
+
+
+Called to implement a relationship in a query. 
+
+Reimplemented from \hyperlink{classviews__handler__relationship_7dc0b6371807dbf06efa594cb52b3348}{views\_\-handler\_\-relationship}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/modules/translation/views\_\-handler\_\-relationship\_\-translation.inc\end{CompactItemize}

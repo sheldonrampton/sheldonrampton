@@ -1,0 +1,37 @@
+\hypertarget{search-results_8tpl_8php}{
+\section{modules/search/search-results.tpl.php File Reference}
+\label{search-results_8tpl_8php}\index{modules/search/search-results.tpl.php@{modules/search/search-results.tpl.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hypertarget{search-results_8tpl_8php_c4d4c56358032c00065202143a3b7a85}{
+print \textbf{\$type}}
+\label{search-results_8tpl_8php_c4d4c56358032c00065202143a3b7a85}
+
+\item 
+\hypertarget{search-results_8tpl_8php_585801d7887a0537438a9dcedf0735d1}{
+print \textbf{\$search\_\-results}}
+\label{search-results_8tpl_8php_585801d7887a0537438a9dcedf0735d1}
+
+\item 
+\hypertarget{search-results_8tpl_8php_832d48720a0d8c51e6a14792173c3a61}{
+print \textbf{\$pager}}
+\label{search-results_8tpl_8php_832d48720a0d8c51e6a14792173c3a61}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Default theme implementation for displaying search results.
+
+This template collects each invocation of theme\_\-search\_\-result(). This and the child template are dependant to one another sharing the markup for definition lists.
+
+Note that modules may implement their own search type and theme function completely bypassing this template.
+
+Available variables:\begin{itemize}
+\item \$search\_\-results: All results as it is rendered through \hyperlink{search-result_8tpl_8php}{search-result.tpl.php}\item \$type: The type of search, e.g., \char`\"{}node\char`\"{} or \char`\"{}user\char`\"{}.\end{itemize}
+
+
+\begin{Desc}
+\item[See also:]\hyperlink{search_8pages_8inc_a0012b762375491296b1248124a177e9}{template\_\-preprocess\_\-search\_\-results()} \end{Desc}

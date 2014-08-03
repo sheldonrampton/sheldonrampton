@@ -1,0 +1,231 @@
+\hypertarget{xmlrpc_8inc}{
+\section{includes/xmlrpc.inc File Reference}
+\label{xmlrpc_8inc}\index{includes/xmlrpc.inc@{includes/xmlrpc.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{xmlrpc_8inc_f88c4a9120094b9280ddc4d90bc51987}{xmlrpc\_\-value} (\$data, \$type=FALSE)
+\item 
+\hyperlink{xmlrpc_8inc_3747d5c350b8db7126ccae2f6ae3e6ed}{xmlrpc\_\-value\_\-calculate\_\-type} (\&\$xmlrpc\_\-value)
+\item 
+\hyperlink{xmlrpc_8inc_d06538892136f5c1edb0580b2432e189}{xmlrpc\_\-value\_\-get\_\-xml} (\$xmlrpc\_\-value)
+\item 
+\hyperlink{xmlrpc_8inc_623f37020bfae3dec50facefc4cdcdac}{xmlrpc\_\-message} (\$message)
+\item 
+\hyperlink{xmlrpc_8inc_9dbb44df348197e48e26ce7c6e0c85a4}{xmlrpc\_\-message\_\-parse} (\&\$xmlrpc\_\-message)
+\item 
+\hyperlink{xmlrpc_8inc_82e3428ca6ed8e4d1ddc377fbc77d8dc}{xmlrpc\_\-message\_\-set} (\$value=NULL)
+\item 
+\hypertarget{xmlrpc_8inc_8ee9baa0e35c9f75da4705403ec1c502}{
+\textbf{xmlrpc\_\-message\_\-get} ()}
+\label{xmlrpc_8inc_8ee9baa0e35c9f75da4705403ec1c502}
+
+\item 
+\hypertarget{xmlrpc_8inc_f6f1ebfc3ddbd60f36e1058b1cb257de}{
+\textbf{xmlrpc\_\-message\_\-tag\_\-open} (\$parser, \$tag, \$attr)}
+\label{xmlrpc_8inc_f6f1ebfc3ddbd60f36e1058b1cb257de}
+
+\item 
+\hypertarget{xmlrpc_8inc_74f16ef34915c5b73e28a69a02e773c8}{
+\textbf{xmlrpc\_\-message\_\-cdata} (\$parser, \$cdata)}
+\label{xmlrpc_8inc_74f16ef34915c5b73e28a69a02e773c8}
+
+\item 
+\hypertarget{xmlrpc_8inc_ee4cd82346eac26c40587fc89cddb02f}{
+\textbf{xmlrpc\_\-message\_\-tag\_\-close} (\$parser, \$tag)}
+\label{xmlrpc_8inc_ee4cd82346eac26c40587fc89cddb02f}
+
+\item 
+\hyperlink{xmlrpc_8inc_21b3f792f935fd99fc444c82493aaca9}{xmlrpc\_\-request} (\$method, \$args)
+\item 
+\hypertarget{xmlrpc_8inc_abf20dbe18bd511ce0aceedc087a15fd}{
+\textbf{xmlrpc\_\-error} (\$code=NULL, \$message=NULL, \$reset=FALSE)}
+\label{xmlrpc_8inc_abf20dbe18bd511ce0aceedc087a15fd}
+
+\item 
+\hypertarget{xmlrpc_8inc_aca4578f8a9f0c150c056f61aa62e806}{
+\textbf{xmlrpc\_\-error\_\-get\_\-xml} (\$xmlrpc\_\-error)}
+\label{xmlrpc_8inc_aca4578f8a9f0c150c056f61aa62e806}
+
+\item 
+\hypertarget{xmlrpc_8inc_16688c083542abbf89dfd3fc63907c76}{
+\textbf{xmlrpc\_\-date} (\$time)}
+\label{xmlrpc_8inc_16688c083542abbf89dfd3fc63907c76}
+
+\item 
+\hypertarget{xmlrpc_8inc_ad3285fb3322b9452fc7b77acf4e608c}{
+\textbf{xmlrpc\_\-date\_\-get\_\-xml} (\$xmlrpc\_\-date)}
+\label{xmlrpc_8inc_ad3285fb3322b9452fc7b77acf4e608c}
+
+\item 
+\hypertarget{xmlrpc_8inc_0a49b5ffbb4c8e76bc96c2bc7b8d22dc}{
+\textbf{xmlrpc\_\-base64} (\$data)}
+\label{xmlrpc_8inc_0a49b5ffbb4c8e76bc96c2bc7b8d22dc}
+
+\item 
+\hypertarget{xmlrpc_8inc_d45673fd18d893a23b7b77d0c67f7b4a}{
+\textbf{xmlrpc\_\-base64\_\-get\_\-xml} (\$xmlrpc\_\-base64)}
+\label{xmlrpc_8inc_d45673fd18d893a23b7b77d0c67f7b4a}
+
+\item 
+\hyperlink{xmlrpc_8inc_97482d1fad1e8038981113d5b2ca981a}{\_\-xmlrpc} ()
+\item 
+\hyperlink{xmlrpc_8inc_f9d29505279c00e66545f3859550ff88}{xmlrpc\_\-errno} ()
+\item 
+\hyperlink{xmlrpc_8inc_baf990108687e6e764164984306dbd55}{xmlrpc\_\-error\_\-msg} ()
+\item 
+\hyperlink{xmlrpc_8inc_fa5cac64bc9057f6ac904b870d9c1311}{xmlrpc\_\-clear\_\-error} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Drupal XML-RPC library. Based on the IXR - The Incutio XML-RPC Library - (c) Incutio Ltd 2002-2005 Version 1.7 (beta) - Simon Willison, 23rd May 2005 Site: \href{http://scripts.incutio.com/xmlrpc/}{\tt http://scripts.incutio.com/xmlrpc/} Manual: \href{http://scripts.incutio.com/xmlrpc/manual.php}{\tt http://scripts.incutio.com/xmlrpc/manual.php} This version is made available under the GNU GPL License 
+
+\subsection{Function Documentation}
+\hypertarget{xmlrpc_8inc_97482d1fad1e8038981113d5b2ca981a}{
+\index{xmlrpc.inc@{xmlrpc.inc}!\_\-xmlrpc@{\_\-xmlrpc}}
+\index{\_\-xmlrpc@{\_\-xmlrpc}!xmlrpc.inc@{xmlrpc.inc}}
+\subsubsection[{\_\-xmlrpc}]{\setlength{\rightskip}{0pt plus 5cm}\_\-xmlrpc ()}}
+\label{xmlrpc_8inc_97482d1fad1e8038981113d5b2ca981a}
+
+
+Execute an XML remote procedural call. This is private function; call \hyperlink{common_8inc_2bbed4b1646f9ddc309a752e451a86b2}{xmlrpc()} in \hyperlink{common_8inc}{common.inc} instead of this function.
+
+\begin{Desc}
+\item[Returns:]A \$xmlrpc\_\-message object if the call succeeded; FALSE if the call failed \end{Desc}
+\hypertarget{xmlrpc_8inc_fa5cac64bc9057f6ac904b870d9c1311}{
+\index{xmlrpc.inc@{xmlrpc.inc}!xmlrpc\_\-clear\_\-error@{xmlrpc\_\-clear\_\-error}}
+\index{xmlrpc\_\-clear\_\-error@{xmlrpc\_\-clear\_\-error}!xmlrpc.inc@{xmlrpc.inc}}
+\subsubsection[{xmlrpc\_\-clear\_\-error}]{\setlength{\rightskip}{0pt plus 5cm}xmlrpc\_\-clear\_\-error ()}}
+\label{xmlrpc_8inc_fa5cac64bc9057f6ac904b870d9c1311}
+
+
+Clears any previous error. \hypertarget{xmlrpc_8inc_f9d29505279c00e66545f3859550ff88}{
+\index{xmlrpc.inc@{xmlrpc.inc}!xmlrpc\_\-errno@{xmlrpc\_\-errno}}
+\index{xmlrpc\_\-errno@{xmlrpc\_\-errno}!xmlrpc.inc@{xmlrpc.inc}}
+\subsubsection[{xmlrpc\_\-errno}]{\setlength{\rightskip}{0pt plus 5cm}xmlrpc\_\-errno ()}}
+\label{xmlrpc_8inc_f9d29505279c00e66545f3859550ff88}
+
+
+Returns the last XML-RPC client error number \hypertarget{xmlrpc_8inc_baf990108687e6e764164984306dbd55}{
+\index{xmlrpc.inc@{xmlrpc.inc}!xmlrpc\_\-error\_\-msg@{xmlrpc\_\-error\_\-msg}}
+\index{xmlrpc\_\-error\_\-msg@{xmlrpc\_\-error\_\-msg}!xmlrpc.inc@{xmlrpc.inc}}
+\subsubsection[{xmlrpc\_\-error\_\-msg}]{\setlength{\rightskip}{0pt plus 5cm}xmlrpc\_\-error\_\-msg ()}}
+\label{xmlrpc_8inc_baf990108687e6e764164984306dbd55}
+
+
+Returns the last XML-RPC client error message \hypertarget{xmlrpc_8inc_623f37020bfae3dec50facefc4cdcdac}{
+\index{xmlrpc.inc@{xmlrpc.inc}!xmlrpc\_\-message@{xmlrpc\_\-message}}
+\index{xmlrpc\_\-message@{xmlrpc\_\-message}!xmlrpc.inc@{xmlrpc.inc}}
+\subsubsection[{xmlrpc\_\-message}]{\setlength{\rightskip}{0pt plus 5cm}xmlrpc\_\-message (\$ {\em message})}}
+\label{xmlrpc_8inc_623f37020bfae3dec50facefc4cdcdac}
+
+
+Construct an object representing an XML-RPC message.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$message}]String containing XML as defined at \href{http://www.xmlrpc.com/spec}{\tt http://www.xmlrpc.com/spec} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Object \end{Desc}
+\hypertarget{xmlrpc_8inc_9dbb44df348197e48e26ce7c6e0c85a4}{
+\index{xmlrpc.inc@{xmlrpc.inc}!xmlrpc\_\-message\_\-parse@{xmlrpc\_\-message\_\-parse}}
+\index{xmlrpc\_\-message\_\-parse@{xmlrpc\_\-message\_\-parse}!xmlrpc.inc@{xmlrpc.inc}}
+\subsubsection[{xmlrpc\_\-message\_\-parse}]{\setlength{\rightskip}{0pt plus 5cm}xmlrpc\_\-message\_\-parse (\&\$ {\em xmlrpc\_\-message})}}
+\label{xmlrpc_8inc_9dbb44df348197e48e26ce7c6e0c85a4}
+
+
+Parse an XML-RPC message. If parsing fails, the faultCode and faultString will be added to the message object.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$xmlrpc\_\-message}]Object generated by \hyperlink{xmlrpc_8inc_623f37020bfae3dec50facefc4cdcdac}{xmlrpc\_\-message()} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]TRUE if parsing succeeded; FALSE otherwise \end{Desc}
+\hypertarget{xmlrpc_8inc_82e3428ca6ed8e4d1ddc377fbc77d8dc}{
+\index{xmlrpc.inc@{xmlrpc.inc}!xmlrpc\_\-message\_\-set@{xmlrpc\_\-message\_\-set}}
+\index{xmlrpc\_\-message\_\-set@{xmlrpc\_\-message\_\-set}!xmlrpc.inc@{xmlrpc.inc}}
+\subsubsection[{xmlrpc\_\-message\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}xmlrpc\_\-message\_\-set (\$ {\em value} = {\tt NULL})}}
+\label{xmlrpc_8inc_82e3428ca6ed8e4d1ddc377fbc77d8dc}
+
+
+Store a copy of the \$xmlrpc\_\-message object temporarily.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$value}]Object \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The most recently stored \$xmlrpc\_\-message \end{Desc}
+\hypertarget{xmlrpc_8inc_21b3f792f935fd99fc444c82493aaca9}{
+\index{xmlrpc.inc@{xmlrpc.inc}!xmlrpc\_\-request@{xmlrpc\_\-request}}
+\index{xmlrpc\_\-request@{xmlrpc\_\-request}!xmlrpc.inc@{xmlrpc.inc}}
+\subsubsection[{xmlrpc\_\-request}]{\setlength{\rightskip}{0pt plus 5cm}xmlrpc\_\-request (\$ {\em method}, \/  \$ {\em args})}}
+\label{xmlrpc_8inc_21b3f792f935fd99fc444c82493aaca9}
+
+
+Construct an object representing an XML-RPC request
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$method}]The name of the method to be called \item[{\em \$args}]An array of parameters to send with the method. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Object \end{Desc}
+\hypertarget{xmlrpc_8inc_f88c4a9120094b9280ddc4d90bc51987}{
+\index{xmlrpc.inc@{xmlrpc.inc}!xmlrpc\_\-value@{xmlrpc\_\-value}}
+\index{xmlrpc\_\-value@{xmlrpc\_\-value}!xmlrpc.inc@{xmlrpc.inc}}
+\subsubsection[{xmlrpc\_\-value}]{\setlength{\rightskip}{0pt plus 5cm}xmlrpc\_\-value (\$ {\em data}, \/  \$ {\em type} = {\tt FALSE})}}
+\label{xmlrpc_8inc_f88c4a9120094b9280ddc4d90bc51987}
+
+
+Recursively turn a data structure into objects with 'data' and 'type' attributes.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$data}]The data structure. \item[{\em \$type}]Optional type assign to \$data. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Object. \end{Desc}
+\hypertarget{xmlrpc_8inc_3747d5c350b8db7126ccae2f6ae3e6ed}{
+\index{xmlrpc.inc@{xmlrpc.inc}!xmlrpc\_\-value\_\-calculate\_\-type@{xmlrpc\_\-value\_\-calculate\_\-type}}
+\index{xmlrpc\_\-value\_\-calculate\_\-type@{xmlrpc\_\-value\_\-calculate\_\-type}!xmlrpc.inc@{xmlrpc.inc}}
+\subsubsection[{xmlrpc\_\-value\_\-calculate\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}xmlrpc\_\-value\_\-calculate\_\-type (\&\$ {\em xmlrpc\_\-value})}}
+\label{xmlrpc_8inc_3747d5c350b8db7126ccae2f6ae3e6ed}
+
+
+Map PHP type to XML-RPC type.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$xmlrpc\_\-value}]Variable whose type should be mapped. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]XML-RPC type as string. \end{Desc}
+\begin{Desc}
+\item[See also:]\href{http://www.xmlrpc.com/spec#scalars}{\tt http://www.xmlrpc.com/spec\#scalars} \end{Desc}
+\hypertarget{xmlrpc_8inc_d06538892136f5c1edb0580b2432e189}{
+\index{xmlrpc.inc@{xmlrpc.inc}!xmlrpc\_\-value\_\-get\_\-xml@{xmlrpc\_\-value\_\-get\_\-xml}}
+\index{xmlrpc\_\-value\_\-get\_\-xml@{xmlrpc\_\-value\_\-get\_\-xml}!xmlrpc.inc@{xmlrpc.inc}}
+\subsubsection[{xmlrpc\_\-value\_\-get\_\-xml}]{\setlength{\rightskip}{0pt plus 5cm}xmlrpc\_\-value\_\-get\_\-xml (\$ {\em xmlrpc\_\-value})}}
+\label{xmlrpc_8inc_d06538892136f5c1edb0580b2432e189}
+
+
+Generate XML representing the given value.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$xmlrpc\_\-value}]\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]XML representation of value. \end{Desc}

@@ -1,0 +1,214 @@
+\hypertarget{print__pdf_8pages_8inc}{
+\section{sites/all/modules/contrib/print/print\_\-pdf/print\_\-pdf.pages.inc File Reference}
+\label{print__pdf_8pages_8inc}\index{sites/all/modules/contrib/print/print\_\-pdf/print\_\-pdf.pages.inc@{sites/all/modules/contrib/print/print\_\-pdf/print\_\-pdf.pages.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{print__pdf_8pages_8inc_d2eb4e782095c48cf019319afa8fab06}{print\_\-pdf\_\-controller} ()
+\item 
+\hyperlink{print__pdf_8pages_8inc_bf0b6ad50624c030f81f2bfe43c753e6}{\_\-print\_\-pdf\_\-file\_\-access\_\-images} (\$html)
+\item 
+\hyperlink{print__pdf_8pages_8inc_1f00c18b79a7115894bd9495c887ea72}{\_\-print\_\-pdf\_\-dompdf} (\$print, \$html, \$filename)
+\item 
+\hyperlink{print__pdf_8pages_8inc_f7356382db2bd5990ed0b420128053e9}{\_\-print\_\-pdf\_\-tcpdf} (\$print, \$html, \$filename)
+\item 
+\hyperlink{print__pdf_8pages_8inc_b3c93d353c4f9989ff07bcb329681074}{\_\-print\_\-pdf\_\-wkhtmltopdf} (\$print, \$html, \$filename)
+\item 
+\hyperlink{print__pdf_8pages_8inc_fd0092da5b0cfe60cabf1b30b818c9e7}{theme\_\-print\_\-pdf\_\-dompdf\_\-footer} (\$html)
+\item 
+\hyperlink{print__pdf_8pages_8inc_2d29742376ed00838f80a3920bc8c37b}{theme\_\-print\_\-pdf\_\-tcpdf\_\-header} (\$pdf, \$html, \$font)
+\item 
+\hyperlink{print__pdf_8pages_8inc_f65ec1857a5d03a1afc62b5f6d02125d}{theme\_\-print\_\-pdf\_\-tcpdf\_\-page} (\$pdf)
+\item 
+\hyperlink{print__pdf_8pages_8inc_940cf9ed2d75d587a14285aec0f01f35}{theme\_\-print\_\-pdf\_\-tcpdf\_\-content} (\$pdf, \$html, \$font)
+\item 
+\hyperlink{print__pdf_8pages_8inc_25f419982a26a07b6a35d7756a432b4e}{theme\_\-print\_\-pdf\_\-tcpdf\_\-footer} (\$pdf, \$html, \$font)
+\item 
+\hyperlink{print__pdf_8pages_8inc_54ec83c33978bd1494667eef3d74fb48}{theme\_\-print\_\-pdf\_\-tcpdf\_\-footer2} (\$pdf)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Generates the PDF versions of the pages
+
+This file is included by the print\_\-pdf module and includes the functions that interface with the PDF generation packages. 
+
+\subsection{Function Documentation}
+\hypertarget{print__pdf_8pages_8inc_1f00c18b79a7115894bd9495c887ea72}{
+\index{print\_\-pdf.pages.inc@{print\_\-pdf.pages.inc}!\_\-print\_\-pdf\_\-dompdf@{\_\-print\_\-pdf\_\-dompdf}}
+\index{\_\-print\_\-pdf\_\-dompdf@{\_\-print\_\-pdf\_\-dompdf}!print_pdf.pages.inc@{print\_\-pdf.pages.inc}}
+\subsubsection[{\_\-print\_\-pdf\_\-dompdf}]{\setlength{\rightskip}{0pt plus 5cm}\_\-print\_\-pdf\_\-dompdf (\$ {\em print}, \/  \$ {\em html}, \/  \$ {\em filename})}}
+\label{print__pdf_8pages_8inc_1f00c18b79a7115894bd9495c887ea72}
+
+
+Generate the PDF file using the dompdf library
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$print}]array containing the configured data \item[{\em \$html}]contents of the post-processed template already with the node data \item[{\em \$filename}]name of the PDF file to be generated \end{description}
+\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{print__pdf_8pages_8inc_d2eb4e782095c48cf019319afa8fab06}{print\_\-pdf\_\-controller()} \end{Desc}
+\hypertarget{print__pdf_8pages_8inc_bf0b6ad50624c030f81f2bfe43c753e6}{
+\index{print\_\-pdf.pages.inc@{print\_\-pdf.pages.inc}!\_\-print\_\-pdf\_\-file\_\-access\_\-images@{\_\-print\_\-pdf\_\-file\_\-access\_\-images}}
+\index{\_\-print\_\-pdf\_\-file\_\-access\_\-images@{\_\-print\_\-pdf\_\-file\_\-access\_\-images}!print_pdf.pages.inc@{print\_\-pdf.pages.inc}}
+\subsubsection[{\_\-print\_\-pdf\_\-file\_\-access\_\-images}]{\setlength{\rightskip}{0pt plus 5cm}\_\-print\_\-pdf\_\-file\_\-access\_\-images (\$ {\em html})}}
+\label{print__pdf_8pages_8inc_bf0b6ad50624c030f81f2bfe43c753e6}
+
+
+Convert image paths to the \href{file://}{\tt file://} protocol
+
+In some Drupal setups, the use of the 'private' filesystem or Apache's configuration prevent access to the images of the page. This function tries to circumnvent those problems by accessing files in the local filesystem.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$html}]contents of the post-processed template already with the node data \end{description}
+\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{print__pdf_8pages_8inc_d2eb4e782095c48cf019319afa8fab06}{print\_\-pdf\_\-controller()} \end{Desc}
+\hypertarget{print__pdf_8pages_8inc_f7356382db2bd5990ed0b420128053e9}{
+\index{print\_\-pdf.pages.inc@{print\_\-pdf.pages.inc}!\_\-print\_\-pdf\_\-tcpdf@{\_\-print\_\-pdf\_\-tcpdf}}
+\index{\_\-print\_\-pdf\_\-tcpdf@{\_\-print\_\-pdf\_\-tcpdf}!print_pdf.pages.inc@{print\_\-pdf.pages.inc}}
+\subsubsection[{\_\-print\_\-pdf\_\-tcpdf}]{\setlength{\rightskip}{0pt plus 5cm}\_\-print\_\-pdf\_\-tcpdf (\$ {\em print}, \/  \$ {\em html}, \/  \$ {\em filename})}}
+\label{print__pdf_8pages_8inc_f7356382db2bd5990ed0b420128053e9}
+
+
+Generate the PDF file using the TCPDF library
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$print}]array containing the configured data \item[{\em \$html}]contents of the post-processed template already with the node data \item[{\em \$filename}]name of the PDF file to be generated \end{description}
+\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{print__pdf_8pages_8inc_d2eb4e782095c48cf019319afa8fab06}{print\_\-pdf\_\-controller()} \end{Desc}
+\hypertarget{print__pdf_8pages_8inc_b3c93d353c4f9989ff07bcb329681074}{
+\index{print\_\-pdf.pages.inc@{print\_\-pdf.pages.inc}!\_\-print\_\-pdf\_\-wkhtmltopdf@{\_\-print\_\-pdf\_\-wkhtmltopdf}}
+\index{\_\-print\_\-pdf\_\-wkhtmltopdf@{\_\-print\_\-pdf\_\-wkhtmltopdf}!print_pdf.pages.inc@{print\_\-pdf.pages.inc}}
+\subsubsection[{\_\-print\_\-pdf\_\-wkhtmltopdf}]{\setlength{\rightskip}{0pt plus 5cm}\_\-print\_\-pdf\_\-wkhtmltopdf (\$ {\em print}, \/  \$ {\em html}, \/  \$ {\em filename})}}
+\label{print__pdf_8pages_8inc_b3c93d353c4f9989ff07bcb329681074}
+
+
+Generate the PDF file using wkhtmltopdf
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$print}]array containing the configured data \item[{\em \$html}]contents of the post-processed template already with the node data \item[{\em \$filename}]name of the PDF file to be generated \end{description}
+\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{print__pdf_8pages_8inc_d2eb4e782095c48cf019319afa8fab06}{print\_\-pdf\_\-controller()} \end{Desc}
+\hypertarget{print__pdf_8pages_8inc_d2eb4e782095c48cf019319afa8fab06}{
+\index{print\_\-pdf.pages.inc@{print\_\-pdf.pages.inc}!print\_\-pdf\_\-controller@{print\_\-pdf\_\-controller}}
+\index{print\_\-pdf\_\-controller@{print\_\-pdf\_\-controller}!print_pdf.pages.inc@{print\_\-pdf.pages.inc}}
+\subsubsection[{print\_\-pdf\_\-controller}]{\setlength{\rightskip}{0pt plus 5cm}print\_\-pdf\_\-controller ()}}
+\label{print__pdf_8pages_8inc_d2eb4e782095c48cf019319afa8fab06}
+
+
+Generate a PDF version of the printer-friendly page
+
+\begin{Desc}
+\item[See also:]\hyperlink{print_8pages_8inc_aef613d2eb4448233d3600d0d7259e95}{print\_\-controller()} 
+
+\hyperlink{print__pdf_8pages_8inc_1f00c18b79a7115894bd9495c887ea72}{\_\-print\_\-pdf\_\-dompdf()} 
+
+\hyperlink{print__pdf_8pages_8inc_f7356382db2bd5990ed0b420128053e9}{\_\-print\_\-pdf\_\-tcpdf()} \end{Desc}
+\hypertarget{print__pdf_8pages_8inc_fd0092da5b0cfe60cabf1b30b818c9e7}{
+\index{print\_\-pdf.pages.inc@{print\_\-pdf.pages.inc}!theme\_\-print\_\-pdf\_\-dompdf\_\-footer@{theme\_\-print\_\-pdf\_\-dompdf\_\-footer}}
+\index{theme\_\-print\_\-pdf\_\-dompdf\_\-footer@{theme\_\-print\_\-pdf\_\-dompdf\_\-footer}!print_pdf.pages.inc@{print\_\-pdf.pages.inc}}
+\subsubsection[{theme\_\-print\_\-pdf\_\-dompdf\_\-footer}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-print\_\-pdf\_\-dompdf\_\-footer (\$ {\em html})}}
+\label{print__pdf_8pages_8inc_fd0092da5b0cfe60cabf1b30b818c9e7}
+
+
+Format the dompdf footer contents
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$html}]contents of the body of the HTML from the original node \end{description}
+\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{print__pdf_8pages_8inc_25f419982a26a07b6a35d7756a432b4e}{theme\_\-print\_\-pdf\_\-tcpdf\_\-footer()} \end{Desc}
+\hypertarget{print__pdf_8pages_8inc_940cf9ed2d75d587a14285aec0f01f35}{
+\index{print\_\-pdf.pages.inc@{print\_\-pdf.pages.inc}!theme\_\-print\_\-pdf\_\-tcpdf\_\-content@{theme\_\-print\_\-pdf\_\-tcpdf\_\-content}}
+\index{theme\_\-print\_\-pdf\_\-tcpdf\_\-content@{theme\_\-print\_\-pdf\_\-tcpdf\_\-content}!print_pdf.pages.inc@{print\_\-pdf.pages.inc}}
+\subsubsection[{theme\_\-print\_\-pdf\_\-tcpdf\_\-content}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-print\_\-pdf\_\-tcpdf\_\-content (\$ {\em pdf}, \/  \$ {\em html}, \/  \$ {\em font})}}
+\label{print__pdf_8pages_8inc_940cf9ed2d75d587a14285aec0f01f35}
+
+
+Format the TCPDF page content
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$pdf}]current TCPDF object \item[{\em \$html}]contents of the body of the HTML from the original node \item[{\em \$font}]array with the font definition (font name, styles and size) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{print__pdf_8pages_8inc_940cf9ed2d75d587a14285aec0f01f35}{theme\_\-print\_\-pdf\_\-tcpdf\_\-content()} \end{Desc}
+\hypertarget{print__pdf_8pages_8inc_25f419982a26a07b6a35d7756a432b4e}{
+\index{print\_\-pdf.pages.inc@{print\_\-pdf.pages.inc}!theme\_\-print\_\-pdf\_\-tcpdf\_\-footer@{theme\_\-print\_\-pdf\_\-tcpdf\_\-footer}}
+\index{theme\_\-print\_\-pdf\_\-tcpdf\_\-footer@{theme\_\-print\_\-pdf\_\-tcpdf\_\-footer}!print_pdf.pages.inc@{print\_\-pdf.pages.inc}}
+\subsubsection[{theme\_\-print\_\-pdf\_\-tcpdf\_\-footer}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-print\_\-pdf\_\-tcpdf\_\-footer (\$ {\em pdf}, \/  \$ {\em html}, \/  \$ {\em font})}}
+\label{print__pdf_8pages_8inc_25f419982a26a07b6a35d7756a432b4e}
+
+
+Format the TCPDF footer contents
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$pdf}]current TCPDF object \item[{\em \$html}]contents of the body of the HTML from the original node \item[{\em \$font}]array with the font definition (font name, styles and size) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{print__pdf_8pages_8inc_25f419982a26a07b6a35d7756a432b4e}{theme\_\-print\_\-pdf\_\-tcpdf\_\-footer()} \end{Desc}
+\hypertarget{print__pdf_8pages_8inc_54ec83c33978bd1494667eef3d74fb48}{
+\index{print\_\-pdf.pages.inc@{print\_\-pdf.pages.inc}!theme\_\-print\_\-pdf\_\-tcpdf\_\-footer2@{theme\_\-print\_\-pdf\_\-tcpdf\_\-footer2}}
+\index{theme\_\-print\_\-pdf\_\-tcpdf\_\-footer2@{theme\_\-print\_\-pdf\_\-tcpdf\_\-footer2}!print_pdf.pages.inc@{print\_\-pdf.pages.inc}}
+\subsubsection[{theme\_\-print\_\-pdf\_\-tcpdf\_\-footer2}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-print\_\-pdf\_\-tcpdf\_\-footer2 (\$ {\em pdf})}}
+\label{print__pdf_8pages_8inc_54ec83c33978bd1494667eef3d74fb48}
+
+
+Format the TCPDF footer layout
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$pdf}]current TCPDF object \end{description}
+\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{print__pdf_8pages_8inc_54ec83c33978bd1494667eef3d74fb48}{theme\_\-print\_\-pdf\_\-tcpdf\_\-footer2()} \end{Desc}
+\hypertarget{print__pdf_8pages_8inc_2d29742376ed00838f80a3920bc8c37b}{
+\index{print\_\-pdf.pages.inc@{print\_\-pdf.pages.inc}!theme\_\-print\_\-pdf\_\-tcpdf\_\-header@{theme\_\-print\_\-pdf\_\-tcpdf\_\-header}}
+\index{theme\_\-print\_\-pdf\_\-tcpdf\_\-header@{theme\_\-print\_\-pdf\_\-tcpdf\_\-header}!print_pdf.pages.inc@{print\_\-pdf.pages.inc}}
+\subsubsection[{theme\_\-print\_\-pdf\_\-tcpdf\_\-header}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-print\_\-pdf\_\-tcpdf\_\-header (\$ {\em pdf}, \/  \$ {\em html}, \/  \$ {\em font})}}
+\label{print__pdf_8pages_8inc_2d29742376ed00838f80a3920bc8c37b}
+
+
+Format the TCPDF header
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$pdf}]current TCPDF object \item[{\em \$html}]contents of the body of the HTML from the original node \item[{\em \$font}]array with the font definition (font name, styles and size) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{print__pdf_8pages_8inc_2d29742376ed00838f80a3920bc8c37b}{theme\_\-print\_\-pdf\_\-tcpdf\_\-header()} \end{Desc}
+\hypertarget{print__pdf_8pages_8inc_f65ec1857a5d03a1afc62b5f6d02125d}{
+\index{print\_\-pdf.pages.inc@{print\_\-pdf.pages.inc}!theme\_\-print\_\-pdf\_\-tcpdf\_\-page@{theme\_\-print\_\-pdf\_\-tcpdf\_\-page}}
+\index{theme\_\-print\_\-pdf\_\-tcpdf\_\-page@{theme\_\-print\_\-pdf\_\-tcpdf\_\-page}!print_pdf.pages.inc@{print\_\-pdf.pages.inc}}
+\subsubsection[{theme\_\-print\_\-pdf\_\-tcpdf\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-print\_\-pdf\_\-tcpdf\_\-page (\$ {\em pdf})}}
+\label{print__pdf_8pages_8inc_f65ec1857a5d03a1afc62b5f6d02125d}
+
+
+Format the TCPDF page settings (margins, etc)
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$pdf}]current TCPDF object \end{description}
+\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{print__pdf_8pages_8inc_f65ec1857a5d03a1afc62b5f6d02125d}{theme\_\-print\_\-pdf\_\-tcpdf\_\-page()} \end{Desc}

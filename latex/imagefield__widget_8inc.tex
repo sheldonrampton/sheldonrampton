@@ -1,0 +1,79 @@
+\hypertarget{imagefield__widget_8inc}{
+\section{sites/all/modules/contrib/imagefield/imagefield\_\-widget.inc File Reference}
+\label{imagefield__widget_8inc}\index{sites/all/modules/contrib/imagefield/imagefield\_\-widget.inc@{sites/all/modules/contrib/imagefield/imagefield\_\-widget.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{imagefield__widget_8inc_8d7bbdfe64674cd66f47fbbe40c61bd1}{imagefield\_\-widget\_\-settings\_\-form} (\$widget)
+\item 
+\hyperlink{imagefield__widget_8inc_c902595bd50fc51acc2abb4265472334}{\_\-imagefield\_\-widget\_\-settings\_\-default\_\-validate} (\$element, \&\$form\_\-state)
+\item 
+\hyperlink{imagefield__widget_8inc_ccae8d405d05c22db3fdbe3cdd8cd0de}{imagefield\_\-widget\_\-settings\_\-validate} (\$widget)
+\item 
+\hyperlink{imagefield__widget_8inc_6c7971999c540262989875a5dc50ec2c}{imagefield\_\-widget\_\-settings\_\-save} (\$widget)
+\item 
+\hyperlink{imagefield__widget_8inc_28634da6db6808b6b566de5e871bdd72}{imagefield\_\-widget\_\-value} (\$element, \$edit=FALSE)
+\item 
+\hyperlink{imagefield__widget_8inc_9bf0d34e0cb382ec9814b37edfcce5d7}{imagefield\_\-widget\_\-process} (\$element, \$edit, \&\$form\_\-state, \$form)
+\item 
+\hyperlink{imagefield__widget_8inc_cc1ccabf552d770aa55ce34aab46b1aa}{theme\_\-imagefield\_\-widget} (\$element)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+ImageField widget hooks and callbacks. 
+
+\subsection{Function Documentation}
+\hypertarget{imagefield__widget_8inc_c902595bd50fc51acc2abb4265472334}{
+\index{imagefield\_\-widget.inc@{imagefield\_\-widget.inc}!\_\-imagefield\_\-widget\_\-settings\_\-default\_\-validate@{\_\-imagefield\_\-widget\_\-settings\_\-default\_\-validate}}
+\index{\_\-imagefield\_\-widget\_\-settings\_\-default\_\-validate@{\_\-imagefield\_\-widget\_\-settings\_\-default\_\-validate}!imagefield_widget.inc@{imagefield\_\-widget.inc}}
+\subsubsection[{\_\-imagefield\_\-widget\_\-settings\_\-default\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}\_\-imagefield\_\-widget\_\-settings\_\-default\_\-validate (\$ {\em element}, \/  \&\$ {\em form\_\-state})}}
+\label{imagefield__widget_8inc_c902595bd50fc51acc2abb4265472334}
+
+
+Element specific validation for imagefield default value.
+
+Validated in a separate function from imagefield\_\-field() to get access to the \$form\_\-state variable. \hypertarget{imagefield__widget_8inc_9bf0d34e0cb382ec9814b37edfcce5d7}{
+\index{imagefield\_\-widget.inc@{imagefield\_\-widget.inc}!imagefield\_\-widget\_\-process@{imagefield\_\-widget\_\-process}}
+\index{imagefield\_\-widget\_\-process@{imagefield\_\-widget\_\-process}!imagefield_widget.inc@{imagefield\_\-widget.inc}}
+\subsubsection[{imagefield\_\-widget\_\-process}]{\setlength{\rightskip}{0pt plus 5cm}imagefield\_\-widget\_\-process (\$ {\em element}, \/  \$ {\em edit}, \/  \&\$ {\em form\_\-state}, \/  \$ {\em form})}}
+\label{imagefield__widget_8inc_9bf0d34e0cb382ec9814b37edfcce5d7}
+
+
+Element process callback function. \hypertarget{imagefield__widget_8inc_8d7bbdfe64674cd66f47fbbe40c61bd1}{
+\index{imagefield\_\-widget.inc@{imagefield\_\-widget.inc}!imagefield\_\-widget\_\-settings\_\-form@{imagefield\_\-widget\_\-settings\_\-form}}
+\index{imagefield\_\-widget\_\-settings\_\-form@{imagefield\_\-widget\_\-settings\_\-form}!imagefield_widget.inc@{imagefield\_\-widget.inc}}
+\subsubsection[{imagefield\_\-widget\_\-settings\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}imagefield\_\-widget\_\-settings\_\-form (\$ {\em widget})}}
+\label{imagefield__widget_8inc_8d7bbdfe64674cd66f47fbbe40c61bd1}
+
+
+Implementation of CCK's hook\_\-widget\_\-settings(\$op = 'form'). \hypertarget{imagefield__widget_8inc_6c7971999c540262989875a5dc50ec2c}{
+\index{imagefield\_\-widget.inc@{imagefield\_\-widget.inc}!imagefield\_\-widget\_\-settings\_\-save@{imagefield\_\-widget\_\-settings\_\-save}}
+\index{imagefield\_\-widget\_\-settings\_\-save@{imagefield\_\-widget\_\-settings\_\-save}!imagefield_widget.inc@{imagefield\_\-widget.inc}}
+\subsubsection[{imagefield\_\-widget\_\-settings\_\-save}]{\setlength{\rightskip}{0pt plus 5cm}imagefield\_\-widget\_\-settings\_\-save (\$ {\em widget})}}
+\label{imagefield__widget_8inc_6c7971999c540262989875a5dc50ec2c}
+
+
+Implementation of CCK's hook\_\-widget\_\-settings(\$op = 'save'). \hypertarget{imagefield__widget_8inc_ccae8d405d05c22db3fdbe3cdd8cd0de}{
+\index{imagefield\_\-widget.inc@{imagefield\_\-widget.inc}!imagefield\_\-widget\_\-settings\_\-validate@{imagefield\_\-widget\_\-settings\_\-validate}}
+\index{imagefield\_\-widget\_\-settings\_\-validate@{imagefield\_\-widget\_\-settings\_\-validate}!imagefield_widget.inc@{imagefield\_\-widget.inc}}
+\subsubsection[{imagefield\_\-widget\_\-settings\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}imagefield\_\-widget\_\-settings\_\-validate (\$ {\em widget})}}
+\label{imagefield__widget_8inc_ccae8d405d05c22db3fdbe3cdd8cd0de}
+
+
+Implementation of CCK's hook\_\-widget\_\-settings(\$op = 'validate'). \hypertarget{imagefield__widget_8inc_28634da6db6808b6b566de5e871bdd72}{
+\index{imagefield\_\-widget.inc@{imagefield\_\-widget.inc}!imagefield\_\-widget\_\-value@{imagefield\_\-widget\_\-value}}
+\index{imagefield\_\-widget\_\-value@{imagefield\_\-widget\_\-value}!imagefield_widget.inc@{imagefield\_\-widget.inc}}
+\subsubsection[{imagefield\_\-widget\_\-value}]{\setlength{\rightskip}{0pt plus 5cm}imagefield\_\-widget\_\-value (\$ {\em element}, \/  \$ {\em edit} = {\tt FALSE})}}
+\label{imagefield__widget_8inc_28634da6db6808b6b566de5e871bdd72}
+
+
+Element value\_\-callback function. \hypertarget{imagefield__widget_8inc_cc1ccabf552d770aa55ce34aab46b1aa}{
+\index{imagefield\_\-widget.inc@{imagefield\_\-widget.inc}!theme\_\-imagefield\_\-widget@{theme\_\-imagefield\_\-widget}}
+\index{theme\_\-imagefield\_\-widget@{theme\_\-imagefield\_\-widget}!imagefield_widget.inc@{imagefield\_\-widget.inc}}
+\subsubsection[{theme\_\-imagefield\_\-widget}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-imagefield\_\-widget (\$ {\em element})}}
+\label{imagefield__widget_8inc_cc1ccabf552d770aa55ce34aab46b1aa}
+
+
+FormAPI theme function. Theme the output of an image field. 

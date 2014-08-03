@@ -1,0 +1,81 @@
+\hypertarget{group__views__object__cache}{
+\section{Non-volatile cache storage}
+\label{group__views__object__cache}\index{Non-volatile cache storage@{Non-volatile cache storage}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{group__views__object__cache_gd5f513bc1c239a13aa96905361ef3e96}{views\_\-object\_\-cache\_\-get} (\$obj, \$name, \$skip\_\-cache=FALSE)
+\item 
+\hyperlink{group__views__object__cache_ga26af6a03e0d169966b2a7fa2b09d75e}{views\_\-object\_\-cache\_\-set} (\$obj, \$name, \$cache)
+\item 
+\hyperlink{group__views__object__cache_g459b053443336216db7aa476065893e5}{views\_\-object\_\-cache\_\-clear} (\$obj, \$name)
+\item 
+\hyperlink{group__views__object__cache_g87df7081c8cc1152a0d0de057e2e6786}{views\_\-object\_\-cache\_\-clean} (\$age=NULL)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+The non-volatile object cache is used to store an object while it is being edited, so that we don't have to save until we're completely done. The cache should be 'cleaned' on a regular basis, meaning to remove old objects from the cache, but otherwise the data in this cache must remain stable, as it includes unsaved changes. 
+
+\subsection{Function Documentation}
+\hypertarget{group__views__object__cache_g87df7081c8cc1152a0d0de057e2e6786}{
+\index{views\_\-object\_\-cache@{views\_\-object\_\-cache}!views\_\-object\_\-cache\_\-clean@{views\_\-object\_\-cache\_\-clean}}
+\index{views\_\-object\_\-cache\_\-clean@{views\_\-object\_\-cache\_\-clean}!views_object_cache@{views\_\-object\_\-cache}}
+\subsubsection[{views\_\-object\_\-cache\_\-clean}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-object\_\-cache\_\-clean (\$ {\em age} = {\tt NULL})}}
+\label{group__views__object__cache_g87df7081c8cc1152a0d0de057e2e6786}
+
+
+Remove all objects in the object cache that are older than the specified age.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$age}]The minimum age of objects to remove, in seconds. For example, 86400 is one day. Defaults to 7 days. \end{description}
+\end{Desc}
+\hypertarget{group__views__object__cache_g459b053443336216db7aa476065893e5}{
+\index{views\_\-object\_\-cache@{views\_\-object\_\-cache}!views\_\-object\_\-cache\_\-clear@{views\_\-object\_\-cache\_\-clear}}
+\index{views\_\-object\_\-cache\_\-clear@{views\_\-object\_\-cache\_\-clear}!views_object_cache@{views\_\-object\_\-cache}}
+\subsubsection[{views\_\-object\_\-cache\_\-clear}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-object\_\-cache\_\-clear (\$ {\em obj}, \/  \$ {\em name})}}
+\label{group__views__object__cache_g459b053443336216db7aa476065893e5}
+
+
+Remove an object from the non-volatile Views cache
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$obj}]A 32 character or less string to define what kind of object is being stored; primarily this is used to prevent collisions. \item[{\em \$name}]The name of the \hyperlink{classview}{view} (or other object) being stored. \end{description}
+\end{Desc}
+\hypertarget{group__views__object__cache_gd5f513bc1c239a13aa96905361ef3e96}{
+\index{views\_\-object\_\-cache@{views\_\-object\_\-cache}!views\_\-object\_\-cache\_\-get@{views\_\-object\_\-cache\_\-get}}
+\index{views\_\-object\_\-cache\_\-get@{views\_\-object\_\-cache\_\-get}!views_object_cache@{views\_\-object\_\-cache}}
+\subsubsection[{views\_\-object\_\-cache\_\-get}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-object\_\-cache\_\-get (\$ {\em obj}, \/  \$ {\em name}, \/  \$ {\em skip\_\-cache} = {\tt FALSE})}}
+\label{group__views__object__cache_gd5f513bc1c239a13aa96905361ef3e96}
+
+
+Get an object from the non-volatile Views cache.
+
+This function caches in memory as well, so that multiple calls to this will not result in multiple database reads.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$obj}]A 32 character or less string to define what kind of object is being stored; primarily this is used to prevent collisions. \item[{\em \$name}]The name of the \hyperlink{classview}{view} (or other object) being stored. \item[{\em \$skip\_\-cache}]Skip the memory cache, meaning this must be read from the db again.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The data that was cached. \end{Desc}
+\hypertarget{group__views__object__cache_ga26af6a03e0d169966b2a7fa2b09d75e}{
+\index{views\_\-object\_\-cache@{views\_\-object\_\-cache}!views\_\-object\_\-cache\_\-set@{views\_\-object\_\-cache\_\-set}}
+\index{views\_\-object\_\-cache\_\-set@{views\_\-object\_\-cache\_\-set}!views_object_cache@{views\_\-object\_\-cache}}
+\subsubsection[{views\_\-object\_\-cache\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-object\_\-cache\_\-set (\$ {\em obj}, \/  \$ {\em name}, \/  \$ {\em cache})}}
+\label{group__views__object__cache_ga26af6a03e0d169966b2a7fa2b09d75e}
+
+
+Store an object in the non-volatile Views cache.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$obj}]A 32 character or less string to define what kind of object is being stored; primarily this is used to prevent collisions. \item[{\em \$name}]The name of the \hyperlink{classview}{view} (or other object) being stored. \item[{\em \$cache}]The object to be cached. This will be serialized prior to writing. \end{description}
+\end{Desc}

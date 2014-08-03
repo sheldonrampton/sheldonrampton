@@ -1,0 +1,175 @@
+\hypertarget{classviews__db__object}{
+\section{views\_\-db\_\-object Class Reference}
+\label{classviews__db__object}\index{views\_\-db\_\-object@{views\_\-db\_\-object}}
+}
+Inheritance diagram for views\_\-db\_\-object::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classviews__db__object}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__db__object_5c50d8a10b9af37afa7c7c2bfde5e318}{init} (\$init=TRUE)
+\item 
+\hyperlink{classviews__db__object_5e126880af73008d7ce245c24cfaebab}{save\_\-row} (\$update=NULL)
+\item 
+\hyperlink{classviews__db__object_4c8b658c58eb3ae319616f73a2106324}{load\_\-row} (\$data)
+\item 
+\hyperlink{classviews__db__object_0b0485d179ad553228534ae957e0ddc9}{export\_\-row} (\$identifier=NULL, \$indent= '')
+\item 
+\hyperlink{classviews__db__object_6e9c2b7bb3d5670fefde14518a38de95}{add\_\-display} (\$type= 'page', \$title=NULL, \$id=NULL)
+\item 
+\& \hyperlink{classviews__db__object_b7a8ea5c81d0c335d8e0fb87443349a3}{new\_\-display} (\$type= 'page', \$title=NULL, \$id=NULL)
+\item 
+\hyperlink{classviews__db__object_794e8375c5d243e52645675b31251ccc}{add\_\-item} (\$display\_\-id, \$type, \$table, \$field, \$options=array(), \$id=NULL)
+\item 
+\hyperlink{classviews__db__object_20a7ac553af0e4e8ee6f676dce4b844b}{get\_\-items} (\$type, \$display\_\-id=NULL)
+\item 
+\hyperlink{classviews__db__object_9c1010d4c58ebbda357940ac11c48ce1}{get\_\-item} (\$display\_\-id, \$type, \$id)
+\item 
+\hyperlink{classviews__db__object_4ac5fda69733790427be9edd7c717568}{set\_\-item} (\$display\_\-id, \$type, \$id, \$item)
+\item 
+\hyperlink{classviews__db__object_722d39805c26c9ae909e644f2f887a86}{set\_\-item\_\-option} (\$display\_\-id, \$type, \$id, \$option, \$value)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for views' database objects. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__db__object_6e9c2b7bb3d5670fefde14518a38de95}{
+\index{views\_\-db\_\-object@{views\_\-db\_\-object}!add\_\-display@{add\_\-display}}
+\index{add\_\-display@{add\_\-display}!views_db_object@{views\_\-db\_\-object}}
+\subsubsection[{add\_\-display}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-db\_\-object::add\_\-display (\$ {\em type} = {\tt 'page'}, \/  \$ {\em title} = {\tt NULL}, \/  \$ {\em id} = {\tt NULL})}}
+\label{classviews__db__object_6e9c2b7bb3d5670fefde14518a38de95}
+
+
+Add a new display handler to the \hyperlink{classview}{view}, automatically creating an id.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$type}]The plugin type from the views plugin data. Defaults to 'page'. \item[{\em \$title}]The title of the display; optional, may be filled in from default. \item[{\em \$id}]The id to use. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The key to the display in \$view-$>$display, so that the new display can be easily located. \end{Desc}
+\hypertarget{classviews__db__object_794e8375c5d243e52645675b31251ccc}{
+\index{views\_\-db\_\-object@{views\_\-db\_\-object}!add\_\-item@{add\_\-item}}
+\index{add\_\-item@{add\_\-item}!views_db_object@{views\_\-db\_\-object}}
+\subsubsection[{add\_\-item}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-db\_\-object::add\_\-item (\$ {\em display\_\-id}, \/  \$ {\em type}, \/  \$ {\em table}, \/  \$ {\em field}, \/  \$ {\em options} = {\tt array()}, \/  \$ {\em id} = {\tt NULL})}}
+\label{classviews__db__object_794e8375c5d243e52645675b31251ccc}
+
+
+Add an item with a handler to the \hyperlink{classview}{view}.
+
+These items may be fields, filters, sort criteria, or arguments. \hypertarget{classviews__db__object_0b0485d179ad553228534ae957e0ddc9}{
+\index{views\_\-db\_\-object@{views\_\-db\_\-object}!export\_\-row@{export\_\-row}}
+\index{export\_\-row@{export\_\-row}!views_db_object@{views\_\-db\_\-object}}
+\subsubsection[{export\_\-row}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-db\_\-object::export\_\-row (\$ {\em identifier} = {\tt NULL}, \/  \$ {\em indent} = {\tt ''})}}
+\label{classviews__db__object_0b0485d179ad553228534ae957e0ddc9}
+
+
+Export a loaded row, such as an argument, field or the \hyperlink{classview}{view} itself to PHP code.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$identifier}]The variable to assign the PHP code for this object to. \item[{\em \$indent}]An optional indentation for prettifying nested code. \end{description}
+\end{Desc}
+\hypertarget{classviews__db__object_9c1010d4c58ebbda357940ac11c48ce1}{
+\index{views\_\-db\_\-object@{views\_\-db\_\-object}!get\_\-item@{get\_\-item}}
+\index{get\_\-item@{get\_\-item}!views_db_object@{views\_\-db\_\-object}}
+\subsubsection[{get\_\-item}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-db\_\-object::get\_\-item (\$ {\em display\_\-id}, \/  \$ {\em type}, \/  \$ {\em id})}}
+\label{classviews__db__object_9c1010d4c58ebbda357940ac11c48ce1}
+
+
+Get the configuration of an item (field/sort/filter/etc) on a given display. \hypertarget{classviews__db__object_20a7ac553af0e4e8ee6f676dce4b844b}{
+\index{views\_\-db\_\-object@{views\_\-db\_\-object}!get\_\-items@{get\_\-items}}
+\index{get\_\-items@{get\_\-items}!views_db_object@{views\_\-db\_\-object}}
+\subsubsection[{get\_\-items}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-db\_\-object::get\_\-items (\$ {\em type}, \/  \$ {\em display\_\-id} = {\tt NULL})}}
+\label{classviews__db__object_20a7ac553af0e4e8ee6f676dce4b844b}
+
+
+Get an array of items for the current display. \hypertarget{classviews__db__object_5c50d8a10b9af37afa7c7c2bfde5e318}{
+\index{views\_\-db\_\-object@{views\_\-db\_\-object}!init@{init}}
+\index{init@{init}!views_db_object@{views\_\-db\_\-object}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-db\_\-object::init (\$ {\em init} = {\tt TRUE})}}
+\label{classviews__db__object_5c50d8a10b9af37afa7c7c2bfde5e318}
+
+
+Initialize this object, setting values from schema defaults.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$init}]If an array, this is a set of values from db\_\-fetch\_\-object to load. Otherwse, if TRUE values will be filled in from schema defaults. \end{description}
+\end{Desc}
+\hypertarget{classviews__db__object_4c8b658c58eb3ae319616f73a2106324}{
+\index{views\_\-db\_\-object@{views\_\-db\_\-object}!load\_\-row@{load\_\-row}}
+\index{load\_\-row@{load\_\-row}!views_db_object@{views\_\-db\_\-object}}
+\subsubsection[{load\_\-row}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-db\_\-object::load\_\-row (\$ {\em data})}}
+\label{classviews__db__object_4c8b658c58eb3ae319616f73a2106324}
+
+
+Load the object with a row from the database.
+
+This method is separate from the constructor in order to give us more flexibility in terms of how the \hyperlink{classview}{view} object is built in different contexts.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$data}]An object from db\_\-fetch\_\-object. It should contain all of the fields that are in the schema. \end{description}
+\end{Desc}
+\hypertarget{classviews__db__object_b7a8ea5c81d0c335d8e0fb87443349a3}{
+\index{views\_\-db\_\-object@{views\_\-db\_\-object}!new\_\-display@{new\_\-display}}
+\index{new\_\-display@{new\_\-display}!views_db_object@{views\_\-db\_\-object}}
+\subsubsection[{new\_\-display}]{\setlength{\rightskip}{0pt plus 5cm}\& views\_\-db\_\-object::new\_\-display (\$ {\em type} = {\tt 'page'}, \/  \$ {\em title} = {\tt NULL}, \/  \$ {\em id} = {\tt NULL})}}
+\label{classviews__db__object_b7a8ea5c81d0c335d8e0fb87443349a3}
+
+
+Create a new display and a display handler for it. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$type}]The plugin type from the views plugin data. Defaults to 'page'. \item[{\em \$title}]The title of the display; optional, may be filled in from default. \item[{\em \$id}]The id to use. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]A reference to the new handler object. \end{Desc}
+\hypertarget{classviews__db__object_5e126880af73008d7ce245c24cfaebab}{
+\index{views\_\-db\_\-object@{views\_\-db\_\-object}!save\_\-row@{save\_\-row}}
+\index{save\_\-row@{save\_\-row}!views_db_object@{views\_\-db\_\-object}}
+\subsubsection[{save\_\-row}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-db\_\-object::save\_\-row (\$ {\em update} = {\tt NULL})}}
+\label{classviews__db__object_5e126880af73008d7ce245c24cfaebab}
+
+
+Write the row to the database.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$update}]If true this will be an UPDATE query. Otherwise it will be an INSERT. \end{description}
+\end{Desc}
+\hypertarget{classviews__db__object_4ac5fda69733790427be9edd7c717568}{
+\index{views\_\-db\_\-object@{views\_\-db\_\-object}!set\_\-item@{set\_\-item}}
+\index{set\_\-item@{set\_\-item}!views_db_object@{views\_\-db\_\-object}}
+\subsubsection[{set\_\-item}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-db\_\-object::set\_\-item (\$ {\em display\_\-id}, \/  \$ {\em type}, \/  \$ {\em id}, \/  \$ {\em item})}}
+\label{classviews__db__object_4ac5fda69733790427be9edd7c717568}
+
+
+Get the configuration of an item (field/sort/filter/etc) on a given display.
+
+Pass in NULL for the \$item to remove an item. \hypertarget{classviews__db__object_722d39805c26c9ae909e644f2f887a86}{
+\index{views\_\-db\_\-object@{views\_\-db\_\-object}!set\_\-item\_\-option@{set\_\-item\_\-option}}
+\index{set\_\-item\_\-option@{set\_\-item\_\-option}!views_db_object@{views\_\-db\_\-object}}
+\subsubsection[{set\_\-item\_\-option}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-db\_\-object::set\_\-item\_\-option (\$ {\em display\_\-id}, \/  \$ {\em type}, \/  \$ {\em id}, \/  \$ {\em option}, \/  \$ {\em value})}}
+\label{classviews__db__object_722d39805c26c9ae909e644f2f887a86}
+
+
+Set an option on an item.
+
+Use this only if you have just 1 or 2 options to set; if you have many, consider getting the item, adding the options and doing set\_\-item yourself. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/includes/\hyperlink{view_8inc}{view.inc}\end{CompactItemize}

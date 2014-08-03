@@ -1,0 +1,44 @@
+\hypertarget{template_8conditional-styles_8inc}{
+\section{sites/all/themes/zen/zen-internals/template.conditional-styles.inc File Reference}
+\label{template_8conditional-styles_8inc}\index{sites/all/themes/zen/zen-internals/template.conditional-styles.inc@{sites/all/themes/zen/zen-internals/template.conditional-styles.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{template_8conditional-styles_8inc_6acb74cfb52f6e1a84f2083239c7fcde}{conditional\_\-styles\_\-paths\_\-to\_\-basetheme} (\$theme)
+\item 
+\hyperlink{template_8conditional-styles_8inc_c75e817fce5c82c6b852222f736945ae}{\_\-conditional\_\-styles\_\-theme} (\$existing, \$type, \$theme, \$path)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Allows themes to add conditional stylesheets.
+
+\begin{Desc}
+\item[See also:]\href{http://msdn.microsoft.com/en-us/library/ms537512.aspx}{\tt http://msdn.microsoft.com/en-us/library/ms537512.aspx} \end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{template_8conditional-styles_8inc_c75e817fce5c82c6b852222f736945ae}{
+\index{template.conditional-styles.inc@{template.conditional-styles.inc}!\_\-conditional\_\-styles\_\-theme@{\_\-conditional\_\-styles\_\-theme}}
+\index{\_\-conditional\_\-styles\_\-theme@{\_\-conditional\_\-styles\_\-theme}!template.conditional-styles.inc@{template.conditional-styles.inc}}
+\subsubsection[{\_\-conditional\_\-styles\_\-theme}]{\setlength{\rightskip}{0pt plus 5cm}\_\-conditional\_\-styles\_\-theme (\$ {\em existing}, \/  \$ {\em type}, \/  \$ {\em theme}, \/  \$ {\em path})}}
+\label{template_8conditional-styles_8inc_c75e817fce5c82c6b852222f736945ae}
+
+
+When the theme registry is rebuilt, we also build the conditional stylesheets. \hypertarget{template_8conditional-styles_8inc_6acb74cfb52f6e1a84f2083239c7fcde}{
+\index{template.conditional-styles.inc@{template.conditional-styles.inc}!conditional\_\-styles\_\-paths\_\-to\_\-basetheme@{conditional\_\-styles\_\-paths\_\-to\_\-basetheme}}
+\index{conditional\_\-styles\_\-paths\_\-to\_\-basetheme@{conditional\_\-styles\_\-paths\_\-to\_\-basetheme}!template.conditional-styles.inc@{template.conditional-styles.inc}}
+\subsubsection[{conditional\_\-styles\_\-paths\_\-to\_\-basetheme}]{\setlength{\rightskip}{0pt plus 5cm}conditional\_\-styles\_\-paths\_\-to\_\-basetheme (\$ {\em theme})}}
+\label{template_8conditional-styles_8inc_6acb74cfb52f6e1a84f2083239c7fcde}
+
+
+Return paths for the theme and its base themes.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$theme}]The name of the theme. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An array of all the theme paths. \end{Desc}

@@ -1,0 +1,51 @@
+\hypertarget{search-result_8tpl_8php}{
+\section{modules/search/search-result.tpl.php File Reference}
+\label{search-result_8tpl_8php}\index{modules/search/search-result.tpl.php@{modules/search/search-result.tpl.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hypertarget{search-result_8tpl_8php_d6261d93a9597f207ed9f915d0296c35}{
+print \textbf{\$url}}
+\label{search-result_8tpl_8php_d6261d93a9597f207ed9f915d0296c35}
+
+\item 
+\hypertarget{search-result_8tpl_8php_ec2795512d255332f57cacd930a090b4}{
+print \textbf{\$title}}
+\label{search-result_8tpl_8php_ec2795512d255332f57cacd930a090b4}
+
+\item 
+\hypertarget{search-result_8tpl_8php_81c60d87f7d85467649ef1a23ca2ca36}{
+if(\$snippet) \textbf{endif}}
+\label{search-result_8tpl_8php_81c60d87f7d85467649ef1a23ca2ca36}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Default theme implementation for displaying a single search result.
+
+This template renders a single search result and is collected into \hyperlink{search-results_8tpl_8php}{search-results.tpl.php}. This and the parent template are dependent to one another sharing the markup for definition lists.
+
+Available variables:\begin{itemize}
+\item \$url: URL of the result.\item \$title: Title of the result.\item \$snippet: A small preview of the result. Does not apply to user searches.\item \$info: String of all the meta information ready for print. Does not apply to user searches.\item \begin{Desc}
+\item[info\_\-split]Contains same data as \end{Desc}
+info, split into a keyed array.\item \$type: The type of search, e.g., \char`\"{}node\char`\"{} or \char`\"{}user\char`\"{}.\end{itemize}
+
+
+Default keys within \$info\_\-split:\begin{itemize}
+\item \$info\_\-split\mbox{[}'type'\mbox{]}: Node type.\item \$info\_\-split\mbox{[}'user'\mbox{]}: Author of the node linked to users profile. Depends on permission.\item \$info\_\-split\mbox{[}'date'\mbox{]}: Last update of the node. Short formatted.\item \$info\_\-split\mbox{[}'comment'\mbox{]}: Number of comments output as \char`\"{}\% comments\char`\"{}, \% being the count. Depends on comment.module.\item \$info\_\-split\mbox{[}'upload'\mbox{]}: Number of attachments output as \char`\"{}\% attachments\char`\"{}, \% being the count. Depends on upload.module.\end{itemize}
+
+
+Since \$info\_\-split is keyed, a direct print of the item is possible. This array does not apply to user searches so it is recommended to check for their existance before printing. The default keys of 'type', 'user' and 'date' always exist for node searches. Modules may provide other data.
+
+$<$?php if (isset(\$info\_\-split\mbox{[}'comment'\mbox{]})) : ?$>$  $<$?php print \$info\_\-split\mbox{[}'comment'\mbox{]}; ?$>$  $<$?php endif; ?$>$
+
+To check for all available data within \$info\_\-split, use the code below.
+
+$<$?php print '\small\begin{alltt}'. check\_plain(print\_r($info\_split, 1)) .'\end{alltt}
+\normalsize 
+'; ?$>$
+
+\begin{Desc}
+\item[See also:]\hyperlink{search_8pages_8inc_45d5ee9444aba311056f3949e503b426}{template\_\-preprocess\_\-search\_\-result()} \end{Desc}

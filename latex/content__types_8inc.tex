@@ -1,0 +1,92 @@
+\hypertarget{content__types_8inc}{
+\section{modules/node/content\_\-types.inc File Reference}
+\label{content__types_8inc}\index{modules/node/content\_\-types.inc@{modules/node/content\_\-types.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{content__types_8inc_9530bf9d596b557e8c77f196960dde84}{node\_\-overview\_\-types} ()
+\item 
+\hyperlink{content__types_8inc_29b6f02d1269c1f1f0e8d6d0e18f9b96}{node\_\-type\_\-form} (\&\$form\_\-state, \$type=NULL)
+\item 
+\hyperlink{content__types_8inc_9bce2bd1a17217d5573cdc8b4465c1f9}{node\_\-type\_\-form\_\-validate} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{content__types_8inc_fa55f7240b05f2a2804c11766228a5af}{node\_\-type\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{content__types_8inc_466e4a937690f9ea448711dabbbe843f}{node\_\-node\_\-type} (\$op, \$info)
+\item 
+\hyperlink{content__types_8inc_cf80450120d7e77131b8a42c857bfb8a}{node\_\-type\_\-reset} (\&\$type)
+\item 
+\hyperlink{content__types_8inc_c6ec6d24eccef00581a060b9081a7e1d}{node\_\-type\_\-delete\_\-confirm} (\&\$form\_\-state, \$type)
+\item 
+\hyperlink{content__types_8inc_ef7aa2855944bc4869a9956736b2845a}{node\_\-type\_\-delete\_\-confirm\_\-submit} (\$form, \&\$form\_\-state)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Content type editing UI. 
+
+\subsection{Function Documentation}
+\hypertarget{content__types_8inc_466e4a937690f9ea448711dabbbe843f}{
+\index{content\_\-types.inc@{content\_\-types.inc}!node\_\-node\_\-type@{node\_\-node\_\-type}}
+\index{node\_\-node\_\-type@{node\_\-node\_\-type}!content_types.inc@{content\_\-types.inc}}
+\subsubsection[{node\_\-node\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}node\_\-node\_\-type (\$ {\em op}, \/  \$ {\em info})}}
+\label{content__types_8inc_466e4a937690f9ea448711dabbbe843f}
+
+
+Implementation of hook\_\-node\_\-type(). \hypertarget{content__types_8inc_9530bf9d596b557e8c77f196960dde84}{
+\index{content\_\-types.inc@{content\_\-types.inc}!node\_\-overview\_\-types@{node\_\-overview\_\-types}}
+\index{node\_\-overview\_\-types@{node\_\-overview\_\-types}!content_types.inc@{content\_\-types.inc}}
+\subsubsection[{node\_\-overview\_\-types}]{\setlength{\rightskip}{0pt plus 5cm}node\_\-overview\_\-types ()}}
+\label{content__types_8inc_9530bf9d596b557e8c77f196960dde84}
+
+
+Displays the content type admin overview page. \hypertarget{content__types_8inc_c6ec6d24eccef00581a060b9081a7e1d}{
+\index{content\_\-types.inc@{content\_\-types.inc}!node\_\-type\_\-delete\_\-confirm@{node\_\-type\_\-delete\_\-confirm}}
+\index{node\_\-type\_\-delete\_\-confirm@{node\_\-type\_\-delete\_\-confirm}!content_types.inc@{content\_\-types.inc}}
+\subsubsection[{node\_\-type\_\-delete\_\-confirm}]{\setlength{\rightskip}{0pt plus 5cm}node\_\-type\_\-delete\_\-confirm (\&\$ {\em form\_\-state}, \/  \$ {\em type})}}
+\label{content__types_8inc_c6ec6d24eccef00581a060b9081a7e1d}
+
+
+Menu callback; delete a single content type. \hypertarget{content__types_8inc_ef7aa2855944bc4869a9956736b2845a}{
+\index{content\_\-types.inc@{content\_\-types.inc}!node\_\-type\_\-delete\_\-confirm\_\-submit@{node\_\-type\_\-delete\_\-confirm\_\-submit}}
+\index{node\_\-type\_\-delete\_\-confirm\_\-submit@{node\_\-type\_\-delete\_\-confirm\_\-submit}!content_types.inc@{content\_\-types.inc}}
+\subsubsection[{node\_\-type\_\-delete\_\-confirm\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}node\_\-type\_\-delete\_\-confirm\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{content__types_8inc_ef7aa2855944bc4869a9956736b2845a}
+
+
+Process content type delete confirm submissions. \hypertarget{content__types_8inc_29b6f02d1269c1f1f0e8d6d0e18f9b96}{
+\index{content\_\-types.inc@{content\_\-types.inc}!node\_\-type\_\-form@{node\_\-type\_\-form}}
+\index{node\_\-type\_\-form@{node\_\-type\_\-form}!content_types.inc@{content\_\-types.inc}}
+\subsubsection[{node\_\-type\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}node\_\-type\_\-form (\&\$ {\em form\_\-state}, \/  \$ {\em type} = {\tt NULL})}}
+\label{content__types_8inc_29b6f02d1269c1f1f0e8d6d0e18f9b96}
+
+
+Generates the node type editing form. \hypertarget{content__types_8inc_fa55f7240b05f2a2804c11766228a5af}{
+\index{content\_\-types.inc@{content\_\-types.inc}!node\_\-type\_\-form\_\-submit@{node\_\-type\_\-form\_\-submit}}
+\index{node\_\-type\_\-form\_\-submit@{node\_\-type\_\-form\_\-submit}!content_types.inc@{content\_\-types.inc}}
+\subsubsection[{node\_\-type\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}node\_\-type\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{content__types_8inc_fa55f7240b05f2a2804c11766228a5af}
+
+
+Implementation of hook\_\-form\_\-submit(). \hypertarget{content__types_8inc_9bce2bd1a17217d5573cdc8b4465c1f9}{
+\index{content\_\-types.inc@{content\_\-types.inc}!node\_\-type\_\-form\_\-validate@{node\_\-type\_\-form\_\-validate}}
+\index{node\_\-type\_\-form\_\-validate@{node\_\-type\_\-form\_\-validate}!content_types.inc@{content\_\-types.inc}}
+\subsubsection[{node\_\-type\_\-form\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}node\_\-type\_\-form\_\-validate (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{content__types_8inc_9bce2bd1a17217d5573cdc8b4465c1f9}
+
+
+Validates the content type submission form generated by \hyperlink{content__types_8inc_29b6f02d1269c1f1f0e8d6d0e18f9b96}{node\_\-type\_\-form()}. \hypertarget{content__types_8inc_cf80450120d7e77131b8a42c857bfb8a}{
+\index{content\_\-types.inc@{content\_\-types.inc}!node\_\-type\_\-reset@{node\_\-type\_\-reset}}
+\index{node\_\-type\_\-reset@{node\_\-type\_\-reset}!content_types.inc@{content\_\-types.inc}}
+\subsubsection[{node\_\-type\_\-reset}]{\setlength{\rightskip}{0pt plus 5cm}node\_\-type\_\-reset (\&\$ {\em type})}}
+\label{content__types_8inc_cf80450120d7e77131b8a42c857bfb8a}
+
+
+Resets all of the relevant fields of a module-defined node type to their default values.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \&\$type}]The node type to reset. The node type is passed back by reference with its resetted values. If there is no module-defined info for this node type, then nothing happens. \end{description}
+\end{Desc}

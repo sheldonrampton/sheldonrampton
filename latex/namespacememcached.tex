@@ -1,0 +1,27 @@
+\hypertarget{namespacememcached}{
+\section{memcached Namespace Reference}
+\label{namespacememcached}\index{memcached@{memcached}}
+}
+
+
+\subsection{Detailed Description}
+This is the PHP client for memcached - a distributed memory cache daemon. More information is available at \href{http://www.danga.com/memcached/}{\tt http://www.danga.com/memcached/}
+
+Usage example:
+
+require\_\-once 'memcached.php';
+
+\$mc = new memcached(array( 'servers' =$>$ array('127.0.0.1:10000', array('192.0.0.1:10010', 2), '127.0.0.1:10020'), 'debug' =$>$ false, 'compress\_\-threshold' =$>$ 10240, 'persistant' =$>$ true));
+
+\$mc-$>$add('key', array('some', 'array')); \$mc-$>$replace('key', 'some random string'); \$val = \$mc-$>$get('key');
+
+\begin{Desc}
+\item[Author:]Ryan T. Dean $<$\href{mailto:rtdean@cytherianage.net}{\tt rtdean@cytherianage.net}$>$ -client \end{Desc}
+\begin{Desc}
+\item[Version:]0.1.2\end{Desc}
+memcached client class implemented using (p)fsockopen()
+
+\begin{Desc}
+\item[Author:]Ryan T. Dean $<$\href{mailto:rtdean@cytherianage.net}{\tt rtdean@cytherianage.net}$>$ -client \end{Desc}
+
+

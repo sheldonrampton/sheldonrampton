@@ -1,0 +1,105 @@
+\hypertarget{filter_8admin_8inc}{
+\section{modules/filter/filter.admin.inc File Reference}
+\label{filter_8admin_8inc}\index{modules/filter/filter.admin.inc@{modules/filter/filter.admin.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{group__forms_gfef1e200ed76ee122718a52cf9abb0f2}{filter\_\-admin\_\-overview} ()
+\item 
+\hypertarget{filter_8admin_8inc_60b5bbf55b2f0678c64ae17f613d03d0}{
+\textbf{filter\_\-admin\_\-overview\_\-submit} (\$form, \&\$form\_\-state)}
+\label{filter_8admin_8inc_60b5bbf55b2f0678c64ae17f613d03d0}
+
+\item 
+\hyperlink{group__themeable_gb75dc6c3bff3b14c9d8decc0bdf65cf1}{theme\_\-filter\_\-admin\_\-overview} (\$form)
+\item 
+\hyperlink{filter_8admin_8inc_ad02098c7cd9b370e0692fb74f498706}{filter\_\-admin\_\-format\_\-page} (\$format=NULL)
+\item 
+\hyperlink{group__forms_gfa40bd6f3659ac2e8980f5b30d263ab2}{filter\_\-admin\_\-format\_\-form} (\&\$form\_\-state, \$format)
+\item 
+\hyperlink{filter_8admin_8inc_1ae5e99340abc69aadeff9d2a538d578}{filter\_\-admin\_\-format\_\-form\_\-validate} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{filter_8admin_8inc_1cabbcac9ccc4de52ea16a64a8c8cd54}{filter\_\-admin\_\-format\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{group__forms_g950ad134c292688bc709871c65745dda}{filter\_\-admin\_\-delete} ()
+\item 
+\hyperlink{filter_8admin_8inc_280611f74f59bc785a6fd35fae0ed8d3}{filter\_\-admin\_\-delete\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{filter_8admin_8inc_73c7cd94e9aa604197745aeda599bf43}{filter\_\-admin\_\-configure\_\-page} (\$format)
+\item 
+\hyperlink{group__forms_gcc23b948cf6b65bf3fb1febee5a51beb}{filter\_\-admin\_\-configure} (\&\$form\_\-state, \$format)
+\item 
+\hyperlink{filter_8admin_8inc_2e8e2b234ba63aab2f16b2dd0313e5f8}{filter\_\-admin\_\-configure\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{filter_8admin_8inc_46f1de68199cbb6be953d33cea19967f}{filter\_\-admin\_\-order\_\-page} (\$format)
+\item 
+\hyperlink{group__forms_g6f9ec0dfed0e7f095f0f99f731d084be}{filter\_\-admin\_\-order} (\&\$form\_\-state, \$format=NULL)
+\item 
+\hyperlink{group__themeable_g2043f70c09f1b97fed7917c783bb774c}{theme\_\-filter\_\-admin\_\-order} (\$form)
+\item 
+\hyperlink{filter_8admin_8inc_b784a456f8aaeddc16e19018b80042b0}{filter\_\-admin\_\-order\_\-submit} (\$form, \&\$form\_\-state)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Admin page callbacks for the filter module. 
+
+\subsection{Function Documentation}
+\hypertarget{filter_8admin_8inc_73c7cd94e9aa604197745aeda599bf43}{
+\index{filter.admin.inc@{filter.admin.inc}!filter\_\-admin\_\-configure\_\-page@{filter\_\-admin\_\-configure\_\-page}}
+\index{filter\_\-admin\_\-configure\_\-page@{filter\_\-admin\_\-configure\_\-page}!filter.admin.inc@{filter.admin.inc}}
+\subsubsection[{filter\_\-admin\_\-configure\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}filter\_\-admin\_\-configure\_\-page (\$ {\em format})}}
+\label{filter_8admin_8inc_73c7cd94e9aa604197745aeda599bf43}
+
+
+Menu callback; display settings defined by a format's filters. \hypertarget{filter_8admin_8inc_2e8e2b234ba63aab2f16b2dd0313e5f8}{
+\index{filter.admin.inc@{filter.admin.inc}!filter\_\-admin\_\-configure\_\-submit@{filter\_\-admin\_\-configure\_\-submit}}
+\index{filter\_\-admin\_\-configure\_\-submit@{filter\_\-admin\_\-configure\_\-submit}!filter.admin.inc@{filter.admin.inc}}
+\subsubsection[{filter\_\-admin\_\-configure\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}filter\_\-admin\_\-configure\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{filter_8admin_8inc_2e8e2b234ba63aab2f16b2dd0313e5f8}
+
+
+Clear the filter's cache when configuration settings are saved. \hypertarget{filter_8admin_8inc_280611f74f59bc785a6fd35fae0ed8d3}{
+\index{filter.admin.inc@{filter.admin.inc}!filter\_\-admin\_\-delete\_\-submit@{filter\_\-admin\_\-delete\_\-submit}}
+\index{filter\_\-admin\_\-delete\_\-submit@{filter\_\-admin\_\-delete\_\-submit}!filter.admin.inc@{filter.admin.inc}}
+\subsubsection[{filter\_\-admin\_\-delete\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}filter\_\-admin\_\-delete\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{filter_8admin_8inc_280611f74f59bc785a6fd35fae0ed8d3}
+
+
+Process filter delete form submission. \hypertarget{filter_8admin_8inc_1cabbcac9ccc4de52ea16a64a8c8cd54}{
+\index{filter.admin.inc@{filter.admin.inc}!filter\_\-admin\_\-format\_\-form\_\-submit@{filter\_\-admin\_\-format\_\-form\_\-submit}}
+\index{filter\_\-admin\_\-format\_\-form\_\-submit@{filter\_\-admin\_\-format\_\-form\_\-submit}!filter.admin.inc@{filter.admin.inc}}
+\subsubsection[{filter\_\-admin\_\-format\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}filter\_\-admin\_\-format\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{filter_8admin_8inc_1cabbcac9ccc4de52ea16a64a8c8cd54}
+
+
+Process filter format form submissions. \hypertarget{filter_8admin_8inc_1ae5e99340abc69aadeff9d2a538d578}{
+\index{filter.admin.inc@{filter.admin.inc}!filter\_\-admin\_\-format\_\-form\_\-validate@{filter\_\-admin\_\-format\_\-form\_\-validate}}
+\index{filter\_\-admin\_\-format\_\-form\_\-validate@{filter\_\-admin\_\-format\_\-form\_\-validate}!filter.admin.inc@{filter.admin.inc}}
+\subsubsection[{filter\_\-admin\_\-format\_\-form\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}filter\_\-admin\_\-format\_\-form\_\-validate (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{filter_8admin_8inc_1ae5e99340abc69aadeff9d2a538d578}
+
+
+Validate filter format form submissions. \hypertarget{filter_8admin_8inc_ad02098c7cd9b370e0692fb74f498706}{
+\index{filter.admin.inc@{filter.admin.inc}!filter\_\-admin\_\-format\_\-page@{filter\_\-admin\_\-format\_\-page}}
+\index{filter\_\-admin\_\-format\_\-page@{filter\_\-admin\_\-format\_\-page}!filter.admin.inc@{filter.admin.inc}}
+\subsubsection[{filter\_\-admin\_\-format\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}filter\_\-admin\_\-format\_\-page (\$ {\em format} = {\tt NULL})}}
+\label{filter_8admin_8inc_ad02098c7cd9b370e0692fb74f498706}
+
+
+Menu callback; Display a filter format form. \hypertarget{filter_8admin_8inc_46f1de68199cbb6be953d33cea19967f}{
+\index{filter.admin.inc@{filter.admin.inc}!filter\_\-admin\_\-order\_\-page@{filter\_\-admin\_\-order\_\-page}}
+\index{filter\_\-admin\_\-order\_\-page@{filter\_\-admin\_\-order\_\-page}!filter.admin.inc@{filter.admin.inc}}
+\subsubsection[{filter\_\-admin\_\-order\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}filter\_\-admin\_\-order\_\-page (\$ {\em format})}}
+\label{filter_8admin_8inc_46f1de68199cbb6be953d33cea19967f}
+
+
+Menu callback; display form for ordering filters for a format. \hypertarget{filter_8admin_8inc_b784a456f8aaeddc16e19018b80042b0}{
+\index{filter.admin.inc@{filter.admin.inc}!filter\_\-admin\_\-order\_\-submit@{filter\_\-admin\_\-order\_\-submit}}
+\index{filter\_\-admin\_\-order\_\-submit@{filter\_\-admin\_\-order\_\-submit}!filter.admin.inc@{filter.admin.inc}}
+\subsubsection[{filter\_\-admin\_\-order\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}filter\_\-admin\_\-order\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{filter_8admin_8inc_b784a456f8aaeddc16e19018b80042b0}
+
+
+Process filter order configuration form submission. 

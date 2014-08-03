@@ -1,0 +1,50 @@
+\hypertarget{classviews__handler__sort__formula}{
+\section{views\_\-handler\_\-sort\_\-formula Class Reference}
+\label{classviews__handler__sort__formula}\index{views\_\-handler\_\-sort\_\-formula@{views\_\-handler\_\-sort\_\-formula}}
+}
+Inheritance diagram for views\_\-handler\_\-sort\_\-formula::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4cm]{classviews__handler__sort__formula}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__handler__sort__formula_19d1b335b939c45903815256b5a6e0b8}{construct} ()
+\item 
+\hyperlink{classviews__handler__sort__formula_208dff453ab94f55000e8027ed3c8588}{query} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Base sort handler that has no options and performs a simple sort
+
+Definition items:\begin{itemize}
+\item formula: The formula to use to sort on, such as with a random sort. The formula should be an array, with keys for database types, and 'default' for non-specified. 'default' is required, all others ('mysql', 'mysqli' and 'pgsql' are optional). It is recommended you use 'default' for mysql and create specific overrides for pgsql when the formulae differ. \end{itemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__handler__sort__formula_19d1b335b939c45903815256b5a6e0b8}{
+\index{views\_\-handler\_\-sort\_\-formula@{views\_\-handler\_\-sort\_\-formula}!construct@{construct}}
+\index{construct@{construct}!views_handler_sort_formula@{views\_\-handler\_\-sort\_\-formula}}
+\subsubsection[{construct}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-sort\_\-formula::construct ()}}
+\label{classviews__handler__sort__formula_19d1b335b939c45903815256b5a6e0b8}
+
+
+Constructor to take the formula this sorts on. 
+
+Reimplemented from \hyperlink{classviews__object_6583d6be7e59dd1e39056e320ea2c2d4}{views\_\-object}.\hypertarget{classviews__handler__sort__formula_208dff453ab94f55000e8027ed3c8588}{
+\index{views\_\-handler\_\-sort\_\-formula@{views\_\-handler\_\-sort\_\-formula}!query@{query}}
+\index{query@{query}!views_handler_sort_formula@{views\_\-handler\_\-sort\_\-formula}}
+\subsubsection[{query}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-sort\_\-formula::query ()}}
+\label{classviews__handler__sort__formula_208dff453ab94f55000e8027ed3c8588}
+
+
+Called to add the sort to a query. 
+
+Reimplemented from \hyperlink{classviews__handler__sort_94fa33c5d037e41a927583fce2df3d18}{views\_\-handler\_\-sort}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/handlers/views\_\-handler\_\-sort\_\-formula.inc\end{CompactItemize}

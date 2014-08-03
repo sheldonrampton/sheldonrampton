@@ -1,0 +1,61 @@
+\hypertarget{sites_2all_2themes_2zen_2templates_2block_8tpl_8php}{
+\section{sites/all/themes/zen/templates/block.tpl.php File Reference}
+\label{sites_2all_2themes_2zen_2templates_2block_8tpl_8php}\index{sites/all/themes/zen/templates/block.tpl.php@{sites/all/themes/zen/templates/block.tpl.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hypertarget{sites_2all_2themes_2zen_2templates_2block_8tpl_8php_1d314df26c9d2df18cfcb1d3b547fba2}{
+print \textbf{\$block\_\-html\_\-id}}
+\label{sites_2all_2themes_2zen_2templates_2block_8tpl_8php_1d314df26c9d2df18cfcb1d3b547fba2}
+
+\item 
+\hypertarget{sites_2all_2themes_2zen_2templates_2block_8tpl_8php_6d48ecbdbc70ca1812e665169b5fa1e2}{
+print \textbf{\$classes}}
+\label{sites_2all_2themes_2zen_2templates_2block_8tpl_8php_6d48ecbdbc70ca1812e665169b5fa1e2}
+
+\item 
+\hypertarget{sites_2all_2themes_2zen_2templates_2block_8tpl_8php_a9240680e3cbd38bd81f4a04400b4b1a}{
+if(\$title) \textbf{endif}}
+\label{sites_2all_2themes_2zen_2templates_2block_8tpl_8php_a9240680e3cbd38bd81f4a04400b4b1a}
+
+\item 
+\hypertarget{sites_2all_2themes_2zen_2templates_2block_8tpl_8php_b7b7210f43aa78e34f0b202de894a74c}{
+print \textbf{\$content}}
+\label{sites_2all_2themes_2zen_2templates_2block_8tpl_8php_b7b7210f43aa78e34f0b202de894a74c}
+
+\item 
+\hypertarget{sites_2all_2themes_2zen_2templates_2block_8tpl_8php_9c32f2aed93e2402d4e45fb55daacb1f}{
+print \textbf{\$edit\_\-links}}
+\label{sites_2all_2themes_2zen_2templates_2block_8tpl_8php_9c32f2aed93e2402d4e45fb55daacb1f}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Theme implementation to display a block.
+
+Available variables:\begin{itemize}
+\item \$title: Block title.\item \$content: Block content.\item \$block-$>$module: Module that generated the block.\item \$block-$>$delta: An ID for the block, unique within each module.\item \$block-$>$region: The block region embedding the current block.\item \$edit\_\-links: A list of contextual links for the block. It can be manipulated through the variable \$edit\_\-links\_\-array from preprocess functions.\item \$classes: String of classes that can be used to style contextually through CSS. It can be manipulated through the variable \$classes\_\-array from preprocess functions. The default values can be one or more of the following:\begin{itemize}
+\item block: The current template type, i.e., \char`\"{}theming hook\char`\"{}.\item block-\mbox{[}module\mbox{]}: The module generating the block. For example, the user module is responsible for handling the default user navigation block. In that case the class would be \char`\"{}block-user\char`\"{}.\item region-count-\mbox{[}x\mbox{]}: The position of the block in the list of blocks in the current region.\item region-odd: An odd-numbered block of the list of blocks in the current region.\item region-even: An even-numbered block of the list of blocks in the current region.\item count-\mbox{[}x\mbox{]}: The position of the block in the list of blocks on the current page.\item odd: An odd-numbered block of the list of blocks on the current page.\item even: An even-numbered block of the list of blocks on the current page.\end{itemize}
+\end{itemize}
+
+
+Helper variables:\begin{itemize}
+\item \$classes\_\-array: Array of html class attribute values. It is flattened into a string within the variable \$classes.\item \$edit\_\-links\_\-array: An array of contextual links for the block.\item \$block\_\-zebra: Outputs 'odd' and 'even' dependent on each block region.\item \begin{Desc}
+\item[zebra]Same output as \end{Desc}
+block\_\-zebra but independent of any block region.\item \$block\_\-id: Counter dependent on each block region.\item \begin{Desc}
+\item[id]Same output as \end{Desc}
+block\_\-id but independent of any block region.\item \$is\_\-front: Flags true when presented in the front page.\item \$logged\_\-in: Flags true when the current user is a logged-in member.\item \$is\_\-admin: Flags true when the current user is an administrator.\item \$block\_\-html\_\-id: A valid HTML ID and guaranteed unique.\end{itemize}
+
+
+\begin{Desc}
+\item[See also:]\hyperlink{includes_2theme_8inc_3eeb7bcdba7ef4859f99586da264d347}{template\_\-preprocess()} 
+
+\hyperlink{sites_2all_2themes_2zen_2template_8php_34cb06c8098f8e1c710c501bb9a64d8b}{zen\_\-preprocess()} 
+
+\hyperlink{includes_2theme_8inc_f4bcb538ddb98ffdd9ec8037631f10fa}{template\_\-preprocess\_\-block()} 
+
+\hyperlink{sites_2all_2themes_2zen_2template_8php_1004cb430e9ecab4c4dc373a30e2340e}{zen\_\-preprocess\_\-block()} 
+
+\hyperlink{sites_2all_2themes_2zen_2template_8php_3790b825810aa4bfd00c27c37817a7d8}{zen\_\-process()} \end{Desc}

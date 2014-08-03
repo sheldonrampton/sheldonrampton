@@ -1,0 +1,86 @@
+\hypertarget{filefield_8theme_8inc}{
+\section{sites/all/modules/contrib/filefield/filefield.theme.inc File Reference}
+\label{filefield_8theme_8inc}\index{sites/all/modules/contrib/filefield/filefield.theme.inc@{sites/all/modules/contrib/filefield/filefield.theme.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{filefield_8theme_8inc_6df3b5d0fbba2c291425ea6ebf9212bb}{theme\_\-filefield\_\-icon} (\$file)
+\item 
+\hyperlink{filefield_8theme_8inc_2920d29854bb1b8d0a5fd56ab9d38dbb}{\_\-filefield\_\-icon\_\-url} (\$file, \$theme=NULL)
+\item 
+\hyperlink{filefield_8theme_8inc_9774c6058393a3ca64f2acd6e882c4f2}{\_\-filefield\_\-icon\_\-path} (\$file, \$theme=NULL)
+\item 
+\hyperlink{filefield_8theme_8inc_bed7196babc8d70ce0720a7a97a2327a}{\_\-filefield\_\-icon\_\-directory} (\$theme=NULL)
+\item 
+\hypertarget{filefield_8theme_8inc_872fdaf64e7f7bab7a23dd55d116067f}{
+\textbf{\_\-filefield\_\-create\_\-icon\_\-path} (\$icon\_\-name, \$theme=NULL)}
+\label{filefield_8theme_8inc_872fdaf64e7f7bab7a23dd55d116067f}
+
+\item 
+\hypertarget{filefield_8theme_8inc_df25ecfa4e108058c5cbe14111d5da8a}{
+\textbf{\_\-filefield\_\-generic\_\-icon\_\-map} (\$file)}
+\label{filefield_8theme_8inc_df25ecfa4e108058c5cbe14111d5da8a}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Theme functions used for normal file output.
+
+Uses content.module to store the fid and field specific metadata, and Drupal's \{files\} table to store the actual file data. 
+
+\subsection{Function Documentation}
+\hypertarget{filefield_8theme_8inc_bed7196babc8d70ce0720a7a97a2327a}{
+\index{filefield.theme.inc@{filefield.theme.inc}!\_\-filefield\_\-icon\_\-directory@{\_\-filefield\_\-icon\_\-directory}}
+\index{\_\-filefield\_\-icon\_\-directory@{\_\-filefield\_\-icon\_\-directory}!filefield.theme.inc@{filefield.theme.inc}}
+\subsubsection[{\_\-filefield\_\-icon\_\-directory}]{\setlength{\rightskip}{0pt plus 5cm}\_\-filefield\_\-icon\_\-directory (\$ {\em theme} = {\tt NULL})}}
+\label{filefield_8theme_8inc_bed7196babc8d70ce0720a7a97a2327a}
+
+
+Internal function to convert a file icon theme name to a directory. \hypertarget{filefield_8theme_8inc_9774c6058393a3ca64f2acd6e882c4f2}{
+\index{filefield.theme.inc@{filefield.theme.inc}!\_\-filefield\_\-icon\_\-path@{\_\-filefield\_\-icon\_\-path}}
+\index{\_\-filefield\_\-icon\_\-path@{\_\-filefield\_\-icon\_\-path}!filefield.theme.inc@{filefield.theme.inc}}
+\subsubsection[{\_\-filefield\_\-icon\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}\_\-filefield\_\-icon\_\-path (\$ {\em file}, \/  \$ {\em theme} = {\tt NULL})}}
+\label{filefield_8theme_8inc_9774c6058393a3ca64f2acd6e882c4f2}
+
+
+Given a file object, create a URL to a matching icon.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$file}]A file object. \item[{\em \$theme}]Optional. The theme to be used for the icon. Defaults to the value of the \char`\"{}filefield\_\-icon\_\-theme\char`\"{} variable. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]A string to the icon as a local path, or FALSE if an appropriate icon could not be found. \end{Desc}
+\hypertarget{filefield_8theme_8inc_2920d29854bb1b8d0a5fd56ab9d38dbb}{
+\index{filefield.theme.inc@{filefield.theme.inc}!\_\-filefield\_\-icon\_\-url@{\_\-filefield\_\-icon\_\-url}}
+\index{\_\-filefield\_\-icon\_\-url@{\_\-filefield\_\-icon\_\-url}!filefield.theme.inc@{filefield.theme.inc}}
+\subsubsection[{\_\-filefield\_\-icon\_\-url}]{\setlength{\rightskip}{0pt plus 5cm}\_\-filefield\_\-icon\_\-url (\$ {\em file}, \/  \$ {\em theme} = {\tt NULL})}}
+\label{filefield_8theme_8inc_2920d29854bb1b8d0a5fd56ab9d38dbb}
+
+
+Given a file object, create a URL to a matching icon.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$file}]A file object. \item[{\em \$theme}]Optional. The theme to be used for the icon. Defaults to the value of the \char`\"{}filefield\_\-icon\_\-theme\char`\"{} variable. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]A URL string to the icon, or FALSE if an appropriate icon could not be found. \end{Desc}
+\hypertarget{filefield_8theme_8inc_6df3b5d0fbba2c291425ea6ebf9212bb}{
+\index{filefield.theme.inc@{filefield.theme.inc}!theme\_\-filefield\_\-icon@{theme\_\-filefield\_\-icon}}
+\index{theme\_\-filefield\_\-icon@{theme\_\-filefield\_\-icon}!filefield.theme.inc@{filefield.theme.inc}}
+\subsubsection[{theme\_\-filefield\_\-icon}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-filefield\_\-icon (\$ {\em file})}}
+\label{filefield_8theme_8inc_6df3b5d0fbba2c291425ea6ebf9212bb}
+
+
+Return an image with an appropriate icon for the given file.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$file}]A file object for which to make an icon. \end{description}
+\end{Desc}

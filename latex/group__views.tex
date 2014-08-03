@@ -1,0 +1,55 @@
+\hypertarget{group__views}{
+\section{Views}
+\label{group__views}\index{Views@{Views}}
+}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classflag__handler__argument__content__id}{flag\_\-handler\_\-argument\_\-content\_\-id}
+\item 
+class \hyperlink{classflag__handler__field__ops}{flag\_\-handler\_\-field\_\-ops}
+\item 
+class \hyperlink{classflag__handler__filter__flagged}{flag\_\-handler\_\-filter\_\-flagged}
+\item 
+class \hyperlink{classflag__handler__relationship__content}{flag\_\-handler\_\-relationship\_\-content}
+\item 
+class \hyperlink{classflag__handler__relationship__counts}{flag\_\-handler\_\-relationship\_\-counts}
+\item 
+class \hyperlink{classflag__handler__relationship__user__content}{flag\_\-handler\_\-relationship\_\-user\_\-content}
+\item 
+class \hyperlink{classflag__plugin__argument__validate__flaggability}{flag\_\-plugin\_\-argument\_\-validate\_\-flaggability}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{group__views_g91f53a4d24f7c81f8a913e56154821c0}{flag\_\-flag::get\_\-views\_\-info} ()
+\item 
+\hyperlink{group__views_g7ffe2653803be84d2c2d21dea608a6da}{flag\_\-flag::applies\_\-to\_\-content\_\-id\_\-array} (\$content\_\-ids)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+End of \char`\"{}addtogroup rules\char`\"{}.
+
+Methods that can be overridden to support the Views module. 
+
+\subsection{Function Documentation}
+\hypertarget{group__views_g7ffe2653803be84d2c2d21dea608a6da}{
+\index{views@{views}!applies\_\-to\_\-content\_\-id\_\-array@{applies\_\-to\_\-content\_\-id\_\-array}}
+\index{applies\_\-to\_\-content\_\-id\_\-array@{applies\_\-to\_\-content\_\-id\_\-array}!views@{views}}
+\subsubsection[{applies\_\-to\_\-content\_\-id\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-flag::applies\_\-to\_\-content\_\-id\_\-array (\$ {\em content\_\-ids})\hspace{0.3cm}{\tt  \mbox{[}inherited\mbox{]}}}}
+\label{group__views_g7ffe2653803be84d2c2d21dea608a6da}
+
+
+Similar to \hyperlink{classflag__flag_a38afcc59d7d1ef028215521c6fcdc22}{applies\_\-to\_\-content\_\-id()} but works on a bunch of IDs. It is called in the pre\_\-render() stage of the 'Flag links' field to find out where that link applies. The reason we do a separate DB query, and not lump this test in the Views query, is to make 'many to one' tests possible without interfering with the rows, and also to reduce the complexity of the code. 
+
+Reimplemented in \hyperlink{classflag__node_c1e88f053ece925c7f28c0e8fe4b020f}{flag\_\-node}, \hyperlink{classflag__comment_27a4b1110c52e7237c06dc6c3ad6c092}{flag\_\-comment}, and \hyperlink{classflag__user_0ccc7caff183a9e9067d49a89917c003}{flag\_\-user}.\hypertarget{group__views_g91f53a4d24f7c81f8a913e56154821c0}{
+\index{views@{views}!get\_\-views\_\-info@{get\_\-views\_\-info}}
+\index{get\_\-views\_\-info@{get\_\-views\_\-info}!views@{views}}
+\subsubsection[{get\_\-views\_\-info}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-flag::get\_\-views\_\-info ()\hspace{0.3cm}{\tt  \mbox{[}static, inherited\mbox{]}}}}
+\label{group__views_g91f53a4d24f7c81f8a913e56154821c0}
+
+
+Returns information needed for Views integration. E.g., the Views table holding the flagged content, its primary key, and various labels. See derived classes for examples. 
+
+Reimplemented in \hyperlink{classflag__node_bea5310889ebc0a8564823f3067d5846}{flag\_\-node}, \hyperlink{classflag__comment_e3f7ebade72b8cdac4042de702d2978b}{flag\_\-comment}, and \hyperlink{classflag__user_6964b8042fb9bb01e197705be533abba}{flag\_\-user}.

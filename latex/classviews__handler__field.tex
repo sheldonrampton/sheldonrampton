@@ -1,0 +1,354 @@
+\hypertarget{classviews__handler__field}{
+\section{views\_\-handler\_\-field Class Reference}
+\label{classviews__handler__field}\index{views\_\-handler\_\-field@{views\_\-handler\_\-field}}
+}
+Inheritance diagram for views\_\-handler\_\-field::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12cm]{classviews__handler__field}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__handler__field_3d50050864c255b71c842972a45d39f6}{construct} ()
+\item 
+\hyperlink{classviews__handler__field_cdeb45612be43c2d58814726b35e55aa}{allow\_\-advanced\_\-render} ()
+\item 
+\hyperlink{classviews__handler__field_7eaaf0fd6fbc57c2955f88b257394d19}{init} (\&\$\hyperlink{classview}{view}, \$options)
+\item 
+\hyperlink{classviews__handler__field_4f661f91bcbe80d4a00c30a31456c502}{query} ()
+\item 
+\hyperlink{classviews__handler__field_1590869371ef24a211e591a07ed5f7cb}{add\_\-additional\_\-fields} (\$fields=NULL)
+\item 
+\hyperlink{classviews__handler__field_1c8cabe835ba05ed045c8f6eec6a36b8}{click\_\-sort} (\$order)
+\item 
+\hyperlink{classviews__handler__field_22ef16d2b34823a3d12f273d34278b00}{click\_\-sortable} ()
+\item 
+\hyperlink{classviews__handler__field_57c9be8a5a6a5f447c0320bf1a5378ee}{label} ()
+\item 
+\hyperlink{classviews__handler__field_dc0ac73a91e5bfb8da464b3a804a7aa9}{element\_\-type} ()
+\item 
+\hyperlink{classviews__handler__field_64c69a8a3697603f8283405071c25b76}{option\_\-definition} ()
+\item 
+\hyperlink{classviews__handler__field_0435d161922b7b4b84f02a2e79bb947a}{options\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__handler__field_984d6ce9f6401260fca2d4673b27ae76}{admin\_\-summary} ()
+\item 
+\hyperlink{classviews__handler__field_e30a1d9c98c62ae40c90b938e09cd0ec}{pre\_\-render} (\$values)
+\item 
+\hyperlink{classviews__handler__field_82ff951c5e9ceb97b2eab86f880cbc1e}{render} (\$values)
+\item 
+\hyperlink{classviews__handler__field_eaf2c6f1ad7afa813ba64de4be3ecd58}{advanced\_\-render} (\$values)
+\item 
+\hyperlink{classviews__handler__field_1d6e3f832a9a22410029e79cd9cfc32e}{render\_\-text} (\$alter)
+\item 
+\hyperlink{classviews__handler__field_afbf9e117418a38b937ba670126215a4}{render\_\-altered} (\$alter, \$tokens)
+\item 
+\hyperlink{classviews__handler__field_a2c5f49595a97848d523338a5c64a7c6}{render\_\-trim\_\-text} (\$alter, \$value)
+\item 
+\hyperlink{classviews__handler__field_44eafd927c2a6d93af234f69e8560078}{render\_\-as\_\-link} (\$alter, \$text, \$tokens)
+\item 
+\hyperlink{classviews__handler__field_09c76b4e29ba8b0e6694ba4e341ef609}{get\_\-render\_\-tokens} (\$item)
+\item 
+\hyperlink{classviews__handler__field_c61cc83a4c8c579993a254b5b1e16cbc}{add\_\-self\_\-tokens} (\&\$tokens, \$item)
+\item 
+\hyperlink{classviews__handler__field_e33446d1059f13fbfb06a37da04d320e}{document\_\-self\_\-tokens} (\&\$tokens)
+\item 
+\hyperlink{classviews__handler__field_31b777437d94e4904c546e3bb0d76c16}{theme} (\$values)
+\item 
+\hypertarget{classviews__handler__field_fd9437e7af9535ed5301dc48f619f24a}{
+\textbf{theme\_\-functions} ()}
+\label{classviews__handler__field_fd9437e7af9535ed5301dc48f619f24a}
+
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{classviews__handler__field_4b54482d14d20926ed1a5b43c3cdc4d4}{
+\textbf{\$field\_\-alias} = 'unknown'}
+\label{classviews__handler__field_4b54482d14d20926ed1a5b43c3cdc4d4}
+
+\item 
+\hypertarget{classviews__handler__field_1de93e099b1d18c873f0ad2110ff24d3}{
+\textbf{\$aliases} = array()}
+\label{classviews__handler__field_1de93e099b1d18c873f0ad2110ff24d3}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Base field handler that has no options and renders an unformatted field.
+
+Definition terms:\begin{itemize}
+\item additional fields: An array of fields that should be added to the query for some purpose. The array is in the form of: array('identifier' =$>$ array('table' =$>$ tablename, 'field' =$>$ fieldname); as many fields as are necessary may be in this array.\item click sortable: If TRUE, this field may be click sorted. \end{itemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__handler__field_1590869371ef24a211e591a07ed5f7cb}{
+\index{views\_\-handler\_\-field@{views\_\-handler\_\-field}!add\_\-additional\_\-fields@{add\_\-additional\_\-fields}}
+\index{add\_\-additional\_\-fields@{add\_\-additional\_\-fields}!views_handler_field@{views\_\-handler\_\-field}}
+\subsubsection[{add\_\-additional\_\-fields}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field::add\_\-additional\_\-fields (\$ {\em fields} = {\tt NULL})}}
+\label{classviews__handler__field_1590869371ef24a211e591a07ed5f7cb}
+
+
+Add 'additional' fields to the query.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$fields}]An array of fields. The key is an identifier used to later find the field alias used. The value is either a string in which case it's assumed to be a field on this handler's table; or it's an array in the form of 
+
+\begin{Code}\begin{verbatim} array('table' => $tablename, 'field' => $fieldname) 
+\end{verbatim}
+\end{Code}
+
+ \end{description}
+\end{Desc}
+\hypertarget{classviews__handler__field_c61cc83a4c8c579993a254b5b1e16cbc}{
+\index{views\_\-handler\_\-field@{views\_\-handler\_\-field}!add\_\-self\_\-tokens@{add\_\-self\_\-tokens}}
+\index{add\_\-self\_\-tokens@{add\_\-self\_\-tokens}!views_handler_field@{views\_\-handler\_\-field}}
+\subsubsection[{add\_\-self\_\-tokens}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field::add\_\-self\_\-tokens (\&\$ {\em tokens}, \/  \$ {\em item})}}
+\label{classviews__handler__field_c61cc83a4c8c579993a254b5b1e16cbc}
+
+
+Add any special tokens this field might use for itself.
+
+This method is intended to be overridden by items that generate fields as a list. For example, the field that displays all terms on a node might have tokens for the tid and the term.
+
+By convention, tokens should follow the format of \mbox{[}token-subtoken\mbox{]} where token is the field ID and subtoken is the field. If the field ID is terms, then the tokens might be \mbox{[}terms-tid\mbox{]} and \mbox{[}terms-name\mbox{]}. 
+
+Reimplemented in \hyperlink{classviews__handler__field__profile__list_411c5238debac02e7cb3f582f7cd8e9f}{views\_\-handler\_\-field\_\-profile\_\-list}, \hyperlink{classviews__handler__field__term__node__tid_7fea3443ab075e3e35212ddc3b0d95f3}{views\_\-handler\_\-field\_\-term\_\-node\_\-tid}, \hyperlink{classviews__handler__field__upload__fid_0366e80867739ae07af5ee910d3022be}{views\_\-handler\_\-field\_\-upload\_\-fid}, and \hyperlink{classviews__handler__field__user__roles_ceb9ebe1ca046eec3634c85bb6b114f5}{views\_\-handler\_\-field\_\-user\_\-roles}.\hypertarget{classviews__handler__field_984d6ce9f6401260fca2d4673b27ae76}{
+\index{views\_\-handler\_\-field@{views\_\-handler\_\-field}!admin\_\-summary@{admin\_\-summary}}
+\index{admin\_\-summary@{admin\_\-summary}!views_handler_field@{views\_\-handler\_\-field}}
+\subsubsection[{admin\_\-summary}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field::admin\_\-summary ()}}
+\label{classviews__handler__field_984d6ce9f6401260fca2d4673b27ae76}
+
+
+Provide extra data to the administration form 
+
+Reimplemented from \hyperlink{classviews__handler_27a5cb35f3f17322957730a95b6be11e}{views\_\-handler}.\hypertarget{classviews__handler__field_eaf2c6f1ad7afa813ba64de4be3ecd58}{
+\index{views\_\-handler\_\-field@{views\_\-handler\_\-field}!advanced\_\-render@{advanced\_\-render}}
+\index{advanced\_\-render@{advanced\_\-render}!views_handler_field@{views\_\-handler\_\-field}}
+\subsubsection[{advanced\_\-render}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field::advanced\_\-render (\$ {\em values})}}
+\label{classviews__handler__field_eaf2c6f1ad7afa813ba64de4be3ecd58}
+
+
+Render a field using advanced settings.
+
+This renders a field normally, then decides if render-as-link and text-replacement rendering is necessary. \hypertarget{classviews__handler__field_cdeb45612be43c2d58814726b35e55aa}{
+\index{views\_\-handler\_\-field@{views\_\-handler\_\-field}!allow\_\-advanced\_\-render@{allow\_\-advanced\_\-render}}
+\index{allow\_\-advanced\_\-render@{allow\_\-advanced\_\-render}!views_handler_field@{views\_\-handler\_\-field}}
+\subsubsection[{allow\_\-advanced\_\-render}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field::allow\_\-advanced\_\-render ()}}
+\label{classviews__handler__field_cdeb45612be43c2d58814726b35e55aa}
+
+
+Determine if this field can allow advanced rendering.
+
+Fields can set this to FALSE if they do not wish to allow token based rewriting or link-making. 
+
+Reimplemented in \hyperlink{classviews__handler__field__prerender__list_341b000d2b0e13c3819e47165ca33ec9}{views\_\-handler\_\-field\_\-prerender\_\-list}.\hypertarget{classviews__handler__field_1c8cabe835ba05ed045c8f6eec6a36b8}{
+\index{views\_\-handler\_\-field@{views\_\-handler\_\-field}!click\_\-sort@{click\_\-sort}}
+\index{click\_\-sort@{click\_\-sort}!views_handler_field@{views\_\-handler\_\-field}}
+\subsubsection[{click\_\-sort}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field::click\_\-sort (\$ {\em order})}}
+\label{classviews__handler__field_1c8cabe835ba05ed045c8f6eec6a36b8}
+
+
+Called to determine what to tell the clicksorter. 
+
+Reimplemented in \hyperlink{classviews__handler__field__search__score_b3ddf2a010848822c751a774f5bf9a67}{views\_\-handler\_\-field\_\-search\_\-score}.\hypertarget{classviews__handler__field_22ef16d2b34823a3d12f273d34278b00}{
+\index{views\_\-handler\_\-field@{views\_\-handler\_\-field}!click\_\-sortable@{click\_\-sortable}}
+\index{click\_\-sortable@{click\_\-sortable}!views_handler_field@{views\_\-handler\_\-field}}
+\subsubsection[{click\_\-sortable}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field::click\_\-sortable ()}}
+\label{classviews__handler__field_22ef16d2b34823a3d12f273d34278b00}
+
+
+Determine if this field is click sortable. \hypertarget{classviews__handler__field_3d50050864c255b71c842972a45d39f6}{
+\index{views\_\-handler\_\-field@{views\_\-handler\_\-field}!construct@{construct}}
+\index{construct@{construct}!views_handler_field@{views\_\-handler\_\-field}}
+\subsubsection[{construct}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field::construct ()}}
+\label{classviews__handler__field_3d50050864c255b71c842972a45d39f6}
+
+
+Construct a new field handler. 
+
+Reimplemented from \hyperlink{classviews__object_6583d6be7e59dd1e39056e320ea2c2d4}{views\_\-object}.
+
+Reimplemented in \hyperlink{classviews__handler__field__node__link__export_1ccad9b1e274a9345a3f167a58e7f997}{views\_\-handler\_\-field\_\-node\_\-link\_\-export}, \hyperlink{classviews__handler__field__markup_ddc5d6e6130133c1d65d8b96dce502a5}{views\_\-handler\_\-field\_\-markup}, \hyperlink{classviews__handler__field__aggregator__category_d85fc06aa0e07281e3989dee8bd0c975}{views\_\-handler\_\-field\_\-aggregator\_\-category}, \hyperlink{classviews__handler__field__aggregator__title__link_bcde91e341b70cc842fec304c7de8376}{views\_\-handler\_\-field\_\-aggregator\_\-title\_\-link}, \hyperlink{classviews__handler__field__comment__link_11c7fcae5ff5f91fa48fc1581115869b}{views\_\-handler\_\-field\_\-comment\_\-link}, \hyperlink{classviews__handler__field__comment__link__edit_b18ca319bec910ab7771786522718d0e}{views\_\-handler\_\-field\_\-comment\_\-link\_\-edit}, \hyperlink{classviews__handler__field__comment__node__link_6a8823310c2ef5c3a70e6a394e45e699}{views\_\-handler\_\-field\_\-comment\_\-node\_\-link}, \hyperlink{classviews__handler__field__node__new__comments_a496a5184a390c29a60e0dc7d16c23e5}{views\_\-handler\_\-field\_\-node\_\-new\_\-comments}, \hyperlink{classviews__handler__field__filter__format__name_eacc272fd36677b2d56063a578e23d3a}{views\_\-handler\_\-field\_\-filter\_\-format\_\-name}, \hyperlink{classviews__handler__field__locale__link__edit_6f7db94c0dc07564c1853fd7ef153a6e}{views\_\-handler\_\-field\_\-locale\_\-link\_\-edit}, \hyperlink{classviews__handler__field__node_70404545ab178e131881fa5c5edd4b87}{views\_\-handler\_\-field\_\-node}, \hyperlink{classviews__handler__field__node__link_c3f643ba7dd0435fc03c7bf477907484}{views\_\-handler\_\-field\_\-node\_\-link}, \hyperlink{classviews__handler__field__node__link__delete_e00ce6a645c0545eec54fac96a3a5cf9}{views\_\-handler\_\-field\_\-node\_\-link\_\-delete}, \hyperlink{classviews__handler__field__node__link__edit_8b0caf63f855b91c68b7dd000e2bef9e}{views\_\-handler\_\-field\_\-node\_\-link\_\-edit}, \hyperlink{classviews__handler__field__node__path_9f8110039f0e7f6bb87792c222c7fd06}{views\_\-handler\_\-field\_\-node\_\-path}, \hyperlink{classviews__handler__field__node__revision__link__delete_bec2f48d4827ff818da9c22716ccbd78}{views\_\-handler\_\-field\_\-node\_\-revision\_\-link\_\-delete}, \hyperlink{classviews__handler__field__node__revision__link__revert_51850ebf69c6cdbc043378a538931fc0}{views\_\-handler\_\-field\_\-node\_\-revision\_\-link\_\-revert}, \hyperlink{classviews__handler__field__taxonomy_7020806fbe7b4b7c182c422dd327b0fc}{views\_\-handler\_\-field\_\-taxonomy}, \hyperlink{classviews__handler__field__node__link__translate_99c65887da95497fc89023f57d07bc34}{views\_\-handler\_\-field\_\-node\_\-link\_\-translate}, \hyperlink{classviews__handler__field__node__translation__link_834c20607c0a929900b7ace53425847a}{views\_\-handler\_\-field\_\-node\_\-translation\_\-link}, \hyperlink{classviews__handler__field__upload__fid_e651b7971cdda48c84d470f5c86cf492}{views\_\-handler\_\-field\_\-upload\_\-fid}, \hyperlink{classviews__handler__field__user__link_3c0e66ff0504b344066db923819456f7}{views\_\-handler\_\-field\_\-user\_\-link}, \hyperlink{classviews__handler__field__user__picture_65f7bf025afe7e60df88cfe9a72eaf4a}{views\_\-handler\_\-field\_\-user\_\-picture}, and \hyperlink{classviews__handler__field__user__roles_bf8254566ae390355b35d4593514b033}{views\_\-handler\_\-field\_\-user\_\-roles}.\hypertarget{classviews__handler__field_e33446d1059f13fbfb06a37da04d320e}{
+\index{views\_\-handler\_\-field@{views\_\-handler\_\-field}!document\_\-self\_\-tokens@{document\_\-self\_\-tokens}}
+\index{document\_\-self\_\-tokens@{document\_\-self\_\-tokens}!views_handler_field@{views\_\-handler\_\-field}}
+\subsubsection[{document\_\-self\_\-tokens}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field::document\_\-self\_\-tokens (\&\$ {\em tokens})}}
+\label{classviews__handler__field_e33446d1059f13fbfb06a37da04d320e}
+
+
+Document any special tokens this field might use for itself.
+
+\begin{Desc}
+\item[See also:]\hyperlink{classviews__handler__field_c61cc83a4c8c579993a254b5b1e16cbc}{add\_\-self\_\-tokens()} for details. \end{Desc}
+
+
+Reimplemented in \hyperlink{classviews__handler__field__profile__list_b3950ce980ce3c8e8ce274a25b4e3351}{views\_\-handler\_\-field\_\-profile\_\-list}, \hyperlink{classviews__handler__field__term__node__tid_fa909e51eb90573d468deb29a3943d94}{views\_\-handler\_\-field\_\-term\_\-node\_\-tid}, \hyperlink{classviews__handler__field__upload__fid_8e3f8fc239933c8c09c723dcada273de}{views\_\-handler\_\-field\_\-upload\_\-fid}, and \hyperlink{classviews__handler__field__user__roles_49745a7c1d16f9ee62d5ad6406fe0863}{views\_\-handler\_\-field\_\-user\_\-roles}.\hypertarget{classviews__handler__field_dc0ac73a91e5bfb8da464b3a804a7aa9}{
+\index{views\_\-handler\_\-field@{views\_\-handler\_\-field}!element\_\-type@{element\_\-type}}
+\index{element\_\-type@{element\_\-type}!views_handler_field@{views\_\-handler\_\-field}}
+\subsubsection[{element\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field::element\_\-type ()}}
+\label{classviews__handler__field_dc0ac73a91e5bfb8da464b3a804a7aa9}
+
+
+Return DIV or SPAN based upon the field's element type. 
+
+Reimplemented in \hyperlink{classviews__handler__field__markup_0de6d7c5e99dfd22ce7e7a4662af8082}{views\_\-handler\_\-field\_\-markup}, and \hyperlink{classviews__handler__field__user__picture_a489de4d3a5f1d5656bad62545ee81ec}{views\_\-handler\_\-field\_\-user\_\-picture}.\hypertarget{classviews__handler__field_09c76b4e29ba8b0e6694ba4e341ef609}{
+\index{views\_\-handler\_\-field@{views\_\-handler\_\-field}!get\_\-render\_\-tokens@{get\_\-render\_\-tokens}}
+\index{get\_\-render\_\-tokens@{get\_\-render\_\-tokens}!views_handler_field@{views\_\-handler\_\-field}}
+\subsubsection[{get\_\-render\_\-tokens}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field::get\_\-render\_\-tokens (\$ {\em item})}}
+\label{classviews__handler__field_09c76b4e29ba8b0e6694ba4e341ef609}
+
+
+Get the 'render' tokens to use for advanced rendering.
+
+This runs through all of the fields and arguments that are available and gets their values. This will then be used in one giant str\_\-replace(). \hypertarget{classviews__handler__field_7eaaf0fd6fbc57c2955f88b257394d19}{
+\index{views\_\-handler\_\-field@{views\_\-handler\_\-field}!init@{init}}
+\index{init@{init}!views_handler_field@{views\_\-handler\_\-field}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field::init (\&\$ {\em view}, \/  \$ {\em options})}}
+\label{classviews__handler__field_7eaaf0fd6fbc57c2955f88b257394d19}
+
+
+init the handler with necessary data. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$view}]The \$view object this handler is attached to. \item[{\em \$options}]The item from the database; the actual contents of this will vary based upon the type of handler. \end{description}
+\end{Desc}
+
+
+Reimplemented from \hyperlink{classviews__handler_1f5f42ba46d3584280788fda97eee8c5}{views\_\-handler}.
+
+Reimplemented in \hyperlink{classviews__handler__field__boolean_0150fb8a25c2f1f2537d476b1c448238}{views\_\-handler\_\-field\_\-boolean}, \hyperlink{classviews__handler__field__node__new__comments_8f93300640b88efd9401dc2666fcc64a}{views\_\-handler\_\-field\_\-node\_\-new\_\-comments}, \hyperlink{classviews__handler__field__history__user__timestamp_0cc37c49613f0f55e4fc35733c35b806}{views\_\-handler\_\-field\_\-history\_\-user\_\-timestamp}, and \hyperlink{classviews__handler__field__term__node__tid_639e45d86c954e90120193b84c8b910b}{views\_\-handler\_\-field\_\-term\_\-node\_\-tid}.\hypertarget{classviews__handler__field_57c9be8a5a6a5f447c0320bf1a5378ee}{
+\index{views\_\-handler\_\-field@{views\_\-handler\_\-field}!label@{label}}
+\index{label@{label}!views_handler_field@{views\_\-handler\_\-field}}
+\subsubsection[{label}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field::label ()}}
+\label{classviews__handler__field_57c9be8a5a6a5f447c0320bf1a5378ee}
+
+
+Get this field's label. \hypertarget{classviews__handler__field_64c69a8a3697603f8283405071c25b76}{
+\index{views\_\-handler\_\-field@{views\_\-handler\_\-field}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!views_handler_field@{views\_\-handler\_\-field}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field::option\_\-definition ()}}
+\label{classviews__handler__field_64c69a8a3697603f8283405071c25b76}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented from \hyperlink{classviews__object_b0753d0001c8c9ff98beee696b4516ba}{views\_\-object}.
+
+Reimplemented in \hyperlink{classfilefield__meta__handler__field__bitrate_678b8ef891e4b4024d22e2b914e20b15}{filefield\_\-meta\_\-handler\_\-field\_\-bitrate}, \hyperlink{classfilefield__meta__handler__field__duration_3bf4ecb0dbaa680516e6e27306771dd4}{filefield\_\-meta\_\-handler\_\-field\_\-duration}, \hyperlink{classfilefield__meta__handler__field__samplerate_007d94cba3f5de5e8e0c78e8b3b1ef5a}{filefield\_\-meta\_\-handler\_\-field\_\-samplerate}, \hyperlink{classfilefield__meta__handler__field__tags_9e809bb733cce1fcd37a59a251c70014}{filefield\_\-meta\_\-handler\_\-field\_\-tags}, \hyperlink{classflag__handler__field__ops_05750d85d477c51b5fa267a75e245d5a}{flag\_\-handler\_\-field\_\-ops}, \hyperlink{classlightbox2__handler__field__lightbox2_641e7b72ac54a1c6baf7fd2bd6424438}{lightbox2\_\-handler\_\-field\_\-lightbox2}, \hyperlink{classtwitter__views__handler__field__xss_b4f2a99eda9640650d83f2b485e9a753}{twitter\_\-views\_\-handler\_\-field\_\-xss}, \hyperlink{classviews__handler__field__file__size_d89ade5ab0f9d3db4fe71df7588c0f34}{views\_\-handler\_\-field\_\-file\_\-size}, \hyperlink{classviews__handler__field__boolean_53f8c9215cddcfb3cab33f742a1e6c52}{views\_\-handler\_\-field\_\-boolean}, \hyperlink{classviews__handler__field__custom_4089ad30293453649f51d4a68005bea1}{views\_\-handler\_\-field\_\-custom}, \hyperlink{classviews__handler__field__date_c2c907d5403ef2085b21619293d701c4}{views\_\-handler\_\-field\_\-date}, \hyperlink{classviews__handler__field__numeric_ab74a55c8b3c564ee995e210a503947b}{views\_\-handler\_\-field\_\-numeric}, \hyperlink{classviews__handler__field__prerender__list_3787d1e3974a37c72f71c062eee52b3d}{views\_\-handler\_\-field\_\-prerender\_\-list}, \hyperlink{classviews__handler__field__url_0b9b0b58eb2fbe175927c6e16d9142f9}{views\_\-handler\_\-field\_\-url}, \hyperlink{classviews__handler__field__aggregator__category_ff9a96fdcd4350cbe9323a9801996016}{views\_\-handler\_\-field\_\-aggregator\_\-category}, \hyperlink{classviews__handler__field__aggregator__title__link_92ccca19cd954e8522c77dd75119d42a}{views\_\-handler\_\-field\_\-aggregator\_\-title\_\-link}, \hyperlink{classviews__handler__field__comment_73136303aae33442ce2ea156c1262b22}{views\_\-handler\_\-field\_\-comment}, \hyperlink{classviews__handler__field__comment__link_9f066947db597494928b57423b1b7d30}{views\_\-handler\_\-field\_\-comment\_\-link}, \hyperlink{classviews__handler__field__comment__node__link_b4da7290cf0b97776fcc70c4f799e567}{views\_\-handler\_\-field\_\-comment\_\-node\_\-link}, \hyperlink{classviews__handler__field__comment__username_6a9ac27498f1ddce0a8d680d6d33b7c5}{views\_\-handler\_\-field\_\-comment\_\-username}, \hyperlink{classviews__handler__field__ncs__last__comment__name_ef3ee7ac3c57f689148d8909e0a3a3df}{views\_\-handler\_\-field\_\-ncs\_\-last\_\-comment\_\-name}, \hyperlink{classviews__handler__field__node__new__comments_eea2f5790d310ddcaba82c05593e82e7}{views\_\-handler\_\-field\_\-node\_\-new\_\-comments}, \hyperlink{classviews__handler__field__contact__link_33c1b1091d417e0e5a1b82bfdc81b83b}{views\_\-handler\_\-field\_\-contact\_\-link}, \hyperlink{classviews__handler__field__locale__link__edit_b96dd9ff121303f96d4f9cdbbb3ca906}{views\_\-handler\_\-field\_\-locale\_\-link\_\-edit}, \hyperlink{classviews__handler__field__history__user__timestamp_2cedbce8f02c9c051606c89e6d349e6b}{views\_\-handler\_\-field\_\-history\_\-user\_\-timestamp}, \hyperlink{classviews__handler__field__node_c2daf04495ea792ad0dd60c864f3a77e}{views\_\-handler\_\-field\_\-node}, \hyperlink{classviews__handler__field__node__link_68b2956fb07cb821f9f9ece53ddf7a20}{views\_\-handler\_\-field\_\-node\_\-link}, \hyperlink{classviews__handler__field__node__path_90ca65d2d782d1f58ceee0c9d53f4d23}{views\_\-handler\_\-field\_\-node\_\-path}, \hyperlink{classviews__handler__field__node__type_4e50103a014bff96644915cb0c8d33fd}{views\_\-handler\_\-field\_\-node\_\-type}, \hyperlink{classviews__handler__field__search__score_ac88046a858aad74c178cd019b2f236b}{views\_\-handler\_\-field\_\-search\_\-score}, \hyperlink{classviews__handler__field__accesslog__path_11c091160e8e55c604aeb1241581f748}{views\_\-handler\_\-field\_\-accesslog\_\-path}, \hyperlink{classviews__handler__field__file_0bf24a6e9139daa5206f209b39aea824}{views\_\-handler\_\-field\_\-file}, \hyperlink{classviews__handler__field__taxonomy_c32837e44167ccaf8901f9782298c75b}{views\_\-handler\_\-field\_\-taxonomy}, \hyperlink{classviews__handler__field__term__node__tid_6c6e6369b1897f4f6643a609b1a802a5}{views\_\-handler\_\-field\_\-term\_\-node\_\-tid}, \hyperlink{classviews__handler__field__upload__description_506091a767dacc29b687de0f0802933b}{views\_\-handler\_\-field\_\-upload\_\-description}, \hyperlink{classviews__handler__field__upload__fid_740ca6ec94e724e23023400ddbeb5978}{views\_\-handler\_\-field\_\-upload\_\-fid}, \hyperlink{classviews__handler__field__user_545d229a041bf920b95ac59d89b1e4b2}{views\_\-handler\_\-field\_\-user}, \hyperlink{classviews__handler__field__user__link_61509d4fd4bc1c98a52e550c56d42b5d}{views\_\-handler\_\-field\_\-user\_\-link}, \hyperlink{classviews__handler__field__user__mail_747c64da5c9bdbd55c7a8908779db5a1}{views\_\-handler\_\-field\_\-user\_\-mail}, and \hyperlink{classviews__handler__field__user__name_11092f8f1854e14f245b644a2fed8434}{views\_\-handler\_\-field\_\-user\_\-name}.\hypertarget{classviews__handler__field_0435d161922b7b4b84f02a2e79bb947a}{
+\index{views\_\-handler\_\-field@{views\_\-handler\_\-field}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!views_handler_field@{views\_\-handler\_\-field}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field::options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler__field_0435d161922b7b4b84f02a2e79bb947a}
+
+
+Default options form that provides the label widget that all fields should have. 
+
+Reimplemented from \hyperlink{classviews__handler_a41fcf16b177eb03e35facbae6320f74}{views\_\-handler}.
+
+Reimplemented in \hyperlink{classfilefield__meta__handler__field__bitrate_74c60e6bbcee2bbaed721a9ed7eea05c}{filefield\_\-meta\_\-handler\_\-field\_\-bitrate}, \hyperlink{classfilefield__meta__handler__field__duration_4c26d6d5b7dad8dce469f82d9bc9c70c}{filefield\_\-meta\_\-handler\_\-field\_\-duration}, \hyperlink{classfilefield__meta__handler__field__samplerate_7ca6744f5ce24aea26f093027538d5ac}{filefield\_\-meta\_\-handler\_\-field\_\-samplerate}, \hyperlink{classfilefield__meta__handler__field__tags_b95bd58dd3d2486b63c2498410cc65be}{filefield\_\-meta\_\-handler\_\-field\_\-tags}, \hyperlink{classflag__handler__field__ops_88b37806cdb2d420b830d0030ef7028a}{flag\_\-handler\_\-field\_\-ops}, \hyperlink{classlightbox2__handler__field__lightbox2_6e0462dcba8bb237b822be3d844ed24b}{lightbox2\_\-handler\_\-field\_\-lightbox2}, \hyperlink{classtwitter__views__handler__field__xss_4896b110fa64c3beed9fb17b5f01b437}{twitter\_\-views\_\-handler\_\-field\_\-xss}, \hyperlink{classviews__handler__field__broken_fc66860f4fb5a1878a131c30500e6e1d}{views\_\-handler\_\-field\_\-broken}, \hyperlink{classviews__handler__field__file__size_b701c7b97e6688971ddfdcd7e9539262}{views\_\-handler\_\-field\_\-file\_\-size}, \hyperlink{classviews__handler__field__boolean_3addce6b85348a630627f348907082e3}{views\_\-handler\_\-field\_\-boolean}, \hyperlink{classviews__handler__field__custom_886688de7d2ac5bc4ef3b588a2e5056a}{views\_\-handler\_\-field\_\-custom}, \hyperlink{classviews__handler__field__date_cc152b1ff3dd0a65bc4d372c97c7c8e0}{views\_\-handler\_\-field\_\-date}, \hyperlink{classviews__handler__field__numeric_e6f81d1896ece64e9450ebc2d60da2fd}{views\_\-handler\_\-field\_\-numeric}, \hyperlink{classviews__handler__field__prerender__list_6a88df29dbdd11aefc5d108dca6530e0}{views\_\-handler\_\-field\_\-prerender\_\-list}, \hyperlink{classviews__handler__field__url_47ffe90c19fe1a114df84f5779567cd3}{views\_\-handler\_\-field\_\-url}, \hyperlink{classviews__handler__field__aggregator__category_43be8cbc1313b8b3f51321490d40a914}{views\_\-handler\_\-field\_\-aggregator\_\-category}, \hyperlink{classviews__handler__field__aggregator__title__link_6ebe6b2dc8c306fc32258be795f21f3b}{views\_\-handler\_\-field\_\-aggregator\_\-title\_\-link}, \hyperlink{classviews__handler__field__comment_5afe1cb8daaae349f0f39b9ce0195753}{views\_\-handler\_\-field\_\-comment}, \hyperlink{classviews__handler__field__comment__link_82957426a30584198c79c78804265bdc}{views\_\-handler\_\-field\_\-comment\_\-link}, \hyperlink{classviews__handler__field__comment__node__link_4a4be3287da8267b5571d1fe404f9070}{views\_\-handler\_\-field\_\-comment\_\-node\_\-link}, \hyperlink{classviews__handler__field__comment__username_9bcc4bbe9ebbd7247431cfc18c5bab9c}{views\_\-handler\_\-field\_\-comment\_\-username}, \hyperlink{classviews__handler__field__node__new__comments_2a209d3acbaa47e781df96bc0ca85156}{views\_\-handler\_\-field\_\-node\_\-new\_\-comments}, \hyperlink{classviews__handler__field__contact__link_d6709f7a6f48dc51fe3952f26598e622}{views\_\-handler\_\-field\_\-contact\_\-link}, \hyperlink{classviews__handler__field__locale__link__edit_dcbd4b327f8cbcd2d75e0c145b00e42d}{views\_\-handler\_\-field\_\-locale\_\-link\_\-edit}, \hyperlink{classviews__handler__field__history__user__timestamp_785f6784b015c681b25f58573b1e6859}{views\_\-handler\_\-field\_\-history\_\-user\_\-timestamp}, \hyperlink{classviews__handler__field__node_f3d8a04be282a20079ea4fb82e768910}{views\_\-handler\_\-field\_\-node}, \hyperlink{classviews__handler__field__node__link_fe6559cbf0b01700ae56fa62c5ca7616}{views\_\-handler\_\-field\_\-node\_\-link}, \hyperlink{classviews__handler__field__node__path_f0eb803f6004582da8a3b4aa9e81cedf}{views\_\-handler\_\-field\_\-node\_\-path}, \hyperlink{classviews__handler__field__node__type_0152124a453b32265e512bace19d6de4}{views\_\-handler\_\-field\_\-node\_\-type}, \hyperlink{classviews__handler__field__profile__date_ede3f5f93411ff64dd780b9837d19aec}{views\_\-handler\_\-field\_\-profile\_\-date}, \hyperlink{classviews__handler__field__search__score_d3bc7dfcc4859869b75b371c33380abb}{views\_\-handler\_\-field\_\-search\_\-score}, \hyperlink{classviews__handler__field__accesslog__path_b8bfda464a205057cd730081aa5981c8}{views\_\-handler\_\-field\_\-accesslog\_\-path}, \hyperlink{classviews__handler__field__file_ab95242357e45be9c4fbbced1f625d7b}{views\_\-handler\_\-field\_\-file}, \hyperlink{classviews__handler__field__taxonomy_df66d3026b9409dd3237c5ebef994595}{views\_\-handler\_\-field\_\-taxonomy}, \hyperlink{classviews__handler__field__term__node__tid_0f0641c036e0a2498abd497cba1161a5}{views\_\-handler\_\-field\_\-term\_\-node\_\-tid}, \hyperlink{classviews__handler__field__upload__description_714cc6455e6fa7c9426dcf08dee9f89e}{views\_\-handler\_\-field\_\-upload\_\-description}, \hyperlink{classviews__handler__field__upload__fid_b39479eb80cfba952037f37e930d1b6e}{views\_\-handler\_\-field\_\-upload\_\-fid}, \hyperlink{classviews__handler__field__user_ecf77682fa7dc9daf1fa97cbe045420d}{views\_\-handler\_\-field\_\-user}, \hyperlink{classviews__handler__field__user__link_952944015feaaab1fb2d0abc29d5c2b5}{views\_\-handler\_\-field\_\-user\_\-link}, \hyperlink{classviews__handler__field__user__mail_ee55735f96178173853dbf1f8b293216}{views\_\-handler\_\-field\_\-user\_\-mail}, and \hyperlink{classviews__handler__field__user__name_0c3b7db3d060e384287fa62f348c9387}{views\_\-handler\_\-field\_\-user\_\-name}.\hypertarget{classviews__handler__field_e30a1d9c98c62ae40c90b938e09cd0ec}{
+\index{views\_\-handler\_\-field@{views\_\-handler\_\-field}!pre\_\-render@{pre\_\-render}}
+\index{pre\_\-render@{pre\_\-render}!views_handler_field@{views\_\-handler\_\-field}}
+\subsubsection[{pre\_\-render}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field::pre\_\-render (\$ {\em values})}}
+\label{classviews__handler__field_e30a1d9c98c62ae40c90b938e09cd0ec}
+
+
+Run before any fields are rendered.
+
+This gives the handlers some time to set up before any handler has been rendered.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$values}]An array of all objects returned from the query. \end{description}
+\end{Desc}
+
+
+Reimplemented in \hyperlink{classflag__handler__field__ops_5ad942714340d84d5462f3fd928a230c}{flag\_\-handler\_\-field\_\-ops}, \hyperlink{classviews__handler__field__profile__list_8c8d3cb39336f354e35c0b2e5afd25aa}{views\_\-handler\_\-field\_\-profile\_\-list}, \hyperlink{classviews__handler__field__term__node__tid_f3446d6e75ff34c2b165a5513a385c3b}{views\_\-handler\_\-field\_\-term\_\-node\_\-tid}, \hyperlink{classviews__handler__field__upload__description_0890ab0770ad73dc186283a2222d473c}{views\_\-handler\_\-field\_\-upload\_\-description}, \hyperlink{classviews__handler__field__upload__fid_5f4bd6d947086120d041e1e27571804d}{views\_\-handler\_\-field\_\-upload\_\-fid}, and \hyperlink{classviews__handler__field__user__roles_342d1bffbb0098a432ace0f838c63989}{views\_\-handler\_\-field\_\-user\_\-roles}.\hypertarget{classviews__handler__field_4f661f91bcbe80d4a00c30a31456c502}{
+\index{views\_\-handler\_\-field@{views\_\-handler\_\-field}!query@{query}}
+\index{query@{query}!views_handler_field@{views\_\-handler\_\-field}}
+\subsubsection[{query}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field::query ()}}
+\label{classviews__handler__field_4f661f91bcbe80d4a00c30a31456c502}
+
+
+Called to add the field to a query. 
+
+Reimplemented from \hyperlink{classviews__handler_91e22c95696d9fdb9ed753a10d42a21d}{views\_\-handler}.
+
+Reimplemented in \hyperlink{classflag__handler__field__ops_a42722b03427da1e009f3b6075af703a}{flag\_\-handler\_\-field\_\-ops}, \hyperlink{classlightbox2__handler__field__lightbox2_be83b39eb7bab1582a1038543f59e277}{lightbox2\_\-handler\_\-field\_\-lightbox2}, \hyperlink{classviews__handler__field__broken_f6665205257b9b0e1dce732645f5dde1}{views\_\-handler\_\-field\_\-broken}, \hyperlink{classviews__handler__field__custom_153c21f3d05ff9f27e345f2c98058bc4}{views\_\-handler\_\-field\_\-custom}, \hyperlink{classviews__handler__field__comment__link_c19c2cedce77bfa9490624df9cd1eac2}{views\_\-handler\_\-field\_\-comment\_\-link}, \hyperlink{classviews__handler__field__comment__node__link_f48614fab00f4f6b8ec7e68a3d352b20}{views\_\-handler\_\-field\_\-comment\_\-node\_\-link}, \hyperlink{classviews__handler__field__ncs__last__comment__name_5394581513de0ee85a28aef8de302842}{views\_\-handler\_\-field\_\-ncs\_\-last\_\-comment\_\-name}, \hyperlink{classviews__handler__field__ncs__last__updated_9fdf82c20960c14abf4aaa37c578b299}{views\_\-handler\_\-field\_\-ncs\_\-last\_\-updated}, \hyperlink{classviews__handler__field__node__new__comments_b49cfad0c25d081f0ee70e2e0d0db809}{views\_\-handler\_\-field\_\-node\_\-new\_\-comments}, \hyperlink{classviews__handler__field__filter__format__name_3032499c14945a87535f1fdfbea57feb}{views\_\-handler\_\-field\_\-filter\_\-format\_\-name}, \hyperlink{classviews__handler__field__locale__link__edit_da85b88e681ca38a7c7d66deb133ae65}{views\_\-handler\_\-field\_\-locale\_\-link\_\-edit}, \hyperlink{classviews__handler__field__history__user__timestamp_bd6ff7a6d51f75781cf6ea6288612c07}{views\_\-handler\_\-field\_\-history\_\-user\_\-timestamp}, \hyperlink{classviews__handler__field__node__link_2c9b646801f273970403fea5ac4621b0}{views\_\-handler\_\-field\_\-node\_\-link}, \hyperlink{classviews__handler__field__node__path_59474fa6e78296b5f0c2aca6a951907e}{views\_\-handler\_\-field\_\-node\_\-path}, \hyperlink{classviews__handler__field__search__score_fda75fb726345ee91401d2f79ad2d313}{views\_\-handler\_\-field\_\-search\_\-score}, \hyperlink{classviews__handler__field__term__node__tid_8160a16d41604b141768dc313b6223b9}{views\_\-handler\_\-field\_\-term\_\-node\_\-tid}, \hyperlink{classviews__handler__field__node__translation__link_ccd7784b851085dadf55b773f1845097}{views\_\-handler\_\-field\_\-node\_\-translation\_\-link}, \hyperlink{classviews__handler__field__user__link_b64eedee54360407b203c3d7474c40f2}{views\_\-handler\_\-field\_\-user\_\-link}, and \hyperlink{classviews__handler__field__user__roles_26513786d88b63b1e2dcfd4aa09c4552}{views\_\-handler\_\-field\_\-user\_\-roles}.\hypertarget{classviews__handler__field_82ff951c5e9ceb97b2eab86f880cbc1e}{
+\index{views\_\-handler\_\-field@{views\_\-handler\_\-field}!render@{render}}
+\index{render@{render}!views_handler_field@{views\_\-handler\_\-field}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field::render (\$ {\em values})}}
+\label{classviews__handler__field_82ff951c5e9ceb97b2eab86f880cbc1e}
+
+
+Render the field.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$values}]The values retrieved from the database. \end{description}
+\end{Desc}
+
+
+Reimplemented in \hyperlink{classfilefield__meta__handler__field__bitrate_8b49b6ccdf60cd91f344b3d781cdd51c}{filefield\_\-meta\_\-handler\_\-field\_\-bitrate}, \hyperlink{classfilefield__meta__handler__field__duration_f511f413dd52df372f7dc396efcc08f2}{filefield\_\-meta\_\-handler\_\-field\_\-duration}, \hyperlink{classfilefield__meta__handler__field__samplerate_8dd9fcfcf352e9699f02deed43a60e2c}{filefield\_\-meta\_\-handler\_\-field\_\-samplerate}, \hyperlink{classfilefield__meta__handler__field__tags_65aaea80f0139f1a83bd876273fdec51}{filefield\_\-meta\_\-handler\_\-field\_\-tags}, \hyperlink{classflag__handler__field__ops_3732dd37e3011699c7489e02e2aa3655}{flag\_\-handler\_\-field\_\-ops}, \hyperlink{classlightbox2__handler__field__lightbox2_141baaefa052c49b0084cd88dc3d50ce}{lightbox2\_\-handler\_\-field\_\-lightbox2}, \hyperlink{classviews__handler__field__node__link__export_84502b9c08a9b0fa22eb914b278d1a4f}{views\_\-handler\_\-field\_\-node\_\-link\_\-export}, \hyperlink{classtwitter__views__handler__field__xss_bdab73a5e799f01200e58edcd603a32d}{twitter\_\-views\_\-handler\_\-field\_\-xss}, \hyperlink{classtwitter__views__handler__field__profile__image_f584af456dbbe206bdeea00682cebf3d}{twitter\_\-views\_\-handler\_\-field\_\-profile\_\-image}, \hyperlink{classviews__handler__field__file__size_9ceb28e958ee939634f1c91e28b8579c}{views\_\-handler\_\-field\_\-file\_\-size}, \hyperlink{classviews__handler__field__xss_fbfbc9ee1d2927e22cd5385c5f2fa918}{views\_\-handler\_\-field\_\-xss}, \hyperlink{classviews__handler__field__boolean_d7d7fc1b29362cee6b2f043e029052af}{views\_\-handler\_\-field\_\-boolean}, \hyperlink{classviews__handler__field__custom_0498d3ad0dff40c9e49ec599363c2157}{views\_\-handler\_\-field\_\-custom}, \hyperlink{classviews__handler__field__date_4ed821df9270dc90bd3c2103d7136d47}{views\_\-handler\_\-field\_\-date}, \hyperlink{classviews__handler__field__markup_7a6eb0c91f30643eb29d19dcc76b23d3}{views\_\-handler\_\-field\_\-markup}, \hyperlink{classviews__handler__field__numeric_9c76aeef951c45385fd91a22e5e656aa}{views\_\-handler\_\-field\_\-numeric}, \hyperlink{classviews__handler__field__prerender__list_e29a9fc47e5a83e9a8eb314dc46e68cf}{views\_\-handler\_\-field\_\-prerender\_\-list}, \hyperlink{classviews__handler__field__url_6f96c8adfdd1892619793359448e70ad}{views\_\-handler\_\-field\_\-url}, \hyperlink{classviews__handler__field__aggregator__category_7e4b0ebcef6f6f5b37480eb15eb378f0}{views\_\-handler\_\-field\_\-aggregator\_\-category}, \hyperlink{classviews__handler__field__aggregator__title__link_1b3d319f7a95e1885726a975f1755b9f}{views\_\-handler\_\-field\_\-aggregator\_\-title\_\-link}, \hyperlink{classviews__handler__field__comment_c5e0fecfcd448920e3d837c1daed59fa}{views\_\-handler\_\-field\_\-comment}, \hyperlink{classviews__handler__field__comment__depth_02940dec9e78bd8e054f4c1b0f3159a9}{views\_\-handler\_\-field\_\-comment\_\-depth}, \hyperlink{classviews__handler__field__comment__link_c5e8317cc1a0b2a7688f865662b27dae}{views\_\-handler\_\-field\_\-comment\_\-link}, \hyperlink{classviews__handler__field__comment__link__delete_02265dfa1540e77c5d4c1792d36f4900}{views\_\-handler\_\-field\_\-comment\_\-link\_\-delete}, \hyperlink{classviews__handler__field__comment__link__edit_e48ccec698d22ef50b68d4fd48ed1676}{views\_\-handler\_\-field\_\-comment\_\-link\_\-edit}, \hyperlink{classviews__handler__field__comment__link__reply_5396a9f0f1101774c721f54600fafbda}{views\_\-handler\_\-field\_\-comment\_\-link\_\-reply}, \hyperlink{classviews__handler__field__comment__node__link_57a6cd4b57779b44220bc89f48c86ee6}{views\_\-handler\_\-field\_\-comment\_\-node\_\-link}, \hyperlink{classviews__handler__field__comment__username_cbef770bc32e839510f616413fd83493}{views\_\-handler\_\-field\_\-comment\_\-username}, \hyperlink{classviews__handler__field__ncs__last__comment__name_eb44418e481bfca1f6dbb249a1f5c665}{views\_\-handler\_\-field\_\-ncs\_\-last\_\-comment\_\-name}, \hyperlink{classviews__handler__field__node__comment_51cfcaea207e77a961a1bf40aba96737}{views\_\-handler\_\-field\_\-node\_\-comment}, \hyperlink{classviews__handler__field__node__new__comments_6b1e79531ba28eb32e71c7ff2129e82d}{views\_\-handler\_\-field\_\-node\_\-new\_\-comments}, \hyperlink{classviews__handler__field__contact__link_08fa45e6542168dfe0dcdd9f59f7ad45}{views\_\-handler\_\-field\_\-contact\_\-link}, \hyperlink{classviews__handler__field__filter__format__name_1e30b381ab89cb8eb2db40d340de97f6}{views\_\-handler\_\-field\_\-filter\_\-format\_\-name}, \hyperlink{classviews__handler__field__locale__group_e1e6ec6ec1b2e071735ca54942bfde9b}{views\_\-handler\_\-field\_\-locale\_\-group}, \hyperlink{classviews__handler__field__locale__language_9aee281e240225b4a6f4465afcb8cdbf}{views\_\-handler\_\-field\_\-locale\_\-language}, \hyperlink{classviews__handler__field__locale__link__edit_ea9a4b5bf4281c17e787bae9fee408bd}{views\_\-handler\_\-field\_\-locale\_\-link\_\-edit}, \hyperlink{classviews__handler__field__history__user__timestamp_cc2398dad2662ab9d4faf0ea9daba116}{views\_\-handler\_\-field\_\-history\_\-user\_\-timestamp}, \hyperlink{classviews__handler__field__node_fe7681e1188ad74ce9b604ad3ba864c0}{views\_\-handler\_\-field\_\-node}, \hyperlink{classviews__handler__field__node__link_9621ff38a6b318eb94f0c44fa2f711f5}{views\_\-handler\_\-field\_\-node\_\-link}, \hyperlink{classviews__handler__field__node__link__delete_f0b922dd3c019c53247d0c30c83cfc99}{views\_\-handler\_\-field\_\-node\_\-link\_\-delete}, \hyperlink{classviews__handler__field__node__link__edit_86877ed929d2fcb0b8204c0907cf5b5c}{views\_\-handler\_\-field\_\-node\_\-link\_\-edit}, \hyperlink{classviews__handler__field__node__path_94067b369f0f373515cae33ad940ae2f}{views\_\-handler\_\-field\_\-node\_\-path}, \hyperlink{classviews__handler__field__node__revision__link__delete_366322147e080ffbfc7f427d2a522362}{views\_\-handler\_\-field\_\-node\_\-revision\_\-link\_\-delete}, \hyperlink{classviews__handler__field__node__revision__link__revert_eb4c6a3ba1544e14492bd1fec4ee4e91}{views\_\-handler\_\-field\_\-node\_\-revision\_\-link\_\-revert}, \hyperlink{classviews__handler__field__node__type_13c9a516cca49870a1603fdd26071851}{views\_\-handler\_\-field\_\-node\_\-type}, \hyperlink{classviews__handler__field__profile__date_63151e2577405b9fec938ed9ff5926d4}{views\_\-handler\_\-field\_\-profile\_\-date}, \hyperlink{classviews__handler__field__search__score_80a58d69b8a6c7f57da022e88f90e32d}{views\_\-handler\_\-field\_\-search\_\-score}, \hyperlink{classviews__handler__field__accesslog__path_b40b3461a6c122c052753537346089b1}{views\_\-handler\_\-field\_\-accesslog\_\-path}, \hyperlink{classviews__handler__field__file_624c3ed9f9f4b194e2a9a0b7d6acb384}{views\_\-handler\_\-field\_\-file}, \hyperlink{classviews__handler__field__file__status_ead1c1405c8a5ecdede4a455ed4d6015}{views\_\-handler\_\-field\_\-file\_\-status}, \hyperlink{classviews__handler__field__taxonomy_02a50e2e97c9faf4e86c5461edf5d547}{views\_\-handler\_\-field\_\-taxonomy}, \hyperlink{classviews__handler__field__node__language_04be837ecac8fcbbb38fb1a17e45263a}{views\_\-handler\_\-field\_\-node\_\-language}, \hyperlink{classviews__handler__field__node__link__translate_887213a10a0090481e9001547cff8439}{views\_\-handler\_\-field\_\-node\_\-link\_\-translate}, \hyperlink{classviews__handler__field__node__translation__link_24fd39ca3d02b69858986ee7ba580d41}{views\_\-handler\_\-field\_\-node\_\-translation\_\-link}, \hyperlink{classviews__handler__field__upload__description_373489ebca619b9f73ebfd3441a1cd19}{views\_\-handler\_\-field\_\-upload\_\-description}, \hyperlink{classviews__handler__field__user_145dcce889ee17821a1d9c65970d86f2}{views\_\-handler\_\-field\_\-user}, \hyperlink{classviews__handler__field__user__link_f81b37cfa8e0c2363ad8ed9bb601cd14}{views\_\-handler\_\-field\_\-user\_\-link}, \hyperlink{classviews__handler__field__user__link__delete_8f298b2f0f6edd91efb2c38e6bec03d9}{views\_\-handler\_\-field\_\-user\_\-link\_\-delete}, \hyperlink{classviews__handler__field__user__link__edit_e52836f8117074b005527bf60e4f536a}{views\_\-handler\_\-field\_\-user\_\-link\_\-edit}, \hyperlink{classviews__handler__field__user__mail_ab8c63fe4d09cff576f4588838dc363c}{views\_\-handler\_\-field\_\-user\_\-mail}, and \hyperlink{classviews__handler__field__user__picture_707edb06f305fa88542f20cbfec36a04}{views\_\-handler\_\-field\_\-user\_\-picture}.\hypertarget{classviews__handler__field_afbf9e117418a38b937ba670126215a4}{
+\index{views\_\-handler\_\-field@{views\_\-handler\_\-field}!render\_\-altered@{render\_\-altered}}
+\index{render\_\-altered@{render\_\-altered}!views_handler_field@{views\_\-handler\_\-field}}
+\subsubsection[{render\_\-altered}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field::render\_\-altered (\$ {\em alter}, \/  \$ {\em tokens})}}
+\label{classviews__handler__field_afbf9e117418a38b937ba670126215a4}
+
+
+Render this field as altered text, from a fieldset set by the user. \hypertarget{classviews__handler__field_44eafd927c2a6d93af234f69e8560078}{
+\index{views\_\-handler\_\-field@{views\_\-handler\_\-field}!render\_\-as\_\-link@{render\_\-as\_\-link}}
+\index{render\_\-as\_\-link@{render\_\-as\_\-link}!views_handler_field@{views\_\-handler\_\-field}}
+\subsubsection[{render\_\-as\_\-link}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field::render\_\-as\_\-link (\$ {\em alter}, \/  \$ {\em text}, \/  \$ {\em tokens})}}
+\label{classviews__handler__field_44eafd927c2a6d93af234f69e8560078}
+
+
+Render this field as a link, with the info from a fieldset set by the user. \hypertarget{classviews__handler__field_1d6e3f832a9a22410029e79cd9cfc32e}{
+\index{views\_\-handler\_\-field@{views\_\-handler\_\-field}!render\_\-text@{render\_\-text}}
+\index{render\_\-text@{render\_\-text}!views_handler_field@{views\_\-handler\_\-field}}
+\subsubsection[{render\_\-text}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field::render\_\-text (\$ {\em alter})}}
+\label{classviews__handler__field_1d6e3f832a9a22410029e79cd9cfc32e}
+
+
+Perform an advanced text render for the item.
+
+This is separated out as some fields may render lists, and this allows each item to be handled individually. \hypertarget{classviews__handler__field_a2c5f49595a97848d523338a5c64a7c6}{
+\index{views\_\-handler\_\-field@{views\_\-handler\_\-field}!render\_\-trim\_\-text@{render\_\-trim\_\-text}}
+\index{render\_\-trim\_\-text@{render\_\-trim\_\-text}!views_handler_field@{views\_\-handler\_\-field}}
+\subsubsection[{render\_\-trim\_\-text}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field::render\_\-trim\_\-text (\$ {\em alter}, \/  \$ {\em value})}}
+\label{classviews__handler__field_a2c5f49595a97848d523338a5c64a7c6}
+
+
+Trim the field down to the specified length. \hypertarget{classviews__handler__field_31b777437d94e4904c546e3bb0d76c16}{
+\index{views\_\-handler\_\-field@{views\_\-handler\_\-field}!theme@{theme}}
+\index{theme@{theme}!views_handler_field@{views\_\-handler\_\-field}}
+\subsubsection[{theme}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field::theme (\$ {\em values})}}
+\label{classviews__handler__field_31b777437d94e4904c546e3bb0d76c16}
+
+
+Call out to the \hyperlink{classviews__handler__field_31b777437d94e4904c546e3bb0d76c16}{theme()} function, which probably just calls \hyperlink{classviews__handler__field_82ff951c5e9ceb97b2eab86f880cbc1e}{render()} but allows sites to override output fairly easily. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/handlers/views\_\-handler\_\-field.inc\end{CompactItemize}

@@ -1,0 +1,259 @@
+\hypertarget{classflag__node}{
+\section{flag\_\-node Class Reference}
+\label{classflag__node}\index{flag\_\-node@{flag\_\-node}}
+}
+Inheritance diagram for flag\_\-node::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classflag__node}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classflag__node_e896b1a9f9ef4b26514c52540ec0ef70}{default\_\-options} ()
+\item 
+\hyperlink{classflag__node_5130212d8df4885b0fc5bcace0f6345d}{options\_\-form} (\&\$form)
+\item 
+\hyperlink{classflag__node_3e41593b4effc42f96b500f16b2a3c12}{\_\-load\_\-content} (\$content\_\-id)
+\item 
+\hyperlink{classflag__node_d2b546768e89ad2622ba698f22146df8}{applies\_\-to\_\-content\_\-object} (\$node)
+\item 
+\hyperlink{classflag__node_7615ffc75f3b60c56032d7df1ad1e734}{get\_\-content\_\-id} (\$node)
+\item 
+\hyperlink{classflag__node_c391b5c12fd0ad096dcbc50112923957}{get\_\-translation\_\-id} (\$content\_\-id)
+\item 
+\hyperlink{classflag__node_60653b0f36b6161d0e2ae012ff94319f}{uses\_\-hook\_\-link} (\$teaser)
+\item 
+\hyperlink{classflag__node_b9cba098ce624c77b20d67bf51ee8f4f}{flag} (\$action, \$content\_\-id, \$account=NULL, \$skip\_\-permission\_\-check=FALSE)
+\item 
+\hyperlink{classflag__node_4e9609c89fcd8ec905c6537d241fd49f}{is\_\-flagged} (\$content\_\-id, \$uid=NULL)
+\item 
+\hyperlink{classflag__node_22f752cd73a076e6a36c76b6950e139f}{get\_\-labels\_\-token\_\-types} ()
+\item 
+\hyperlink{classflag__node_38932e35c8b4b0191a118ffde9c27d97}{replace\_\-tokens} (\$label, \$contexts, \$content\_\-id)
+\item 
+\hyperlink{classflag__node_124cd24063689c68b497c83707dc4f40}{get\_\-flag\_\-action} (\$content\_\-id)
+\item 
+\hyperlink{classflag__node_6bb9b8d25c34816cd3e7b5c11038374a}{get\_\-valid\_\-actions} ()
+\item 
+\hyperlink{classflag__node_9578593ef74f207710a83242de8325f9}{get\_\-relevant\_\-action\_\-objects} (\$content\_\-id)
+\item 
+\hyperlink{classflag__node_eecfa8b26fc30aaafc376e92f6a2c00b}{rules\_\-get\_\-event\_\-arguments\_\-definition} ()
+\item 
+\hyperlink{classflag__node_cb9a883b4910f72b836875066fc31c2c}{rules\_\-get\_\-element\_\-argument\_\-definition} ()
+\item 
+\hyperlink{classflag__node_bea5310889ebc0a8564823f3067d5846}{get\_\-views\_\-info} ()
+\item 
+\hyperlink{classflag__node_c1e88f053ece925c7f28c0e8fe4b020f}{applies\_\-to\_\-content\_\-id\_\-array} (\$content\_\-ids)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Implements a node flag. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classflag__node_3e41593b4effc42f96b500f16b2a3c12}{
+\index{flag\_\-node@{flag\_\-node}!\_\-load\_\-content@{\_\-load\_\-content}}
+\index{\_\-load\_\-content@{\_\-load\_\-content}!flag_node@{flag\_\-node}}
+\subsubsection[{\_\-load\_\-content}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-node::\_\-load\_\-content (\$ {\em content\_\-id})}}
+\label{classflag__node_3e41593b4effc42f96b500f16b2a3c12}
+
+
+Loads a content object this flag works with. Derived classes must implement this.
+
+Reimplemented from \hyperlink{classflag__flag}{flag\_\-flag}.\hypertarget{classflag__node_c1e88f053ece925c7f28c0e8fe4b020f}{
+\index{flag\_\-node@{flag\_\-node}!applies\_\-to\_\-content\_\-id\_\-array@{applies\_\-to\_\-content\_\-id\_\-array}}
+\index{applies\_\-to\_\-content\_\-id\_\-array@{applies\_\-to\_\-content\_\-id\_\-array}!flag_node@{flag\_\-node}}
+\subsubsection[{applies\_\-to\_\-content\_\-id\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-node::applies\_\-to\_\-content\_\-id\_\-array (\$ {\em content\_\-ids})}}
+\label{classflag__node_c1e88f053ece925c7f28c0e8fe4b020f}
+
+
+Similar to \hyperlink{classflag__flag_a38afcc59d7d1ef028215521c6fcdc22}{applies\_\-to\_\-content\_\-id()} but works on a bunch of IDs. It is called in the pre\_\-render() stage of the 'Flag links' field to find out where that link applies. The reason we do a separate DB query, and not lump this test in the Views query, is to make 'many to one' tests possible without interfering with the rows, and also to reduce the complexity of the code. 
+
+Reimplemented from \hyperlink{group__views_g7ffe2653803be84d2c2d21dea608a6da}{flag\_\-flag}.\hypertarget{classflag__node_d2b546768e89ad2622ba698f22146df8}{
+\index{flag\_\-node@{flag\_\-node}!applies\_\-to\_\-content\_\-object@{applies\_\-to\_\-content\_\-object}}
+\index{applies\_\-to\_\-content\_\-object@{applies\_\-to\_\-content\_\-object}!flag_node@{flag\_\-node}}
+\subsubsection[{applies\_\-to\_\-content\_\-object}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-node::applies\_\-to\_\-content\_\-object (\$ {\em content})}}
+\label{classflag__node_d2b546768e89ad2622ba698f22146df8}
+
+
+Returns TRUE if the flag applies to the given content. Derived classes must implement this.
+
+Reimplemented from \hyperlink{classflag__flag_55c4da8291aed979309f25ce09953092}{flag\_\-flag}.\hypertarget{classflag__node_e896b1a9f9ef4b26514c52540ec0ef70}{
+\index{flag\_\-node@{flag\_\-node}!default\_\-options@{default\_\-options}}
+\index{default\_\-options@{default\_\-options}!flag_node@{flag\_\-node}}
+\subsubsection[{default\_\-options}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-node::default\_\-options ()}}
+\label{classflag__node_e896b1a9f9ef4b26514c52540ec0ef70}
+
+
+Declares the options this flag supports, and their default values.
+
+Derived classes should want to override this. 
+
+Reimplemented from \hyperlink{classflag__flag_240678d55d61a16ef848ecc0cc3c609f}{flag\_\-flag}.\hypertarget{classflag__node_b9cba098ce624c77b20d67bf51ee8f4f}{
+\index{flag\_\-node@{flag\_\-node}!flag@{flag}}
+\index{flag@{flag}!flag_node@{flag\_\-node}}
+\subsubsection[{flag}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-node::flag (\$ {\em action}, \/  \$ {\em content\_\-id}, \/  \$ {\em account} = {\tt NULL}, \/  \$ {\em skip\_\-permission\_\-check} = {\tt FALSE})}}
+\label{classflag__node_b9cba098ce624c77b20d67bf51ee8f4f}
+
+
+Flags, on unflags, an item.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$action}]Either 'flag' or 'unflag'. \item[{\em \$content\_\-id}]The ID of the item to flag or unflag. \item[{\em \$account}]The user on whose behalf to flag. Leave empty for the current user. \item[{\em \$skip\_\-permission\_\-check}]Flag the item even if the \$account user don't have permission to do so. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]FALSE if some error occured (e.g., user has no permission, flag isn't applicable to the item, etc.), TRUE otherwise. \end{Desc}
+
+
+Reimplemented from \hyperlink{classflag__flag_ed72cdfae0ffef546c45cfa0f616283a}{flag\_\-flag}.\hypertarget{classflag__node_7615ffc75f3b60c56032d7df1ad1e734}{
+\index{flag\_\-node@{flag\_\-node}!get\_\-content\_\-id@{get\_\-content\_\-id}}
+\index{get\_\-content\_\-id@{get\_\-content\_\-id}!flag_node@{flag\_\-node}}
+\subsubsection[{get\_\-content\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-node::get\_\-content\_\-id (\$ {\em content})}}
+\label{classflag__node_7615ffc75f3b60c56032d7df1ad1e734}
+
+
+Given a content object, returns its ID. Derived classes must implement this.
+
+Reimplemented from \hyperlink{classflag__flag_4da5889b258c2bc28b248678573b881a}{flag\_\-flag}.\hypertarget{classflag__node_124cd24063689c68b497c83707dc4f40}{
+\index{flag\_\-node@{flag\_\-node}!get\_\-flag\_\-action@{get\_\-flag\_\-action}}
+\index{get\_\-flag\_\-action@{get\_\-flag\_\-action}!flag_node@{flag\_\-node}}
+\subsubsection[{get\_\-flag\_\-action}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-node::get\_\-flag\_\-action (\$ {\em content\_\-id})}}
+\label{classflag__node_124cd24063689c68b497c83707dc4f40}
+
+
+Returns a 'flag action' object. It exists only for the sake of its informative tokens. Currently, it's utilized only for the 'mail' action.
+
+Derived classes should populate the 'content\_\-title' and 'content\_\-url' slots. 
+
+Reimplemented from \hyperlink{classflag__flag_532e58b6e71a0ef8f6bcb55607cbca8e}{flag\_\-flag}.\hypertarget{classflag__node_22f752cd73a076e6a36c76b6950e139f}{
+\index{flag\_\-node@{flag\_\-node}!get\_\-labels\_\-token\_\-types@{get\_\-labels\_\-token\_\-types}}
+\index{get\_\-labels\_\-token\_\-types@{get\_\-labels\_\-token\_\-types}!flag_node@{flag\_\-node}}
+\subsubsection[{get\_\-labels\_\-token\_\-types}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-node::get\_\-labels\_\-token\_\-types ()}}
+\label{classflag__node_22f752cd73a076e6a36c76b6950e139f}
+
+
+Returns the token types this flag understands in labels. These are used for narrowing down the token list shown in the help box to only the relevant ones.
+
+Derived classes should override this. 
+
+Reimplemented from \hyperlink{classflag__flag_bc21f4a879072d1a9d36b352e9ac6be0}{flag\_\-flag}.\hypertarget{classflag__node_9578593ef74f207710a83242de8325f9}{
+\index{flag\_\-node@{flag\_\-node}!get\_\-relevant\_\-action\_\-objects@{get\_\-relevant\_\-action\_\-objects}}
+\index{get\_\-relevant\_\-action\_\-objects@{get\_\-relevant\_\-action\_\-objects}!flag_node@{flag\_\-node}}
+\subsubsection[{get\_\-relevant\_\-action\_\-objects}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-node::get\_\-relevant\_\-action\_\-objects (\$ {\em content\_\-id})}}
+\label{classflag__node_9578593ef74f207710a83242de8325f9}
+
+
+Returns objects the action may possibly need. This method should return at least the 'primary' object the action operates on.
+
+This method is needed because \hyperlink{classflag__node_6bb9b8d25c34816cd3e7b5c11038374a}{get\_\-valid\_\-actions()} returns actions that don't necessarily operate on an object of a type this flag manages. For example, flagging a comment may trigger an 'Unpublish post' action on a node; So the comment flag needs to tell the action about some node.
+
+Derived classes must implement this.
+
+Reimplemented from \hyperlink{group__actions_g8f1b472c7f072dbfa682cc5b3fac9be6}{flag\_\-flag}.\hypertarget{classflag__node_c391b5c12fd0ad096dcbc50112923957}{
+\index{flag\_\-node@{flag\_\-node}!get\_\-translation\_\-id@{get\_\-translation\_\-id}}
+\index{get\_\-translation\_\-id@{get\_\-translation\_\-id}!flag_node@{flag\_\-node}}
+\subsubsection[{get\_\-translation\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-node::get\_\-translation\_\-id (\$ {\em content\_\-id})}}
+\label{classflag__node_c391b5c12fd0ad096dcbc50112923957}
+
+
+Adjust the Content ID to find the translation parent if i18n-enabled.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$content\_\-id}]The nid for the content. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The tnid if available, the nid otherwise. \end{Desc}
+\hypertarget{classflag__node_6bb9b8d25c34816cd3e7b5c11038374a}{
+\index{flag\_\-node@{flag\_\-node}!get\_\-valid\_\-actions@{get\_\-valid\_\-actions}}
+\index{get\_\-valid\_\-actions@{get\_\-valid\_\-actions}!flag_node@{flag\_\-node}}
+\subsubsection[{get\_\-valid\_\-actions}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-node::get\_\-valid\_\-actions ()}}
+\label{classflag__node_6bb9b8d25c34816cd3e7b5c11038374a}
+
+
+Returns an array of all actions that are executable with this flag. 
+
+Reimplemented from \hyperlink{group__actions_gbe1aa2bfc551fab8660cc3bacfc9d509}{flag\_\-flag}.\hypertarget{classflag__node_bea5310889ebc0a8564823f3067d5846}{
+\index{flag\_\-node@{flag\_\-node}!get\_\-views\_\-info@{get\_\-views\_\-info}}
+\index{get\_\-views\_\-info@{get\_\-views\_\-info}!flag_node@{flag\_\-node}}
+\subsubsection[{get\_\-views\_\-info}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-node::get\_\-views\_\-info ()}}
+\label{classflag__node_bea5310889ebc0a8564823f3067d5846}
+
+
+Returns information needed for Views integration. E.g., the Views table holding the flagged content, its primary key, and various labels. See derived classes for examples. 
+
+Reimplemented from \hyperlink{group__views_g91f53a4d24f7c81f8a913e56154821c0}{flag\_\-flag}.\hypertarget{classflag__node_4e9609c89fcd8ec905c6537d241fd49f}{
+\index{flag\_\-node@{flag\_\-node}!is\_\-flagged@{is\_\-flagged}}
+\index{is\_\-flagged@{is\_\-flagged}!flag_node@{flag\_\-node}}
+\subsubsection[{is\_\-flagged}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-node::is\_\-flagged (\$ {\em content\_\-id}, \/  \$ {\em uid} = {\tt NULL})}}
+\label{classflag__node_4e9609c89fcd8ec905c6537d241fd49f}
+
+
+Returns TRUE if a certain user has flagged this content.
+
+Thanks to using a cache, inquiring several different flags about the same item results in only one SQL query.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$uid}]Optional. The user ID whose flags we're checking. If none given, the current user will be used. \end{description}
+\end{Desc}
+
+
+Reimplemented from \hyperlink{classflag__flag_82aa6ee546607848f4df8688bfaf93bc}{flag\_\-flag}.\hypertarget{classflag__node_5130212d8df4885b0fc5bcace0f6345d}{
+\index{flag\_\-node@{flag\_\-node}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!flag_node@{flag\_\-node}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-node::options\_\-form (\&\$ {\em form})}}
+\label{classflag__node_5130212d8df4885b0fc5bcace0f6345d}
+
+
+Provides a form for setting options.
+
+Derived classes should want to override this. 
+
+Reimplemented from \hyperlink{classflag__flag_28aec91da5bc068c6c2a9a707ef62345}{flag\_\-flag}.\hypertarget{classflag__node_38932e35c8b4b0191a118ffde9c27d97}{
+\index{flag\_\-node@{flag\_\-node}!replace\_\-tokens@{replace\_\-tokens}}
+\index{replace\_\-tokens@{replace\_\-tokens}!flag_node@{flag\_\-node}}
+\subsubsection[{replace\_\-tokens}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-node::replace\_\-tokens (\$ {\em label}, \/  \$ {\em contexts}, \/  \$ {\em content\_\-id})}}
+\label{classflag__node_38932e35c8b4b0191a118ffde9c27d97}
+
+
+Replaces tokens in a label. Only the 'global' token context is regognized by default, so derived classes should override this method to add all token contexts they understand. 
+
+Reimplemented from \hyperlink{classflag__flag_6fa61cada1cb5f94c64b3037fdd28da1}{flag\_\-flag}.\hypertarget{classflag__node_cb9a883b4910f72b836875066fc31c2c}{
+\index{flag\_\-node@{flag\_\-node}!rules\_\-get\_\-element\_\-argument\_\-definition@{rules\_\-get\_\-element\_\-argument\_\-definition}}
+\index{rules\_\-get\_\-element\_\-argument\_\-definition@{rules\_\-get\_\-element\_\-argument\_\-definition}!flag_node@{flag\_\-node}}
+\subsubsection[{rules\_\-get\_\-element\_\-argument\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-node::rules\_\-get\_\-element\_\-argument\_\-definition ()}}
+\label{classflag__node_cb9a883b4910f72b836875066fc31c2c}
+
+
+Defines the Rules argument for flag actions or conditions 
+
+Reimplemented from \hyperlink{group__rules_g88951558f573d816de08b9e9d49ff4c2}{flag\_\-flag}.\hypertarget{classflag__node_eecfa8b26fc30aaafc376e92f6a2c00b}{
+\index{flag\_\-node@{flag\_\-node}!rules\_\-get\_\-event\_\-arguments\_\-definition@{rules\_\-get\_\-event\_\-arguments\_\-definition}}
+\index{rules\_\-get\_\-event\_\-arguments\_\-definition@{rules\_\-get\_\-event\_\-arguments\_\-definition}!flag_node@{flag\_\-node}}
+\subsubsection[{rules\_\-get\_\-event\_\-arguments\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-node::rules\_\-get\_\-event\_\-arguments\_\-definition ()}}
+\label{classflag__node_eecfa8b26fc30aaafc376e92f6a2c00b}
+
+
+Defines the Rules arguments involved in a flag event. 
+
+Reimplemented from \hyperlink{group__rules_g21a07dbe1a9e496438d235e95e67c048}{flag\_\-flag}.\hypertarget{classflag__node_60653b0f36b6161d0e2ae012ff94319f}{
+\index{flag\_\-node@{flag\_\-node}!uses\_\-hook\_\-link@{uses\_\-hook\_\-link}}
+\index{uses\_\-hook\_\-link@{uses\_\-hook\_\-link}!flag_node@{flag\_\-node}}
+\subsubsection[{uses\_\-hook\_\-link}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-node::uses\_\-hook\_\-link (\$ {\em teaser})}}
+\label{classflag__node_60653b0f36b6161d0e2ae012ff94319f}
+
+
+Returns TRUE if the flag is configured to show the flag-link using hook\_\-link. Derived classes are likely to implement this. 
+
+Reimplemented from \hyperlink{classflag__flag_10e87c5a12cc7b857d388985295bc8ab}{flag\_\-flag}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/flag/\hyperlink{flag_8inc}{flag.inc}\end{CompactItemize}

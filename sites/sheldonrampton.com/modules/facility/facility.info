@@ -1,0 +1,4 @@
+; $Id$
+name = Facility
+description = Enables the creation of a tennis facility.
+version = "5.1"

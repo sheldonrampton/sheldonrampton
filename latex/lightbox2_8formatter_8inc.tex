@@ -1,0 +1,197 @@
+\hypertarget{lightbox2_8formatter_8inc}{
+\section{sites/all/modules/contrib/lightbox2/lightbox2.formatter.inc File Reference}
+\label{lightbox2_8formatter_8inc}\index{sites/all/modules/contrib/lightbox2/lightbox2.formatter.inc@{sites/all/modules/contrib/lightbox2/lightbox2.formatter.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{lightbox2_8formatter_8inc_4ba8a7f504a1255b4770051408c3a7c4}{theme\_\-lightbox2\_\-image} (\$path, \$alt= '', \$title= '', \$attributes=array())
+\item 
+\hyperlink{lightbox2_8formatter_8inc_450372bfe4bdee2f7542e81098166703}{theme\_\-lightbox2\_\-formatter\_\-imagefield} (\$element)
+\item 
+\hyperlink{lightbox2_8formatter_8inc_0aa92673e347b0308d7495cff8c4a9e1}{lightbox2\_\-imagefield\_\-image\_\-imagecache} (\$field\_\-name, \$item, \$formatter, \$node, \$view\_\-preset, \$lightbox\_\-preset, \$args=array())
+\item 
+\hyperlink{lightbox2_8formatter_8inc_8d796df1969b3548e0c86b5e6456c1bc}{theme\_\-imagefield\_\-image\_\-imagecache\_\-lightbox2} (\$view\_\-preset, \$field\_\-name, \$item, \$node, \$rel= 'lightbox', \$args=array())
+\item 
+\hyperlink{lightbox2_8formatter_8inc_8721928b4c5064fea2bf2c1c150300bb}{theme\_\-lightbox2\_\-formatter\_\-filefield\_\-lightframe} (\$element)
+\item 
+\hyperlink{lightbox2_8formatter_8inc_502d02040486a0550fdd60f42880c90b}{theme\_\-lightbox2\_\-file\_\-formatter\_\-lightbox2\_\-iframe} (\$file, \$field, \$file\_\-formatter\_\-settings)
+\item 
+\hyperlink{lightbox2_8formatter_8inc_f45363655b651acac0a1a211fd1d6359}{theme\_\-lightbox2\_\-formatter\_\-emimage} (\$element)
+\item 
+\hyperlink{lightbox2_8formatter_8inc_61e32054133c7f64ee7504d0b69b1595}{theme\_\-lightbox2\_\-emimage} (\$field, \$item, \$formatter, \$node, \$args=array())
+\item 
+\hyperlink{lightbox2_8formatter_8inc_0a207276643712809de52eb7d4641b8b}{theme\_\-lightbox2\_\-formatter\_\-emvideo\_\-lightvideo} (\$element)
+\item 
+\hyperlink{lightbox2_8formatter_8inc_55a97c8d94f5b37a32eb1bf79c153533}{theme\_\-lightbox2\_\-emvideo} (\$field, \$item, \$formatter, \$node, \$options=array())
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Lightbox2 formatter hooks and callbacks. 
+
+\subsection{Function Documentation}
+\hypertarget{lightbox2_8formatter_8inc_0aa92673e347b0308d7495cff8c4a9e1}{
+\index{lightbox2.formatter.inc@{lightbox2.formatter.inc}!lightbox2\_\-imagefield\_\-image\_\-imagecache@{lightbox2\_\-imagefield\_\-image\_\-imagecache}}
+\index{lightbox2\_\-imagefield\_\-image\_\-imagecache@{lightbox2\_\-imagefield\_\-image\_\-imagecache}!lightbox2.formatter.inc@{lightbox2.formatter.inc}}
+\subsubsection[{lightbox2\_\-imagefield\_\-image\_\-imagecache}]{\setlength{\rightskip}{0pt plus 5cm}lightbox2\_\-imagefield\_\-image\_\-imagecache (\$ {\em field\_\-name}, \/  \$ {\em item}, \/  \$ {\em formatter}, \/  \$ {\em node}, \/  \$ {\em view\_\-preset}, \/  \$ {\em lightbox\_\-preset}, \/  \$ {\em args} = {\tt array()})}}
+\label{lightbox2_8formatter_8inc_0aa92673e347b0308d7495cff8c4a9e1}
+
+
+Function to set up the data needed for \hyperlink{lightbox2_8formatter_8inc_8d796df1969b3548e0c86b5e6456c1bc}{theme\_\-imagefield\_\-image\_\-imagecache\_\-lightbox2()}.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$field\_\-name}]The field name the action is being performed on. \item[{\em \$item}]An array, keyed by column, of the data stored for this item in this field. \item[{\em \$formatter}]The formatter to use for the field. \item[{\em \$node}]The node object. \item[{\em \$view\_\-preset}]The imagecache preset to be displayed on the node or in the \hyperlink{classview}{view}. \item[{\em \$lightbox\_\-preset}]The imagecache preset to be displayed in the lightbox. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The themed imagefield + imagecache image and link. \end{Desc}
+\hypertarget{lightbox2_8formatter_8inc_8d796df1969b3548e0c86b5e6456c1bc}{
+\index{lightbox2.formatter.inc@{lightbox2.formatter.inc}!theme\_\-imagefield\_\-image\_\-imagecache\_\-lightbox2@{theme\_\-imagefield\_\-image\_\-imagecache\_\-lightbox2}}
+\index{theme\_\-imagefield\_\-image\_\-imagecache\_\-lightbox2@{theme\_\-imagefield\_\-image\_\-imagecache\_\-lightbox2}!lightbox2.formatter.inc@{lightbox2.formatter.inc}}
+\subsubsection[{theme\_\-imagefield\_\-image\_\-imagecache\_\-lightbox2}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-imagefield\_\-image\_\-imagecache\_\-lightbox2 (\$ {\em view\_\-preset}, \/  \$ {\em field\_\-name}, \/  \$ {\em item}, \/  \$ {\em node}, \/  \$ {\em rel} = {\tt 'lightbox'}, \/  \$ {\em args} = {\tt array()})}}
+\label{lightbox2_8formatter_8inc_8d796df1969b3548e0c86b5e6456c1bc}
+
+
+Generate the HTML output for imagefield + imagecache images so they can be opened in a lightbox by clicking on the image on the node page or in a \hyperlink{classview}{view}.
+
+This actually also handles filefields + imagecache images too.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$view\_\-preset}]The imagecache preset to be displayed on the node or in the \hyperlink{classview}{view}. \item[{\em \$field\_\-name}]The field name the action is being performed on. \item[{\em \$item}]An array, keyed by column, of the data stored for this item in this field. \item[{\em \$node}]The node object. \item[{\em \$rel}]The type of lightbox to open: lightbox, lightshow or lightframe. \item[{\em \$args}]Args may override internal processes: caption, rel\_\-grouping. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The themed imagefield + imagecache image and link. \end{Desc}
+\hypertarget{lightbox2_8formatter_8inc_61e32054133c7f64ee7504d0b69b1595}{
+\index{lightbox2.formatter.inc@{lightbox2.formatter.inc}!theme\_\-lightbox2\_\-emimage@{theme\_\-lightbox2\_\-emimage}}
+\index{theme\_\-lightbox2\_\-emimage@{theme\_\-lightbox2\_\-emimage}!lightbox2.formatter.inc@{lightbox2.formatter.inc}}
+\subsubsection[{theme\_\-lightbox2\_\-emimage}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-lightbox2\_\-emimage (\$ {\em field}, \/  \$ {\em item}, \/  \$ {\em formatter}, \/  \$ {\em node}, \/  \$ {\em args} = {\tt array()})}}
+\label{lightbox2_8formatter_8inc_61e32054133c7f64ee7504d0b69b1595}
+
+
+Generate the HTML output to open embedded cck images in a lightbox.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$field}]The CCK field the action is being performed on. \item[{\em \$item}]An array, keyed by column, of the data stored for this item in this field. \item[{\em \$formatter}]The formatter to use for the field. \item[{\em \$node}]The node object. \item[{\em \$args}]Args may override internal processes: caption, rel\_\-grouping. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Themed embedded media field image and link. \end{Desc}
+\hypertarget{lightbox2_8formatter_8inc_55a97c8d94f5b37a32eb1bf79c153533}{
+\index{lightbox2.formatter.inc@{lightbox2.formatter.inc}!theme\_\-lightbox2\_\-emvideo@{theme\_\-lightbox2\_\-emvideo}}
+\index{theme\_\-lightbox2\_\-emvideo@{theme\_\-lightbox2\_\-emvideo}!lightbox2.formatter.inc@{lightbox2.formatter.inc}}
+\subsubsection[{theme\_\-lightbox2\_\-emvideo}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-lightbox2\_\-emvideo (\$ {\em field}, \/  \$ {\em item}, \/  \$ {\em formatter}, \/  \$ {\em node}, \/  \$ {\em options} = {\tt array()})}}
+\label{lightbox2_8formatter_8inc_55a97c8d94f5b37a32eb1bf79c153533}
+
+
+Generate the HTML output to open embedded cck videos in a lightbox.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$field}]The CCK field the action is being performed on. \item[{\em \$item}]An array, keyed by column, of the data stored for this item in this field. \item[{\em \$formatter}]The formatter to use for the field. \item[{\em \$node}]The node object. \item[{\em \$options}]Options array. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Themed link to the embedded media field video. \end{Desc}
+\hypertarget{lightbox2_8formatter_8inc_502d02040486a0550fdd60f42880c90b}{
+\index{lightbox2.formatter.inc@{lightbox2.formatter.inc}!theme\_\-lightbox2\_\-file\_\-formatter\_\-lightbox2\_\-iframe@{theme\_\-lightbox2\_\-file\_\-formatter\_\-lightbox2\_\-iframe}}
+\index{theme\_\-lightbox2\_\-file\_\-formatter\_\-lightbox2\_\-iframe@{theme\_\-lightbox2\_\-file\_\-formatter\_\-lightbox2\_\-iframe}!lightbox2.formatter.inc@{lightbox2.formatter.inc}}
+\subsubsection[{theme\_\-lightbox2\_\-file\_\-formatter\_\-lightbox2\_\-iframe}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-lightbox2\_\-file\_\-formatter\_\-lightbox2\_\-iframe (\$ {\em file}, \/  \$ {\em field}, \/  \$ {\em file\_\-formatter\_\-settings})}}
+\label{lightbox2_8formatter_8inc_502d02040486a0550fdd60f42880c90b}
+
+
+Theme function for the lightbox iframe filefield formatter.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$file}]Filefield file object. \item[{\em \$field}]The CCK field the action is being performed on. \item[{\em \$file\_\-formatter\_\-settings}]File formatter settings; ignored. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Themed link to filefield. \end{Desc}
+\hypertarget{lightbox2_8formatter_8inc_f45363655b651acac0a1a211fd1d6359}{
+\index{lightbox2.formatter.inc@{lightbox2.formatter.inc}!theme\_\-lightbox2\_\-formatter\_\-emimage@{theme\_\-lightbox2\_\-formatter\_\-emimage}}
+\index{theme\_\-lightbox2\_\-formatter\_\-emimage@{theme\_\-lightbox2\_\-formatter\_\-emimage}!lightbox2.formatter.inc@{lightbox2.formatter.inc}}
+\subsubsection[{theme\_\-lightbox2\_\-formatter\_\-emimage}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-lightbox2\_\-formatter\_\-emimage (\$ {\em element})}}
+\label{lightbox2_8formatter_8inc_f45363655b651acac0a1a211fd1d6359}
+
+
+Generate the HTML output to open embedded cck images in a lightbox.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$element}]The CCK field element. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The themed link to the embedded image. \end{Desc}
+\hypertarget{lightbox2_8formatter_8inc_0a207276643712809de52eb7d4641b8b}{
+\index{lightbox2.formatter.inc@{lightbox2.formatter.inc}!theme\_\-lightbox2\_\-formatter\_\-emvideo\_\-lightvideo@{theme\_\-lightbox2\_\-formatter\_\-emvideo\_\-lightvideo}}
+\index{theme\_\-lightbox2\_\-formatter\_\-emvideo\_\-lightvideo@{theme\_\-lightbox2\_\-formatter\_\-emvideo\_\-lightvideo}!lightbox2.formatter.inc@{lightbox2.formatter.inc}}
+\subsubsection[{theme\_\-lightbox2\_\-formatter\_\-emvideo\_\-lightvideo}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-lightbox2\_\-formatter\_\-emvideo\_\-lightvideo (\$ {\em element})}}
+\label{lightbox2_8formatter_8inc_0a207276643712809de52eb7d4641b8b}
+
+
+Generate the HTML output to open embedded cck videos in a lightbox.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$element}]The CCK field element. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]HTML output for displaying the video and link. \end{Desc}
+\hypertarget{lightbox2_8formatter_8inc_8721928b4c5064fea2bf2c1c150300bb}{
+\index{lightbox2.formatter.inc@{lightbox2.formatter.inc}!theme\_\-lightbox2\_\-formatter\_\-filefield\_\-lightframe@{theme\_\-lightbox2\_\-formatter\_\-filefield\_\-lightframe}}
+\index{theme\_\-lightbox2\_\-formatter\_\-filefield\_\-lightframe@{theme\_\-lightbox2\_\-formatter\_\-filefield\_\-lightframe}!lightbox2.formatter.inc@{lightbox2.formatter.inc}}
+\subsubsection[{theme\_\-lightbox2\_\-formatter\_\-filefield\_\-lightframe}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-lightbox2\_\-formatter\_\-filefield\_\-lightframe (\$ {\em element})}}
+\label{lightbox2_8formatter_8inc_8721928b4c5064fea2bf2c1c150300bb}
+
+
+Theme function for the lightbox iframe filefield formatter.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$element}]The CCK field element. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The themed link to the file, with lightframe support. \end{Desc}
+\hypertarget{lightbox2_8formatter_8inc_450372bfe4bdee2f7542e81098166703}{
+\index{lightbox2.formatter.inc@{lightbox2.formatter.inc}!theme\_\-lightbox2\_\-formatter\_\-imagefield@{theme\_\-lightbox2\_\-formatter\_\-imagefield}}
+\index{theme\_\-lightbox2\_\-formatter\_\-imagefield@{theme\_\-lightbox2\_\-formatter\_\-imagefield}!lightbox2.formatter.inc@{lightbox2.formatter.inc}}
+\subsubsection[{theme\_\-lightbox2\_\-formatter\_\-imagefield}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-lightbox2\_\-formatter\_\-imagefield (\$ {\em element})}}
+\label{lightbox2_8formatter_8inc_450372bfe4bdee2f7542e81098166703}
+
+
+Handler for Lightbox2 display of imagecache + imagefield CCK fields.
+
+The compact \hyperlink{classview}{view} shows only the first image in a multiple imagefield but shows all images in the lightbox.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$element}]The CCK field element. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]HTML output for displaying the image and link. \end{Desc}
+\hypertarget{lightbox2_8formatter_8inc_4ba8a7f504a1255b4770051408c3a7c4}{
+\index{lightbox2.formatter.inc@{lightbox2.formatter.inc}!theme\_\-lightbox2\_\-image@{theme\_\-lightbox2\_\-image}}
+\index{theme\_\-lightbox2\_\-image@{theme\_\-lightbox2\_\-image}!lightbox2.formatter.inc@{lightbox2.formatter.inc}}
+\subsubsection[{theme\_\-lightbox2\_\-image}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-lightbox2\_\-image (\$ {\em path}, \/  \$ {\em alt} = {\tt ''}, \/  \$ {\em title} = {\tt ''}, \/  \$ {\em attributes} = {\tt array()})}}
+\label{lightbox2_8formatter_8inc_4ba8a7f504a1255b4770051408c3a7c4}
+
+
+Theme function for displaying the lightbox2 trigger image in an imagefield.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$path}]The path to the image to be displayed. \item[{\em \$alt}]The image alternative text. \item[{\em \$title}]The image title. \item[{\em \$attributes}]An array of image attributes, e.g. class name. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]HTML output for displaying the image. \end{Desc}

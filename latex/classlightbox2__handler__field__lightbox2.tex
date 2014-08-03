@@ -1,0 +1,83 @@
+\hypertarget{classlightbox2__handler__field__lightbox2}{
+\section{lightbox2\_\-handler\_\-field\_\-lightbox2 Class Reference}
+\label{classlightbox2__handler__field__lightbox2}\index{lightbox2\_\-handler\_\-field\_\-lightbox2@{lightbox2\_\-handler\_\-field\_\-lightbox2}}
+}
+Inheritance diagram for lightbox2\_\-handler\_\-field\_\-lightbox2::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4cm]{classlightbox2__handler__field__lightbox2}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classlightbox2__handler__field__lightbox2_be83b39eb7bab1582a1038543f59e277}{query} ()
+\item 
+\hyperlink{classlightbox2__handler__field__lightbox2_641e7b72ac54a1c6baf7fd2bd6424438}{option\_\-definition} ()
+\item 
+\hyperlink{classlightbox2__handler__field__lightbox2_6e0462dcba8bb237b822be3d844ed24b}{options\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classlightbox2__handler__field__lightbox2_141baaefa052c49b0084cd88dc3d50ce}{render} (\$values)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A handler to provide a field that is completely custom by the administrator. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classlightbox2__handler__field__lightbox2_641e7b72ac54a1c6baf7fd2bd6424438}{
+\index{lightbox2\_\-handler\_\-field\_\-lightbox2@{lightbox2\_\-handler\_\-field\_\-lightbox2}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!lightbox2_handler_field_lightbox2@{lightbox2\_\-handler\_\-field\_\-lightbox2}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}lightbox2\_\-handler\_\-field\_\-lightbox2::option\_\-definition ()}}
+\label{classlightbox2__handler__field__lightbox2_641e7b72ac54a1c6baf7fd2bd6424438}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented from \hyperlink{classviews__handler__field_64c69a8a3697603f8283405071c25b76}{views\_\-handler\_\-field}.\hypertarget{classlightbox2__handler__field__lightbox2_6e0462dcba8bb237b822be3d844ed24b}{
+\index{lightbox2\_\-handler\_\-field\_\-lightbox2@{lightbox2\_\-handler\_\-field\_\-lightbox2}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!lightbox2_handler_field_lightbox2@{lightbox2\_\-handler\_\-field\_\-lightbox2}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}lightbox2\_\-handler\_\-field\_\-lightbox2::options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classlightbox2__handler__field__lightbox2_6e0462dcba8bb237b822be3d844ed24b}
+
+
+Default options form that provides the label widget that all fields should have. 
+
+Reimplemented from \hyperlink{classviews__handler__field_0435d161922b7b4b84f02a2e79bb947a}{views\_\-handler\_\-field}.\hypertarget{classlightbox2__handler__field__lightbox2_be83b39eb7bab1582a1038543f59e277}{
+\index{lightbox2\_\-handler\_\-field\_\-lightbox2@{lightbox2\_\-handler\_\-field\_\-lightbox2}!query@{query}}
+\index{query@{query}!lightbox2_handler_field_lightbox2@{lightbox2\_\-handler\_\-field\_\-lightbox2}}
+\subsubsection[{query}]{\setlength{\rightskip}{0pt plus 5cm}lightbox2\_\-handler\_\-field\_\-lightbox2::query ()}}
+\label{classlightbox2__handler__field__lightbox2_be83b39eb7bab1582a1038543f59e277}
+
+
+Called to add the field to a query. 
+
+Reimplemented from \hyperlink{classviews__handler__field_4f661f91bcbe80d4a00c30a31456c502}{views\_\-handler\_\-field}.\hypertarget{classlightbox2__handler__field__lightbox2_141baaefa052c49b0084cd88dc3d50ce}{
+\index{lightbox2\_\-handler\_\-field\_\-lightbox2@{lightbox2\_\-handler\_\-field\_\-lightbox2}!render@{render}}
+\index{render@{render}!lightbox2_handler_field_lightbox2@{lightbox2\_\-handler\_\-field\_\-lightbox2}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}lightbox2\_\-handler\_\-field\_\-lightbox2::render (\$ {\em values})}}
+\label{classlightbox2__handler__field__lightbox2_141baaefa052c49b0084cd88dc3d50ce}
+
+
+Render the trigger field and its linked popup information. 
+
+Reimplemented from \hyperlink{classviews__handler__field_82ff951c5e9ceb97b2eab86f880cbc1e}{views\_\-handler\_\-field}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/lightbox2/lightbox2\_\-handler\_\-field\_\-lightbox2.inc\end{CompactItemize}

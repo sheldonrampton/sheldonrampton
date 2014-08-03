@@ -1,0 +1,206 @@
+\hypertarget{actions_8inc}{
+\section{includes/actions.inc File Reference}
+\label{actions_8inc}\index{includes/actions.inc@{includes/actions.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{actions_8inc_7da5f346de3d54e5b0cee717a6f2d390}{actions\_\-do} (\$action\_\-ids, \&\$object, \$context=NULL, \$a1=NULL, \$a2=NULL)
+\item 
+\hyperlink{actions_8inc_d0dbf276d4ca1834760cffc7e1b1be53}{actions\_\-list} (\$reset=FALSE)
+\item 
+\hyperlink{actions_8inc_4275e9fee609ba6e85b03278a681436c}{actions\_\-get\_\-all\_\-actions} ()
+\item 
+\hyperlink{actions_8inc_d943b3f497c80809d895ecc01490d10f}{actions\_\-actions\_\-map} (\$actions)
+\item 
+\hyperlink{actions_8inc_4a0e35c01b48d1a413889948c061a6f0}{actions\_\-function\_\-lookup} (\$hash)
+\item 
+\hyperlink{actions_8inc_a4445cbadb5d03206c4a724581b2b30c}{actions\_\-synchronize} (\$actions\_\-in\_\-code=array(), \$delete\_\-orphans=FALSE)
+\item 
+\hyperlink{actions_8inc_58e2d372003a208c732f98cfb00b1c98}{actions\_\-save} (\$function, \$type, \$params, \$desc, \$aid=NULL)
+\item 
+\hyperlink{actions_8inc_1e953639945d342b20fe51b8d21095cc}{actions\_\-load} (\$aid)
+\item 
+\hyperlink{actions_8inc_857468911c3dd6f839cbdb14c6ed80ac}{actions\_\-delete} (\$aid)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+This is the actions engine for executing stored actions. 
+
+\subsection{Function Documentation}
+\hypertarget{actions_8inc_d943b3f497c80809d895ecc01490d10f}{
+\index{actions.inc@{actions.inc}!actions\_\-actions\_\-map@{actions\_\-actions\_\-map}}
+\index{actions\_\-actions\_\-map@{actions\_\-actions\_\-map}!actions.inc@{actions.inc}}
+\subsubsection[{actions\_\-actions\_\-map}]{\setlength{\rightskip}{0pt plus 5cm}actions\_\-actions\_\-map (\$ {\em actions})}}
+\label{actions_8inc_d943b3f497c80809d895ecc01490d10f}
+
+
+Create an associative array keyed by md5 hashes of function names.
+
+Hashes are used to prevent actual function names from going out into HTML forms and coming back.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$actions}]An associative array with function names as keys and associative arrays with keys 'description', 'type', etc. as values. Generally the output of \hyperlink{actions_8inc_d0dbf276d4ca1834760cffc7e1b1be53}{actions\_\-list()} or \hyperlink{actions_8inc_4275e9fee609ba6e85b03278a681436c}{actions\_\-get\_\-all\_\-actions()} is given as input to this function.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An associative array keyed on md5 hash of function name. The value of each key is an associative array of function, description, and type for the action. \end{Desc}
+\hypertarget{actions_8inc_857468911c3dd6f839cbdb14c6ed80ac}{
+\index{actions.inc@{actions.inc}!actions\_\-delete@{actions\_\-delete}}
+\index{actions\_\-delete@{actions\_\-delete}!actions.inc@{actions.inc}}
+\subsubsection[{actions\_\-delete}]{\setlength{\rightskip}{0pt plus 5cm}actions\_\-delete (\$ {\em aid})}}
+\label{actions_8inc_857468911c3dd6f839cbdb14c6ed80ac}
+
+
+Delete a single action from the database.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$aid}]integer The ID of the action to delete. \end{description}
+\end{Desc}
+\hypertarget{actions_8inc_7da5f346de3d54e5b0cee717a6f2d390}{
+\index{actions.inc@{actions.inc}!actions\_\-do@{actions\_\-do}}
+\index{actions\_\-do@{actions\_\-do}!actions.inc@{actions.inc}}
+\subsubsection[{actions\_\-do}]{\setlength{\rightskip}{0pt plus 5cm}actions\_\-do (\$ {\em action\_\-ids}, \/  \&\$ {\em object}, \/  \$ {\em context} = {\tt NULL}, \/  \$ {\em a1} = {\tt NULL}, \/  \$ {\em a2} = {\tt NULL})}}
+\label{actions_8inc_7da5f346de3d54e5b0cee717a6f2d390}
+
+
+Perform a given list of actions by executing their callback functions.
+
+Given the IDs of actions to perform, find out what the callbacks for the actions are by querying the database. Then call each callback using the function call \$function(\$object, \$context, \$a1, \$a2) where \$function is the name of a function written in compliance with the action specification; that is, foo(\$object, \$context).
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$action\_\-ids}]The ID of the action to perform. Can be a single action ID or an array of IDs. IDs of instances will be numeric; IDs of singletons will be function names. \item[{\em \$object}]Parameter that will be passed along to the callback. Typically the object that the action will act on; a node, user or comment object. If the action does not act on an object, pass a dummy object. This is necessary to support PHP 4 object referencing. \item[{\em \$context}]Parameter that will be passed along to the callback. \$context is a keyed array containing extra information about what is currently happening at the time of the call. Typically \$context\mbox{[}'hook'\mbox{]} and \$context\mbox{[}'op'\mbox{]} will tell which hook-op combination resulted in this call to \hyperlink{actions_8inc_7da5f346de3d54e5b0cee717a6f2d390}{actions\_\-do()}. \item[{\em \$a1}]Parameter that will be passed along to the callback. \item[{\em \$a2}]Parameter that will be passed along to the callback.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An associative array containing the result of the function that performs the action, keyed on action ID. \end{Desc}
+\hypertarget{actions_8inc_4a0e35c01b48d1a413889948c061a6f0}{
+\index{actions.inc@{actions.inc}!actions\_\-function\_\-lookup@{actions\_\-function\_\-lookup}}
+\index{actions\_\-function\_\-lookup@{actions\_\-function\_\-lookup}!actions.inc@{actions.inc}}
+\subsubsection[{actions\_\-function\_\-lookup}]{\setlength{\rightskip}{0pt plus 5cm}actions\_\-function\_\-lookup (\$ {\em hash})}}
+\label{actions_8inc_4a0e35c01b48d1a413889948c061a6f0}
+
+
+Given an md5 hash of a function name, return the function name.
+
+Faster than \hyperlink{actions_8inc_d943b3f497c80809d895ecc01490d10f}{actions\_\-actions\_\-map()} when you only need the function name.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$hash}]MD5 hash of a function name\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Function name \end{Desc}
+\hypertarget{actions_8inc_4275e9fee609ba6e85b03278a681436c}{
+\index{actions.inc@{actions.inc}!actions\_\-get\_\-all\_\-actions@{actions\_\-get\_\-all\_\-actions}}
+\index{actions\_\-get\_\-all\_\-actions@{actions\_\-get\_\-all\_\-actions}!actions.inc@{actions.inc}}
+\subsubsection[{actions\_\-get\_\-all\_\-actions}]{\setlength{\rightskip}{0pt plus 5cm}actions\_\-get\_\-all\_\-actions ()}}
+\label{actions_8inc_4275e9fee609ba6e85b03278a681436c}
+
+
+Retrieves all action instances from the database.
+
+Compare with \hyperlink{actions_8inc_d0dbf276d4ca1834760cffc7e1b1be53}{actions\_\-list()}, which gathers actions by invoking hook\_\-action\_\-info(). The actions returned by this function and the actions returned by \hyperlink{actions_8inc_d0dbf276d4ca1834760cffc7e1b1be53}{actions\_\-list()} are partially synchronized. Non-configurable actions from hook\_\-action\_\-info() implementations are put into the database when \hyperlink{actions_8inc_a4445cbadb5d03206c4a724581b2b30c}{actions\_\-synchronize()} is called, which happens when admin/settings/actions is visited. Configurable actions are not added to the database until they are configured in the user interface, in which case a database row is created for each configuration of each action.
+
+\begin{Desc}
+\item[Returns:]Associative array keyed by action ID. Each value is an associative array with keys 'callback', 'description', 'type' and 'configurable'. \end{Desc}
+\hypertarget{actions_8inc_d0dbf276d4ca1834760cffc7e1b1be53}{
+\index{actions.inc@{actions.inc}!actions\_\-list@{actions\_\-list}}
+\index{actions\_\-list@{actions\_\-list}!actions.inc@{actions.inc}}
+\subsubsection[{actions\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}actions\_\-list (\$ {\em reset} = {\tt FALSE})}}
+\label{actions_8inc_d0dbf276d4ca1834760cffc7e1b1be53}
+
+
+Discover all action functions by invoking hook\_\-action\_\-info().
+
+
+
+\begin{Code}\begin{verbatim} mymodule_action_info() {
+   return array(
+     'mymodule_functiondescription_action' => array(
+       'type' => 'node',
+       'description' => t('Save node'),
+       'configurable' => FALSE,
+       'hooks' => array(
+         'nodeapi' => array('delete', 'insert', 'update', 'view'),
+         'comment' => array('delete', 'insert', 'update', 'view'),
+       )
+     )
+   );
+ }
+\end{verbatim}
+\end{Code}
+
+
+
+The description is used in presenting possible actions to the user for configuration. The type is used to present these actions in a logical grouping and to denote context. Some types are 'node', 'user', 'comment', and 'system'. If an action is configurable it will provide form, validation and submission functions. The hooks the action supports are declared in the 'hooks' array.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$reset}]Reset the action info static cache.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An associative array keyed on function name. The value of each key is an array containing information about the action, such as type of action and description of the action, e.g.,\end{Desc}
+
+
+\begin{Code}\begin{verbatim}   $actions['node_publish_action'] = array(
+     'type' => 'node',
+     'description' => t('Publish post'),
+     'configurable' => FALSE,
+     'hooks' => array(
+       'nodeapi' => array('presave', 'insert', 'update', 'view'),
+       'comment' => array('delete', 'insert', 'update', 'view'),
+     ),
+   );
+\end{verbatim}
+\end{Code}
+
+ \hypertarget{actions_8inc_1e953639945d342b20fe51b8d21095cc}{
+\index{actions.inc@{actions.inc}!actions\_\-load@{actions\_\-load}}
+\index{actions\_\-load@{actions\_\-load}!actions.inc@{actions.inc}}
+\subsubsection[{actions\_\-load}]{\setlength{\rightskip}{0pt plus 5cm}actions\_\-load (\$ {\em aid})}}
+\label{actions_8inc_1e953639945d342b20fe51b8d21095cc}
+
+
+Retrieve a single action from the database.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$aid}]integer The ID of the action to retrieve.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The appropriate action row from the database as an object. \end{Desc}
+\hypertarget{actions_8inc_58e2d372003a208c732f98cfb00b1c98}{
+\index{actions.inc@{actions.inc}!actions\_\-save@{actions\_\-save}}
+\index{actions\_\-save@{actions\_\-save}!actions.inc@{actions.inc}}
+\subsubsection[{actions\_\-save}]{\setlength{\rightskip}{0pt plus 5cm}actions\_\-save (\$ {\em function}, \/  \$ {\em type}, \/  \$ {\em params}, \/  \$ {\em desc}, \/  \$ {\em aid} = {\tt NULL})}}
+\label{actions_8inc_58e2d372003a208c732f98cfb00b1c98}
+
+
+Save an action and its associated user-supplied parameter values to the database.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$function}]The name of the function to be called when this action is performed. \item[{\em \$type}]The type of action, to describe grouping and/or context, e.g., 'node', 'user', 'comment', or 'system'. \item[{\em \$params}]An associative array with parameter names as keys and parameter values as values. \item[{\em \$desc}]A user-supplied description of this particular action, e.g., 'Send e-mail to Jim'. \item[{\em \$aid}]The ID of this action. If omitted, a new action is created.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The ID of the action. \end{Desc}
+\hypertarget{actions_8inc_a4445cbadb5d03206c4a724581b2b30c}{
+\index{actions.inc@{actions.inc}!actions\_\-synchronize@{actions\_\-synchronize}}
+\index{actions\_\-synchronize@{actions\_\-synchronize}!actions.inc@{actions.inc}}
+\subsubsection[{actions\_\-synchronize}]{\setlength{\rightskip}{0pt plus 5cm}actions\_\-synchronize (\$ {\em actions\_\-in\_\-code} = {\tt array()}, \/  \$ {\em delete\_\-orphans} = {\tt FALSE})}}
+\label{actions_8inc_a4445cbadb5d03206c4a724581b2b30c}
+
+
+Synchronize actions that are provided by modules.
+
+They are synchronized with actions that are stored in the actions table. This is necessary so that actions that do not require configuration can receive action IDs. This is not necessarily the best approach, but it is the most straightforward. 

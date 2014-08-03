@@ -1,0 +1,101 @@
+\hypertarget{trigger_8admin_8inc}{
+\section{modules/trigger/trigger.admin.inc File Reference}
+\label{trigger_8admin_8inc}\index{modules/trigger/trigger.admin.inc@{modules/trigger/trigger.admin.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{trigger_8admin_8inc_85741ccca04cdb6fabb8c6c644902013}{trigger\_\-assign} (\$type=NULL)
+\item 
+\hyperlink{group__forms_gc2c2d1e7054da26671a18e1a6d1e4631}{trigger\_\-unassign} (\$form\_\-state, \$hook=NULL, \$op=NULL, \$aid=NULL)
+\item 
+\hypertarget{trigger_8admin_8inc_e0e1a6cb2c032a6650a19c8d898896c0}{
+\textbf{trigger\_\-unassign\_\-submit} (\$form, \&\$form\_\-state)}
+\label{trigger_8admin_8inc_e0e1a6cb2c032a6650a19c8d898896c0}
+
+\item 
+\hyperlink{trigger_8admin_8inc_cf100bfaaa96b66189c785d7a7d54dae}{trigger\_\-assign\_\-form} (\$form\_\-state, \$hook, \$op, \$description)
+\item 
+\hyperlink{trigger_8admin_8inc_b8f232934437a99af0903a397c090934}{trigger\_\-assign\_\-form\_\-validate} (\$form, \$form\_\-state)
+\item 
+\hyperlink{trigger_8admin_8inc_53539d67f577fc171251efbd969d5d67}{trigger\_\-assign\_\-form\_\-submit} (\$form, \$form\_\-state)
+\item 
+\hyperlink{group__themeable_g291ceb7284cc7baf7dcf551a9cedec24}{theme\_\-trigger\_\-display} (\$element)
+\item 
+\hyperlink{trigger_8admin_8inc_918f527b019873c09fa8eab68415a355}{\_\-trigger\_\-get\_\-hook\_\-actions} (\$hook, \$op, \$type=NULL)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Admin page callbacks for the trigger module. 
+
+\subsection{Function Documentation}
+\hypertarget{trigger_8admin_8inc_918f527b019873c09fa8eab68415a355}{
+\index{trigger.admin.inc@{trigger.admin.inc}!\_\-trigger\_\-get\_\-hook\_\-actions@{\_\-trigger\_\-get\_\-hook\_\-actions}}
+\index{\_\-trigger\_\-get\_\-hook\_\-actions@{\_\-trigger\_\-get\_\-hook\_\-actions}!trigger.admin.inc@{trigger.admin.inc}}
+\subsubsection[{\_\-trigger\_\-get\_\-hook\_\-actions}]{\setlength{\rightskip}{0pt plus 5cm}\_\-trigger\_\-get\_\-hook\_\-actions (\$ {\em hook}, \/  \$ {\em op}, \/  \$ {\em type} = {\tt NULL})}}
+\label{trigger_8admin_8inc_918f527b019873c09fa8eab68415a355}
+
+
+Get the actions that have already been defined for this type-hook-op combination.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$type}]One of 'node', 'user', 'comment'. \item[{\em \$hook}]The name of the hook for which actions have been assigned, e.g. 'nodeapi'. \item[{\em \$op}]The hook operation for which the actions have been assigned, e.g., 'view'. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An array of action descriptions keyed by action IDs. \end{Desc}
+\hypertarget{trigger_8admin_8inc_85741ccca04cdb6fabb8c6c644902013}{
+\index{trigger.admin.inc@{trigger.admin.inc}!trigger\_\-assign@{trigger\_\-assign}}
+\index{trigger\_\-assign@{trigger\_\-assign}!trigger.admin.inc@{trigger.admin.inc}}
+\subsubsection[{trigger\_\-assign}]{\setlength{\rightskip}{0pt plus 5cm}trigger\_\-assign (\$ {\em type} = {\tt NULL})}}
+\label{trigger_8admin_8inc_85741ccca04cdb6fabb8c6c644902013}
+
+
+Build the form that allows users to assign actions to hooks.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$type}]Name of hook. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]HTML form. \end{Desc}
+\hypertarget{trigger_8admin_8inc_cf100bfaaa96b66189c785d7a7d54dae}{
+\index{trigger.admin.inc@{trigger.admin.inc}!trigger\_\-assign\_\-form@{trigger\_\-assign\_\-form}}
+\index{trigger\_\-assign\_\-form@{trigger\_\-assign\_\-form}!trigger.admin.inc@{trigger.admin.inc}}
+\subsubsection[{trigger\_\-assign\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}trigger\_\-assign\_\-form (\$ {\em form\_\-state}, \/  \$ {\em hook}, \/  \$ {\em op}, \/  \$ {\em description})}}
+\label{trigger_8admin_8inc_cf100bfaaa96b66189c785d7a7d54dae}
+
+
+Create the form definition for assigning an action to a hook-op combination.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$form\_\-state}]Information about the current form. \item[{\em \$hook}]The name of the hook, e.g., 'nodeapi'. \item[{\em \$op}]The name of the hook operation, e.g., 'insert'. \item[{\em \$description}]A plain English description of what this hook operation does. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]\end{Desc}
+forms \begin{Desc}
+\item[See also:]\hyperlink{trigger_8admin_8inc_b8f232934437a99af0903a397c090934}{trigger\_\-assign\_\-form\_\-validate()} 
+
+\hyperlink{trigger_8admin_8inc_53539d67f577fc171251efbd969d5d67}{trigger\_\-assign\_\-form\_\-submit()} \end{Desc}
+\hypertarget{trigger_8admin_8inc_53539d67f577fc171251efbd969d5d67}{
+\index{trigger.admin.inc@{trigger.admin.inc}!trigger\_\-assign\_\-form\_\-submit@{trigger\_\-assign\_\-form\_\-submit}}
+\index{trigger\_\-assign\_\-form\_\-submit@{trigger\_\-assign\_\-form\_\-submit}!trigger.admin.inc@{trigger.admin.inc}}
+\subsubsection[{trigger\_\-assign\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}trigger\_\-assign\_\-form\_\-submit (\$ {\em form}, \/  \$ {\em form\_\-state})}}
+\label{trigger_8admin_8inc_53539d67f577fc171251efbd969d5d67}
+
+
+Submit function for \hyperlink{trigger_8admin_8inc_cf100bfaaa96b66189c785d7a7d54dae}{trigger\_\-assign\_\-form()}. \hypertarget{trigger_8admin_8inc_b8f232934437a99af0903a397c090934}{
+\index{trigger.admin.inc@{trigger.admin.inc}!trigger\_\-assign\_\-form\_\-validate@{trigger\_\-assign\_\-form\_\-validate}}
+\index{trigger\_\-assign\_\-form\_\-validate@{trigger\_\-assign\_\-form\_\-validate}!trigger.admin.inc@{trigger.admin.inc}}
+\subsubsection[{trigger\_\-assign\_\-form\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}trigger\_\-assign\_\-form\_\-validate (\$ {\em form}, \/  \$ {\em form\_\-state})}}
+\label{trigger_8admin_8inc_b8f232934437a99af0903a397c090934}
+
+
+Validation function for \hyperlink{trigger_8admin_8inc_cf100bfaaa96b66189c785d7a7d54dae}{trigger\_\-assign\_\-form()}.
+
+Makes sure that the user is not re-assigning an action to an event. 

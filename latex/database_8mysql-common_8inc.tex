@@ -1,0 +1,87 @@
+\hypertarget{database_8mysql-common_8inc}{
+\section{includes/database.mysql-common.inc File Reference}
+\label{database_8mysql-common_8inc}\index{includes/database.mysql-common.inc@{includes/database.mysql-common.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{database_8mysql-common_8inc_9e096321b86945d128746ac7bedce8f3}{db\_\-query} (\$query)
+\end{CompactItemize}
+\begin{Indent}{\bf }\par
+\begin{CompactItemize}
+\item 
+\hyperlink{group__schemaapi_gd567c41b41c4d48ed50af9b878c8ecaf}{db\_\-create\_\-table\_\-sql} (\$name, \$table)
+\item 
+\hypertarget{group__schemaapi_ga4be538758cb8279d3aeed18e1b25c2d}{
+\textbf{\_\-db\_\-create\_\-keys\_\-sql} (\$spec)}
+\label{group__schemaapi_ga4be538758cb8279d3aeed18e1b25c2d}
+
+\item 
+\hypertarget{group__schemaapi_gaaad5b3ac359e52b5c8e1058a3748615}{
+\textbf{\_\-db\_\-create\_\-key\_\-sql} (\$fields)}
+\label{group__schemaapi_gaaad5b3ac359e52b5c8e1058a3748615}
+
+\item 
+\hyperlink{group__schemaapi_g4c5486f85f0d1feeb4efba32f01926fb}{\_\-db\_\-process\_\-field} (\$field)
+\item 
+\hyperlink{group__schemaapi_ge5ec976573ad46239192dcd139d07f10}{\_\-db\_\-create\_\-field\_\-sql} (\$name, \$spec)
+\item 
+\hyperlink{group__schemaapi_gadf0495656599ba9336d68675b54f8dd}{db\_\-type\_\-map} ()
+\item 
+\hyperlink{group__schemaapi_gbb4d2d8b00f915ba7e8c0a9d985d597d}{db\_\-rename\_\-table} (\&\$ret, \$table, \$new\_\-name)
+\item 
+\hyperlink{group__schemaapi_g1da2016702d7da653316aa34fcd86bd9}{db\_\-drop\_\-table} (\&\$ret, \$table)
+\item 
+\hyperlink{group__schemaapi_gdffaa3314b3f50ffd6ba4da381ec78fb}{db\_\-add\_\-field} (\&\$ret, \$table, \$field, \$spec, \$keys\_\-new=array())
+\item 
+\hyperlink{group__schemaapi_ge2013b878edbcfe21ca123e73af4684a}{db\_\-drop\_\-field} (\&\$ret, \$table, \$field)
+\item 
+\hyperlink{group__schemaapi_gf5a1ae05cf11189bc6e0f6a8ed2b7701}{db\_\-field\_\-set\_\-default} (\&\$ret, \$table, \$field, \$default)
+\item 
+\hyperlink{group__schemaapi_ga01758e1338d2b1ce59da26c08c6448a}{db\_\-field\_\-set\_\-no\_\-default} (\&\$ret, \$table, \$field)
+\item 
+\hyperlink{group__schemaapi_g95e6db824dbcdd4f9f486e657137d482}{db\_\-add\_\-primary\_\-key} (\&\$ret, \$table, \$fields)
+\item 
+\hyperlink{group__schemaapi_gb8ee0e7e9ca04e60ec8b0464a247425d}{db\_\-drop\_\-primary\_\-key} (\&\$ret, \$table)
+\item 
+\hyperlink{group__schemaapi_g407af986b5e78e1ef11242d5be8adfc4}{db\_\-add\_\-unique\_\-key} (\&\$ret, \$table, \$name, \$fields)
+\item 
+\hyperlink{group__schemaapi_g727ffb0cbdb6bc2afd5803b09e296603}{db\_\-drop\_\-unique\_\-key} (\&\$ret, \$table, \$name)
+\item 
+\hyperlink{group__schemaapi_gaaa3b734b6b1acc09fb5e2ac8bd7d925}{db\_\-add\_\-index} (\&\$ret, \$table, \$name, \$fields)
+\item 
+\hyperlink{group__schemaapi_g3a9c0b20502c5afb8177be5753f8cdbb}{db\_\-drop\_\-index} (\&\$ret, \$table, \$name)
+\item 
+\hyperlink{group__schemaapi_g03f152245358d2db68d067aa8a1fceb4}{db\_\-change\_\-field} (\&\$ret, \$table, \$field, \$field\_\-new, \$spec, \$keys\_\-new=array())
+\item 
+\hyperlink{group__schemaapi_g1d29b142caeee2f0f2217be16857b9ae}{db\_\-last\_\-insert\_\-id} (\$table, \$field)
+\end{CompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+Functions shared between mysql and mysqli database engines. 
+
+\subsection{Function Documentation}
+\hypertarget{database_8mysql-common_8inc_9e096321b86945d128746ac7bedce8f3}{
+\index{database.mysql-common.inc@{database.mysql-common.inc}!db\_\-query@{db\_\-query}}
+\index{db\_\-query@{db\_\-query}!database.mysql-common.inc@{database.mysql-common.inc}}
+\subsubsection[{db\_\-query}]{\setlength{\rightskip}{0pt plus 5cm}db\_\-query (\$ {\em query})}}
+\label{database_8mysql-common_8inc_9e096321b86945d128746ac7bedce8f3}
+
+
+Runs a basic query in the active database.
+
+User-supplied arguments to the query should be passed in as separate parameters so that they can be properly escaped to avoid SQL injection attacks.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$query}]A string containing an SQL query. \item[{\em ...}]A variable number of arguments which are substituted into the query using printf() syntax. Instead of a variable number of query arguments, you may also pass a single array containing the query arguments.\end{description}
+\end{Desc}
+Valid -modifiers are: s, d, f, b (binary data, do not enclose in '') and \%\%.
+
+NOTE: using this syntax will cast NULL and FALSE values to decimal 0, and TRUE values to decimal 1.
+
+\begin{Desc}
+\item[Returns:]A database query result resource, or FALSE if the query was not executed correctly. \end{Desc}

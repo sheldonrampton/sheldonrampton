@@ -1,0 +1,611 @@
+\hypertarget{group__schemaapi}{
+\section{Schema API}
+\label{group__schemaapi}\index{Schema API@{Schema API}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{group__schemaapi_gb7a73e88621851e4bed62fd6063eb2f9}{db\_\-create\_\-table} (\&\$ret, \$name, \$table)
+\item 
+\hyperlink{group__schemaapi_geb423ba53e5133548abe3d999f86e787}{db\_\-field\_\-names} (\$fields)
+\item 
+\hyperlink{group__schemaapi_g1d594f0ad0eab77e4b925887be7e4b08}{db\_\-type\_\-placeholder} (\$type)
+\end{CompactItemize}
+\begin{CompactItemize}
+\item 
+\hyperlink{group__schemaapi_g979670bd6bd2e34337ffc5f0810f2d71}{drupal\_\-get\_\-schema} (\$table=NULL, \$rebuild=FALSE)
+\item 
+\hyperlink{group__schemaapi_g9706b8d6ecdac10302d83bd50935a698}{drupal\_\-install\_\-schema} (\$module)
+\item 
+\hyperlink{group__schemaapi_g0688b6627af9dc05f2618f81489c3db0}{drupal\_\-uninstall\_\-schema} (\$module)
+\item 
+\hyperlink{group__schemaapi_gecb0d63f03b96dd1426298804e091d3b}{drupal\_\-get\_\-schema\_\-unprocessed} (\$module, \$table=NULL)
+\item 
+\hyperlink{group__schemaapi_g7bd9447538f3e7c5baec5d8d67db164c}{\_\-drupal\_\-initialize\_\-schema} (\$module, \&\$schema)
+\item 
+\hyperlink{group__schemaapi_gacfcd6f676ee9062f0ba50a008a05443}{drupal\_\-schema\_\-fields\_\-sql} (\$table, \$prefix=NULL)
+\item 
+\hyperlink{group__schemaapi_g85da8424c4111b46aefb6fcb3a899c7d}{drupal\_\-write\_\-record} (\$table, \&\$object, \$update=array())
+\end{CompactItemize}
+\begin{CompactItemize}
+\item 
+\hyperlink{group__schemaapi_gd567c41b41c4d48ed50af9b878c8ecaf}{db\_\-create\_\-table\_\-sql} (\$name, \$table)
+\item 
+\hypertarget{group__schemaapi_ga4be538758cb8279d3aeed18e1b25c2d}{
+\textbf{\_\-db\_\-create\_\-keys\_\-sql} (\$spec)}
+\label{group__schemaapi_ga4be538758cb8279d3aeed18e1b25c2d}
+
+\item 
+\hypertarget{group__schemaapi_gaaad5b3ac359e52b5c8e1058a3748615}{
+\textbf{\_\-db\_\-create\_\-key\_\-sql} (\$fields)}
+\label{group__schemaapi_gaaad5b3ac359e52b5c8e1058a3748615}
+
+\item 
+\hyperlink{group__schemaapi_g4c5486f85f0d1feeb4efba32f01926fb}{\_\-db\_\-process\_\-field} (\$field)
+\item 
+\hyperlink{group__schemaapi_ge5ec976573ad46239192dcd139d07f10}{\_\-db\_\-create\_\-field\_\-sql} (\$name, \$spec)
+\item 
+\hyperlink{group__schemaapi_gbb4d2d8b00f915ba7e8c0a9d985d597d}{db\_\-rename\_\-table} (\&\$ret, \$table, \$new\_\-name)
+\item 
+\hyperlink{group__schemaapi_g1da2016702d7da653316aa34fcd86bd9}{db\_\-drop\_\-table} (\&\$ret, \$table)
+\item 
+\hyperlink{group__schemaapi_gdffaa3314b3f50ffd6ba4da381ec78fb}{db\_\-add\_\-field} (\&\$ret, \$table, \$field, \$spec, \$keys\_\-new=array())
+\item 
+\hyperlink{group__schemaapi_ge2013b878edbcfe21ca123e73af4684a}{db\_\-drop\_\-field} (\&\$ret, \$table, \$field)
+\item 
+\hyperlink{group__schemaapi_gf5a1ae05cf11189bc6e0f6a8ed2b7701}{db\_\-field\_\-set\_\-default} (\&\$ret, \$table, \$field, \$default)
+\item 
+\hyperlink{group__schemaapi_ga01758e1338d2b1ce59da26c08c6448a}{db\_\-field\_\-set\_\-no\_\-default} (\&\$ret, \$table, \$field)
+\item 
+\hyperlink{group__schemaapi_g95e6db824dbcdd4f9f486e657137d482}{db\_\-add\_\-primary\_\-key} (\&\$ret, \$table, \$fields)
+\item 
+\hyperlink{group__schemaapi_gb8ee0e7e9ca04e60ec8b0464a247425d}{db\_\-drop\_\-primary\_\-key} (\&\$ret, \$table)
+\item 
+\hyperlink{group__schemaapi_g407af986b5e78e1ef11242d5be8adfc4}{db\_\-add\_\-unique\_\-key} (\&\$ret, \$table, \$name, \$fields)
+\item 
+\hyperlink{group__schemaapi_g727ffb0cbdb6bc2afd5803b09e296603}{db\_\-drop\_\-unique\_\-key} (\&\$ret, \$table, \$name)
+\item 
+\hyperlink{group__schemaapi_gaaa3b734b6b1acc09fb5e2ac8bd7d925}{db\_\-add\_\-index} (\&\$ret, \$table, \$name, \$fields)
+\item 
+\hyperlink{group__schemaapi_g3a9c0b20502c5afb8177be5753f8cdbb}{db\_\-drop\_\-index} (\&\$ret, \$table, \$name)
+\item 
+\hyperlink{group__schemaapi_g03f152245358d2db68d067aa8a1fceb4}{db\_\-change\_\-field} (\&\$ret, \$table, \$field, \$field\_\-new, \$spec, \$keys\_\-new=array())
+\item 
+\hyperlink{group__schemaapi_g1d29b142caeee2f0f2217be16857b9ae}{db\_\-last\_\-insert\_\-id} (\$table, \$field)
+\end{CompactItemize}
+\begin{CompactItemize}
+\item 
+\hyperlink{group__schemaapi_gadf0495656599ba9336d68675b54f8dd}{db\_\-type\_\-map} ()
+\item 
+\hypertarget{group__schemaapi_g67b8a831a7fa968df49a645b11173e82}{
+\textbf{\_\-db\_\-create\_\-index\_\-sql} (\$table, \$name, \$fields)}
+\label{group__schemaapi_g67b8a831a7fa968df49a645b11173e82}
+
+\item 
+\hypertarget{group__schemaapi_g40102607d0c0d76f92fc9acd18bd9cc9}{
+\textbf{\_\-db\_\-create\_\-keys} (\&\$ret, \$table, \$new\_\-keys)}
+\label{group__schemaapi_g40102607d0c0d76f92fc9acd18bd9cc9}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+End of \char`\"{}defgroup database\char`\"{}.
+
+A Drupal schema definition is an array structure representing one or more tables and their related keys and indexes. A schema is defined by hook\_\-schema(), which usually lives in a modulename.install file.
+
+By implementing hook\_\-schema() and specifying the tables your module declares, you can easily create and drop these tables on all supported database engines. You don't have to deal with the different SQL dialects for table creation and alteration of the supported database engines.
+
+hook\_\-schema() should return an array with a key for each table that the module defines.
+
+The following keys are defined:
+
+\begin{itemize}
+\item 'description': A string describing this table and its purpose. References to other tables should be enclosed in curly-brackets. For example, the node\_\-revisions table description field might contain \char`\"{}Stores per-revision title and body data for each \{node\}.\char`\"{}\item 'fields': An associative array ('fieldname' =$>$ specification) that describes the table's database columns. The specification is also an array. The following specification parameters are defined:\end{itemize}
+
+
+\begin{itemize}
+\item 'description': A string describing this field and its purpose. References to other tables should be enclosed in curly-brackets. For example, the node table vid field description might contain \char`\"{}Always holds the largest (most recent) \{node\_\-revisions\}.vid value for this nid.\char`\"{}\item 'type': The generic datatype: 'varchar', 'int', 'serial' 'float', 'numeric', 'text', 'blob' or 'datetime'. Most types just map to the according database engine specific datatypes. Use 'serial' for auto incrementing fields. This will expand to 'int auto\_\-increment' on mysql.\item 'serialize': A boolean indicating whether the field will be stored as a serialized string.\item 'size': The data size: 'tiny', 'small', 'medium', 'normal', 'big'. This is a hint about the largest value the field will store and determines which of the database engine specific datatypes will be used (e.g. on MySQL, TINYINT vs. INT vs. BIGINT). 'normal', the default, selects the base type (e.g. on MySQL, INT, VARCHAR, BLOB, etc.).\end{itemize}
+
+
+Not all sizes are available for all data types. See \hyperlink{group__schemaapi_gadf0495656599ba9336d68675b54f8dd}{db\_\-type\_\-map()} for possible combinations.\begin{itemize}
+\item 'not null': If true, no NULL values will be allowed in this database column. Defaults to false.\item 'default': The field's default value. The PHP type of the value matters: '', '0', and 0 are all different. If you specify '0' as the default value for a type 'int' field it will not work because '0' is a string containing the character \char`\"{}zero\char`\"{}, not an integer.\item 'length': The maximal length of a type 'char', 'varchar' or 'text' field. Ignored for other field types.\item 'unsigned': A boolean indicating whether a type 'int', 'float' and 'numeric' only is signed or unsigned. Defaults to FALSE. Ignored for other field types.\item 'precision', 'scale': For type 'numeric' fields, indicates the precision (total number of significant digits) and scale (decimal digits right of the decimal point). Both values are mandatory. Ignored for other field types.\end{itemize}
+
+
+All parameters apart from 'type' are optional except that type 'numeric' columns must specify 'precision' and 'scale'.
+
+\begin{itemize}
+\item 'primary key': An array of one or more key column specifiers (see below) that form the primary key.\item 'unique keys': An associative array of unique keys ('keyname' =$>$ specification). Each specification is an array of one or more key column specifiers (see below) that form a unique key on the table.\item 'indexes': An associative array of indexes ('indexame' =$>$ specification). Each specification is an array of one or more key column specifiers (see below) that form an index on the table.\end{itemize}
+
+
+A key column specifier is either a string naming a column or an array of two elements, column name and length, specifying a prefix of the named column.
+
+As an example, here is a SUBSET of the schema definition for Drupal's 'node' table. It show four fields (nid, vid, type, and title), the primary key on field 'nid', a unique key named 'vid' on field 'vid', and two indexes, one named 'nid' on field 'nid' and one named 'node\_\-title\_\-type' on the field 'title' and the first four bytes of the field 'type':
+
+
+
+\begin{Code}\begin{verbatim} $schema['node'] = array(
+   'fields' => array(
+     'nid'      => array('type' => 'serial', 'unsigned' => TRUE, 'not null' => TRUE),
+     'vid'      => array('type' => 'int', 'unsigned' => TRUE, 'not null' => TRUE, 'default' => 0),
+     'type'     => array('type' => 'varchar', 'length' => 32, 'not null' => TRUE, 'default' => ''),
+     'title'    => array('type' => 'varchar', 'length' => 128, 'not null' => TRUE, 'default' => ''),
+   ),
+   'primary key' => array('nid'),
+   'unique keys' => array(
+     'vid'     => array('vid')
+   ),
+   'indexes' => array(
+     'nid'                 => array('nid'),
+     'node_title_type'     => array('title', array('type', 4)),
+   ),
+ );
+\end{verbatim}
+\end{Code}
+
+
+
+\begin{Desc}
+\item[See also:]\hyperlink{group__schemaapi_g9706b8d6ecdac10302d83bd50935a698}{drupal\_\-install\_\-schema()} \end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{group__schemaapi_ge5ec976573ad46239192dcd139d07f10}{
+\index{schemaapi@{schemaapi}!\_\-db\_\-create\_\-field\_\-sql@{\_\-db\_\-create\_\-field\_\-sql}}
+\index{\_\-db\_\-create\_\-field\_\-sql@{\_\-db\_\-create\_\-field\_\-sql}!schemaapi@{schemaapi}}
+\subsubsection[{\_\-db\_\-create\_\-field\_\-sql}]{\setlength{\rightskip}{0pt plus 5cm}\_\-db\_\-create\_\-field\_\-sql (\$ {\em name}, \/  \$ {\em spec})}}
+\label{group__schemaapi_ge5ec976573ad46239192dcd139d07f10}
+
+
+Create an SQL string for a field to be used in table creation or alteration.
+
+Before passing a field out of a schema definition into this function it has to be processed by \hyperlink{group__schemaapi_g4c5486f85f0d1feeb4efba32f01926fb}{\_\-db\_\-process\_\-field()}.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$name}]Name of the field. \item[{\em \$spec}]The field specification, as per the schema data structure format. \end{description}
+\end{Desc}
+\hypertarget{group__schemaapi_g4c5486f85f0d1feeb4efba32f01926fb}{
+\index{schemaapi@{schemaapi}!\_\-db\_\-process\_\-field@{\_\-db\_\-process\_\-field}}
+\index{\_\-db\_\-process\_\-field@{\_\-db\_\-process\_\-field}!schemaapi@{schemaapi}}
+\subsubsection[{\_\-db\_\-process\_\-field}]{\setlength{\rightskip}{0pt plus 5cm}\_\-db\_\-process\_\-field (\$ {\em field})}}
+\label{group__schemaapi_g4c5486f85f0d1feeb4efba32f01926fb}
+
+
+Set database-engine specific properties for a field.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$field}]A field description array, as specified in the schema documentation. \end{description}
+\end{Desc}
+\hypertarget{group__schemaapi_g7bd9447538f3e7c5baec5d8d67db164c}{
+\index{schemaapi@{schemaapi}!\_\-drupal\_\-initialize\_\-schema@{\_\-drupal\_\-initialize\_\-schema}}
+\index{\_\-drupal\_\-initialize\_\-schema@{\_\-drupal\_\-initialize\_\-schema}!schemaapi@{schemaapi}}
+\subsubsection[{\_\-drupal\_\-initialize\_\-schema}]{\setlength{\rightskip}{0pt plus 5cm}\_\-drupal\_\-initialize\_\-schema (\$ {\em module}, \/  \&\$ {\em schema})}}
+\label{group__schemaapi_g7bd9447538f3e7c5baec5d8d67db164c}
+
+
+Fill in required default values for table definitions returned by hook\_\-schema().
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$module}]The module for which hook\_\-schema() was invoked. \item[{\em \$schema}]The schema definition array as it was returned by the module's hook\_\-schema(). \end{description}
+\end{Desc}
+\hypertarget{group__schemaapi_gdffaa3314b3f50ffd6ba4da381ec78fb}{
+\index{schemaapi@{schemaapi}!db\_\-add\_\-field@{db\_\-add\_\-field}}
+\index{db\_\-add\_\-field@{db\_\-add\_\-field}!schemaapi@{schemaapi}}
+\subsubsection[{db\_\-add\_\-field}]{\setlength{\rightskip}{0pt plus 5cm}db\_\-add\_\-field (\&\$ {\em ret}, \/  \$ {\em table}, \/  \$ {\em field}, \/  \$ {\em spec}, \/  \$ {\em keys\_\-new} = {\tt array()})}}
+\label{group__schemaapi_gdffaa3314b3f50ffd6ba4da381ec78fb}
+
+
+Add a new field to a table.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$ret}]Array to which query results will be added. \item[{\em \$table}]Name of the table to be altered. \item[{\em \$field}]Name of the field to be added. \item[{\em \$spec}]The field specification array, as taken from a schema definition. The specification may also contain the key 'initial', the newly created field will be set to the value of the key in all rows. This is most useful for creating NOT NULL columns with no default value in existing tables. \item[{\em \$keys\_\-new}]Optional keys and indexes specification to be created on the table along with adding the field. The format is the same as a table specification but without the 'fields' element. If you are adding a type 'serial' field, you MUST specify at least one key or index including it in this array. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{group__schemaapi_g03f152245358d2db68d067aa8a1fceb4}{db\_\-change\_\-field} for more explanation why. \end{Desc}
+\hypertarget{group__schemaapi_gaaa3b734b6b1acc09fb5e2ac8bd7d925}{
+\index{schemaapi@{schemaapi}!db\_\-add\_\-index@{db\_\-add\_\-index}}
+\index{db\_\-add\_\-index@{db\_\-add\_\-index}!schemaapi@{schemaapi}}
+\subsubsection[{db\_\-add\_\-index}]{\setlength{\rightskip}{0pt plus 5cm}db\_\-add\_\-index (\&\$ {\em ret}, \/  \$ {\em table}, \/  \$ {\em name}, \/  \$ {\em fields})}}
+\label{group__schemaapi_gaaa3b734b6b1acc09fb5e2ac8bd7d925}
+
+
+Add an index.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$ret}]Array to which query results will be added. \item[{\em \$table}]The table to be altered. \item[{\em \$name}]The name of the index. \item[{\em \$fields}]An array of field names. \end{description}
+\end{Desc}
+\hypertarget{group__schemaapi_g95e6db824dbcdd4f9f486e657137d482}{
+\index{schemaapi@{schemaapi}!db\_\-add\_\-primary\_\-key@{db\_\-add\_\-primary\_\-key}}
+\index{db\_\-add\_\-primary\_\-key@{db\_\-add\_\-primary\_\-key}!schemaapi@{schemaapi}}
+\subsubsection[{db\_\-add\_\-primary\_\-key}]{\setlength{\rightskip}{0pt plus 5cm}db\_\-add\_\-primary\_\-key (\&\$ {\em ret}, \/  \$ {\em table}, \/  \$ {\em fields})}}
+\label{group__schemaapi_g95e6db824dbcdd4f9f486e657137d482}
+
+
+Add a primary key.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$ret}]Array to which query results will be added. \item[{\em \$table}]The table to be altered. \item[{\em \$fields}]Fields for the primary key. \end{description}
+\end{Desc}
+\hypertarget{group__schemaapi_g407af986b5e78e1ef11242d5be8adfc4}{
+\index{schemaapi@{schemaapi}!db\_\-add\_\-unique\_\-key@{db\_\-add\_\-unique\_\-key}}
+\index{db\_\-add\_\-unique\_\-key@{db\_\-add\_\-unique\_\-key}!schemaapi@{schemaapi}}
+\subsubsection[{db\_\-add\_\-unique\_\-key}]{\setlength{\rightskip}{0pt plus 5cm}db\_\-add\_\-unique\_\-key (\&\$ {\em ret}, \/  \$ {\em table}, \/  \$ {\em name}, \/  \$ {\em fields})}}
+\label{group__schemaapi_g407af986b5e78e1ef11242d5be8adfc4}
+
+
+Add a unique key.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$ret}]Array to which query results will be added. \item[{\em \$table}]The table to be altered. \item[{\em \$name}]The name of the key. \item[{\em \$fields}]An array of field names. \end{description}
+\end{Desc}
+\hypertarget{group__schemaapi_g03f152245358d2db68d067aa8a1fceb4}{
+\index{schemaapi@{schemaapi}!db\_\-change\_\-field@{db\_\-change\_\-field}}
+\index{db\_\-change\_\-field@{db\_\-change\_\-field}!schemaapi@{schemaapi}}
+\subsubsection[{db\_\-change\_\-field}]{\setlength{\rightskip}{0pt plus 5cm}db\_\-change\_\-field (\&\$ {\em ret}, \/  \$ {\em table}, \/  \$ {\em field}, \/  \$ {\em field\_\-new}, \/  \$ {\em spec}, \/  \$ {\em keys\_\-new} = {\tt array()})}}
+\label{group__schemaapi_g03f152245358d2db68d067aa8a1fceb4}
+
+
+Change a field definition.
+
+IMPORTANT NOTE: To maintain database portability, you have to explicitly recreate all indices and primary keys that are using the changed field.
+
+That means that you have to drop all affected keys and indexes with db\_\-drop\_\-\{primary\_\-key,unique\_\-key,index\}() before calling \hyperlink{group__schemaapi_g03f152245358d2db68d067aa8a1fceb4}{db\_\-change\_\-field()}. To recreate the keys and indices, pass the key definitions as the optional \$keys\_\-new argument directly to \hyperlink{group__schemaapi_g03f152245358d2db68d067aa8a1fceb4}{db\_\-change\_\-field()}.
+
+For example, suppose you have: 
+
+\begin{Code}\begin{verbatim} $schema['foo'] = array(
+   'fields' => array(
+     'bar' => array('type' => 'int', 'not null' => TRUE)
+   ),
+   'primary key' => array('bar')
+ );
+\end{verbatim}
+\end{Code}
+
+ and you want to change foo.bar to be type serial, leaving it as the primary key. The correct sequence is: 
+
+\begin{Code}\begin{verbatim} db_drop_primary_key($ret, 'foo');
+ db_change_field($ret, 'foo', 'bar', 'bar',
+   array('type' => 'serial', 'not null' => TRUE),
+   array('primary key' => array('bar')));
+\end{verbatim}
+\end{Code}
+
+
+
+The reasons for this are due to the different database engines:
+
+On PostgreSQL, changing a field definition involves adding a new field and dropping an old one which$\ast$ causes any indices, primary keys and sequences (from serial-type fields) that use the changed field to be dropped.
+
+On MySQL, all type 'serial' fields must be part of at least one key or index as soon as they are created. You cannot use db\_\-add\_\-\{primary\_\-key,unique\_\-key,index\}() for this purpose because the ALTER TABLE command will fail to add the column without a key or index specification. The solution is to use the optional \$keys\_\-new argument to create the key or index at the same time as field.
+
+You could use db\_\-add\_\-\{primary\_\-key,unique\_\-key,index\}() in all cases unless you are converting a field to be type serial. You can use the \$keys\_\-new argument in all cases.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$ret}]Array to which query results will be added. \item[{\em \$table}]Name of the table. \item[{\em \$field}]Name of the field to change. \item[{\em \$field\_\-new}]New name for the field (set to the same as \$field if you don't want to change the name). \item[{\em \$spec}]The field specification for the new field. \item[{\em \$keys\_\-new}]Optional keys and indexes specification to be created on the table along with changing the field. The format is the same as a table specification but without the 'fields' element. \end{description}
+\end{Desc}
+\hypertarget{group__schemaapi_gb7a73e88621851e4bed62fd6063eb2f9}{
+\index{schemaapi@{schemaapi}!db\_\-create\_\-table@{db\_\-create\_\-table}}
+\index{db\_\-create\_\-table@{db\_\-create\_\-table}!schemaapi@{schemaapi}}
+\subsubsection[{db\_\-create\_\-table}]{\setlength{\rightskip}{0pt plus 5cm}db\_\-create\_\-table (\&\$ {\em ret}, \/  \$ {\em name}, \/  \$ {\em table})}}
+\label{group__schemaapi_gb7a73e88621851e4bed62fd6063eb2f9}
+
+
+Create a new table from a Drupal table definition.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$ret}]Array to which query results will be added. \item[{\em \$name}]The name of the table to create. \item[{\em \$table}]A Schema API table definition array. \end{description}
+\end{Desc}
+\hypertarget{group__schemaapi_gd567c41b41c4d48ed50af9b878c8ecaf}{
+\index{schemaapi@{schemaapi}!db\_\-create\_\-table\_\-sql@{db\_\-create\_\-table\_\-sql}}
+\index{db\_\-create\_\-table\_\-sql@{db\_\-create\_\-table\_\-sql}!schemaapi@{schemaapi}}
+\subsubsection[{db\_\-create\_\-table\_\-sql}]{\setlength{\rightskip}{0pt plus 5cm}db\_\-create\_\-table\_\-sql (\$ {\em name}, \/  \$ {\em table})}}
+\label{group__schemaapi_gd567c41b41c4d48ed50af9b878c8ecaf}
+
+
+Generate SQL to create a new table from a Drupal schema definition.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$name}]The name of the table to create. \item[{\em \$table}]A Schema API table definition array. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An array of SQL statements to create the table. \end{Desc}
+\hypertarget{group__schemaapi_ge2013b878edbcfe21ca123e73af4684a}{
+\index{schemaapi@{schemaapi}!db\_\-drop\_\-field@{db\_\-drop\_\-field}}
+\index{db\_\-drop\_\-field@{db\_\-drop\_\-field}!schemaapi@{schemaapi}}
+\subsubsection[{db\_\-drop\_\-field}]{\setlength{\rightskip}{0pt plus 5cm}db\_\-drop\_\-field (\&\$ {\em ret}, \/  \$ {\em table}, \/  \$ {\em field})}}
+\label{group__schemaapi_ge2013b878edbcfe21ca123e73af4684a}
+
+
+Drop a field.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$ret}]Array to which query results will be added. \item[{\em \$table}]The table to be altered. \item[{\em \$field}]The field to be dropped. \end{description}
+\end{Desc}
+\hypertarget{group__schemaapi_g3a9c0b20502c5afb8177be5753f8cdbb}{
+\index{schemaapi@{schemaapi}!db\_\-drop\_\-index@{db\_\-drop\_\-index}}
+\index{db\_\-drop\_\-index@{db\_\-drop\_\-index}!schemaapi@{schemaapi}}
+\subsubsection[{db\_\-drop\_\-index}]{\setlength{\rightskip}{0pt plus 5cm}db\_\-drop\_\-index (\&\$ {\em ret}, \/  \$ {\em table}, \/  \$ {\em name})}}
+\label{group__schemaapi_g3a9c0b20502c5afb8177be5753f8cdbb}
+
+
+Drop an index.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$ret}]Array to which query results will be added. \item[{\em \$table}]The table to be altered. \item[{\em \$name}]The name of the index. \end{description}
+\end{Desc}
+\hypertarget{group__schemaapi_gb8ee0e7e9ca04e60ec8b0464a247425d}{
+\index{schemaapi@{schemaapi}!db\_\-drop\_\-primary\_\-key@{db\_\-drop\_\-primary\_\-key}}
+\index{db\_\-drop\_\-primary\_\-key@{db\_\-drop\_\-primary\_\-key}!schemaapi@{schemaapi}}
+\subsubsection[{db\_\-drop\_\-primary\_\-key}]{\setlength{\rightskip}{0pt plus 5cm}db\_\-drop\_\-primary\_\-key (\&\$ {\em ret}, \/  \$ {\em table})}}
+\label{group__schemaapi_gb8ee0e7e9ca04e60ec8b0464a247425d}
+
+
+Drop the primary key.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$ret}]Array to which query results will be added. \item[{\em \$table}]The table to be altered. \end{description}
+\end{Desc}
+\hypertarget{group__schemaapi_g1da2016702d7da653316aa34fcd86bd9}{
+\index{schemaapi@{schemaapi}!db\_\-drop\_\-table@{db\_\-drop\_\-table}}
+\index{db\_\-drop\_\-table@{db\_\-drop\_\-table}!schemaapi@{schemaapi}}
+\subsubsection[{db\_\-drop\_\-table}]{\setlength{\rightskip}{0pt plus 5cm}db\_\-drop\_\-table (\&\$ {\em ret}, \/  \$ {\em table})}}
+\label{group__schemaapi_g1da2016702d7da653316aa34fcd86bd9}
+
+
+Drop a table.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$ret}]Array to which query results will be added. \item[{\em \$table}]The table to be dropped. \end{description}
+\end{Desc}
+\hypertarget{group__schemaapi_g727ffb0cbdb6bc2afd5803b09e296603}{
+\index{schemaapi@{schemaapi}!db\_\-drop\_\-unique\_\-key@{db\_\-drop\_\-unique\_\-key}}
+\index{db\_\-drop\_\-unique\_\-key@{db\_\-drop\_\-unique\_\-key}!schemaapi@{schemaapi}}
+\subsubsection[{db\_\-drop\_\-unique\_\-key}]{\setlength{\rightskip}{0pt plus 5cm}db\_\-drop\_\-unique\_\-key (\&\$ {\em ret}, \/  \$ {\em table}, \/  \$ {\em name})}}
+\label{group__schemaapi_g727ffb0cbdb6bc2afd5803b09e296603}
+
+
+Drop a unique key.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$ret}]Array to which query results will be added. \item[{\em \$table}]The table to be altered. \item[{\em \$name}]The name of the key. \end{description}
+\end{Desc}
+\hypertarget{group__schemaapi_geb423ba53e5133548abe3d999f86e787}{
+\index{schemaapi@{schemaapi}!db\_\-field\_\-names@{db\_\-field\_\-names}}
+\index{db\_\-field\_\-names@{db\_\-field\_\-names}!schemaapi@{schemaapi}}
+\subsubsection[{db\_\-field\_\-names}]{\setlength{\rightskip}{0pt plus 5cm}db\_\-field\_\-names (\$ {\em fields})}}
+\label{group__schemaapi_geb423ba53e5133548abe3d999f86e787}
+
+
+Return an array of field names from an array of key/index column specifiers.
+
+This is usually an identity function but if a key/index uses a column prefix specification, this function extracts just the name.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$fields}]An array of key/index column specifiers. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An array of field names. \end{Desc}
+\hypertarget{group__schemaapi_gf5a1ae05cf11189bc6e0f6a8ed2b7701}{
+\index{schemaapi@{schemaapi}!db\_\-field\_\-set\_\-default@{db\_\-field\_\-set\_\-default}}
+\index{db\_\-field\_\-set\_\-default@{db\_\-field\_\-set\_\-default}!schemaapi@{schemaapi}}
+\subsubsection[{db\_\-field\_\-set\_\-default}]{\setlength{\rightskip}{0pt plus 5cm}db\_\-field\_\-set\_\-default (\&\$ {\em ret}, \/  \$ {\em table}, \/  \$ {\em field}, \/  \$ {\em default})}}
+\label{group__schemaapi_gf5a1ae05cf11189bc6e0f6a8ed2b7701}
+
+
+Set the default value for a field.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$ret}]Array to which query results will be added. \item[{\em \$table}]The table to be altered. \item[{\em \$field}]The field to be altered. \item[{\em \$default}]Default value to be set. NULL for 'default NULL'. \end{description}
+\end{Desc}
+\hypertarget{group__schemaapi_ga01758e1338d2b1ce59da26c08c6448a}{
+\index{schemaapi@{schemaapi}!db\_\-field\_\-set\_\-no\_\-default@{db\_\-field\_\-set\_\-no\_\-default}}
+\index{db\_\-field\_\-set\_\-no\_\-default@{db\_\-field\_\-set\_\-no\_\-default}!schemaapi@{schemaapi}}
+\subsubsection[{db\_\-field\_\-set\_\-no\_\-default}]{\setlength{\rightskip}{0pt plus 5cm}db\_\-field\_\-set\_\-no\_\-default (\&\$ {\em ret}, \/  \$ {\em table}, \/  \$ {\em field})}}
+\label{group__schemaapi_ga01758e1338d2b1ce59da26c08c6448a}
+
+
+Set a field to have no default value.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$ret}]Array to which query results will be added. \item[{\em \$table}]The table to be altered. \item[{\em \$field}]The field to be altered. \end{description}
+\end{Desc}
+\hypertarget{group__schemaapi_g1d29b142caeee2f0f2217be16857b9ae}{
+\index{schemaapi@{schemaapi}!db\_\-last\_\-insert\_\-id@{db\_\-last\_\-insert\_\-id}}
+\index{db\_\-last\_\-insert\_\-id@{db\_\-last\_\-insert\_\-id}!schemaapi@{schemaapi}}
+\subsubsection[{db\_\-last\_\-insert\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}db\_\-last\_\-insert\_\-id (\$ {\em table}, \/  \$ {\em field})}}
+\label{group__schemaapi_g1d29b142caeee2f0f2217be16857b9ae}
+
+
+Returns the last insert id.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$table}]The name of the table you inserted into. \item[{\em \$field}]The name of the autoincrement field. \end{description}
+\end{Desc}
+\hypertarget{group__schemaapi_gbb4d2d8b00f915ba7e8c0a9d985d597d}{
+\index{schemaapi@{schemaapi}!db\_\-rename\_\-table@{db\_\-rename\_\-table}}
+\index{db\_\-rename\_\-table@{db\_\-rename\_\-table}!schemaapi@{schemaapi}}
+\subsubsection[{db\_\-rename\_\-table}]{\setlength{\rightskip}{0pt plus 5cm}db\_\-rename\_\-table (\&\$ {\em ret}, \/  \$ {\em table}, \/  \$ {\em new\_\-name})}}
+\label{group__schemaapi_gbb4d2d8b00f915ba7e8c0a9d985d597d}
+
+
+Rename a table.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$ret}]Array to which query results will be added. \item[{\em \$table}]The table to be renamed. \item[{\em \$new\_\-name}]The new name for the table. \end{description}
+\end{Desc}
+\hypertarget{group__schemaapi_gadf0495656599ba9336d68675b54f8dd}{
+\index{schemaapi@{schemaapi}!db\_\-type\_\-map@{db\_\-type\_\-map}}
+\index{db\_\-type\_\-map@{db\_\-type\_\-map}!schemaapi@{schemaapi}}
+\subsubsection[{db\_\-type\_\-map}]{\setlength{\rightskip}{0pt plus 5cm}db\_\-type\_\-map ()}}
+\label{group__schemaapi_gadf0495656599ba9336d68675b54f8dd}
+
+
+End of \char`\"{}ingroup database\char`\"{}. This maps a generic data type in combination with its data size to the engine-specific data type. \hypertarget{group__schemaapi_g1d594f0ad0eab77e4b925887be7e4b08}{
+\index{schemaapi@{schemaapi}!db\_\-type\_\-placeholder@{db\_\-type\_\-placeholder}}
+\index{db\_\-type\_\-placeholder@{db\_\-type\_\-placeholder}!schemaapi@{schemaapi}}
+\subsubsection[{db\_\-type\_\-placeholder}]{\setlength{\rightskip}{0pt plus 5cm}db\_\-type\_\-placeholder (\$ {\em type})}}
+\label{group__schemaapi_g1d594f0ad0eab77e4b925887be7e4b08}
+
+
+Given a Schema API field type, return the correct -placeholder.
+
+Embed the placeholder in a query to be passed to db\_\-query and and pass as an argument to db\_\-query a value of the specified type.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$type}]The Schema API type of a field. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The placeholder string to embed in a query for that type. \end{Desc}
+\hypertarget{group__schemaapi_g979670bd6bd2e34337ffc5f0810f2d71}{
+\index{schemaapi@{schemaapi}!drupal\_\-get\_\-schema@{drupal\_\-get\_\-schema}}
+\index{drupal\_\-get\_\-schema@{drupal\_\-get\_\-schema}!schemaapi@{schemaapi}}
+\subsubsection[{drupal\_\-get\_\-schema}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-get\_\-schema (\$ {\em table} = {\tt NULL}, \/  \$ {\em rebuild} = {\tt FALSE})}}
+\label{group__schemaapi_g979670bd6bd2e34337ffc5f0810f2d71}
+
+
+Get the schema definition of a table, or the whole database schema.
+
+The returned schema will include any modifications made by any module that implements hook\_\-schema\_\-alter().
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$table}]The name of the table. If not given, the schema of all tables is returned. \item[{\em \$rebuild}]If true, the schema will be rebuilt instead of retrieved from the cache. \end{description}
+\end{Desc}
+\hypertarget{group__schemaapi_gecb0d63f03b96dd1426298804e091d3b}{
+\index{schemaapi@{schemaapi}!drupal\_\-get\_\-schema\_\-unprocessed@{drupal\_\-get\_\-schema\_\-unprocessed}}
+\index{drupal\_\-get\_\-schema\_\-unprocessed@{drupal\_\-get\_\-schema\_\-unprocessed}!schemaapi@{schemaapi}}
+\subsubsection[{drupal\_\-get\_\-schema\_\-unprocessed}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-get\_\-schema\_\-unprocessed (\$ {\em module}, \/  \$ {\em table} = {\tt NULL})}}
+\label{group__schemaapi_gecb0d63f03b96dd1426298804e091d3b}
+
+
+Returns the unprocessed and unaltered version of a module's schema.
+
+Use this function only if you explicitly need the original specification of a schema, as it was defined in a module's hook\_\-schema(). No additional default values will be set, hook\_\-schema\_\-alter() is not invoked and these unprocessed definitions won't be cached.
+
+This function can be used to retrieve a schema specification in hook\_\-schema(), so it allows you to derive your tables from existing specifications.
+
+It is also used by \hyperlink{group__schemaapi_g9706b8d6ecdac10302d83bd50935a698}{drupal\_\-install\_\-schema()} and \hyperlink{group__schemaapi_g0688b6627af9dc05f2618f81489c3db0}{drupal\_\-uninstall\_\-schema()} to ensure that a module's tables are created exactly as specified without any changes introduced by a module that implements hook\_\-schema\_\-alter().
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$module}]The module to which the table belongs. \item[{\em \$table}]The name of the table. If not given, the module's complete schema is returned. \end{description}
+\end{Desc}
+\hypertarget{group__schemaapi_g9706b8d6ecdac10302d83bd50935a698}{
+\index{schemaapi@{schemaapi}!drupal\_\-install\_\-schema@{drupal\_\-install\_\-schema}}
+\index{drupal\_\-install\_\-schema@{drupal\_\-install\_\-schema}!schemaapi@{schemaapi}}
+\subsubsection[{drupal\_\-install\_\-schema}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-install\_\-schema (\$ {\em module})}}
+\label{group__schemaapi_g9706b8d6ecdac10302d83bd50935a698}
+
+
+Create all tables that a module defines in its hook\_\-schema().
+
+Note: This function does not pass the module's schema through hook\_\-schema\_\-alter(). The module's tables will be created exactly as the module defines them.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$module}]The module for which the tables will be created. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An array of arrays with the following key/value pairs:\begin{itemize}
+\item success: a boolean indicating whether the query succeeded.\item query: the SQL query(s) executed, passed through \hyperlink{bootstrap_8inc_76fc67a30fd8d75ddd80565e6e65a13d}{check\_\-plain()}. \end{itemize}
+\end{Desc}
+\hypertarget{group__schemaapi_gacfcd6f676ee9062f0ba50a008a05443}{
+\index{schemaapi@{schemaapi}!drupal\_\-schema\_\-fields\_\-sql@{drupal\_\-schema\_\-fields\_\-sql}}
+\index{drupal\_\-schema\_\-fields\_\-sql@{drupal\_\-schema\_\-fields\_\-sql}!schemaapi@{schemaapi}}
+\subsubsection[{drupal\_\-schema\_\-fields\_\-sql}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-schema\_\-fields\_\-sql (\$ {\em table}, \/  \$ {\em prefix} = {\tt NULL})}}
+\label{group__schemaapi_gacfcd6f676ee9062f0ba50a008a05443}
+
+
+Retrieve a list of fields from a table schema. The list is suitable for use in a SQL query.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$table}]The name of the table from which to retrieve fields. \item[{\em An}]optional prefix to to all fields.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An array of fields. \end{Desc}
+\hypertarget{group__schemaapi_g0688b6627af9dc05f2618f81489c3db0}{
+\index{schemaapi@{schemaapi}!drupal\_\-uninstall\_\-schema@{drupal\_\-uninstall\_\-schema}}
+\index{drupal\_\-uninstall\_\-schema@{drupal\_\-uninstall\_\-schema}!schemaapi@{schemaapi}}
+\subsubsection[{drupal\_\-uninstall\_\-schema}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-uninstall\_\-schema (\$ {\em module})}}
+\label{group__schemaapi_g0688b6627af9dc05f2618f81489c3db0}
+
+
+Remove all tables that a module defines in its hook\_\-schema().
+
+Note: This function does not pass the module's schema through hook\_\-schema\_\-alter(). The module's tables will be created exactly as the module defines them.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$module}]The module for which the tables will be removed. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An array of arrays with the following key/value pairs:\begin{itemize}
+\item success: a boolean indicating whether the query succeeded.\item query: the SQL query(s) executed, passed through \hyperlink{bootstrap_8inc_76fc67a30fd8d75ddd80565e6e65a13d}{check\_\-plain()}. \end{itemize}
+\end{Desc}
+\hypertarget{group__schemaapi_g85da8424c4111b46aefb6fcb3a899c7d}{
+\index{schemaapi@{schemaapi}!drupal\_\-write\_\-record@{drupal\_\-write\_\-record}}
+\index{drupal\_\-write\_\-record@{drupal\_\-write\_\-record}!schemaapi@{schemaapi}}
+\subsubsection[{drupal\_\-write\_\-record}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-write\_\-record (\$ {\em table}, \/  \&\$ {\em object}, \/  \$ {\em update} = {\tt array()})}}
+\label{group__schemaapi_g85da8424c4111b46aefb6fcb3a899c7d}
+
+
+Save a record to the database based upon the schema.
+
+Default values are filled in for missing items, and 'serial' (auto increment) types are filled in with IDs.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$table}]The name of the table; this must exist in schema API. \item[{\em \$object}]The object to write. This is a reference, as defaults according to the schema may be filled in on the object, as well as ID on the serial type(s). Both array an object types may be passed. \item[{\em \$update}]If this is an update, specify the primary keys' field names. It is the caller's responsibility to know if a record for this object already exists in the database. If there is only 1 key, you may pass a simple string. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Failure to write a record will return FALSE. Otherwise SAVED\_\-NEW or SAVED\_\-UPDATED is returned depending on the operation performed. The \$object parameter contains values for any serial fields defined by the \$table. For example, \$object-$>$nid will be populated after inserting a new node. \end{Desc}

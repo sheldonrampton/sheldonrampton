@@ -1,0 +1,471 @@
+/* Foliage 5 beta 1 theme style.css for drupal 5.0  */
+/* HTML elements */
+body {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  background: #CEE4E8;
+  font: 12pt arial, verdana, helvetica;
+}
+tr.odd td, tr.even td {
+  padding: 0.3em;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 2px 0px 4px 0px;
+}
+h1 {
+  font-size: 1.4em;
+  color: #AF1111;
+}
+h2 {
+  font-size: 1.25em;
+  color: #393F4C;
+}
+h3 {
+  font-size: 1.1em;
+  color: #316745;
+}
+h4, h5, h6 {
+  font-size: 1.1em;
+}
+p {
+  margin-bottom: 0.9em;
+  line-height: 1.5em;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+a:link {
+  color: #2792C3;
+}
+a:visited {
+  color: #157;
+}
+a:hover {
+  text-decoration: underline;
+  color: #157;
+}
+fieldset {
+  border: 1px solid #ccc;
+}
+pre {
+  background-color: #F8F4E6;
+  padding: 0.75em 1.5em;
+  font-size: 12px;
+  border: 1px solid #ddd;
+}
+table {
+  font-size: 1em;
+}
+.form-item label {
+  font-size: 1em;
+  color: #393F4C;
+}
+.item-list .title {
+  font-size: 1em;
+  color: #393F4C;
+}
+.links {
+  margin-bottom: 0;
+  clear: both;
+}
+.comment .links {
+  margin-bottom: 0;
+}
+
+/*
+** Page layout blocks / IDs
+*/
+#header, #content, #footer {
+  width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#header {
+  background-color: #316745;
+  background-image: url('tennis_court2.jpg');
+  height: 100px;
+  border: 1px solid #ccc;
+}
+#content {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+#footer {
+  background-color: #316745;
+/*
+  background-image: url('foot960.jpg');
+*/
+  height: 30px;
+  border: 1px solid #ccc;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+#searchbar {
+  height: 30px;
+  padding-right: 10px;
+  text-align: right;
+}
+#logo {
+  height: 50px;
+  padding-left: 10px;
+}
+#logo img {
+  float: left;
+  border: 0;
+}
+#headerbottom {
+  height: 20px;
+}
+#menu {
+  text-align: right;
+  padding-right: 10px;
+}
+#navlist {
+  margin-bottom: 2px;
+  font-size: 13px;
+  color: #ccc;
+}
+#navlist a {
+  font-weight: bold;
+  color: #fff;
+}
+#subnavlist {
+  font-size: 12px;
+  color: #ccc;
+}
+#subnavlist a {
+  color: #fff;
+}
+ul.links li {
+  /*border-left: 1px solid #9cf; use this for separation line*/
+  border: none;
+}
+ul.links li.first {
+  border: none;
+}
+#search .form-text, #search .form-submit {
+  border: 1px solid #275;
+  font-size: 10px;
+}
+#search .form-text {
+  width: 8em;
+  padding:1px 2px 1px 2px;
+}
+#mission {
+  background-color: #EDE4CD;
+  padding: 1.5em 2em;
+  color: #393F4C;
+  margin-top: 11px;
+  margin-right: 0.8em;
+}
+#mission a, #mission a:visited {
+  color: #9cf;
+  font-weight: bold;
+}
+.site-name {
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+}
+.site-name a:link, .site-name a:visited {
+  color: #AF1111;
+}
+.site-name a:hover {
+  text-decoration: none;
+}
+.site-slogan {
+  font-size: 12pt;
+  color: #000;
+  display: block;
+  font-style: italic;
+  font-weight: bold;
+}
+#main {
+  padding: 10px;
+}
+#mission, .node .content, .comment .content {
+  line-height: 1.5;
+}
+#help {
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+.breadcrumb {
+  margin-bottom: .5em;
+}
+.messages {
+  background-color: #F8F4E6;
+  border: 1px solid #ccc;
+  padding: 0.3em;
+  margin-bottom: 1em;
+}
+.error {
+  border-color: red;
+}
+#sidebar-left, #sidebar-right {
+  vertical-align: top;
+  background-color: #fff;
+  width: 200px;
+  padding: 10px;
+}
+
+/*
+** Common declarations for child classes of node, comment, block, box, etc.
+** If you want any of them styled differently for a specific parent, add
+** additional rules /with only the differing properties!/ to .parent .class.
+** See .comment .title for an example.
+*/
+.submitted {
+  color: #777;
+  font-size: 0.8em;
+}
+.links {
+  color: #999;
+}
+.links a {
+  font-weight: bold;
+}
+.block, .box {
+  padding: 0 0 1.5em 0;
+}
+.block {
+  font-size: 13px;
+  border-bottom: 1px solid #C0C6C9;
+  padding-bottom: 0.5em;
+  margin-bottom: 1.5em;
+  background-color: #F8F4E6;
+}
+.block .title {
+  font-size: 13px;
+  color: #fff;
+  background-color: #316745;
+  margin-bottom: .25em;
+  padding: 2px 2px 2px 4px;
+}
+.block .content {
+  padding: 2px 2px 2px 4px;
+}
+.box .title {
+  font-size: 1.1em;
+}
+.node {
+  margin: .5em 0 2em 0;
+}
+.sticky {
+  padding: .5em;
+  background-color: #f9f9f9;
+  border: solid 1px #ddd;
+}
+.node .content, .comment .content {
+  margin: .5em 0 .5em 0;
+}
+.node .taxonomy {
+  color: #999;
+  font-size: 0.8em;
+  padding: 0 0 0 1.5em;
+}
+.node .picture {
+  float: right;
+}
+.comment {
+  border: 1px solid #abc;
+  padding: .5em;
+  margin-bottom: 1em;
+}
+.comment .title a {
+  font-size: 1.1em;
+  font-weight: normal;
+}
+.comment .new {
+  text-align: right;
+  font-weight: bold;
+  font-size: 0.8em;
+  float: right;
+  color: red;
+}
+.comment .picture {
+  float: right;
+}
+
+/* Module specific styles*/
+
+#aggregator .feed-source {
+  background-color: #F8F4E6;
+  border: 1px solid #ccc;
+  padding: 1em;
+  margin: 1em 0 1em 0;
+}
+#aggregator .news-item .categories, #aggregator .source, #aggregator .age {
+  color: #999;
+  font-style: italic;
+  font-size: 0.9em;
+}
+#aggregator .title {
+  margin-bottom: 0.5em;
+  font-size: 1em;
+}
+#aggregator h3 {
+  margin-top: 1em;
+}
+#forum table {
+  width: 100%;
+}
+#forum td {
+  padding: 0.5em 0.5em 0.5em 0.5em;
+}
+#forum td.forum, #forum td.posts {
+  background-color: #F8F4E6;
+}
+#forum td.topics, #forum td.last-reply {
+  background-color: #ddd;
+}
+#forum td.container {
+  background-color: #ccc;
+}
+#forum td.container a {
+  color: #555;
+}
+#forum td.statistics, #forum td.settings, #forum td.pager {
+  height: 1.5em;
+  border: 1px solid #bbb;
+}
+#forum td .name {
+  color: #96c;
+}
+#forum td .links {
+  padding-top: 0.7em;
+  font-size: 0.9em;
+}
+#profile .profile {
+  clear: both;
+  border: 1px solid #abc;
+  padding: .5em;
+  margin: 1em 0em 1em 0em;
+}
+#profile .profile .name {
+  padding-bottom: 0.5em;
+}
+.block-forum h3 {
+  margin-bottom: .5em;
+}
+div.admin-panel .description {
+  color: #999;
+}
+div.admin-panel .body {
+  background: #f4f4f4;
+}
+div.admin-panel h3 {
+  background-color: #69c;
+  color: #fff;
+  padding: 5px 8px 5px;
+  margin: 0;
+}
+.calendar a {
+  text-decoration: none;
+}
+.calendar td, .calendar th {
+  padding: 0.4em 0;
+  border-color: #888;
+}
+.calendar .day-today {
+  background-color: #69c;
+}
+.calendar .day-today a {
+  color: #fff;
+}
+.calendar .day-selected {
+  background-color: #369;
+  color: #fff;
+}
+.calendar .header-week {
+  background-color: #ccc;
+}
+.calendar .day-blank {
+  background-color: #ccc;
+}
+.calendar .row-week td a:hover {
+  background-color: #fff; color: #000;
+}
+
+/**
+ * img_assist module specific styling
+ */
+span.left {
+  float: left;
+  clear: left;
+  margin: 5px 10px 5px 0px;
+}
+span.right {
+  float: right;
+  clear: right;
+  margin: 5px 0px 10px 5px;
+}
+span.caption {
+  display: block; /* put the caption under the image (not next to it) */
+  font-size: 0.7em;
+}
+.inline img{
+  border: 1px solid #aaa; /* put a thin border around inline images */
+  padding: 4px;
+}
+br.clear {
+display: none;
+}
+
+/**
+ * image_gallery module specific styling
+ */
+ul.galleries {
+  list-style-type : none;
+  margin : 0;
+  padding : 0;
+}
+
+ul.galleries li {
+  background : #eeeeee;
+  border : 1px #cccccc solid;
+  margin : 1em 0;
+  padding : 1em;
+}
+
+ul.galleries li img {
+  float : left;
+  padding-right : 4px;
+  margin-right : 4px;
+}
+
+ul.galleries li div.count {
+  clear : both;
+}
+
+ul.galleries h3 {
+  margin : 0;
+  padding : 0;
+}
+
+ul.images {
+  list-style-type : none;
+  margin : 0;
+  padding : 0;
+}
+
+ul.images li {
+  font-size: 0.7em;
+  float : left;
+  margin : 1em;
+  border : 1px solid #ccc;
+  padding : 6px 6px 0px 6px;
+}
+
+.webform-component-fieldset legend {
+	background-color: #316745;
+	color: #fff;
+	padding: 2px 12px 1px 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 90%;
+}

@@ -1,0 +1,45 @@
+\hypertarget{aggregator-item_8tpl_8php}{
+\section{modules/aggregator/aggregator-item.tpl.php File Reference}
+\label{aggregator-item_8tpl_8php}\index{modules/aggregator/aggregator-item.tpl.php@{modules/aggregator/aggregator-item.tpl.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hypertarget{aggregator-item_8tpl_8php_a9dadc8b078c51d64c9c67fe879f12c7}{
+print \textbf{\$feed\_\-url}}
+\label{aggregator-item_8tpl_8php_a9dadc8b078c51d64c9c67fe879f12c7}
+
+\item 
+\hypertarget{aggregator-item_8tpl_8php_6edb4dc2cf77c7c787f39d946791c26a}{
+print \textbf{\$feed\_\-title}}
+\label{aggregator-item_8tpl_8php_6edb4dc2cf77c7c787f39d946791c26a}
+
+\item 
+\hypertarget{aggregator-item_8tpl_8php_79ea50acfbfb933606af65e170fa3975}{
+if(\$source\_\-url) print \textbf{\$source\_\-title}}
+\label{aggregator-item_8tpl_8php_79ea50acfbfb933606af65e170fa3975}
+
+\item 
+\hypertarget{aggregator-item_8tpl_8php_fb799dd9a092a5f9976f8b41dc0bcd98}{
+\textbf{endif}}
+\label{aggregator-item_8tpl_8php_fb799dd9a092a5f9976f8b41dc0bcd98}
+
+\item 
+\hypertarget{aggregator-item_8tpl_8php_c59d3a3ff66371f6b56743eb9cc361ca}{
+print \textbf{\$source\_\-date}}
+\label{aggregator-item_8tpl_8php_c59d3a3ff66371f6b56743eb9cc361ca}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Default theme implementation to format an individual feed item for display on the aggregator page.
+
+Available variables:\begin{itemize}
+\item \$feed\_\-url: URL to the originating feed item.\item \$feed\_\-title: Title of the feed item.\item \$source\_\-url: Link to the local source section.\item \$source\_\-title: Title of the remote source.\item \$source\_\-date: Date the feed was posted on the remote source.\item \$content: Feed item content.\item \$categories: Linked categories assigned to the feed.\end{itemize}
+
+
+\begin{Desc}
+\item[See also:]\hyperlink{includes_2theme_8inc_3eeb7bcdba7ef4859f99586da264d347}{template\_\-preprocess()} 
+
+\hyperlink{aggregator_8pages_8inc_98e977c5fd28c4e808be5786a3f9e805}{template\_\-preprocess\_\-aggregator\_\-item()} \end{Desc}

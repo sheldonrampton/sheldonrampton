@@ -1,0 +1,104 @@
+\hypertarget{classviews__handler__relationship}{
+\section{views\_\-handler\_\-relationship Class Reference}
+\label{classviews__handler__relationship}\index{views\_\-handler\_\-relationship@{views\_\-handler\_\-relationship}}
+}
+Inheritance diagram for views\_\-handler\_\-relationship::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.84362cm]{classviews__handler__relationship}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__handler__relationship_a50c5d9c6b52fa2eeed61e88a74bc083}{init} (\&\$\hyperlink{classview}{view}, \$options)
+\item 
+\hyperlink{classviews__handler__relationship_f39d860cac5cd67836901304a08b43a0}{label} ()
+\item 
+\hyperlink{classviews__handler__relationship_7e7b7a0056836612aa50a60575a3d549}{option\_\-definition} ()
+\item 
+\hyperlink{classviews__handler__relationship_08cc3f5947964d936b5e88d198f82c30}{options\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__handler__relationship_7dc0b6371807dbf06efa594cb52b3348}{query} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Simple relationship handler that allows a new version of the primary table to be linked in.
+
+The base relationship handler can only handle a single join. Some relationships are more complex and might require chains of joins; for those, you must utilize a custom relationship handler.
+
+Definition items:\begin{itemize}
+\item base: The new base table this relationship will be adding. This does not have to be a declared base table, but if there are no tables that utilize this base table, it won't be very effective.\item base field: The field to use in the relationship; if left out this will be assumed to be the primary field.\item relationship table: The actual table this relationship operates against. This is analogous to using a 'table' override.\item relationship field: The actual field this relationship operates against. This is analogous to using a 'real field' override.\item label: The default label to provide for this relationship, which is shown in parentheses next to any field/sort/filter/argument that uses the relationship. \end{itemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__handler__relationship_a50c5d9c6b52fa2eeed61e88a74bc083}{
+\index{views\_\-handler\_\-relationship@{views\_\-handler\_\-relationship}!init@{init}}
+\index{init@{init}!views_handler_relationship@{views\_\-handler\_\-relationship}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-relationship::init (\&\$ {\em view}, \/  \$ {\em options})}}
+\label{classviews__handler__relationship_a50c5d9c6b52fa2eeed61e88a74bc083}
+
+
+Init handler to let relationships live on tables other than the table they operate on. 
+
+Reimplemented from \hyperlink{classviews__handler_1f5f42ba46d3584280788fda97eee8c5}{views\_\-handler}.\hypertarget{classviews__handler__relationship_f39d860cac5cd67836901304a08b43a0}{
+\index{views\_\-handler\_\-relationship@{views\_\-handler\_\-relationship}!label@{label}}
+\index{label@{label}!views_handler_relationship@{views\_\-handler\_\-relationship}}
+\subsubsection[{label}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-relationship::label ()}}
+\label{classviews__handler__relationship_f39d860cac5cd67836901304a08b43a0}
+
+
+Get this field's label. \hypertarget{classviews__handler__relationship_7e7b7a0056836612aa50a60575a3d549}{
+\index{views\_\-handler\_\-relationship@{views\_\-handler\_\-relationship}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!views_handler_relationship@{views\_\-handler\_\-relationship}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-relationship::option\_\-definition ()}}
+\label{classviews__handler__relationship_7e7b7a0056836612aa50a60575a3d549}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented from \hyperlink{classviews__object_b0753d0001c8c9ff98beee696b4516ba}{views\_\-object}.
+
+Reimplemented in \hyperlink{classflag__handler__relationship__content_54e7c1074698289ef34aa1cdd31db4bf}{flag\_\-handler\_\-relationship\_\-content}, \hyperlink{classflag__handler__relationship__counts_d72acb678e22ecdaeb867b89f051863e}{flag\_\-handler\_\-relationship\_\-counts}, \hyperlink{classflag__handler__relationship__user__content_2bbdef4e35eff90f4a109390bca06d95}{flag\_\-handler\_\-relationship\_\-user\_\-content}, and \hyperlink{classviews__handler__relationship__translation_0bf8fe73b167b63fd5ac38bd5e8b1efe}{views\_\-handler\_\-relationship\_\-translation}.\hypertarget{classviews__handler__relationship_08cc3f5947964d936b5e88d198f82c30}{
+\index{views\_\-handler\_\-relationship@{views\_\-handler\_\-relationship}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!views_handler_relationship@{views\_\-handler\_\-relationship}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-relationship::options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler__relationship_08cc3f5947964d936b5e88d198f82c30}
+
+
+Default options form that provides the label widget that all fields should have. 
+
+Reimplemented from \hyperlink{classviews__handler_a41fcf16b177eb03e35facbae6320f74}{views\_\-handler}.
+
+Reimplemented in \hyperlink{classflag__handler__relationship__content_16476e401490907a6fadc9af5156d83f}{flag\_\-handler\_\-relationship\_\-content}, \hyperlink{classflag__handler__relationship__counts_a99b83dd638a7e41aeaff5ae9c013efe}{flag\_\-handler\_\-relationship\_\-counts}, \hyperlink{classflag__handler__relationship__user__content_21d3592facff0d6f32b52685f78259b7}{flag\_\-handler\_\-relationship\_\-user\_\-content}, \hyperlink{classviews__handler__relationship__broken_a421a42866d049732e8747669466ae0e}{views\_\-handler\_\-relationship\_\-broken}, and \hyperlink{classviews__handler__relationship__translation_ca4668f3619b0fc6182e12cbaf38b633}{views\_\-handler\_\-relationship\_\-translation}.\hypertarget{classviews__handler__relationship_7dc0b6371807dbf06efa594cb52b3348}{
+\index{views\_\-handler\_\-relationship@{views\_\-handler\_\-relationship}!query@{query}}
+\index{query@{query}!views_handler_relationship@{views\_\-handler\_\-relationship}}
+\subsubsection[{query}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-relationship::query ()}}
+\label{classviews__handler__relationship_7dc0b6371807dbf06efa594cb52b3348}
+
+
+Called to implement a relationship in a query. 
+
+Reimplemented from \hyperlink{classviews__handler_91e22c95696d9fdb9ed753a10d42a21d}{views\_\-handler}.
+
+Reimplemented in \hyperlink{classflag__handler__relationship__content_7fcb01763f0902dafd9f601c0bc1a612}{flag\_\-handler\_\-relationship\_\-content}, \hyperlink{classflag__handler__relationship__counts_18060bfeb86c50ff51325f4dbeb93663}{flag\_\-handler\_\-relationship\_\-counts}, \hyperlink{classflag__handler__relationship__user__content_d6d40590ad33616b0a55395d60d1166b}{flag\_\-handler\_\-relationship\_\-user\_\-content}, \hyperlink{classviews__handler__relationship__broken_58db24781460cd5b36c08c56df9d56ab}{views\_\-handler\_\-relationship\_\-broken}, and \hyperlink{classviews__handler__relationship__translation_f1e8ba159a9b04199ff03cad304ca1e4}{views\_\-handler\_\-relationship\_\-translation}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/handlers/\hyperlink{views__handler__relationship_8inc}{views\_\-handler\_\-relationship.inc}\end{CompactItemize}

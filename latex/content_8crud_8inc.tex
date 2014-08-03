@@ -1,0 +1,284 @@
+\hypertarget{content_8crud_8inc}{
+\section{sites/all/modules/contrib/cck/includes/content.crud.inc File Reference}
+\label{content_8crud_8inc}\index{sites/all/modules/contrib/cck/includes/content.crud.inc@{sites/all/modules/contrib/cck/includes/content.crud.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{content_8crud_8inc_07cd3757b31f4907a1b3c9c502e17ad7}{content\_\-field\_\-default\_\-values} (\$field\_\-type)
+\item 
+\hyperlink{content_8crud_8inc_8df5e758ddedb3686215f05da5009b52}{content\_\-instance\_\-default\_\-values} (\$field\_\-name, \$type\_\-name, \$widget\_\-type)
+\item 
+\hyperlink{content_8crud_8inc_25d078351d19f7aadc913a3b6cb9ebae}{content\_\-field\_\-instance\_\-expand} (\$field)
+\item 
+\hyperlink{content_8crud_8inc_91ca2411f3edf5967fd2aa7a50020c0e}{content\_\-field\_\-instance\_\-collapse} (\$field)
+\item 
+\hyperlink{content_8crud_8inc_b0b54752706eb5a68be6ae4f329faca2}{content\_\-field\_\-instance\_\-create} (\$field, \$rebuild=TRUE)
+\item 
+\hyperlink{content_8crud_8inc_87fab5002b89ec0689ac287ba654f524}{content\_\-field\_\-instance\_\-update} (\$field, \$rebuild=TRUE)
+\item 
+\hyperlink{content_8crud_8inc_d05ab93c679203625921d1ee307369f4}{\_\-content\_\-field\_\-write} (\$field, \$op= 'update')
+\item 
+\hyperlink{content_8crud_8inc_245bfc4c8eb367690d65bcd02fc11e8e}{\_\-content\_\-field\_\-instance\_\-write} (\$field, \$op= 'update')
+\item 
+\hyperlink{content_8crud_8inc_db5f59ebcf235ed60133d755ddb6225a}{content\_\-field\_\-instance\_\-read} (\$param=NULL, \$include\_\-inactive=FALSE)
+\item 
+\hyperlink{content_8crud_8inc_dd40e44fb66e9a1904fbc2bf6fe0d83c}{content\_\-field\_\-instance\_\-delete} (\$field\_\-name, \$type\_\-name, \$rebuild=TRUE)
+\item 
+\hyperlink{content_8crud_8inc_1edd225d1bdea17dc4348de821f11aca}{content\_\-module\_\-delete} (\$module)
+\item 
+\hyperlink{content_8crud_8inc_132f9ba2a0c09f24076af987271a4de1}{content\_\-type\_\-create} (\$info)
+\item 
+\hyperlink{content_8crud_8inc_59dc0b70d227d303d61c464a53713414}{content\_\-type\_\-update} (\$info)
+\item 
+\hyperlink{content_8crud_8inc_a7b16645597242007c1b311d912772dc}{content\_\-type\_\-delete} (\$info)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Create/Read/Update/Delete functions for CCK-defined object types.
+
+The content module field API will allow \$field arguments to be input either in the field =$>$ widget nested array that is used by the content module, or in flattened \$form\_\-values arrays, by converting flattened arrays to the nested format.
+
+A hook\_\-content\_\-fieldapi() is available for each field instance action, and each hook receives the nested field =$>$ widget array as an argument.
+
+The hook\_\-content\_\-fieldapi() \$ops include:
+
+\begin{itemize}
+\item create instance\item read instance\item update instance\item delete instance\end{itemize}
+
+
+Another function, content\_\-module\_\-delete(\$module) will clean up after a module that has been deleted by removing all data and settings information that was created by that module. 
+
+\subsection{Function Documentation}
+\hypertarget{content_8crud_8inc_245bfc4c8eb367690d65bcd02fc11e8e}{
+\index{content.crud.inc@{content.crud.inc}!\_\-content\_\-field\_\-instance\_\-write@{\_\-content\_\-field\_\-instance\_\-write}}
+\index{\_\-content\_\-field\_\-instance\_\-write@{\_\-content\_\-field\_\-instance\_\-write}!content.crud.inc@{content.crud.inc}}
+\subsubsection[{\_\-content\_\-field\_\-instance\_\-write}]{\setlength{\rightskip}{0pt plus 5cm}\_\-content\_\-field\_\-instance\_\-write (\$ {\em field}, \/  \$ {\em op} = {\tt 'update'})}}
+\label{content_8crud_8inc_245bfc4c8eb367690d65bcd02fc11e8e}
+
+
+Write a field instance record.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$field}]The field array to process. \end{description}
+\end{Desc}
+\hypertarget{content_8crud_8inc_d05ab93c679203625921d1ee307369f4}{
+\index{content.crud.inc@{content.crud.inc}!\_\-content\_\-field\_\-write@{\_\-content\_\-field\_\-write}}
+\index{\_\-content\_\-field\_\-write@{\_\-content\_\-field\_\-write}!content.crud.inc@{content.crud.inc}}
+\subsubsection[{\_\-content\_\-field\_\-write}]{\setlength{\rightskip}{0pt plus 5cm}\_\-content\_\-field\_\-write (\$ {\em field}, \/  \$ {\em op} = {\tt 'update'})}}
+\label{content_8crud_8inc_d05ab93c679203625921d1ee307369f4}
+
+
+Write a field record.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$field}]The field array to process. \end{description}
+\end{Desc}
+\hypertarget{content_8crud_8inc_07cd3757b31f4907a1b3c9c502e17ad7}{
+\index{content.crud.inc@{content.crud.inc}!content\_\-field\_\-default\_\-values@{content\_\-field\_\-default\_\-values}}
+\index{content\_\-field\_\-default\_\-values@{content\_\-field\_\-default\_\-values}!content.crud.inc@{content.crud.inc}}
+\subsubsection[{content\_\-field\_\-default\_\-values}]{\setlength{\rightskip}{0pt plus 5cm}content\_\-field\_\-default\_\-values (\$ {\em field\_\-type})}}
+\label{content_8crud_8inc_07cd3757b31f4907a1b3c9c502e17ad7}
+
+
+Create an array of default values for a field type. \hypertarget{content_8crud_8inc_91ca2411f3edf5967fd2aa7a50020c0e}{
+\index{content.crud.inc@{content.crud.inc}!content\_\-field\_\-instance\_\-collapse@{content\_\-field\_\-instance\_\-collapse}}
+\index{content\_\-field\_\-instance\_\-collapse@{content\_\-field\_\-instance\_\-collapse}!content.crud.inc@{content.crud.inc}}
+\subsubsection[{content\_\-field\_\-instance\_\-collapse}]{\setlength{\rightskip}{0pt plus 5cm}content\_\-field\_\-instance\_\-collapse (\$ {\em field})}}
+\label{content_8crud_8inc_91ca2411f3edf5967fd2aa7a50020c0e}
+
+
+Collapse field info from field =$>$ widget to flattened form values. \hypertarget{content_8crud_8inc_b0b54752706eb5a68be6ae4f329faca2}{
+\index{content.crud.inc@{content.crud.inc}!content\_\-field\_\-instance\_\-create@{content\_\-field\_\-instance\_\-create}}
+\index{content\_\-field\_\-instance\_\-create@{content\_\-field\_\-instance\_\-create}!content.crud.inc@{content.crud.inc}}
+\subsubsection[{content\_\-field\_\-instance\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}content\_\-field\_\-instance\_\-create (\$ {\em field}, \/  \$ {\em rebuild} = {\tt TRUE})}}
+\label{content_8crud_8inc_b0b54752706eb5a68be6ae4f329faca2}
+
+
+Create a new field instance.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$field}]An array of properties to create the field with, input either in the field =$>$ widget format used by the content module or as an array of form values.\end{description}
+\end{Desc}
+Required values:\begin{itemize}
+\item field\_\-name, the name of the field to be created\item type\_\-name, the content type of the instance to be created\end{itemize}
+
+
+If there is no prior instance to create this from, we also need:\begin{itemize}
+\item type, the type of field to create\item widget\_\-type, the type of widget to use \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$rebuild}]TRUE to clear content type caches and rebuild menu (default). FALSE allows the caller to process several fields at a time quickly, but then the caller is reponsible to clear content type caches and rebuild menu as soon as all fields have been processed. For example: 
+
+\begin{Code}\begin{verbatim}     // Create several fields at a time.
+     foreach ($fields as $field) {
+       content_field_instance_create($field, FALSE);
+     }
+     // Clear caches and rebuild menu.
+     content_clear_type_cache(TRUE);
+     menu_rebuild();
+\end{verbatim}
+\end{Code}
+
+ \end{description}
+\end{Desc}
+\begin{Desc}
+\item[See also:]content\_\-clear\_\-type\_\-cache() 
+
+\hyperlink{group__menu_gf36dcb9d5491ef5e7d2cf22c1f5c69f4}{menu\_\-rebuild()} \end{Desc}
+\end{itemize}
+\hypertarget{content_8crud_8inc_dd40e44fb66e9a1904fbc2bf6fe0d83c}{
+\index{content.crud.inc@{content.crud.inc}!content\_\-field\_\-instance\_\-delete@{content\_\-field\_\-instance\_\-delete}}
+\index{content\_\-field\_\-instance\_\-delete@{content\_\-field\_\-instance\_\-delete}!content.crud.inc@{content.crud.inc}}
+\subsubsection[{content\_\-field\_\-instance\_\-delete}]{\setlength{\rightskip}{0pt plus 5cm}content\_\-field\_\-instance\_\-delete (\$ {\em field\_\-name}, \/  \$ {\em type\_\-name}, \/  \$ {\em rebuild} = {\tt TRUE})}}
+\label{content_8crud_8inc_dd40e44fb66e9a1904fbc2bf6fe0d83c}
+
+
+Delete an existing field instance.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$field\_\-name}]The field name to delete. \item[{\em \$type\_\-name}]The content type where the field instance is going to be deleted. \item[{\em \$rebuild}]TRUE to clear content type caches and rebuild menu (default). FALSE allows the caller to process several fields at a time quickly, but then the caller is reponsible to clear content type caches and rebuild menu as soon as all fields have been processed. For example: 
+
+\begin{Code}\begin{verbatim}     // Delete several fields at a time.
+     foreach ($fields as $field) {
+       content_field_instance_delete($field['field_name'], $type_name, FALSE);
+     }
+     // Clear caches and rebuild menu.
+     content_clear_type_cache(TRUE);
+     menu_rebuild();
+\end{verbatim}
+\end{Code}
+
+ \end{description}
+\end{Desc}
+\begin{Desc}
+\item[See also:]content\_\-clear\_\-type\_\-cache() 
+
+\hyperlink{group__menu_gf36dcb9d5491ef5e7d2cf22c1f5c69f4}{menu\_\-rebuild()} \end{Desc}
+\hypertarget{content_8crud_8inc_25d078351d19f7aadc913a3b6cb9ebae}{
+\index{content.crud.inc@{content.crud.inc}!content\_\-field\_\-instance\_\-expand@{content\_\-field\_\-instance\_\-expand}}
+\index{content\_\-field\_\-instance\_\-expand@{content\_\-field\_\-instance\_\-expand}!content.crud.inc@{content.crud.inc}}
+\subsubsection[{content\_\-field\_\-instance\_\-expand}]{\setlength{\rightskip}{0pt plus 5cm}content\_\-field\_\-instance\_\-expand (\$ {\em field})}}
+\label{content_8crud_8inc_25d078351d19f7aadc913a3b6cb9ebae}
+
+
+Expand field info to create field =$>$ widget info. \hypertarget{content_8crud_8inc_db5f59ebcf235ed60133d755ddb6225a}{
+\index{content.crud.inc@{content.crud.inc}!content\_\-field\_\-instance\_\-read@{content\_\-field\_\-instance\_\-read}}
+\index{content\_\-field\_\-instance\_\-read@{content\_\-field\_\-instance\_\-read}!content.crud.inc@{content.crud.inc}}
+\subsubsection[{content\_\-field\_\-instance\_\-read}]{\setlength{\rightskip}{0pt plus 5cm}content\_\-field\_\-instance\_\-read (\$ {\em param} = {\tt NULL}, \/  \$ {\em include\_\-inactive} = {\tt FALSE})}}
+\label{content_8crud_8inc_db5f59ebcf235ed60133d755ddb6225a}
+
+
+Load a field instance.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$param}]An array of properties to use in selecting a field instance. Valid keys:\begin{itemize}
+\item 'type\_\-name' - The name of the content type in which the instance exists.\item 'field\_\-name' - The name of the field whose instance is to be loaded. if NULL, all instances will be returned. \end{itemize}
+\item[{\em \$include\_\-inactive}]TRUE will return field instances that are 'inactive', because their field module or widget module is currently disabled. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The field arrays. \end{Desc}
+\hypertarget{content_8crud_8inc_87fab5002b89ec0689ac287ba654f524}{
+\index{content.crud.inc@{content.crud.inc}!content\_\-field\_\-instance\_\-update@{content\_\-field\_\-instance\_\-update}}
+\index{content\_\-field\_\-instance\_\-update@{content\_\-field\_\-instance\_\-update}!content.crud.inc@{content.crud.inc}}
+\subsubsection[{content\_\-field\_\-instance\_\-update}]{\setlength{\rightskip}{0pt plus 5cm}content\_\-field\_\-instance\_\-update (\$ {\em field}, \/  \$ {\em rebuild} = {\tt TRUE})}}
+\label{content_8crud_8inc_87fab5002b89ec0689ac287ba654f524}
+
+
+Update an existing field instance.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$field}]An array of properties to update the field with, input either in the field =$>$ widget format used by the content module or as an array of form values. \item[{\em \$rebuild}]TRUE to clear content type caches and rebuild menu (default). FALSE allows the caller to process several fields at a time quickly, but then the caller is reponsible to clear content type caches and rebuild menu as soon as all fields have been processed. For example: 
+
+\begin{Code}\begin{verbatim}     // Update several fields at a time.
+     foreach ($fields as $field) {
+       content_field_instance_update($field, FALSE);
+     }
+     // Clear caches and rebuild menu.
+     content_clear_type_cache(TRUE);
+     menu_rebuild();
+\end{verbatim}
+\end{Code}
+
+ \end{description}
+\end{Desc}
+\begin{Desc}
+\item[See also:]content\_\-clear\_\-type\_\-cache() 
+
+\hyperlink{group__menu_gf36dcb9d5491ef5e7d2cf22c1f5c69f4}{menu\_\-rebuild()} \end{Desc}
+\hypertarget{content_8crud_8inc_8df5e758ddedb3686215f05da5009b52}{
+\index{content.crud.inc@{content.crud.inc}!content\_\-instance\_\-default\_\-values@{content\_\-instance\_\-default\_\-values}}
+\index{content\_\-instance\_\-default\_\-values@{content\_\-instance\_\-default\_\-values}!content.crud.inc@{content.crud.inc}}
+\subsubsection[{content\_\-instance\_\-default\_\-values}]{\setlength{\rightskip}{0pt plus 5cm}content\_\-instance\_\-default\_\-values (\$ {\em field\_\-name}, \/  \$ {\em type\_\-name}, \/  \$ {\em widget\_\-type})}}
+\label{content_8crud_8inc_8df5e758ddedb3686215f05da5009b52}
+
+
+Create an array of default values for a field instance. \hypertarget{content_8crud_8inc_1edd225d1bdea17dc4348de821f11aca}{
+\index{content.crud.inc@{content.crud.inc}!content\_\-module\_\-delete@{content\_\-module\_\-delete}}
+\index{content\_\-module\_\-delete@{content\_\-module\_\-delete}!content.crud.inc@{content.crud.inc}}
+\subsubsection[{content\_\-module\_\-delete}]{\setlength{\rightskip}{0pt plus 5cm}content\_\-module\_\-delete (\$ {\em module})}}
+\label{content_8crud_8inc_1edd225d1bdea17dc4348de821f11aca}
+
+
+Delete all data related to a module.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em string}]\$module \end{description}
+\end{Desc}
+\hypertarget{content_8crud_8inc_132f9ba2a0c09f24076af987271a4de1}{
+\index{content.crud.inc@{content.crud.inc}!content\_\-type\_\-create@{content\_\-type\_\-create}}
+\index{content\_\-type\_\-create@{content\_\-type\_\-create}!content.crud.inc@{content.crud.inc}}
+\subsubsection[{content\_\-type\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}content\_\-type\_\-create (\$ {\em info})}}
+\label{content_8crud_8inc_132f9ba2a0c09f24076af987271a4de1}
+
+
+Make changes needed when a content type is created.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$info}]value supplied by hook\_\-node\_\-type()\end{description}
+\end{Desc}
+node\_\-get\_\-types() is still missing the new type at this point due to a static caching bug. We ask it to rebuild its cache so that content\_\-clear\_\-type\_\-cache() can do its job properly. \hypertarget{content_8crud_8inc_a7b16645597242007c1b311d912772dc}{
+\index{content.crud.inc@{content.crud.inc}!content\_\-type\_\-delete@{content\_\-type\_\-delete}}
+\index{content\_\-type\_\-delete@{content\_\-type\_\-delete}!content.crud.inc@{content.crud.inc}}
+\subsubsection[{content\_\-type\_\-delete}]{\setlength{\rightskip}{0pt plus 5cm}content\_\-type\_\-delete (\$ {\em info})}}
+\label{content_8crud_8inc_a7b16645597242007c1b311d912772dc}
+
+
+Make changes needed when a content type is deleted.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$info}]value supplied by hook\_\-node\_\-type()\end{description}
+\end{Desc}
+TODO should we skip doing this entirely since core leaves the nodes in the database as orphans and wait until the nodes are deleted to respond? \hypertarget{content_8crud_8inc_59dc0b70d227d303d61c464a53713414}{
+\index{content.crud.inc@{content.crud.inc}!content\_\-type\_\-update@{content\_\-type\_\-update}}
+\index{content\_\-type\_\-update@{content\_\-type\_\-update}!content.crud.inc@{content.crud.inc}}
+\subsubsection[{content\_\-type\_\-update}]{\setlength{\rightskip}{0pt plus 5cm}content\_\-type\_\-update (\$ {\em info})}}
+\label{content_8crud_8inc_59dc0b70d227d303d61c464a53713414}
+
+
+Make changes needed when an existing content type is updated.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$info}]value supplied by hook\_\-node\_\-type() \end{description}
+\end{Desc}

@@ -1,0 +1,457 @@
+\hypertarget{includes_2theme_8inc}{
+\section{includes/theme.inc File Reference}
+\label{includes_2theme_8inc}\index{includes/theme.inc@{includes/theme.inc}}
+}
+\subsection*{Enumerations}
+\begin{Indent}{\bf Content markers}\par
+{\em Markers used by \hyperlink{group__themeable_gf27d1fe596ce8f28199ca2bed5b9816d}{theme\_\-mark()} and node\_\-mark() to designate content. \begin{Desc}
+\item[See also:]\hyperlink{group__themeable_gf27d1fe596ce8f28199ca2bed5b9816d}{theme\_\-mark()}, node\_\-mark() \end{Desc}
+}\begin{CompactItemize}
+\item 
+enum \textbf{MARK\_\-READ} 
+\item 
+enum \textbf{MARK\_\-NEW} 
+\item 
+enum \textbf{MARK\_\-UPDATED} 
+\end{CompactItemize}
+\end{Indent}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{includes_2theme_8inc_35160721f9c84c9a8f0825db6e7445d1}{init\_\-theme} ()
+\item 
+\hyperlink{includes_2theme_8inc_4311bff320dfcb10890b3892a163d711}{\_\-init\_\-theme} (\$theme, \$base\_\-theme=array(), \$registry\_\-callback= '\_\-theme\_\-load\_\-registry')
+\item 
+\hyperlink{includes_2theme_8inc_d28a6d2c5a667d0d6ae7634329d1aa92}{theme\_\-get\_\-registry} (\$registry=NULL)
+\item 
+\hyperlink{includes_2theme_8inc_5e6d3b110d90576d51bb23e1c080a1c1}{\_\-theme\_\-set\_\-registry} (\$registry)
+\item 
+\hyperlink{includes_2theme_8inc_176cb2c73e314b8a457504aade287eaf}{\_\-theme\_\-load\_\-registry} (\$theme, \$base\_\-theme=NULL, \$theme\_\-engine=NULL)
+\item 
+\hyperlink{includes_2theme_8inc_a74b1ecea2de39ca0413a1a661167d39}{\_\-theme\_\-save\_\-registry} (\$theme, \$registry)
+\item 
+\hyperlink{includes_2theme_8inc_46976f4dc489ea1376b8f623b270daa3}{drupal\_\-rebuild\_\-theme\_\-registry} ()
+\item 
+\hyperlink{includes_2theme_8inc_473fae348447b091f0d8e677820d30c3}{\_\-theme\_\-process\_\-registry} (\&\$cache, \$name, \$type, \$theme, \$path)
+\item 
+\hyperlink{includes_2theme_8inc_4a1f9a033ff57b119d18697763909f3d}{\_\-theme\_\-build\_\-registry} (\$theme, \$base\_\-theme, \$theme\_\-engine)
+\item 
+\hyperlink{includes_2theme_8inc_48d5521b10139d745626435d804353a4}{list\_\-themes} (\$refresh=FALSE)
+\item 
+\hyperlink{includes_2theme_8inc_0512a0a56fd1e056cb48bcb694fa8b12}{theme} ()
+\item 
+\hyperlink{includes_2theme_8inc_37b72ed30fd7ebc02fad346580eef2c4}{drupal\_\-discover\_\-template} (\$paths, \$suggestions, \$extension= '.tpl.php')
+\item 
+\hyperlink{includes_2theme_8inc_8fd73902b4d3a2d476e5b1324506b5e1}{path\_\-to\_\-theme} ()
+\item 
+\hyperlink{includes_2theme_8inc_38b3ec5ba23e776b29f3f907a75711f1}{drupal\_\-find\_\-theme\_\-functions} (\$cache, \$prefixes)
+\item 
+\hyperlink{includes_2theme_8inc_a755f6e8f11a62c9e90a6d7af55145b1}{drupal\_\-find\_\-theme\_\-templates} (\$cache, \$extension, \$path)
+\item 
+\hyperlink{includes_2theme_8inc_c64cf162740d831ad7655df4008b0c3a}{theme\_\-get\_\-settings} (\$key=NULL)
+\item 
+\hyperlink{includes_2theme_8inc_1f46caa33d71c0eb1d6a7018db7162f9}{theme\_\-get\_\-setting} (\$setting\_\-name, \$refresh=FALSE)
+\item 
+\hyperlink{includes_2theme_8inc_726ca00e65b455bb895c8abf1dfb1df2}{theme\_\-render\_\-template} (\$template\_\-file, \$variables)
+\item 
+\hyperlink{group__themeable_gc300e87edb69de9245c38a1d09c66adc}{theme\_\-placeholder} (\$text)
+\item 
+\hyperlink{group__themeable_g45e373d20b2cbc62ecd05ae849a2b3bd}{theme\_\-status\_\-messages} (\$display=NULL)
+\item 
+\hyperlink{group__themeable_g6a23e012993ee8a2494249148d15d2bf}{theme\_\-links} (\$links, \$attributes=array('class'=$>$ 'links'))
+\item 
+\hyperlink{group__themeable_g035987a258a89e8f1ea7e9ee0f64369b}{theme\_\-image} (\$path, \$alt= '', \$title= '', \$attributes=NULL, \$getsize=TRUE)
+\item 
+\hyperlink{group__themeable_g499898a137ccb56620058a9ad884363a}{theme\_\-breadcrumb} (\$breadcrumb)
+\item 
+\hyperlink{group__themeable_ge7158ac517c2c15972c742ef074d366d}{theme\_\-help} ()
+\item 
+\hyperlink{group__themeable_g9967b5f542549c520851500eb25c4ffe}{theme\_\-submenu} (\$links)
+\item 
+\hyperlink{group__themeable_g77f053aaa73bbeaa3943bf8f06ce625d}{theme\_\-table} (\$header, \$rows, \$attributes=array(), \$caption=NULL)
+\item 
+\hyperlink{group__themeable_ge2a1acba9910db3b633eb9339b39d65d}{theme\_\-table\_\-select\_\-header\_\-cell} ()
+\item 
+\hyperlink{group__themeable_ga114475e1c769831776ae8af627595bc}{theme\_\-tablesort\_\-indicator} (\$style)
+\item 
+\hyperlink{group__themeable_ga2b9684385ee0e8c0e8a8947925047ba}{theme\_\-box} (\$title, \$content, \$region= 'main')
+\item 
+\hyperlink{group__themeable_gf27d1fe596ce8f28199ca2bed5b9816d}{theme\_\-mark} (\$type=MARK\_\-NEW)
+\item 
+\hyperlink{group__themeable_g0f8d002d54905d758e38a3d516cbfe69}{theme\_\-item\_\-list} (\$items=array(), \$title=NULL, \$type= 'ul', \$attributes=NULL)
+\item 
+\hyperlink{group__themeable_ga0b3233e46dcfc24ecab60b769c6caab}{theme\_\-more\_\-help\_\-link} (\$url)
+\item 
+\hyperlink{group__themeable_ga9cac9d4b695e8c4edd9e324adc0c9fb}{theme\_\-xml\_\-icon} (\$url)
+\item 
+\hyperlink{group__themeable_ge5d10f67376dfa4cd18256bf1d496169}{theme\_\-feed\_\-icon} (\$url, \$title)
+\item 
+\hyperlink{group__themeable_ge54d44857d9145119af69cd97018278f}{theme\_\-more\_\-link} (\$url, \$title)
+\item 
+\hyperlink{group__themeable_gfc75590efceee02ad1c120d060d628ae}{theme\_\-closure} (\$main=0)
+\item 
+\hyperlink{group__themeable_g248f091cf3b4cb0d194933c052e44740}{theme\_\-blocks} (\$region)
+\item 
+\hyperlink{group__themeable_gf08895a75b95547417a302272e0b027c}{theme\_\-username} (\$object)
+\item 
+\hyperlink{group__themeable_g929fbdc2cc220d02dd1da889232991ff}{theme\_\-progress\_\-bar} (\$percent, \$message)
+\item 
+\hyperlink{group__themeable_g3fb21186ce53fffb040c3e1db1504671}{theme\_\-indentation} (\$size=1)
+\item 
+\hyperlink{includes_2theme_8inc_df2a29e2c6631b7c0ecd833cafda9b40}{\_\-theme\_\-table\_\-cell} (\$cell, \$header=FALSE)
+\item 
+\hyperlink{includes_2theme_8inc_3eeb7bcdba7ef4859f99586da264d347}{template\_\-preprocess} (\&\$variables, \$hook)
+\item 
+\hyperlink{includes_2theme_8inc_128dae24f990d8ba4710ac78b0584c11}{template\_\-preprocess\_\-page} (\&\$variables)
+\item 
+\hyperlink{includes_2theme_8inc_bba818ede4c18fb7d92f0a5d5f1aa771}{template\_\-preprocess\_\-node} (\&\$variables)
+\item 
+\hyperlink{includes_2theme_8inc_f4bcb538ddb98ffdd9ec8037631f10fa}{template\_\-preprocess\_\-block} (\&\$variables)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+The theme system, which controls the output of Drupal.
+
+The theme system allows for nearly all output of the Drupal system to be customized by user themes. 
+
+\subsection{Function Documentation}
+\hypertarget{includes_2theme_8inc_4311bff320dfcb10890b3892a163d711}{
+\index{includes/theme.inc@{includes/theme.inc}!\_\-init\_\-theme@{\_\-init\_\-theme}}
+\index{\_\-init\_\-theme@{\_\-init\_\-theme}!includes/theme.inc@{includes/theme.inc}}
+\subsubsection[{\_\-init\_\-theme}]{\setlength{\rightskip}{0pt plus 5cm}\_\-init\_\-theme (\$ {\em theme}, \/  \$ {\em base\_\-theme} = {\tt array()}, \/  \$ {\em registry\_\-callback} = {\tt '\_\-theme\_\-load\_\-registry'})}}
+\label{includes_2theme_8inc_4311bff320dfcb10890b3892a163d711}
+
+
+Initialize the theme system given already loaded information. This function is useful to initialize a theme when no database is present.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$theme}]An object with the following information: filename The .info file for this theme. The 'path' to the theme will be in this file's directory. (Required) owner The path to the .theme file or the .engine file to load for the theme. (Required) stylesheet The primary stylesheet for the theme. (Optional) engine The name of theme engine to use. (Optional) \item[{\em \$base\_\-theme}]An optional array of objects that represent the 'base theme' if the theme is meant to be derivative of another theme. It requires the same information as the \$theme object. It should be in 'oldest first' order, meaning the top level of the chain will be first. \item[{\em \$registry\_\-callback}]The callback to invoke to set the theme registry. \end{description}
+\end{Desc}
+\hypertarget{includes_2theme_8inc_4a1f9a033ff57b119d18697763909f3d}{
+\index{includes/theme.inc@{includes/theme.inc}!\_\-theme\_\-build\_\-registry@{\_\-theme\_\-build\_\-registry}}
+\index{\_\-theme\_\-build\_\-registry@{\_\-theme\_\-build\_\-registry}!includes/theme.inc@{includes/theme.inc}}
+\subsubsection[{\_\-theme\_\-build\_\-registry}]{\setlength{\rightskip}{0pt plus 5cm}\_\-theme\_\-build\_\-registry (\$ {\em theme}, \/  \$ {\em base\_\-theme}, \/  \$ {\em theme\_\-engine})}}
+\label{includes_2theme_8inc_4a1f9a033ff57b119d18697763909f3d}
+
+
+Rebuild the hook theme\_\-registry cache.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$theme}]The loaded \$theme object. \item[{\em \$base\_\-theme}]An array of loaded \$theme objects representing the ancestor themes in oldest first order. \item[{\em theme\_\-engine}]The name of the theme engine. \end{description}
+\end{Desc}
+\hypertarget{includes_2theme_8inc_176cb2c73e314b8a457504aade287eaf}{
+\index{includes/theme.inc@{includes/theme.inc}!\_\-theme\_\-load\_\-registry@{\_\-theme\_\-load\_\-registry}}
+\index{\_\-theme\_\-load\_\-registry@{\_\-theme\_\-load\_\-registry}!includes/theme.inc@{includes/theme.inc}}
+\subsubsection[{\_\-theme\_\-load\_\-registry}]{\setlength{\rightskip}{0pt plus 5cm}\_\-theme\_\-load\_\-registry (\$ {\em theme}, \/  \$ {\em base\_\-theme} = {\tt NULL}, \/  \$ {\em theme\_\-engine} = {\tt NULL})}}
+\label{includes_2theme_8inc_176cb2c73e314b8a457504aade287eaf}
+
+
+Get the theme\_\-registry cache from the database; if it doesn't exist, build it.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$theme}]The loaded \$theme object. \item[{\em \$base\_\-theme}]An array of loaded \$theme objects representing the ancestor themes in oldest first order. \item[{\em theme\_\-engine}]The name of the theme engine. \end{description}
+\end{Desc}
+\hypertarget{includes_2theme_8inc_473fae348447b091f0d8e677820d30c3}{
+\index{includes/theme.inc@{includes/theme.inc}!\_\-theme\_\-process\_\-registry@{\_\-theme\_\-process\_\-registry}}
+\index{\_\-theme\_\-process\_\-registry@{\_\-theme\_\-process\_\-registry}!includes/theme.inc@{includes/theme.inc}}
+\subsubsection[{\_\-theme\_\-process\_\-registry}]{\setlength{\rightskip}{0pt plus 5cm}\_\-theme\_\-process\_\-registry (\&\$ {\em cache}, \/  \$ {\em name}, \/  \$ {\em type}, \/  \$ {\em theme}, \/  \$ {\em path})}}
+\label{includes_2theme_8inc_473fae348447b091f0d8e677820d30c3}
+
+
+Process a single invocation of the theme hook. \$type will be one of 'module', 'theme\_\-engine', 'base\_\-theme\_\-engine', 'theme', or 'base\_\-theme' and it tells us some important information.
+
+Because \$cache is a reference, the cache will be continually expanded upon; new entries will replace old entries in the array\_\-merge, but we are careful to ensure some data is carried forward, such as the arguments a theme hook needs.
+
+An override flag can be set for preprocess functions. When detected the cached preprocessors for the hook will not be merged with the newly set. This can be useful to themes and theme engines by giving them more control over how and when the preprocess functions are run. \hypertarget{includes_2theme_8inc_a74b1ecea2de39ca0413a1a661167d39}{
+\index{includes/theme.inc@{includes/theme.inc}!\_\-theme\_\-save\_\-registry@{\_\-theme\_\-save\_\-registry}}
+\index{\_\-theme\_\-save\_\-registry@{\_\-theme\_\-save\_\-registry}!includes/theme.inc@{includes/theme.inc}}
+\subsubsection[{\_\-theme\_\-save\_\-registry}]{\setlength{\rightskip}{0pt plus 5cm}\_\-theme\_\-save\_\-registry (\$ {\em theme}, \/  \$ {\em registry})}}
+\label{includes_2theme_8inc_a74b1ecea2de39ca0413a1a661167d39}
+
+
+Write the theme\_\-registry cache into the database. \hypertarget{includes_2theme_8inc_5e6d3b110d90576d51bb23e1c080a1c1}{
+\index{includes/theme.inc@{includes/theme.inc}!\_\-theme\_\-set\_\-registry@{\_\-theme\_\-set\_\-registry}}
+\index{\_\-theme\_\-set\_\-registry@{\_\-theme\_\-set\_\-registry}!includes/theme.inc@{includes/theme.inc}}
+\subsubsection[{\_\-theme\_\-set\_\-registry}]{\setlength{\rightskip}{0pt plus 5cm}\_\-theme\_\-set\_\-registry (\$ {\em registry})}}
+\label{includes_2theme_8inc_5e6d3b110d90576d51bb23e1c080a1c1}
+
+
+Store the theme registry in memory. \hypertarget{includes_2theme_8inc_df2a29e2c6631b7c0ecd833cafda9b40}{
+\index{includes/theme.inc@{includes/theme.inc}!\_\-theme\_\-table\_\-cell@{\_\-theme\_\-table\_\-cell}}
+\index{\_\-theme\_\-table\_\-cell@{\_\-theme\_\-table\_\-cell}!includes/theme.inc@{includes/theme.inc}}
+\subsubsection[{\_\-theme\_\-table\_\-cell}]{\setlength{\rightskip}{0pt plus 5cm}\_\-theme\_\-table\_\-cell (\$ {\em cell}, \/  \$ {\em header} = {\tt FALSE})}}
+\label{includes_2theme_8inc_df2a29e2c6631b7c0ecd833cafda9b40}
+
+
+End of \char`\"{}defgroup themeable\char`\"{}. \hypertarget{includes_2theme_8inc_37b72ed30fd7ebc02fad346580eef2c4}{
+\index{includes/theme.inc@{includes/theme.inc}!drupal\_\-discover\_\-template@{drupal\_\-discover\_\-template}}
+\index{drupal\_\-discover\_\-template@{drupal\_\-discover\_\-template}!includes/theme.inc@{includes/theme.inc}}
+\subsubsection[{drupal\_\-discover\_\-template}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-discover\_\-template (\$ {\em paths}, \/  \$ {\em suggestions}, \/  \$ {\em extension} = {\tt '.tpl.php'})}}
+\label{includes_2theme_8inc_37b72ed30fd7ebc02fad346580eef2c4}
+
+
+Choose which template file to actually render. These are all suggested templates from themes and modules. Theming implementations can occur on multiple levels. All paths are checked to account for this. \hypertarget{includes_2theme_8inc_38b3ec5ba23e776b29f3f907a75711f1}{
+\index{includes/theme.inc@{includes/theme.inc}!drupal\_\-find\_\-theme\_\-functions@{drupal\_\-find\_\-theme\_\-functions}}
+\index{drupal\_\-find\_\-theme\_\-functions@{drupal\_\-find\_\-theme\_\-functions}!includes/theme.inc@{includes/theme.inc}}
+\subsubsection[{drupal\_\-find\_\-theme\_\-functions}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-find\_\-theme\_\-functions (\$ {\em cache}, \/  \$ {\em prefixes})}}
+\label{includes_2theme_8inc_38b3ec5ba23e776b29f3f907a75711f1}
+
+
+Find overridden theme functions. Called by themes and/or theme engines to easily discover theme functions.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$cache}]The existing cache of theme hooks to test against. \item[{\em \$prefixes}]An array of prefixes to test, in reverse order of importance.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]\$templates The functions found, suitable for returning from hook\_\-theme; \end{Desc}
+\hypertarget{includes_2theme_8inc_a755f6e8f11a62c9e90a6d7af55145b1}{
+\index{includes/theme.inc@{includes/theme.inc}!drupal\_\-find\_\-theme\_\-templates@{drupal\_\-find\_\-theme\_\-templates}}
+\index{drupal\_\-find\_\-theme\_\-templates@{drupal\_\-find\_\-theme\_\-templates}!includes/theme.inc@{includes/theme.inc}}
+\subsubsection[{drupal\_\-find\_\-theme\_\-templates}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-find\_\-theme\_\-templates (\$ {\em cache}, \/  \$ {\em extension}, \/  \$ {\em path})}}
+\label{includes_2theme_8inc_a755f6e8f11a62c9e90a6d7af55145b1}
+
+
+Find overridden theme templates. Called by themes and/or theme engines to easily discover templates.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$cache}]The existing cache of theme hooks to test against. \item[{\em \$extension}]The extension that these templates will have. \item[{\em \$path}]The path to search. \end{description}
+\end{Desc}
+\hypertarget{includes_2theme_8inc_46976f4dc489ea1376b8f623b270daa3}{
+\index{includes/theme.inc@{includes/theme.inc}!drupal\_\-rebuild\_\-theme\_\-registry@{drupal\_\-rebuild\_\-theme\_\-registry}}
+\index{drupal\_\-rebuild\_\-theme\_\-registry@{drupal\_\-rebuild\_\-theme\_\-registry}!includes/theme.inc@{includes/theme.inc}}
+\subsubsection[{drupal\_\-rebuild\_\-theme\_\-registry}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-rebuild\_\-theme\_\-registry ()}}
+\label{includes_2theme_8inc_46976f4dc489ea1376b8f623b270daa3}
+
+
+Force the system to rebuild the theme registry; this should be called when modules are added to the system, or when a dynamic system needs to add more theme hooks. \hypertarget{includes_2theme_8inc_35160721f9c84c9a8f0825db6e7445d1}{
+\index{includes/theme.inc@{includes/theme.inc}!init\_\-theme@{init\_\-theme}}
+\index{init\_\-theme@{init\_\-theme}!includes/theme.inc@{includes/theme.inc}}
+\subsubsection[{init\_\-theme}]{\setlength{\rightskip}{0pt plus 5cm}init\_\-theme ()}}
+\label{includes_2theme_8inc_35160721f9c84c9a8f0825db6e7445d1}
+
+
+End of \char`\"{}Content markers\char`\"{}. Initialize the theme system by loading the theme. \hypertarget{includes_2theme_8inc_48d5521b10139d745626435d804353a4}{
+\index{includes/theme.inc@{includes/theme.inc}!list\_\-themes@{list\_\-themes}}
+\index{list\_\-themes@{list\_\-themes}!includes/theme.inc@{includes/theme.inc}}
+\subsubsection[{list\_\-themes}]{\setlength{\rightskip}{0pt plus 5cm}list\_\-themes (\$ {\em refresh} = {\tt FALSE})}}
+\label{includes_2theme_8inc_48d5521b10139d745626435d804353a4}
+
+
+Provides a list of currently available themes.
+
+If the database is active then it will be retrieved from the database. Otherwise it will retrieve a new list.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$refresh}]Whether to reload the list of themes from the database. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An array of the currently available themes. \end{Desc}
+\hypertarget{includes_2theme_8inc_8fd73902b4d3a2d476e5b1324506b5e1}{
+\index{includes/theme.inc@{includes/theme.inc}!path\_\-to\_\-theme@{path\_\-to\_\-theme}}
+\index{path\_\-to\_\-theme@{path\_\-to\_\-theme}!includes/theme.inc@{includes/theme.inc}}
+\subsubsection[{path\_\-to\_\-theme}]{\setlength{\rightskip}{0pt plus 5cm}path\_\-to\_\-theme ()}}
+\label{includes_2theme_8inc_8fd73902b4d3a2d476e5b1324506b5e1}
+
+
+Return the path to the current themed element.
+
+It can point to the active theme or the module handling a themed implementation. For example, when invoked within the scope of a theming call it will depend on where the theming function is handled. If implemented from a module, it will point to the module. If implemented from the active theme, it will point to the active theme. When called outside the scope of a theming call, it will always point to the active theme. \hypertarget{includes_2theme_8inc_3eeb7bcdba7ef4859f99586da264d347}{
+\index{includes/theme.inc@{includes/theme.inc}!template\_\-preprocess@{template\_\-preprocess}}
+\index{template\_\-preprocess@{template\_\-preprocess}!includes/theme.inc@{includes/theme.inc}}
+\subsubsection[{template\_\-preprocess}]{\setlength{\rightskip}{0pt plus 5cm}template\_\-preprocess (\&\$ {\em variables}, \/  \$ {\em hook})}}
+\label{includes_2theme_8inc_3eeb7bcdba7ef4859f99586da264d347}
+
+
+Adds a default set of helper variables for preprocess functions and templates. This comes in before any other preprocess function which makes it possible to be used in default theme implementations (non-overriden theme functions). \hypertarget{includes_2theme_8inc_f4bcb538ddb98ffdd9ec8037631f10fa}{
+\index{includes/theme.inc@{includes/theme.inc}!template\_\-preprocess\_\-block@{template\_\-preprocess\_\-block}}
+\index{template\_\-preprocess\_\-block@{template\_\-preprocess\_\-block}!includes/theme.inc@{includes/theme.inc}}
+\subsubsection[{template\_\-preprocess\_\-block}]{\setlength{\rightskip}{0pt plus 5cm}template\_\-preprocess\_\-block (\&\$ {\em variables})}}
+\label{includes_2theme_8inc_f4bcb538ddb98ffdd9ec8037631f10fa}
+
+
+Process variables for block.tpl.php
+
+Prepare the values passed to the theme\_\-block function to be passed into a pluggable template engine. Uses block properties to generate a series of template file suggestions. If none are found, the default block.tpl.php is used.
+
+Most themes utilize their own copy of block.tpl.php. The default is located inside \char`\"{}modules/system/block.tpl.php\char`\"{}. Look in there for the full list of variables.
+
+The \$variables array contains the following arguments:\begin{itemize}
+\item \$block\end{itemize}
+
+
+\begin{Desc}
+\item[See also:]block.tpl.php \end{Desc}
+\hypertarget{includes_2theme_8inc_bba818ede4c18fb7d92f0a5d5f1aa771}{
+\index{includes/theme.inc@{includes/theme.inc}!template\_\-preprocess\_\-node@{template\_\-preprocess\_\-node}}
+\index{template\_\-preprocess\_\-node@{template\_\-preprocess\_\-node}!includes/theme.inc@{includes/theme.inc}}
+\subsubsection[{template\_\-preprocess\_\-node}]{\setlength{\rightskip}{0pt plus 5cm}template\_\-preprocess\_\-node (\&\$ {\em variables})}}
+\label{includes_2theme_8inc_bba818ede4c18fb7d92f0a5d5f1aa771}
+
+
+Process variables for node.tpl.php
+
+Most themes utilize their own copy of node.tpl.php. The default is located inside \char`\"{}modules/node/node.tpl.php\char`\"{}. Look in there for the full list of variables.
+
+The \$variables array contains the following arguments:\begin{itemize}
+\item \$node\item \$teaser\item \$page\end{itemize}
+
+
+\begin{Desc}
+\item[See also:]node.tpl.php \end{Desc}
+\hypertarget{includes_2theme_8inc_128dae24f990d8ba4710ac78b0584c11}{
+\index{includes/theme.inc@{includes/theme.inc}!template\_\-preprocess\_\-page@{template\_\-preprocess\_\-page}}
+\index{template\_\-preprocess\_\-page@{template\_\-preprocess\_\-page}!includes/theme.inc@{includes/theme.inc}}
+\subsubsection[{template\_\-preprocess\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}template\_\-preprocess\_\-page (\&\$ {\em variables})}}
+\label{includes_2theme_8inc_128dae24f990d8ba4710ac78b0584c11}
+
+
+Process variables for page.tpl.php
+
+Most themes utilize their own copy of page.tpl.php. The default is located inside \char`\"{}modules/system/page.tpl.php\char`\"{}. Look in there for the full list of variables.
+
+Uses the \hyperlink{path_8inc_fd40bf1dc5dc1f68fb326a8f6e0b88da}{arg()} function to generate a series of page template suggestions based on the current path.
+
+Any changes to variables in this preprocessor should also be changed inside \hyperlink{theme_8maintenance_8inc_14a92df5f5e74cebcf7fb680885e58a5}{template\_\-preprocess\_\-maintenance\_\-page()} to keep all them consistent.
+
+The \$variables array contains the following arguments:\begin{itemize}
+\item \$content\item \$show\_\-blocks\end{itemize}
+
+
+\begin{Desc}
+\item[See also:]page.tpl.php \end{Desc}
+\hypertarget{includes_2theme_8inc_0512a0a56fd1e056cb48bcb694fa8b12}{
+\index{includes/theme.inc@{includes/theme.inc}!theme@{theme}}
+\index{theme@{theme}!includes/theme.inc@{includes/theme.inc}}
+\subsubsection[{theme}]{\setlength{\rightskip}{0pt plus 5cm}theme ()}}
+\label{includes_2theme_8inc_0512a0a56fd1e056cb48bcb694fa8b12}
+
+
+Generate the themed output.
+
+All requests for theme hooks must go through this function. It examines the request and routes it to the appropriate theme function. The theme registry is checked to determine which implementation to use, which may be a function or a template.
+
+If the implementation is a function, it is executed and its return value passed along.
+
+If the implementation is a template, the arguments are converted to a \$variables array. This array is then modified by the module implementing the hook, theme engine (if applicable) and the theme. The following functions may be used to modify the \$variables array. They are processed in this order when available:
+
+\begin{itemize}
+\item template\_\-preprocess(\&\$variables) This sets a default set of variables for all template implementations.\end{itemize}
+
+
+\begin{itemize}
+\item template\_\-preprocess\_\-HOOK(\&\$variables) This is the first preprocessor called specific to the hook; it should be implemented by the module that registers it.\end{itemize}
+
+
+\begin{itemize}
+\item MODULE\_\-preprocess(\&\$variables) This will be called for all templates; it should only be used if there is a real need. It's purpose is similar to \hyperlink{includes_2theme_8inc_3eeb7bcdba7ef4859f99586da264d347}{template\_\-preprocess()}.\end{itemize}
+
+
+\begin{itemize}
+\item MODULE\_\-preprocess\_\-HOOK(\&\$variables) This is for modules that want to alter or provide extra variables for theming hooks not registered to itself. For example, if a module named \char`\"{}foo\char`\"{} wanted to alter the \$submitted variable for the hook \char`\"{}node\char`\"{} a preprocess function of foo\_\-preprocess\_\-node() can be created to intercept and alter the variable.\end{itemize}
+
+
+\begin{itemize}
+\item ENGINE\_\-engine\_\-preprocess(\&\$variables) This function should only be implemented by theme engines and exists so that it can set necessary variables for all hooks.\end{itemize}
+
+
+\begin{itemize}
+\item ENGINE\_\-engine\_\-preprocess\_\-HOOK(\&\$variables) This is the same as the previous function, but it is called for a single theming hook.\end{itemize}
+
+
+\begin{itemize}
+\item ENGINE\_\-preprocess(\&\$variables) This is meant to be used by themes that utilize a theme engine. It is provided so that the preprocessor is not locked into a specific theme. This makes it easy to share and transport code but theme authors must be careful to prevent fatal re-declaration errors when using sub-themes that have their own preprocessor named exactly the same as its base theme. In the default theme engine (PHPTemplate), sub-themes will load their own template.php file in addition to the one used for its parent theme. This increases the risk for these errors. A good practice is to use the engine name for the base theme and the theme name for the sub-themes to minimize this possibility.\end{itemize}
+
+
+\begin{itemize}
+\item ENGINE\_\-preprocess\_\-HOOK(\&\$variables) The same applies from the previous function, but it is called for a specific hook.\end{itemize}
+
+
+\begin{itemize}
+\item THEME\_\-preprocess(\&\$variables) These functions are based upon the raw theme; they should primarily be used by themes that do not use an engine or by sub-themes. It serves the same purpose as ENGINE\_\-preprocess().\end{itemize}
+
+
+\begin{itemize}
+\item THEME\_\-preprocess\_\-HOOK(\&\$variables) The same applies from the previous function, but it is called for a specific hook.\end{itemize}
+
+
+There are two special variables that these hooks can set: 'template\_\-file' and 'template\_\-files'. These will be merged together to form a list of 'suggested' alternate template files to use, in reverse order of priority. template\_\-file will always be a higher priority than items in template\_\-files. \hyperlink{includes_2theme_8inc_0512a0a56fd1e056cb48bcb694fa8b12}{theme()} will then look for these files, one at a time, and use the first one that exists. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$hook}]The name of the theme function to call. May be an array, in which case the first hook that actually has an implementation registered will be used. This can be used to choose 'fallback' theme implementations, so that if the specific theme hook isn't implemented anywhere, a more generic one will be used. This can allow themes to create specific theme implementations for named objects. \item[{\em ...}]Additional arguments to pass along to the theme function. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An HTML string that generates the themed output. \end{Desc}
+\hypertarget{includes_2theme_8inc_d28a6d2c5a667d0d6ae7634329d1aa92}{
+\index{includes/theme.inc@{includes/theme.inc}!theme\_\-get\_\-registry@{theme\_\-get\_\-registry}}
+\index{theme\_\-get\_\-registry@{theme\_\-get\_\-registry}!includes/theme.inc@{includes/theme.inc}}
+\subsubsection[{theme\_\-get\_\-registry}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-get\_\-registry (\$ {\em registry} = {\tt NULL})}}
+\label{includes_2theme_8inc_d28a6d2c5a667d0d6ae7634329d1aa92}
+
+
+Retrieve the stored theme registry. If the theme registry is already in memory it will be returned; otherwise it will attempt to load the registry from cache. If this fails, it will construct the registry and cache it. \hypertarget{includes_2theme_8inc_1f46caa33d71c0eb1d6a7018db7162f9}{
+\index{includes/theme.inc@{includes/theme.inc}!theme\_\-get\_\-setting@{theme\_\-get\_\-setting}}
+\index{theme\_\-get\_\-setting@{theme\_\-get\_\-setting}!includes/theme.inc@{includes/theme.inc}}
+\subsubsection[{theme\_\-get\_\-setting}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-get\_\-setting (\$ {\em setting\_\-name}, \/  \$ {\em refresh} = {\tt FALSE})}}
+\label{includes_2theme_8inc_1f46caa33d71c0eb1d6a7018db7162f9}
+
+
+Retrieve a setting for the current theme. This function is designed for use from within themes \& engines to determine theme settings made in the admin interface.
+
+Caches values for speed (use \$refresh = TRUE to refresh cache)
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$setting\_\-name}]The name of the setting to be retrieved.\item[{\em \$refresh}]Whether to reload the cache of settings.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The value of the requested setting, NULL if the setting does not exist. \end{Desc}
+\hypertarget{includes_2theme_8inc_c64cf162740d831ad7655df4008b0c3a}{
+\index{includes/theme.inc@{includes/theme.inc}!theme\_\-get\_\-settings@{theme\_\-get\_\-settings}}
+\index{theme\_\-get\_\-settings@{theme\_\-get\_\-settings}!includes/theme.inc@{includes/theme.inc}}
+\subsubsection[{theme\_\-get\_\-settings}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-get\_\-settings (\$ {\em key} = {\tt NULL})}}
+\label{includes_2theme_8inc_c64cf162740d831ad7655df4008b0c3a}
+
+
+Retrieve an associative array containing the settings for a theme.
+
+The final settings are arrived at by merging the default settings, the site-wide settings, and the settings defined for the specific theme. If no \$key was specified, only the site-wide theme defaults are retrieved.
+
+The default values for each of settings are also defined in this function. To add new settings, add their default values here, and then add form elements to \hyperlink{group__forms_g7cc637f50b1399befe30a24af784817b}{system\_\-theme\_\-settings()} in system.module.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$key}]The template/style value for a given theme.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An associative array containing theme settings. \end{Desc}
+\hypertarget{includes_2theme_8inc_726ca00e65b455bb895c8abf1dfb1df2}{
+\index{includes/theme.inc@{includes/theme.inc}!theme\_\-render\_\-template@{theme\_\-render\_\-template}}
+\index{theme\_\-render\_\-template@{theme\_\-render\_\-template}!includes/theme.inc@{includes/theme.inc}}
+\subsubsection[{theme\_\-render\_\-template}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-render\_\-template (\$ {\em template\_\-file}, \/  \$ {\em variables})}}
+\label{includes_2theme_8inc_726ca00e65b455bb895c8abf1dfb1df2}
+
+
+Render a system default template, which is essentially a PHP template.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$template\_\-file}]The filename of the template to render. Note that this will overwrite anything stored in \$variables\mbox{[}'template\_\-file'\mbox{]} if using a preprocess hook. \item[{\em \$variables}]A keyed array of variables that will appear in the output.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The output generated by the template. \end{Desc}

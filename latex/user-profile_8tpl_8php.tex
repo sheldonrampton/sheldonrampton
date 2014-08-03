@@ -1,0 +1,41 @@
+\hypertarget{user-profile_8tpl_8php}{
+\section{modules/user/user-profile.tpl.php File Reference}
+\label{user-profile_8tpl_8php}\index{modules/user/user-profile.tpl.php@{modules/user/user-profile.tpl.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hypertarget{user-profile_8tpl_8php_09ded008fa582f857aa2045c8011d48b}{
+print \textbf{\$user\_\-profile}}
+\label{user-profile_8tpl_8php_09ded008fa582f857aa2045c8011d48b}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Default theme implementation to present all user profile data.
+
+This template is used when viewing a registered member's profile page, e.g., example.com/user/123. 123 being the users ID.
+
+By default, all user profile data is printed out with the \$user\_\-profile variable. If there is a need to break it up you can use \$profile instead. It is keyed to the name of each category or other data attached to the account. If it is a category it will contain all the profile items. By default \$profile\mbox{[}'summary'\mbox{]} is provided which contains data on the user's history. Other data can be included by modules. \$profile\mbox{[}'user\_\-picture'\mbox{]} is available by default showing the account picture.
+
+Also keep in mind that profile items and their categories can be defined by site administrators. They are also available within \$profile. For example, if a site is configured with a category of \char`\"{}contact\char`\"{} with fields for of addresses, phone numbers and other related info, then doing a straight print of \$profile\mbox{[}'contact'\mbox{]} will output everything in the category. This is useful for altering source order and adding custom markup for the group.
+
+To check for all available data within \$profile, use the code below. 
+
+\begin{Code}\begin{verbatim}   print '<pre>'. check_plain(print_r($profile, 1)) .'</pre>';
+\end{verbatim}
+\end{Code}
+
+
+
+Available variables:\begin{itemize}
+\item \$user\_\-profile: All user profile data. Ready for print.\item \$profile: Keyed array of profile categories and their items or other data provided by modules.\end{itemize}
+
+
+\begin{Desc}
+\item[See also:]\hyperlink{user-profile-category_8tpl_8php}{user-profile-category.tpl.php} Where the html is handled for the group. 
+
+\hyperlink{user-profile-item_8tpl_8php}{user-profile-item.tpl.php} Where the html is handled for each item in the group. 
+
+\hyperlink{user_8pages_8inc_5a1229a0cb26128b7efab80c025e2d75}{template\_\-preprocess\_\-user\_\-profile()} \end{Desc}

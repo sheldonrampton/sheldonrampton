@@ -1,0 +1,203 @@
+\hypertarget{print_8pages_8inc}{
+\section{sites/all/modules/contrib/print/print.pages.inc File Reference}
+\label{print_8pages_8inc}\index{sites/all/modules/contrib/print/print.pages.inc@{sites/all/modules/contrib/print/print.pages.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{print_8pages_8inc_d0694de8f2f026781bf81915d7921512}{print\_\-controller\_\-html} ()
+\item 
+\hyperlink{print_8pages_8inc_aef613d2eb4448233d3600d0d7259e95}{print\_\-controller} (\$path, \$cid=NULL, \$format=PRINT\_\-HTML\_\-FORMAT, \$teaser=FALSE, \$message=NULL)
+\item 
+\hyperlink{print_8pages_8inc_7bed1c6226e0320365d86f2ccae2343c}{\_\-print\_\-robots\_\-meta\_\-generator} ()
+\item 
+\hyperlink{print_8pages_8inc_3f1f36e3e7024c0e0a1bbca71250c571}{\_\-print\_\-var\_\-generator} (\$node, \$message=NULL, \$cid=NULL)
+\item 
+\hyperlink{print_8pages_8inc_6e4a373faef7d99aa5bae041d6716b5e}{\_\-print\_\-rewrite\_\-urls} (\$matches)
+\item 
+\hyperlink{print_8pages_8inc_8bee3b0f76672324086e88fe6e7c8276}{\_\-print\_\-friendly\_\-urls} (\$url=0)
+\item 
+\hyperlink{print_8pages_8inc_bb60369f083f953df28e49d688f2856f}{\_\-print\_\-url\_\-list\_\-enabled} (\$node, \$format=PRINT\_\-HTML\_\-FORMAT)
+\item 
+\hyperlink{print_8pages_8inc_c1145058f38f60736aadfe1b67ad9e12}{\_\-print\_\-generate\_\-node} (\$nid, \$cid=NULL, \$format=PRINT\_\-HTML\_\-FORMAT, \$teaser=FALSE, \$message=NULL)
+\item 
+\hyperlink{print_8pages_8inc_034f39dad1e6de6b874b38bc9ba6df44}{\_\-print\_\-generate\_\-path} (\$path, \$format=PRINT\_\-HTML\_\-FORMAT, \$teaser=FALSE, \$message=NULL)
+\item 
+\hyperlink{print_8pages_8inc_6081aae9c9ef906ea6d53fd2eaf3e97c}{\_\-print\_\-generate\_\-book} (\$nid, \$format=PRINT\_\-HTML\_\-FORMAT, \$teaser=FALSE, \$message=NULL)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hypertarget{print_8pages_8inc_794e6853ef1d969785eac6b57a17a90c}{
+\textbf{\$\_\-print\_\-urls} = PRINT\_\-URLS\_\-DEFAULT}
+\label{print_8pages_8inc_794e6853ef1d969785eac6b57a17a90c}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Contains the functions to generate Printer-friendly pages.
+
+This file is included by the core PF module, and includes all the functions necessary to generate a PF version of the original page in HTML format. 
+
+\subsection{Function Documentation}
+\hypertarget{print_8pages_8inc_8bee3b0f76672324086e88fe6e7c8276}{
+\index{print.pages.inc@{print.pages.inc}!\_\-print\_\-friendly\_\-urls@{\_\-print\_\-friendly\_\-urls}}
+\index{\_\-print\_\-friendly\_\-urls@{\_\-print\_\-friendly\_\-urls}!print.pages.inc@{print.pages.inc}}
+\subsubsection[{\_\-print\_\-friendly\_\-urls}]{\setlength{\rightskip}{0pt plus 5cm}\_\-print\_\-friendly\_\-urls (\$ {\em url} = {\tt 0})}}
+\label{print_8pages_8inc_8bee3b0f76672324086e88fe6e7c8276}
+
+
+Auxiliary function to store the Printer-friendly URLs list as static.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$url}]absolute URL to be inserted in the list \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]list of URLs previously stored if \$url is 0, or the current count otherwise. \end{Desc}
+\hypertarget{print_8pages_8inc_6081aae9c9ef906ea6d53fd2eaf3e97c}{
+\index{print.pages.inc@{print.pages.inc}!\_\-print\_\-generate\_\-book@{\_\-print\_\-generate\_\-book}}
+\index{\_\-print\_\-generate\_\-book@{\_\-print\_\-generate\_\-book}!print.pages.inc@{print.pages.inc}}
+\subsubsection[{\_\-print\_\-generate\_\-book}]{\setlength{\rightskip}{0pt plus 5cm}\_\-print\_\-generate\_\-book (\$ {\em nid}, \/  \$ {\em format} = {\tt PRINT\_\-HTML\_\-FORMAT}, \/  \$ {\em teaser} = {\tt FALSE}, \/  \$ {\em message} = {\tt NULL})}}
+\label{print_8pages_8inc_6081aae9c9ef906ea6d53fd2eaf3e97c}
+
+
+Prepare a Printer-friendly-ready node body for book pages
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$nid}]node ID of the node to be rendered into a printer-friendly page \item[{\em \$format}]format of the page being generated \item[{\em \$teaser}]if set to TRUE, outputs only the node's teaser \item[{\em \$message}]optional sender's message (used by the send e-mail module) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]filled array ready to be used in the template \end{Desc}
+\hypertarget{print_8pages_8inc_c1145058f38f60736aadfe1b67ad9e12}{
+\index{print.pages.inc@{print.pages.inc}!\_\-print\_\-generate\_\-node@{\_\-print\_\-generate\_\-node}}
+\index{\_\-print\_\-generate\_\-node@{\_\-print\_\-generate\_\-node}!print.pages.inc@{print.pages.inc}}
+\subsubsection[{\_\-print\_\-generate\_\-node}]{\setlength{\rightskip}{0pt plus 5cm}\_\-print\_\-generate\_\-node (\$ {\em nid}, \/  \$ {\em cid} = {\tt NULL}, \/  \$ {\em format} = {\tt PRINT\_\-HTML\_\-FORMAT}, \/  \$ {\em teaser} = {\tt FALSE}, \/  \$ {\em message} = {\tt NULL})}}
+\label{print_8pages_8inc_c1145058f38f60736aadfe1b67ad9e12}
+
+
+Prepare a Printer-friendly-ready node body for content nodes
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$nid}]node ID of the node to be rendered into a printer-friendly page \item[{\em \$cid}]comment ID of the individual comment to be rendered \item[{\em \$format}]format of the page being generated \item[{\em \$teaser}]if set to TRUE, outputs only the node's teaser \item[{\em \$message}]optional sender's message (used by the send e-mail module) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]filled array ready to be used in the template \end{Desc}
+\hypertarget{print_8pages_8inc_034f39dad1e6de6b874b38bc9ba6df44}{
+\index{print.pages.inc@{print.pages.inc}!\_\-print\_\-generate\_\-path@{\_\-print\_\-generate\_\-path}}
+\index{\_\-print\_\-generate\_\-path@{\_\-print\_\-generate\_\-path}!print.pages.inc@{print.pages.inc}}
+\subsubsection[{\_\-print\_\-generate\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}\_\-print\_\-generate\_\-path (\$ {\em path}, \/  \$ {\em format} = {\tt PRINT\_\-HTML\_\-FORMAT}, \/  \$ {\em teaser} = {\tt FALSE}, \/  \$ {\em message} = {\tt NULL})}}
+\label{print_8pages_8inc_034f39dad1e6de6b874b38bc9ba6df44}
+
+
+Prepare a Printer-friendly-ready node body for non-content pages
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$path}]path of the node to be rendered into a printer-friendly page \item[{\em \$format}]format of the page being generated \item[{\em \$teaser}]if set to TRUE, outputs only the node's teaser \item[{\em \$message}]optional sender's message (used by the send e-mail module) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]filled array ready to be used in the template \end{Desc}
+\hypertarget{print_8pages_8inc_6e4a373faef7d99aa5bae041d6716b5e}{
+\index{print.pages.inc@{print.pages.inc}!\_\-print\_\-rewrite\_\-urls@{\_\-print\_\-rewrite\_\-urls}}
+\index{\_\-print\_\-rewrite\_\-urls@{\_\-print\_\-rewrite\_\-urls}!print.pages.inc@{print.pages.inc}}
+\subsubsection[{\_\-print\_\-rewrite\_\-urls}]{\setlength{\rightskip}{0pt plus 5cm}\_\-print\_\-rewrite\_\-urls (\$ {\em matches})}}
+\label{print_8pages_8inc_6e4a373faef7d99aa5bae041d6716b5e}
+
+
+Callback function for the preg\_\-replace\_\-callback for URL-capable patterns
+
+Manipulate URLs to make them absolute in the URLs list, and to add a \mbox{[}n\mbox{]} footnote marker.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$matches}]array with the matched tag patterns, usually $<$a...$>$+text+ \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]tag with re-written URL and when appropriate the \mbox{[}n\mbox{]} index to the URL list \end{Desc}
+\hypertarget{print_8pages_8inc_7bed1c6226e0320365d86f2ccae2343c}{
+\index{print.pages.inc@{print.pages.inc}!\_\-print\_\-robots\_\-meta\_\-generator@{\_\-print\_\-robots\_\-meta\_\-generator}}
+\index{\_\-print\_\-robots\_\-meta\_\-generator@{\_\-print\_\-robots\_\-meta\_\-generator}!print.pages.inc@{print.pages.inc}}
+\subsubsection[{\_\-print\_\-robots\_\-meta\_\-generator}]{\setlength{\rightskip}{0pt plus 5cm}\_\-print\_\-robots\_\-meta\_\-generator ()}}
+\label{print_8pages_8inc_7bed1c6226e0320365d86f2ccae2343c}
+
+
+Generates a robots meta tag to tell them what they may index
+
+\begin{Desc}
+\item[Returns:]string with the meta robots tag \end{Desc}
+\hypertarget{print_8pages_8inc_bb60369f083f953df28e49d688f2856f}{
+\index{print.pages.inc@{print.pages.inc}!\_\-print\_\-url\_\-list\_\-enabled@{\_\-print\_\-url\_\-list\_\-enabled}}
+\index{\_\-print\_\-url\_\-list\_\-enabled@{\_\-print\_\-url\_\-list\_\-enabled}!print.pages.inc@{print.pages.inc}}
+\subsubsection[{\_\-print\_\-url\_\-list\_\-enabled}]{\setlength{\rightskip}{0pt plus 5cm}\_\-print\_\-url\_\-list\_\-enabled (\$ {\em node}, \/  \$ {\em format} = {\tt PRINT\_\-HTML\_\-FORMAT})}}
+\label{print_8pages_8inc_bb60369f083f953df28e49d688f2856f}
+
+
+Check URL list settings for this node
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em node}]node object \item[{\em \$format}]format of the page being generated \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]TRUE if URL list should be displayed, FALSE otherwise \end{Desc}
+\hypertarget{print_8pages_8inc_3f1f36e3e7024c0e0a1bbca71250c571}{
+\index{print.pages.inc@{print.pages.inc}!\_\-print\_\-var\_\-generator@{\_\-print\_\-var\_\-generator}}
+\index{\_\-print\_\-var\_\-generator@{\_\-print\_\-var\_\-generator}!print.pages.inc@{print.pages.inc}}
+\subsubsection[{\_\-print\_\-var\_\-generator}]{\setlength{\rightskip}{0pt plus 5cm}\_\-print\_\-var\_\-generator (\$ {\em node}, \/  \$ {\em message} = {\tt NULL}, \/  \$ {\em cid} = {\tt NULL})}}
+\label{print_8pages_8inc_3f1f36e3e7024c0e0a1bbca71250c571}
+
+
+Post-processor that fills the array for the template with common details
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$node}]generated node with a printer-friendly node body \item[{\em \$message}]optional sender's message (used by the send e-mail module) \item[{\em \$cid}]id of current comment being generated (NULL when not generating an individual comment) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]array with the fields to be used in the template \end{Desc}
+\hypertarget{print_8pages_8inc_aef613d2eb4448233d3600d0d7259e95}{
+\index{print.pages.inc@{print.pages.inc}!print\_\-controller@{print\_\-controller}}
+\index{print\_\-controller@{print\_\-controller}!print.pages.inc@{print.pages.inc}}
+\subsubsection[{print\_\-controller}]{\setlength{\rightskip}{0pt plus 5cm}print\_\-controller (\$ {\em path}, \/  \$ {\em cid} = {\tt NULL}, \/  \$ {\em format} = {\tt PRINT\_\-HTML\_\-FORMAT}, \/  \$ {\em teaser} = {\tt FALSE}, \/  \$ {\em message} = {\tt NULL})}}
+\label{print_8pages_8inc_aef613d2eb4448233d3600d0d7259e95}
+
+
+Select the print generator function based on the page type
+
+Depending on the type of node, this functions chooses the appropriate generator function.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$path}]path of the original page \item[{\em \$cid}]comment ID of the individual comment to be rendered \item[{\em \$format}]format of the page being generated \item[{\em \$teaser}]if set to TRUE, outputs only the node's teaser \item[{\em \$message}]optional sender's message (used by the send e-mail module) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]array with the fields to be used in the template \end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{print_8pages_8inc_c1145058f38f60736aadfe1b67ad9e12}{\_\-print\_\-generate\_\-node()} 
+
+\hyperlink{print_8pages_8inc_034f39dad1e6de6b874b38bc9ba6df44}{\_\-print\_\-generate\_\-path()} 
+
+\hyperlink{print_8pages_8inc_6081aae9c9ef906ea6d53fd2eaf3e97c}{\_\-print\_\-generate\_\-book()} \end{Desc}
+\hypertarget{print_8pages_8inc_d0694de8f2f026781bf81915d7921512}{
+\index{print.pages.inc@{print.pages.inc}!print\_\-controller\_\-html@{print\_\-controller\_\-html}}
+\index{print\_\-controller\_\-html@{print\_\-controller\_\-html}!print.pages.inc@{print.pages.inc}}
+\subsubsection[{print\_\-controller\_\-html}]{\setlength{\rightskip}{0pt plus 5cm}print\_\-controller\_\-html ()}}
+\label{print_8pages_8inc_d0694de8f2f026781bf81915d7921512}
+
+
+Generate an HTML version of the printer-friendly page
+
+\begin{Desc}
+\item[See also:]\hyperlink{print_8pages_8inc_aef613d2eb4448233d3600d0d7259e95}{print\_\-controller()} \end{Desc}

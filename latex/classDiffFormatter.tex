@@ -1,0 +1,127 @@
+\hypertarget{classDiffFormatter}{
+\section{DiffFormatter Class Reference}
+\label{classDiffFormatter}\index{DiffFormatter@{DiffFormatter}}
+}
+Inheritance diagram for DiffFormatter::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classDiffFormatter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classDiffFormatter_5c24d365dc779a9825c26c8a2977590a}{format} (\$diff)
+\item 
+\hypertarget{classDiffFormatter_5c51cf55c54d77cbac1ef3677b5afe9e}{
+\textbf{\_\-block} (\$xbeg, \$xlen, \$ybeg, \$ylen, \&\$edits)}
+\label{classDiffFormatter_5c51cf55c54d77cbac1ef3677b5afe9e}
+
+\item 
+\hypertarget{classDiffFormatter_45e1b9cbb0d7ab81127ecfbc824a926b}{
+\textbf{\_\-start\_\-diff} ()}
+\label{classDiffFormatter_45e1b9cbb0d7ab81127ecfbc824a926b}
+
+\item 
+\hypertarget{classDiffFormatter_dd4a7543c657d48868bed46e5ca83c9b}{
+\textbf{\_\-end\_\-diff} ()}
+\label{classDiffFormatter_dd4a7543c657d48868bed46e5ca83c9b}
+
+\item 
+\hypertarget{classDiffFormatter_1caeac183aeb1e932e69758850182069}{
+\textbf{\_\-block\_\-header} (\$xbeg, \$xlen, \$ybeg, \$ylen)}
+\label{classDiffFormatter_1caeac183aeb1e932e69758850182069}
+
+\item 
+\hypertarget{classDiffFormatter_164da99c15cbd49cbc1c20d2a6823949}{
+\textbf{\_\-start\_\-block} (\$header)}
+\label{classDiffFormatter_164da99c15cbd49cbc1c20d2a6823949}
+
+\item 
+\hypertarget{classDiffFormatter_4ad045d38aaa856dae6a463e5caa2974}{
+\textbf{\_\-end\_\-block} ()}
+\label{classDiffFormatter_4ad045d38aaa856dae6a463e5caa2974}
+
+\item 
+\hypertarget{classDiffFormatter_160347647095532cdde8cd85894c7dd6}{
+\textbf{\_\-lines} (\$lines, \$prefix= ' ')}
+\label{classDiffFormatter_160347647095532cdde8cd85894c7dd6}
+
+\item 
+\hypertarget{classDiffFormatter_d306b256b5af3e2869492fa69d5e7005}{
+\textbf{\_\-context} (\$lines)}
+\label{classDiffFormatter_d306b256b5af3e2869492fa69d5e7005}
+
+\item 
+\hypertarget{classDiffFormatter_d466d534ead9f74654a7bd825cc97919}{
+\textbf{\_\-added} (\$lines)}
+\label{classDiffFormatter_d466d534ead9f74654a7bd825cc97919}
+
+\item 
+\hypertarget{classDiffFormatter_5173dfafc114575ee5c16333980a6888}{
+\textbf{\_\-deleted} (\$lines)}
+\label{classDiffFormatter_5173dfafc114575ee5c16333980a6888}
+
+\item 
+\hypertarget{classDiffFormatter_2c7bb47b2d67708f6f5c47548d2e15f8}{
+\textbf{\_\-changed} (\$orig, \$closing)}
+\label{classDiffFormatter_2c7bb47b2d67708f6f5c47548d2e15f8}
+
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+\hyperlink{classDiffFormatter_4f2712c6e01ecb99dd67318a423befa1}{\$leading\_\-context\_\-lines} = 0
+\item 
+\hyperlink{classDiffFormatter_92c948d582a6fc85d10ee9e11393e9b2}{\$trailing\_\-context\_\-lines} = 0
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A class to format Diffs
+
+This class formats the diff in classic diff format. It is intended that this class be customized via inheritance, to obtain fancier outputs. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classDiffFormatter_5c24d365dc779a9825c26c8a2977590a}{
+\index{DiffFormatter@{DiffFormatter}!format@{format}}
+\index{format@{format}!DiffFormatter@{DiffFormatter}}
+\subsubsection[{format}]{\setlength{\rightskip}{0pt plus 5cm}DiffFormatter::format (\$ {\em diff})}}
+\label{classDiffFormatter_5c24d365dc779a9825c26c8a2977590a}
+
+
+Format a diff.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$diff}]object A \hyperlink{classDiff}{Diff} object. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]string The formatted output. \end{Desc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classDiffFormatter_4f2712c6e01ecb99dd67318a423befa1}{
+\index{DiffFormatter@{DiffFormatter}!\$leading\_\-context\_\-lines@{\$leading\_\-context\_\-lines}}
+\index{\$leading\_\-context\_\-lines@{\$leading\_\-context\_\-lines}!DiffFormatter@{DiffFormatter}}
+\subsubsection[{\$leading\_\-context\_\-lines}]{\setlength{\rightskip}{0pt plus 5cm}DiffFormatter::\$leading\_\-context\_\-lines = 0}}
+\label{classDiffFormatter_4f2712c6e01ecb99dd67318a423befa1}
+
+
+Number of leading context \char`\"{}lines\char`\"{} to preserve.
+
+This should be left at zero for this class, but subclasses may want to set this to other values. \hypertarget{classDiffFormatter_92c948d582a6fc85d10ee9e11393e9b2}{
+\index{DiffFormatter@{DiffFormatter}!\$trailing\_\-context\_\-lines@{\$trailing\_\-context\_\-lines}}
+\index{\$trailing\_\-context\_\-lines@{\$trailing\_\-context\_\-lines}!DiffFormatter@{DiffFormatter}}
+\subsubsection[{\$trailing\_\-context\_\-lines}]{\setlength{\rightskip}{0pt plus 5cm}DiffFormatter::\$trailing\_\-context\_\-lines = 0}}
+\label{classDiffFormatter_92c948d582a6fc85d10ee9e11393e9b2}
+
+
+Number of trailing context \char`\"{}lines\char`\"{} to preserve.
+
+This should be left at zero for this class, but subclasses may want to set this to other values. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+mouse/DifferenceEngine.php\end{CompactItemize}

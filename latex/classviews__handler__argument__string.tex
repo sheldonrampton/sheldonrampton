@@ -1,0 +1,153 @@
+\hypertarget{classviews__handler__argument__string}{
+\section{views\_\-handler\_\-argument\_\-string Class Reference}
+\label{classviews__handler__argument__string}\index{views\_\-handler\_\-argument\_\-string@{views\_\-handler\_\-argument\_\-string}}
+}
+Inheritance diagram for views\_\-handler\_\-argument\_\-string::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4cm]{classviews__handler__argument__string}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classviews__handler__argument__string_504dc70451721c2b9ccae44240d13e2e}{
+\textbf{init} (\&\$\hyperlink{classview}{view}, \&\$options)}
+\label{classviews__handler__argument__string_504dc70451721c2b9ccae44240d13e2e}
+
+\item 
+\hyperlink{classviews__handler__argument__string_f27f79196cc9e29b2bbc635a896510e1}{option\_\-definition} ()
+\item 
+\hyperlink{classviews__handler__argument__string_b96e2120f4f4458921f817b343d11ef0}{options\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__handler__argument__string_829ad5356d65f02a75af5d1e8374292b}{summary\_\-query} ()
+\item 
+\hyperlink{classviews__handler__argument__string_8c039cb85ad264fd03ff5cdef379dfb5}{get\_\-formula} ()
+\item 
+\hyperlink{classviews__handler__argument__string_d50bba6781755cfcd29b2a493dd838ec}{query} ()
+\item 
+\hyperlink{classviews__handler__argument__string_185c0d31b97f98df85073d53b3f8c26d}{summary\_\-argument} (\$data)
+\item 
+\hypertarget{classviews__handler__argument__string_b69150dccabab04aa8e63249438b8656}{
+\textbf{case\_\-transform} (\$string, \$option)}
+\label{classviews__handler__argument__string_b69150dccabab04aa8e63249438b8656}
+
+\item 
+\hyperlink{classviews__handler__argument__string_bd176c527d765826b51c50346309b545}{title} ()
+\item 
+\hyperlink{classviews__handler__argument__string_8cc60c274ca743c78de23260edc3ee4a}{summary\_\-name} (\$data)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Basic argument handler to implement string arguments that may have length limits. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__handler__argument__string_8c039cb85ad264fd03ff5cdef379dfb5}{
+\index{views\_\-handler\_\-argument\_\-string@{views\_\-handler\_\-argument\_\-string}!get\_\-formula@{get\_\-formula}}
+\index{get\_\-formula@{get\_\-formula}!views_handler_argument_string@{views\_\-handler\_\-argument\_\-string}}
+\subsubsection[{get\_\-formula}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-argument\_\-string::get\_\-formula ()}}
+\label{classviews__handler__argument__string_8c039cb85ad264fd03ff5cdef379dfb5}
+
+
+Get the formula for this argument.
+
+\$this-$>$\hyperlink{classviews__handler_947f21ef0f21a77f4d103af4702b3600}{ensure\_\-my\_\-table()} MUST have been called prior to this. \hypertarget{classviews__handler__argument__string_f27f79196cc9e29b2bbc635a896510e1}{
+\index{views\_\-handler\_\-argument\_\-string@{views\_\-handler\_\-argument\_\-string}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!views_handler_argument_string@{views\_\-handler\_\-argument\_\-string}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-argument\_\-string::option\_\-definition ()}}
+\label{classviews__handler__argument__string_f27f79196cc9e29b2bbc635a896510e1}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented from \hyperlink{classviews__handler__argument_117ab20a53624e082e6e32a22d4521cc}{views\_\-handler\_\-argument}.\hypertarget{classviews__handler__argument__string_b96e2120f4f4458921f817b343d11ef0}{
+\index{views\_\-handler\_\-argument\_\-string@{views\_\-handler\_\-argument\_\-string}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!views_handler_argument_string@{views\_\-handler\_\-argument\_\-string}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-argument\_\-string::options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler__argument__string_b96e2120f4f4458921f817b343d11ef0}
+
+
+Provide a form for setting options. 
+
+Reimplemented from \hyperlink{classviews__handler__argument_44f015a0d527983ae6df2689f66b2c24}{views\_\-handler\_\-argument}.\hypertarget{classviews__handler__argument__string_d50bba6781755cfcd29b2a493dd838ec}{
+\index{views\_\-handler\_\-argument\_\-string@{views\_\-handler\_\-argument\_\-string}!query@{query}}
+\index{query@{query}!views_handler_argument_string@{views\_\-handler\_\-argument\_\-string}}
+\subsubsection[{query}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-argument\_\-string::query ()}}
+\label{classviews__handler__argument__string_d50bba6781755cfcd29b2a493dd838ec}
+
+
+Build the query based upon the formula 
+
+Reimplemented from \hyperlink{classviews__handler__argument_c4b0ce6704a10f515b2aea2f9e790994}{views\_\-handler\_\-argument}.\hypertarget{classviews__handler__argument__string_185c0d31b97f98df85073d53b3f8c26d}{
+\index{views\_\-handler\_\-argument\_\-string@{views\_\-handler\_\-argument\_\-string}!summary\_\-argument@{summary\_\-argument}}
+\index{summary\_\-argument@{summary\_\-argument}!views_handler_argument_string@{views\_\-handler\_\-argument\_\-string}}
+\subsubsection[{summary\_\-argument}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-argument\_\-string::summary\_\-argument (\$ {\em data})}}
+\label{classviews__handler__argument__string_185c0d31b97f98df85073d53b3f8c26d}
+
+
+Provide the argument to use to link from the summary to the next level; this will be called once per row of a summary, and used as part of \$view-$>$get\_\-url().
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$data}]The query results for the row. \end{description}
+\end{Desc}
+
+
+Reimplemented from \hyperlink{classviews__handler__argument_ad03acefdb44288d7e6c7793bc33f66c}{views\_\-handler\_\-argument}.\hypertarget{classviews__handler__argument__string_8cc60c274ca743c78de23260edc3ee4a}{
+\index{views\_\-handler\_\-argument\_\-string@{views\_\-handler\_\-argument\_\-string}!summary\_\-name@{summary\_\-name}}
+\index{summary\_\-name@{summary\_\-name}!views_handler_argument_string@{views\_\-handler\_\-argument\_\-string}}
+\subsubsection[{summary\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-argument\_\-string::summary\_\-name (\$ {\em data})}}
+\label{classviews__handler__argument__string_8cc60c274ca743c78de23260edc3ee4a}
+
+
+Provides the name to use for the summary. By default this is just the name field.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$data}]The query results for the row. \end{description}
+\end{Desc}
+
+
+Reimplemented from \hyperlink{classviews__handler__argument_4c55a340453eed4d35c69f7ac790cac1}{views\_\-handler\_\-argument}.\hypertarget{classviews__handler__argument__string_829ad5356d65f02a75af5d1e8374292b}{
+\index{views\_\-handler\_\-argument\_\-string@{views\_\-handler\_\-argument\_\-string}!summary\_\-query@{summary\_\-query}}
+\index{summary\_\-query@{summary\_\-query}!views_handler_argument_string@{views\_\-handler\_\-argument\_\-string}}
+\subsubsection[{summary\_\-query}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-argument\_\-string::summary\_\-query ()}}
+\label{classviews__handler__argument__string_829ad5356d65f02a75af5d1e8374292b}
+
+
+Build the summary query based on a string 
+
+Reimplemented from \hyperlink{classviews__handler__argument_1dd6cc301b1c7c1c6829c59eb641a883}{views\_\-handler\_\-argument}.\hypertarget{classviews__handler__argument__string_bd176c527d765826b51c50346309b545}{
+\index{views\_\-handler\_\-argument\_\-string@{views\_\-handler\_\-argument\_\-string}!title@{title}}
+\index{title@{title}!views_handler_argument_string@{views\_\-handler\_\-argument\_\-string}}
+\subsubsection[{title}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-argument\_\-string::title ()}}
+\label{classviews__handler__argument__string_bd176c527d765826b51c50346309b545}
+
+
+Get the title this argument will assign the \hyperlink{classview}{view}, given the argument.
+
+This usually needs to be overridden to provide a proper title. 
+
+Reimplemented from \hyperlink{classviews__handler__argument_76181ac24e7be4a09aaafc1fa5f15ea1}{views\_\-handler\_\-argument}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/handlers/views\_\-handler\_\-argument\_\-string.inc\end{CompactItemize}

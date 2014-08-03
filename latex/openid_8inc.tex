@@ -1,0 +1,208 @@
+\hypertarget{openid_8inc}{
+\section{modules/openid/openid.inc File Reference}
+\label{openid_8inc}\index{modules/openid/openid.inc@{modules/openid/openid.inc}}
+}
+\subsection*{Enumerations}
+\begin{CompactItemize}
+\item 
+enum \textbf{OPENID\_\-DH\_\-DEFAULT\_\-MOD} 
+\item 
+enum \textbf{OPENID\_\-DH\_\-DEFAULT\_\-GEN} 
+\item 
+enum \textbf{OPENID\_\-SHA1\_\-BLOCKSIZE} 
+\item 
+enum \textbf{OPENID\_\-RAND\_\-SOURCE} 
+\item 
+enum \textbf{OPENID\_\-NS\_\-2\_\-0} 
+\item 
+enum \textbf{OPENID\_\-NS\_\-1\_\-1} 
+\item 
+enum \textbf{OPENID\_\-NS\_\-1\_\-0} 
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{openid_8inc_3c8b7c23742c62aae323c74c8c0f9915}{openid\_\-redirect\_\-http} (\$url, \$message)
+\item 
+\hyperlink{openid_8inc_6836e61a578613959fe00ca83209ae2f}{openid\_\-redirect} (\$url, \$message)
+\item 
+\hypertarget{openid_8inc_52777d750ac2d4fd5f75794116fa04cb}{
+\textbf{openid\_\-redirect\_\-form} (\&\$form\_\-state, \$url, \$message)}
+\label{openid_8inc_52777d750ac2d4fd5f75794116fa04cb}
+
+\item 
+\hyperlink{openid_8inc_867ccbcc067a82d3bc691a6cdc1ad9f4}{\_\-openid\_\-is\_\-xri} (\$identifier)
+\item 
+\hyperlink{openid_8inc_ba14f184dc28aa90da400e857cb3b537}{\_\-openid\_\-normalize} (\$identifier)
+\item 
+\hypertarget{openid_8inc_a423503af225609f1fc7044ecf4e6ceb}{
+\textbf{\_\-openid\_\-normalize\_\-xri} (\$xri)}
+\label{openid_8inc_a423503af225609f1fc7044ecf4e6ceb}
+
+\item 
+\hypertarget{openid_8inc_c27e44e57989bc26d02dcec5d3a9ed5f}{
+\textbf{\_\-openid\_\-normalize\_\-url} (\$url)}
+\label{openid_8inc_c27e44e57989bc26d02dcec5d3a9ed5f}
+
+\item 
+\hyperlink{openid_8inc_5d5952e825b3e17cc2765760baf69d4f}{\_\-openid\_\-create\_\-message} (\$data)
+\item 
+\hyperlink{openid_8inc_367a73e53a7544157b49ffbedcbdb444}{\_\-openid\_\-encode\_\-message} (\$message)
+\item 
+\hyperlink{openid_8inc_b5f88df8b540f08bd28e8a508bb49175}{\_\-openid\_\-parse\_\-message} (\$message)
+\item 
+\hyperlink{openid_8inc_7f413b6dbcae0aab572b51b57f08b076}{\_\-openid\_\-nonce} ()
+\item 
+\hyperlink{openid_8inc_413931ae272accf7e4161d5b032d4631}{\_\-openid\_\-link\_\-href} (\$rel, \$html)
+\item 
+\hyperlink{openid_8inc_cbf79310505895f32ef771f12addd3bc}{\_\-openid\_\-meta\_\-httpequiv} (\$equiv, \$html)
+\item 
+\hyperlink{openid_8inc_94a239a1dacef65306d0078198035cc7}{\_\-openid\_\-signature} (\$association, \$message\_\-array, \$keys\_\-to\_\-sign)
+\item 
+\hypertarget{openid_8inc_2294d8c885fe408e7e1981e51e880ebc}{
+\textbf{\_\-openid\_\-hmac} (\$key, \$text)}
+\label{openid_8inc_2294d8c885fe408e7e1981e51e880ebc}
+
+\item 
+\hypertarget{openid_8inc_3387da37f1b4f89bf95c56b1f8270d53}{
+\textbf{\_\-openid\_\-sha1} (\$text)}
+\label{openid_8inc_3387da37f1b4f89bf95c56b1f8270d53}
+
+\item 
+\hypertarget{openid_8inc_dd8eead4c4954c3ad50ff4990f165478}{
+\textbf{\_\-openid\_\-dh\_\-base64\_\-to\_\-long} (\$str)}
+\label{openid_8inc_dd8eead4c4954c3ad50ff4990f165478}
+
+\item 
+\hypertarget{openid_8inc_796f1e583d3276d8e8032fa5a4c0f616}{
+\textbf{\_\-openid\_\-dh\_\-long\_\-to\_\-base64} (\$str)}
+\label{openid_8inc_796f1e583d3276d8e8032fa5a4c0f616}
+
+\item 
+\hypertarget{openid_8inc_422c58798b7986b43a2b565df1b9f2d7}{
+\textbf{\_\-openid\_\-dh\_\-binary\_\-to\_\-long} (\$str)}
+\label{openid_8inc_422c58798b7986b43a2b565df1b9f2d7}
+
+\item 
+\hypertarget{openid_8inc_9d1a28ec06188bbbc85acf1bfc41ae1d}{
+\textbf{\_\-openid\_\-dh\_\-long\_\-to\_\-binary} (\$long)}
+\label{openid_8inc_9d1a28ec06188bbbc85acf1bfc41ae1d}
+
+\item 
+\hypertarget{openid_8inc_f0f8bf2c50cbe825681e7e319a1fd33f}{
+\textbf{\_\-openid\_\-dh\_\-xorsecret} (\$shared, \$secret)}
+\label{openid_8inc_f0f8bf2c50cbe825681e7e319a1fd33f}
+
+\item 
+\hypertarget{openid_8inc_58900a927921ff4c61f925b81ceabbc0}{
+\textbf{\_\-openid\_\-dh\_\-rand} (\$stop)}
+\label{openid_8inc_58900a927921ff4c61f925b81ceabbc0}
+
+\item 
+\hypertarget{openid_8inc_d13ffee2af6f25a64082b7e2c3cfe39f}{
+\textbf{\_\-openid\_\-get\_\-bytes} (\$num\_\-bytes)}
+\label{openid_8inc_d13ffee2af6f25a64082b7e2c3cfe39f}
+
+\item 
+\hypertarget{openid_8inc_56f4846ea99195ce405d7b9704b424b0}{
+\textbf{\_\-openid\_\-response} (\$str=NULL)}
+\label{openid_8inc_56f4846ea99195ce405d7b9704b424b0}
+
+\item 
+\hypertarget{openid_8inc_e62ec8d61534cb5aa5a4a8f0d01b5dee}{
+\textbf{\_\-openid\_\-get\_\-params} (\$str)}
+\label{openid_8inc_e62ec8d61534cb5aa5a4a8f0d01b5dee}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+OpenID utility functions. 
+
+\subsection{Function Documentation}
+\hypertarget{openid_8inc_5d5952e825b3e17cc2765760baf69d4f}{
+\index{openid.inc@{openid.inc}!\_\-openid\_\-create\_\-message@{\_\-openid\_\-create\_\-message}}
+\index{\_\-openid\_\-create\_\-message@{\_\-openid\_\-create\_\-message}!openid.inc@{openid.inc}}
+\subsubsection[{\_\-openid\_\-create\_\-message}]{\setlength{\rightskip}{0pt plus 5cm}\_\-openid\_\-create\_\-message (\$ {\em data})}}
+\label{openid_8inc_5d5952e825b3e17cc2765760baf69d4f}
+
+
+Create a serialized message packet as per spec: \$key:\$value\par
+ . \hypertarget{openid_8inc_367a73e53a7544157b49ffbedcbdb444}{
+\index{openid.inc@{openid.inc}!\_\-openid\_\-encode\_\-message@{\_\-openid\_\-encode\_\-message}}
+\index{\_\-openid\_\-encode\_\-message@{\_\-openid\_\-encode\_\-message}!openid.inc@{openid.inc}}
+\subsubsection[{\_\-openid\_\-encode\_\-message}]{\setlength{\rightskip}{0pt plus 5cm}\_\-openid\_\-encode\_\-message (\$ {\em message})}}
+\label{openid_8inc_367a73e53a7544157b49ffbedcbdb444}
+
+
+Encode a message from \_\-openid\_\-create\_\-message for HTTP Post \hypertarget{openid_8inc_867ccbcc067a82d3bc691a6cdc1ad9f4}{
+\index{openid.inc@{openid.inc}!\_\-openid\_\-is\_\-xri@{\_\-openid\_\-is\_\-xri}}
+\index{\_\-openid\_\-is\_\-xri@{\_\-openid\_\-is\_\-xri}!openid.inc@{openid.inc}}
+\subsubsection[{\_\-openid\_\-is\_\-xri}]{\setlength{\rightskip}{0pt plus 5cm}\_\-openid\_\-is\_\-xri (\$ {\em identifier})}}
+\label{openid_8inc_867ccbcc067a82d3bc691a6cdc1ad9f4}
+
+
+Determine if the given identifier is an XRI ID. \hypertarget{openid_8inc_413931ae272accf7e4161d5b032d4631}{
+\index{openid.inc@{openid.inc}!\_\-openid\_\-link\_\-href@{\_\-openid\_\-link\_\-href}}
+\index{\_\-openid\_\-link\_\-href@{\_\-openid\_\-link\_\-href}!openid.inc@{openid.inc}}
+\subsubsection[{\_\-openid\_\-link\_\-href}]{\setlength{\rightskip}{0pt plus 5cm}\_\-openid\_\-link\_\-href (\$ {\em rel}, \/  \$ {\em html})}}
+\label{openid_8inc_413931ae272accf7e4161d5b032d4631}
+
+
+Pull the href attribute out of an html link element. \hypertarget{openid_8inc_cbf79310505895f32ef771f12addd3bc}{
+\index{openid.inc@{openid.inc}!\_\-openid\_\-meta\_\-httpequiv@{\_\-openid\_\-meta\_\-httpequiv}}
+\index{\_\-openid\_\-meta\_\-httpequiv@{\_\-openid\_\-meta\_\-httpequiv}!openid.inc@{openid.inc}}
+\subsubsection[{\_\-openid\_\-meta\_\-httpequiv}]{\setlength{\rightskip}{0pt plus 5cm}\_\-openid\_\-meta\_\-httpequiv (\$ {\em equiv}, \/  \$ {\em html})}}
+\label{openid_8inc_cbf79310505895f32ef771f12addd3bc}
+
+
+Pull the http-equiv attribute out of an html meta element \hypertarget{openid_8inc_7f413b6dbcae0aab572b51b57f08b076}{
+\index{openid.inc@{openid.inc}!\_\-openid\_\-nonce@{\_\-openid\_\-nonce}}
+\index{\_\-openid\_\-nonce@{\_\-openid\_\-nonce}!openid.inc@{openid.inc}}
+\subsubsection[{\_\-openid\_\-nonce}]{\setlength{\rightskip}{0pt plus 5cm}\_\-openid\_\-nonce ()}}
+\label{openid_8inc_7f413b6dbcae0aab572b51b57f08b076}
+
+
+Return a nonce value - formatted per OpenID spec. \hypertarget{openid_8inc_ba14f184dc28aa90da400e857cb3b537}{
+\index{openid.inc@{openid.inc}!\_\-openid\_\-normalize@{\_\-openid\_\-normalize}}
+\index{\_\-openid\_\-normalize@{\_\-openid\_\-normalize}!openid.inc@{openid.inc}}
+\subsubsection[{\_\-openid\_\-normalize}]{\setlength{\rightskip}{0pt plus 5cm}\_\-openid\_\-normalize (\$ {\em identifier})}}
+\label{openid_8inc_ba14f184dc28aa90da400e857cb3b537}
+
+
+Normalize the given identifier as per spec. \hypertarget{openid_8inc_b5f88df8b540f08bd28e8a508bb49175}{
+\index{openid.inc@{openid.inc}!\_\-openid\_\-parse\_\-message@{\_\-openid\_\-parse\_\-message}}
+\index{\_\-openid\_\-parse\_\-message@{\_\-openid\_\-parse\_\-message}!openid.inc@{openid.inc}}
+\subsubsection[{\_\-openid\_\-parse\_\-message}]{\setlength{\rightskip}{0pt plus 5cm}\_\-openid\_\-parse\_\-message (\$ {\em message})}}
+\label{openid_8inc_b5f88df8b540f08bd28e8a508bb49175}
+
+
+Convert a direct communication message into an associative array. \hypertarget{openid_8inc_94a239a1dacef65306d0078198035cc7}{
+\index{openid.inc@{openid.inc}!\_\-openid\_\-signature@{\_\-openid\_\-signature}}
+\index{\_\-openid\_\-signature@{\_\-openid\_\-signature}!openid.inc@{openid.inc}}
+\subsubsection[{\_\-openid\_\-signature}]{\setlength{\rightskip}{0pt plus 5cm}\_\-openid\_\-signature (\$ {\em association}, \/  \$ {\em message\_\-array}, \/  \$ {\em keys\_\-to\_\-sign})}}
+\label{openid_8inc_94a239a1dacef65306d0078198035cc7}
+
+
+Sign certain keys in a message \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$association}]- object loaded from openid\_\-association or openid\_\-server\_\-association table\begin{itemize}
+\item important fields are -$>$assoc\_\-type and -$>$mac\_\-key \end{itemize}
+\item[{\em \$message\_\-array}]- array of entire message about to be sent \item[{\em \$keys\_\-to\_\-sign}]- keys in the message to include in signature (without 'openid.' appended) \end{description}
+\end{Desc}
+\hypertarget{openid_8inc_6836e61a578613959fe00ca83209ae2f}{
+\index{openid.inc@{openid.inc}!openid\_\-redirect@{openid\_\-redirect}}
+\index{openid\_\-redirect@{openid\_\-redirect}!openid.inc@{openid.inc}}
+\subsubsection[{openid\_\-redirect}]{\setlength{\rightskip}{0pt plus 5cm}openid\_\-redirect (\$ {\em url}, \/  \$ {\em message})}}
+\label{openid_8inc_6836e61a578613959fe00ca83209ae2f}
+
+
+Creates a js auto-submit redirect for (for the 2.x protocol) \hypertarget{openid_8inc_3c8b7c23742c62aae323c74c8c0f9915}{
+\index{openid.inc@{openid.inc}!openid\_\-redirect\_\-http@{openid\_\-redirect\_\-http}}
+\index{openid\_\-redirect\_\-http@{openid\_\-redirect\_\-http}!openid.inc@{openid.inc}}
+\subsubsection[{openid\_\-redirect\_\-http}]{\setlength{\rightskip}{0pt plus 5cm}openid\_\-redirect\_\-http (\$ {\em url}, \/  \$ {\em message})}}
+\label{openid_8inc_3c8b7c23742c62aae323c74c8c0f9915}
+
+
+Performs an HTTP 302 redirect (for the 1.x protocol). 

@@ -1,0 +1,64 @@
+\hypertarget{content_8views_8inc}{
+\section{sites/all/modules/contrib/cck/includes/views/content.views.inc File Reference}
+\label{content_8views_8inc}\index{sites/all/modules/contrib/cck/includes/views/content.views.inc@{sites/all/modules/contrib/cck/includes/views/content.views.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{content_8views_8inc_02002d63c10df31037660fba19b23a3a}{content\_\-views\_\-handlers} ()
+\item 
+\hyperlink{content_8views_8inc_727b12d4d80b6a884970dcbe22076610}{content\_\-views\_\-plugins} ()
+\item 
+\hyperlink{content_8views_8inc_32429a2898b49f28d93fba82b13665ba}{content\_\-views\_\-data} ()
+\item 
+\hypertarget{content_8views_8inc_16f904f5c6aba37e4ec2cc10016f4f66}{
+\textbf{content\_\-views\_\-field\_\-views\_\-data} (\$field)}
+\label{content_8views_8inc_16f904f5c6aba37e4ec2cc10016f4f66}
+
+\item 
+\hyperlink{content_8views_8inc_cf075753edcc51d1d5305e6e78ba1978}{content\_\-views\_\-tablename} (\$field)
+\item 
+\hypertarget{content_8views_8inc_57c13bc95240f085b19ff987c3053a6c}{
+\textbf{theme\_\-content\_\-view\_\-multiple\_\-field} (\$items, \$field, \$values)}
+\label{content_8views_8inc_57c13bc95240f085b19ff987c3053a6c}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Interface between content.module and views.module. 
+
+\subsection{Function Documentation}
+\hypertarget{content_8views_8inc_32429a2898b49f28d93fba82b13665ba}{
+\index{content.views.inc@{content.views.inc}!content\_\-views\_\-data@{content\_\-views\_\-data}}
+\index{content\_\-views\_\-data@{content\_\-views\_\-data}!content.views.inc@{content.views.inc}}
+\subsubsection[{content\_\-views\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}content\_\-views\_\-data ()}}
+\label{content_8views_8inc_32429a2898b49f28d93fba82b13665ba}
+
+
+Implementation of \hyperlink{group__views__hooks_g227057901681e4a33e33c199c7a8c989}{hook\_\-views\_\-data()}.
+
+Exposes all fields to the views system. \hypertarget{content_8views_8inc_02002d63c10df31037660fba19b23a3a}{
+\index{content.views.inc@{content.views.inc}!content\_\-views\_\-handlers@{content\_\-views\_\-handlers}}
+\index{content\_\-views\_\-handlers@{content\_\-views\_\-handlers}!content.views.inc@{content.views.inc}}
+\subsubsection[{content\_\-views\_\-handlers}]{\setlength{\rightskip}{0pt plus 5cm}content\_\-views\_\-handlers ()}}
+\label{content_8views_8inc_02002d63c10df31037660fba19b23a3a}
+
+
+Implementation of \hyperlink{group__views__hooks_gbf506f44bd8d8a86876f27396f5341ed}{hook\_\-views\_\-handlers()}. \hypertarget{content_8views_8inc_727b12d4d80b6a884970dcbe22076610}{
+\index{content.views.inc@{content.views.inc}!content\_\-views\_\-plugins@{content\_\-views\_\-plugins}}
+\index{content\_\-views\_\-plugins@{content\_\-views\_\-plugins}!content.views.inc@{content.views.inc}}
+\subsubsection[{content\_\-views\_\-plugins}]{\setlength{\rightskip}{0pt plus 5cm}content\_\-views\_\-plugins ()}}
+\label{content_8views_8inc_727b12d4d80b6a884970dcbe22076610}
+
+
+Implementation of hook\_\-views\_\-plugins.
+
+Defines some plugins used by the Views modes for nodereference and userreference. \hypertarget{content_8views_8inc_cf075753edcc51d1d5305e6e78ba1978}{
+\index{content.views.inc@{content.views.inc}!content\_\-views\_\-tablename@{content\_\-views\_\-tablename}}
+\index{content\_\-views\_\-tablename@{content\_\-views\_\-tablename}!content.views.inc@{content.views.inc}}
+\subsubsection[{content\_\-views\_\-tablename}]{\setlength{\rightskip}{0pt plus 5cm}content\_\-views\_\-tablename (\$ {\em field})}}
+\label{content_8views_8inc_cf075753edcc51d1d5305e6e78ba1978}
+
+
+Helper function so it is possible to change the Views tablename in the future without re-writing code. 

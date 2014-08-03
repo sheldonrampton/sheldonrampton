@@ -1,0 +1,117 @@
+\hypertarget{classviews__handler__filter__many__to__one}{
+\section{views\_\-handler\_\-filter\_\-many\_\-to\_\-one Class Reference}
+\label{classviews__handler__filter__many__to__one}\index{views\_\-handler\_\-filter\_\-many\_\-to\_\-one@{views\_\-handler\_\-filter\_\-many\_\-to\_\-one}}
+}
+Inheritance diagram for views\_\-handler\_\-filter\_\-many\_\-to\_\-one::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7cm]{classviews__handler__filter__many__to__one}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__handler__filter__many__to__one_8417192dd11eaf273b05cbbc47990cbe}{init} (\&\$\hyperlink{classview}{view}, \$options)
+\item 
+\hyperlink{classviews__handler__filter__many__to__one_e72e4f1ca6a64f22737671275d8d7a92}{option\_\-definition} ()
+\item 
+\hyperlink{classviews__handler__filter__many__to__one_e397d071d9f55b4053b88f01572e700f}{operators} ()
+\item 
+\hyperlink{classviews__handler__filter__many__to__one_6c5e3bbabc2ed73418f835195c10f451}{value\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__handler__filter__many__to__one_6ab5d3416cca7a6f5e59584071758673}{ensure\_\-my\_\-table} ()
+\item 
+\hypertarget{classviews__handler__filter__many__to__one_f618d87468cd54769de0048630cc9b7e}{
+\textbf{op\_\-helper} ()}
+\label{classviews__handler__filter__many__to__one_f618d87468cd54769de0048630cc9b7e}
+
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{classviews__handler__filter__many__to__one_a31ab009988ec4f015588b3dcf8c3b92}{
+\textbf{\$value\_\-form\_\-type} = 'select'}
+\label{classviews__handler__filter__many__to__one_a31ab009988ec4f015588b3dcf8c3b92}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Complex filter to handle filtering for many to one relationships, such as terms (many terms per node) or roles (many roles per user).
+
+The construct method needs to be overridden to provide a list of options; alternately, the value\_\-form and admin\_\-summary methods need to be overriden to provide something that isn't just a select list. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__handler__filter__many__to__one_6ab5d3416cca7a6f5e59584071758673}{
+\index{views\_\-handler\_\-filter\_\-many\_\-to\_\-one@{views\_\-handler\_\-filter\_\-many\_\-to\_\-one}!ensure\_\-my\_\-table@{ensure\_\-my\_\-table}}
+\index{ensure\_\-my\_\-table@{ensure\_\-my\_\-table}!views_handler_filter_many_to_one@{views\_\-handler\_\-filter\_\-many\_\-to\_\-one}}
+\subsubsection[{ensure\_\-my\_\-table}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-filter\_\-many\_\-to\_\-one::ensure\_\-my\_\-table ()}}
+\label{classviews__handler__filter__many__to__one_6ab5d3416cca7a6f5e59584071758673}
+
+
+Override ensure\_\-my\_\-table so we can control how this joins in. The operator actually has influence over joining. 
+
+Reimplemented from \hyperlink{classviews__handler_947f21ef0f21a77f4d103af4702b3600}{views\_\-handler}.\hypertarget{classviews__handler__filter__many__to__one_8417192dd11eaf273b05cbbc47990cbe}{
+\index{views\_\-handler\_\-filter\_\-many\_\-to\_\-one@{views\_\-handler\_\-filter\_\-many\_\-to\_\-one}!init@{init}}
+\index{init@{init}!views_handler_filter_many_to_one@{views\_\-handler\_\-filter\_\-many\_\-to\_\-one}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-filter\_\-many\_\-to\_\-one::init (\&\$ {\em view}, \/  \$ {\em options})}}
+\label{classviews__handler__filter__many__to__one_8417192dd11eaf273b05cbbc47990cbe}
+
+
+Provide some extra help to get the operator/value easier to use.
+
+This likely has to be overridden by filters which are more complex than simple operator/value. 
+
+Reimplemented from \hyperlink{classviews__handler__filter_8bae65467710eb5f6cf6c2c46bd51c7b}{views\_\-handler\_\-filter}.\hypertarget{classviews__handler__filter__many__to__one_e397d071d9f55b4053b88f01572e700f}{
+\index{views\_\-handler\_\-filter\_\-many\_\-to\_\-one@{views\_\-handler\_\-filter\_\-many\_\-to\_\-one}!operators@{operators}}
+\index{operators@{operators}!views_handler_filter_many_to_one@{views\_\-handler\_\-filter\_\-many\_\-to\_\-one}}
+\subsubsection[{operators}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-filter\_\-many\_\-to\_\-one::operators ()}}
+\label{classviews__handler__filter__many__to__one_e397d071d9f55b4053b88f01572e700f}
+
+
+This kind of construct makes it relatively easy for a child class to add or remove functionality by overriding this function and adding/removing items from this array. 
+
+Reimplemented from \hyperlink{classviews__handler__filter__in__operator_e22d2c1d388a5b1457960c492ffc1fe1}{views\_\-handler\_\-filter\_\-in\_\-operator}.\hypertarget{classviews__handler__filter__many__to__one_e72e4f1ca6a64f22737671275d8d7a92}{
+\index{views\_\-handler\_\-filter\_\-many\_\-to\_\-one@{views\_\-handler\_\-filter\_\-many\_\-to\_\-one}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!views_handler_filter_many_to_one@{views\_\-handler\_\-filter\_\-many\_\-to\_\-one}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-filter\_\-many\_\-to\_\-one::option\_\-definition ()}}
+\label{classviews__handler__filter__many__to__one_e72e4f1ca6a64f22737671275d8d7a92}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented from \hyperlink{classviews__handler__filter__in__operator_76892fbc2f6206e88d83925e187c4ab7}{views\_\-handler\_\-filter\_\-in\_\-operator}.
+
+Reimplemented in \hyperlink{classviews__handler__filter__term__node__tid_e81fb582295a2c8871b32bbf8b3ea915}{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid}, and \hyperlink{classviews__handler__filter__term__node__tid__depth_e0822209bc155abaec93555bbeb93e78}{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid\_\-depth}.\hypertarget{classviews__handler__filter__many__to__one_6c5e3bbabc2ed73418f835195c10f451}{
+\index{views\_\-handler\_\-filter\_\-many\_\-to\_\-one@{views\_\-handler\_\-filter\_\-many\_\-to\_\-one}!value\_\-form@{value\_\-form}}
+\index{value\_\-form@{value\_\-form}!views_handler_filter_many_to_one@{views\_\-handler\_\-filter\_\-many\_\-to\_\-one}}
+\subsubsection[{value\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-filter\_\-many\_\-to\_\-one::value\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler__filter__many__to__one_6c5e3bbabc2ed73418f835195c10f451}
+
+
+Provide a form for setting options.
+
+This should be overridden by all child classes and it must define \$form\mbox{[}'value'\mbox{]} 
+
+Reimplemented from \hyperlink{classviews__handler__filter__in__operator_6736083657cad0f8c7299b000f2b8e60}{views\_\-handler\_\-filter\_\-in\_\-operator}.
+
+Reimplemented in \hyperlink{classviews__handler__filter__term__node__tid_3259d8a91cb0c13c51c02942b267b131}{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/handlers/views\_\-handler\_\-filter\_\-many\_\-to\_\-one.inc\end{CompactItemize}

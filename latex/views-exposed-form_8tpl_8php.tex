@@ -1,0 +1,34 @@
+\hypertarget{views-exposed-form_8tpl_8php}{
+\section{sites/all/modules/contrib/views/theme/views-exposed-form.tpl.php File Reference}
+\label{views-exposed-form_8tpl_8php}\index{sites/all/modules/contrib/views/theme/views-exposed-form.tpl.php@{sites/all/modules/contrib/views/theme/views-exposed-form.tpl.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hypertarget{views-exposed-form_8tpl_8php_aead554b47be786953823c480043cc0a}{
+if(!empty(\$q)) \textbf{endif}}
+\label{views-exposed-form_8tpl_8php_aead554b47be786953823c480043cc0a}
+
+\item 
+\hypertarget{views-exposed-form_8tpl_8php_9916a5a9d648601cff49e29f6af31a61}{
+foreach(\$widgets as \$id=$>$ \$widget)(!empty(\$widget $\rightarrow$ label)) print \$widget \textbf{label}}
+\label{views-exposed-form_8tpl_8php_9916a5a9d648601cff49e29f6af31a61}
+
+\item 
+\hypertarget{views-exposed-form_8tpl_8php_36d328c3630d51e9dcdf8d9532b8b14c}{
+print \$widget \textbf{widget}}
+\label{views-exposed-form_8tpl_8php_36d328c3630d51e9dcdf8d9532b8b14c}
+
+\item 
+\hypertarget{views-exposed-form_8tpl_8php_672d9707ef91db026c210f98cc601123}{
+\textbf{endforeach}}
+\label{views-exposed-form_8tpl_8php_672d9707ef91db026c210f98cc601123}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+This template handles the layout of the views exposed filter form.
+
+Variables available:\begin{itemize}
+\item \$widgets: An array of exposed form widgets. Each widget contains:\item \$widget-$>$label: The visible label to print. May be optional.\item \$widget-$>$operator: The operator for the widget. May be optional.\item \$widget-$>$widget: The widget itself.\item \$button: The submit button for the form. \end{itemize}

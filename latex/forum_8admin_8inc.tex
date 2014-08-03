@@ -1,0 +1,95 @@
+\hypertarget{forum_8admin_8inc}{
+\section{modules/forum/forum.admin.inc File Reference}
+\label{forum_8admin_8inc}\index{modules/forum/forum.admin.inc@{modules/forum/forum.admin.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{forum_8admin_8inc_ac7be1aa9e7ee3f1ff6a495c0c68b5de}{
+\textbf{forum\_\-form\_\-main} (\$type, \$edit=array())}
+\label{forum_8admin_8inc_ac7be1aa9e7ee3f1ff6a495c0c68b5de}
+
+\item 
+\hyperlink{group__forms_ge41c2269ce5b8656e54175970197d345}{forum\_\-form\_\-forum} (\&\$form\_\-state, \$edit=array())
+\item 
+\hyperlink{forum_8admin_8inc_517cd1e23374b0242a197a3c5250a0c9}{forum\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{group__forms_g00821d767c47cbcebe320c02516743a5}{forum\_\-form\_\-container} (\&\$form\_\-state, \$edit=array())
+\item 
+\hyperlink{forum_8admin_8inc_ade50fde9ac2dcd0b03902770597fde2}{forum\_\-confirm\_\-delete} (\&\$form\_\-state, \$tid)
+\item 
+\hyperlink{forum_8admin_8inc_ef93d685b6f28845e233fc1f697c05ab}{forum\_\-confirm\_\-delete\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{forum_8admin_8inc_cd8c00cc4e3eafecdfc06b733e3c19da}{forum\_\-admin\_\-settings} ()
+\item 
+\hyperlink{forum_8admin_8inc_73cf6d0144f77c06f14ba36ded4cbcf3}{forum\_\-overview} (\&\$form\_\-state)
+\item 
+\hyperlink{forum_8admin_8inc_b33107c6a704c306d24ed1ea5dd8dc35}{\_\-forum\_\-parent\_\-select} (\$tid, \$title, \$child\_\-type)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Administrative page callbacks for the forum module. 
+
+\subsection{Function Documentation}
+\hypertarget{forum_8admin_8inc_b33107c6a704c306d24ed1ea5dd8dc35}{
+\index{forum.admin.inc@{forum.admin.inc}!\_\-forum\_\-parent\_\-select@{\_\-forum\_\-parent\_\-select}}
+\index{\_\-forum\_\-parent\_\-select@{\_\-forum\_\-parent\_\-select}!forum.admin.inc@{forum.admin.inc}}
+\subsubsection[{\_\-forum\_\-parent\_\-select}]{\setlength{\rightskip}{0pt plus 5cm}\_\-forum\_\-parent\_\-select (\$ {\em tid}, \/  \$ {\em title}, \/  \$ {\em child\_\-type})}}
+\label{forum_8admin_8inc_b33107c6a704c306d24ed1ea5dd8dc35}
+
+
+Returns a select box for available parent terms
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$tid}]ID of the term which is being added or edited \item[{\em \$title}]Title to display the select box with \item[{\em \$child\_\-type}]Whether the child is forum or container \end{description}
+\end{Desc}
+\hypertarget{forum_8admin_8inc_cd8c00cc4e3eafecdfc06b733e3c19da}{
+\index{forum.admin.inc@{forum.admin.inc}!forum\_\-admin\_\-settings@{forum\_\-admin\_\-settings}}
+\index{forum\_\-admin\_\-settings@{forum\_\-admin\_\-settings}!forum.admin.inc@{forum.admin.inc}}
+\subsubsection[{forum\_\-admin\_\-settings}]{\setlength{\rightskip}{0pt plus 5cm}forum\_\-admin\_\-settings ()}}
+\label{forum_8admin_8inc_cd8c00cc4e3eafecdfc06b733e3c19da}
+
+
+Form builder for the forum settings page.
+
+\begin{Desc}
+\item[See also:]system\_\-settings\_\-form() \end{Desc}
+\hypertarget{forum_8admin_8inc_ade50fde9ac2dcd0b03902770597fde2}{
+\index{forum.admin.inc@{forum.admin.inc}!forum\_\-confirm\_\-delete@{forum\_\-confirm\_\-delete}}
+\index{forum\_\-confirm\_\-delete@{forum\_\-confirm\_\-delete}!forum.admin.inc@{forum.admin.inc}}
+\subsubsection[{forum\_\-confirm\_\-delete}]{\setlength{\rightskip}{0pt plus 5cm}forum\_\-confirm\_\-delete (\&\$ {\em form\_\-state}, \/  \$ {\em tid})}}
+\label{forum_8admin_8inc_ade50fde9ac2dcd0b03902770597fde2}
+
+
+Returns a confirmation page for deleting a forum taxonomy term.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$tid}]ID of the term to be deleted \end{description}
+\end{Desc}
+\hypertarget{forum_8admin_8inc_ef93d685b6f28845e233fc1f697c05ab}{
+\index{forum.admin.inc@{forum.admin.inc}!forum\_\-confirm\_\-delete\_\-submit@{forum\_\-confirm\_\-delete\_\-submit}}
+\index{forum\_\-confirm\_\-delete\_\-submit@{forum\_\-confirm\_\-delete\_\-submit}!forum.admin.inc@{forum.admin.inc}}
+\subsubsection[{forum\_\-confirm\_\-delete\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}forum\_\-confirm\_\-delete\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{forum_8admin_8inc_ef93d685b6f28845e233fc1f697c05ab}
+
+
+Implementation of forms api \_\-submit call. Deletes a forum after confirmation. \hypertarget{forum_8admin_8inc_517cd1e23374b0242a197a3c5250a0c9}{
+\index{forum.admin.inc@{forum.admin.inc}!forum\_\-form\_\-submit@{forum\_\-form\_\-submit}}
+\index{forum\_\-form\_\-submit@{forum\_\-form\_\-submit}!forum.admin.inc@{forum.admin.inc}}
+\subsubsection[{forum\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}forum\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{forum_8admin_8inc_517cd1e23374b0242a197a3c5250a0c9}
+
+
+Process forum form and container form submissions. \hypertarget{forum_8admin_8inc_73cf6d0144f77c06f14ba36ded4cbcf3}{
+\index{forum.admin.inc@{forum.admin.inc}!forum\_\-overview@{forum\_\-overview}}
+\index{forum\_\-overview@{forum\_\-overview}!forum.admin.inc@{forum.admin.inc}}
+\subsubsection[{forum\_\-overview}]{\setlength{\rightskip}{0pt plus 5cm}forum\_\-overview (\&\$ {\em form\_\-state})}}
+\label{forum_8admin_8inc_73cf6d0144f77c06f14ba36ded4cbcf3}
+
+
+Returns an overview list of existing forums and containers 

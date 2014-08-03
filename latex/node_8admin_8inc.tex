@@ -1,0 +1,196 @@
+\hypertarget{node_8admin_8inc}{
+\section{modules/node/node.admin.inc File Reference}
+\label{node_8admin_8inc}\index{modules/node/node.admin.inc@{modules/node/node.admin.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{node_8admin_8inc_166b7491e7493feafd6ae178ebcc238c}{node\_\-configure} ()
+\item 
+\hyperlink{node_8admin_8inc_4181047f10a38f2bc1e071e5f0b3361c}{node\_\-configure\_\-access\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{node_8admin_8inc_650b907eb478b9c293e4b93e3ecb560d}{node\_\-configure\_\-rebuild\_\-confirm} ()
+\item 
+\hyperlink{node_8admin_8inc_81b709fbced4062b5c58137a9255fab4}{node\_\-configure\_\-rebuild\_\-confirm\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{node_8admin_8inc_6e9cc98ef5c62744d557bf52b8531553}{node\_\-node\_\-operations} ()
+\item 
+\hyperlink{node_8admin_8inc_a9c4e0dc2b5e8a9ca9c855161ca02969}{node\_\-filters} ()
+\item 
+\hyperlink{node_8admin_8inc_f8309df77c5a2bd9fc4bbafbc57b77cb}{node\_\-build\_\-filter\_\-query} ()
+\item 
+\hyperlink{node_8admin_8inc_2b7edb82b488db11ffde4fa60958004d}{node\_\-filter\_\-form} ()
+\item 
+\hyperlink{group__themeable_gacf4ca3e12603e4d519b6313276e761e}{theme\_\-node\_\-filter\_\-form} (\$form)
+\item 
+\hyperlink{group__themeable_g8c9a4c2c680b412160c95515eb9b4c7b}{theme\_\-node\_\-filters} (\$form)
+\item 
+\hyperlink{node_8admin_8inc_346f00ebb9b4aae36025623d893c5061}{node\_\-filter\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{node_8admin_8inc_b40a38d08f170c418b0dac544d8ba97c}{node\_\-mass\_\-update} (\$nodes, \$updates)
+\item 
+\hyperlink{node_8admin_8inc_664540e1e689d8cdd4850bb7cb498a09}{\_\-node\_\-mass\_\-update\_\-helper} (\$nid, \$updates)
+\item 
+\hyperlink{node_8admin_8inc_5960eac661f3d304ee9861fa25c53d80}{\_\-node\_\-mass\_\-update\_\-batch\_\-process} (\$nodes, \$updates, \&\$context)
+\item 
+\hyperlink{node_8admin_8inc_d95a05e860d4e44deb46b8af92a7fe25}{\_\-node\_\-mass\_\-update\_\-batch\_\-finished} (\$success, \$results, \$operations)
+\item 
+\hyperlink{node_8admin_8inc_267ebd4df592a90d86949c10ad1cae2c}{node\_\-admin\_\-content} (\$form\_\-state)
+\item 
+\hyperlink{node_8admin_8inc_3fb56c702a3c16eddd2fcd8ccd3e4adb}{node\_\-admin\_\-nodes} ()
+\item 
+\hyperlink{node_8admin_8inc_32a9ea91250aaf84de44f784a3569944}{node\_\-admin\_\-nodes\_\-validate} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{node_8admin_8inc_5f159cfed0d6cce65d5d70747efec391}{node\_\-admin\_\-nodes\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{group__themeable_g2601e8db30df61b351801e91a3de55b6}{theme\_\-node\_\-admin\_\-nodes} (\$form)
+\item 
+\hypertarget{node_8admin_8inc_019d40d5d9420f52f08f5d4facf84aac}{
+\textbf{node\_\-multiple\_\-delete\_\-confirm} (\&\$form\_\-state, \$nodes)}
+\label{node_8admin_8inc_019d40d5d9420f52f08f5d4facf84aac}
+
+\item 
+\hypertarget{node_8admin_8inc_b8a2e11edeef2797ca739f94d1eb1af9}{
+\textbf{node\_\-multiple\_\-delete\_\-confirm\_\-submit} (\$form, \&\$form\_\-state)}
+\label{node_8admin_8inc_b8a2e11edeef2797ca739f94d1eb1af9}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Content administration and module settings UI. 
+
+\subsection{Function Documentation}
+\hypertarget{node_8admin_8inc_d95a05e860d4e44deb46b8af92a7fe25}{
+\index{node.admin.inc@{node.admin.inc}!\_\-node\_\-mass\_\-update\_\-batch\_\-finished@{\_\-node\_\-mass\_\-update\_\-batch\_\-finished}}
+\index{\_\-node\_\-mass\_\-update\_\-batch\_\-finished@{\_\-node\_\-mass\_\-update\_\-batch\_\-finished}!node.admin.inc@{node.admin.inc}}
+\subsubsection[{\_\-node\_\-mass\_\-update\_\-batch\_\-finished}]{\setlength{\rightskip}{0pt plus 5cm}\_\-node\_\-mass\_\-update\_\-batch\_\-finished (\$ {\em success}, \/  \$ {\em results}, \/  \$ {\em operations})}}
+\label{node_8admin_8inc_d95a05e860d4e44deb46b8af92a7fe25}
+
+
+Node Mass Update Batch 'finished' callback. \hypertarget{node_8admin_8inc_5960eac661f3d304ee9861fa25c53d80}{
+\index{node.admin.inc@{node.admin.inc}!\_\-node\_\-mass\_\-update\_\-batch\_\-process@{\_\-node\_\-mass\_\-update\_\-batch\_\-process}}
+\index{\_\-node\_\-mass\_\-update\_\-batch\_\-process@{\_\-node\_\-mass\_\-update\_\-batch\_\-process}!node.admin.inc@{node.admin.inc}}
+\subsubsection[{\_\-node\_\-mass\_\-update\_\-batch\_\-process}]{\setlength{\rightskip}{0pt plus 5cm}\_\-node\_\-mass\_\-update\_\-batch\_\-process (\$ {\em nodes}, \/  \$ {\em updates}, \/  \&\$ {\em context})}}
+\label{node_8admin_8inc_5960eac661f3d304ee9861fa25c53d80}
+
+
+Node Mass Update Batch operation \hypertarget{node_8admin_8inc_664540e1e689d8cdd4850bb7cb498a09}{
+\index{node.admin.inc@{node.admin.inc}!\_\-node\_\-mass\_\-update\_\-helper@{\_\-node\_\-mass\_\-update\_\-helper}}
+\index{\_\-node\_\-mass\_\-update\_\-helper@{\_\-node\_\-mass\_\-update\_\-helper}!node.admin.inc@{node.admin.inc}}
+\subsubsection[{\_\-node\_\-mass\_\-update\_\-helper}]{\setlength{\rightskip}{0pt plus 5cm}\_\-node\_\-mass\_\-update\_\-helper (\$ {\em nid}, \/  \$ {\em updates})}}
+\label{node_8admin_8inc_664540e1e689d8cdd4850bb7cb498a09}
+
+
+Node Mass Update - helper function. \hypertarget{node_8admin_8inc_267ebd4df592a90d86949c10ad1cae2c}{
+\index{node.admin.inc@{node.admin.inc}!node\_\-admin\_\-content@{node\_\-admin\_\-content}}
+\index{node\_\-admin\_\-content@{node\_\-admin\_\-content}!node.admin.inc@{node.admin.inc}}
+\subsubsection[{node\_\-admin\_\-content}]{\setlength{\rightskip}{0pt plus 5cm}node\_\-admin\_\-content (\$ {\em form\_\-state})}}
+\label{node_8admin_8inc_267ebd4df592a90d86949c10ad1cae2c}
+
+
+Menu callback: content administration. \hypertarget{node_8admin_8inc_3fb56c702a3c16eddd2fcd8ccd3e4adb}{
+\index{node.admin.inc@{node.admin.inc}!node\_\-admin\_\-nodes@{node\_\-admin\_\-nodes}}
+\index{node\_\-admin\_\-nodes@{node\_\-admin\_\-nodes}!node.admin.inc@{node.admin.inc}}
+\subsubsection[{node\_\-admin\_\-nodes}]{\setlength{\rightskip}{0pt plus 5cm}node\_\-admin\_\-nodes ()}}
+\label{node_8admin_8inc_3fb56c702a3c16eddd2fcd8ccd3e4adb}
+
+
+Form builder: Builds the node administration overview. \hypertarget{node_8admin_8inc_5f159cfed0d6cce65d5d70747efec391}{
+\index{node.admin.inc@{node.admin.inc}!node\_\-admin\_\-nodes\_\-submit@{node\_\-admin\_\-nodes\_\-submit}}
+\index{node\_\-admin\_\-nodes\_\-submit@{node\_\-admin\_\-nodes\_\-submit}!node.admin.inc@{node.admin.inc}}
+\subsubsection[{node\_\-admin\_\-nodes\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}node\_\-admin\_\-nodes\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{node_8admin_8inc_5f159cfed0d6cce65d5d70747efec391}
+
+
+Process node\_\-admin\_\-nodes form submissions.
+
+Execute the chosen 'Update option' on the selected nodes. \hypertarget{node_8admin_8inc_32a9ea91250aaf84de44f784a3569944}{
+\index{node.admin.inc@{node.admin.inc}!node\_\-admin\_\-nodes\_\-validate@{node\_\-admin\_\-nodes\_\-validate}}
+\index{node\_\-admin\_\-nodes\_\-validate@{node\_\-admin\_\-nodes\_\-validate}!node.admin.inc@{node.admin.inc}}
+\subsubsection[{node\_\-admin\_\-nodes\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}node\_\-admin\_\-nodes\_\-validate (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{node_8admin_8inc_32a9ea91250aaf84de44f784a3569944}
+
+
+Validate node\_\-admin\_\-nodes form submissions.
+
+Check if any nodes have been selected to perform the chosen 'Update option' on. \hypertarget{node_8admin_8inc_f8309df77c5a2bd9fc4bbafbc57b77cb}{
+\index{node.admin.inc@{node.admin.inc}!node\_\-build\_\-filter\_\-query@{node\_\-build\_\-filter\_\-query}}
+\index{node\_\-build\_\-filter\_\-query@{node\_\-build\_\-filter\_\-query}!node.admin.inc@{node.admin.inc}}
+\subsubsection[{node\_\-build\_\-filter\_\-query}]{\setlength{\rightskip}{0pt plus 5cm}node\_\-build\_\-filter\_\-query ()}}
+\label{node_8admin_8inc_f8309df77c5a2bd9fc4bbafbc57b77cb}
+
+
+Build query for node administration filters based on session. \hypertarget{node_8admin_8inc_166b7491e7493feafd6ae178ebcc238c}{
+\index{node.admin.inc@{node.admin.inc}!node\_\-configure@{node\_\-configure}}
+\index{node\_\-configure@{node\_\-configure}!node.admin.inc@{node.admin.inc}}
+\subsubsection[{node\_\-configure}]{\setlength{\rightskip}{0pt plus 5cm}node\_\-configure ()}}
+\label{node_8admin_8inc_166b7491e7493feafd6ae178ebcc238c}
+
+
+Menu callback; presents general node configuration options. \hypertarget{node_8admin_8inc_4181047f10a38f2bc1e071e5f0b3361c}{
+\index{node.admin.inc@{node.admin.inc}!node\_\-configure\_\-access\_\-submit@{node\_\-configure\_\-access\_\-submit}}
+\index{node\_\-configure\_\-access\_\-submit@{node\_\-configure\_\-access\_\-submit}!node.admin.inc@{node.admin.inc}}
+\subsubsection[{node\_\-configure\_\-access\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}node\_\-configure\_\-access\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{node_8admin_8inc_4181047f10a38f2bc1e071e5f0b3361c}
+
+
+Form button submit callback. \hypertarget{node_8admin_8inc_650b907eb478b9c293e4b93e3ecb560d}{
+\index{node.admin.inc@{node.admin.inc}!node\_\-configure\_\-rebuild\_\-confirm@{node\_\-configure\_\-rebuild\_\-confirm}}
+\index{node\_\-configure\_\-rebuild\_\-confirm@{node\_\-configure\_\-rebuild\_\-confirm}!node.admin.inc@{node.admin.inc}}
+\subsubsection[{node\_\-configure\_\-rebuild\_\-confirm}]{\setlength{\rightskip}{0pt plus 5cm}node\_\-configure\_\-rebuild\_\-confirm ()}}
+\label{node_8admin_8inc_650b907eb478b9c293e4b93e3ecb560d}
+
+
+Menu callback: confirm rebuilding of permissions. \hypertarget{node_8admin_8inc_81b709fbced4062b5c58137a9255fab4}{
+\index{node.admin.inc@{node.admin.inc}!node\_\-configure\_\-rebuild\_\-confirm\_\-submit@{node\_\-configure\_\-rebuild\_\-confirm\_\-submit}}
+\index{node\_\-configure\_\-rebuild\_\-confirm\_\-submit@{node\_\-configure\_\-rebuild\_\-confirm\_\-submit}!node.admin.inc@{node.admin.inc}}
+\subsubsection[{node\_\-configure\_\-rebuild\_\-confirm\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}node\_\-configure\_\-rebuild\_\-confirm\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{node_8admin_8inc_81b709fbced4062b5c58137a9255fab4}
+
+
+Handler for wipe confirmation \hypertarget{node_8admin_8inc_2b7edb82b488db11ffde4fa60958004d}{
+\index{node.admin.inc@{node.admin.inc}!node\_\-filter\_\-form@{node\_\-filter\_\-form}}
+\index{node\_\-filter\_\-form@{node\_\-filter\_\-form}!node.admin.inc@{node.admin.inc}}
+\subsubsection[{node\_\-filter\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}node\_\-filter\_\-form ()}}
+\label{node_8admin_8inc_2b7edb82b488db11ffde4fa60958004d}
+
+
+Return form for node administration filters. \hypertarget{node_8admin_8inc_346f00ebb9b4aae36025623d893c5061}{
+\index{node.admin.inc@{node.admin.inc}!node\_\-filter\_\-form\_\-submit@{node\_\-filter\_\-form\_\-submit}}
+\index{node\_\-filter\_\-form\_\-submit@{node\_\-filter\_\-form\_\-submit}!node.admin.inc@{node.admin.inc}}
+\subsubsection[{node\_\-filter\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}node\_\-filter\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{node_8admin_8inc_346f00ebb9b4aae36025623d893c5061}
+
+
+Process result from node administration filter form. \hypertarget{node_8admin_8inc_a9c4e0dc2b5e8a9ca9c855161ca02969}{
+\index{node.admin.inc@{node.admin.inc}!node\_\-filters@{node\_\-filters}}
+\index{node\_\-filters@{node\_\-filters}!node.admin.inc@{node.admin.inc}}
+\subsubsection[{node\_\-filters}]{\setlength{\rightskip}{0pt plus 5cm}node\_\-filters ()}}
+\label{node_8admin_8inc_a9c4e0dc2b5e8a9ca9c855161ca02969}
+
+
+List node administration filters that can be applied. \hypertarget{node_8admin_8inc_b40a38d08f170c418b0dac544d8ba97c}{
+\index{node.admin.inc@{node.admin.inc}!node\_\-mass\_\-update@{node\_\-mass\_\-update}}
+\index{node\_\-mass\_\-update@{node\_\-mass\_\-update}!node.admin.inc@{node.admin.inc}}
+\subsubsection[{node\_\-mass\_\-update}]{\setlength{\rightskip}{0pt plus 5cm}node\_\-mass\_\-update (\$ {\em nodes}, \/  \$ {\em updates})}}
+\label{node_8admin_8inc_b40a38d08f170c418b0dac544d8ba97c}
+
+
+Make mass update of nodes, changing all nodes in the \$nodes array to update them with the field values in \$updates.
+
+IMPORTANT NOTE: This function is intended to work when called from a form submit handler. Calling it outside of the form submission process may not work correctly.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em array}]\$nodes Array of node nids to update. \item[{\em array}]\$updates Array of key/value pairs with node field names and the value to update that field to. \end{description}
+\end{Desc}
+\hypertarget{node_8admin_8inc_6e9cc98ef5c62744d557bf52b8531553}{
+\index{node.admin.inc@{node.admin.inc}!node\_\-node\_\-operations@{node\_\-node\_\-operations}}
+\index{node\_\-node\_\-operations@{node\_\-node\_\-operations}!node.admin.inc@{node.admin.inc}}
+\subsubsection[{node\_\-node\_\-operations}]{\setlength{\rightskip}{0pt plus 5cm}node\_\-node\_\-operations ()}}
+\label{node_8admin_8inc_6e9cc98ef5c62744d557bf52b8531553}
+
+
+Implementation of hook\_\-node\_\-operations(). 

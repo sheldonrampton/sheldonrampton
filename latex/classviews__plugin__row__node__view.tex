@@ -1,0 +1,87 @@
+\hypertarget{classviews__plugin__row__node__view}{
+\section{views\_\-plugin\_\-row\_\-node\_\-view Class Reference}
+\label{classviews__plugin__row__node__view}\index{views\_\-plugin\_\-row\_\-node\_\-view@{views\_\-plugin\_\-row\_\-node\_\-view}}
+}
+Inheritance diagram for views\_\-plugin\_\-row\_\-node\_\-view::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4cm]{classviews__plugin__row__node__view}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__plugin__row__node__view_3bb6fb204cefdab520d24765a8f916ba}{init} (\&\$\hyperlink{classview}{view}, \&\$display, \$options=NULL)
+\item 
+\hyperlink{classviews__plugin__row__node__view_f489a0ff40c6b85382d9611cce0c509b}{option\_\-definition} ()
+\item 
+\hyperlink{classviews__plugin__row__node__view_7bc31b38a1cc4474695af3a564fde775}{options\_\-form} (\&\$form, \&\$form\_\-state)
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{classviews__plugin__row__node__view_24bbaae2ffd937d231ff9918a7c4067e}{
+\textbf{\$base\_\-table} = 'node'}
+\label{classviews__plugin__row__node__view_24bbaae2ffd937d231ff9918a7c4067e}
+
+\item 
+\hypertarget{classviews__plugin__row__node__view_e77441cc82786f0acca947e12a38c922}{
+\textbf{\$base\_\-field} = 'nid'}
+\label{classviews__plugin__row__node__view_e77441cc82786f0acca947e12a38c922}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Plugin which performs a node\_\-view on the resulting object.
+
+Most of the code on this object is in the theme function. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__plugin__row__node__view_3bb6fb204cefdab520d24765a8f916ba}{
+\index{views\_\-plugin\_\-row\_\-node\_\-view@{views\_\-plugin\_\-row\_\-node\_\-view}!init@{init}}
+\index{init@{init}!views_plugin_row_node_view@{views\_\-plugin\_\-row\_\-node\_\-view}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-row\_\-node\_\-view::init (\&\$ {\em view}, \/  \&\$ {\em display}, \/  \$ {\em options} = {\tt NULL})}}
+\label{classviews__plugin__row__node__view_3bb6fb204cefdab520d24765a8f916ba}
+
+
+Initialize the row plugin. 
+
+Reimplemented from \hyperlink{classviews__plugin__row_bf02e5f51e907c5009edda15d997c161}{views\_\-plugin\_\-row}.\hypertarget{classviews__plugin__row__node__view_f489a0ff40c6b85382d9611cce0c509b}{
+\index{views\_\-plugin\_\-row\_\-node\_\-view@{views\_\-plugin\_\-row\_\-node\_\-view}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!views_plugin_row_node_view@{views\_\-plugin\_\-row\_\-node\_\-view}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-row\_\-node\_\-view::option\_\-definition ()}}
+\label{classviews__plugin__row__node__view_f489a0ff40c6b85382d9611cce0c509b}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented from \hyperlink{classviews__plugin__row_ad6be1492eae8605e9aff37da9f19337}{views\_\-plugin\_\-row}.\hypertarget{classviews__plugin__row__node__view_7bc31b38a1cc4474695af3a564fde775}{
+\index{views\_\-plugin\_\-row\_\-node\_\-view@{views\_\-plugin\_\-row\_\-node\_\-view}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!views_plugin_row_node_view@{views\_\-plugin\_\-row\_\-node\_\-view}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-row\_\-node\_\-view::options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__plugin__row__node__view_7bc31b38a1cc4474695af3a564fde775}
+
+
+Provide a form for setting options. 
+
+Reimplemented from \hyperlink{classviews__plugin__row_6914c39d64977a0aa71da39cc1af004e}{views\_\-plugin\_\-row}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/modules/node/\hyperlink{views__plugin__row__node__view_8inc}{views\_\-plugin\_\-row\_\-node\_\-view.inc}\end{CompactItemize}

@@ -1,0 +1,83 @@
+\hypertarget{filefield__formatter_8inc}{
+\section{sites/all/modules/contrib/filefield/filefield\_\-formatter.inc File Reference}
+\label{filefield__formatter_8inc}\index{sites/all/modules/contrib/filefield/filefield\_\-formatter.inc@{sites/all/modules/contrib/filefield/filefield\_\-formatter.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{filefield__formatter_8inc_b9986ffee43634c7091d4b78e6b3b186}{theme\_\-filefield\_\-formatter\_\-default} (\$element)
+\item 
+\hyperlink{filefield__formatter_8inc_cbb156ec87a8a950a49e4a83ffd0aadd}{theme\_\-filefield\_\-formatter\_\-path\_\-plain} (\$element)
+\item 
+\hyperlink{filefield__formatter_8inc_c506f82b18a61d6682fec927a2817c79}{theme\_\-filefield\_\-formatter\_\-url\_\-plain} (\$element)
+\item 
+\hyperlink{filefield__formatter_8inc_fb466d739eaf8509ae22ad7a025a7edb}{theme\_\-filefield\_\-item} (\$file, \$field)
+\item 
+\hyperlink{filefield__formatter_8inc_86b701c2c901e218ec21cfbbd3569d2c}{filefield\_\-file\_\-listed} (\$file, \$field)
+\item 
+\hyperlink{filefield__formatter_8inc_2a9bf3e344a51bd3b44f2cc65bd7078c}{theme\_\-filefield\_\-file} (\$file)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+FileField: Defines a CCK file field type.
+
+Uses content.module to store the fid and field specific metadata, and Drupal's \{files\} table to store the actual file data.
+
+This file contains CCK formatter related functionality. 
+
+\subsection{Function Documentation}
+\hypertarget{filefield__formatter_8inc_86b701c2c901e218ec21cfbbd3569d2c}{
+\index{filefield\_\-formatter.inc@{filefield\_\-formatter.inc}!filefield\_\-file\_\-listed@{filefield\_\-file\_\-listed}}
+\index{filefield\_\-file\_\-listed@{filefield\_\-file\_\-listed}!filefield_formatter.inc@{filefield\_\-formatter.inc}}
+\subsubsection[{filefield\_\-file\_\-listed}]{\setlength{\rightskip}{0pt plus 5cm}filefield\_\-file\_\-listed (\$ {\em file}, \/  \$ {\em field})}}
+\label{filefield__formatter_8inc_86b701c2c901e218ec21cfbbd3569d2c}
+
+
+Return whether a file should be listed when viewing the node.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$file}]A populated FileField item. \item[{\em \$field}]A CCK field instance array. \end{description}
+\end{Desc}
+\hypertarget{filefield__formatter_8inc_2a9bf3e344a51bd3b44f2cc65bd7078c}{
+\index{filefield\_\-formatter.inc@{filefield\_\-formatter.inc}!theme\_\-filefield\_\-file@{theme\_\-filefield\_\-file}}
+\index{theme\_\-filefield\_\-file@{theme\_\-filefield\_\-file}!filefield_formatter.inc@{filefield\_\-formatter.inc}}
+\subsubsection[{theme\_\-filefield\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-filefield\_\-file (\$ {\em file})}}
+\label{filefield__formatter_8inc_2a9bf3e344a51bd3b44f2cc65bd7078c}
+
+
+Theme function for the 'generic' single file formatter. \hypertarget{filefield__formatter_8inc_b9986ffee43634c7091d4b78e6b3b186}{
+\index{filefield\_\-formatter.inc@{filefield\_\-formatter.inc}!theme\_\-filefield\_\-formatter\_\-default@{theme\_\-filefield\_\-formatter\_\-default}}
+\index{theme\_\-filefield\_\-formatter\_\-default@{theme\_\-filefield\_\-formatter\_\-default}!filefield_formatter.inc@{filefield\_\-formatter.inc}}
+\subsubsection[{theme\_\-filefield\_\-formatter\_\-default}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-filefield\_\-formatter\_\-default (\$ {\em element})}}
+\label{filefield__formatter_8inc_b9986ffee43634c7091d4b78e6b3b186}
+
+
+Theme function for the 'default' filefield formatter. \hypertarget{filefield__formatter_8inc_cbb156ec87a8a950a49e4a83ffd0aadd}{
+\index{filefield\_\-formatter.inc@{filefield\_\-formatter.inc}!theme\_\-filefield\_\-formatter\_\-path\_\-plain@{theme\_\-filefield\_\-formatter\_\-path\_\-plain}}
+\index{theme\_\-filefield\_\-formatter\_\-path\_\-plain@{theme\_\-filefield\_\-formatter\_\-path\_\-plain}!filefield_formatter.inc@{filefield\_\-formatter.inc}}
+\subsubsection[{theme\_\-filefield\_\-formatter\_\-path\_\-plain}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-filefield\_\-formatter\_\-path\_\-plain (\$ {\em element})}}
+\label{filefield__formatter_8inc_cbb156ec87a8a950a49e4a83ffd0aadd}
+
+
+Theme function for the 'path\_\-plain' formatter. \hypertarget{filefield__formatter_8inc_c506f82b18a61d6682fec927a2817c79}{
+\index{filefield\_\-formatter.inc@{filefield\_\-formatter.inc}!theme\_\-filefield\_\-formatter\_\-url\_\-plain@{theme\_\-filefield\_\-formatter\_\-url\_\-plain}}
+\index{theme\_\-filefield\_\-formatter\_\-url\_\-plain@{theme\_\-filefield\_\-formatter\_\-url\_\-plain}!filefield_formatter.inc@{filefield\_\-formatter.inc}}
+\subsubsection[{theme\_\-filefield\_\-formatter\_\-url\_\-plain}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-filefield\_\-formatter\_\-url\_\-plain (\$ {\em element})}}
+\label{filefield__formatter_8inc_c506f82b18a61d6682fec927a2817c79}
+
+
+Theme function for the 'url\_\-plain' formatter. \hypertarget{filefield__formatter_8inc_fb466d739eaf8509ae22ad7a025a7edb}{
+\index{filefield\_\-formatter.inc@{filefield\_\-formatter.inc}!theme\_\-filefield\_\-item@{theme\_\-filefield\_\-item}}
+\index{theme\_\-filefield\_\-item@{theme\_\-filefield\_\-item}!filefield_formatter.inc@{filefield\_\-formatter.inc}}
+\subsubsection[{theme\_\-filefield\_\-item}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-filefield\_\-item (\$ {\em file}, \/  \$ {\em field})}}
+\label{filefield__formatter_8inc_fb466d739eaf8509ae22ad7a025a7edb}
+
+
+Theme function for any file that is managed by FileField.
+
+It doesn't really format stuff by itself but rather redirects to other formatters that are telling us they want to handle the concerned file.
+
+This function checks if the file may be shown and returns an empty string if viewing the file is not allowed for any reason. If you need to display it in any case, please use theme('filefield\_\-file') instead. 

@@ -1,0 +1,115 @@
+\hypertarget{classviews__handler__field__upload__description}{
+\section{views\_\-handler\_\-field\_\-upload\_\-description Class Reference}
+\label{classviews__handler__field__upload__description}\index{views\_\-handler\_\-field\_\-upload\_\-description@{views\_\-handler\_\-field\_\-upload\_\-description}}
+}
+Inheritance diagram for views\_\-handler\_\-field\_\-upload\_\-description::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4cm]{classviews__handler__field__upload__description}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classviews__handler__field__upload__description_21f106935e4fb58cd34205af53f7aa8c}{
+\textbf{init} (\&\$\hyperlink{classview}{view}, \&\$options)}
+\label{classviews__handler__field__upload__description_21f106935e4fb58cd34205af53f7aa8c}
+
+\item 
+\hyperlink{classviews__handler__field__upload__description_506091a767dacc29b687de0f0802933b}{option\_\-definition} ()
+\item 
+\hyperlink{classviews__handler__field__upload__description_714cc6455e6fa7c9426dcf08dee9f89e}{options\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__handler__field__upload__description_0890ab0770ad73dc186283a2222d473c}{pre\_\-render} (\$values)
+\item 
+\hyperlink{classviews__handler__field__upload__description_373489ebca619b9f73ebfd3441a1cd19}{render} (\$values)
+\item 
+\hyperlink{classviews__handler__field__upload__description_2abc8e79bc269c87dda32ad9f70f7ae4}{render\_\-link} (\$data, \$value)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Field handler to provide a list of roles. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__handler__field__upload__description_506091a767dacc29b687de0f0802933b}{
+\index{views\_\-handler\_\-field\_\-upload\_\-description@{views\_\-handler\_\-field\_\-upload\_\-description}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!views_handler_field_upload_description@{views\_\-handler\_\-field\_\-upload\_\-description}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-upload\_\-description::option\_\-definition ()}}
+\label{classviews__handler__field__upload__description_506091a767dacc29b687de0f0802933b}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented from \hyperlink{classviews__handler__field_64c69a8a3697603f8283405071c25b76}{views\_\-handler\_\-field}.\hypertarget{classviews__handler__field__upload__description_714cc6455e6fa7c9426dcf08dee9f89e}{
+\index{views\_\-handler\_\-field\_\-upload\_\-description@{views\_\-handler\_\-field\_\-upload\_\-description}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!views_handler_field_upload_description@{views\_\-handler\_\-field\_\-upload\_\-description}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-upload\_\-description::options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler__field__upload__description_714cc6455e6fa7c9426dcf08dee9f89e}
+
+
+Default options form that provides the label widget that all fields should have. 
+
+Reimplemented from \hyperlink{classviews__handler__field_0435d161922b7b4b84f02a2e79bb947a}{views\_\-handler\_\-field}.\hypertarget{classviews__handler__field__upload__description_0890ab0770ad73dc186283a2222d473c}{
+\index{views\_\-handler\_\-field\_\-upload\_\-description@{views\_\-handler\_\-field\_\-upload\_\-description}!pre\_\-render@{pre\_\-render}}
+\index{pre\_\-render@{pre\_\-render}!views_handler_field_upload_description@{views\_\-handler\_\-field\_\-upload\_\-description}}
+\subsubsection[{pre\_\-render}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-upload\_\-description::pre\_\-render (\$ {\em values})}}
+\label{classviews__handler__field__upload__description_0890ab0770ad73dc186283a2222d473c}
+
+
+Run before any fields are rendered.
+
+This gives the handlers some time to set up before any handler has been rendered.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$values}]An array of all objects returned from the query. \end{description}
+\end{Desc}
+
+
+Reimplemented from \hyperlink{classviews__handler__field_e30a1d9c98c62ae40c90b938e09cd0ec}{views\_\-handler\_\-field}.\hypertarget{classviews__handler__field__upload__description_373489ebca619b9f73ebfd3441a1cd19}{
+\index{views\_\-handler\_\-field\_\-upload\_\-description@{views\_\-handler\_\-field\_\-upload\_\-description}!render@{render}}
+\index{render@{render}!views_handler_field_upload_description@{views\_\-handler\_\-field\_\-upload\_\-description}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-upload\_\-description::render (\$ {\em values})}}
+\label{classviews__handler__field__upload__description_373489ebca619b9f73ebfd3441a1cd19}
+
+
+Render the field.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$values}]The values retrieved from the database. \end{description}
+\end{Desc}
+
+
+Reimplemented from \hyperlink{classviews__handler__field_82ff951c5e9ceb97b2eab86f880cbc1e}{views\_\-handler\_\-field}.\hypertarget{classviews__handler__field__upload__description_2abc8e79bc269c87dda32ad9f70f7ae4}{
+\index{views\_\-handler\_\-field\_\-upload\_\-description@{views\_\-handler\_\-field\_\-upload\_\-description}!render\_\-link@{render\_\-link}}
+\index{render\_\-link@{render\_\-link}!views_handler_field_upload_description@{views\_\-handler\_\-field\_\-upload\_\-description}}
+\subsubsection[{render\_\-link}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-upload\_\-description::render\_\-link (\$ {\em data}, \/  \$ {\em value})}}
+\label{classviews__handler__field__upload__description_2abc8e79bc269c87dda32ad9f70f7ae4}
+
+
+Render whatever the data is as a link to the file.
+
+Data should be made XSS safe prior to calling this function. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/modules/upload/views\_\-handler\_\-field\_\-upload\_\-description.inc\end{CompactItemize}

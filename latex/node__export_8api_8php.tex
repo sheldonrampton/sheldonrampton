@@ -1,0 +1,142 @@
+\hypertarget{node__export_8api_8php}{
+\section{sites/all/modules/contrib/node\_\-export/node\_\-export.api.php File Reference}
+\label{node__export_8api_8php}\index{sites/all/modules/contrib/node\_\-export/node\_\-export.api.php@{sites/all/modules/contrib/node\_\-export/node\_\-export.api.php}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{node__export_8api_8php_07d300b1b84f51c8194ae2df7df69998}{hook\_\-node\_\-export\_\-access\_\-alter} (\&\$access, \$node)
+\item 
+\hyperlink{node__export_8api_8php_02844b873762538790439bc217d6e5de}{hook\_\-node\_\-export\_\-node\_\-alter} (\&\$node, \$original\_\-node, \$method)
+\item 
+\hyperlink{node__export_8api_8php_358549eb1b3bc10229c889721c180a51}{hook\_\-node\_\-export\_\-node\_\-encode\_\-line\_\-alter} (\&\$out, \$tab, \$key, \$value, \$iteration)
+\item 
+\hyperlink{node__export_8api_8php_231756420bcf1606865365dc50f65cbb}{hook\_\-node\_\-export\_\-node\_\-bulk\_\-alter} (\&\$nodes, \$op)
+\item 
+\hyperlink{node__export_8api_8php_aa3a7ad2886990335945a261e9d38793}{hook\_\-node\_\-export\_\-node\_\-encode\_\-alter} (\&\$return, \$var, \$format)
+\item 
+\hyperlink{node__export_8api_8php_faa4d0af455b099ef3b5072a440b3107}{hook\_\-node\_\-export\_\-node\_\-decode\_\-alter} (\&\$return, \$string)
+\item 
+\hyperlink{node__export_8api_8php_020d16d09246f3d732b7deea0fd7c0f4}{hook\_\-node\_\-export\_\-node\_\-bulk\_\-encode\_\-alter} (\&\$node\_\-code, \$nodes, \$format)
+\item 
+\hyperlink{node__export_8api_8php_5d50afbf83e9ecf288b67e47a6e32226}{hook\_\-node\_\-export\_\-format\_\-handlers} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Documents node\_\-export's hooks for api reference. 
+
+\subsection{Function Documentation}
+\hypertarget{node__export_8api_8php_07d300b1b84f51c8194ae2df7df69998}{
+\index{node\_\-export.api.php@{node\_\-export.api.php}!hook\_\-node\_\-export\_\-access\_\-alter@{hook\_\-node\_\-export\_\-access\_\-alter}}
+\index{hook\_\-node\_\-export\_\-access\_\-alter@{hook\_\-node\_\-export\_\-access\_\-alter}!node_export.api.php@{node\_\-export.api.php}}
+\subsubsection[{hook\_\-node\_\-export\_\-access\_\-alter}]{\setlength{\rightskip}{0pt plus 5cm}hook\_\-node\_\-export\_\-access\_\-alter (\&\$ {\em access}, \/  \$ {\em node})}}
+\label{node__export_8api_8php_07d300b1b84f51c8194ae2df7df69998}
+
+
+Override export access on a node.
+
+Let other modules alter this - for example to only allow some users to export specific nodes or types.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \&\$access}]Boolean access value for current user. \item[{\em \$node}]The node to determine access for. \end{description}
+\end{Desc}
+\hypertarget{node__export_8api_8php_5d50afbf83e9ecf288b67e47a6e32226}{
+\index{node\_\-export.api.php@{node\_\-export.api.php}!hook\_\-node\_\-export\_\-format\_\-handlers@{hook\_\-node\_\-export\_\-format\_\-handlers}}
+\index{hook\_\-node\_\-export\_\-format\_\-handlers@{hook\_\-node\_\-export\_\-format\_\-handlers}!node_export.api.php@{node\_\-export.api.php}}
+\subsubsection[{hook\_\-node\_\-export\_\-format\_\-handlers}]{\setlength{\rightskip}{0pt plus 5cm}hook\_\-node\_\-export\_\-format\_\-handlers ()}}
+\label{node__export_8api_8php_5d50afbf83e9ecf288b67e47a6e32226}
+
+
+Register a format handler, for exporting code using other methods.
+
+\begin{Desc}
+\item[Returns:]An array keyed by format names containing an array with keys title and module, where the value for title is the display name of the format, and the value for module is the module that implements it. \end{Desc}
+\hypertarget{node__export_8api_8php_02844b873762538790439bc217d6e5de}{
+\index{node\_\-export.api.php@{node\_\-export.api.php}!hook\_\-node\_\-export\_\-node\_\-alter@{hook\_\-node\_\-export\_\-node\_\-alter}}
+\index{hook\_\-node\_\-export\_\-node\_\-alter@{hook\_\-node\_\-export\_\-node\_\-alter}!node_export.api.php@{node\_\-export.api.php}}
+\subsubsection[{hook\_\-node\_\-export\_\-node\_\-alter}]{\setlength{\rightskip}{0pt plus 5cm}hook\_\-node\_\-export\_\-node\_\-alter (\&\$ {\em node}, \/  \$ {\em original\_\-node}, \/  \$ {\em method})}}
+\label{node__export_8api_8php_02844b873762538790439bc217d6e5de}
+
+
+Manipulate a node on import/export.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \&\$node}]The node to alter. \item[{\em \$original\_\-node}]The unaltered node. \item[{\em \$method}]'export' for exports, and 'prepopulate' or 'save-edit' for imports depending on the method used. \end{description}
+\end{Desc}
+\hypertarget{node__export_8api_8php_231756420bcf1606865365dc50f65cbb}{
+\index{node\_\-export.api.php@{node\_\-export.api.php}!hook\_\-node\_\-export\_\-node\_\-bulk\_\-alter@{hook\_\-node\_\-export\_\-node\_\-bulk\_\-alter}}
+\index{hook\_\-node\_\-export\_\-node\_\-bulk\_\-alter@{hook\_\-node\_\-export\_\-node\_\-bulk\_\-alter}!node_export.api.php@{node\_\-export.api.php}}
+\subsubsection[{hook\_\-node\_\-export\_\-node\_\-bulk\_\-alter}]{\setlength{\rightskip}{0pt plus 5cm}hook\_\-node\_\-export\_\-node\_\-bulk\_\-alter (\&\$ {\em nodes}, \/  \$ {\em op})}}
+\label{node__export_8api_8php_231756420bcf1606865365dc50f65cbb}
+
+
+Manipulate node array before bulk export or import.
+
+The purpose of this is to allow a module to check nodes in the array for two or more nodes that must retain a relationship, and to add/remove other data to the array to assist with maintaining dependencies, relationships, references, and additional data required by the nodes.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \&\$nodes}]The node array to alter. \item[{\em \$op}]'import', 'after import', or 'export'. \end{description}
+\end{Desc}
+\hypertarget{node__export_8api_8php_020d16d09246f3d732b7deea0fd7c0f4}{
+\index{node\_\-export.api.php@{node\_\-export.api.php}!hook\_\-node\_\-export\_\-node\_\-bulk\_\-encode\_\-alter@{hook\_\-node\_\-export\_\-node\_\-bulk\_\-encode\_\-alter}}
+\index{hook\_\-node\_\-export\_\-node\_\-bulk\_\-encode\_\-alter@{hook\_\-node\_\-export\_\-node\_\-bulk\_\-encode\_\-alter}!node_export.api.php@{node\_\-export.api.php}}
+\subsubsection[{hook\_\-node\_\-export\_\-node\_\-bulk\_\-encode\_\-alter}]{\setlength{\rightskip}{0pt plus 5cm}hook\_\-node\_\-export\_\-node\_\-bulk\_\-encode\_\-alter (\&\$ {\em node\_\-code}, \/  \$ {\em nodes}, \/  \$ {\em format})}}
+\label{node__export_8api_8php_020d16d09246f3d732b7deea0fd7c0f4}
+
+
+Circumvent the default bulk node export output method.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \&\$node\_\-code}]The node export code. Leave as FALSE for no change. \item[{\em \$nodes}]The node. \item[{\em \$format}]A string indicating what the export format is, and whether to do anything. \end{description}
+\end{Desc}
+\hypertarget{node__export_8api_8php_faa4d0af455b099ef3b5072a440b3107}{
+\index{node\_\-export.api.php@{node\_\-export.api.php}!hook\_\-node\_\-export\_\-node\_\-decode\_\-alter@{hook\_\-node\_\-export\_\-node\_\-decode\_\-alter}}
+\index{hook\_\-node\_\-export\_\-node\_\-decode\_\-alter@{hook\_\-node\_\-export\_\-node\_\-decode\_\-alter}!node_export.api.php@{node\_\-export.api.php}}
+\subsubsection[{hook\_\-node\_\-export\_\-node\_\-decode\_\-alter}]{\setlength{\rightskip}{0pt plus 5cm}hook\_\-node\_\-export\_\-node\_\-decode\_\-alter (\&\$ {\em return}, \/  \$ {\em string})}}
+\label{node__export_8api_8php_faa4d0af455b099ef3b5072a440b3107}
+
+
+Circumvent the default node import method.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \&\$return}]The array/object to return to node export. \item[{\em \$string}]The node code. \end{description}
+\end{Desc}
+\hypertarget{node__export_8api_8php_aa3a7ad2886990335945a261e9d38793}{
+\index{node\_\-export.api.php@{node\_\-export.api.php}!hook\_\-node\_\-export\_\-node\_\-encode\_\-alter@{hook\_\-node\_\-export\_\-node\_\-encode\_\-alter}}
+\index{hook\_\-node\_\-export\_\-node\_\-encode\_\-alter@{hook\_\-node\_\-export\_\-node\_\-encode\_\-alter}!node_export.api.php@{node\_\-export.api.php}}
+\subsubsection[{hook\_\-node\_\-export\_\-node\_\-encode\_\-alter}]{\setlength{\rightskip}{0pt plus 5cm}hook\_\-node\_\-export\_\-node\_\-encode\_\-alter (\&\$ {\em return}, \/  \$ {\em var}, \/  \$ {\em format})}}
+\label{node__export_8api_8php_aa3a7ad2886990335945a261e9d38793}
+
+
+Circumvent the default node export output method.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \&\$return}]The node export code. Leave as FALSE for no change. \item[{\em \$var}]The node. \item[{\em \$format}]A string indicating what the export format is, and whether to do anything. \end{description}
+\end{Desc}
+\hypertarget{node__export_8api_8php_358549eb1b3bc10229c889721c180a51}{
+\index{node\_\-export.api.php@{node\_\-export.api.php}!hook\_\-node\_\-export\_\-node\_\-encode\_\-line\_\-alter@{hook\_\-node\_\-export\_\-node\_\-encode\_\-line\_\-alter}}
+\index{hook\_\-node\_\-export\_\-node\_\-encode\_\-line\_\-alter@{hook\_\-node\_\-export\_\-node\_\-encode\_\-line\_\-alter}!node_export.api.php@{node\_\-export.api.php}}
+\subsubsection[{hook\_\-node\_\-export\_\-node\_\-encode\_\-line\_\-alter}]{\setlength{\rightskip}{0pt plus 5cm}hook\_\-node\_\-export\_\-node\_\-encode\_\-line\_\-alter (\&\$ {\em out}, \/  \$ {\em tab}, \/  \$ {\em key}, \/  \$ {\em value}, \/  \$ {\em iteration})}}
+\label{node__export_8api_8php_358549eb1b3bc10229c889721c180a51}
+
+
+Override one line of the export code output.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \&\$out}]The line of output. \item[{\em \$tab}]The \$tab variable from node\_\-export\_\-node\_\-encode(). \item[{\em \$key}]The \$key variable from node\_\-export\_\-node\_\-encode(). \item[{\em \$value}]The \$value variable from node\_\-export\_\-node\_\-encode(). \item[{\em \$iteration}]The \$iteration variable from node\_\-export\_\-node\_\-encode(). \end{description}
+\end{Desc}

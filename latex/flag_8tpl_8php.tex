@@ -1,0 +1,46 @@
+\hypertarget{flag_8tpl_8php}{
+\section{sites/all/modules/contrib/flag/theme/flag.tpl.php File Reference}
+\label{flag_8tpl_8php}\index{sites/all/modules/contrib/flag/theme/flag.tpl.php@{sites/all/modules/contrib/flag/theme/flag.tpl.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hypertarget{flag_8tpl_8php_7a128587f14428e42a27f740b0dfebe3}{
+\textbf{if} (\$setup)}
+\label{flag_8tpl_8php_7a128587f14428e42a27f740b0dfebe3}
+
+\item 
+\hypertarget{flag_8tpl_8php_c87b6fdf78a54e6aa689bb4a219157a1}{
+print \textbf{\$flag\_\-classes}}
+\label{flag_8tpl_8php_c87b6fdf78a54e6aa689bb4a219157a1}
+
+\item 
+\hypertarget{flag_8tpl_8php_82cd33ca97ff99f2fcc5e9c81d65251b}{
+\textbf{endif}}
+\label{flag_8tpl_8php_82cd33ca97ff99f2fcc5e9c81d65251b}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Default theme implementation to display a flag link, and a message after the action is carried out.
+
+Available variables:
+
+\begin{itemize}
+\item \$flag: The flag object itself. You will only need to use it when the following variables don't suffice.\item \$flag\_\-name\_\-css: The flag name, with all \char`\"{}\_\-\char`\"{} replaced with \char`\"{}-\char`\"{}. For use in 'class' attributes.\item \$flag\_\-classes: A space-separated list of CSS classes that should be applied to the link.\end{itemize}
+
+
+\begin{itemize}
+\item \$action: The action the link is about to carry out, either \char`\"{}flag\char`\"{} or \char`\"{}unflag\char`\"{}.\item \$last\_\-action: The action, as a passive English verb, either \char`\"{}flagged\char`\"{} or \char`\"{}unflagged\char`\"{}, that led to the current status of the flag.\end{itemize}
+
+
+\begin{itemize}
+\item \$link\_\-href: The URL for the flag link.\item \$link\_\-text: The text to show for the link.\item \$link\_\-title: The title attribute for the link.\end{itemize}
+
+
+\begin{itemize}
+\item \$message\_\-text: The long message to show after a flag action has been carried out.\item \$after\_\-flagging: This template is called for the link both before and after being flagged. If displaying to the user immediately after flagging, this value will be boolean TRUE. This is usually used in conjunction with immedate JavaScript-based toggling of flags.\item \$setup: TRUE when this template is parsed for the first time; Use this flag to carry out procedures that are needed only once; e.g., linking to CSS and JS files.\end{itemize}
+
+
+NOTE: This template spaces out the  tags for clarity only. When doing some advanced theming you may have to remove all the whitespace. 

@@ -1,0 +1,85 @@
+\hypertarget{classviews__plugin__argument__validate}{
+\section{views\_\-plugin\_\-argument\_\-validate Class Reference}
+\label{classviews__plugin__argument__validate}\index{views\_\-plugin\_\-argument\_\-validate@{views\_\-plugin\_\-argument\_\-validate}}
+}
+Inheritance diagram for views\_\-plugin\_\-argument\_\-validate::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.26984cm]{classviews__plugin__argument__validate}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__plugin__argument__validate_d3a9fbaccf486d38039340ce03fd577a}{init} (\&\$\hyperlink{classview}{view}, \&\$argument, \$id=NULL)
+\item 
+\hyperlink{classviews__plugin__argument__validate_b90c095a5a91dcf8dfae02dc975d974e}{access} ()
+\item 
+\hypertarget{classviews__plugin__argument__validate_97cc6a775b7d8dd0292b1b9f19e6a16d}{
+\textbf{argument\_\-form} (\&\$form, \&\$form\_\-state)}
+\label{classviews__plugin__argument__validate_97cc6a775b7d8dd0292b1b9f19e6a16d}
+
+\item 
+\hyperlink{classviews__plugin__argument__validate_0e10193a9cac68bcfb9dccab9277c35a}{check\_\-access} (\&\$form)
+\item 
+\hyperlink{classviews__plugin__argument__validate_a5ce3161f5f33df417719506c1613446}{get\_\-argument} ()
+\item 
+\hypertarget{classviews__plugin__argument__validate_7cbe1703f3d9aba294fd68a41cd69827}{
+\textbf{validate\_\-form} (\&\$form, \&\$form\_\-state)}
+\label{classviews__plugin__argument__validate_7cbe1703f3d9aba294fd68a41cd69827}
+
+\item 
+\hypertarget{classviews__plugin__argument__validate_e8f4a519d234cbc3d1398f49109b727a}{
+\textbf{validate\_\-argument} (\$arg)}
+\label{classviews__plugin__argument__validate_e8f4a519d234cbc3d1398f49109b727a}
+
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{classviews__plugin__argument__validate_8a0df595e759a439b3d6685b6c65f594}{
+\textbf{\$option\_\-name} = 'validate\_\-argument'}
+\label{classviews__plugin__argument__validate_8a0df595e759a439b3d6685b6c65f594}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Base argument validator plugin to provide basic functionality. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__plugin__argument__validate_b90c095a5a91dcf8dfae02dc975d974e}{
+\index{views\_\-plugin\_\-argument\_\-validate@{views\_\-plugin\_\-argument\_\-validate}!access@{access}}
+\index{access@{access}!views_plugin_argument_validate@{views\_\-plugin\_\-argument\_\-validate}}
+\subsubsection[{access}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-argument\_\-validate::access ()}}
+\label{classviews__plugin__argument__validate_b90c095a5a91dcf8dfae02dc975d974e}
+
+
+Determine if the administrator has the privileges to use this plugin 
+
+Reimplemented in \hyperlink{classviews__plugin__argument__validate__numeric_fa33dbc88c165f2505c5fdf1c9263b8f}{views\_\-plugin\_\-argument\_\-validate\_\-numeric}, and \hyperlink{classviews__plugin__argument__validate__php_11100ee9f3e1d9ec27f3f1b151994d1c}{views\_\-plugin\_\-argument\_\-validate\_\-php}.\hypertarget{classviews__plugin__argument__validate_0e10193a9cac68bcfb9dccab9277c35a}{
+\index{views\_\-plugin\_\-argument\_\-validate@{views\_\-plugin\_\-argument\_\-validate}!check\_\-access@{check\_\-access}}
+\index{check\_\-access@{check\_\-access}!views_plugin_argument_validate@{views\_\-plugin\_\-argument\_\-validate}}
+\subsubsection[{check\_\-access}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-argument\_\-validate::check\_\-access (\&\$ {\em form})}}
+\label{classviews__plugin__argument__validate_0e10193a9cac68bcfb9dccab9277c35a}
+
+
+If we don't have access to the form but are showing it anyway, ensure that the form is safe and cannot be changed from user input. \hypertarget{classviews__plugin__argument__validate_a5ce3161f5f33df417719506c1613446}{
+\index{views\_\-plugin\_\-argument\_\-validate@{views\_\-plugin\_\-argument\_\-validate}!get\_\-argument@{get\_\-argument}}
+\index{get\_\-argument@{get\_\-argument}!views_plugin_argument_validate@{views\_\-plugin\_\-argument\_\-validate}}
+\subsubsection[{get\_\-argument}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-argument\_\-validate::get\_\-argument ()}}
+\label{classviews__plugin__argument__validate_a5ce3161f5f33df417719506c1613446}
+
+
+Return the validate argument. \hypertarget{classviews__plugin__argument__validate_d3a9fbaccf486d38039340ce03fd577a}{
+\index{views\_\-plugin\_\-argument\_\-validate@{views\_\-plugin\_\-argument\_\-validate}!init@{init}}
+\index{init@{init}!views_plugin_argument_validate@{views\_\-plugin\_\-argument\_\-validate}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-argument\_\-validate::init (\&\$ {\em view}, \/  \&\$ {\em argument}, \/  \$ {\em id} = {\tt NULL})}}
+\label{classviews__plugin__argument__validate_d3a9fbaccf486d38039340ce03fd577a}
+
+
+Initialize this plugin with the \hyperlink{classview}{view} and the argument it is linked to. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/plugins/\hyperlink{views__plugin__argument__validate_8inc}{views\_\-plugin\_\-argument\_\-validate.inc}\end{CompactItemize}

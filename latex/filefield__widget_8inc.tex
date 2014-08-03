@@ -1,0 +1,173 @@
+\hypertarget{filefield__widget_8inc}{
+\section{sites/all/modules/contrib/filefield/filefield\_\-widget.inc File Reference}
+\label{filefield__widget_8inc}\index{sites/all/modules/contrib/filefield/filefield\_\-widget.inc@{sites/all/modules/contrib/filefield/filefield\_\-widget.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{filefield__widget_8inc_bc36ff4a1ee9c352319ca022556d9f20}{filefield\_\-widget\_\-settings\_\-form} (\$widget)
+\item 
+\hyperlink{filefield__widget_8inc_aacc98c07dfd3a814c8d32146579c062}{filefield\_\-widget\_\-settings\_\-save} (\$widget)
+\item 
+\hyperlink{filefield__widget_8inc_a6d640500605541cbd124455806e05a1}{\_\-filefield\_\-widget\_\-settings\_\-extensions\_\-value} (\$element)
+\item 
+\hyperlink{filefield__widget_8inc_016c555f0ce2e7f71d2b371af07ec4c8}{\_\-filefield\_\-widget\_\-settings\_\-extensions\_\-validate} (\$element, \&\$form\_\-state)
+\item 
+\hypertarget{filefield__widget_8inc_570e364a87d2b6506fa1752169d4219e}{
+\textbf{\_\-filefield\_\-widget\_\-settings\_\-file\_\-path\_\-validate} (\$element, \&\$form\_\-state)}
+\label{filefield__widget_8inc_570e364a87d2b6506fa1752169d4219e}
+
+\item 
+\hypertarget{filefield__widget_8inc_0d28b4cd0d6b8bdc5350e69b1b7f19a4}{
+\textbf{\_\-filefield\_\-widget\_\-settings\_\-max\_\-filesize\_\-per\_\-file\_\-validate} (\$element, \&\$form\_\-state)}
+\label{filefield__widget_8inc_0d28b4cd0d6b8bdc5350e69b1b7f19a4}
+
+\item 
+\hypertarget{filefield__widget_8inc_619ea7c27a2b9b9e047579e5381545fc}{
+\textbf{\_\-filefield\_\-widget\_\-settings\_\-max\_\-filesize\_\-per\_\-node\_\-validate} (\$element, \&\$form\_\-state)}
+\label{filefield__widget_8inc_619ea7c27a2b9b9e047579e5381545fc}
+
+\item 
+\hyperlink{filefield__widget_8inc_0f015f9e3d585ea916f6fb8999543043}{filefield\_\-widget\_\-file\_\-path} (\$field, \$account=NULL)
+\item 
+\hyperlink{filefield__widget_8inc_d24461bcec49edffb02fec77e15c85f2}{filefield\_\-save\_\-upload} (\$element)
+\item 
+\hyperlink{filefield__widget_8inc_3081760b9137ee464d84213644278ae6}{filefield\_\-widget\_\-value} (\$element, \$edit=FALSE)
+\item 
+\hyperlink{filefield__widget_8inc_45936448da9575c4ec10adb0e46e97e3}{filefield\_\-widget\_\-process} (\$element, \$edit, \&\$form\_\-state, \$form)
+\item 
+\hyperlink{filefield__widget_8inc_2db56b57675267528a5cc3cbcc9b9ff2}{filefield\_\-widget\_\-validate} (\&\$element, \&\$form\_\-state)
+\item 
+\hyperlink{filefield__widget_8inc_b61afc416bab06c537321d636e1cc47b}{theme\_\-filefield\_\-widget} (\$element)
+\item 
+\hypertarget{filefield__widget_8inc_d82946921f996f1fe51bd0c0b279959c}{
+\textbf{theme\_\-filefield\_\-widget\_\-preview} (\$item)}
+\label{filefield__widget_8inc_d82946921f996f1fe51bd0c0b279959c}
+
+\item 
+\hypertarget{filefield__widget_8inc_4a4e73d24bbe522401a76c5d98f0cff4}{
+\textbf{theme\_\-filefield\_\-widget\_\-item} (\$element)}
+\label{filefield__widget_8inc_4a4e73d24bbe522401a76c5d98f0cff4}
+
+\item 
+\hyperlink{filefield__widget_8inc_aac3ac93a565ef418ae15d070fbc4625}{theme\_\-filefield\_\-widget\_\-file} (\$element)
+\item 
+\hyperlink{filefield__widget_8inc_37900bfc24e625df1de43f4b11ab8d7d}{filefield\_\-node\_\-form\_\-validate} (\$form, \&\$form\_\-state)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains CCK widget related functionality.
+
+Uses content.module to store the fid and field specific metadata, and Drupal's files table to store the actual file data. 
+
+\subsection{Function Documentation}
+\hypertarget{filefield__widget_8inc_016c555f0ce2e7f71d2b371af07ec4c8}{
+\index{filefield\_\-widget.inc@{filefield\_\-widget.inc}!\_\-filefield\_\-widget\_\-settings\_\-extensions\_\-validate@{\_\-filefield\_\-widget\_\-settings\_\-extensions\_\-validate}}
+\index{\_\-filefield\_\-widget\_\-settings\_\-extensions\_\-validate@{\_\-filefield\_\-widget\_\-settings\_\-extensions\_\-validate}!filefield_widget.inc@{filefield\_\-widget.inc}}
+\subsubsection[{\_\-filefield\_\-widget\_\-settings\_\-extensions\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}\_\-filefield\_\-widget\_\-settings\_\-extensions\_\-validate (\$ {\em element}, \/  \&\$ {\em form\_\-state})}}
+\label{filefield__widget_8inc_016c555f0ce2e7f71d2b371af07ec4c8}
+
+
+A FAPI element\_\-validate callback to strip commas from extension lists. \hypertarget{filefield__widget_8inc_a6d640500605541cbd124455806e05a1}{
+\index{filefield\_\-widget.inc@{filefield\_\-widget.inc}!\_\-filefield\_\-widget\_\-settings\_\-extensions\_\-value@{\_\-filefield\_\-widget\_\-settings\_\-extensions\_\-value}}
+\index{\_\-filefield\_\-widget\_\-settings\_\-extensions\_\-value@{\_\-filefield\_\-widget\_\-settings\_\-extensions\_\-value}!filefield_widget.inc@{filefield\_\-widget.inc}}
+\subsubsection[{\_\-filefield\_\-widget\_\-settings\_\-extensions\_\-value}]{\setlength{\rightskip}{0pt plus 5cm}\_\-filefield\_\-widget\_\-settings\_\-extensions\_\-value (\$ {\em element})}}
+\label{filefield__widget_8inc_a6d640500605541cbd124455806e05a1}
+
+
+A FAPI pre\_\-render() function to set a cosmetic default value for extensions. \hypertarget{filefield__widget_8inc_37900bfc24e625df1de43f4b11ab8d7d}{
+\index{filefield\_\-widget.inc@{filefield\_\-widget.inc}!filefield\_\-node\_\-form\_\-validate@{filefield\_\-node\_\-form\_\-validate}}
+\index{filefield\_\-node\_\-form\_\-validate@{filefield\_\-node\_\-form\_\-validate}!filefield_widget.inc@{filefield\_\-widget.inc}}
+\subsubsection[{filefield\_\-node\_\-form\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}filefield\_\-node\_\-form\_\-validate (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{filefield__widget_8inc_37900bfc24e625df1de43f4b11ab8d7d}
+
+
+Additional validate handler for the node form.
+
+This function checks the required properties on file fields and calculates node upload totals for all file fields. The required property is not properly supported on file fields by Drupal core, so we do this manually. \hypertarget{filefield__widget_8inc_d24461bcec49edffb02fec77e15c85f2}{
+\index{filefield\_\-widget.inc@{filefield\_\-widget.inc}!filefield\_\-save\_\-upload@{filefield\_\-save\_\-upload}}
+\index{filefield\_\-save\_\-upload@{filefield\_\-save\_\-upload}!filefield_widget.inc@{filefield\_\-widget.inc}}
+\subsubsection[{filefield\_\-save\_\-upload}]{\setlength{\rightskip}{0pt plus 5cm}filefield\_\-save\_\-upload (\$ {\em element})}}
+\label{filefield__widget_8inc_d24461bcec49edffb02fec77e15c85f2}
+
+
+Given a FAPI element, save any files that may have been uploaded into it.
+
+This function should only be called during validate, submit, or value\_\-callback functions.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$element}]The FAPI element whose values are being saved. \end{description}
+\end{Desc}
+\hypertarget{filefield__widget_8inc_0f015f9e3d585ea916f6fb8999543043}{
+\index{filefield\_\-widget.inc@{filefield\_\-widget.inc}!filefield\_\-widget\_\-file\_\-path@{filefield\_\-widget\_\-file\_\-path}}
+\index{filefield\_\-widget\_\-file\_\-path@{filefield\_\-widget\_\-file\_\-path}!filefield_widget.inc@{filefield\_\-widget.inc}}
+\subsubsection[{filefield\_\-widget\_\-file\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}filefield\_\-widget\_\-file\_\-path (\$ {\em field}, \/  \$ {\em account} = {\tt NULL})}}
+\label{filefield__widget_8inc_0f015f9e3d585ea916f6fb8999543043}
+
+
+Determine the widget's files directory
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$field}]A CCK field array. \item[{\em \$account}]The user account object to calculate the file path for. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The files directory path, with any tokens replaced. \end{Desc}
+\hypertarget{filefield__widget_8inc_45936448da9575c4ec10adb0e46e97e3}{
+\index{filefield\_\-widget.inc@{filefield\_\-widget.inc}!filefield\_\-widget\_\-process@{filefield\_\-widget\_\-process}}
+\index{filefield\_\-widget\_\-process@{filefield\_\-widget\_\-process}!filefield_widget.inc@{filefield\_\-widget.inc}}
+\subsubsection[{filefield\_\-widget\_\-process}]{\setlength{\rightskip}{0pt plus 5cm}filefield\_\-widget\_\-process (\$ {\em element}, \/  \$ {\em edit}, \/  \&\$ {\em form\_\-state}, \/  \$ {\em form})}}
+\label{filefield__widget_8inc_45936448da9575c4ec10adb0e46e97e3}
+
+
+An element process callback for the filefield\_\-widget field type.
+
+Expands the filefield\_\-widget type to include the upload field, upload and remove buttons, and the description field. \hypertarget{filefield__widget_8inc_bc36ff4a1ee9c352319ca022556d9f20}{
+\index{filefield\_\-widget.inc@{filefield\_\-widget.inc}!filefield\_\-widget\_\-settings\_\-form@{filefield\_\-widget\_\-settings\_\-form}}
+\index{filefield\_\-widget\_\-settings\_\-form@{filefield\_\-widget\_\-settings\_\-form}!filefield_widget.inc@{filefield\_\-widget.inc}}
+\subsubsection[{filefield\_\-widget\_\-settings\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}filefield\_\-widget\_\-settings\_\-form (\$ {\em widget})}}
+\label{filefield__widget_8inc_bc36ff4a1ee9c352319ca022556d9f20}
+
+
+Implementation of CCK's hook\_\-widget\_\-settings(\$op == 'form'). \hypertarget{filefield__widget_8inc_aacc98c07dfd3a814c8d32146579c062}{
+\index{filefield\_\-widget.inc@{filefield\_\-widget.inc}!filefield\_\-widget\_\-settings\_\-save@{filefield\_\-widget\_\-settings\_\-save}}
+\index{filefield\_\-widget\_\-settings\_\-save@{filefield\_\-widget\_\-settings\_\-save}!filefield_widget.inc@{filefield\_\-widget.inc}}
+\subsubsection[{filefield\_\-widget\_\-settings\_\-save}]{\setlength{\rightskip}{0pt plus 5cm}filefield\_\-widget\_\-settings\_\-save (\$ {\em widget})}}
+\label{filefield__widget_8inc_aacc98c07dfd3a814c8d32146579c062}
+
+
+Implementation of CCK's hook\_\-widget\_\-settings(\$op == 'save'). \hypertarget{filefield__widget_8inc_2db56b57675267528a5cc3cbcc9b9ff2}{
+\index{filefield\_\-widget.inc@{filefield\_\-widget.inc}!filefield\_\-widget\_\-validate@{filefield\_\-widget\_\-validate}}
+\index{filefield\_\-widget\_\-validate@{filefield\_\-widget\_\-validate}!filefield_widget.inc@{filefield\_\-widget.inc}}
+\subsubsection[{filefield\_\-widget\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}filefield\_\-widget\_\-validate (\&\$ {\em element}, \/  \&\$ {\em form\_\-state})}}
+\label{filefield__widget_8inc_2db56b57675267528a5cc3cbcc9b9ff2}
+
+
+An element\_\-validate callback for the filefield\_\-widget field. \hypertarget{filefield__widget_8inc_3081760b9137ee464d84213644278ae6}{
+\index{filefield\_\-widget.inc@{filefield\_\-widget.inc}!filefield\_\-widget\_\-value@{filefield\_\-widget\_\-value}}
+\index{filefield\_\-widget\_\-value@{filefield\_\-widget\_\-value}!filefield_widget.inc@{filefield\_\-widget.inc}}
+\subsubsection[{filefield\_\-widget\_\-value}]{\setlength{\rightskip}{0pt plus 5cm}filefield\_\-widget\_\-value (\$ {\em element}, \/  \$ {\em edit} = {\tt FALSE})}}
+\label{filefield__widget_8inc_3081760b9137ee464d84213644278ae6}
+
+
+The value\_\-callback for the filefield\_\-widget type element. \hypertarget{filefield__widget_8inc_b61afc416bab06c537321d636e1cc47b}{
+\index{filefield\_\-widget.inc@{filefield\_\-widget.inc}!theme\_\-filefield\_\-widget@{theme\_\-filefield\_\-widget}}
+\index{theme\_\-filefield\_\-widget@{theme\_\-filefield\_\-widget}!filefield_widget.inc@{filefield\_\-widget.inc}}
+\subsubsection[{theme\_\-filefield\_\-widget}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-filefield\_\-widget (\$ {\em element})}}
+\label{filefield__widget_8inc_b61afc416bab06c537321d636e1cc47b}
+
+
+FormAPI theme function. Theme the output of an image field. \hypertarget{filefield__widget_8inc_aac3ac93a565ef418ae15d070fbc4625}{
+\index{filefield\_\-widget.inc@{filefield\_\-widget.inc}!theme\_\-filefield\_\-widget\_\-file@{theme\_\-filefield\_\-widget\_\-file}}
+\index{theme\_\-filefield\_\-widget\_\-file@{theme\_\-filefield\_\-widget\_\-file}!filefield_widget.inc@{filefield\_\-widget.inc}}
+\subsubsection[{theme\_\-filefield\_\-widget\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-filefield\_\-widget\_\-file (\$ {\em element})}}
+\label{filefield__widget_8inc_aac3ac93a565ef418ae15d070fbc4625}
+
+
+Custom theme function for FileField upload elements.
+
+This function allows us to put the \char`\"{}Upload\char`\"{} button immediately after the file upload field by respecting the field\_\-suffix property. 

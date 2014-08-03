@@ -1,0 +1,22 @@
+\hypertarget{index_intro_sec}{}\section{CKEditor}\label{index_intro_sec}
+Visit \href{http://ckeditor.com}{\tt CKEditor web site} to find more information about the editor. \hypertarget{index_install_sec}{}\section{Installation}\label{index_install_sec}
+\hypertarget{index_step1}{}\subsection{Include ckeditor.php in your PHP web site.}\label{index_step1}
+
+
+\begin{Code}\begin{verbatim} <?php
+ include("ckeditor/ckeditor.php");
+ ?>
+\end{verbatim}
+\end{Code}
+
+ \hypertarget{index_step2}{}\subsection{Create CKEditor class instance and use one of available methods to insert CKEditor.}\label{index_step2}
+
+
+\begin{Code}\begin{verbatim} <?php
+ $CKEditor = new CKEditor();
+ echo $CKEditor->textarea("field1", "<p>Initial value.</p>");
+ ?>
+\end{verbatim}
+\end{Code}
+
+ 

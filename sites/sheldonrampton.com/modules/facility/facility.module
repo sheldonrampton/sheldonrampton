@@ -1,0 +1,354 @@
+<?php
+
+/**
+ * Implementation of hook_help().
+ * Display help text for the facility module.
+ */
+function facility_help($section) {
+  $output = "";
+  switch ($section) {
+		case 'admin/help#facility':
+			return t('Enables the creation of a tennis facility.');
+			break;
+/*
+		case 'node/add#facility':
+		  return t('Add a tennis facility.');
+		  break;
+*/
+  }
+  return $output;
+}
+
+/**
+ * Implementation of hook_perm().
+ * Define the permissions the facility module uses.
+ */
+function facility_perm() {
+	return array('create tennis facility', 'edit own tennis facility');
+}
+
+function facility_menu($may_cache) {
+	$items = array();
+	if ($may_cache) {
+		$items[] = array('path' => 'facility', 'title' => t('Tennis facility'),
+			'access' => user_access('access content'),
+			'callback' => 'facility_page',
+			'type' => MENU_CALLBACK);
+		$items[] = array('path' => 'node/add/facility', 
+						 'title' => t('Facility'),
+						 'access' => user_access('create tennis facility'));
+	}
+	return $items;
+}
+
+function facility_page() {
+  $output = 'Look up a tennis facility near you.';
+  return $output;
+}
+
+/**
+* Implementation of hook_node_info().
+* Define the node type
+*/
+function facility_node_info() {
+	return array(
+		'facility' => array(
+			'name' => t('Tennis facility'), 
+			'module' => 'facility',
+			'description' => t('A tennis facility is a court or group of courts, possibly with other amenities such as a pro shop, exercise facilities, a backboard, etc.'),
+		)
+	);	
+}
+
+/**
+* Implementation of Forms API.
+*/
+function facility_form(&$node) {
+
+	$form['title'] = array(
+		'#type' => 'textfield',
+		'#title' => t('Title'),
+		'#required' => TRUE,
+		'#default_value' => $node->title,
+		'#weight' => -2,
+		'#description' => t('Name of the tennis facility.'),
+		'#size' => 40,
+		'#maxlength' => 255
+	);	
+	
+	$form['body'] = array(
+		'#type' => 'textarea',
+		'#title' => t('Body'),
+		'#required' => TRUE,
+		'#default_value' => $node->body,
+		'#weight' => -1,
+		'#description' => t('Enter main content here.'),
+		'#cols' => 60,
+		'#rows' => 10
+	);
+	$form['body_filter']['format'] = filter_form($node->format);
+	$form['courts'] = array(
+		'#type' => 'textfield',
+		'#title' => t('Courts'),
+		'#default_value' => $node->courts,
+		'#weight' => 1,
+		'#description' => t('Number of courts at this facility.'),
+		'#size' => 10,
+		'#maxlength' => 25
+	);	
+	$form['available'] = array(
+		'#type' => 'select',
+		'#title' => t('Available'),
+		'#default_value' => $node->available,
+		'#weight' => 2,
+		'#options' => array(
+				1 => t('seasonally'),
+				2 => t('year round'),
+  		),
+		'#description' => t('Times of year when courts are open.'),
+	);
+	
+	$form['surfaces'] = array(
+		'#type' => 'checkboxes',
+		'#title' => t('Surfaces'),
+		'#default_value' => $node->surfaces,
+		'#weight' => 3,
+		'#options' => array(
+				'hard_court' => t('hard court'),
+				'clay' => t('clay'),
+				'grass' => t('grass'),
+  		),
+	);
+
+	$form['ownership'] = array(
+		'#type' => 'select',
+		'#title' => t('Ownership'),
+		'#default_value' => $node->available,
+		'#weight' => 4,
+		'#options' => array(
+				1 => t("public"),
+				2 => t("private"),
+				3 => t("private - accepts nonmembers"),
+				4 => t("hotel/resort"),
+				5 => t("school/university"),
+  		),
+	);
+
+	$form['amenities'] = array(
+		'#type' => 'checkboxes',
+		'#title' => t('Amenities'),
+		'#default_value' => $node->amenities,
+		'#weight' => 5,
+		'#options' => array(
+				'backboard' => t('backboard court'),
+				'pro_shop' => t('pro shop'),
+  		),
+	);
+
+	$form['hours'] = array(
+		'#type' => 'textfield',
+		'#title' => t('Hours'),
+		'#default_value' => $node->hours,
+		'#weight' => 6,
+		'#description' => t('Hours available.'),
+		'#size' => 40,
+		'#maxlength' => 255
+	);	
+
+	$form['staff'] = array(
+		'#type' => 'textfield',
+		'#title' => t('Staff'),
+		'#default_value' => $node->staff,
+		'#weight' => 7,
+		'#description' => t('Days and times of operation, e.g., "M-F 7 a.m.-9 p.m., Sat. 9 a.m.-8 p.m."'),
+		'#size' => 40,
+		'#maxlength' => 255
+	);	
+
+	$form['contact'] = array(
+		'#type' => 'textfield',
+		'#title' => t('Contact'),
+		'#default_value' => $node->contact,
+		'#weight' => 8,
+		'#description' => t('The main person to contact regarding this tennis facility."'),
+		'#size' => 40,
+		'#maxlength' => 255
+	);	
+
+	$form['phone'] = array(
+		'#type' => 'textfield',
+		'#title' => t('Phone'),
+		'#default_value' => $node->phone,
+		'#weight' => 9,
+		'#description' => t('The main person to contact regarding this tennis facility."'),
+		'#size' => 20,
+		'#maxlength' => 255
+	);
+
+	$form['url'] = array(
+		'#type' => 'textfield',
+		'#title' => t('Website'),
+		'#default_value' => $node->url,
+		'#weight' => 10,
+		'#description' => t('If the facility has a website, enter the full URL (e.g., http://www.thecourt.com)."'),
+		'#size' => 40,
+		'#maxlength' => 255
+	);
+
+	$form['business'] = array(
+		'#type' => 'textfield',
+		'#title' => t('Business'),
+		'#default_value' => $node->business,
+		'#weight' => 11,
+		'#description' => t('The name of the business or organization that owns this tennis facility."'),
+		'#size' => 40,
+		'#maxlength' => 255
+	);
+
+	$form['club_id'] = array(
+		'#type' => 'textfield',
+		'#title' => t('Club ID'),
+		'#default_value' => $node->club_id,
+		'#weight' => 12,
+		'#size' => 20,
+		'#maxlength' => 255
+	);
+
+	return $form;	
+}
+
+function facility_insert($node) {
+	db_query("INSERT INTO {facility} 
+			(nid, courts, available, hard_court, clay, grass, ownership, backboard, pro_shop, hours, 
+						staff, contact, phone, url, business, club_id) 
+			VALUES (%d, %d, %d, %d, %d, %d, %d, %d, %d, '%s', '%s', '%s', '%s', '%s', '%s', %d)", 
+			$node->nid, $node->courts, $node->available, 
+						($node->surfaces['hard_court'] ? 1 : 0), 
+						($node->surfaces['clay'] ? 1 : 0), 
+						($node->surfaces['grass'] ? 1 : 0), 
+						$node->ownership, 
+						($node->amenities['backboard'] ? 1 : 0), 
+						($node->amenities['pro_shop'] ? 1 : 0), 
+						$node->hours, $node->staff, $node->contact, $node->phone, $node->url, $node->business, $node->club_id
+		);
+}
+
+function facility_load($node) {
+	$additions = db_fetch_object(db_query("SELECT * FROM {facility} WHERE nid=%d", $node->nid));
+	$additions->surfaces = array();
+	if ($additions->hard_court) {
+		$additions->surfaces[] = 'hard_court';
+	}
+	if ($additions->clay) {
+		$additions->surfaces[] = 'clay';
+	}
+	if ($additions->grass) {
+		$additions->surfaces[] = 'grass';
+	}
+	$additions->amenities = array();
+	if ($additions->backboard) {
+		$additions->amenities[] = 'backboard';
+	}
+	if ($additions->pro_shop) {
+		$additions->amenities[] = 'pro_shop';
+	}
+	return $additions;
+}
+
+function facility_delete(&$node) {
+	db_query("DELETE FROM {facility} WHERE nid = %d", $node->nid);
+}
+
+function facility_update($node) {
+	db_query("UPDATE {facility} SET courts=%d, available=%d, hard_court=%d, clay=%d, grass=%d, ownership='%d', backboard=%d, 
+			pro_shop=%d, hours='%s', staff='%s', contact='%s', phone='%s', url='%s', business='%s', club_id=%d WHERE nid=%d", 
+			$node->courts, $node->available, 
+			($node->surfaces['hard_court'] ? 1 : 0), 
+			($node->surfaces['clay'] ? 1 : 0), 
+			($node->surfaces['grass'] ? 1 : 0), 
+			$node->ownership, 
+			($node->amenities['backboard'] ? 1 : 0), 
+			($node->amenities['pro_shop'] ? 1 : 0), 
+			$node->hours, $node->staff, $node->contact, $node->phone, $node->url, $node->business, $node->club_id,
+			$node->nid
+		);
+}
+
+function facility_view($node, $teaser = FALSE, $page = FALSE) {
+  $node = node_prepare($node, $teaser);
+  $node->content['facility_info'] = array(
+    '#value' => theme('facility_info', $node),
+    '#weight' => 1,
+  );
+  return $node;
+}
+
+function theme_facility_info($node) {
+  $output = '<div class="facility_info">';
+	if ($node->courts) {
+		$output .= '<div class="courts">'. "<b>Courts: </b>$node->courts</div>";
+	}
+	if ($node->available) {
+		$availability = array(
+				1 => t('seasonally'),
+				2 => t('year round'),
+  		);
+		$output .= '<div class="available">'. "<b>Available: </b>" . $availability[$node->available] . "</div>";
+	}
+	foreach ($node->surfaces as $surface) {
+		if ($surface == 'hard_court') {
+			$surfaces[] = t('hard court');
+		} else if ($surface == 'clay') {
+			$surfaces[] = t('clay');
+		} else if ($surface == 'grass') {
+			$surfaces[] = t('grass');
+		}
+	}
+	if ($surfaces) {
+		$output .= '<div class="surfaces">'. "<b>Surfaces: </b>" . implode(', ', $surfaces) . "</div>";
+	}
+	if ($node->ownership) {
+		$ownership = array(
+				1 => t("public"),
+				2 => t("private"),
+				3 => t("private - accepts nonmembers"),
+				4 => t("hotel/resort"),
+				5 => t("school/university"),
+  		);
+		$output .= '<div class="ownership">'. "<b>Ownership: </b>" . $ownership[$node->ownership] . "</div>";
+	}
+	foreach ($node->amenities as $amenity) {
+		if ($amenity == 'backboard') {
+			$amenities[] = t('backboard');
+		} else if ($amenity == 'pro_shop') {
+			$amenities[] = t('pro shop');
+		}
+	}
+	if ($amenities) {
+		$output .= '<div class="amenities">'. "<b>Amenities: </b>" . implode(', ', $amenities) . "</div>";
+	}
+	if ($node->hours) {
+		$output .= '<div class="hours">'. "<b>Hours: </b>" . $node->hours . "</div>";
+	}
+	if ($node->staff) {
+		$output .= '<div class="staff">'. "<b>Staff: </b>" . $node->staff . "</div>";
+	}
+	if ($node->contact) {
+		$output .= '<div class="contact">'. "<b>Main contact: </b>" . $node->contact . "</div>";
+	}
+	if ($node->phone) {
+		$output .= '<div class="phone">'. "<b>Phone: </b>" . $node->phone . "</div>";
+	}
+	if ($node->url) {
+		$output .= '<div class="url">'. "<b>Website: </b>" . $node->url . "</div>";
+	}
+	if ($node->business) {
+		$output .= '<div class="business">'. "<b>Business: </b>" . $node->business . "</div>";
+	}
+	if ($node->club_id) {
+		$output .= '<div class="club_id">'. "<b>Club ID: </b>" . $node->club_id . "</div>";
+	}
+  $output .= '</div>';
+  return $output;
+}
+

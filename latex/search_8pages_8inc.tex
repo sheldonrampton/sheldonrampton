@@ -1,0 +1,74 @@
+\hypertarget{search_8pages_8inc}{
+\section{modules/search/search.pages.inc File Reference}
+\label{search_8pages_8inc}\index{modules/search/search.pages.inc@{modules/search/search.pages.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{search_8pages_8inc_3f9e1f2fb608388509992625d8da3fc4}{search\_\-view} (\$type= 'node')
+\item 
+\hyperlink{search_8pages_8inc_a0012b762375491296b1248124a177e9}{template\_\-preprocess\_\-search\_\-results} (\&\$variables)
+\item 
+\hyperlink{search_8pages_8inc_45d5ee9444aba311056f3949e503b426}{template\_\-preprocess\_\-search\_\-result} (\&\$variables)
+\item 
+\hyperlink{search_8pages_8inc_9b4ec561b0b5121050f68541e7047a6d}{search\_\-form\_\-validate} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{search_8pages_8inc_709df5e6ae41e0d9cccd0c1f3c0a410e}{search\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+User page callbacks for the search module. 
+
+\subsection{Function Documentation}
+\hypertarget{search_8pages_8inc_709df5e6ae41e0d9cccd0c1f3c0a410e}{
+\index{search.pages.inc@{search.pages.inc}!search\_\-form\_\-submit@{search\_\-form\_\-submit}}
+\index{search\_\-form\_\-submit@{search\_\-form\_\-submit}!search.pages.inc@{search.pages.inc}}
+\subsubsection[{search\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}search\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{search_8pages_8inc_709df5e6ae41e0d9cccd0c1f3c0a410e}
+
+
+Process a search form submission. \hypertarget{search_8pages_8inc_9b4ec561b0b5121050f68541e7047a6d}{
+\index{search.pages.inc@{search.pages.inc}!search\_\-form\_\-validate@{search\_\-form\_\-validate}}
+\index{search\_\-form\_\-validate@{search\_\-form\_\-validate}!search.pages.inc@{search.pages.inc}}
+\subsubsection[{search\_\-form\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}search\_\-form\_\-validate (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{search_8pages_8inc_9b4ec561b0b5121050f68541e7047a6d}
+
+
+As the search form collates keys from other modules hooked in via hook\_\-form\_\-alter, the validation takes place in \_\-submit. \hyperlink{search_8pages_8inc_9b4ec561b0b5121050f68541e7047a6d}{search\_\-form\_\-validate()} is used solely to set the 'processed\_\-keys' form value for the basic search form. \hypertarget{search_8pages_8inc_3f9e1f2fb608388509992625d8da3fc4}{
+\index{search.pages.inc@{search.pages.inc}!search\_\-view@{search\_\-view}}
+\index{search\_\-view@{search\_\-view}!search.pages.inc@{search.pages.inc}}
+\subsubsection[{search\_\-view}]{\setlength{\rightskip}{0pt plus 5cm}search\_\-view (\$ {\em type} = {\tt 'node'})}}
+\label{search_8pages_8inc_3f9e1f2fb608388509992625d8da3fc4}
+
+
+Menu callback; presents the search form and/or search results. \hypertarget{search_8pages_8inc_45d5ee9444aba311056f3949e503b426}{
+\index{search.pages.inc@{search.pages.inc}!template\_\-preprocess\_\-search\_\-result@{template\_\-preprocess\_\-search\_\-result}}
+\index{template\_\-preprocess\_\-search\_\-result@{template\_\-preprocess\_\-search\_\-result}!search.pages.inc@{search.pages.inc}}
+\subsubsection[{template\_\-preprocess\_\-search\_\-result}]{\setlength{\rightskip}{0pt plus 5cm}template\_\-preprocess\_\-search\_\-result (\&\$ {\em variables})}}
+\label{search_8pages_8inc_45d5ee9444aba311056f3949e503b426}
+
+
+Process variables for \hyperlink{search-result_8tpl_8php}{search-result.tpl.php}.
+
+The \$variables array contains the following arguments:\begin{itemize}
+\item \$result\item \$type\end{itemize}
+
+
+\begin{Desc}
+\item[See also:]\hyperlink{search-result_8tpl_8php}{search-result.tpl.php} \end{Desc}
+\hypertarget{search_8pages_8inc_a0012b762375491296b1248124a177e9}{
+\index{search.pages.inc@{search.pages.inc}!template\_\-preprocess\_\-search\_\-results@{template\_\-preprocess\_\-search\_\-results}}
+\index{template\_\-preprocess\_\-search\_\-results@{template\_\-preprocess\_\-search\_\-results}!search.pages.inc@{search.pages.inc}}
+\subsubsection[{template\_\-preprocess\_\-search\_\-results}]{\setlength{\rightskip}{0pt plus 5cm}template\_\-preprocess\_\-search\_\-results (\&\$ {\em variables})}}
+\label{search_8pages_8inc_a0012b762375491296b1248124a177e9}
+
+
+Process variables for \hyperlink{search-results_8tpl_8php}{search-results.tpl.php}.
+
+The \$variables array contains the following arguments:\begin{itemize}
+\item \$results\item \$type\end{itemize}
+
+
+\begin{Desc}
+\item[See also:]\hyperlink{search-results_8tpl_8php}{search-results.tpl.php} \end{Desc}

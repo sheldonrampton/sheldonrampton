@@ -1,0 +1,105 @@
+\hypertarget{comment_8admin_8inc}{
+\section{modules/comment/comment.admin.inc File Reference}
+\label{comment_8admin_8inc}\index{modules/comment/comment.admin.inc@{modules/comment/comment.admin.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{comment_8admin_8inc_fe7a967aebd51b588b647caada9b506a}{comment\_\-admin} (\$type= 'new')
+\item 
+\hyperlink{group__forms_g00b5469fd2c8930040e5e3170a8ac0bd}{comment\_\-admin\_\-overview} (\$type= 'new', \$arg)
+\item 
+\hyperlink{comment_8admin_8inc_60a994bc18cf6f4a9a71a478700f973e}{comment\_\-admin\_\-overview\_\-validate} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{comment_8admin_8inc_e242a86117c7b818ad449f42dd63706c}{comment\_\-admin\_\-overview\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{group__themeable_g206b5909bfdb91cc12f8f10edadbf45d}{theme\_\-comment\_\-admin\_\-overview} (\$form)
+\item 
+\hyperlink{group__forms_gb4ac3160c4ff7fd609772342f0df02a8}{comment\_\-multiple\_\-delete\_\-confirm} (\&\$form\_\-state)
+\item 
+\hyperlink{comment_8admin_8inc_0995d69b00481eb46c1981112df0999f}{comment\_\-multiple\_\-delete\_\-confirm\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{comment_8admin_8inc_4dfff3bfc1b88804411f4faff2b6ddde}{comment\_\-delete} (\$cid=NULL)
+\item 
+\hyperlink{group__forms_g412ca079e734ea4128aa16477141b82c}{comment\_\-confirm\_\-delete} (\&\$form\_\-state, \$comment)
+\item 
+\hyperlink{comment_8admin_8inc_4a91e7877e246726a22e875c215845bd}{comment\_\-confirm\_\-delete\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{comment_8admin_8inc_01cb7ccc4e6978fadf981c8610b00c12}{\_\-comment\_\-delete\_\-thread} (\$comment)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Admin page callbacks for the comment module. 
+
+\subsection{Function Documentation}
+\hypertarget{comment_8admin_8inc_01cb7ccc4e6978fadf981c8610b00c12}{
+\index{comment.admin.inc@{comment.admin.inc}!\_\-comment\_\-delete\_\-thread@{\_\-comment\_\-delete\_\-thread}}
+\index{\_\-comment\_\-delete\_\-thread@{\_\-comment\_\-delete\_\-thread}!comment.admin.inc@{comment.admin.inc}}
+\subsubsection[{\_\-comment\_\-delete\_\-thread}]{\setlength{\rightskip}{0pt plus 5cm}\_\-comment\_\-delete\_\-thread (\$ {\em comment})}}
+\label{comment_8admin_8inc_01cb7ccc4e6978fadf981c8610b00c12}
+
+
+Perform the actual deletion of a comment and all its replies.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$comment}]An associative array describing the comment to be deleted. \end{description}
+\end{Desc}
+\hypertarget{comment_8admin_8inc_fe7a967aebd51b588b647caada9b506a}{
+\index{comment.admin.inc@{comment.admin.inc}!comment\_\-admin@{comment\_\-admin}}
+\index{comment\_\-admin@{comment\_\-admin}!comment.admin.inc@{comment.admin.inc}}
+\subsubsection[{comment\_\-admin}]{\setlength{\rightskip}{0pt plus 5cm}comment\_\-admin (\$ {\em type} = {\tt 'new'})}}
+\label{comment_8admin_8inc_fe7a967aebd51b588b647caada9b506a}
+
+
+Menu callback; present an administrative comment listing. \hypertarget{comment_8admin_8inc_e242a86117c7b818ad449f42dd63706c}{
+\index{comment.admin.inc@{comment.admin.inc}!comment\_\-admin\_\-overview\_\-submit@{comment\_\-admin\_\-overview\_\-submit}}
+\index{comment\_\-admin\_\-overview\_\-submit@{comment\_\-admin\_\-overview\_\-submit}!comment.admin.inc@{comment.admin.inc}}
+\subsubsection[{comment\_\-admin\_\-overview\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}comment\_\-admin\_\-overview\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{comment_8admin_8inc_e242a86117c7b818ad449f42dd63706c}
+
+
+Process comment\_\-admin\_\-overview form submissions.
+
+Execute the chosen 'Update option' on the selected comments, such as publishing, unpublishing or deleting. \hypertarget{comment_8admin_8inc_60a994bc18cf6f4a9a71a478700f973e}{
+\index{comment.admin.inc@{comment.admin.inc}!comment\_\-admin\_\-overview\_\-validate@{comment\_\-admin\_\-overview\_\-validate}}
+\index{comment\_\-admin\_\-overview\_\-validate@{comment\_\-admin\_\-overview\_\-validate}!comment.admin.inc@{comment.admin.inc}}
+\subsubsection[{comment\_\-admin\_\-overview\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}comment\_\-admin\_\-overview\_\-validate (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{comment_8admin_8inc_60a994bc18cf6f4a9a71a478700f973e}
+
+
+Validate comment\_\-admin\_\-overview form submissions.
+
+We can't execute any 'Update options' if no comments were selected. \hypertarget{comment_8admin_8inc_4a91e7877e246726a22e875c215845bd}{
+\index{comment.admin.inc@{comment.admin.inc}!comment\_\-confirm\_\-delete\_\-submit@{comment\_\-confirm\_\-delete\_\-submit}}
+\index{comment\_\-confirm\_\-delete\_\-submit@{comment\_\-confirm\_\-delete\_\-submit}!comment.admin.inc@{comment.admin.inc}}
+\subsubsection[{comment\_\-confirm\_\-delete\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}comment\_\-confirm\_\-delete\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{comment_8admin_8inc_4a91e7877e246726a22e875c215845bd}
+
+
+Process comment\_\-confirm\_\-delete form submissions. \hypertarget{comment_8admin_8inc_4dfff3bfc1b88804411f4faff2b6ddde}{
+\index{comment.admin.inc@{comment.admin.inc}!comment\_\-delete@{comment\_\-delete}}
+\index{comment\_\-delete@{comment\_\-delete}!comment.admin.inc@{comment.admin.inc}}
+\subsubsection[{comment\_\-delete}]{\setlength{\rightskip}{0pt plus 5cm}comment\_\-delete (\$ {\em cid} = {\tt NULL})}}
+\label{comment_8admin_8inc_4dfff3bfc1b88804411f4faff2b6ddde}
+
+
+Menu callback; delete a comment.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$cid}]The comment do be deleted. \end{description}
+\end{Desc}
+\hypertarget{comment_8admin_8inc_0995d69b00481eb46c1981112df0999f}{
+\index{comment.admin.inc@{comment.admin.inc}!comment\_\-multiple\_\-delete\_\-confirm\_\-submit@{comment\_\-multiple\_\-delete\_\-confirm\_\-submit}}
+\index{comment\_\-multiple\_\-delete\_\-confirm\_\-submit@{comment\_\-multiple\_\-delete\_\-confirm\_\-submit}!comment.admin.inc@{comment.admin.inc}}
+\subsubsection[{comment\_\-multiple\_\-delete\_\-confirm\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}comment\_\-multiple\_\-delete\_\-confirm\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{comment_8admin_8inc_0995d69b00481eb46c1981112df0999f}
+
+
+Process comment\_\-multiple\_\-delete\_\-confirm form submissions.
+
+Perform the actual comment deletion. 

@@ -1,0 +1,112 @@
+\hypertarget{classviews__plugin}{
+\section{views\_\-plugin Class Reference}
+\label{classviews__plugin}\index{views\_\-plugin@{views\_\-plugin}}
+}
+Inheritance diagram for views\_\-plugin::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.4966cm]{classviews__plugin}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__plugin_d6545806f1390625286446b426f1a489}{init} (\&\$\hyperlink{classview}{view}, \&\$display)
+\item 
+\hyperlink{classviews__plugin_1aaed8da1afd9f45293a37358c159837}{options\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__plugin_46d72eb35feea36fed83cd1355a47431}{options\_\-validate} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__plugin_442b0f392deb52725ec8159e05654e06}{options\_\-submit} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__plugin_10ac07c47c4a8735786f9fcc38548587}{query} ()
+\item 
+\hyperlink{classviews__plugin_b20d2d49f24db9ee7f162341564fd2fd}{theme\_\-functions} ()
+\item 
+\hyperlink{classviews__plugin_5c5fb9783079362378d804c94b142b9f}{additional\_\-theme\_\-functions} ()
+\item 
+\hyperlink{classviews__plugin_af004b6a719837f08a1ffe4a1cf4d442}{validate} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract base class to provide interface common to all plugins. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__plugin_5c5fb9783079362378d804c94b142b9f}{
+\index{views\_\-plugin@{views\_\-plugin}!additional\_\-theme\_\-functions@{additional\_\-theme\_\-functions}}
+\index{additional\_\-theme\_\-functions@{additional\_\-theme\_\-functions}!views_plugin@{views\_\-plugin}}
+\subsubsection[{additional\_\-theme\_\-functions}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin::additional\_\-theme\_\-functions ()}}
+\label{classviews__plugin_5c5fb9783079362378d804c94b142b9f}
+
+
+Provide a list of additional theme functions for the theme information page \hypertarget{classviews__plugin_d6545806f1390625286446b426f1a489}{
+\index{views\_\-plugin@{views\_\-plugin}!init@{init}}
+\index{init@{init}!views_plugin@{views\_\-plugin}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin::init (\&\$ {\em view}, \/  \&\$ {\em display})}}
+\label{classviews__plugin_d6545806f1390625286446b426f1a489}
+
+
+Init will be called after construct, when the plugin is attached to a \hyperlink{classview}{view} and a display. 
+
+Reimplemented in \hyperlink{classviews__plugin__access_1b295cea820f403d1e361e7de4e3800e}{views\_\-plugin\_\-access}, and \hyperlink{classviews__plugin__cache_6cecf3993f6314215559c6a914f8a96b}{views\_\-plugin\_\-cache}.\hypertarget{classviews__plugin_1aaed8da1afd9f45293a37358c159837}{
+\index{views\_\-plugin@{views\_\-plugin}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!views_plugin@{views\_\-plugin}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin::options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__plugin_1aaed8da1afd9f45293a37358c159837}
+
+
+Provide a form to edit options for this plugin. 
+
+Reimplemented in \hyperlink{classviews__plugin__row__aggregator__rss_a5c9bce3143901863f1a446b622fda9c}{views\_\-plugin\_\-row\_\-aggregator\_\-rss}, \hyperlink{classviews__plugin__row__comment__view_7dd276ec1a14a2d34f80a8020557608a}{views\_\-plugin\_\-row\_\-comment\_\-view}, \hyperlink{classviews__plugin__row__node__rss_074125b7562bb918124c2dae6322f58e}{views\_\-plugin\_\-row\_\-node\_\-rss}, \hyperlink{classviews__plugin__row__node__view_7bc31b38a1cc4474695af3a564fde775}{views\_\-plugin\_\-row\_\-node\_\-view}, \hyperlink{classviews__plugin__row__search__view_2d2e479f414c487aff3d88343274b49b}{views\_\-plugin\_\-row\_\-search\_\-view}, \hyperlink{classviews__plugin__access_530865442ea42db5e720e6c49f3d16f2}{views\_\-plugin\_\-access}, \hyperlink{classviews__plugin__access__perm_f662e29c6b61b1a476b7b9ba368f5650}{views\_\-plugin\_\-access\_\-perm}, \hyperlink{classviews__plugin__access__role_76293d33e84a78e2ce0df6df955da760}{views\_\-plugin\_\-access\_\-role}, \hyperlink{classviews__plugin__cache__time_c12d2ba054e232ae1d425d189a2d78d9}{views\_\-plugin\_\-cache\_\-time}, \hyperlink{classviews__plugin__display_d9c69d91ea1165ff51dcd1f1f6d3a154}{views\_\-plugin\_\-display}, \hyperlink{classviews__plugin__display__attachment_82864b279fb83e8d9ebddc40bc2851fa}{views\_\-plugin\_\-display\_\-attachment}, \hyperlink{classviews__plugin__display__block_251f0aa56cead04c51c4b1d633826640}{views\_\-plugin\_\-display\_\-block}, \hyperlink{classviews__plugin__display__feed_be0a41d577b52de992279986d6c8c2d9}{views\_\-plugin\_\-display\_\-feed}, \hyperlink{classviews__plugin__display__page_a8267a4774b92a7b47a3768ac98aac36}{views\_\-plugin\_\-display\_\-page}, \hyperlink{classviews__plugin__row_6914c39d64977a0aa71da39cc1af004e}{views\_\-plugin\_\-row}, \hyperlink{classviews__plugin__row__fields_bb87b6c98697fb676638759cb95072e3}{views\_\-plugin\_\-row\_\-fields}, \hyperlink{classviews__plugin__style_fe3d437ff4398315b15c4e60975dbb1c}{views\_\-plugin\_\-style}, \hyperlink{classviews__plugin__style__default_6d6eb45c613c5990a44b3071cb82b36d}{views\_\-plugin\_\-style\_\-default}, \hyperlink{classviews__plugin__style__grid_275eb0e00406028e000268ae389d17a3}{views\_\-plugin\_\-style\_\-grid}, \hyperlink{classviews__plugin__style__jump__menu_d7158f1d70c97809b44bfa0e10b11709}{views\_\-plugin\_\-style\_\-jump\_\-menu}, \hyperlink{classviews__plugin__style__list_37ec2449bb2119e4a8c3730cd458ecdb}{views\_\-plugin\_\-style\_\-list}, \hyperlink{classviews__plugin__style__rss_317b1867ddd97f969977368031e04fee}{views\_\-plugin\_\-style\_\-rss}, \hyperlink{classviews__plugin__style__summary_43826183b4d54242ae5276f40f70475f}{views\_\-plugin\_\-style\_\-summary}, \hyperlink{classviews__plugin__style__summary__jump__menu_b66730cfcd70ef23a0dbc05e80ad3d32}{views\_\-plugin\_\-style\_\-summary\_\-jump\_\-menu}, \hyperlink{classviews__plugin__style__summary__unformatted_8770285dac047bf88a2c77b2e798826d}{views\_\-plugin\_\-style\_\-summary\_\-unformatted}, and \hyperlink{classviews__plugin__style__table_732752fb9b74bdb48673cb9ff4150be9}{views\_\-plugin\_\-style\_\-table}.\hypertarget{classviews__plugin_442b0f392deb52725ec8159e05654e06}{
+\index{views\_\-plugin@{views\_\-plugin}!options\_\-submit@{options\_\-submit}}
+\index{options\_\-submit@{options\_\-submit}!views_plugin@{views\_\-plugin}}
+\subsubsection[{options\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin::options\_\-submit (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__plugin_442b0f392deb52725ec8159e05654e06}
+
+
+Handle any special handling on the validate form. 
+
+Reimplemented in \hyperlink{classviews__plugin__access_d0610dfaa0e225c5d2cd85c7a13287fd}{views\_\-plugin\_\-access}, \hyperlink{classviews__plugin__access__role_d9bf6eddd91a7c224fb813a58077ee4d}{views\_\-plugin\_\-access\_\-role}, \hyperlink{classviews__plugin__display_75f0b2d5587b365640fcb4d414daae36}{views\_\-plugin\_\-display}, \hyperlink{classviews__plugin__display__attachment_63219dfd2bfed59bdf1840d704d11799}{views\_\-plugin\_\-display\_\-attachment}, \hyperlink{classviews__plugin__display__block_aac31f678cc192896bcfdeb1a8a5a2c7}{views\_\-plugin\_\-display\_\-block}, \hyperlink{classviews__plugin__display__feed_b7cca15934456ddb26045f03483899fb}{views\_\-plugin\_\-display\_\-feed}, and \hyperlink{classviews__plugin__display__page_9b03d35a15fcfcae4a474ea56b6ca5b6}{views\_\-plugin\_\-display\_\-page}.\hypertarget{classviews__plugin_46d72eb35feea36fed83cd1355a47431}{
+\index{views\_\-plugin@{views\_\-plugin}!options\_\-validate@{options\_\-validate}}
+\index{options\_\-validate@{options\_\-validate}!views_plugin@{views\_\-plugin}}
+\subsubsection[{options\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin::options\_\-validate (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__plugin_46d72eb35feea36fed83cd1355a47431}
+
+
+Validate the options form. 
+
+Reimplemented in \hyperlink{classviews__plugin__access_1ac0bea409be6ef8d7eb4bfafcf760c6}{views\_\-plugin\_\-access}, \hyperlink{classviews__plugin__access__role_82fda91cd55acbbcac1759448c8fc471}{views\_\-plugin\_\-access\_\-role}, \hyperlink{classviews__plugin__display_0b4336df4db25dec552de8d20141a9f5}{views\_\-plugin\_\-display}, and \hyperlink{classviews__plugin__display__page_192c8feb8740fdb389600fb7a8588c27}{views\_\-plugin\_\-display\_\-page}.\hypertarget{classviews__plugin_10ac07c47c4a8735786f9fcc38548587}{
+\index{views\_\-plugin@{views\_\-plugin}!query@{query}}
+\index{query@{query}!views_plugin@{views\_\-plugin}}
+\subsubsection[{query}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin::query ()}}
+\label{classviews__plugin_10ac07c47c4a8735786f9fcc38548587}
+
+
+Add anything to the query that we might need to. 
+
+Reimplemented in \hyperlink{classviews__plugin__display_efdc473b5cbe1c7eb4d0f5175d02184a}{views\_\-plugin\_\-display}, \hyperlink{classviews__plugin__row_bfc5a6936d485f19d49cfd9eae094f8f}{views\_\-plugin\_\-row}, \hyperlink{classviews__plugin__style_f6b601d8f42cc3d86721fcad76eaae4b}{views\_\-plugin\_\-style}, \hyperlink{classviews__plugin__style__summary_fd8f02a61bd0e1887cc7767950e8e0df}{views\_\-plugin\_\-style\_\-summary}, and \hyperlink{classviews__plugin__style__summary__jump__menu_ee2a45ee02a7ce8d041a5b028758cf0b}{views\_\-plugin\_\-style\_\-summary\_\-jump\_\-menu}.\hypertarget{classviews__plugin_b20d2d49f24db9ee7f162341564fd2fd}{
+\index{views\_\-plugin@{views\_\-plugin}!theme\_\-functions@{theme\_\-functions}}
+\index{theme\_\-functions@{theme\_\-functions}!views_plugin@{views\_\-plugin}}
+\subsubsection[{theme\_\-functions}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin::theme\_\-functions ()}}
+\label{classviews__plugin_b20d2d49f24db9ee7f162341564fd2fd}
+
+
+Provide a full list of possible theme templates used by this style. \hypertarget{classviews__plugin_af004b6a719837f08a1ffe4a1cf4d442}{
+\index{views\_\-plugin@{views\_\-plugin}!validate@{validate}}
+\index{validate@{validate}!views_plugin@{views\_\-plugin}}
+\subsubsection[{validate}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin::validate ()}}
+\label{classviews__plugin_af004b6a719837f08a1ffe4a1cf4d442}
+
+
+Validate that the plugin is correct and can be saved.
+
+\begin{Desc}
+\item[Returns:]An array of error strings to tell the user what is wrong with this plugin. \end{Desc}
+
+
+Reimplemented in \hyperlink{classviews__plugin__display_3282edb1b32b756937fe2d0c8757c80c}{views\_\-plugin\_\-display}, \hyperlink{classviews__plugin__display__page_995cf48d67e20ef897d931fcbba391d1}{views\_\-plugin\_\-display\_\-page}, and \hyperlink{classviews__plugin__style_41929fec27cb0ae7a801276969a080a1}{views\_\-plugin\_\-style}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/includes/\hyperlink{plugins_8inc}{plugins.inc}\end{CompactItemize}

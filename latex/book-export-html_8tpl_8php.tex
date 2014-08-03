@@ -1,0 +1,61 @@
+\hypertarget{book-export-html_8tpl_8php}{
+\section{modules/book/book-export-html.tpl.php File Reference}
+\label{book-export-html_8tpl_8php}\index{modules/book/book-export-html.tpl.php@{modules/book/book-export-html.tpl.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hypertarget{book-export-html_8tpl_8php_42cd582c44c919666b05626f0b2a39d3}{
+print \$language \textbf{language}}
+\label{book-export-html_8tpl_8php_42cd582c44c919666b05626f0b2a39d3}
+
+\item 
+\hypertarget{book-export-html_8tpl_8php_2758cd2886f39b56c05b61ab6cec7a5d}{
+print \textbf{\$head}}
+\label{book-export-html_8tpl_8php_2758cd2886f39b56c05b61ab6cec7a5d}
+
+\item 
+\hypertarget{book-export-html_8tpl_8php_ec2795512d255332f57cacd930a090b4}{
+print \textbf{\$title}}
+\label{book-export-html_8tpl_8php_ec2795512d255332f57cacd930a090b4}
+
+\item 
+\hypertarget{book-export-html_8tpl_8php_73af004a34e36e5a0d7c577096a9d84b}{
+print \textbf{\$base\_\-url}}
+\label{book-export-html_8tpl_8php_73af004a34e36e5a0d7c577096a9d84b}
+
+\item 
+if(\$language\_\-rtl) \hyperlink{book-export-html_8tpl_8php_d7ca5cbbe327a2d37bf5ac15dc38efe0}{\$div\_\-close} = ''
+\item 
+\hypertarget{book-export-html_8tpl_8php_e8fdc27183f296411bac00ed522ee1ac}{
+\textbf{endfor}}
+\label{book-export-html_8tpl_8php_e8fdc27183f296411bac00ed522ee1ac}
+
+\item 
+\hypertarget{book-export-html_8tpl_8php_e5669c449da191330771ceda05435811}{
+print \textbf{\$contents}}
+\label{book-export-html_8tpl_8php_e5669c449da191330771ceda05435811}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Default theme implementation for printed version of book outline.
+
+Available variables:\begin{itemize}
+\item \$title: Top level node title.\item \$head: Header tags.\item \$language: Language code. e.g. \char`\"{}en\char`\"{} for english.\item \$language\_\-rtl: TRUE or FALSE depending on right to left language scripts.\item \$base\_\-url: URL to home page.\item \$content: Nodes within the current outline rendered through \hyperlink{book-node-export-html_8tpl_8php}{book-node-export-html.tpl.php}.\end{itemize}
+
+
+\begin{Desc}
+\item[See also:]template\_\-preprocess\_\-book\_\-export\_\-html() \end{Desc}
+
+
+\subsection{Variable Documentation}
+\hypertarget{book-export-html_8tpl_8php_d7ca5cbbe327a2d37bf5ac15dc38efe0}{
+\index{book-export-html.tpl.php@{book-export-html.tpl.php}!\$div\_\-close@{\$div\_\-close}}
+\index{\$div\_\-close@{\$div\_\-close}!book-export-html.tpl.php@{book-export-html.tpl.php}}
+\subsubsection[{\$div\_\-close}]{\setlength{\rightskip}{0pt plus 5cm}print \$div\_\-close = ''}}
+\label{book-export-html_8tpl_8php_d7ca5cbbe327a2d37bf5ac15dc38efe0}
+
+
+The given node is /embedded to its absolute depth in a top level section/. For example, a child node with depth 2 in the hierarchy is contained in (otherwise empty) $<$div$>$ elements corresponding to depth 0 and depth 1. This is intended to support WYSIWYG output - e.g., level 3 sections always look like level 3 sections, no matter their depth relative to the node selected to be exported as printer-friendly HTML. 

@@ -1,0 +1,168 @@
+\hypertarget{field__file_8inc}{
+\section{sites/all/modules/contrib/filefield/field\_\-file.inc File Reference}
+\label{field__file_8inc}\index{sites/all/modules/contrib/filefield/field\_\-file.inc@{sites/all/modules/contrib/filefield/field\_\-file.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{field__file_8inc_a56eff88e875747bcaacd268163badd9}{field\_\-file\_\-load} (\$fid, \$reset=NULL)
+\item 
+\hyperlink{field__file_8inc_3bd2944da87148acc1c84eecdb22df66}{field\_\-file\_\-save\_\-upload} (\$source, \$validators=array(), \$dest=FALSE)
+\item 
+\hyperlink{field__file_8inc_4fd6ba5c832548c4c456e736f6fc25e1}{field\_\-file\_\-save\_\-file} (\$filepath, \$validators=array(), \$dest=FALSE, \$account=NULL)
+\item 
+\hyperlink{field__file_8inc_10fec707b6053febac35f742ea14a638}{field\_\-file\_\-save} (\$node, \&\$file)
+\item 
+\hyperlink{field__file_8inc_74e2e4f228eddabf95dc2c8e1b0ebfb4}{field\_\-file\_\-delete} (\$file, \$force=FALSE)
+\item 
+\hyperlink{field__file_8inc_e131f72d83f71a14c4b4311e654d77f5}{\_\-field\_\-file\_\-cache} (\$file=NULL, \$reset=FALSE)
+\item 
+\hyperlink{field__file_8inc_1580d32589418f72cd928b93db4c571c}{field\_\-file\_\-check\_\-directory} (\&\$directory, \$mode=0, \$form\_\-item=NULL)
+\item 
+\hyperlink{field__file_8inc_1131c2060eba36813763eb04dd6d4843}{field\_\-file\_\-strip\_\-path} (\$path)
+\item 
+\hyperlink{field__file_8inc_f4979515f095d3531c51f752100da7b1}{field\_\-file\_\-urlencode\_\-path} (\$path)
+\item 
+\hyperlink{field__file_8inc_2750f1d216388271938e7c9b545d2695}{field\_\-file\_\-references} (\$file)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Common functionality for file handling CCK field modules. 
+
+\subsection{Function Documentation}
+\hypertarget{field__file_8inc_e131f72d83f71a14c4b4311e654d77f5}{
+\index{field\_\-file.inc@{field\_\-file.inc}!\_\-field\_\-file\_\-cache@{\_\-field\_\-file\_\-cache}}
+\index{\_\-field\_\-file\_\-cache@{\_\-field\_\-file\_\-cache}!field_file.inc@{field\_\-file.inc}}
+\subsubsection[{\_\-field\_\-file\_\-cache}]{\setlength{\rightskip}{0pt plus 5cm}\_\-field\_\-file\_\-cache (\$ {\em file} = {\tt NULL}, \/  \$ {\em reset} = {\tt FALSE})}}
+\label{field__file_8inc_e131f72d83f71a14c4b4311e654d77f5}
+
+
+Internal cache, in order to minimize database queries for loading files. \hypertarget{field__file_8inc_1580d32589418f72cd928b93db4c571c}{
+\index{field\_\-file.inc@{field\_\-file.inc}!field\_\-file\_\-check\_\-directory@{field\_\-file\_\-check\_\-directory}}
+\index{field\_\-file\_\-check\_\-directory@{field\_\-file\_\-check\_\-directory}!field_file.inc@{field\_\-file.inc}}
+\subsubsection[{field\_\-file\_\-check\_\-directory}]{\setlength{\rightskip}{0pt plus 5cm}field\_\-file\_\-check\_\-directory (\&\$ {\em directory}, \/  \$ {\em mode} = {\tt 0}, \/  \$ {\em form\_\-item} = {\tt NULL})}}
+\label{field__file_8inc_1580d32589418f72cd928b93db4c571c}
+
+
+A silent version of \hyperlink{file_8inc}{file.inc}'s \hyperlink{group__file_g1cae9f6fea37182a71710f0209d586dd}{file\_\-check\_\-directory()}.
+
+This function differs from file\_\-check\_\-directory in that it checks for files when doing the directory check and it does not use \hyperlink{bootstrap_8inc_d9223d86c7b08b1288274ce211d9bfa6}{drupal\_\-set\_\-message()} when creating directories. This function may be removed in Drupal 7.
+
+Check that the directory exists and is writable. Directories need to have execute permissions to be considered a directory by FTP servers, etc.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$directory}]A string containing the name of a directory path. \item[{\em \$mode}]A Boolean value to indicate if the directory should be created if it does not exist or made writable if it is read-only. \item[{\em \$form\_\-item}]An optional string containing the name of a form item that any errors will be attached to. This is useful for settings forms that require the user to specify a writable directory. If it can't be made to work, a form error will be set preventing them from saving the settings. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]FALSE when directory not found, or TRUE when directory exists. \end{Desc}
+\hypertarget{field__file_8inc_74e2e4f228eddabf95dc2c8e1b0ebfb4}{
+\index{field\_\-file.inc@{field\_\-file.inc}!field\_\-file\_\-delete@{field\_\-file\_\-delete}}
+\index{field\_\-file\_\-delete@{field\_\-file\_\-delete}!field_file.inc@{field\_\-file.inc}}
+\subsubsection[{field\_\-file\_\-delete}]{\setlength{\rightskip}{0pt plus 5cm}field\_\-file\_\-delete (\$ {\em file}, \/  \$ {\em force} = {\tt FALSE})}}
+\label{field__file_8inc_74e2e4f228eddabf95dc2c8e1b0ebfb4}
+
+
+Delete a field file and its database record.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$path}]A file object. \item[{\em \$force}]Force File Deletion ignoring reference counting. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]mixed TRUE for success, Array for reference count block, or FALSE in the event of an error. \end{Desc}
+\hypertarget{field__file_8inc_a56eff88e875747bcaacd268163badd9}{
+\index{field\_\-file.inc@{field\_\-file.inc}!field\_\-file\_\-load@{field\_\-file\_\-load}}
+\index{field\_\-file\_\-load@{field\_\-file\_\-load}!field_file.inc@{field\_\-file.inc}}
+\subsubsection[{field\_\-file\_\-load}]{\setlength{\rightskip}{0pt plus 5cm}field\_\-file\_\-load (\$ {\em fid}, \/  \$ {\em reset} = {\tt NULL})}}
+\label{field__file_8inc_a56eff88e875747bcaacd268163badd9}
+
+
+Load a file from the database.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$fid}]A numeric file id or string containing the file path. \item[{\em \$reset}]Whether to reset the internal file\_\-load cache. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]A file array. \end{Desc}
+\hypertarget{field__file_8inc_2750f1d216388271938e7c9b545d2695}{
+\index{field\_\-file.inc@{field\_\-file.inc}!field\_\-file\_\-references@{field\_\-file\_\-references}}
+\index{field\_\-file\_\-references@{field\_\-file\_\-references}!field_file.inc@{field\_\-file.inc}}
+\subsubsection[{field\_\-file\_\-references}]{\setlength{\rightskip}{0pt plus 5cm}field\_\-file\_\-references (\$ {\em file})}}
+\label{field__file_8inc_2750f1d216388271938e7c9b545d2695}
+
+
+Return a count of the references to a file by all modules. \hypertarget{field__file_8inc_10fec707b6053febac35f742ea14a638}{
+\index{field\_\-file.inc@{field\_\-file.inc}!field\_\-file\_\-save@{field\_\-file\_\-save}}
+\index{field\_\-file\_\-save@{field\_\-file\_\-save}!field_file.inc@{field\_\-file.inc}}
+\subsubsection[{field\_\-file\_\-save}]{\setlength{\rightskip}{0pt plus 5cm}field\_\-file\_\-save (\$ {\em node}, \/  \&\$ {\em file})}}
+\label{field__file_8inc_10fec707b6053febac35f742ea14a638}
+
+
+Save a node file. Delete items if necessary and set new items as permanent.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$node}]Node object this file is be associated with. \item[{\em \$file}]File to be inserted, passed by reference since fid should be attached. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]array \end{Desc}
+\hypertarget{field__file_8inc_4fd6ba5c832548c4c456e736f6fc25e1}{
+\index{field\_\-file.inc@{field\_\-file.inc}!field\_\-file\_\-save\_\-file@{field\_\-file\_\-save\_\-file}}
+\index{field\_\-file\_\-save\_\-file@{field\_\-file\_\-save\_\-file}!field_file.inc@{field\_\-file.inc}}
+\subsubsection[{field\_\-file\_\-save\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}field\_\-file\_\-save\_\-file (\$ {\em filepath}, \/  \$ {\em validators} = {\tt array()}, \/  \$ {\em dest} = {\tt FALSE}, \/  \$ {\em account} = {\tt NULL})}}
+\label{field__file_8inc_4fd6ba5c832548c4c456e736f6fc25e1}
+
+
+Save a file into a file node after running all the associated validators.
+
+This function is usually used to move a file from the temporary file directory to a permanent location. It may be used by import scripts or other modules that want to save an existing file into the database.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$filepath}]The local file path of the file to be saved. \item[{\em \$validators}]An optional, associative array of callback functions used to validate the file. The keys are function names and the values arrays of callback parameters which will be passed in after the user and file objects. The functions should return an array of error messages, an empty array indicates that the file passed validation. The functions will be called in the order specified. \item[{\em \$dest}]A string containing the directory \$source should be copied to. If this is not provided or is not writable, the temporary directory will be used. \item[{\em \$account}]The user account object that should associated with the uploaded file. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An array containing the file information, or 0 in the event of an error. \end{Desc}
+\hypertarget{field__file_8inc_3bd2944da87148acc1c84eecdb22df66}{
+\index{field\_\-file.inc@{field\_\-file.inc}!field\_\-file\_\-save\_\-upload@{field\_\-file\_\-save\_\-upload}}
+\index{field\_\-file\_\-save\_\-upload@{field\_\-file\_\-save\_\-upload}!field_file.inc@{field\_\-file.inc}}
+\subsubsection[{field\_\-file\_\-save\_\-upload}]{\setlength{\rightskip}{0pt plus 5cm}field\_\-file\_\-save\_\-upload (\$ {\em source}, \/  \$ {\em validators} = {\tt array()}, \/  \$ {\em dest} = {\tt FALSE})}}
+\label{field__file_8inc_3bd2944da87148acc1c84eecdb22df66}
+
+
+Save a file upload to a new location. The source file is validated as a proper upload and handled as such. By implementing hook\_\-file(\$op = 'insert'), modules are able to act on the file upload and to add their own properties to the file.
+
+The file will be added to the files table as a temporary file. Temporary files are periodically cleaned. To make the file permanent file call \hyperlink{group__file_g68a0e6728e47cf2f9d543a0002ff3f49}{file\_\-set\_\-status()} to change its status.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$source}]A string specifying the name of the upload field to save. \item[{\em \$validators}]An optional, associative array of callback functions used to validate the file. The keys are function names and the values arrays of callback parameters which will be passed in after the user and file objects. The functions should return an array of error messages, an empty array indicates that the file passed validation. The functions will be called in the order specified. \item[{\em \$dest}]A string containing the directory \$source should be copied to. If this is not provided or is not writable, the temporary directory will be used. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An array containing the file information, or 0 in the event of an error. \end{Desc}
+\hypertarget{field__file_8inc_1131c2060eba36813763eb04dd6d4843}{
+\index{field\_\-file.inc@{field\_\-file.inc}!field\_\-file\_\-strip\_\-path@{field\_\-file\_\-strip\_\-path}}
+\index{field\_\-file\_\-strip\_\-path@{field\_\-file\_\-strip\_\-path}!field_file.inc@{field\_\-file.inc}}
+\subsubsection[{field\_\-file\_\-strip\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}field\_\-file\_\-strip\_\-path (\$ {\em path})}}
+\label{field__file_8inc_1131c2060eba36813763eb04dd6d4843}
+
+
+Remove a possible leading file directory path from the given path. \hypertarget{field__file_8inc_f4979515f095d3531c51f752100da7b1}{
+\index{field\_\-file.inc@{field\_\-file.inc}!field\_\-file\_\-urlencode\_\-path@{field\_\-file\_\-urlencode\_\-path}}
+\index{field\_\-file\_\-urlencode\_\-path@{field\_\-file\_\-urlencode\_\-path}!field_file.inc@{field\_\-file.inc}}
+\subsubsection[{field\_\-file\_\-urlencode\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}field\_\-file\_\-urlencode\_\-path (\$ {\em path})}}
+\label{field__file_8inc_f4979515f095d3531c51f752100da7b1}
+
+
+Encode a file path in a way that is compatible with \hyperlink{group__file_g1a305a4da1e6e5c6b1783ceffb66c340}{file\_\-create\_\-url()}.
+
+This function should be used on the \$file-$>$filepath property before any call to \hyperlink{group__file_g1a305a4da1e6e5c6b1783ceffb66c340}{file\_\-create\_\-url()}. This ensures that the file directory path prefix is unmodified, but the actual path to the file will be properly URL encoded. 

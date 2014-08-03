@@ -1,0 +1,88 @@
+\hypertarget{file_8inc}{
+\section{includes/file.inc File Reference}
+\label{file_8inc}\index{includes/file.inc@{includes/file.inc}}
+}
+\subsection*{Enumerations}
+\begin{CompactItemize}
+\item 
+enum \textbf{FILE\_\-DOWNLOADS\_\-PUBLIC} 
+\item 
+enum \textbf{FILE\_\-DOWNLOADS\_\-PRIVATE} 
+\item 
+enum \textbf{FILE\_\-CREATE\_\-DIRECTORY} 
+\item 
+enum \textbf{FILE\_\-MODIFY\_\-PERMISSIONS} 
+\item 
+enum \textbf{FILE\_\-EXISTS\_\-RENAME} 
+\item 
+enum \textbf{FILE\_\-EXISTS\_\-REPLACE} 
+\item 
+enum \textbf{FILE\_\-EXISTS\_\-ERROR} 
+\item 
+enum \hyperlink{group__file_g436af683744d1fefcd6da3d694633d19}{FILE\_\-STATUS\_\-TEMPORARY} 
+\item 
+enum \textbf{FILE\_\-STATUS\_\-PERMANENT} 
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{group__file_g1a305a4da1e6e5c6b1783ceffb66c340}{file\_\-create\_\-url} (\$path)
+\item 
+\hyperlink{group__file_g306337da81ebf20aa858167c0ca5a979}{file\_\-create\_\-path} (\$dest=0)
+\item 
+\hyperlink{group__file_g1cae9f6fea37182a71710f0209d586dd}{file\_\-check\_\-directory} (\&\$directory, \$mode=0, \$form\_\-item=NULL)
+\item 
+\hyperlink{group__file_gf6eee3f0c0c8bc7ebca388ed3032ba66}{file\_\-check\_\-path} (\&\$path)
+\item 
+\hyperlink{group__file_g1cdeffc5a199d73e83e1e1d27753f619}{file\_\-check\_\-location} (\$source, \$directory= '')
+\item 
+\hyperlink{group__file_g7b8986808579dfb242787b60c8b9838a}{file\_\-copy} (\&\$source, \$dest=0, \$replace=FILE\_\-EXISTS\_\-RENAME)
+\item 
+\hyperlink{group__file_g3136d98d6189607e6cba12aaff55c66d}{file\_\-destination} (\$destination, \$replace)
+\item 
+\hyperlink{group__file_gd1dc7d1fd2d90de77d53d4fb90fb16b3}{file\_\-move} (\&\$source, \$dest=0, \$replace=FILE\_\-EXISTS\_\-RENAME)
+\item 
+\hyperlink{group__file_ge5f97959982c78dfde2f806757c21368}{file\_\-munge\_\-filename} (\$filename, \$extensions, \$alerts=TRUE)
+\item 
+\hyperlink{group__file_gbda71018b91068bcd9fcd527a0493347}{file\_\-unmunge\_\-filename} (\$filename)
+\item 
+\hyperlink{group__file_g057bbfa5f89c4e4c75f0030e6f1f3809}{file\_\-create\_\-filename} (\$basename, \$directory)
+\item 
+\hyperlink{group__file_g58d648a7a057d1e014727c7958935af6}{file\_\-delete} (\$path)
+\item 
+\hyperlink{group__file_g1cffb160754bb1704ab2c773a7c1ffb4}{file\_\-space\_\-used} (\$uid=NULL)
+\item 
+\hyperlink{group__file_gfb10e016dd068cbc5915619f7ca9bf2c}{file\_\-save\_\-upload} (\$source, \$validators=array(), \$dest=FALSE, \$replace=FILE\_\-EXISTS\_\-RENAME)
+\item 
+\hyperlink{group__file_ga70aadd824b8e9b654597c4fb6b6c70a}{file\_\-validate\_\-name\_\-length} (\$file)
+\item 
+\hyperlink{group__file_g7f9c8080c156bba75bf4ad9812378a2c}{file\_\-validate\_\-extensions} (\$file, \$extensions)
+\item 
+\hyperlink{group__file_g69120c7a4e953069673539c6710575f4}{file\_\-validate\_\-size} (\$file, \$file\_\-limit=0, \$user\_\-limit=0)
+\item 
+\hyperlink{group__file_gbabb21f40d60d2cbd21953d0935abdb7}{file\_\-validate\_\-is\_\-image} (\&\$file)
+\item 
+\hyperlink{group__file_gb6e58a5341acf0be4c030887836f75f6}{file\_\-validate\_\-image\_\-resolution} (\&\$file, \$maximum\_\-dimensions=0, \$minimum\_\-dimensions=0)
+\item 
+\hyperlink{group__file_g0c3dd2f6c8734744740fd1f00f84c719}{file\_\-save\_\-data} (\$data, \$dest, \$replace=FILE\_\-EXISTS\_\-RENAME)
+\item 
+\hyperlink{group__file_g68a0e6728e47cf2f9d543a0002ff3f49}{file\_\-set\_\-status} (\&\$file, \$status)
+\item 
+\hyperlink{group__file_g33925d82d6b6057e73ae7853f1be7125}{file\_\-transfer} (\$source, \$headers)
+\item 
+\hyperlink{group__file_g91226299fab7e95a673f6461bbc19b02}{file\_\-download} ()
+\item 
+\hyperlink{group__file_g374c73d3fe4f45c2d64a5fb0b22cb118}{file\_\-scan\_\-directory} (\$dir, \$mask, \$nomask=array('.', '..', 'CVS'), \$callback=0, \$recurse=TRUE, \$key= 'filename', \$min\_\-depth=0, \$depth=0)
+\item 
+\hyperlink{group__file_g250e5cfba54030ab1e5f031608860e42}{file\_\-directory\_\-temp} ()
+\item 
+\hyperlink{group__file_gd516f499a62a2e22f95f4969262cd617}{file\_\-directory\_\-path} ()
+\item 
+\hyperlink{group__file_g7cf25e6a2532a1d022ee1c655f895380}{file\_\-upload\_\-max\_\-size} ()
+\item 
+\hyperlink{group__file_g27868c5159f7f001457c284123fe9311}{file\_\-get\_\-mimetype} (\$filename, \$mapping=NULL)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+API for handling file uploads and server file management. 

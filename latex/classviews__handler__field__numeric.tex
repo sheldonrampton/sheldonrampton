@@ -1,0 +1,89 @@
+\hypertarget{classviews__handler__field__numeric}{
+\section{views\_\-handler\_\-field\_\-numeric Class Reference}
+\label{classviews__handler__field__numeric}\index{views\_\-handler\_\-field\_\-numeric@{views\_\-handler\_\-field\_\-numeric}}
+}
+Inheritance diagram for views\_\-handler\_\-field\_\-numeric::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.15385cm]{classviews__handler__field__numeric}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__handler__field__numeric_ab74a55c8b3c564ee995e210a503947b}{option\_\-definition} ()
+\item 
+\hyperlink{classviews__handler__field__numeric_e6f81d1896ece64e9450ebc2d60da2fd}{options\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__handler__field__numeric_9c76aeef951c45385fd91a22e5e656aa}{render} (\$values)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Render a field as a numeric value
+
+Definition terms:\begin{itemize}
+\item float: If true this field contains a decimal value. If unset this field will be assumed to be integer. \end{itemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__handler__field__numeric_ab74a55c8b3c564ee995e210a503947b}{
+\index{views\_\-handler\_\-field\_\-numeric@{views\_\-handler\_\-field\_\-numeric}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!views_handler_field_numeric@{views\_\-handler\_\-field\_\-numeric}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-numeric::option\_\-definition ()}}
+\label{classviews__handler__field__numeric_ab74a55c8b3c564ee995e210a503947b}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented from \hyperlink{classviews__handler__field_64c69a8a3697603f8283405071c25b76}{views\_\-handler\_\-field}.
+
+Reimplemented in \hyperlink{classfilefield__meta__handler__field__bitrate_678b8ef891e4b4024d22e2b914e20b15}{filefield\_\-meta\_\-handler\_\-field\_\-bitrate}, \hyperlink{classfilefield__meta__handler__field__duration_3bf4ecb0dbaa680516e6e27306771dd4}{filefield\_\-meta\_\-handler\_\-field\_\-duration}, \hyperlink{classfilefield__meta__handler__field__samplerate_007d94cba3f5de5e8e0c78e8b3b1ef5a}{filefield\_\-meta\_\-handler\_\-field\_\-samplerate}, \hyperlink{classviews__handler__field__node__new__comments_eea2f5790d310ddcaba82c05593e82e7}{views\_\-handler\_\-field\_\-node\_\-new\_\-comments}, and \hyperlink{classviews__handler__field__search__score_ac88046a858aad74c178cd019b2f236b}{views\_\-handler\_\-field\_\-search\_\-score}.\hypertarget{classviews__handler__field__numeric_e6f81d1896ece64e9450ebc2d60da2fd}{
+\index{views\_\-handler\_\-field\_\-numeric@{views\_\-handler\_\-field\_\-numeric}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!views_handler_field_numeric@{views\_\-handler\_\-field\_\-numeric}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-numeric::options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler__field__numeric_e6f81d1896ece64e9450ebc2d60da2fd}
+
+
+Default options form that provides the label widget that all fields should have. 
+
+Reimplemented from \hyperlink{classviews__handler__field_0435d161922b7b4b84f02a2e79bb947a}{views\_\-handler\_\-field}.
+
+Reimplemented in \hyperlink{classfilefield__meta__handler__field__bitrate_74c60e6bbcee2bbaed721a9ed7eea05c}{filefield\_\-meta\_\-handler\_\-field\_\-bitrate}, \hyperlink{classfilefield__meta__handler__field__duration_4c26d6d5b7dad8dce469f82d9bc9c70c}{filefield\_\-meta\_\-handler\_\-field\_\-duration}, \hyperlink{classfilefield__meta__handler__field__samplerate_7ca6744f5ce24aea26f093027538d5ac}{filefield\_\-meta\_\-handler\_\-field\_\-samplerate}, \hyperlink{classviews__handler__field__node__new__comments_2a209d3acbaa47e781df96bc0ca85156}{views\_\-handler\_\-field\_\-node\_\-new\_\-comments}, and \hyperlink{classviews__handler__field__search__score_d3bc7dfcc4859869b75b371c33380abb}{views\_\-handler\_\-field\_\-search\_\-score}.\hypertarget{classviews__handler__field__numeric_9c76aeef951c45385fd91a22e5e656aa}{
+\index{views\_\-handler\_\-field\_\-numeric@{views\_\-handler\_\-field\_\-numeric}!render@{render}}
+\index{render@{render}!views_handler_field_numeric@{views\_\-handler\_\-field\_\-numeric}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-numeric::render (\$ {\em values})}}
+\label{classviews__handler__field__numeric_9c76aeef951c45385fd91a22e5e656aa}
+
+
+Render the field.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$values}]The values retrieved from the database. \end{description}
+\end{Desc}
+
+
+Reimplemented from \hyperlink{classviews__handler__field_82ff951c5e9ceb97b2eab86f880cbc1e}{views\_\-handler\_\-field}.
+
+Reimplemented in \hyperlink{classfilefield__meta__handler__field__bitrate_8b49b6ccdf60cd91f344b3d781cdd51c}{filefield\_\-meta\_\-handler\_\-field\_\-bitrate}, \hyperlink{classfilefield__meta__handler__field__duration_f511f413dd52df372f7dc396efcc08f2}{filefield\_\-meta\_\-handler\_\-field\_\-duration}, \hyperlink{classfilefield__meta__handler__field__samplerate_8dd9fcfcf352e9699f02deed43a60e2c}{filefield\_\-meta\_\-handler\_\-field\_\-samplerate}, \hyperlink{classviews__handler__field__node__new__comments_6b1e79531ba28eb32e71c7ff2129e82d}{views\_\-handler\_\-field\_\-node\_\-new\_\-comments}, and \hyperlink{classviews__handler__field__search__score_80a58d69b8a6c7f57da022e88f90e32d}{views\_\-handler\_\-field\_\-search\_\-score}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/handlers/views\_\-handler\_\-field\_\-numeric.inc\end{CompactItemize}

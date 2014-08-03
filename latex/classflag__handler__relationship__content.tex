@@ -1,0 +1,99 @@
+\hypertarget{classflag__handler__relationship__content}{
+\section{flag\_\-handler\_\-relationship\_\-content Class Reference}
+\label{classflag__handler__relationship__content}\index{flag\_\-handler\_\-relationship\_\-content@{flag\_\-handler\_\-relationship\_\-content}}
+}
+Inheritance diagram for flag\_\-handler\_\-relationship\_\-content::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4cm]{classflag__handler__relationship__content}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classflag__handler__relationship__content_54e7c1074698289ef34aa1cdd31db4bf}{option\_\-definition} ()
+\item 
+\hyperlink{classflag__handler__relationship__content_16476e401490907a6fadc9af5156d83f}{options\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classflag__handler__relationship__content_18742b6cac14664ca2880c9b3bf96feb}{options\_\-validate} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classflag__handler__relationship__content_d5dd884b0fe1765d43a268baf16057ef}{admin\_\-summary} ()
+\item 
+\hypertarget{classflag__handler__relationship__content_848ffaa48ca44731d46e860f22d73cb6}{
+\textbf{ui\_\-name} ()}
+\label{classflag__handler__relationship__content_848ffaa48ca44731d46e860f22d73cb6}
+
+\item 
+\hyperlink{classflag__handler__relationship__content_7fcb01763f0902dafd9f601c0bc1a612}{query} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Specialized relationship handler associating flags and content. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classflag__handler__relationship__content_d5dd884b0fe1765d43a268baf16057ef}{
+\index{flag\_\-handler\_\-relationship\_\-content@{flag\_\-handler\_\-relationship\_\-content}!admin\_\-summary@{admin\_\-summary}}
+\index{admin\_\-summary@{admin\_\-summary}!flag_handler_relationship_content@{flag\_\-handler\_\-relationship\_\-content}}
+\subsubsection[{admin\_\-summary}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-handler\_\-relationship\_\-content::admin\_\-summary ()}}
+\label{classflag__handler__relationship__content_d5dd884b0fe1765d43a268baf16057ef}
+
+
+Provide text for the administrative summary 
+
+Reimplemented from \hyperlink{classviews__handler_27a5cb35f3f17322957730a95b6be11e}{views\_\-handler}.\hypertarget{classflag__handler__relationship__content_54e7c1074698289ef34aa1cdd31db4bf}{
+\index{flag\_\-handler\_\-relationship\_\-content@{flag\_\-handler\_\-relationship\_\-content}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!flag_handler_relationship_content@{flag\_\-handler\_\-relationship\_\-content}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-handler\_\-relationship\_\-content::option\_\-definition ()}}
+\label{classflag__handler__relationship__content_54e7c1074698289ef34aa1cdd31db4bf}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented from \hyperlink{classviews__handler__relationship_7e7b7a0056836612aa50a60575a3d549}{views\_\-handler\_\-relationship}.\hypertarget{classflag__handler__relationship__content_16476e401490907a6fadc9af5156d83f}{
+\index{flag\_\-handler\_\-relationship\_\-content@{flag\_\-handler\_\-relationship\_\-content}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!flag_handler_relationship_content@{flag\_\-handler\_\-relationship\_\-content}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-handler\_\-relationship\_\-content::options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classflag__handler__relationship__content_16476e401490907a6fadc9af5156d83f}
+
+
+Default options form that provides the label widget that all fields should have. 
+
+Reimplemented from \hyperlink{classviews__handler__relationship_08cc3f5947964d936b5e88d198f82c30}{views\_\-handler\_\-relationship}.\hypertarget{classflag__handler__relationship__content_18742b6cac14664ca2880c9b3bf96feb}{
+\index{flag\_\-handler\_\-relationship\_\-content@{flag\_\-handler\_\-relationship\_\-content}!options\_\-validate@{options\_\-validate}}
+\index{options\_\-validate@{options\_\-validate}!flag_handler_relationship_content@{flag\_\-handler\_\-relationship\_\-content}}
+\subsubsection[{options\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-handler\_\-relationship\_\-content::options\_\-validate (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classflag__handler__relationship__content_18742b6cac14664ca2880c9b3bf96feb}
+
+
+Validate the options form. 
+
+Reimplemented from \hyperlink{classviews__handler_48a7b56e8952d9fcf56e2dec7794bb4e}{views\_\-handler}.\hypertarget{classflag__handler__relationship__content_7fcb01763f0902dafd9f601c0bc1a612}{
+\index{flag\_\-handler\_\-relationship\_\-content@{flag\_\-handler\_\-relationship\_\-content}!query@{query}}
+\index{query@{query}!flag_handler_relationship_content@{flag\_\-handler\_\-relationship\_\-content}}
+\subsubsection[{query}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-handler\_\-relationship\_\-content::query ()}}
+\label{classflag__handler__relationship__content_7fcb01763f0902dafd9f601c0bc1a612}
+
+
+Called to implement a relationship in a query. 
+
+Reimplemented from \hyperlink{classviews__handler__relationship_7dc0b6371807dbf06efa594cb52b3348}{views\_\-handler\_\-relationship}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/flag/includes/\hyperlink{flag__handler__relationships_8inc}{flag\_\-handler\_\-relationships.inc}\end{CompactItemize}

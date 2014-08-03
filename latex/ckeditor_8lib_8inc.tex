@@ -1,0 +1,147 @@
+\hypertarget{ckeditor_8lib_8inc}{
+\section{sites/all/modules/contrib/ckeditor/includes/ckeditor.lib.inc File Reference}
+\label{ckeditor_8lib_8inc}\index{sites/all/modules/contrib/ckeditor/includes/ckeditor.lib.inc@{sites/all/modules/contrib/ckeditor/includes/ckeditor.lib.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{ckeditor_8lib_8inc_2b8784ee84340eb14aa10e274f660fa6}{ckeditor\_\-get\_\-document\_\-root\_\-full\_\-path} ()
+\item 
+\hyperlink{ckeditor_8lib_8inc_7514d6bcd3e03a13ed52165fabe52b7b}{ckeditor\_\-resolve\_\-url} (\$path)
+\item 
+\hypertarget{ckeditor_8lib_8inc_5f672801bf692cf2a3d6262b747fc7b2}{
+\textbf{ckeditor\_\-load\_\-toolbar\_\-options} ()}
+\label{ckeditor_8lib_8inc_5f672801bf692cf2a3d6262b747fc7b2}
+
+\item 
+\hypertarget{ckeditor_8lib_8inc_8d8983a3d80ff70e5e608bb383648d65}{
+\textbf{ckeditor\_\-load\_\-skin\_\-options} ()}
+\label{ckeditor_8lib_8inc_8d8983a3d80ff70e5e608bb383648d65}
+
+\item 
+\hypertarget{ckeditor_8lib_8inc_75035a09802d9960a9c2428ee5417ee4}{
+\textbf{ckeditor\_\-load\_\-lang\_\-options} ()}
+\label{ckeditor_8lib_8inc_75035a09802d9960a9c2428ee5417ee4}
+
+\item 
+\hypertarget{ckeditor_8lib_8inc_cf0f078d0c407310a91c1a11c44826fb}{
+\textbf{ckeditor\_\-user\_\-get\_\-setting} (\$user, \$profile, \$setting)}
+\label{ckeditor_8lib_8inc_cf0f078d0c407310a91c1a11c44826fb}
+
+\item 
+\hypertarget{ckeditor_8lib_8inc_e46ef41a87e218b4eb67486ea335a84c}{
+\textbf{ckeditor\_\-user\_\-get\_\-profile} (\$user, \$element\_\-id=NULL)}
+\label{ckeditor_8lib_8inc_e46ef41a87e218b4eb67486ea335a84c}
+
+\item 
+\hyperlink{ckeditor_8lib_8inc_e4ce1fe78d83986dc783082a58964b7f}{ckeditor\_\-sorted\_\-roles} (\$clear=FALSE)
+\item 
+\hyperlink{ckeditor_8lib_8inc_5d7f963bc08132ffd4cb55061e4e8a21}{ckeditor\_\-is\_\-enabled} (\$excl\_\-mode, \$excl\_\-regex, \$element\_\-id, \$get\_\-q)
+\item 
+\hypertarget{ckeditor_8lib_8inc_de573f32c1840010e30f97e196ccb614}{
+\textbf{\_\-ckeditor\_\-script\_\-path} ()}
+\label{ckeditor_8lib_8inc_de573f32c1840010e30f97e196ccb614}
+
+\item 
+\hyperlink{ckeditor_8lib_8inc_cdfac606bf0b63be4bbdd3e0fd985eda}{\_\-ckeditor\_\-requirements\_\-isinstalled} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classCKEditor}{CKEditor} - The text editor for Internet - \href{http://ckeditor.com}{\tt http://ckeditor.com} Copyright (c) 2003-2009, CKSource - Frederico Knabben. All rights reserved.
+
+== BEGIN LICENSE ==
+
+Licensed under the terms of any of the following licenses at your choice:
+
+\begin{itemize}
+\item GNU General Public License Version 2 or later (the \char`\"{}GPL\char`\"{}) \href{http://www.gnu.org/licenses/gpl.html}{\tt http://www.gnu.org/licenses/gpl.html}\end{itemize}
+
+
+\begin{itemize}
+\item GNU Lesser General Public License Version 2.1 or later (the \char`\"{}LGPL\char`\"{}) \href{http://www.gnu.org/licenses/lgpl.html}{\tt http://www.gnu.org/licenses/lgpl.html}\end{itemize}
+
+
+\begin{itemize}
+\item Mozilla Public License Version 1.1 or later (the \char`\"{}MPL\char`\"{}) \href{http://www.mozilla.org/MPL/MPL-1.1.html}{\tt http://www.mozilla.org/MPL/MPL-1.1.html}\end{itemize}
+
+
+== END LICENSE ==
+
+\hyperlink{classCKEditor}{CKEditor} Module for Drupal 6.x
+
+This module allows Drupal to replace textarea fields with \hyperlink{classCKEditor}{CKEditor}.
+
+This HTML text editor brings to the web many of the powerful functionalities of known desktop editors like Word. It's really lightweight and doesn't require any kind of installation on the client computer. 
+
+\subsection{Function Documentation}
+\hypertarget{ckeditor_8lib_8inc_cdfac606bf0b63be4bbdd3e0fd985eda}{
+\index{ckeditor.lib.inc@{ckeditor.lib.inc}!\_\-ckeditor\_\-requirements\_\-isinstalled@{\_\-ckeditor\_\-requirements\_\-isinstalled}}
+\index{\_\-ckeditor\_\-requirements\_\-isinstalled@{\_\-ckeditor\_\-requirements\_\-isinstalled}!ckeditor.lib.inc@{ckeditor.lib.inc}}
+\subsubsection[{\_\-ckeditor\_\-requirements\_\-isinstalled}]{\setlength{\rightskip}{0pt plus 5cm}\_\-ckeditor\_\-requirements\_\-isinstalled ()}}
+\label{ckeditor_8lib_8inc_cdfac606bf0b63be4bbdd3e0fd985eda}
+
+
+Determines whether the \hyperlink{classCKEditor}{CKEditor} sources are present
+
+It checks if ckeditor.js is present.
+
+This function is used by ckeditor\_\-requirements()
+
+\begin{Desc}
+\item[Returns:]boolean True if \hyperlink{classCKEditor}{CKEditor} is installed \end{Desc}
+\hypertarget{ckeditor_8lib_8inc_2b8784ee84340eb14aa10e274f660fa6}{
+\index{ckeditor.lib.inc@{ckeditor.lib.inc}!ckeditor\_\-get\_\-document\_\-root\_\-full\_\-path@{ckeditor\_\-get\_\-document\_\-root\_\-full\_\-path}}
+\index{ckeditor\_\-get\_\-document\_\-root\_\-full\_\-path@{ckeditor\_\-get\_\-document\_\-root\_\-full\_\-path}!ckeditor.lib.inc@{ckeditor.lib.inc}}
+\subsubsection[{ckeditor\_\-get\_\-document\_\-root\_\-full\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}ckeditor\_\-get\_\-document\_\-root\_\-full\_\-path ()}}
+\label{ckeditor_8lib_8inc_2b8784ee84340eb14aa10e274f660fa6}
+
+
+Guess the absolute server path to the document root Usually it should return \$\_\-SERVER\mbox{[}'DOCUMENT\_\-ROOT'\mbox{]}
+
+\begin{Desc}
+\item[\hyperlink{todo__todo000003}{Todo}]Improve me!! Returns absolute path or false on failure\end{Desc}
+\begin{Desc}
+\item[Returns:]string$|$boolean \end{Desc}
+\hypertarget{ckeditor_8lib_8inc_5d7f963bc08132ffd4cb55061e4e8a21}{
+\index{ckeditor.lib.inc@{ckeditor.lib.inc}!ckeditor\_\-is\_\-enabled@{ckeditor\_\-is\_\-enabled}}
+\index{ckeditor\_\-is\_\-enabled@{ckeditor\_\-is\_\-enabled}!ckeditor.lib.inc@{ckeditor.lib.inc}}
+\subsubsection[{ckeditor\_\-is\_\-enabled}]{\setlength{\rightskip}{0pt plus 5cm}ckeditor\_\-is\_\-enabled (\$ {\em excl\_\-mode}, \/  \$ {\em excl\_\-regex}, \/  \$ {\em element\_\-id}, \/  \$ {\em get\_\-q})}}
+\label{ckeditor_8lib_8inc_5d7f963bc08132ffd4cb55061e4e8a21}
+
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em int}]\$excl\_\-mode 1/include, exclude otherwise \item[{\em string}]\$excl\_\-regex paths (drupal paths with ids attached) \item[{\em string}]\$element\_\-id current ID \item[{\em string}]\$get\_\-q current path\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]boolean returns true if \hyperlink{classCKEditor}{CKEditor} is enabled \end{Desc}
+\hypertarget{ckeditor_8lib_8inc_7514d6bcd3e03a13ed52165fabe52b7b}{
+\index{ckeditor.lib.inc@{ckeditor.lib.inc}!ckeditor\_\-resolve\_\-url@{ckeditor\_\-resolve\_\-url}}
+\index{ckeditor\_\-resolve\_\-url@{ckeditor\_\-resolve\_\-url}!ckeditor.lib.inc@{ckeditor.lib.inc}}
+\subsubsection[{ckeditor\_\-resolve\_\-url}]{\setlength{\rightskip}{0pt plus 5cm}ckeditor\_\-resolve\_\-url (\$ {\em path})}}
+\label{ckeditor_8lib_8inc_7514d6bcd3e03a13ed52165fabe52b7b}
+
+
+Emulates the asp Server.mapPath function. Given an url path return the physical directory that it corresponds to.
+
+Returns absolute path or false on failure
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em string}]\$path \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]
+
+string$|$boolean \end{Desc}
+\hypertarget{ckeditor_8lib_8inc_e4ce1fe78d83986dc783082a58964b7f}{
+\index{ckeditor.lib.inc@{ckeditor.lib.inc}!ckeditor\_\-sorted\_\-roles@{ckeditor\_\-sorted\_\-roles}}
+\index{ckeditor\_\-sorted\_\-roles@{ckeditor\_\-sorted\_\-roles}!ckeditor.lib.inc@{ckeditor.lib.inc}}
+\subsubsection[{ckeditor\_\-sorted\_\-roles}]{\setlength{\rightskip}{0pt plus 5cm}ckeditor\_\-sorted\_\-roles (\$ {\em clear} = {\tt FALSE})}}
+\label{ckeditor_8lib_8inc_e4ce1fe78d83986dc783082a58964b7f}
+
+
+sort roles according to precedence settings. previously sorted roles are followed by latest added roles. 

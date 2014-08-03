@@ -1,0 +1,36 @@
+\hypertarget{group__views__join__handlers}{
+\section{Views' join handlers}
+\label{group__views__join__handlers}\index{Views' join handlers@{Views' join handlers}}
+}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classviews__join}{views\_\-join}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Handlers to tell Views how to join tables together.
+
+Here is how you do complex joins:
+
+
+
+\begin{Code}\begin{verbatim} class views_join_complex extends views_join {
+   // PHP 4 doesn't call constructors of the base class automatically from a
+   // constructor of a derived class. It is your responsibility to propagate
+   // the call to constructors upstream where appropriate.
+   function construct($table, $left_table, $left_field, $field, $extra = array(), $type = 'LEFT') {
+     parent::construct($table, $left_table, $left_field, $field, $extra, $type);
+   }
+
+   function join($table, &$query) {
+     $output = parent::join($table, $query);
+   }
+   $output .= "AND foo.bar = baz.boing";
+   return $output;
+ }
+\end{verbatim}
+\end{Code}
+
+ 

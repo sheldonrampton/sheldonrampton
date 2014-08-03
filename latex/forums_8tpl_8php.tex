@@ -1,0 +1,35 @@
+\hypertarget{forums_8tpl_8php}{
+\section{modules/forum/forums.tpl.php File Reference}
+\label{forums_8tpl_8php}\index{modules/forum/forums.tpl.php@{modules/forum/forums.tpl.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hypertarget{forums_8tpl_8php_82a18468a5aa086447f068ce0eae2f17}{
+print \textbf{\$forums}}
+\label{forums_8tpl_8php_82a18468a5aa086447f068ce0eae2f17}
+
+\item 
+\hypertarget{forums_8tpl_8php_99ed588a374cf92f1cedee8834248f61}{
+print \textbf{\$topics}}
+\label{forums_8tpl_8php_99ed588a374cf92f1cedee8834248f61}
+
+\item 
+\hypertarget{forums_8tpl_8php_82cd33ca97ff99f2fcc5e9c81d65251b}{
+\textbf{endif}}
+\label{forums_8tpl_8php_82cd33ca97ff99f2fcc5e9c81d65251b}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Default theme implementation to display a forum which may contain forum containers as well as forum topics.
+
+Variables available:\begin{itemize}
+\item \$links: An array of links that allow a user to post new forum topics. It may also contain a string telling a user they must log in in order to post.\item \$forums: The forums to display (as processed by \hyperlink{forum-list_8tpl_8php}{forum-list.tpl.php})\item \$topics: The topics to display (as processed by \hyperlink{forum-topic-list_8tpl_8php}{forum-topic-list.tpl.php})\item \$forums\_\-defined: A flag to indicate that the forums are configured.\end{itemize}
+
+
+\begin{Desc}
+\item[See also:]template\_\-preprocess\_\-forums() 
+
+theme\_\-forums() \end{Desc}

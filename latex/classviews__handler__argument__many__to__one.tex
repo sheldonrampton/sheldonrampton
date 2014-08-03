@@ -1,0 +1,157 @@
+\hypertarget{classviews__handler__argument__many__to__one}{
+\section{views\_\-handler\_\-argument\_\-many\_\-to\_\-one Class Reference}
+\label{classviews__handler__argument__many__to__one}\index{views\_\-handler\_\-argument\_\-many\_\-to\_\-one@{views\_\-handler\_\-argument\_\-many\_\-to\_\-one}}
+}
+Inheritance diagram for views\_\-handler\_\-argument\_\-many\_\-to\_\-one::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5cm]{classviews__handler__argument__many__to__one}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classviews__handler__argument__many__to__one_ec928c8a20acec1623938ab177dbfc8f}{
+\textbf{init} (\&\$\hyperlink{classview}{view}, \&\$options)}
+\label{classviews__handler__argument__many__to__one_ec928c8a20acec1623938ab177dbfc8f}
+
+\item 
+\hyperlink{classviews__handler__argument__many__to__one_4c28692f87058983cc6a4a4d018d710e}{option\_\-definition} ()
+\item 
+\hyperlink{classviews__handler__argument__many__to__one_dd3ed7d59f17d79f48ef8f47e049cb92}{options\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__handler__argument__many__to__one_f6195d516010fbd9cda241fa450a748a}{ensure\_\-my\_\-table} ()
+\item 
+\hyperlink{classviews__handler__argument__many__to__one_5386934f090273137694ea9d1de32d04}{query} ()
+\item 
+\hyperlink{classviews__handler__argument__many__to__one_624565fe59482f017f2f7935037d9297}{title} ()
+\item 
+\hyperlink{classviews__handler__argument__many__to__one_320b34f2327cb15467353d2534d71ddd}{summary\_\-query} ()
+\item 
+\hyperlink{classviews__handler__argument__many__to__one_94fb0499ff1078d0423de06d33e898a5}{summary\_\-argument} (\$data)
+\item 
+\hyperlink{classviews__handler__argument__many__to__one_0b758f84ee6b9a473313ec92714b06c7}{title\_\-query} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+An argument handler for use in fields that have a many to one relationship with the table(s) to the left. This adds a bunch of options that are reasonably common with this type of relationship. Definition terms:\begin{itemize}
+\item numeric: If true, the field will be considered numeric. Probably should always be set TRUE as \hyperlink{classviews__handler__argument__string}{views\_\-handler\_\-argument\_\-string} has many to one capabilities.\item zero is null: If true, a 0 will be handled as empty, so for example a default argument can be provided or a summary can be shown. \end{itemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__handler__argument__many__to__one_f6195d516010fbd9cda241fa450a748a}{
+\index{views\_\-handler\_\-argument\_\-many\_\-to\_\-one@{views\_\-handler\_\-argument\_\-many\_\-to\_\-one}!ensure\_\-my\_\-table@{ensure\_\-my\_\-table}}
+\index{ensure\_\-my\_\-table@{ensure\_\-my\_\-table}!views_handler_argument_many_to_one@{views\_\-handler\_\-argument\_\-many\_\-to\_\-one}}
+\subsubsection[{ensure\_\-my\_\-table}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-argument\_\-many\_\-to\_\-one::ensure\_\-my\_\-table ()}}
+\label{classviews__handler__argument__many__to__one_f6195d516010fbd9cda241fa450a748a}
+
+
+Override ensure\_\-my\_\-table so we can control how this joins in. The operator actually has influence over joining. 
+
+Reimplemented from \hyperlink{classviews__handler_947f21ef0f21a77f4d103af4702b3600}{views\_\-handler}.\hypertarget{classviews__handler__argument__many__to__one_4c28692f87058983cc6a4a4d018d710e}{
+\index{views\_\-handler\_\-argument\_\-many\_\-to\_\-one@{views\_\-handler\_\-argument\_\-many\_\-to\_\-one}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!views_handler_argument_many_to_one@{views\_\-handler\_\-argument\_\-many\_\-to\_\-one}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-argument\_\-many\_\-to\_\-one::option\_\-definition ()}}
+\label{classviews__handler__argument__many__to__one_4c28692f87058983cc6a4a4d018d710e}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented from \hyperlink{classviews__handler__argument_117ab20a53624e082e6e32a22d4521cc}{views\_\-handler\_\-argument}.
+
+Reimplemented in \hyperlink{classviews__handler__argument__term__node__tid_aa442cbd37f901be13e6db17f61e8d02}{views\_\-handler\_\-argument\_\-term\_\-node\_\-tid}.\hypertarget{classviews__handler__argument__many__to__one_dd3ed7d59f17d79f48ef8f47e049cb92}{
+\index{views\_\-handler\_\-argument\_\-many\_\-to\_\-one@{views\_\-handler\_\-argument\_\-many\_\-to\_\-one}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!views_handler_argument_many_to_one@{views\_\-handler\_\-argument\_\-many\_\-to\_\-one}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-argument\_\-many\_\-to\_\-one::options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler__argument__many__to__one_dd3ed7d59f17d79f48ef8f47e049cb92}
+
+
+Provide a form for setting options. 
+
+Reimplemented from \hyperlink{classviews__handler__argument_44f015a0d527983ae6df2689f66b2c24}{views\_\-handler\_\-argument}.
+
+Reimplemented in \hyperlink{classviews__handler__argument__term__node__tid_f00552a1378333434154989c051d0e98}{views\_\-handler\_\-argument\_\-term\_\-node\_\-tid}.\hypertarget{classviews__handler__argument__many__to__one_5386934f090273137694ea9d1de32d04}{
+\index{views\_\-handler\_\-argument\_\-many\_\-to\_\-one@{views\_\-handler\_\-argument\_\-many\_\-to\_\-one}!query@{query}}
+\index{query@{query}!views_handler_argument_many_to_one@{views\_\-handler\_\-argument\_\-many\_\-to\_\-one}}
+\subsubsection[{query}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-argument\_\-many\_\-to\_\-one::query ()}}
+\label{classviews__handler__argument__many__to__one_5386934f090273137694ea9d1de32d04}
+
+
+Set up the query for this argument.
+
+The argument sent may be found at \$this-$>$argument. 
+
+Reimplemented from \hyperlink{classviews__handler__argument_c4b0ce6704a10f515b2aea2f9e790994}{views\_\-handler\_\-argument}.\hypertarget{classviews__handler__argument__many__to__one_94fb0499ff1078d0423de06d33e898a5}{
+\index{views\_\-handler\_\-argument\_\-many\_\-to\_\-one@{views\_\-handler\_\-argument\_\-many\_\-to\_\-one}!summary\_\-argument@{summary\_\-argument}}
+\index{summary\_\-argument@{summary\_\-argument}!views_handler_argument_many_to_one@{views\_\-handler\_\-argument\_\-many\_\-to\_\-one}}
+\subsubsection[{summary\_\-argument}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-argument\_\-many\_\-to\_\-one::summary\_\-argument (\$ {\em data})}}
+\label{classviews__handler__argument__many__to__one_94fb0499ff1078d0423de06d33e898a5}
+
+
+Provide the argument to use to link from the summary to the next level; this will be called once per row of a summary, and used as part of \$view-$>$get\_\-url().
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$data}]The query results for the row. \end{description}
+\end{Desc}
+
+
+Reimplemented from \hyperlink{classviews__handler__argument_ad03acefdb44288d7e6c7793bc33f66c}{views\_\-handler\_\-argument}.\hypertarget{classviews__handler__argument__many__to__one_320b34f2327cb15467353d2534d71ddd}{
+\index{views\_\-handler\_\-argument\_\-many\_\-to\_\-one@{views\_\-handler\_\-argument\_\-many\_\-to\_\-one}!summary\_\-query@{summary\_\-query}}
+\index{summary\_\-query@{summary\_\-query}!views_handler_argument_many_to_one@{views\_\-handler\_\-argument\_\-many\_\-to\_\-one}}
+\subsubsection[{summary\_\-query}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-argument\_\-many\_\-to\_\-one::summary\_\-query ()}}
+\label{classviews__handler__argument__many__to__one_320b34f2327cb15467353d2534d71ddd}
+
+
+Build the info for the summary query.
+
+This must:\begin{itemize}
+\item add\_\-groupby: group on this field in order to create summaries.\item add\_\-field: add a 'num\_\-nodes' field for the count. Usually it will be a count on \$view-$>$base\_\-field\item set\_\-count\_\-field: Reset the count field so we get the right paging.\end{itemize}
+
+
+\begin{Desc}
+\item[Returns:]The alias used to get the number of records (count) for this entry. \end{Desc}
+
+
+Reimplemented from \hyperlink{classviews__handler__argument_1dd6cc301b1c7c1c6829c59eb641a883}{views\_\-handler\_\-argument}.\hypertarget{classviews__handler__argument__many__to__one_624565fe59482f017f2f7935037d9297}{
+\index{views\_\-handler\_\-argument\_\-many\_\-to\_\-one@{views\_\-handler\_\-argument\_\-many\_\-to\_\-one}!title@{title}}
+\index{title@{title}!views_handler_argument_many_to_one@{views\_\-handler\_\-argument\_\-many\_\-to\_\-one}}
+\subsubsection[{title}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-argument\_\-many\_\-to\_\-one::title ()}}
+\label{classviews__handler__argument__many__to__one_624565fe59482f017f2f7935037d9297}
+
+
+Get the title this argument will assign the \hyperlink{classview}{view}, given the argument.
+
+This usually needs to be overridden to provide a proper title. 
+
+Reimplemented from \hyperlink{classviews__handler__argument_76181ac24e7be4a09aaafc1fa5f15ea1}{views\_\-handler\_\-argument}.\hypertarget{classviews__handler__argument__many__to__one_0b758f84ee6b9a473313ec92714b06c7}{
+\index{views\_\-handler\_\-argument\_\-many\_\-to\_\-one@{views\_\-handler\_\-argument\_\-many\_\-to\_\-one}!title\_\-query@{title\_\-query}}
+\index{title\_\-query@{title\_\-query}!views_handler_argument_many_to_one@{views\_\-handler\_\-argument\_\-many\_\-to\_\-one}}
+\subsubsection[{title\_\-query}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-argument\_\-many\_\-to\_\-one::title\_\-query ()}}
+\label{classviews__handler__argument__many__to__one_0b758f84ee6b9a473313ec92714b06c7}
+
+
+Override for specific title lookups. 
+
+Reimplemented in \hyperlink{classviews__handler__argument__term__node__tid_9f858ee5c343f6a14b87a320316710f0}{views\_\-handler\_\-argument\_\-term\_\-node\_\-tid}, and \hyperlink{classviews__handler__argument__users__roles__rid_0cc229ef972f8a7d9184b45443271992}{views\_\-handler\_\-argument\_\-users\_\-roles\_\-rid}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/handlers/views\_\-handler\_\-argument\_\-many\_\-to\_\-one.inc\end{CompactItemize}

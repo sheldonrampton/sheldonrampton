@@ -1,0 +1,166 @@
+\hypertarget{group__batch}{
+\section{Batch operations}
+\label{group__batch}\index{Batch operations@{Batch operations}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{group__batch_g9ff3f18b3bdd1d62ab7ac681a22a7170}{batch\_\-set} (\$batch\_\-definition)
+\item 
+\hyperlink{group__batch_g35560f242c9a5da0d136e652d4d1da47}{batch\_\-process} (\$redirect=NULL, \$url=NULL)
+\item 
+\& \hyperlink{group__batch_g971f5246c6e8e536d0b20529fb2e2638}{batch\_\-get} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+End of \char`\"{}defgroup form\_\-api\char`\"{}.
+
+Functions allowing forms processing to be spread out over several page requests, thus ensuring that the processing does not get interrupted because of a PHP timeout, while allowing the user to receive feedback on the progress of the ongoing operations.
+
+The API is primarily designed to integrate nicely with the Form API workflow, but can also be used by non-FAPI scripts (like \hyperlink{update_8php}{update.php}) or even simple page callbacks (which should probably be used sparingly).
+
+Example: 
+
+\begin{Code}\begin{verbatim} $batch = array(
+   'title' => t('Exporting'),
+   'operations' => array(
+     array('my_function_1', array($account->uid, 'story')),
+     array('my_function_2', array()),
+   ),
+   'finished' => 'my_finished_callback',
+   'file' => 'path_to_file_containing_myfunctions',
+ );
+ batch_set($batch);
+ // only needed if not inside a form _submit handler :
+ batch_process();
+\end{verbatim}
+\end{Code}
+
+
+
+Note: if the batch 'title', 'init\_\-message', 'progress\_\-message', or 'error\_\-message' could contain any user input, it is the responsibility of the code calling \hyperlink{group__batch_g9ff3f18b3bdd1d62ab7ac681a22a7170}{batch\_\-set()} to sanitize them first with a function like \hyperlink{bootstrap_8inc_76fc67a30fd8d75ddd80565e6e65a13d}{check\_\-plain()} or filter\_\-xss().
+
+Sample batch operations: 
+
+\begin{Code}\begin{verbatim} // Simple and artificial: load a node of a given type for a given user
+ function my_function_1($uid, $type, &$context) {
+   // The $context array gathers batch context information about the execution (read),
+   // as well as 'return values' for the current operation (write)
+   // The following keys are provided :
+   // 'results' (read / write): The array of results gathered so far by
+   //   the batch processing, for the current operation to append its own.
+   // 'message' (write): A text message displayed in the progress page.
+   // The following keys allow for multi-step operations :
+   // 'sandbox' (read / write): An array that can be freely used to
+   //   store persistent data between iterations. It is recommended to
+   //   use this instead of $_SESSION, which is unsafe if the user
+   //   continues browsing in a separate window while the batch is processing.
+   // 'finished' (write): A float number between 0 and 1 informing
+   //   the processing engine of the completion level for the operation.
+   //   1 (or no value explicitly set) means the operation is finished
+   //   and the batch processing can continue to the next operation.
+
+   $node = node_load(array('uid' => $uid, 'type' => $type));
+   $context['results'][] = $node->nid .' : '. $node->title;
+   $context['message'] = $node->title;
+ }
+
+ // More advanced example: multi-step operation - load all nodes, five by five
+ function my_function_2(&$context) {
+   if (empty($context['sandbox'])) {
+     $context['sandbox']['progress'] = 0;
+     $context['sandbox']['current_node'] = 0;
+     $context['sandbox']['max'] = db_result(db_query('SELECT COUNT(DISTINCT nid) FROM {node}'));
+   }
+   $limit = 5;
+   $result = db_query_range("SELECT nid FROM {node} WHERE nid > %d ORDER BY nid ASC", $context['sandbox']['current_node'], 0, $limit);
+   while ($row = db_fetch_array($result)) {
+     $node = node_load($row['nid'], NULL, TRUE);
+     $context['results'][] = $node->nid .' : '. $node->title;
+     $context['sandbox']['progress']++;
+     $context['sandbox']['current_node'] = $node->nid;
+     $context['message'] = $node->title;
+   }
+   if ($context['sandbox']['progress'] != $context['sandbox']['max']) {
+     $context['finished'] = $context['sandbox']['progress'] / $context['sandbox']['max'];
+   }
+ }
+\end{verbatim}
+\end{Code}
+
+
+
+Sample 'finished' callback: 
+
+\begin{Code}\begin{verbatim} function batch_test_finished($success, $results, $operations) {
+   if ($success) {
+     $message = format_plural(count($results), 'One post processed.', '@count posts processed.');
+   }
+   else {
+     $message = t('Finished with an error.');
+   }
+   drupal_set_message($message);
+   // Providing data for the redirected page is done through $_SESSION.
+   foreach ($results as $result) {
+     $items[] = t('Loaded node %title.', array('%title' => $result));
+   }
+   $_SESSION['my_batch_results'] = $items;
+ }
+\end{verbatim}
+\end{Code}
+
+ 
+
+\subsection{Function Documentation}
+\hypertarget{group__batch_g971f5246c6e8e536d0b20529fb2e2638}{
+\index{batch@{batch}!batch\_\-get@{batch\_\-get}}
+\index{batch\_\-get@{batch\_\-get}!batch@{batch}}
+\subsubsection[{batch\_\-get}]{\setlength{\rightskip}{0pt plus 5cm}\& batch\_\-get ()}}
+\label{group__batch_g971f5246c6e8e536d0b20529fb2e2638}
+
+
+Retrieves the current batch. \hypertarget{group__batch_g35560f242c9a5da0d136e652d4d1da47}{
+\index{batch@{batch}!batch\_\-process@{batch\_\-process}}
+\index{batch\_\-process@{batch\_\-process}!batch@{batch}}
+\subsubsection[{batch\_\-process}]{\setlength{\rightskip}{0pt plus 5cm}batch\_\-process (\$ {\em redirect} = {\tt NULL}, \/  \$ {\em url} = {\tt NULL})}}
+\label{group__batch_g35560f242c9a5da0d136e652d4d1da47}
+
+
+Processes the batch.
+
+Unless the batch has been marked with 'progressive' = FALSE, the function issues a drupal\_\-goto and thus ends page execution.
+
+This function is not needed in form submit handlers; Form API takes care of batches that were set during form submission.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$redirect}](optional) Path to redirect to when the batch has finished processing. \item[{\em \$url}](optional - should only be used for separate scripts like \hyperlink{update_8php}{update.php}) URL of the batch processing page. \end{description}
+\end{Desc}
+\hypertarget{group__batch_g9ff3f18b3bdd1d62ab7ac681a22a7170}{
+\index{batch@{batch}!batch\_\-set@{batch\_\-set}}
+\index{batch\_\-set@{batch\_\-set}!batch@{batch}}
+\subsubsection[{batch\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}batch\_\-set (\$ {\em batch\_\-definition})}}
+\label{group__batch_g9ff3f18b3bdd1d62ab7ac681a22a7170}
+
+
+Opens a new batch.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$batch}]An array defining the batch. The following keys can be used -- only 'operations' is required, and batch\_\-init() provides default values for the messages.\begin{itemize}
+\item 'operations': Array of function calls to be performed. Example: 
+
+\begin{Code}\begin{verbatim}     array(
+       array('my_function_1', array($arg1)),
+       array('my_function_2', array($arg2_1, $arg2_2)),
+     )
+\end{verbatim}
+\end{Code}
+
+\item 'title': Title for the progress page. Only safe strings should be passed. Defaults to t('Processing').\item 'init\_\-message': Message displayed while the processing is initialized. Defaults to t('Initializing.').\item 'progress\_\-message': Message displayed while processing the batch. Available placeholders are , , , ,  and . Defaults to t('Completed  of .').\item 'error\_\-message': Message displayed if an error occurred while processing the batch. Defaults to t('An error has occurred.').\item 'finished': Name of a function to be executed after the batch has completed. This should be used to perform any result massaging that may be needed, and possibly save data in \$\_\-SESSION for display after final page redirection.\item 'file': Path to the file containing the definitions of the 'operations' and 'finished' functions, for instance if they don't reside in the main .module file. The path should be relative to \hyperlink{common_8inc_e227697e9c239f09fd7e36f71afde771}{base\_\-path()}, and thus should be built using \hyperlink{common_8inc_e3bbe8f97bf07bb0eaf4580c98f9bf94}{drupal\_\-get\_\-path()}.\end{itemize}
+\end{description}
+\end{Desc}
+Operations are added as new batch sets. Batch sets are used to ensure clean code independence, ensuring that several batches submitted by different parts of the code (core / contrib modules) can be processed correctly while not interfering or having to cope with each other. Each batch set gets to specify his own UI messages, operates on its own set of operations and results, and triggers its own 'finished' callback. Batch sets are processed sequentially, with the progress bar starting fresh for every new set. 

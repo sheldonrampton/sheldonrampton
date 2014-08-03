@@ -1,0 +1,64 @@
+\hypertarget{forum-list_8tpl_8php}{
+\section{modules/forum/forum-list.tpl.php File Reference}
+\label{forum-list_8tpl_8php}\index{modules/forum/forum-list.tpl.php@{modules/forum/forum-list.tpl.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hypertarget{forum-list_8tpl_8php_34d61fc74c18838e5ac968032b90a3f9}{
+print \textbf{\$forum\_\-id}}
+\label{forum-list_8tpl_8php_34d61fc74c18838e5ac968032b90a3f9}
+
+\item 
+\hypertarget{forum-list_8tpl_8php_b2afb0fd737f1a3161b83c05aa9bf0e9}{
+foreach(\$forums as \$child\_\-id=$>$ \$forum) print \$forum \textbf{zebra}}
+\label{forum-list_8tpl_8php_b2afb0fd737f1a3161b83c05aa9bf0e9}
+
+\item 
+\hypertarget{forum-list_8tpl_8php_efd4ad989e095c4fd5a6ffbb6c53984d}{
+print \$forum \textbf{is\_\-container}}
+\label{forum-list_8tpl_8php_efd4ad989e095c4fd5a6ffbb6c53984d}
+
+\item 
+\hypertarget{forum-list_8tpl_8php_96c4cb1b65109bc8e69e4fd558b76b54}{
+print \$forum \textbf{link}}
+\label{forum-list_8tpl_8php_96c4cb1b65109bc8e69e4fd558b76b54}
+
+\item 
+\hypertarget{forum-list_8tpl_8php_f45eed1e6416d36a59afb38dfbaed0f0}{
+print \$forum \textbf{name}}
+\label{forum-list_8tpl_8php_f45eed1e6416d36a59afb38dfbaed0f0}
+
+\item 
+\hypertarget{forum-list_8tpl_8php_fb799dd9a092a5f9976f8b41dc0bcd98}{
+if(\$forum $\rightarrow$ description) \textbf{endif}}
+\label{forum-list_8tpl_8php_fb799dd9a092a5f9976f8b41dc0bcd98}
+
+\item 
+\hypertarget{forum-list_8tpl_8php_e02958244c63e6b4c4a07e5efe312478}{
+if(!\$forum $\rightarrow$ is\_\-container)(\$forum $\rightarrow$ new\_\-topics) print \$forum \textbf{new\_\-text}}
+\label{forum-list_8tpl_8php_e02958244c63e6b4c4a07e5efe312478}
+
+\item 
+\hypertarget{forum-list_8tpl_8php_672d9707ef91db026c210f98cc601123}{
+\textbf{endforeach}}
+\label{forum-list_8tpl_8php_672d9707ef91db026c210f98cc601123}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Default theme implementation to display a list of forums and containers.
+
+Available variables:\begin{itemize}
+\item \$forums: An array of forums and containers to display. It is keyed to the numeric id's of all child forums and containers.\item \$forum\_\-id: Forum id for the current forum. Parent to all items within the \$forums array.\end{itemize}
+
+
+Each \$forum in \$forums contains:\begin{itemize}
+\item \$forum-$>$is\_\-container: Is TRUE if the forum can contain other forums. Is FALSE if the forum can contain only topics.\item \$forum-$>$depth: How deep the forum is in the current hierarchy.\item \$forum-$>$zebra: 'even' or 'odd' string used for row class.\item \$forum-$>$name: The name of the forum.\item \$forum-$>$link: The URL to link to this forum.\item \$forum-$>$description: The description of this forum.\item \$forum-$>$new\_\-topics: True if the forum contains unread posts.\item \$forum-$>$new\_\-url: A URL to the forum's unread posts.\item \$forum-$>$new\_\-text: Text for the above URL which tells how many new posts.\item \$forum-$>$old\_\-topics: A count of posts that have already been read.\item \$forum-$>$num\_\-posts: The total number of posts in the forum.\item \$forum-$>$last\_\-reply: Text representing the last time a forum was posted or commented in.\end{itemize}
+
+
+\begin{Desc}
+\item[See also:]template\_\-preprocess\_\-forum\_\-list() 
+
+theme\_\-forum\_\-list() \end{Desc}

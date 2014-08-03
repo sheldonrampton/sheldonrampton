@@ -1,0 +1,190 @@
+\hypertarget{classflag__comment}{
+\section{flag\_\-comment Class Reference}
+\label{classflag__comment}\index{flag\_\-comment@{flag\_\-comment}}
+}
+Inheritance diagram for flag\_\-comment::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classflag__comment}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classflag__comment_022d24a6bb4afca5563c69e0ab50007f}{default\_\-options} ()
+\item 
+\hyperlink{classflag__comment_6497f5efb8c81036572b81b91736dfea}{options\_\-form} (\&\$form)
+\item 
+\hyperlink{classflag__comment_a2d056f6b6e161f1cf0a6886b5b7326b}{\_\-load\_\-content} (\$content\_\-id)
+\item 
+\hyperlink{classflag__comment_4941d3bede8159f596a40c6f8aea7b3b}{applies\_\-to\_\-content\_\-object} (\$comment)
+\item 
+\hyperlink{classflag__comment_69760ed8615fd076652d702a03c261aa}{get\_\-content\_\-id} (\$comment)
+\item 
+\hyperlink{classflag__comment_fae5770ee7dc6b4fc2ce56e99ac854bf}{uses\_\-hook\_\-link} (\$teaser)
+\item 
+\hyperlink{classflag__comment_9f6744e13e425967435db592d30cba69}{get\_\-labels\_\-token\_\-types} ()
+\item 
+\hyperlink{classflag__comment_6dc6170aac5518de159741316a38e6bf}{replace\_\-tokens} (\$label, \$contexts, \$content\_\-id)
+\item 
+\hyperlink{classflag__comment_9f4e0def33514ead29271f9628902d5c}{get\_\-flag\_\-action} (\$content\_\-id)
+\item 
+\hyperlink{classflag__comment_9092237266a5e5fce69be0a4cdfd602e}{get\_\-relevant\_\-action\_\-objects} (\$content\_\-id)
+\item 
+\hyperlink{classflag__comment_59dfcb8d0b77553cae330b3efb0beada}{rules\_\-get\_\-event\_\-arguments\_\-definition} ()
+\item 
+\hyperlink{classflag__comment_7b1d6ccaef3c1405005f8ff35878b2e2}{rules\_\-get\_\-element\_\-argument\_\-definition} ()
+\item 
+\hyperlink{classflag__comment_e3f7ebade72b8cdac4042de702d2978b}{get\_\-views\_\-info} ()
+\item 
+\hyperlink{classflag__comment_27a4b1110c52e7237c06dc6c3ad6c092}{applies\_\-to\_\-content\_\-id\_\-array} (\$content\_\-ids)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Implements a comment flag. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classflag__comment_a2d056f6b6e161f1cf0a6886b5b7326b}{
+\index{flag\_\-comment@{flag\_\-comment}!\_\-load\_\-content@{\_\-load\_\-content}}
+\index{\_\-load\_\-content@{\_\-load\_\-content}!flag_comment@{flag\_\-comment}}
+\subsubsection[{\_\-load\_\-content}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-comment::\_\-load\_\-content (\$ {\em content\_\-id})}}
+\label{classflag__comment_a2d056f6b6e161f1cf0a6886b5b7326b}
+
+
+Loads a content object this flag works with. Derived classes must implement this.
+
+Reimplemented from \hyperlink{classflag__flag}{flag\_\-flag}.\hypertarget{classflag__comment_27a4b1110c52e7237c06dc6c3ad6c092}{
+\index{flag\_\-comment@{flag\_\-comment}!applies\_\-to\_\-content\_\-id\_\-array@{applies\_\-to\_\-content\_\-id\_\-array}}
+\index{applies\_\-to\_\-content\_\-id\_\-array@{applies\_\-to\_\-content\_\-id\_\-array}!flag_comment@{flag\_\-comment}}
+\subsubsection[{applies\_\-to\_\-content\_\-id\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-comment::applies\_\-to\_\-content\_\-id\_\-array (\$ {\em content\_\-ids})}}
+\label{classflag__comment_27a4b1110c52e7237c06dc6c3ad6c092}
+
+
+Similar to \hyperlink{classflag__flag_a38afcc59d7d1ef028215521c6fcdc22}{applies\_\-to\_\-content\_\-id()} but works on a bunch of IDs. It is called in the pre\_\-render() stage of the 'Flag links' field to find out where that link applies. The reason we do a separate DB query, and not lump this test in the Views query, is to make 'many to one' tests possible without interfering with the rows, and also to reduce the complexity of the code. 
+
+Reimplemented from \hyperlink{group__views_g7ffe2653803be84d2c2d21dea608a6da}{flag\_\-flag}.\hypertarget{classflag__comment_4941d3bede8159f596a40c6f8aea7b3b}{
+\index{flag\_\-comment@{flag\_\-comment}!applies\_\-to\_\-content\_\-object@{applies\_\-to\_\-content\_\-object}}
+\index{applies\_\-to\_\-content\_\-object@{applies\_\-to\_\-content\_\-object}!flag_comment@{flag\_\-comment}}
+\subsubsection[{applies\_\-to\_\-content\_\-object}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-comment::applies\_\-to\_\-content\_\-object (\$ {\em content})}}
+\label{classflag__comment_4941d3bede8159f596a40c6f8aea7b3b}
+
+
+Returns TRUE if the flag applies to the given content. Derived classes must implement this.
+
+Reimplemented from \hyperlink{classflag__flag_55c4da8291aed979309f25ce09953092}{flag\_\-flag}.\hypertarget{classflag__comment_022d24a6bb4afca5563c69e0ab50007f}{
+\index{flag\_\-comment@{flag\_\-comment}!default\_\-options@{default\_\-options}}
+\index{default\_\-options@{default\_\-options}!flag_comment@{flag\_\-comment}}
+\subsubsection[{default\_\-options}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-comment::default\_\-options ()}}
+\label{classflag__comment_022d24a6bb4afca5563c69e0ab50007f}
+
+
+Declares the options this flag supports, and their default values.
+
+Derived classes should want to override this. 
+
+Reimplemented from \hyperlink{classflag__flag_240678d55d61a16ef848ecc0cc3c609f}{flag\_\-flag}.\hypertarget{classflag__comment_69760ed8615fd076652d702a03c261aa}{
+\index{flag\_\-comment@{flag\_\-comment}!get\_\-content\_\-id@{get\_\-content\_\-id}}
+\index{get\_\-content\_\-id@{get\_\-content\_\-id}!flag_comment@{flag\_\-comment}}
+\subsubsection[{get\_\-content\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-comment::get\_\-content\_\-id (\$ {\em content})}}
+\label{classflag__comment_69760ed8615fd076652d702a03c261aa}
+
+
+Given a content object, returns its ID. Derived classes must implement this.
+
+Reimplemented from \hyperlink{classflag__flag_4da5889b258c2bc28b248678573b881a}{flag\_\-flag}.\hypertarget{classflag__comment_9f4e0def33514ead29271f9628902d5c}{
+\index{flag\_\-comment@{flag\_\-comment}!get\_\-flag\_\-action@{get\_\-flag\_\-action}}
+\index{get\_\-flag\_\-action@{get\_\-flag\_\-action}!flag_comment@{flag\_\-comment}}
+\subsubsection[{get\_\-flag\_\-action}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-comment::get\_\-flag\_\-action (\$ {\em content\_\-id})}}
+\label{classflag__comment_9f4e0def33514ead29271f9628902d5c}
+
+
+Returns a 'flag action' object. It exists only for the sake of its informative tokens. Currently, it's utilized only for the 'mail' action.
+
+Derived classes should populate the 'content\_\-title' and 'content\_\-url' slots. 
+
+Reimplemented from \hyperlink{classflag__flag_532e58b6e71a0ef8f6bcb55607cbca8e}{flag\_\-flag}.\hypertarget{classflag__comment_9f6744e13e425967435db592d30cba69}{
+\index{flag\_\-comment@{flag\_\-comment}!get\_\-labels\_\-token\_\-types@{get\_\-labels\_\-token\_\-types}}
+\index{get\_\-labels\_\-token\_\-types@{get\_\-labels\_\-token\_\-types}!flag_comment@{flag\_\-comment}}
+\subsubsection[{get\_\-labels\_\-token\_\-types}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-comment::get\_\-labels\_\-token\_\-types ()}}
+\label{classflag__comment_9f6744e13e425967435db592d30cba69}
+
+
+Returns the token types this flag understands in labels. These are used for narrowing down the token list shown in the help box to only the relevant ones.
+
+Derived classes should override this. 
+
+Reimplemented from \hyperlink{classflag__flag_bc21f4a879072d1a9d36b352e9ac6be0}{flag\_\-flag}.\hypertarget{classflag__comment_9092237266a5e5fce69be0a4cdfd602e}{
+\index{flag\_\-comment@{flag\_\-comment}!get\_\-relevant\_\-action\_\-objects@{get\_\-relevant\_\-action\_\-objects}}
+\index{get\_\-relevant\_\-action\_\-objects@{get\_\-relevant\_\-action\_\-objects}!flag_comment@{flag\_\-comment}}
+\subsubsection[{get\_\-relevant\_\-action\_\-objects}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-comment::get\_\-relevant\_\-action\_\-objects (\$ {\em content\_\-id})}}
+\label{classflag__comment_9092237266a5e5fce69be0a4cdfd602e}
+
+
+Returns objects the action may possibly need. This method should return at least the 'primary' object the action operates on.
+
+This method is needed because \hyperlink{group__actions_gbe1aa2bfc551fab8660cc3bacfc9d509}{get\_\-valid\_\-actions()} returns actions that don't necessarily operate on an object of a type this flag manages. For example, flagging a comment may trigger an 'Unpublish post' action on a node; So the comment flag needs to tell the action about some node.
+
+Derived classes must implement this.
+
+Reimplemented from \hyperlink{group__actions_g8f1b472c7f072dbfa682cc5b3fac9be6}{flag\_\-flag}.\hypertarget{classflag__comment_e3f7ebade72b8cdac4042de702d2978b}{
+\index{flag\_\-comment@{flag\_\-comment}!get\_\-views\_\-info@{get\_\-views\_\-info}}
+\index{get\_\-views\_\-info@{get\_\-views\_\-info}!flag_comment@{flag\_\-comment}}
+\subsubsection[{get\_\-views\_\-info}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-comment::get\_\-views\_\-info ()}}
+\label{classflag__comment_e3f7ebade72b8cdac4042de702d2978b}
+
+
+Returns information needed for Views integration. E.g., the Views table holding the flagged content, its primary key, and various labels. See derived classes for examples. 
+
+Reimplemented from \hyperlink{group__views_g91f53a4d24f7c81f8a913e56154821c0}{flag\_\-flag}.\hypertarget{classflag__comment_6497f5efb8c81036572b81b91736dfea}{
+\index{flag\_\-comment@{flag\_\-comment}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!flag_comment@{flag\_\-comment}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-comment::options\_\-form (\&\$ {\em form})}}
+\label{classflag__comment_6497f5efb8c81036572b81b91736dfea}
+
+
+Provides a form for setting options.
+
+Derived classes should want to override this. 
+
+Reimplemented from \hyperlink{classflag__flag_28aec91da5bc068c6c2a9a707ef62345}{flag\_\-flag}.\hypertarget{classflag__comment_6dc6170aac5518de159741316a38e6bf}{
+\index{flag\_\-comment@{flag\_\-comment}!replace\_\-tokens@{replace\_\-tokens}}
+\index{replace\_\-tokens@{replace\_\-tokens}!flag_comment@{flag\_\-comment}}
+\subsubsection[{replace\_\-tokens}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-comment::replace\_\-tokens (\$ {\em label}, \/  \$ {\em contexts}, \/  \$ {\em content\_\-id})}}
+\label{classflag__comment_6dc6170aac5518de159741316a38e6bf}
+
+
+Replaces tokens in a label. Only the 'global' token context is regognized by default, so derived classes should override this method to add all token contexts they understand. 
+
+Reimplemented from \hyperlink{classflag__flag_6fa61cada1cb5f94c64b3037fdd28da1}{flag\_\-flag}.\hypertarget{classflag__comment_7b1d6ccaef3c1405005f8ff35878b2e2}{
+\index{flag\_\-comment@{flag\_\-comment}!rules\_\-get\_\-element\_\-argument\_\-definition@{rules\_\-get\_\-element\_\-argument\_\-definition}}
+\index{rules\_\-get\_\-element\_\-argument\_\-definition@{rules\_\-get\_\-element\_\-argument\_\-definition}!flag_comment@{flag\_\-comment}}
+\subsubsection[{rules\_\-get\_\-element\_\-argument\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-comment::rules\_\-get\_\-element\_\-argument\_\-definition ()}}
+\label{classflag__comment_7b1d6ccaef3c1405005f8ff35878b2e2}
+
+
+Defines the Rules argument for flag actions or conditions 
+
+Reimplemented from \hyperlink{group__rules_g88951558f573d816de08b9e9d49ff4c2}{flag\_\-flag}.\hypertarget{classflag__comment_59dfcb8d0b77553cae330b3efb0beada}{
+\index{flag\_\-comment@{flag\_\-comment}!rules\_\-get\_\-event\_\-arguments\_\-definition@{rules\_\-get\_\-event\_\-arguments\_\-definition}}
+\index{rules\_\-get\_\-event\_\-arguments\_\-definition@{rules\_\-get\_\-event\_\-arguments\_\-definition}!flag_comment@{flag\_\-comment}}
+\subsubsection[{rules\_\-get\_\-event\_\-arguments\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-comment::rules\_\-get\_\-event\_\-arguments\_\-definition ()}}
+\label{classflag__comment_59dfcb8d0b77553cae330b3efb0beada}
+
+
+Defines the Rules arguments involved in a flag event. 
+
+Reimplemented from \hyperlink{group__rules_g21a07dbe1a9e496438d235e95e67c048}{flag\_\-flag}.\hypertarget{classflag__comment_fae5770ee7dc6b4fc2ce56e99ac854bf}{
+\index{flag\_\-comment@{flag\_\-comment}!uses\_\-hook\_\-link@{uses\_\-hook\_\-link}}
+\index{uses\_\-hook\_\-link@{uses\_\-hook\_\-link}!flag_comment@{flag\_\-comment}}
+\subsubsection[{uses\_\-hook\_\-link}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-comment::uses\_\-hook\_\-link (\$ {\em teaser})}}
+\label{classflag__comment_fae5770ee7dc6b4fc2ce56e99ac854bf}
+
+
+Returns TRUE if the flag is configured to show the flag-link using hook\_\-link. Derived classes are likely to implement this. 
+
+Reimplemented from \hyperlink{classflag__flag_10e87c5a12cc7b857d388985295bc8ab}{flag\_\-flag}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/flag/\hyperlink{flag_8inc}{flag.inc}\end{CompactItemize}

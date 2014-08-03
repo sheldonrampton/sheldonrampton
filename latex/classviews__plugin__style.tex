@@ -1,0 +1,231 @@
+\hypertarget{classviews__plugin__style}{
+\section{views\_\-plugin\_\-style Class Reference}
+\label{classviews__plugin__style}\index{views\_\-plugin\_\-style@{views\_\-plugin\_\-style}}
+}
+Inheritance diagram for views\_\-plugin\_\-style::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=11cm]{classviews__plugin__style}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__plugin__style_b48326b2ea3d9bd9ad5fdf4f544c8eed}{init} (\&\$\hyperlink{classview}{view}, \&\$display, \$options=NULL)
+\item 
+\hypertarget{classviews__plugin__style_0197e61c10e03cfc78f823db2ce8b620}{
+\textbf{destroy} ()}
+\label{classviews__plugin__style_0197e61c10e03cfc78f823db2ce8b620}
+
+\item 
+\hyperlink{classviews__plugin__style_92ca48fa0359e70572f9a226ac54697f}{uses\_\-row\_\-plugin} ()
+\item 
+\hyperlink{classviews__plugin__style_04c6419f4049b7e2644904b5089f2e41}{uses\_\-fields} ()
+\item 
+\hyperlink{classviews__plugin__style_95b6f2eadf403ff36f1ff2860294b3c2}{option\_\-definition} ()
+\item 
+\hyperlink{classviews__plugin__style_fe3d437ff4398315b15c4e60975dbb1c}{options\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__plugin__style_13b4b43f813fde038a199d2ec26fc76e}{build\_\-sort} ()
+\item 
+\hyperlink{classviews__plugin__style_f59de962f895ccd0b3adf960b908e0bd}{build\_\-sort\_\-post} ()
+\item 
+\hyperlink{classviews__plugin__style_9d35c181b927a52d8bf34ac629b05d20}{pre\_\-render} (\$result)
+\item 
+\hyperlink{classviews__plugin__style_a52b618e91b11a7d10ad1feadbc891f1}{render} ()
+\item 
+\hyperlink{classviews__plugin__style_76a269c0c69d94662fcbdb0ec4e4f09f}{render\_\-grouping} (\$records, \$grouping\_\-field= '')
+\item 
+\hyperlink{classviews__plugin__style_95d504017017c611b482a920119452db}{render\_\-fields} (\$result)
+\item 
+\hyperlink{classviews__plugin__style_dd1dccbb850840911c335ae09ff266d7}{get\_\-field} (\$index, \$field)
+\item 
+\hyperlink{classviews__plugin__style_41929fec27cb0ae7a801276969a080a1}{validate} ()
+\item 
+\hyperlink{classviews__plugin__style_f6b601d8f42cc3d86721fcad76eaae4b}{query} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Base class to define a style plugin handler. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__plugin__style_13b4b43f813fde038a199d2ec26fc76e}{
+\index{views\_\-plugin\_\-style@{views\_\-plugin\_\-style}!build\_\-sort@{build\_\-sort}}
+\index{build\_\-sort@{build\_\-sort}!views_plugin_style@{views\_\-plugin\_\-style}}
+\subsubsection[{build\_\-sort}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-style::build\_\-sort ()}}
+\label{classviews__plugin__style_13b4b43f813fde038a199d2ec26fc76e}
+
+
+Called by the \hyperlink{classview}{view} builder to see if this style handler wants to interfere with the sorts. If so it should build; if it returns any non-TRUE value, normal sorting will NOT be added to the query. 
+
+Reimplemented in \hyperlink{classviews__plugin__style__table_3bc31ba52d980f899307aee2d74bef58}{views\_\-plugin\_\-style\_\-table}.\hypertarget{classviews__plugin__style_f59de962f895ccd0b3adf960b908e0bd}{
+\index{views\_\-plugin\_\-style@{views\_\-plugin\_\-style}!build\_\-sort\_\-post@{build\_\-sort\_\-post}}
+\index{build\_\-sort\_\-post@{build\_\-sort\_\-post}!views_plugin_style@{views\_\-plugin\_\-style}}
+\subsubsection[{build\_\-sort\_\-post}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-style::build\_\-sort\_\-post ()}}
+\label{classviews__plugin__style_f59de962f895ccd0b3adf960b908e0bd}
+
+
+Called by the \hyperlink{classview}{view} builder to let the style build a second set of sorts that will come after any other sorts in the \hyperlink{classview}{view}. 
+
+Reimplemented in \hyperlink{classviews__plugin__style__table_00d9e14ac7f545d47a43af3f9d186382}{views\_\-plugin\_\-style\_\-table}.\hypertarget{classviews__plugin__style_dd1dccbb850840911c335ae09ff266d7}{
+\index{views\_\-plugin\_\-style@{views\_\-plugin\_\-style}!get\_\-field@{get\_\-field}}
+\index{get\_\-field@{get\_\-field}!views_plugin_style@{views\_\-plugin\_\-style}}
+\subsubsection[{get\_\-field}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-style::get\_\-field (\$ {\em index}, \/  \$ {\em field})}}
+\label{classviews__plugin__style_dd1dccbb850840911c335ae09ff266d7}
+
+
+Get a rendered field.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$index}]The index count of the row. \item[{\em \$field}]The id of the field. \end{description}
+\end{Desc}
+\hypertarget{classviews__plugin__style_b48326b2ea3d9bd9ad5fdf4f544c8eed}{
+\index{views\_\-plugin\_\-style@{views\_\-plugin\_\-style}!init@{init}}
+\index{init@{init}!views_plugin_style@{views\_\-plugin\_\-style}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-style::init (\&\$ {\em view}, \/  \&\$ {\em display}, \/  \$ {\em options} = {\tt NULL})}}
+\label{classviews__plugin__style_b48326b2ea3d9bd9ad5fdf4f544c8eed}
+
+
+Initialize a style plugin.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$view}]\item[{\em \$display}]\item[{\em \$options}]The style options might come externally as the style can be sourced from at least two locations. If it's not included, look on the display. \end{description}
+\end{Desc}
+\hypertarget{classviews__plugin__style_95b6f2eadf403ff36f1ff2860294b3c2}{
+\index{views\_\-plugin\_\-style@{views\_\-plugin\_\-style}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!views_plugin_style@{views\_\-plugin\_\-style}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-style::option\_\-definition ()}}
+\label{classviews__plugin__style_95b6f2eadf403ff36f1ff2860294b3c2}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented from \hyperlink{classviews__object_b0753d0001c8c9ff98beee696b4516ba}{views\_\-object}.
+
+Reimplemented in \hyperlink{classviews__plugin__style__grid_f20dafba4e79fdb15ff8553d2733552b}{views\_\-plugin\_\-style\_\-grid}, \hyperlink{classviews__plugin__style__jump__menu_6e27e595ed6a3115705f13b76367b637}{views\_\-plugin\_\-style\_\-jump\_\-menu}, \hyperlink{classviews__plugin__style__list_a95419c3a9f3a6db10f6c6858e5c5bd1}{views\_\-plugin\_\-style\_\-list}, \hyperlink{classviews__plugin__style__rss_b65464713d5256b32dbb4eea3e6d76ed}{views\_\-plugin\_\-style\_\-rss}, \hyperlink{classviews__plugin__style__summary_7b016dd1af2076e3cf3199cede83d953}{views\_\-plugin\_\-style\_\-summary}, \hyperlink{classviews__plugin__style__summary__jump__menu_f8b62f282687c9670850c990c376f2c4}{views\_\-plugin\_\-style\_\-summary\_\-jump\_\-menu}, \hyperlink{classviews__plugin__style__summary__unformatted_3bc8b50051e4681461dedb8099f54c24}{views\_\-plugin\_\-style\_\-summary\_\-unformatted}, and \hyperlink{classviews__plugin__style__table_e3d77e484f3e8ff4e2df07dfcfc44aab}{views\_\-plugin\_\-style\_\-table}.\hypertarget{classviews__plugin__style_fe3d437ff4398315b15c4e60975dbb1c}{
+\index{views\_\-plugin\_\-style@{views\_\-plugin\_\-style}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!views_plugin_style@{views\_\-plugin\_\-style}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-style::options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__plugin__style_fe3d437ff4398315b15c4e60975dbb1c}
+
+
+Provide a form to edit options for this plugin. 
+
+Reimplemented from \hyperlink{classviews__plugin_1aaed8da1afd9f45293a37358c159837}{views\_\-plugin}.
+
+Reimplemented in \hyperlink{classviews__plugin__style__default_6d6eb45c613c5990a44b3071cb82b36d}{views\_\-plugin\_\-style\_\-default}, \hyperlink{classviews__plugin__style__grid_275eb0e00406028e000268ae389d17a3}{views\_\-plugin\_\-style\_\-grid}, \hyperlink{classviews__plugin__style__jump__menu_d7158f1d70c97809b44bfa0e10b11709}{views\_\-plugin\_\-style\_\-jump\_\-menu}, \hyperlink{classviews__plugin__style__list_37ec2449bb2119e4a8c3730cd458ecdb}{views\_\-plugin\_\-style\_\-list}, \hyperlink{classviews__plugin__style__rss_317b1867ddd97f969977368031e04fee}{views\_\-plugin\_\-style\_\-rss}, \hyperlink{classviews__plugin__style__summary_43826183b4d54242ae5276f40f70475f}{views\_\-plugin\_\-style\_\-summary}, \hyperlink{classviews__plugin__style__summary__jump__menu_b66730cfcd70ef23a0dbc05e80ad3d32}{views\_\-plugin\_\-style\_\-summary\_\-jump\_\-menu}, \hyperlink{classviews__plugin__style__summary__unformatted_8770285dac047bf88a2c77b2e798826d}{views\_\-plugin\_\-style\_\-summary\_\-unformatted}, and \hyperlink{classviews__plugin__style__table_732752fb9b74bdb48673cb9ff4150be9}{views\_\-plugin\_\-style\_\-table}.\hypertarget{classviews__plugin__style_9d35c181b927a52d8bf34ac629b05d20}{
+\index{views\_\-plugin\_\-style@{views\_\-plugin\_\-style}!pre\_\-render@{pre\_\-render}}
+\index{pre\_\-render@{pre\_\-render}!views_plugin_style@{views\_\-plugin\_\-style}}
+\subsubsection[{pre\_\-render}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-style::pre\_\-render (\$ {\em result})}}
+\label{classviews__plugin__style_9d35c181b927a52d8bf34ac629b05d20}
+
+
+Allow the style to do stuff before each row is rendered.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$result}]The full array of results from the query. \end{description}
+\end{Desc}
+\hypertarget{classviews__plugin__style_f6b601d8f42cc3d86721fcad76eaae4b}{
+\index{views\_\-plugin\_\-style@{views\_\-plugin\_\-style}!query@{query}}
+\index{query@{query}!views_plugin_style@{views\_\-plugin\_\-style}}
+\subsubsection[{query}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-style::query ()}}
+\label{classviews__plugin__style_f6b601d8f42cc3d86721fcad76eaae4b}
+
+
+Add anything to the query that we might need to. 
+
+Reimplemented from \hyperlink{classviews__plugin_10ac07c47c4a8735786f9fcc38548587}{views\_\-plugin}.
+
+Reimplemented in \hyperlink{classviews__plugin__style__summary_fd8f02a61bd0e1887cc7767950e8e0df}{views\_\-plugin\_\-style\_\-summary}, and \hyperlink{classviews__plugin__style__summary__jump__menu_ee2a45ee02a7ce8d041a5b028758cf0b}{views\_\-plugin\_\-style\_\-summary\_\-jump\_\-menu}.\hypertarget{classviews__plugin__style_a52b618e91b11a7d10ad1feadbc891f1}{
+\index{views\_\-plugin\_\-style@{views\_\-plugin\_\-style}!render@{render}}
+\index{render@{render}!views_plugin_style@{views\_\-plugin\_\-style}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-style::render ()}}
+\label{classviews__plugin__style_a52b618e91b11a7d10ad1feadbc891f1}
+
+
+Render the display in this style. 
+
+Reimplemented in \hyperlink{classviews__plugin__style__jump__menu_ebc54d57acea582a05435beccaa26fef}{views\_\-plugin\_\-style\_\-jump\_\-menu}, \hyperlink{classviews__plugin__style__rss_a6331538ac5b9cdc80478f98ba5e0de4}{views\_\-plugin\_\-style\_\-rss}, \hyperlink{classviews__plugin__style__summary_240be31b796b50331a25cf30818e584f}{views\_\-plugin\_\-style\_\-summary}, and \hyperlink{classviews__plugin__style__summary__jump__menu_7e9b8b44735067dc7ebb838e54a21a38}{views\_\-plugin\_\-style\_\-summary\_\-jump\_\-menu}.\hypertarget{classviews__plugin__style_95d504017017c611b482a920119452db}{
+\index{views\_\-plugin\_\-style@{views\_\-plugin\_\-style}!render\_\-fields@{render\_\-fields}}
+\index{render\_\-fields@{render\_\-fields}!views_plugin_style@{views\_\-plugin\_\-style}}
+\subsubsection[{render\_\-fields}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-style::render\_\-fields (\$ {\em result})}}
+\label{classviews__plugin__style_95d504017017c611b482a920119452db}
+
+
+Render all of the fields for a given style and store them on the object.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$result}]The result array from \$view-$>$result \end{description}
+\end{Desc}
+\hypertarget{classviews__plugin__style_76a269c0c69d94662fcbdb0ec4e4f09f}{
+\index{views\_\-plugin\_\-style@{views\_\-plugin\_\-style}!render\_\-grouping@{render\_\-grouping}}
+\index{render\_\-grouping@{render\_\-grouping}!views_plugin_style@{views\_\-plugin\_\-style}}
+\subsubsection[{render\_\-grouping}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-style::render\_\-grouping (\$ {\em records}, \/  \$ {\em grouping\_\-field} = {\tt ''})}}
+\label{classviews__plugin__style_76a269c0c69d94662fcbdb0ec4e4f09f}
+
+
+Group records as needed for rendering.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$records}]An array of records from the \hyperlink{classview}{view} to group. \item[{\em \$grouping\_\-field}]The field id on which to group. If empty, the result set will be given a single group with an empty string as a label. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The grouped record set. \end{Desc}
+\hypertarget{classviews__plugin__style_04c6419f4049b7e2644904b5089f2e41}{
+\index{views\_\-plugin\_\-style@{views\_\-plugin\_\-style}!uses\_\-fields@{uses\_\-fields}}
+\index{uses\_\-fields@{uses\_\-fields}!views_plugin_style@{views\_\-plugin\_\-style}}
+\subsubsection[{uses\_\-fields}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-style::uses\_\-fields ()}}
+\label{classviews__plugin__style_04c6419f4049b7e2644904b5089f2e41}
+
+
+Return TRUE if this style also uses fields. \hypertarget{classviews__plugin__style_92ca48fa0359e70572f9a226ac54697f}{
+\index{views\_\-plugin\_\-style@{views\_\-plugin\_\-style}!uses\_\-row\_\-plugin@{uses\_\-row\_\-plugin}}
+\index{uses\_\-row\_\-plugin@{uses\_\-row\_\-plugin}!views_plugin_style@{views\_\-plugin\_\-style}}
+\subsubsection[{uses\_\-row\_\-plugin}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-style::uses\_\-row\_\-plugin ()}}
+\label{classviews__plugin__style_92ca48fa0359e70572f9a226ac54697f}
+
+
+Return TRUE if this style also uses a row plugin. \hypertarget{classviews__plugin__style_41929fec27cb0ae7a801276969a080a1}{
+\index{views\_\-plugin\_\-style@{views\_\-plugin\_\-style}!validate@{validate}}
+\index{validate@{validate}!views_plugin_style@{views\_\-plugin\_\-style}}
+\subsubsection[{validate}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-style::validate ()}}
+\label{classviews__plugin__style_41929fec27cb0ae7a801276969a080a1}
+
+
+Validate that the plugin is correct and can be saved.
+
+\begin{Desc}
+\item[Returns:]An array of error strings to tell the user what is wrong with this plugin. \end{Desc}
+
+
+Reimplemented from \hyperlink{classviews__plugin_af004b6a719837f08a1ffe4a1cf4d442}{views\_\-plugin}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/plugins/views\_\-plugin\_\-style.inc\end{CompactItemize}

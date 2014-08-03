@@ -1,0 +1,39 @@
+\hypertarget{views-view-table_8tpl_8php}{
+\section{sites/all/modules/contrib/views/theme/views-view-table.tpl.php File Reference}
+\label{views-view-table_8tpl_8php}\index{sites/all/modules/contrib/views/theme/views-view-table.tpl.php@{sites/all/modules/contrib/views/theme/views-view-table.tpl.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hypertarget{views-view-table_8tpl_8php_37ff9172f25a6ba53d6e3509c4934849}{
+print \textbf{\$class}}
+\label{views-view-table_8tpl_8php_37ff9172f25a6ba53d6e3509c4934849}
+
+\item 
+\hypertarget{views-view-table_8tpl_8php_de91bc69a503a5ab88f3fdb968225b63}{
+if(!empty(\$title)) \textbf{endif}}
+\label{views-view-table_8tpl_8php_de91bc69a503a5ab88f3fdb968225b63}
+
+\item 
+\hypertarget{views-view-table_8tpl_8php_1d5dd98ba0d76cbc8344f8ee5e22d78e}{
+foreach(\$header as \$field=$>$ \$label) print \textbf{\$label}}
+\label{views-view-table_8tpl_8php_1d5dd98ba0d76cbc8344f8ee5e22d78e}
+
+\item 
+\hypertarget{views-view-table_8tpl_8php_672d9707ef91db026c210f98cc601123}{
+\textbf{endforeach}}
+\label{views-view-table_8tpl_8php_672d9707ef91db026c210f98cc601123}
+
+\item 
+\hypertarget{views-view-table_8tpl_8php_614e7d0c9d34451a4fc2deacd551eb61}{
+foreach(\$row as \$field=$>$ \$content) print \textbf{\$content}}
+\label{views-view-table_8tpl_8php_614e7d0c9d34451a4fc2deacd551eb61}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Template to display a \hyperlink{classview}{view} as a table.
+
+\begin{itemize}
+\item \$title : The title of this group of rows. May be empty.\item \$header: An array of header labels keyed by field id.\item \$fields: An array of CSS IDs to use for each field id.\item \$class: A class or classes to apply to the table, based on settings.\item \$row\_\-classes: An array of classes to apply to each row, indexed by row number. This matches the index in \$rows.\item \$rows: An array of row items. Each row is an array of content. \$rows are keyed by row number, fields within rows are keyed by field ID. \end{itemize}

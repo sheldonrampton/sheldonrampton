@@ -1,0 +1,313 @@
+\hypertarget{sites_2all_2themes_2zen_2template_8php}{
+\section{sites/all/themes/zen/template.php File Reference}
+\label{sites_2all_2themes_2zen_2template_8php}\index{sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+if(theme\_\-get\_\-setting('zen\_\-rebuild\_\-registry')) \hyperlink{sites_2all_2themes_2zen_2template_8php_aedb086736f6fb568846dddaaa420ba0}{zen\_\-theme} (\&\$existing, \$type, \$theme, \$path)
+\item 
+\hyperlink{sites_2all_2themes_2zen_2template_8php_52d978469f9a39a0a2c89585f81cf5cd}{zen\_\-breadcrumb} (\$breadcrumb)
+\item 
+\hyperlink{sites_2all_2themes_2zen_2template_8php_acdeb97b225d8fd386a9bded28eb762c}{zen\_\-links} (\$links, \$attributes=array('class'=$>$ 'links'), \$heading= '')
+\item 
+\hyperlink{sites_2all_2themes_2zen_2template_8php_5cc3de9913eef914e51aff3c972c2e70}{zen\_\-menu\_\-item\_\-link} (\$link)
+\item 
+\hyperlink{sites_2all_2themes_2zen_2template_8php_5a939997bd1b280d7d3829e0576f2a5a}{zen\_\-menu\_\-local\_\-tasks} ()
+\item 
+\hyperlink{sites_2all_2themes_2zen_2template_8php_5d93a4bc56049bf6962fa956bc54d274}{zen\_\-blocks} (\$region, \$show\_\-blocks=NULL)
+\item 
+\hyperlink{sites_2all_2themes_2zen_2template_8php_73caa65f5d569efce36a732c0775f3e6}{zen\_\-show\_\-blocks\_\-discovery} (\&\$vars)
+\item 
+\hyperlink{sites_2all_2themes_2zen_2template_8php_34cb06c8098f8e1c710c501bb9a64d8b}{zen\_\-preprocess} (\&\$vars, \$hook)
+\item 
+\hyperlink{sites_2all_2themes_2zen_2template_8php_cf0810eb7d08edfccf3a1d5272348220}{zen\_\-preprocess\_\-page} (\&\$vars, \$hook)
+\item 
+\hyperlink{sites_2all_2themes_2zen_2template_8php_b10127f1877ff315fa0dc19019c9cd77}{zen\_\-preprocess\_\-maintenance\_\-page} (\&\$vars, \$hook)
+\item 
+\hyperlink{sites_2all_2themes_2zen_2template_8php_e04e9c17a2287b871b2d29ec76cd4214}{zen\_\-preprocess\_\-node} (\&\$vars, \$hook)
+\item 
+\hyperlink{sites_2all_2themes_2zen_2template_8php_e3144098bb1a4d10b5c4b2deaf08afe7}{zen\_\-preprocess\_\-comment} (\&\$vars, \$hook)
+\item 
+\hyperlink{sites_2all_2themes_2zen_2template_8php_1fa9b7695fa6d89f176bb01c32ad837f}{zen\_\-preprocess\_\-region} (\&\$vars, \$hook)
+\item 
+\hyperlink{sites_2all_2themes_2zen_2template_8php_1004cb430e9ecab4c4dc373a30e2340e}{zen\_\-preprocess\_\-block} (\&\$vars, \$hook)
+\item 
+\hyperlink{sites_2all_2themes_2zen_2template_8php_0b913a3a96d6f2f6e457cbf08197e9cc}{zen\_\-preprocess\_\-views\_\-view} (\&\$vars, \$hook)
+\item 
+\hyperlink{sites_2all_2themes_2zen_2template_8php_3790b825810aa4bfd00c27c37817a7d8}{zen\_\-process} (\&\$vars, \$hook)
+\item 
+\hyperlink{sites_2all_2themes_2zen_2template_8php_0c023dd21d8efaa99574aa6821bfcc32}{zen\_\-process\_\-block} (\&\$vars, \$hook)
+\item 
+if(!function\_\-exists('drupal\_\-html\_\-class')) if(!function\_\-exists('drupal\_\-html\_\-id')) \hyperlink{sites_2all_2themes_2zen_2template_8php_18a0c8640a660d394193e10081bdaa31}{\_\-zen\_\-path} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Contains theme override functions and preprocess functions for the Zen theme.
+
+IMPORTANT WARNING: DO NOT MODIFY THIS FILE.
+
+The base Zen theme is designed to be easily extended by its sub-themes. You shouldn't modify this or any of the CSS or PHP files in the root zen/ folder. See the online documentation for more information: \href{http://drupal.org/node/193318}{\tt http://drupal.org/node/193318} 
+
+\subsection{Function Documentation}
+\hypertarget{sites_2all_2themes_2zen_2template_8php_18a0c8640a660d394193e10081bdaa31}{
+\index{sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}!\_\-zen\_\-path@{\_\-zen\_\-path}}
+\index{\_\-zen\_\-path@{\_\-zen\_\-path}!sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}}
+\subsubsection[{\_\-zen\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}if (!function\_\-exists('drupal\_\-html\_\-class')) if (!function\_\-exists('drupal\_\-html\_\-id')) \_\-zen\_\-path ()}}
+\label{sites_2all_2themes_2zen_2template_8php_18a0c8640a660d394193e10081bdaa31}
+
+
+Returns the path to the Zen theme.
+
+\hyperlink{bootstrap_8inc_e2af73b6b16cc9d723e931748aa6c853}{drupal\_\-get\_\-filename()} is broken; see \#341140. When that is fixed in Drupal 6, replace \hyperlink{sites_2all_2themes_2zen_2template_8php_18a0c8640a660d394193e10081bdaa31}{\_\-zen\_\-path()} with drupal\_\-get\_\-path('theme', 'zen'). \hypertarget{sites_2all_2themes_2zen_2template_8php_5d93a4bc56049bf6962fa956bc54d274}{
+\index{sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}!zen\_\-blocks@{zen\_\-blocks}}
+\index{zen\_\-blocks@{zen\_\-blocks}!sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}}
+\subsubsection[{zen\_\-blocks}]{\setlength{\rightskip}{0pt plus 5cm}zen\_\-blocks (\$ {\em region}, \/  \$ {\em show\_\-blocks} = {\tt NULL})}}
+\label{sites_2all_2themes_2zen_2template_8php_5d93a4bc56049bf6962fa956bc54d274}
+
+
+Return a set of blocks available for the current user.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$region}]Which set of blocks to retrieve. \item[{\em \$show\_\-blocks}]A boolean to determine whether to render sidebar regions or not. Should be the same value as passed to theme\_\-page. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]A string containing the themed blocks for this region.\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{sites_2all_2themes_2zen_2template_8php_73caa65f5d569efce36a732c0775f3e6}{zen\_\-show\_\-blocks\_\-discovery()} \end{Desc}
+\hypertarget{sites_2all_2themes_2zen_2template_8php_52d978469f9a39a0a2c89585f81cf5cd}{
+\index{sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}!zen\_\-breadcrumb@{zen\_\-breadcrumb}}
+\index{zen\_\-breadcrumb@{zen\_\-breadcrumb}!sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}}
+\subsubsection[{zen\_\-breadcrumb}]{\setlength{\rightskip}{0pt plus 5cm}zen\_\-breadcrumb (\$ {\em breadcrumb})}}
+\label{sites_2all_2themes_2zen_2template_8php_52d978469f9a39a0a2c89585f81cf5cd}
+
+
+Return a themed breadcrumb trail.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$breadcrumb}]An array containing the breadcrumb links. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]A string containing the breadcrumb output. \end{Desc}
+\hypertarget{sites_2all_2themes_2zen_2template_8php_acdeb97b225d8fd386a9bded28eb762c}{
+\index{sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}!zen\_\-links@{zen\_\-links}}
+\index{zen\_\-links@{zen\_\-links}!sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}}
+\subsubsection[{zen\_\-links}]{\setlength{\rightskip}{0pt plus 5cm}zen\_\-links (\$ {\em links}, \/  \$ {\em attributes} = {\tt array('class'~=$>$~'links')}, \/  \$ {\em heading} = {\tt ''})}}
+\label{sites_2all_2themes_2zen_2template_8php_acdeb97b225d8fd386a9bded28eb762c}
+
+
+Return a themed set of links.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$links}]A keyed array of links to be themed. \item[{\em \$attributes}]A keyed array of attributes \item[{\em \$heading}]An optional keyed array or a string for a heading to precede the links. When using an array the following keys can be used:\begin{itemize}
+\item text: the heading text\item level: the heading level (e.g. 'h2', 'h3')\item class: (optional) a string of the CSS classes for the heading When using a string it will be used as the text of the heading and the level will default to 'h2'. Headings should be used on navigation menus and any list of links that consistently appears on multiple pages. To make the heading invisible use the 'element-invisible' CSS class. Do not use 'display:none', which removes it from screen-readers and assistive technology. Headings allow screen-reader and keyboard only users to navigate to or skip the links. See \href{http://juicystudio.com/article/screen-readers-display-none.php}{\tt http://juicystudio.com/article/screen-readers-display-none.php} and \href{http://www.w3.org/TR/WCAG-TECHS/H42.html}{\tt http://www.w3.org/TR/WCAG-TECHS/H42.html} for more information. \end{itemize}
+\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]A string containing an unordered list of links. \end{Desc}
+\hypertarget{sites_2all_2themes_2zen_2template_8php_5cc3de9913eef914e51aff3c972c2e70}{
+\index{sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}!zen\_\-menu\_\-item\_\-link@{zen\_\-menu\_\-item\_\-link}}
+\index{zen\_\-menu\_\-item\_\-link@{zen\_\-menu\_\-item\_\-link}!sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}}
+\subsubsection[{zen\_\-menu\_\-item\_\-link}]{\setlength{\rightskip}{0pt plus 5cm}zen\_\-menu\_\-item\_\-link (\$ {\em link})}}
+\label{sites_2all_2themes_2zen_2template_8php_5cc3de9913eef914e51aff3c972c2e70}
+
+
+Implements \hyperlink{group__themeable_g77f59240b3aead5df8a777e4f69961b5}{theme\_\-menu\_\-item\_\-link()} \hypertarget{sites_2all_2themes_2zen_2template_8php_5a939997bd1b280d7d3829e0576f2a5a}{
+\index{sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}!zen\_\-menu\_\-local\_\-tasks@{zen\_\-menu\_\-local\_\-tasks}}
+\index{zen\_\-menu\_\-local\_\-tasks@{zen\_\-menu\_\-local\_\-tasks}!sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}}
+\subsubsection[{zen\_\-menu\_\-local\_\-tasks}]{\setlength{\rightskip}{0pt plus 5cm}zen\_\-menu\_\-local\_\-tasks ()}}
+\label{sites_2all_2themes_2zen_2template_8php_5a939997bd1b280d7d3829e0576f2a5a}
+
+
+Duplicate of \hyperlink{group__themeable_g11a9f127932a0b272cc0c0dabb4e7d0b}{theme\_\-menu\_\-local\_\-tasks()} but adds clearfix to tabs. \hypertarget{sites_2all_2themes_2zen_2template_8php_34cb06c8098f8e1c710c501bb9a64d8b}{
+\index{sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}!zen\_\-preprocess@{zen\_\-preprocess}}
+\index{zen\_\-preprocess@{zen\_\-preprocess}!sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}}
+\subsubsection[{zen\_\-preprocess}]{\setlength{\rightskip}{0pt plus 5cm}zen\_\-preprocess (\&\$ {\em vars}, \/  \$ {\em hook})}}
+\label{sites_2all_2themes_2zen_2template_8php_34cb06c8098f8e1c710c501bb9a64d8b}
+
+
+Override or insert variables into templates before other preprocess functions have run.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$vars}]An array of variables to pass to the theme template. \item[{\em \$hook}]The name of the template being rendered. \end{description}
+\end{Desc}
+\hypertarget{sites_2all_2themes_2zen_2template_8php_1004cb430e9ecab4c4dc373a30e2340e}{
+\index{sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}!zen\_\-preprocess\_\-block@{zen\_\-preprocess\_\-block}}
+\index{zen\_\-preprocess\_\-block@{zen\_\-preprocess\_\-block}!sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}}
+\subsubsection[{zen\_\-preprocess\_\-block}]{\setlength{\rightskip}{0pt plus 5cm}zen\_\-preprocess\_\-block (\&\$ {\em vars}, \/  \$ {\em hook})}}
+\label{sites_2all_2themes_2zen_2template_8php_1004cb430e9ecab4c4dc373a30e2340e}
+
+
+Override or insert variables into the block templates.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$vars}]An array of variables to pass to the theme template. \item[{\em \$hook}]The name of the template being rendered (\char`\"{}block\char`\"{} in this case.) \end{description}
+\end{Desc}
+\hypertarget{sites_2all_2themes_2zen_2template_8php_e3144098bb1a4d10b5c4b2deaf08afe7}{
+\index{sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}!zen\_\-preprocess\_\-comment@{zen\_\-preprocess\_\-comment}}
+\index{zen\_\-preprocess\_\-comment@{zen\_\-preprocess\_\-comment}!sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}}
+\subsubsection[{zen\_\-preprocess\_\-comment}]{\setlength{\rightskip}{0pt plus 5cm}zen\_\-preprocess\_\-comment (\&\$ {\em vars}, \/  \$ {\em hook})}}
+\label{sites_2all_2themes_2zen_2template_8php_e3144098bb1a4d10b5c4b2deaf08afe7}
+
+
+Override or insert variables into the comment templates.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$vars}]An array of variables to pass to the theme template. \item[{\em \$hook}]The name of the template being rendered (\char`\"{}comment\char`\"{} in this case.) \end{description}
+\end{Desc}
+\hypertarget{sites_2all_2themes_2zen_2template_8php_b10127f1877ff315fa0dc19019c9cd77}{
+\index{sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}!zen\_\-preprocess\_\-maintenance\_\-page@{zen\_\-preprocess\_\-maintenance\_\-page}}
+\index{zen\_\-preprocess\_\-maintenance\_\-page@{zen\_\-preprocess\_\-maintenance\_\-page}!sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}}
+\subsubsection[{zen\_\-preprocess\_\-maintenance\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}zen\_\-preprocess\_\-maintenance\_\-page (\&\$ {\em vars}, \/  \$ {\em hook})}}
+\label{sites_2all_2themes_2zen_2template_8php_b10127f1877ff315fa0dc19019c9cd77}
+
+
+Override or insert variables into the maintenance page template.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$vars}]An array of variables to pass to the theme template. \item[{\em \$hook}]The name of the template being rendered (\char`\"{}maintenance\_\-page\char`\"{} in this case.) \end{description}
+\end{Desc}
+\hypertarget{sites_2all_2themes_2zen_2template_8php_e04e9c17a2287b871b2d29ec76cd4214}{
+\index{sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}!zen\_\-preprocess\_\-node@{zen\_\-preprocess\_\-node}}
+\index{zen\_\-preprocess\_\-node@{zen\_\-preprocess\_\-node}!sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}}
+\subsubsection[{zen\_\-preprocess\_\-node}]{\setlength{\rightskip}{0pt plus 5cm}zen\_\-preprocess\_\-node (\&\$ {\em vars}, \/  \$ {\em hook})}}
+\label{sites_2all_2themes_2zen_2template_8php_e04e9c17a2287b871b2d29ec76cd4214}
+
+
+Override or insert variables into the node templates.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$vars}]An array of variables to pass to the theme template. \item[{\em \$hook}]The name of the template being rendered (\char`\"{}node\char`\"{} in this case.) \end{description}
+\end{Desc}
+\hypertarget{sites_2all_2themes_2zen_2template_8php_cf0810eb7d08edfccf3a1d5272348220}{
+\index{sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}!zen\_\-preprocess\_\-page@{zen\_\-preprocess\_\-page}}
+\index{zen\_\-preprocess\_\-page@{zen\_\-preprocess\_\-page}!sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}}
+\subsubsection[{zen\_\-preprocess\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}zen\_\-preprocess\_\-page (\&\$ {\em vars}, \/  \$ {\em hook})}}
+\label{sites_2all_2themes_2zen_2template_8php_cf0810eb7d08edfccf3a1d5272348220}
+
+
+Override or insert variables into the page templates.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$vars}]An array of variables to pass to the theme template. \item[{\em \$hook}]The name of the template being rendered (\char`\"{}page\char`\"{} in this case.) \end{description}
+\end{Desc}
+\hypertarget{sites_2all_2themes_2zen_2template_8php_1fa9b7695fa6d89f176bb01c32ad837f}{
+\index{sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}!zen\_\-preprocess\_\-region@{zen\_\-preprocess\_\-region}}
+\index{zen\_\-preprocess\_\-region@{zen\_\-preprocess\_\-region}!sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}}
+\subsubsection[{zen\_\-preprocess\_\-region}]{\setlength{\rightskip}{0pt plus 5cm}zen\_\-preprocess\_\-region (\&\$ {\em vars}, \/  \$ {\em hook})}}
+\label{sites_2all_2themes_2zen_2template_8php_1fa9b7695fa6d89f176bb01c32ad837f}
+
+
+Preprocess variables for \hyperlink{region_8tpl_8php}{region.tpl.php}
+
+Prepare the values passed to the theme\_\-region function to be passed into a pluggable template engine. Uses the region name to generate a template file suggestions. If none are found, the default \hyperlink{region_8tpl_8php}{region.tpl.php} is used.
+
+\begin{Desc}
+\item[See also:]\hyperlink{region_8tpl_8php}{region.tpl.php} \end{Desc}
+\hypertarget{sites_2all_2themes_2zen_2template_8php_0b913a3a96d6f2f6e457cbf08197e9cc}{
+\index{sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}!zen\_\-preprocess\_\-views\_\-view@{zen\_\-preprocess\_\-views\_\-view}}
+\index{zen\_\-preprocess\_\-views\_\-view@{zen\_\-preprocess\_\-views\_\-view}!sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}}
+\subsubsection[{zen\_\-preprocess\_\-views\_\-view}]{\setlength{\rightskip}{0pt plus 5cm}zen\_\-preprocess\_\-views\_\-view (\&\$ {\em vars}, \/  \$ {\em hook})}}
+\label{sites_2all_2themes_2zen_2template_8php_0b913a3a96d6f2f6e457cbf08197e9cc}
+
+
+Override or insert variables into the views-view templates.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$vars}]An array of variables to pass to the theme template. \item[{\em \$hook}]The name of the template being rendered (\char`\"{}views-view\char`\"{} in this case.) \end{description}
+\end{Desc}
+\hypertarget{sites_2all_2themes_2zen_2template_8php_3790b825810aa4bfd00c27c37817a7d8}{
+\index{sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}!zen\_\-process@{zen\_\-process}}
+\index{zen\_\-process@{zen\_\-process}!sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}}
+\subsubsection[{zen\_\-process}]{\setlength{\rightskip}{0pt plus 5cm}zen\_\-process (\&\$ {\em vars}, \/  \$ {\em hook})}}
+\label{sites_2all_2themes_2zen_2template_8php_3790b825810aa4bfd00c27c37817a7d8}
+
+
+Override or insert variables into templates after preprocess functions have run.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$vars}]An array of variables to pass to the theme template. \item[{\em \$hook}]The name of the template being rendered. \end{description}
+\end{Desc}
+\hypertarget{sites_2all_2themes_2zen_2template_8php_0c023dd21d8efaa99574aa6821bfcc32}{
+\index{sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}!zen\_\-process\_\-block@{zen\_\-process\_\-block}}
+\index{zen\_\-process\_\-block@{zen\_\-process\_\-block}!sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}}
+\subsubsection[{zen\_\-process\_\-block}]{\setlength{\rightskip}{0pt plus 5cm}zen\_\-process\_\-block (\&\$ {\em vars}, \/  \$ {\em hook})}}
+\label{sites_2all_2themes_2zen_2template_8php_0c023dd21d8efaa99574aa6821bfcc32}
+
+
+Override or insert variables into the block templates after preprocess functions have run.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$vars}]An array of variables to pass to the theme template. \item[{\em \$hook}]The name of the template being rendered (\char`\"{}block\char`\"{} in this case.) \end{description}
+\end{Desc}
+
+
+Prepare a string for use as a valid class name.
+
+Do not pass one string containing multiple classes as they will be incorrectly concatenated with dashes, i.e. \char`\"{}one two\char`\"{} will become \char`\"{}one-two\char`\"{}.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$class}]The class name to clean. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The cleaned class name.\end{Desc}
+Prepare a string for use as a valid HTML ID and guarantee uniqueness.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$id}]The ID to clean. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The cleaned ID.\end{Desc}
+\hypertarget{sites_2all_2themes_2zen_2template_8php_73caa65f5d569efce36a732c0775f3e6}{
+\index{sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}!zen\_\-show\_\-blocks\_\-discovery@{zen\_\-show\_\-blocks\_\-discovery}}
+\index{zen\_\-show\_\-blocks\_\-discovery@{zen\_\-show\_\-blocks\_\-discovery}!sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}}
+\subsubsection[{zen\_\-show\_\-blocks\_\-discovery}]{\setlength{\rightskip}{0pt plus 5cm}zen\_\-show\_\-blocks\_\-discovery (\&\$ {\em vars})}}
+\label{sites_2all_2themes_2zen_2template_8php_73caa65f5d569efce36a732c0775f3e6}
+
+
+Examine the \$show\_\-blocks variable before \hyperlink{includes_2theme_8inc_128dae24f990d8ba4710ac78b0584c11}{template\_\-preprocess\_\-page()} is called.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$vars}]An array of variables to pass to the page template.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{sites_2all_2themes_2zen_2template_8php_5d93a4bc56049bf6962fa956bc54d274}{zen\_\-blocks()} \end{Desc}
+\hypertarget{sites_2all_2themes_2zen_2template_8php_aedb086736f6fb568846dddaaa420ba0}{
+\index{sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}!zen\_\-theme@{zen\_\-theme}}
+\index{zen\_\-theme@{zen\_\-theme}!sites/all/themes/zen/template.php@{sites/all/themes/zen/template.php}}
+\subsubsection[{zen\_\-theme}]{\setlength{\rightskip}{0pt plus 5cm}if (theme\_\-get\_\-setting('zen\_\-rebuild\_\-registry')) zen\_\-theme (\&\$ {\em existing}, \/  \$ {\em type}, \/  \$ {\em theme}, \/  \$ {\em path})}}
+\label{sites_2all_2themes_2zen_2template_8php_aedb086736f6fb568846dddaaa420ba0}
+
+
+Implements HOOK\_\-theme(). 

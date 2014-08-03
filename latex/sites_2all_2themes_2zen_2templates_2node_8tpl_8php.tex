@@ -1,0 +1,81 @@
+\hypertarget{sites_2all_2themes_2zen_2templates_2node_8tpl_8php}{
+\section{sites/all/themes/zen/templates/node.tpl.php File Reference}
+\label{sites_2all_2themes_2zen_2templates_2node_8tpl_8php}\index{sites/all/themes/zen/templates/node.tpl.php@{sites/all/themes/zen/templates/node.tpl.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hypertarget{sites_2all_2themes_2zen_2templates_2node_8tpl_8php_ff83bc4c67cdf5b085d181488eea273f}{
+print \$node \textbf{nid}}
+\label{sites_2all_2themes_2zen_2templates_2node_8tpl_8php_ff83bc4c67cdf5b085d181488eea273f}
+
+\item 
+\hypertarget{sites_2all_2themes_2zen_2templates_2node_8tpl_8php_6d48ecbdbc70ca1812e665169b5fa1e2}{
+print \textbf{\$classes}}
+\label{sites_2all_2themes_2zen_2templates_2node_8tpl_8php_6d48ecbdbc70ca1812e665169b5fa1e2}
+
+\item 
+\hypertarget{sites_2all_2themes_2zen_2templates_2node_8tpl_8php_2662269aca0f9faedd1ee9e41828ea4c}{
+print \textbf{\$user\_\-picture}}
+\label{sites_2all_2themes_2zen_2templates_2node_8tpl_8php_2662269aca0f9faedd1ee9e41828ea4c}
+
+\item 
+\hypertarget{sites_2all_2themes_2zen_2templates_2node_8tpl_8php_935a0f09673d9871fb63d348f35f4e67}{
+if(!\$page) print \textbf{\$title}}
+\label{sites_2all_2themes_2zen_2templates_2node_8tpl_8php_935a0f09673d9871fb63d348f35f4e67}
+
+\item 
+\hypertarget{sites_2all_2themes_2zen_2templates_2node_8tpl_8php_82cd33ca97ff99f2fcc5e9c81d65251b}{
+\textbf{endif}}
+\label{sites_2all_2themes_2zen_2templates_2node_8tpl_8php_82cd33ca97ff99f2fcc5e9c81d65251b}
+
+\item 
+\hypertarget{sites_2all_2themes_2zen_2templates_2node_8tpl_8php_b7b7210f43aa78e34f0b202de894a74c}{
+print \textbf{\$content}}
+\label{sites_2all_2themes_2zen_2templates_2node_8tpl_8php_b7b7210f43aa78e34f0b202de894a74c}
+
+\item 
+\hypertarget{sites_2all_2themes_2zen_2templates_2node_8tpl_8php_67aa641b75422875f72695353fd225ca}{
+print \textbf{\$links}}
+\label{sites_2all_2themes_2zen_2templates_2node_8tpl_8php_67aa641b75422875f72695353fd225ca}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Theme implementation to display a node.
+
+Available variables:\begin{itemize}
+\item \$title: the (sanitized) title of the node.\item \begin{Desc}
+\item[content]Node body or teaser depending on \end{Desc}
+teaser flag.\item \$user\_\-picture: The node author's picture from \hyperlink{user-picture_8tpl_8php}{user-picture.tpl.php}.\item \$date: Formatted creation date. Preprocess functions can reformat it by calling \hyperlink{group__format_g40553742a67f9c79c4669b9053fe202c}{format\_\-date()} with the desired parameters on the \$created variable.\item \$name: Themed username of node author output from \hyperlink{group__themeable_gf08895a75b95547417a302272e0b027c}{theme\_\-username()}.\item \$node\_\-url: Direct url of the current node.\item \$terms: the themed list of taxonomy term links output from \hyperlink{group__themeable_g6a23e012993ee8a2494249148d15d2bf}{theme\_\-links()}.\item \$display\_\-submitted: whether submission information should be displayed.\item \$links: Themed links like \char`\"{}Read more\char`\"{}, \char`\"{}Add new comment\char`\"{}, etc. output from \hyperlink{group__themeable_g6a23e012993ee8a2494249148d15d2bf}{theme\_\-links()}.\item \$classes: String of classes that can be used to style contextually through CSS. It can be manipulated through the variable \$classes\_\-array from preprocess functions. The default values can be one or more of the following:\begin{itemize}
+\item node: The current template type, i.e., \char`\"{}theming hook\char`\"{}.\item node-\mbox{[}type\mbox{]}: The current node type. For example, if the node is a \char`\"{}Blog entry\char`\"{} it would result in \char`\"{}node-blog\char`\"{}. Note that the machine name will often be in a short form of the human readable label.\item node-teaser: Nodes in teaser form.\item node-preview: Nodes in preview mode. The following are controlled through the node publishing options.\item node-promoted: Nodes promoted to the front page.\item node-sticky: Nodes ordered above other non-sticky nodes in teaser listings.\item node-unpublished: Unpublished nodes visible only to administrators. The following applies only to viewers who are registered users:\item node-by-viewer: Node is authored by the user currently viewing the page.\end{itemize}
+\end{itemize}
+
+
+Other variables:\begin{itemize}
+\item \$node: Full node object. Contains data that may not be safe.\item \$type: Node type, i.e. story, page, blog, etc.\item \$comment\_\-count: Number of comments attached to the node.\item \$uid: User ID of the node author.\item \$created: Time the node was published formatted in Unix timestamp.\item \$classes\_\-array: Array of html class attribute values. It is flattened into a string within the variable \$classes.\item \$zebra: Outputs either \char`\"{}even\char`\"{} or \char`\"{}odd\char`\"{}. Useful for zebra striping in teaser listings.\item \$id: Position of the node. Increments each time it's output.\end{itemize}
+
+
+Node status variables:\begin{itemize}
+\item \$build\_\-mode: Build mode, e.g. 'full', 'teaser'...\item \begin{Desc}
+\item[teaser]Flag for the teaser state (shortcut for \end{Desc}
+build\_\-mode == 'teaser').\item \$page: Flag for the full page state.\item \$promote: Flag for front page promotion state.\item \$sticky: Flags for sticky post setting.\item \$status: Flag for published status.\item \$comment: State of comment settings for the node.\item \$readmore: Flags true if the teaser content of the node cannot hold the main body content.\item \$is\_\-front: Flags true when presented in the front page.\item \$logged\_\-in: Flags true when the current user is a logged-in member.\item \$is\_\-admin: Flags true when the current user is an administrator.\end{itemize}
+
+
+The following variables are deprecated and will be removed in Drupal 7:\begin{itemize}
+\item \begin{Desc}
+\item[picture]This variable has been renamed \end{Desc}
+user\_\-picture in Drupal 7.\item \$submitted: Themed submission information output from theme\_\-node\_\-submitted().\end{itemize}
+
+
+\begin{Desc}
+\item[See also:]\hyperlink{includes_2theme_8inc_3eeb7bcdba7ef4859f99586da264d347}{template\_\-preprocess()} 
+
+\hyperlink{includes_2theme_8inc_bba818ede4c18fb7d92f0a5d5f1aa771}{template\_\-preprocess\_\-node()} 
+
+\hyperlink{sites_2all_2themes_2zen_2template_8php_34cb06c8098f8e1c710c501bb9a64d8b}{zen\_\-preprocess()} 
+
+\hyperlink{sites_2all_2themes_2zen_2template_8php_e04e9c17a2287b871b2d29ec76cd4214}{zen\_\-preprocess\_\-node()} 
+
+\hyperlink{sites_2all_2themes_2zen_2template_8php_3790b825810aa4bfd00c27c37817a7d8}{zen\_\-process()} \end{Desc}

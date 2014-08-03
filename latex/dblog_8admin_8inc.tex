@@ -1,0 +1,97 @@
+\hypertarget{dblog_8admin_8inc}{
+\section{modules/dblog/dblog.admin.inc File Reference}
+\label{dblog_8admin_8inc}\index{modules/dblog/dblog.admin.inc@{modules/dblog/dblog.admin.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{group__forms_g6447ffdcc2e017bea1328ce4b314edfd}{dblog\_\-admin\_\-settings} ()
+\item 
+\hyperlink{dblog_8admin_8inc_3b74d083df84c683ed01c7a5468eee12}{dblog\_\-overview} ()
+\item 
+\hyperlink{dblog_8admin_8inc_f0e96daec46eb718e54a9adde8ec9ce1}{dblog\_\-top} (\$type)
+\item 
+\hyperlink{dblog_8admin_8inc_044370b32b7cc5cace449cb62bf6c007}{dblog\_\-event} (\$id)
+\item 
+\hyperlink{dblog_8admin_8inc_aeb52aeee42e8fe89e517a509ee30b19}{dblog\_\-build\_\-filter\_\-query} ()
+\item 
+\hyperlink{dblog_8admin_8inc_7f01185081208827159e2cf7546acb83}{dblog\_\-filters} ()
+\item 
+\hyperlink{dblog_8admin_8inc_e61f17d8d8209da056ce599379f5e1c7}{\_\-dblog\_\-format\_\-message} (\$dblog)
+\item 
+\hyperlink{group__forms_g2e2048171c96832b8d9d1b33252abb5b}{dblog\_\-filter\_\-form} ()
+\item 
+\hyperlink{dblog_8admin_8inc_8f88e6f1bf9010761546bbad59189b0f}{dblog\_\-filter\_\-form\_\-validate} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{dblog_8admin_8inc_817953760089fe9caf59d187d3784433}{dblog\_\-filter\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Administrative page callbacks for the dblog module. 
+
+\subsection{Function Documentation}
+\hypertarget{dblog_8admin_8inc_e61f17d8d8209da056ce599379f5e1c7}{
+\index{dblog.admin.inc@{dblog.admin.inc}!\_\-dblog\_\-format\_\-message@{\_\-dblog\_\-format\_\-message}}
+\index{\_\-dblog\_\-format\_\-message@{\_\-dblog\_\-format\_\-message}!dblog.admin.inc@{dblog.admin.inc}}
+\subsubsection[{\_\-dblog\_\-format\_\-message}]{\setlength{\rightskip}{0pt plus 5cm}\_\-dblog\_\-format\_\-message (\$ {\em dblog})}}
+\label{dblog_8admin_8inc_e61f17d8d8209da056ce599379f5e1c7}
+
+
+Formats a log message for display.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$dblog}]An object with at least the message and variables properties \end{description}
+\end{Desc}
+\hypertarget{dblog_8admin_8inc_aeb52aeee42e8fe89e517a509ee30b19}{
+\index{dblog.admin.inc@{dblog.admin.inc}!dblog\_\-build\_\-filter\_\-query@{dblog\_\-build\_\-filter\_\-query}}
+\index{dblog\_\-build\_\-filter\_\-query@{dblog\_\-build\_\-filter\_\-query}!dblog.admin.inc@{dblog.admin.inc}}
+\subsubsection[{dblog\_\-build\_\-filter\_\-query}]{\setlength{\rightskip}{0pt plus 5cm}dblog\_\-build\_\-filter\_\-query ()}}
+\label{dblog_8admin_8inc_aeb52aeee42e8fe89e517a509ee30b19}
+
+
+Build query for dblog administration filters based on session. \hypertarget{dblog_8admin_8inc_044370b32b7cc5cace449cb62bf6c007}{
+\index{dblog.admin.inc@{dblog.admin.inc}!dblog\_\-event@{dblog\_\-event}}
+\index{dblog\_\-event@{dblog\_\-event}!dblog.admin.inc@{dblog.admin.inc}}
+\subsubsection[{dblog\_\-event}]{\setlength{\rightskip}{0pt plus 5cm}dblog\_\-event (\$ {\em id})}}
+\label{dblog_8admin_8inc_044370b32b7cc5cace449cb62bf6c007}
+
+
+Menu callback; displays details about a log message. \hypertarget{dblog_8admin_8inc_817953760089fe9caf59d187d3784433}{
+\index{dblog.admin.inc@{dblog.admin.inc}!dblog\_\-filter\_\-form\_\-submit@{dblog\_\-filter\_\-form\_\-submit}}
+\index{dblog\_\-filter\_\-form\_\-submit@{dblog\_\-filter\_\-form\_\-submit}!dblog.admin.inc@{dblog.admin.inc}}
+\subsubsection[{dblog\_\-filter\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}dblog\_\-filter\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{dblog_8admin_8inc_817953760089fe9caf59d187d3784433}
+
+
+Process result from dblog administration filter form. \hypertarget{dblog_8admin_8inc_8f88e6f1bf9010761546bbad59189b0f}{
+\index{dblog.admin.inc@{dblog.admin.inc}!dblog\_\-filter\_\-form\_\-validate@{dblog\_\-filter\_\-form\_\-validate}}
+\index{dblog\_\-filter\_\-form\_\-validate@{dblog\_\-filter\_\-form\_\-validate}!dblog.admin.inc@{dblog.admin.inc}}
+\subsubsection[{dblog\_\-filter\_\-form\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}dblog\_\-filter\_\-form\_\-validate (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{dblog_8admin_8inc_8f88e6f1bf9010761546bbad59189b0f}
+
+
+Validate result from dblog administration filter form. \hypertarget{dblog_8admin_8inc_7f01185081208827159e2cf7546acb83}{
+\index{dblog.admin.inc@{dblog.admin.inc}!dblog\_\-filters@{dblog\_\-filters}}
+\index{dblog\_\-filters@{dblog\_\-filters}!dblog.admin.inc@{dblog.admin.inc}}
+\subsubsection[{dblog\_\-filters}]{\setlength{\rightskip}{0pt plus 5cm}dblog\_\-filters ()}}
+\label{dblog_8admin_8inc_7f01185081208827159e2cf7546acb83}
+
+
+List dblog administration filters that can be applied. \hypertarget{dblog_8admin_8inc_3b74d083df84c683ed01c7a5468eee12}{
+\index{dblog.admin.inc@{dblog.admin.inc}!dblog\_\-overview@{dblog\_\-overview}}
+\index{dblog\_\-overview@{dblog\_\-overview}!dblog.admin.inc@{dblog.admin.inc}}
+\subsubsection[{dblog\_\-overview}]{\setlength{\rightskip}{0pt plus 5cm}dblog\_\-overview ()}}
+\label{dblog_8admin_8inc_3b74d083df84c683ed01c7a5468eee12}
+
+
+Menu callback; displays a listing of log messages. \hypertarget{dblog_8admin_8inc_f0e96daec46eb718e54a9adde8ec9ce1}{
+\index{dblog.admin.inc@{dblog.admin.inc}!dblog\_\-top@{dblog\_\-top}}
+\index{dblog\_\-top@{dblog\_\-top}!dblog.admin.inc@{dblog.admin.inc}}
+\subsubsection[{dblog\_\-top}]{\setlength{\rightskip}{0pt plus 5cm}dblog\_\-top (\$ {\em type})}}
+\label{dblog_8admin_8inc_f0e96daec46eb718e54a9adde8ec9ce1}
+
+
+Menu callback; generic function to display a page of the most frequent dblog events of a specified type. 

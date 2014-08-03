@@ -1,0 +1,251 @@
+\hypertarget{handlers_8inc}{
+\section{sites/all/modules/contrib/views/includes/handlers.inc File Reference}
+\label{handlers_8inc}\index{sites/all/modules/contrib/views/includes/handlers.inc@{sites/all/modules/contrib/views/includes/handlers.inc}}
+}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classviews__handler}{views\_\-handler}
+\item 
+class \hyperlink{classviews__many__to__one__helper}{views\_\-many\_\-to\_\-one\_\-helper}
+\item 
+class \hyperlink{classviews__join}{views\_\-join}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{handlers_8inc_77557bf731e44c2951aa8f0c1253b4ae}{\_\-views\_\-create\_\-handler} (\$definition, \$type= 'handler')
+\item 
+\hyperlink{handlers_8inc_275561b03251609d3a86de094f4cac9a}{views\_\-include\_\-handler} (\$definition, \$type, \$count=0)
+\item 
+\hyperlink{handlers_8inc_8e2fd3af54882a8c2b654769a89a612e}{\_\-views\_\-prepare\_\-handler} (\$definition, \$data, \$field)
+\item 
+\hyperlink{handlers_8inc_507fd16f1a3635bf959aaf54fef06cef}{views\_\-fetch\_\-handler\_\-data} (\$handler=NULL)
+\item 
+\hyperlink{handlers_8inc_5723616d83060c0a1e13d8e8f37c948d}{views\_\-discover\_\-handlers} ()
+\item 
+\hyperlink{handlers_8inc_76ba5af63134db1102702696a50ba6f5}{views\_\-get\_\-table\_\-join} (\$table, \$base\_\-table)
+\item 
+\hypertarget{handlers_8inc_45d0aa176d5e6a6b5e7a0de47cfb5893}{
+\textbf{views\_\-break\_\-phrase} (\$str, \&\$filter)}
+\label{handlers_8inc_45d0aa176d5e6a6b5e7a0de47cfb5893}
+
+\item 
+\hyperlink{handlers_8inc_3bd8b0bf769dc6d068349b222edb410c}{views\_\-get\_\-timezone} ()
+\item 
+\hyperlink{handlers_8inc_e61b1af2423ecd6df2332d716f980234}{views\_\-date\_\-sql\_\-field} (\$field, \$field\_\-type= 'int', \$set\_\-offset=NULL)
+\item 
+\hyperlink{handlers_8inc_7916ceb65f4cbc07601e2acae923374e}{views\_\-date\_\-sql\_\-format} (\$format, \$field, \$field\_\-type= 'int', \$set\_\-offset=NULL)
+\item 
+\hyperlink{handlers_8inc_dd4a1d7bb4ea764872603f9f56afaab1}{views\_\-date\_\-sql\_\-extract} (\$extract\_\-type, \$field, \$field\_\-type= 'int', \$set\_\-offset=NULL)
+\item 
+\hyperlink{handlers_8inc_aa860496d6ea85a62caa4e23557e55fa}{views\_\-views\_\-handlers} ()
+\item 
+\hyperlink{handlers_8inc_907c76d0314986d60f7e2361243eaa5d}{views\_\-views\_\-api} ()
+\item 
+\hypertarget{handlers_8inc_20d9b5f8e269c04dab0a14301c99b1f0}{
+\textbf{aggregator\_\-views\_\-api} ()}
+\label{handlers_8inc_20d9b5f8e269c04dab0a14301c99b1f0}
+
+\item 
+\hypertarget{handlers_8inc_e6aac001a7198e2e70e5a059c98657f8}{
+\textbf{book\_\-views\_\-api} ()}
+\label{handlers_8inc_e6aac001a7198e2e70e5a059c98657f8}
+
+\item 
+\hypertarget{handlers_8inc_b8cfc46c29a03fb5dfb97093da4a7d8e}{
+\textbf{comment\_\-views\_\-api} ()}
+\label{handlers_8inc_b8cfc46c29a03fb5dfb97093da4a7d8e}
+
+\item 
+\hypertarget{handlers_8inc_8a475aa2c5576f4555aafca47a97d600}{
+\textbf{locale\_\-views\_\-api} ()}
+\label{handlers_8inc_8a475aa2c5576f4555aafca47a97d600}
+
+\item 
+\hypertarget{handlers_8inc_bcb5fda89767263b5f9880dd1fc1a2b3}{
+\textbf{filter\_\-views\_\-api} ()}
+\label{handlers_8inc_bcb5fda89767263b5f9880dd1fc1a2b3}
+
+\item 
+\hypertarget{handlers_8inc_c5e304b116c8062c4f34381bc4270932}{
+\textbf{node\_\-views\_\-api} ()}
+\label{handlers_8inc_c5e304b116c8062c4f34381bc4270932}
+
+\item 
+\hypertarget{handlers_8inc_93b3025072dc903ac2c926ea0c925c5a}{
+\textbf{poll\_\-views\_\-api} ()}
+\label{handlers_8inc_93b3025072dc903ac2c926ea0c925c5a}
+
+\item 
+\hypertarget{handlers_8inc_502f00ebf6e67a30797cf305074a0385}{
+\textbf{profile\_\-views\_\-api} ()}
+\label{handlers_8inc_502f00ebf6e67a30797cf305074a0385}
+
+\item 
+\hypertarget{handlers_8inc_922255edc204249f499b0ead01a601db}{
+\textbf{search\_\-views\_\-api} ()}
+\label{handlers_8inc_922255edc204249f499b0ead01a601db}
+
+\item 
+\hypertarget{handlers_8inc_aad089193d134f9fcf4c506e6556631f}{
+\textbf{statistics\_\-views\_\-api} ()}
+\label{handlers_8inc_aad089193d134f9fcf4c506e6556631f}
+
+\item 
+\hypertarget{handlers_8inc_526fa0ba2883a992f210175b98b17ad5}{
+\textbf{system\_\-views\_\-api} ()}
+\label{handlers_8inc_526fa0ba2883a992f210175b98b17ad5}
+
+\item 
+\hypertarget{handlers_8inc_e514e0fdf140222b6d337dd09d889832}{
+\textbf{taxonomy\_\-views\_\-api} ()}
+\label{handlers_8inc_e514e0fdf140222b6d337dd09d889832}
+
+\item 
+\hypertarget{handlers_8inc_5f1ed66b6b802aeb5e2e5a3736d73bbb}{
+\textbf{translation\_\-views\_\-api} ()}
+\label{handlers_8inc_5f1ed66b6b802aeb5e2e5a3736d73bbb}
+
+\item 
+\hypertarget{handlers_8inc_115c1f8e21a974d6b8dbcbe2bf949701}{
+\textbf{upload\_\-views\_\-api} ()}
+\label{handlers_8inc_115c1f8e21a974d6b8dbcbe2bf949701}
+
+\item 
+\hypertarget{handlers_8inc_f1a7351ab05270f14a850a98d34ebc62}{
+\textbf{user\_\-views\_\-api} ()}
+\label{handlers_8inc_f1a7351ab05270f14a850a98d34ebc62}
+
+\item 
+\hypertarget{handlers_8inc_604a17170f1f5f6be0f4678a7b493d3e}{
+\textbf{contact\_\-views\_\-api} ()}
+\label{handlers_8inc_604a17170f1f5f6be0f4678a7b493d3e}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Defines the various handler objects to help build and display views. 
+
+\subsection{Function Documentation}
+\hypertarget{handlers_8inc_77557bf731e44c2951aa8f0c1253b4ae}{
+\index{handlers.inc@{handlers.inc}!\_\-views\_\-create\_\-handler@{\_\-views\_\-create\_\-handler}}
+\index{\_\-views\_\-create\_\-handler@{\_\-views\_\-create\_\-handler}!handlers.inc@{handlers.inc}}
+\subsubsection[{\_\-views\_\-create\_\-handler}]{\setlength{\rightskip}{0pt plus 5cm}\_\-views\_\-create\_\-handler (\$ {\em definition}, \/  \$ {\em type} = {\tt 'handler'})}}
+\label{handlers_8inc_77557bf731e44c2951aa8f0c1253b4ae}
+
+
+Instantiate and construct a new handler \hypertarget{handlers_8inc_8e2fd3af54882a8c2b654769a89a612e}{
+\index{handlers.inc@{handlers.inc}!\_\-views\_\-prepare\_\-handler@{\_\-views\_\-prepare\_\-handler}}
+\index{\_\-views\_\-prepare\_\-handler@{\_\-views\_\-prepare\_\-handler}!handlers.inc@{handlers.inc}}
+\subsubsection[{\_\-views\_\-prepare\_\-handler}]{\setlength{\rightskip}{0pt plus 5cm}\_\-views\_\-prepare\_\-handler (\$ {\em definition}, \/  \$ {\em data}, \/  \$ {\em field})}}
+\label{handlers_8inc_8e2fd3af54882a8c2b654769a89a612e}
+
+
+Prepare a handler's data by checking defaults and such. \hypertarget{handlers_8inc_dd4a1d7bb4ea764872603f9f56afaab1}{
+\index{handlers.inc@{handlers.inc}!views\_\-date\_\-sql\_\-extract@{views\_\-date\_\-sql\_\-extract}}
+\index{views\_\-date\_\-sql\_\-extract@{views\_\-date\_\-sql\_\-extract}!handlers.inc@{handlers.inc}}
+\subsubsection[{views\_\-date\_\-sql\_\-extract}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-date\_\-sql\_\-extract (\$ {\em extract\_\-type}, \/  \$ {\em field}, \/  \$ {\em field\_\-type} = {\tt 'int'}, \/  \$ {\em set\_\-offset} = {\tt NULL})}}
+\label{handlers_8inc_dd4a1d7bb4ea764872603f9f56afaab1}
+
+
+Helper function to create cross-database SQL date extraction.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$extract\_\-type}]The type of value to extract from the date, like 'MONTH'. \item[{\em \$field}]The real table and field name, like 'tablename.fieldname'. \item[{\em \$field\_\-type}]The type of date field, 'int' or 'datetime'. \item[{\em \$set\_\-offset}]The name of a field that holds the timezone offset or a fixed timezone offset value. If not provided, the normal Drupal timezone handling will be used, i.e. \$set\_\-offset = 0 will make no timezone adjustment. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An appropriate SQL string for the db type and field type. \end{Desc}
+\hypertarget{handlers_8inc_e61b1af2423ecd6df2332d716f980234}{
+\index{handlers.inc@{handlers.inc}!views\_\-date\_\-sql\_\-field@{views\_\-date\_\-sql\_\-field}}
+\index{views\_\-date\_\-sql\_\-field@{views\_\-date\_\-sql\_\-field}!handlers.inc@{handlers.inc}}
+\subsubsection[{views\_\-date\_\-sql\_\-field}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-date\_\-sql\_\-field (\$ {\em field}, \/  \$ {\em field\_\-type} = {\tt 'int'}, \/  \$ {\em set\_\-offset} = {\tt NULL})}}
+\label{handlers_8inc_e61b1af2423ecd6df2332d716f980234}
+
+
+Helper function to create cross-database SQL dates.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$field}]The real table and field name, like 'tablename.fieldname'. \item[{\em \$field\_\-type}]The type of date field, 'int' or 'datetime'. \item[{\em \$set\_\-offset}]The name of a field that holds the timezone offset or a fixed timezone offset value. If not provided, the normal Drupal timezone handling will be used, i.e. \$set\_\-offset = 0 will make no timezone adjustment. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An appropriate SQL string for the db type and field type. \end{Desc}
+\hypertarget{handlers_8inc_7916ceb65f4cbc07601e2acae923374e}{
+\index{handlers.inc@{handlers.inc}!views\_\-date\_\-sql\_\-format@{views\_\-date\_\-sql\_\-format}}
+\index{views\_\-date\_\-sql\_\-format@{views\_\-date\_\-sql\_\-format}!handlers.inc@{handlers.inc}}
+\subsubsection[{views\_\-date\_\-sql\_\-format}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-date\_\-sql\_\-format (\$ {\em format}, \/  \$ {\em field}, \/  \$ {\em field\_\-type} = {\tt 'int'}, \/  \$ {\em set\_\-offset} = {\tt NULL})}}
+\label{handlers_8inc_7916ceb65f4cbc07601e2acae923374e}
+
+
+Helper function to create cross-database SQL date formatting.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$format}]A format string for the result, like 'Y-m-d H:i:s'. \item[{\em \$field}]The real table and field name, like 'tablename.fieldname'. \item[{\em \$field\_\-type}]The type of date field, 'int' or 'datetime'. \item[{\em \$set\_\-offset}]The name of a field that holds the timezone offset or a fixed timezone offset value. If not provided, the normal Drupal timezone handling will be used, i.e. \$set\_\-offset = 0 will make no timezone adjustment. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An appropriate SQL string for the db type and field type. \end{Desc}
+\hypertarget{handlers_8inc_5723616d83060c0a1e13d8e8f37c948d}{
+\index{handlers.inc@{handlers.inc}!views\_\-discover\_\-handlers@{views\_\-discover\_\-handlers}}
+\index{views\_\-discover\_\-handlers@{views\_\-discover\_\-handlers}!handlers.inc@{handlers.inc}}
+\subsubsection[{views\_\-discover\_\-handlers}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-discover\_\-handlers ()}}
+\label{handlers_8inc_5723616d83060c0a1e13d8e8f37c948d}
+
+
+Builds and return a list of all handlers available in the system.
+
+\begin{Desc}
+\item[Returns:]Nested array of handlers \end{Desc}
+\hypertarget{handlers_8inc_507fd16f1a3635bf959aaf54fef06cef}{
+\index{handlers.inc@{handlers.inc}!views\_\-fetch\_\-handler\_\-data@{views\_\-fetch\_\-handler\_\-data}}
+\index{views\_\-fetch\_\-handler\_\-data@{views\_\-fetch\_\-handler\_\-data}!handlers.inc@{handlers.inc}}
+\subsubsection[{views\_\-fetch\_\-handler\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-fetch\_\-handler\_\-data (\$ {\em handler} = {\tt NULL})}}
+\label{handlers_8inc_507fd16f1a3635bf959aaf54fef06cef}
+
+
+Fetch the handler data from cache. \hypertarget{handlers_8inc_76ba5af63134db1102702696a50ba6f5}{
+\index{handlers.inc@{handlers.inc}!views\_\-get\_\-table\_\-join@{views\_\-get\_\-table\_\-join}}
+\index{views\_\-get\_\-table\_\-join@{views\_\-get\_\-table\_\-join}!handlers.inc@{handlers.inc}}
+\subsubsection[{views\_\-get\_\-table\_\-join}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-get\_\-table\_\-join (\$ {\em table}, \/  \$ {\em base\_\-table})}}
+\label{handlers_8inc_76ba5af63134db1102702696a50ba6f5}
+
+
+Fetch a handler to join one table to a primary table from the data cache \hypertarget{handlers_8inc_3bd8b0bf769dc6d068349b222edb410c}{
+\index{handlers.inc@{handlers.inc}!views\_\-get\_\-timezone@{views\_\-get\_\-timezone}}
+\index{views\_\-get\_\-timezone@{views\_\-get\_\-timezone}!handlers.inc@{handlers.inc}}
+\subsubsection[{views\_\-get\_\-timezone}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-get\_\-timezone ()}}
+\label{handlers_8inc_3bd8b0bf769dc6d068349b222edb410c}
+
+
+Figure out what timezone we're in; needed for some date manipulations. \hypertarget{handlers_8inc_275561b03251609d3a86de094f4cac9a}{
+\index{handlers.inc@{handlers.inc}!views\_\-include\_\-handler@{views\_\-include\_\-handler}}
+\index{views\_\-include\_\-handler@{views\_\-include\_\-handler}!handlers.inc@{handlers.inc}}
+\subsubsection[{views\_\-include\_\-handler}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-include\_\-handler (\$ {\em definition}, \/  \$ {\em type}, \/  \$ {\em count} = {\tt 0})}}
+\label{handlers_8inc_275561b03251609d3a86de094f4cac9a}
+
+
+Attempt to find the include file for a given handler from its definition.
+
+This will also attempt to include all parents, though we're maxing the parent chain to 10 to prevent infinite loops. \hypertarget{handlers_8inc_907c76d0314986d60f7e2361243eaa5d}{
+\index{handlers.inc@{handlers.inc}!views\_\-views\_\-api@{views\_\-views\_\-api}}
+\index{views\_\-views\_\-api@{views\_\-views\_\-api}!handlers.inc@{handlers.inc}}
+\subsubsection[{views\_\-views\_\-api}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-views\_\-api ()}}
+\label{handlers_8inc_907c76d0314986d60f7e2361243eaa5d}
+
+
+Implementation of \hyperlink{group__views__hooks_gc67ffd4a2f61f9814ee37b541c472c47}{hook\_\-views\_\-api()}.
+
+This one is used as the base to reduce errors when updating. \hypertarget{handlers_8inc_aa860496d6ea85a62caa4e23557e55fa}{
+\index{handlers.inc@{handlers.inc}!views\_\-views\_\-handlers@{views\_\-views\_\-handlers}}
+\index{views\_\-views\_\-handlers@{views\_\-views\_\-handlers}!handlers.inc@{handlers.inc}}
+\subsubsection[{views\_\-views\_\-handlers}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-views\_\-handlers ()}}
+\label{handlers_8inc_aa860496d6ea85a62caa4e23557e55fa}
+
+
+Implementation of \hyperlink{group__views__hooks_gbf506f44bd8d8a86876f27396f5341ed}{hook\_\-views\_\-handlers()} to register all of the basic handlers views uses. 

@@ -1,0 +1,368 @@
+\hypertarget{classviews__handler}{
+\section{views\_\-handler Class Reference}
+\label{classviews__handler}\index{views\_\-handler@{views\_\-handler}}
+}
+Inheritance diagram for views\_\-handler::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.1454cm]{classviews__handler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__handler_1f5f42ba46d3584280788fda97eee8c5}{init} (\&\$\hyperlink{classview}{view}, \$options)
+\item 
+\hyperlink{classviews__handler_e81019ed08d9c3f5bca3d16c69e7b39f}{ui\_\-name} (\$short=FALSE)
+\item 
+\hyperlink{classviews__handler_a41fcf16b177eb03e35facbae6320f74}{options\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__handler_48a7b56e8952d9fcf56e2dec7794bb4e}{options\_\-validate} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__handler_583187975f1bbf5df13138a0898f2ac7}{options\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__handler_10d35469346efc352d21e5f44de60b2e}{has\_\-extra\_\-options} ()
+\item 
+\hyperlink{classviews__handler_0299b8b2ba70379a5aca4ddb5b8d95b4}{extra\_\-options} (\&\$option)
+\item 
+\hyperlink{classviews__handler_0eed1d12c47d60190f59e135d962719e}{extra\_\-options\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__handler_8a2c2fb295ec8024fc9e33361a92e8ac}{extra\_\-options\_\-validate} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__handler_ca642bf4dff25e0d49f7fca65bb97f77}{extra\_\-options\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__handler_2db9f3127a5364b17fb775cede2f43a6}{expose\_\-options} ()
+\item 
+\hyperlink{classviews__handler_657fbb873c6be9e1da904e2aad191f66}{exposed\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__handler_2dd536754e4764cc82ffe7c864f54b16}{exposed\_\-validate} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__handler_6b0a97cfe77b3f9dfcfad08f21f5c0f7}{exposed\_\-submit} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__handler_2f16176116ecd86a8f8c60a2bc1ebd54}{exposed\_\-info} ()
+\item 
+\hyperlink{classviews__handler_92517d122d69dc6f64a9edb80d55057d}{can\_\-expose} ()
+\item 
+\hyperlink{classviews__handler_3f2fbfe1e0849d06ae77149412b821f6}{access} ()
+\item 
+\hyperlink{classviews__handler_4eeb5551d6c97b1ea074049991989fce}{pre\_\-query} ()
+\item 
+\hyperlink{classviews__handler_c54ea4553cbc678d23b51dfad3142a54}{set\_\-relationship} ()
+\item 
+\hyperlink{classviews__handler_91e22c95696d9fdb9ed753a10d42a21d}{query} ()
+\item 
+\hyperlink{classviews__handler_947f21ef0f21a77f4d103af4702b3600}{ensure\_\-my\_\-table} ()
+\item 
+\hyperlink{classviews__handler_27a5cb35f3f17322957730a95b6be11e}{admin\_\-summary} ()
+\item 
+\hyperlink{classviews__handler_53baa97a6c218ce4b847c8fb4e65a350}{needs\_\-style\_\-plugin} ()
+\item 
+\hyperlink{classviews__handler_0c01527c54c1f1372f3c4f28ae34a837}{is\_\-exposed} ()
+\item 
+\hyperlink{classviews__handler_20433153babc3196b26ee773755a709e}{accept\_\-exposed\_\-input} (\$input)
+\item 
+\hyperlink{classviews__handler_7f2453d86d3cb3850826e8c921012f16}{store\_\-exposed\_\-input} (\$input, \$status)
+\item 
+\hyperlink{classviews__handler_c05dca8ea852b137f7f288d090a49221}{get\_\-join} ()
+\item 
+\hyperlink{classviews__handler_323961657c7c5f3257a8fe4eeea1502f}{validate} ()
+\item 
+\hyperlink{classviews__handler_c1cd2ff30cb558c79cc908be516fb725}{broken} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Base handler, from which all the other handlers are derived. It creates a common interface to create consistency amongst handlers and data.
+
+This class would be abstract in PHP5, but PHP4 doesn't understand that.
+
+Definition terms:\begin{itemize}
+\item table: The actual table this uses; only specify if different from the table this is attached to.\item real field: The actual field this uses; only specify if different from the field this item is attached to.\item group: A text string representing the 'group' this item is attached to, for display in the UI. Examples: \char`\"{}Node\char`\"{}, \char`\"{}Taxonomy\char`\"{}, \char`\"{}Comment\char`\"{}, \char`\"{}User\char`\"{}, etc. This may be inherited from the parent definition or the 'table' definition.\item title: The title for this handler in the UI. This may be inherited from the parent definition or the 'table' definition.\item help: A more informative string to give to the user to explain what this field/handler is or does.\item access callback: If this field should have access control, this could be a function to use. 'user\_\-access' is a common function to use here. If not specified, no access control is provided.\item access arguments: An array of arguments for the access callback. \end{itemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__handler_20433153babc3196b26ee773755a709e}{
+\index{views\_\-handler@{views\_\-handler}!accept\_\-exposed\_\-input@{accept\_\-exposed\_\-input}}
+\index{accept\_\-exposed\_\-input@{accept\_\-exposed\_\-input}!views_handler@{views\_\-handler}}
+\subsubsection[{accept\_\-exposed\_\-input}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::accept\_\-exposed\_\-input (\$ {\em input})}}
+\label{classviews__handler_20433153babc3196b26ee773755a709e}
+
+
+Take input from exposed filters and assign to this handler, if necessary. 
+
+Reimplemented in \hyperlink{classviews__handler__filter_88ccd2ef359009614abb48fb83c2a738}{views\_\-handler\_\-filter}, \hyperlink{classviews__handler__filter__date_063da758bf1832f38454620cbc94e304}{views\_\-handler\_\-filter\_\-date}, \hyperlink{classviews__handler__filter__in__operator_ff2b25941729b9ca81e1e53bb8e95a96}{views\_\-handler\_\-filter\_\-in\_\-operator}, \hyperlink{classviews__handler__filter__numeric_0fd6abb3062be32410bef3c1cefdaaf5}{views\_\-handler\_\-filter\_\-numeric}, \hyperlink{classviews__handler__filter__term__node__tid_75f38674ff356981f6e77f009da2101a}{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid}, and \hyperlink{classviews__handler__filter__user__name_a6ae18031b13da1c92d83b8c5de74c15}{views\_\-handler\_\-filter\_\-user\_\-name}.\hypertarget{classviews__handler_3f2fbfe1e0849d06ae77149412b821f6}{
+\index{views\_\-handler@{views\_\-handler}!access@{access}}
+\index{access@{access}!views_handler@{views\_\-handler}}
+\subsubsection[{access}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::access ()}}
+\label{classviews__handler_3f2fbfe1e0849d06ae77149412b821f6}
+
+
+Check whether current user has access to this handler.
+
+\begin{Desc}
+\item[Returns:]boolean \end{Desc}
+
+
+Reimplemented in \hyperlink{classviews__handler__field__node__revision__link__delete_8d1e660c4945e837ced26d6f12a6521e}{views\_\-handler\_\-field\_\-node\_\-revision\_\-link\_\-delete}, \hyperlink{classviews__handler__field__node__revision__link__revert_6cb6e683478e55b9e3e64602dbc8886d}{views\_\-handler\_\-field\_\-node\_\-revision\_\-link\_\-revert}, \hyperlink{classviews__handler__field__user__link_00708207b597556c70cba91816a03963}{views\_\-handler\_\-field\_\-user\_\-link}, and \hyperlink{classviews__handler__field__user__link__delete_2b7406dc052b9c2a6970ac45344c6635}{views\_\-handler\_\-field\_\-user\_\-link\_\-delete}.\hypertarget{classviews__handler_27a5cb35f3f17322957730a95b6be11e}{
+\index{views\_\-handler@{views\_\-handler}!admin\_\-summary@{admin\_\-summary}}
+\index{admin\_\-summary@{admin\_\-summary}!views_handler@{views\_\-handler}}
+\subsubsection[{admin\_\-summary}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::admin\_\-summary ()}}
+\label{classviews__handler_27a5cb35f3f17322957730a95b6be11e}
+
+
+Provide text for the administrative summary 
+
+Reimplemented in \hyperlink{classflag__handler__relationship__content_d5dd884b0fe1765d43a268baf16057ef}{flag\_\-handler\_\-relationship\_\-content}, \hyperlink{classflag__handler__relationship__counts_69a8b8c5c2a4ffa37f3cded6990716b2}{flag\_\-handler\_\-relationship\_\-counts}, \hyperlink{classflag__handler__relationship__user__content_4612285c2176c18f0bcc809531ab22ee}{flag\_\-handler\_\-relationship\_\-user\_\-content}, \hyperlink{classviews__handler__field_984d6ce9f6401260fca2d4673b27ae76}{views\_\-handler\_\-field}, \hyperlink{classviews__handler__filter_655263cd0b73188eec064b9a9743fe4c}{views\_\-handler\_\-filter}, \hyperlink{classviews__handler__filter__boolean__operator_7b58a9b58ae9778383b6a215834d7cdb}{views\_\-handler\_\-filter\_\-boolean\_\-operator}, \hyperlink{classviews__handler__filter__in__operator_2c17bde9b5cb3498d31786ba888d545c}{views\_\-handler\_\-filter\_\-in\_\-operator}, \hyperlink{classviews__handler__filter__numeric_aece85d3c36d4186c871cc55e636f4f2}{views\_\-handler\_\-filter\_\-numeric}, \hyperlink{classviews__handler__filter__string_3152b0f2ce38cf493327e2a91b9c9f5e}{views\_\-handler\_\-filter\_\-string}, \hyperlink{classviews__handler__sort_94271a6ce69bf4acb37047b01f0decaa}{views\_\-handler\_\-sort}, \hyperlink{classviews__handler__filter__history__user__timestamp_a5eeead15fcc3d6e74ca62c31676e109}{views\_\-handler\_\-filter\_\-history\_\-user\_\-timestamp}, \hyperlink{classviews__handler__filter__node__access_2f3abe4aa9418904e52937d1549fd560}{views\_\-handler\_\-filter\_\-node\_\-access}, \hyperlink{classviews__handler__filter__node__status_fad09e6f2c94d8f6748b48c3ce137a25}{views\_\-handler\_\-filter\_\-node\_\-status}, \hyperlink{classviews__handler__filter__term__node__tid_392046588b13b1b76223eb22ba4ff660}{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid}, \hyperlink{classviews__handler__filter__node__tnid_037932cf19297e4b8544c24747509823}{views\_\-handler\_\-filter\_\-node\_\-tnid}, \hyperlink{classviews__handler__filter__node__tnid__child_3762760577c3801276a683271be90e47}{views\_\-handler\_\-filter\_\-node\_\-tnid\_\-child}, and \hyperlink{classviews__handler__filter__user__name_ba7659d0d6c937d9c346e8ed3af532b6}{views\_\-handler\_\-filter\_\-user\_\-name}.\hypertarget{classviews__handler_c1cd2ff30cb558c79cc908be516fb725}{
+\index{views\_\-handler@{views\_\-handler}!broken@{broken}}
+\index{broken@{broken}!views_handler@{views\_\-handler}}
+\subsubsection[{broken}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::broken ()}}
+\label{classviews__handler_c1cd2ff30cb558c79cc908be516fb725}
+
+
+Determine if the handler is considered 'broken', meaning it's a a placeholder used when a handler can't be found. 
+
+Reimplemented in \hyperlink{classviews__handler__argument__broken_fb6937305424b7b8a2e6fb9e3d4ef1fb}{views\_\-handler\_\-argument\_\-broken}, \hyperlink{classviews__handler__field__broken_f579634a7ec51fa709d7c0cddc135725}{views\_\-handler\_\-field\_\-broken}, \hyperlink{classviews__handler__filter__broken_912a78cd8ee1d5c139613d252f2ca9e1}{views\_\-handler\_\-filter\_\-broken}, \hyperlink{classviews__handler__relationship__broken_c4e5826e70953e7ec16f50ec264fdb53}{views\_\-handler\_\-relationship\_\-broken}, and \hyperlink{classviews__handler__sort__broken_082f810e9181d6b2f878013897e3cc17}{views\_\-handler\_\-sort\_\-broken}.\hypertarget{classviews__handler_92517d122d69dc6f64a9edb80d55057d}{
+\index{views\_\-handler@{views\_\-handler}!can\_\-expose@{can\_\-expose}}
+\index{can\_\-expose@{can\_\-expose}!views_handler@{views\_\-handler}}
+\subsubsection[{can\_\-expose}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::can\_\-expose ()}}
+\label{classviews__handler_92517d122d69dc6f64a9edb80d55057d}
+
+
+Determine if a handler can be exposed. 
+
+Reimplemented in \hyperlink{classviews__handler__filter_f0e5810a2a2f194cd6af0fca9c858756}{views\_\-handler\_\-filter}, \hyperlink{classviews__handler__filter__node__access_20eacba1b9be3c0e6b8245191b60a9ff}{views\_\-handler\_\-filter\_\-node\_\-access}, \hyperlink{classviews__handler__filter__node__tnid_9e6111d77af1aefee0b78d7b3b2c25cc}{views\_\-handler\_\-filter\_\-node\_\-tnid}, and \hyperlink{classviews__handler__filter__node__tnid__child_2c6527f01666eaf0ba38eff4798ec732}{views\_\-handler\_\-filter\_\-node\_\-tnid\_\-child}.\hypertarget{classviews__handler_947f21ef0f21a77f4d103af4702b3600}{
+\index{views\_\-handler@{views\_\-handler}!ensure\_\-my\_\-table@{ensure\_\-my\_\-table}}
+\index{ensure\_\-my\_\-table@{ensure\_\-my\_\-table}!views_handler@{views\_\-handler}}
+\subsubsection[{ensure\_\-my\_\-table}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::ensure\_\-my\_\-table ()}}
+\label{classviews__handler_947f21ef0f21a77f4d103af4702b3600}
+
+
+Ensure the main table for this handler is in the query. This is used a lot. 
+
+Reimplemented in \hyperlink{classviews__handler__argument__broken_479772a6b1f448d4edf3ff3eef988733}{views\_\-handler\_\-argument\_\-broken}, \hyperlink{classviews__handler__argument__many__to__one_f6195d516010fbd9cda241fa450a748a}{views\_\-handler\_\-argument\_\-many\_\-to\_\-one}, \hyperlink{classviews__handler__field__broken_887902026800149644e827fbb92dba15}{views\_\-handler\_\-field\_\-broken}, \hyperlink{classviews__handler__filter__broken_e85934ec4cf9e01aba2b17ce58ead155}{views\_\-handler\_\-filter\_\-broken}, \hyperlink{classviews__handler__filter__many__to__one_6ab5d3416cca7a6f5e59584071758673}{views\_\-handler\_\-filter\_\-many\_\-to\_\-one}, \hyperlink{classviews__handler__relationship__broken_cea2731924b5f5e3b83776f237b3ff67}{views\_\-handler\_\-relationship\_\-broken}, and \hyperlink{classviews__handler__sort__broken_148e3b71f7327ed44a139ecefbd1d43b}{views\_\-handler\_\-sort\_\-broken}.\hypertarget{classviews__handler_2db9f3127a5364b17fb775cede2f43a6}{
+\index{views\_\-handler@{views\_\-handler}!expose\_\-options@{expose\_\-options}}
+\index{expose\_\-options@{expose\_\-options}!views_handler@{views\_\-handler}}
+\subsubsection[{expose\_\-options}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::expose\_\-options ()}}
+\label{classviews__handler_2db9f3127a5364b17fb775cede2f43a6}
+
+
+Set new exposed option defaults when exposed setting is flipped on. 
+
+Reimplemented in \hyperlink{classviews__handler__filter_07ab6afc47bf892fb5fd5934c3f1d64c}{views\_\-handler\_\-filter}, \hyperlink{classviews__handler__filter__boolean__operator_24ff1f565f02838bc2a63939ab510d89}{views\_\-handler\_\-filter\_\-boolean\_\-operator}, and \hyperlink{classviews__handler__filter__in__operator_0ed328117721ce41a3744f0339c16527}{views\_\-handler\_\-filter\_\-in\_\-operator}.\hypertarget{classviews__handler_657fbb873c6be9e1da904e2aad191f66}{
+\index{views\_\-handler@{views\_\-handler}!exposed\_\-form@{exposed\_\-form}}
+\index{exposed\_\-form@{exposed\_\-form}!views_handler@{views\_\-handler}}
+\subsubsection[{exposed\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::exposed\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler_657fbb873c6be9e1da904e2aad191f66}
+
+
+Render our chunk of the exposed filter form when selecting 
+
+Reimplemented in \hyperlink{classviews__handler__filter_f97b055d96353032bebd186c66bbb5eb}{views\_\-handler\_\-filter}, and \hyperlink{classviews__handler__filter__search_fc00db448aa56fcd91e9ab0dbbe7d1ac}{views\_\-handler\_\-filter\_\-search}.\hypertarget{classviews__handler_2f16176116ecd86a8f8c60a2bc1ebd54}{
+\index{views\_\-handler@{views\_\-handler}!exposed\_\-info@{exposed\_\-info}}
+\index{exposed\_\-info@{exposed\_\-info}!views_handler@{views\_\-handler}}
+\subsubsection[{exposed\_\-info}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::exposed\_\-info ()}}
+\label{classviews__handler_2f16176116ecd86a8f8c60a2bc1ebd54}
+
+
+Get information about the exposed form for the form renderer.
+
+\begin{Desc}
+\item[Returns:]An array with the following keys:\begin{itemize}
+\item operator: The \$form key of the operator. Set to NULL if no operator.\item value: The \$form key of the value. Set to NULL if no value.\item label: The label to use for this piece. \end{itemize}
+\end{Desc}
+
+
+Reimplemented in \hyperlink{classviews__handler__filter_5405764212dfafae60fa032c217461b4}{views\_\-handler\_\-filter}.\hypertarget{classviews__handler_6b0a97cfe77b3f9dfcfad08f21f5c0f7}{
+\index{views\_\-handler@{views\_\-handler}!exposed\_\-submit@{exposed\_\-submit}}
+\index{exposed\_\-submit@{exposed\_\-submit}!views_handler@{views\_\-handler}}
+\subsubsection[{exposed\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::exposed\_\-submit (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler_6b0a97cfe77b3f9dfcfad08f21f5c0f7}
+
+
+Submit the exposed filter form \hypertarget{classviews__handler_2dd536754e4764cc82ffe7c864f54b16}{
+\index{views\_\-handler@{views\_\-handler}!exposed\_\-validate@{exposed\_\-validate}}
+\index{exposed\_\-validate@{exposed\_\-validate}!views_handler@{views\_\-handler}}
+\subsubsection[{exposed\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::exposed\_\-validate (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler_2dd536754e4764cc82ffe7c864f54b16}
+
+
+Validate the exposed filter form 
+
+Reimplemented in \hyperlink{classviews__handler__filter__date_0146f5fd6dee328506fc6f29006eb401}{views\_\-handler\_\-filter\_\-date}, \hyperlink{classviews__handler__filter__term__node__tid_b0c4583fea802e86c84fabafc4768074}{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid}, and \hyperlink{classviews__handler__filter__user__name_3510a0e9b2c5fea7460a42049e0a58c0}{views\_\-handler\_\-filter\_\-user\_\-name}.\hypertarget{classviews__handler_0299b8b2ba70379a5aca4ddb5b8d95b4}{
+\index{views\_\-handler@{views\_\-handler}!extra\_\-options@{extra\_\-options}}
+\index{extra\_\-options@{extra\_\-options}!views_handler@{views\_\-handler}}
+\subsubsection[{extra\_\-options}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::extra\_\-options (\&\$ {\em option})}}
+\label{classviews__handler_0299b8b2ba70379a5aca4ddb5b8d95b4}
+
+
+Provide defaults for the handler. \hypertarget{classviews__handler_0eed1d12c47d60190f59e135d962719e}{
+\index{views\_\-handler@{views\_\-handler}!extra\_\-options\_\-form@{extra\_\-options\_\-form}}
+\index{extra\_\-options\_\-form@{extra\_\-options\_\-form}!views_handler@{views\_\-handler}}
+\subsubsection[{extra\_\-options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::extra\_\-options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler_0eed1d12c47d60190f59e135d962719e}
+
+
+Provide a form for setting options. 
+
+Reimplemented in \hyperlink{classviews__handler__filter__term__node__tid_df599d1bef08003b1b734dfd397030a6}{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid}, and \hyperlink{classviews__handler__filter__term__node__tid__depth_704c5e42a5a41ee12bd01b1b153431e4}{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid\_\-depth}.\hypertarget{classviews__handler_ca642bf4dff25e0d49f7fca65bb97f77}{
+\index{views\_\-handler@{views\_\-handler}!extra\_\-options\_\-submit@{extra\_\-options\_\-submit}}
+\index{extra\_\-options\_\-submit@{extra\_\-options\_\-submit}!views_handler@{views\_\-handler}}
+\subsubsection[{extra\_\-options\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::extra\_\-options\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler_ca642bf4dff25e0d49f7fca65bb97f77}
+
+
+Perform any necessary changes to the form values prior to storage. There is no need for this function to actually store the data. \hypertarget{classviews__handler_8a2c2fb295ec8024fc9e33361a92e8ac}{
+\index{views\_\-handler@{views\_\-handler}!extra\_\-options\_\-validate@{extra\_\-options\_\-validate}}
+\index{extra\_\-options\_\-validate@{extra\_\-options\_\-validate}!views_handler@{views\_\-handler}}
+\subsubsection[{extra\_\-options\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::extra\_\-options\_\-validate (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler_8a2c2fb295ec8024fc9e33361a92e8ac}
+
+
+Validate the options form. \hypertarget{classviews__handler_c05dca8ea852b137f7f288d090a49221}{
+\index{views\_\-handler@{views\_\-handler}!get\_\-join@{get\_\-join}}
+\index{get\_\-join@{get\_\-join}!views_handler@{views\_\-handler}}
+\subsubsection[{get\_\-join}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::get\_\-join ()}}
+\label{classviews__handler_c05dca8ea852b137f7f288d090a49221}
+
+
+Get the join object that should be used for this handler.
+
+This method isn't used a great deal, but it's very handy for easily getting the join if it is necessary to make some changes to it, such as adding an 'extra'. \hypertarget{classviews__handler_10d35469346efc352d21e5f44de60b2e}{
+\index{views\_\-handler@{views\_\-handler}!has\_\-extra\_\-options@{has\_\-extra\_\-options}}
+\index{has\_\-extra\_\-options@{has\_\-extra\_\-options}!views_handler@{views\_\-handler}}
+\subsubsection[{has\_\-extra\_\-options}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::has\_\-extra\_\-options ()}}
+\label{classviews__handler_10d35469346efc352d21e5f44de60b2e}
+
+
+If a handler has 'extra options' it will get a little settings widget and another form called extra\_\-options. 
+
+Reimplemented in \hyperlink{classviews__handler__filter__term__node__tid_72232eda675756741ce92061cb4685ee}{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid}.\hypertarget{classviews__handler_1f5f42ba46d3584280788fda97eee8c5}{
+\index{views\_\-handler@{views\_\-handler}!init@{init}}
+\index{init@{init}!views_handler@{views\_\-handler}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::init (\&\$ {\em view}, \/  \$ {\em options})}}
+\label{classviews__handler_1f5f42ba46d3584280788fda97eee8c5}
+
+
+init the handler with necessary data. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$view}]The \$view object this handler is attached to. \item[{\em \$options}]The item from the database; the actual contents of this will vary based upon the type of handler. \end{description}
+\end{Desc}
+
+
+Reimplemented in \hyperlink{classviews__handler__field_7eaaf0fd6fbc57c2955f88b257394d19}{views\_\-handler\_\-field}, \hyperlink{classviews__handler__field__boolean_0150fb8a25c2f1f2537d476b1c448238}{views\_\-handler\_\-field\_\-boolean}, \hyperlink{classviews__handler__filter_8bae65467710eb5f6cf6c2c46bd51c7b}{views\_\-handler\_\-filter}, \hyperlink{classviews__handler__filter__many__to__one_8417192dd11eaf273b05cbbc47990cbe}{views\_\-handler\_\-filter\_\-many\_\-to\_\-one}, \hyperlink{classviews__handler__relationship_a50c5d9c6b52fa2eeed61e88a74bc083}{views\_\-handler\_\-relationship}, \hyperlink{classviews__handler__field__node__new__comments_8f93300640b88efd9401dc2666fcc64a}{views\_\-handler\_\-field\_\-node\_\-new\_\-comments}, \hyperlink{classviews__handler__field__history__user__timestamp_0cc37c49613f0f55e4fc35733c35b806}{views\_\-handler\_\-field\_\-history\_\-user\_\-timestamp}, and \hyperlink{classviews__handler__field__term__node__tid_639e45d86c954e90120193b84c8b910b}{views\_\-handler\_\-field\_\-term\_\-node\_\-tid}.\hypertarget{classviews__handler_0c01527c54c1f1372f3c4f28ae34a837}{
+\index{views\_\-handler@{views\_\-handler}!is\_\-exposed@{is\_\-exposed}}
+\index{is\_\-exposed@{is\_\-exposed}!views_handler@{views\_\-handler}}
+\subsubsection[{is\_\-exposed}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::is\_\-exposed ()}}
+\label{classviews__handler_0c01527c54c1f1372f3c4f28ae34a837}
+
+
+Determine if this item is 'exposed', meaning it provides form elements to let users modify the \hyperlink{classview}{view}.
+
+\begin{Desc}
+\item[Returns:]TRUE/FALSE \end{Desc}
+\hypertarget{classviews__handler_53baa97a6c218ce4b847c8fb4e65a350}{
+\index{views\_\-handler@{views\_\-handler}!needs\_\-style\_\-plugin@{needs\_\-style\_\-plugin}}
+\index{needs\_\-style\_\-plugin@{needs\_\-style\_\-plugin}!views_handler@{views\_\-handler}}
+\subsubsection[{needs\_\-style\_\-plugin}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::needs\_\-style\_\-plugin ()}}
+\label{classviews__handler_53baa97a6c218ce4b847c8fb4e65a350}
+
+
+Determine if the argument needs a style plugin.
+
+\begin{Desc}
+\item[Returns:]TRUE/FALSE \end{Desc}
+
+
+Reimplemented in \hyperlink{classviews__handler__argument_2c09abe1e98de7438ca0701a14b00861}{views\_\-handler\_\-argument}.\hypertarget{classviews__handler_a41fcf16b177eb03e35facbae6320f74}{
+\index{views\_\-handler@{views\_\-handler}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!views_handler@{views\_\-handler}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler_a41fcf16b177eb03e35facbae6320f74}
+
+
+Provide a form for setting options. 
+
+Reimplemented in \hyperlink{classfilefield__meta__handler__field__bitrate_74c60e6bbcee2bbaed721a9ed7eea05c}{filefield\_\-meta\_\-handler\_\-field\_\-bitrate}, \hyperlink{classfilefield__meta__handler__field__duration_4c26d6d5b7dad8dce469f82d9bc9c70c}{filefield\_\-meta\_\-handler\_\-field\_\-duration}, \hyperlink{classfilefield__meta__handler__field__samplerate_7ca6744f5ce24aea26f093027538d5ac}{filefield\_\-meta\_\-handler\_\-field\_\-samplerate}, \hyperlink{classfilefield__meta__handler__field__tags_b95bd58dd3d2486b63c2498410cc65be}{filefield\_\-meta\_\-handler\_\-field\_\-tags}, \hyperlink{classflag__handler__field__ops_88b37806cdb2d420b830d0030ef7028a}{flag\_\-handler\_\-field\_\-ops}, \hyperlink{classflag__handler__filter__flagged_705ed46853eba0fb4b4eb461de5264db}{flag\_\-handler\_\-filter\_\-flagged}, \hyperlink{classflag__handler__relationship__content_16476e401490907a6fadc9af5156d83f}{flag\_\-handler\_\-relationship\_\-content}, \hyperlink{classflag__handler__relationship__counts_a99b83dd638a7e41aeaff5ae9c013efe}{flag\_\-handler\_\-relationship\_\-counts}, \hyperlink{classflag__handler__relationship__user__content_21d3592facff0d6f32b52685f78259b7}{flag\_\-handler\_\-relationship\_\-user\_\-content}, \hyperlink{classlightbox2__handler__field__lightbox2_6e0462dcba8bb237b822be3d844ed24b}{lightbox2\_\-handler\_\-field\_\-lightbox2}, \hyperlink{classtwitter__views__handler__field__xss_4896b110fa64c3beed9fb17b5f01b437}{twitter\_\-views\_\-handler\_\-field\_\-xss}, \hyperlink{classviews__handler__argument_44f015a0d527983ae6df2689f66b2c24}{views\_\-handler\_\-argument}, \hyperlink{classviews__handler__argument__broken_dc6789177dec1350859832bc7b242454}{views\_\-handler\_\-argument\_\-broken}, \hyperlink{classviews__handler__argument__many__to__one_dd3ed7d59f17d79f48ef8f47e049cb92}{views\_\-handler\_\-argument\_\-many\_\-to\_\-one}, \hyperlink{classviews__handler__argument__null_414f383de12d08f6e1e5eccb572cf9c8}{views\_\-handler\_\-argument\_\-null}, \hyperlink{classviews__handler__argument__numeric_b30359963ec4962258bb8db3b6a870c4}{views\_\-handler\_\-argument\_\-numeric}, \hyperlink{classviews__handler__argument__string_b96e2120f4f4458921f817b343d11ef0}{views\_\-handler\_\-argument\_\-string}, \hyperlink{classviews__handler__field_0435d161922b7b4b84f02a2e79bb947a}{views\_\-handler\_\-field}, \hyperlink{classviews__handler__field__broken_fc66860f4fb5a1878a131c30500e6e1d}{views\_\-handler\_\-field\_\-broken}, \hyperlink{classviews__handler__field__file__size_b701c7b97e6688971ddfdcd7e9539262}{views\_\-handler\_\-field\_\-file\_\-size}, \hyperlink{classviews__handler__field__boolean_3addce6b85348a630627f348907082e3}{views\_\-handler\_\-field\_\-boolean}, \hyperlink{classviews__handler__field__custom_886688de7d2ac5bc4ef3b588a2e5056a}{views\_\-handler\_\-field\_\-custom}, \hyperlink{classviews__handler__field__date_cc152b1ff3dd0a65bc4d372c97c7c8e0}{views\_\-handler\_\-field\_\-date}, \hyperlink{classviews__handler__field__numeric_e6f81d1896ece64e9450ebc2d60da2fd}{views\_\-handler\_\-field\_\-numeric}, \hyperlink{classviews__handler__field__prerender__list_6a88df29dbdd11aefc5d108dca6530e0}{views\_\-handler\_\-field\_\-prerender\_\-list}, \hyperlink{classviews__handler__field__url_47ffe90c19fe1a114df84f5779567cd3}{views\_\-handler\_\-field\_\-url}, \hyperlink{classviews__handler__filter_f14c69367162057a32709a6340de0988}{views\_\-handler\_\-filter}, \hyperlink{classviews__handler__filter__broken_51fc714b7aec668a035da8dfb4b4a69a}{views\_\-handler\_\-filter\_\-broken}, \hyperlink{classviews__handler__filter__string_997cbe831f362c6d83a72b84471567fa}{views\_\-handler\_\-filter\_\-string}, \hyperlink{classviews__handler__relationship_08cc3f5947964d936b5e88d198f82c30}{views\_\-handler\_\-relationship}, \hyperlink{classviews__handler__relationship__broken_a421a42866d049732e8747669466ae0e}{views\_\-handler\_\-relationship\_\-broken}, \hyperlink{classviews__handler__sort_ba953218e09ab9da8f6ed0a67f046455}{views\_\-handler\_\-sort}, \hyperlink{classviews__handler__sort__broken_57d7f6176962083d4c17cbf448cb792f}{views\_\-handler\_\-sort\_\-broken}, \hyperlink{classviews__handler__sort__date_622c39d35c93e620cc6fa6ae2ab37ab4}{views\_\-handler\_\-sort\_\-date}, \hyperlink{classviews__handler__sort__random_51a854154f820622661702ec10532cdb}{views\_\-handler\_\-sort\_\-random}, \hyperlink{classviews__handler__field__aggregator__category_43be8cbc1313b8b3f51321490d40a914}{views\_\-handler\_\-field\_\-aggregator\_\-category}, \hyperlink{classviews__handler__field__aggregator__title__link_6ebe6b2dc8c306fc32258be795f21f3b}{views\_\-handler\_\-field\_\-aggregator\_\-title\_\-link}, \hyperlink{classviews__handler__field__comment_5afe1cb8daaae349f0f39b9ce0195753}{views\_\-handler\_\-field\_\-comment}, \hyperlink{classviews__handler__field__comment__link_82957426a30584198c79c78804265bdc}{views\_\-handler\_\-field\_\-comment\_\-link}, \hyperlink{classviews__handler__field__comment__node__link_4a4be3287da8267b5571d1fe404f9070}{views\_\-handler\_\-field\_\-comment\_\-node\_\-link}, \hyperlink{classviews__handler__field__comment__username_9bcc4bbe9ebbd7247431cfc18c5bab9c}{views\_\-handler\_\-field\_\-comment\_\-username}, \hyperlink{classviews__handler__field__node__new__comments_2a209d3acbaa47e781df96bc0ca85156}{views\_\-handler\_\-field\_\-node\_\-new\_\-comments}, \hyperlink{classviews__handler__field__contact__link_d6709f7a6f48dc51fe3952f26598e622}{views\_\-handler\_\-field\_\-contact\_\-link}, \hyperlink{classviews__handler__field__locale__link__edit_dcbd4b327f8cbcd2d75e0c145b00e42d}{views\_\-handler\_\-field\_\-locale\_\-link\_\-edit}, \hyperlink{classviews__handler__field__history__user__timestamp_785f6784b015c681b25f58573b1e6859}{views\_\-handler\_\-field\_\-history\_\-user\_\-timestamp}, \hyperlink{classviews__handler__field__node_f3d8a04be282a20079ea4fb82e768910}{views\_\-handler\_\-field\_\-node}, \hyperlink{classviews__handler__field__node__link_fe6559cbf0b01700ae56fa62c5ca7616}{views\_\-handler\_\-field\_\-node\_\-link}, \hyperlink{classviews__handler__field__node__path_f0eb803f6004582da8a3b4aa9e81cedf}{views\_\-handler\_\-field\_\-node\_\-path}, \hyperlink{classviews__handler__field__node__type_0152124a453b32265e512bace19d6de4}{views\_\-handler\_\-field\_\-node\_\-type}, \hyperlink{classviews__handler__field__profile__date_ede3f5f93411ff64dd780b9837d19aec}{views\_\-handler\_\-field\_\-profile\_\-date}, \hyperlink{classviews__handler__field__search__score_d3bc7dfcc4859869b75b371c33380abb}{views\_\-handler\_\-field\_\-search\_\-score}, \hyperlink{classviews__handler__field__accesslog__path_b8bfda464a205057cd730081aa5981c8}{views\_\-handler\_\-field\_\-accesslog\_\-path}, \hyperlink{classviews__handler__field__file_ab95242357e45be9c4fbbced1f625d7b}{views\_\-handler\_\-field\_\-file}, \hyperlink{classviews__handler__argument__term__node__tid_f00552a1378333434154989c051d0e98}{views\_\-handler\_\-argument\_\-term\_\-node\_\-tid}, \hyperlink{classviews__handler__argument__term__node__tid__depth_db15b091303182e330a162d384676e50}{views\_\-handler\_\-argument\_\-term\_\-node\_\-tid\_\-depth}, \hyperlink{classviews__handler__argument__term__node__tid__depth__modifier_a4796e763923377f41dbf9bf415d96e8}{views\_\-handler\_\-argument\_\-term\_\-node\_\-tid\_\-depth\_\-modifier}, \hyperlink{classviews__handler__field__taxonomy_df66d3026b9409dd3237c5ebef994595}{views\_\-handler\_\-field\_\-taxonomy}, \hyperlink{classviews__handler__field__term__node__tid_0f0641c036e0a2498abd497cba1161a5}{views\_\-handler\_\-field\_\-term\_\-node\_\-tid}, \hyperlink{classviews__handler__relationship__translation_ca4668f3619b0fc6182e12cbaf38b633}{views\_\-handler\_\-relationship\_\-translation}, \hyperlink{classviews__handler__field__upload__description_714cc6455e6fa7c9426dcf08dee9f89e}{views\_\-handler\_\-field\_\-upload\_\-description}, \hyperlink{classviews__handler__field__upload__fid_b39479eb80cfba952037f37e930d1b6e}{views\_\-handler\_\-field\_\-upload\_\-fid}, \hyperlink{classviews__handler__field__user_ecf77682fa7dc9daf1fa97cbe045420d}{views\_\-handler\_\-field\_\-user}, \hyperlink{classviews__handler__field__user__link_952944015feaaab1fb2d0abc29d5c2b5}{views\_\-handler\_\-field\_\-user\_\-link}, \hyperlink{classviews__handler__field__user__mail_ee55735f96178173853dbf1f8b293216}{views\_\-handler\_\-field\_\-user\_\-mail}, and \hyperlink{classviews__handler__field__user__name_0c3b7db3d060e384287fa62f348c9387}{views\_\-handler\_\-field\_\-user\_\-name}.\hypertarget{classviews__handler_583187975f1bbf5df13138a0898f2ac7}{
+\index{views\_\-handler@{views\_\-handler}!options\_\-submit@{options\_\-submit}}
+\index{options\_\-submit@{options\_\-submit}!views_handler@{views\_\-handler}}
+\subsubsection[{options\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::options\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler_583187975f1bbf5df13138a0898f2ac7}
+
+
+Perform any necessary changes to the form values prior to storage. There is no need for this function to actually store the data. \hypertarget{classviews__handler_48a7b56e8952d9fcf56e2dec7794bb4e}{
+\index{views\_\-handler@{views\_\-handler}!options\_\-validate@{options\_\-validate}}
+\index{options\_\-validate@{options\_\-validate}!views_handler@{views\_\-handler}}
+\subsubsection[{options\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::options\_\-validate (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler_48a7b56e8952d9fcf56e2dec7794bb4e}
+
+
+Validate the options form. 
+
+Reimplemented in \hyperlink{classflag__handler__relationship__content_18742b6cac14664ca2880c9b3bf96feb}{flag\_\-handler\_\-relationship\_\-content}.\hypertarget{classviews__handler_4eeb5551d6c97b1ea074049991989fce}{
+\index{views\_\-handler@{views\_\-handler}!pre\_\-query@{pre\_\-query}}
+\index{pre\_\-query@{pre\_\-query}!views_handler@{views\_\-handler}}
+\subsubsection[{pre\_\-query}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::pre\_\-query ()}}
+\label{classviews__handler_4eeb5551d6c97b1ea074049991989fce}
+
+
+Run before the \hyperlink{classview}{view} is built.
+
+This gives all the handlers some time to set up before any handler has been fully run. 
+
+Reimplemented in \hyperlink{classviews__handler__argument__term__node__tid__depth__modifier_278abcb2e424241efa1361d01be89eb1}{views\_\-handler\_\-argument\_\-term\_\-node\_\-tid\_\-depth\_\-modifier}.\hypertarget{classviews__handler_91e22c95696d9fdb9ed753a10d42a21d}{
+\index{views\_\-handler@{views\_\-handler}!query@{query}}
+\index{query@{query}!views_handler@{views\_\-handler}}
+\subsubsection[{query}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::query ()}}
+\label{classviews__handler_91e22c95696d9fdb9ed753a10d42a21d}
+
+
+Add this handler into the query.
+
+If we were using PHP5, this would be abstract. 
+
+Reimplemented in \hyperlink{classflag__handler__field__ops_a42722b03427da1e009f3b6075af703a}{flag\_\-handler\_\-field\_\-ops}, \hyperlink{classflag__handler__filter__flagged_c01506ba4593bc1ab5b7b40f89843e82}{flag\_\-handler\_\-filter\_\-flagged}, \hyperlink{classflag__handler__relationship__content_7fcb01763f0902dafd9f601c0bc1a612}{flag\_\-handler\_\-relationship\_\-content}, \hyperlink{classflag__handler__relationship__counts_18060bfeb86c50ff51325f4dbeb93663}{flag\_\-handler\_\-relationship\_\-counts}, \hyperlink{classflag__handler__relationship__user__content_d6d40590ad33616b0a55395d60d1166b}{flag\_\-handler\_\-relationship\_\-user\_\-content}, \hyperlink{classlightbox2__handler__field__lightbox2_be83b39eb7bab1582a1038543f59e277}{lightbox2\_\-handler\_\-field\_\-lightbox2}, \hyperlink{classviews__handler__argument_c4b0ce6704a10f515b2aea2f9e790994}{views\_\-handler\_\-argument}, \hyperlink{classviews__handler__argument__broken_271044cef8ae5bc6c058ba98ab0fb56d}{views\_\-handler\_\-argument\_\-broken}, \hyperlink{classviews__handler__argument__formula_a9cb66a17cfded1800dac4c10c20f2ee}{views\_\-handler\_\-argument\_\-formula}, \hyperlink{classviews__handler__argument__many__to__one_5386934f090273137694ea9d1de32d04}{views\_\-handler\_\-argument\_\-many\_\-to\_\-one}, \hyperlink{classviews__handler__argument__null_887c3f8e9f97a75cc9d91a7b685b5f12}{views\_\-handler\_\-argument\_\-null}, \hyperlink{classviews__handler__argument__numeric_399a3c37ef1277c6b79596fa6dd037a7}{views\_\-handler\_\-argument\_\-numeric}, \hyperlink{classviews__handler__argument__string_d50bba6781755cfcd29b2a493dd838ec}{views\_\-handler\_\-argument\_\-string}, \hyperlink{classviews__handler__field_4f661f91bcbe80d4a00c30a31456c502}{views\_\-handler\_\-field}, \hyperlink{classviews__handler__field__broken_f6665205257b9b0e1dce732645f5dde1}{views\_\-handler\_\-field\_\-broken}, \hyperlink{classviews__handler__field__custom_153c21f3d05ff9f27e345f2c98058bc4}{views\_\-handler\_\-field\_\-custom}, \hyperlink{classviews__handler__filter_8e513b3abbc2559f37b550ca4957b4ae}{views\_\-handler\_\-filter}, \hyperlink{classviews__handler__filter__broken_15895a67b79ccabcab4d21945a38477b}{views\_\-handler\_\-filter\_\-broken}, \hyperlink{classviews__handler__filter__boolean__operator_b3afc650701939c060e684d75fa2b21b}{views\_\-handler\_\-filter\_\-boolean\_\-operator}, \hyperlink{classviews__handler__filter__boolean__operator__string_d4d0444476749372e38591ad058ee1cd}{views\_\-handler\_\-filter\_\-boolean\_\-operator\_\-string}, \hyperlink{classviews__handler__filter__in__operator_f4b9a596ad1e6fbee116977ca0a7d8a9}{views\_\-handler\_\-filter\_\-in\_\-operator}, \hyperlink{classviews__handler__filter__numeric_aa5c6b227651bd1676850f5999f2a897}{views\_\-handler\_\-filter\_\-numeric}, \hyperlink{classviews__handler__filter__string_fcfdae379583a2eb912e1b82d4513503}{views\_\-handler\_\-filter\_\-string}, \hyperlink{classviews__handler__relationship_7dc0b6371807dbf06efa594cb52b3348}{views\_\-handler\_\-relationship}, \hyperlink{classviews__handler__relationship__broken_58db24781460cd5b36c08c56df9d56ab}{views\_\-handler\_\-relationship\_\-broken}, \hyperlink{classviews__handler__sort_94fa33c5d037e41a927583fce2df3d18}{views\_\-handler\_\-sort}, \hyperlink{classviews__handler__sort__broken_6298719637ac590b81496b4487b573ea}{views\_\-handler\_\-sort\_\-broken}, \hyperlink{classviews__handler__sort__date_3d3680d96fee82a746bac50c051016a8}{views\_\-handler\_\-sort\_\-date}, \hyperlink{classviews__handler__sort__formula_208dff453ab94f55000e8027ed3c8588}{views\_\-handler\_\-sort\_\-formula}, \hyperlink{classviews__handler__sort__menu__hierarchy_04fd6337ac7ec486789586b65cf545fd}{views\_\-handler\_\-sort\_\-menu\_\-hierarchy}, \hyperlink{classviews__handler__sort__random_eaf6fcc03c9d1a0f86a77b9e5314229a}{views\_\-handler\_\-sort\_\-random}, \hyperlink{classviews__handler__argument__comment__user__uid_081c8766297cd7051693061f32207709}{views\_\-handler\_\-argument\_\-comment\_\-user\_\-uid}, \hyperlink{classviews__handler__field__comment__link_c19c2cedce77bfa9490624df9cd1eac2}{views\_\-handler\_\-field\_\-comment\_\-link}, \hyperlink{classviews__handler__field__comment__node__link_f48614fab00f4f6b8ec7e68a3d352b20}{views\_\-handler\_\-field\_\-comment\_\-node\_\-link}, \hyperlink{classviews__handler__field__ncs__last__comment__name_5394581513de0ee85a28aef8de302842}{views\_\-handler\_\-field\_\-ncs\_\-last\_\-comment\_\-name}, \hyperlink{classviews__handler__field__ncs__last__updated_9fdf82c20960c14abf4aaa37c578b299}{views\_\-handler\_\-field\_\-ncs\_\-last\_\-updated}, \hyperlink{classviews__handler__field__node__new__comments_b49cfad0c25d081f0ee70e2e0d0db809}{views\_\-handler\_\-field\_\-node\_\-new\_\-comments}, \hyperlink{classviews__handler__filter__comment__user__uid_5b649bd04038ac8ed577410ad54ad5b0}{views\_\-handler\_\-filter\_\-comment\_\-user\_\-uid}, \hyperlink{classviews__handler__filter__ncs__last__updated_fdcfcb18506212eb4b5df8b19971ff48}{views\_\-handler\_\-filter\_\-ncs\_\-last\_\-updated}, \hyperlink{classviews__handler__sort__comment__thread_6ea2c9fdba530fd022c1eafd5b0c4cea}{views\_\-handler\_\-sort\_\-comment\_\-thread}, \hyperlink{classviews__handler__sort__ncs__last__comment__name_23a0eb15347f118155df094a2cadd249}{views\_\-handler\_\-sort\_\-ncs\_\-last\_\-comment\_\-name}, \hyperlink{classviews__handler__sort__ncs__last__updated_05d2ef9eb8727ee81915b34254d99355}{views\_\-handler\_\-sort\_\-ncs\_\-last\_\-updated}, \hyperlink{classviews__handler__field__filter__format__name_3032499c14945a87535f1fdfbea57feb}{views\_\-handler\_\-field\_\-filter\_\-format\_\-name}, \hyperlink{classviews__handler__field__locale__link__edit_da85b88e681ca38a7c7d66deb133ae65}{views\_\-handler\_\-field\_\-locale\_\-link\_\-edit}, \hyperlink{classviews__handler__field__history__user__timestamp_bd6ff7a6d51f75781cf6ea6288612c07}{views\_\-handler\_\-field\_\-history\_\-user\_\-timestamp}, \hyperlink{classviews__handler__field__node__link_2c9b646801f273970403fea5ac4621b0}{views\_\-handler\_\-field\_\-node\_\-link}, \hyperlink{classviews__handler__field__node__path_59474fa6e78296b5f0c2aca6a951907e}{views\_\-handler\_\-field\_\-node\_\-path}, \hyperlink{classviews__handler__filter__history__user__timestamp_c7499e60ca61853a3cd37fcbaa3c0618}{views\_\-handler\_\-filter\_\-history\_\-user\_\-timestamp}, \hyperlink{classviews__handler__filter__node__access_b7f054a6a94abf2f41ce70fd40cf2e5e}{views\_\-handler\_\-filter\_\-node\_\-access}, \hyperlink{classviews__handler__filter__node__status_4f5351bb3567b5fe8bca111ffca83690}{views\_\-handler\_\-filter\_\-node\_\-status}, \hyperlink{classviews__handler__field__search__score_fda75fb726345ee91401d2f79ad2d313}{views\_\-handler\_\-field\_\-search\_\-score}, \hyperlink{classviews__handler__filter__search_f972f15bdc716b36d04d9a9d4f20b6f5}{views\_\-handler\_\-filter\_\-search}, \hyperlink{classviews__handler__sort__search__score_7d144db57e043dc594021228f8567726}{views\_\-handler\_\-sort\_\-search\_\-score}, \hyperlink{classviews__handler__argument__term__node__tid__depth_8956dffc5b8c1b5adef8cdc6e897c7ab}{views\_\-handler\_\-argument\_\-term\_\-node\_\-tid\_\-depth}, \hyperlink{classviews__handler__argument__term__node__tid__depth__modifier_13fb3ff5466a1c9fcd863bb4962a18c8}{views\_\-handler\_\-argument\_\-term\_\-node\_\-tid\_\-depth\_\-modifier}, \hyperlink{classviews__handler__field__term__node__tid_8160a16d41604b141768dc313b6223b9}{views\_\-handler\_\-field\_\-term\_\-node\_\-tid}, \hyperlink{classviews__handler__filter__term__node__tid__depth_ff1d2c0057597790a56bffd0674f391a}{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid\_\-depth}, \hyperlink{classviews__handler__field__node__translation__link_ccd7784b851085dadf55b773f1845097}{views\_\-handler\_\-field\_\-node\_\-translation\_\-link}, \hyperlink{classviews__handler__filter__node__tnid_7e51dd45867a8a4a3c965a09d0ecd3b6}{views\_\-handler\_\-filter\_\-node\_\-tnid}, \hyperlink{classviews__handler__filter__node__tnid__child_a21b64d11f0f79a113be65b65e6249e0}{views\_\-handler\_\-filter\_\-node\_\-tnid\_\-child}, \hyperlink{classviews__handler__relationship__translation_f1e8ba159a9b04199ff03cad304ca1e4}{views\_\-handler\_\-relationship\_\-translation}, \hyperlink{classviews__handler__filter__upload__fid_84a251fda29d367d7c915b736fe43b46}{views\_\-handler\_\-filter\_\-upload\_\-fid}, \hyperlink{classviews__handler__field__user__link_b64eedee54360407b203c3d7474c40f2}{views\_\-handler\_\-field\_\-user\_\-link}, \hyperlink{classviews__handler__field__user__roles_26513786d88b63b1e2dcfd4aa09c4552}{views\_\-handler\_\-field\_\-user\_\-roles}, and \hyperlink{classviews__handler__filter__user__current_6002cf25d2385bd07c771f9a65cee48f}{views\_\-handler\_\-filter\_\-user\_\-current}.\hypertarget{classviews__handler_c54ea4553cbc678d23b51dfad3142a54}{
+\index{views\_\-handler@{views\_\-handler}!set\_\-relationship@{set\_\-relationship}}
+\index{set\_\-relationship@{set\_\-relationship}!views_handler@{views\_\-handler}}
+\subsubsection[{set\_\-relationship}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::set\_\-relationship ()}}
+\label{classviews__handler_c54ea4553cbc678d23b51dfad3142a54}
+
+
+Called just prior to \hyperlink{classviews__handler_91e22c95696d9fdb9ed753a10d42a21d}{query()}, this lets a handler set up any relationship it needs. \hypertarget{classviews__handler_7f2453d86d3cb3850826e8c921012f16}{
+\index{views\_\-handler@{views\_\-handler}!store\_\-exposed\_\-input@{store\_\-exposed\_\-input}}
+\index{store\_\-exposed\_\-input@{store\_\-exposed\_\-input}!views_handler@{views\_\-handler}}
+\subsubsection[{store\_\-exposed\_\-input}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::store\_\-exposed\_\-input (\$ {\em input}, \/  \$ {\em status})}}
+\label{classviews__handler_7f2453d86d3cb3850826e8c921012f16}
+
+
+If set to remember exposed input in the session, store it there. 
+
+Reimplemented in \hyperlink{classviews__handler__filter_7ad1d1cd56293ca452be9e7d5cfd8b94}{views\_\-handler\_\-filter}.\hypertarget{classviews__handler_e81019ed08d9c3f5bca3d16c69e7b39f}{
+\index{views\_\-handler@{views\_\-handler}!ui\_\-name@{ui\_\-name}}
+\index{ui\_\-name@{ui\_\-name}!views_handler@{views\_\-handler}}
+\subsubsection[{ui\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::ui\_\-name (\$ {\em short} = {\tt FALSE})}}
+\label{classviews__handler_e81019ed08d9c3f5bca3d16c69e7b39f}
+
+
+Return a string representing this handler's name in the UI. 
+
+Reimplemented in \hyperlink{classviews__handler__argument__broken_c62b831ae47250571ae7449906c1687d}{views\_\-handler\_\-argument\_\-broken}, \hyperlink{classviews__handler__field__broken_0b3272926656e5fc3f6c011fa51746ed}{views\_\-handler\_\-field\_\-broken}, \hyperlink{classviews__handler__filter__broken_199df5434e076ecc6889082a83f2e266}{views\_\-handler\_\-filter\_\-broken}, \hyperlink{classviews__handler__relationship__broken_d6a2ac8a5183f5293745ce27b55ac390}{views\_\-handler\_\-relationship\_\-broken}, and \hyperlink{classviews__handler__sort__broken_d83cfcffa971a65b6e306d6fac7f6c10}{views\_\-handler\_\-sort\_\-broken}.\hypertarget{classviews__handler_323961657c7c5f3257a8fe4eeea1502f}{
+\index{views\_\-handler@{views\_\-handler}!validate@{validate}}
+\index{validate@{validate}!views_handler@{views\_\-handler}}
+\subsubsection[{validate}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler::validate ()}}
+\label{classviews__handler_323961657c7c5f3257a8fe4eeea1502f}
+
+
+Validates the handler against the complete View.
+
+This is called when the complete View is being validated. For validating the handler options form use \hyperlink{classviews__handler_48a7b56e8952d9fcf56e2dec7794bb4e}{options\_\-validate()}.
+
+\begin{Desc}
+\item[See also:]\hyperlink{classviews__handler_48a7b56e8952d9fcf56e2dec7794bb4e}{views\_\-handler::options\_\-validate()}\end{Desc}
+\begin{Desc}
+\item[Returns:]Empty array if the handler is valid; an array of error strings if it is not. \end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/includes/\hyperlink{handlers_8inc}{handlers.inc}\end{CompactItemize}

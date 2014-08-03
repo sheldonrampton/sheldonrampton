@@ -1,0 +1,143 @@
+\hypertarget{classviews__handler__field__term__node__tid}{
+\section{views\_\-handler\_\-field\_\-term\_\-node\_\-tid Class Reference}
+\label{classviews__handler__field__term__node__tid}\index{views\_\-handler\_\-field\_\-term\_\-node\_\-tid@{views\_\-handler\_\-field\_\-term\_\-node\_\-tid}}
+}
+Inheritance diagram for views\_\-handler\_\-field\_\-term\_\-node\_\-tid::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5cm]{classviews__handler__field__term__node__tid}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__handler__field__term__node__tid_639e45d86c954e90120193b84c8b910b}{init} (\&\$\hyperlink{classview}{view}, \$options)
+\item 
+\hyperlink{classviews__handler__field__term__node__tid_6c6e6369b1897f4f6643a609b1a802a5}{option\_\-definition} ()
+\item 
+\hyperlink{classviews__handler__field__term__node__tid_0f0641c036e0a2498abd497cba1161a5}{options\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__handler__field__term__node__tid_8160a16d41604b141768dc313b6223b9}{query} ()
+\item 
+\hyperlink{classviews__handler__field__term__node__tid_f3446d6e75ff34c2b165a5513a385c3b}{pre\_\-render} (\$values)
+\item 
+\hypertarget{classviews__handler__field__term__node__tid_f5d54ae4ba053a0a5cccafc979f14b31}{
+\textbf{render\_\-item} (\$count, \$item)}
+\label{classviews__handler__field__term__node__tid_f5d54ae4ba053a0a5cccafc979f14b31}
+
+\item 
+\hyperlink{classviews__handler__field__term__node__tid_fa909e51eb90573d468deb29a3943d94}{document\_\-self\_\-tokens} (\&\$tokens)
+\item 
+\hyperlink{classviews__handler__field__term__node__tid_7fea3443ab075e3e35212ddc3b0d95f3}{add\_\-self\_\-tokens} (\&\$tokens, \$item)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Field handler for terms. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__handler__field__term__node__tid_7fea3443ab075e3e35212ddc3b0d95f3}{
+\index{views\_\-handler\_\-field\_\-term\_\-node\_\-tid@{views\_\-handler\_\-field\_\-term\_\-node\_\-tid}!add\_\-self\_\-tokens@{add\_\-self\_\-tokens}}
+\index{add\_\-self\_\-tokens@{add\_\-self\_\-tokens}!views_handler_field_term_node_tid@{views\_\-handler\_\-field\_\-term\_\-node\_\-tid}}
+\subsubsection[{add\_\-self\_\-tokens}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-term\_\-node\_\-tid::add\_\-self\_\-tokens (\&\$ {\em tokens}, \/  \$ {\em item})}}
+\label{classviews__handler__field__term__node__tid_7fea3443ab075e3e35212ddc3b0d95f3}
+
+
+Add any special tokens this field might use for itself.
+
+This method is intended to be overridden by items that generate fields as a list. For example, the field that displays all terms on a node might have tokens for the tid and the term.
+
+By convention, tokens should follow the format of \mbox{[}token-subtoken\mbox{]} where token is the field ID and subtoken is the field. If the field ID is terms, then the tokens might be \mbox{[}terms-tid\mbox{]} and \mbox{[}terms-name\mbox{]}. 
+
+Reimplemented from \hyperlink{classviews__handler__field_c61cc83a4c8c579993a254b5b1e16cbc}{views\_\-handler\_\-field}.\hypertarget{classviews__handler__field__term__node__tid_fa909e51eb90573d468deb29a3943d94}{
+\index{views\_\-handler\_\-field\_\-term\_\-node\_\-tid@{views\_\-handler\_\-field\_\-term\_\-node\_\-tid}!document\_\-self\_\-tokens@{document\_\-self\_\-tokens}}
+\index{document\_\-self\_\-tokens@{document\_\-self\_\-tokens}!views_handler_field_term_node_tid@{views\_\-handler\_\-field\_\-term\_\-node\_\-tid}}
+\subsubsection[{document\_\-self\_\-tokens}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-term\_\-node\_\-tid::document\_\-self\_\-tokens (\&\$ {\em tokens})}}
+\label{classviews__handler__field__term__node__tid_fa909e51eb90573d468deb29a3943d94}
+
+
+Document any special tokens this field might use for itself.
+
+\begin{Desc}
+\item[See also:]\hyperlink{classviews__handler__field__term__node__tid_7fea3443ab075e3e35212ddc3b0d95f3}{add\_\-self\_\-tokens()} for details. \end{Desc}
+
+
+Reimplemented from \hyperlink{classviews__handler__field_e33446d1059f13fbfb06a37da04d320e}{views\_\-handler\_\-field}.\hypertarget{classviews__handler__field__term__node__tid_639e45d86c954e90120193b84c8b910b}{
+\index{views\_\-handler\_\-field\_\-term\_\-node\_\-tid@{views\_\-handler\_\-field\_\-term\_\-node\_\-tid}!init@{init}}
+\index{init@{init}!views_handler_field_term_node_tid@{views\_\-handler\_\-field\_\-term\_\-node\_\-tid}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-term\_\-node\_\-tid::init (\&\$ {\em view}, \/  \$ {\em options})}}
+\label{classviews__handler__field__term__node__tid_639e45d86c954e90120193b84c8b910b}
+
+
+init the handler with necessary data. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$view}]The \$view object this handler is attached to. \item[{\em \$options}]The item from the database; the actual contents of this will vary based upon the type of handler. \end{description}
+\end{Desc}
+
+
+Reimplemented from \hyperlink{classviews__handler__field_7eaaf0fd6fbc57c2955f88b257394d19}{views\_\-handler\_\-field}.\hypertarget{classviews__handler__field__term__node__tid_6c6e6369b1897f4f6643a609b1a802a5}{
+\index{views\_\-handler\_\-field\_\-term\_\-node\_\-tid@{views\_\-handler\_\-field\_\-term\_\-node\_\-tid}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!views_handler_field_term_node_tid@{views\_\-handler\_\-field\_\-term\_\-node\_\-tid}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-term\_\-node\_\-tid::option\_\-definition ()}}
+\label{classviews__handler__field__term__node__tid_6c6e6369b1897f4f6643a609b1a802a5}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented from \hyperlink{classviews__handler__field__prerender__list_3787d1e3974a37c72f71c062eee52b3d}{views\_\-handler\_\-field\_\-prerender\_\-list}.\hypertarget{classviews__handler__field__term__node__tid_0f0641c036e0a2498abd497cba1161a5}{
+\index{views\_\-handler\_\-field\_\-term\_\-node\_\-tid@{views\_\-handler\_\-field\_\-term\_\-node\_\-tid}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!views_handler_field_term_node_tid@{views\_\-handler\_\-field\_\-term\_\-node\_\-tid}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-term\_\-node\_\-tid::options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler__field__term__node__tid_0f0641c036e0a2498abd497cba1161a5}
+
+
+Provide \char`\"{}link to term\char`\"{} option. 
+
+Reimplemented from \hyperlink{classviews__handler__field__prerender__list_6a88df29dbdd11aefc5d108dca6530e0}{views\_\-handler\_\-field\_\-prerender\_\-list}.\hypertarget{classviews__handler__field__term__node__tid_f3446d6e75ff34c2b165a5513a385c3b}{
+\index{views\_\-handler\_\-field\_\-term\_\-node\_\-tid@{views\_\-handler\_\-field\_\-term\_\-node\_\-tid}!pre\_\-render@{pre\_\-render}}
+\index{pre\_\-render@{pre\_\-render}!views_handler_field_term_node_tid@{views\_\-handler\_\-field\_\-term\_\-node\_\-tid}}
+\subsubsection[{pre\_\-render}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-term\_\-node\_\-tid::pre\_\-render (\$ {\em values})}}
+\label{classviews__handler__field__term__node__tid_f3446d6e75ff34c2b165a5513a385c3b}
+
+
+Run before any fields are rendered.
+
+This gives the handlers some time to set up before any handler has been rendered.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$values}]An array of all objects returned from the query. \end{description}
+\end{Desc}
+
+
+Reimplemented from \hyperlink{classviews__handler__field_e30a1d9c98c62ae40c90b938e09cd0ec}{views\_\-handler\_\-field}.\hypertarget{classviews__handler__field__term__node__tid_8160a16d41604b141768dc313b6223b9}{
+\index{views\_\-handler\_\-field\_\-term\_\-node\_\-tid@{views\_\-handler\_\-field\_\-term\_\-node\_\-tid}!query@{query}}
+\index{query@{query}!views_handler_field_term_node_tid@{views\_\-handler\_\-field\_\-term\_\-node\_\-tid}}
+\subsubsection[{query}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-term\_\-node\_\-tid::query ()}}
+\label{classviews__handler__field__term__node__tid_8160a16d41604b141768dc313b6223b9}
+
+
+Add this term to the query 
+
+Reimplemented from \hyperlink{classviews__handler__field_4f661f91bcbe80d4a00c30a31456c502}{views\_\-handler\_\-field}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/modules/taxonomy/views\_\-handler\_\-field\_\-term\_\-node\_\-tid.inc\end{CompactItemize}

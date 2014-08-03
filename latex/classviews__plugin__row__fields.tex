@@ -1,0 +1,74 @@
+\hypertarget{classviews__plugin__row__fields}{
+\section{views\_\-plugin\_\-row\_\-fields Class Reference}
+\label{classviews__plugin__row__fields}\index{views\_\-plugin\_\-row\_\-fields@{views\_\-plugin\_\-row\_\-fields}}
+}
+Inheritance diagram for views\_\-plugin\_\-row\_\-fields::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4cm]{classviews__plugin__row__fields}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__plugin__row__fields_85538eaa61f4a19de68a693876137934}{option\_\-definition} ()
+\item 
+\hyperlink{classviews__plugin__row__fields_bb87b6c98697fb676638759cb95072e3}{options\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__plugin__row__fields_25748927a3375430946259f22c841620}{options\_\-submit} (\$form, \&\$form\_\-state)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+The basic 'fields' row plugin
+
+This displays fields one after another, giving options for inline or not. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__plugin__row__fields_85538eaa61f4a19de68a693876137934}{
+\index{views\_\-plugin\_\-row\_\-fields@{views\_\-plugin\_\-row\_\-fields}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!views_plugin_row_fields@{views\_\-plugin\_\-row\_\-fields}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-row\_\-fields::option\_\-definition ()}}
+\label{classviews__plugin__row__fields_85538eaa61f4a19de68a693876137934}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented from \hyperlink{classviews__plugin__row_ad6be1492eae8605e9aff37da9f19337}{views\_\-plugin\_\-row}.\hypertarget{classviews__plugin__row__fields_bb87b6c98697fb676638759cb95072e3}{
+\index{views\_\-plugin\_\-row\_\-fields@{views\_\-plugin\_\-row\_\-fields}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!views_plugin_row_fields@{views\_\-plugin\_\-row\_\-fields}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-row\_\-fields::options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__plugin__row__fields_bb87b6c98697fb676638759cb95072e3}
+
+
+Provide a form for setting options. 
+
+Reimplemented from \hyperlink{classviews__plugin__row_6914c39d64977a0aa71da39cc1af004e}{views\_\-plugin\_\-row}.\hypertarget{classviews__plugin__row__fields_25748927a3375430946259f22c841620}{
+\index{views\_\-plugin\_\-row\_\-fields@{views\_\-plugin\_\-row\_\-fields}!options\_\-submit@{options\_\-submit}}
+\index{options\_\-submit@{options\_\-submit}!views_plugin_row_fields@{views\_\-plugin\_\-row\_\-fields}}
+\subsubsection[{options\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-row\_\-fields::options\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__plugin__row__fields_25748927a3375430946259f22c841620}
+
+
+Perform any necessary changes to the form values prior to storage. There is no need for this function to actually store the data. 
+
+Reimplemented from \hyperlink{classviews__plugin__row_083534753b8e7e30d6d5b14d93f10bf4}{views\_\-plugin\_\-row}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/plugins/\hyperlink{views__plugin__row__fields_8inc}{views\_\-plugin\_\-row\_\-fields.inc}\end{CompactItemize}

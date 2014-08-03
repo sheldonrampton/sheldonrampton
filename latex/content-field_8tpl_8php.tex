@@ -1,0 +1,37 @@
+\hypertarget{content-field_8tpl_8php}{
+\section{sites/all/modules/contrib/cck/theme/content-field.tpl.php File Reference}
+\label{content-field_8tpl_8php}\index{sites/all/modules/contrib/cck/theme/content-field.tpl.php@{sites/all/modules/contrib/cck/theme/content-field.tpl.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hypertarget{content-field_8tpl_8php_82cd33ca97ff99f2fcc5e9c81d65251b}{
+if(!\$field\_\-empty)(\$label\_\-display== 'above')(\$label)?$>$$<$/div $>$ \textbf{endif}}
+\label{content-field_8tpl_8php_82cd33ca97ff99f2fcc5e9c81d65251b}
+
+\item 
+\hypertarget{content-field_8tpl_8php_6f198e1c06d1f9d42d45dd91d1323d41}{
+\textbf{\$count} = 1}
+\label{content-field_8tpl_8php_6f198e1c06d1f9d42d45dd91d1323d41}
+
+\item 
+\hypertarget{content-field_8tpl_8php_672d9707ef91db026c210f98cc601123}{
+\textbf{endforeach}}
+\label{content-field_8tpl_8php_672d9707ef91db026c210f98cc601123}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Default theme implementation to display the value of a field.
+
+Available variables:\begin{itemize}
+\item \$node: The node object.\item \$field: The field array.\item \$items: An array of values for each item in the field array.\item \$teaser: Whether this is displayed as a teaser.\item \$page: Whether this is displayed as a page.\item \$field\_\-name: The field name.\item \$field\_\-type: The field type.\item \$field\_\-name\_\-css: The css-compatible field name.\item \$field\_\-type\_\-css: The css-compatible field type.\item \$label: The item label.\item \$label\_\-display: Position of label display, inline, above, or hidden.\item \$field\_\-empty: Whether the field has any valid value.\end{itemize}
+
+
+Each \$item in \$items contains:\begin{itemize}
+\item 'view' - the themed \hyperlink{classview}{view} for that item\end{itemize}
+
+
+\begin{Desc}
+\item[See also:]template\_\-preprocess\_\-content\_\-field() \end{Desc}

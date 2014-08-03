@@ -1,0 +1,70 @@
+\hypertarget{imagefield__file_8inc}{
+\section{sites/all/modules/contrib/imagefield/imagefield\_\-file.inc File Reference}
+\label{imagefield__file_8inc}\index{sites/all/modules/contrib/imagefield/imagefield\_\-file.inc@{sites/all/modules/contrib/imagefield/imagefield\_\-file.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{imagefield__file_8inc_9719de2adc80696507733e3390c10da4}{imagefield\_\-file\_\-insert} (\$file)
+\item 
+\hyperlink{imagefield__file_8inc_801b98dd8606a0deba530ce0a0f3cb12}{imagefield\_\-file\_\-delete} (\$file)
+\item 
+\hyperlink{imagefield__file_8inc_12ca7ad4f9d02d9338d517f494e8883c}{imagefield\_\-file\_\-references} (\$file)
+\item 
+\hyperlink{imagefield__file_8inc_4dc1eaffb4ea5cb05a516f47d858e84d}{imagefield\_\-file\_\-is\_\-image} (\$file)
+\item 
+\hyperlink{imagefield__file_8inc_bb6c32fd6df8c3186e903a79d09b5edc}{imagefield\_\-file\_\-admin\_\-thumb\_\-path} (\$file, \$create\_\-thumb=TRUE)
+\item 
+\hyperlink{imagefield__file_8inc_611c48837e1e76d6f6a0abbfe3e77a67}{imagefield\_\-create\_\-admin\_\-thumb} (\$source, \$destination)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+hook\_\-file and imagefield file functions. 
+
+\subsection{Function Documentation}
+\hypertarget{imagefield__file_8inc_611c48837e1e76d6f6a0abbfe3e77a67}{
+\index{imagefield\_\-file.inc@{imagefield\_\-file.inc}!imagefield\_\-create\_\-admin\_\-thumb@{imagefield\_\-create\_\-admin\_\-thumb}}
+\index{imagefield\_\-create\_\-admin\_\-thumb@{imagefield\_\-create\_\-admin\_\-thumb}!imagefield_file.inc@{imagefield\_\-file.inc}}
+\subsubsection[{imagefield\_\-create\_\-admin\_\-thumb}]{\setlength{\rightskip}{0pt plus 5cm}imagefield\_\-create\_\-admin\_\-thumb (\$ {\em source}, \/  \$ {\em destination})}}
+\label{imagefield__file_8inc_611c48837e1e76d6f6a0abbfe3e77a67}
+
+
+Create a thumbnail to be shown while editing an image. \hypertarget{imagefield__file_8inc_bb6c32fd6df8c3186e903a79d09b5edc}{
+\index{imagefield\_\-file.inc@{imagefield\_\-file.inc}!imagefield\_\-file\_\-admin\_\-thumb\_\-path@{imagefield\_\-file\_\-admin\_\-thumb\_\-path}}
+\index{imagefield\_\-file\_\-admin\_\-thumb\_\-path@{imagefield\_\-file\_\-admin\_\-thumb\_\-path}!imagefield_file.inc@{imagefield\_\-file.inc}}
+\subsubsection[{imagefield\_\-file\_\-admin\_\-thumb\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}imagefield\_\-file\_\-admin\_\-thumb\_\-path (\$ {\em file}, \/  \$ {\em create\_\-thumb} = {\tt TRUE})}}
+\label{imagefield__file_8inc_bb6c32fd6df8c3186e903a79d09b5edc}
+
+
+Given a file, return the path the image thumbnail used while editing. \hypertarget{imagefield__file_8inc_801b98dd8606a0deba530ce0a0f3cb12}{
+\index{imagefield\_\-file.inc@{imagefield\_\-file.inc}!imagefield\_\-file\_\-delete@{imagefield\_\-file\_\-delete}}
+\index{imagefield\_\-file\_\-delete@{imagefield\_\-file\_\-delete}!imagefield_file.inc@{imagefield\_\-file.inc}}
+\subsubsection[{imagefield\_\-file\_\-delete}]{\setlength{\rightskip}{0pt plus 5cm}imagefield\_\-file\_\-delete (\$ {\em file})}}
+\label{imagefield__file_8inc_801b98dd8606a0deba530ce0a0f3cb12}
+
+
+Implementation of hook\_\-file\_\-delete().
+
+Delete the admin thumbnail when the original is deleted. \hypertarget{imagefield__file_8inc_9719de2adc80696507733e3390c10da4}{
+\index{imagefield\_\-file.inc@{imagefield\_\-file.inc}!imagefield\_\-file\_\-insert@{imagefield\_\-file\_\-insert}}
+\index{imagefield\_\-file\_\-insert@{imagefield\_\-file\_\-insert}!imagefield_file.inc@{imagefield\_\-file.inc}}
+\subsubsection[{imagefield\_\-file\_\-insert}]{\setlength{\rightskip}{0pt plus 5cm}imagefield\_\-file\_\-insert (\$ {\em file})}}
+\label{imagefield__file_8inc_9719de2adc80696507733e3390c10da4}
+
+
+Implementation of hook\_\-file\_\-insert(). \hypertarget{imagefield__file_8inc_4dc1eaffb4ea5cb05a516f47d858e84d}{
+\index{imagefield\_\-file.inc@{imagefield\_\-file.inc}!imagefield\_\-file\_\-is\_\-image@{imagefield\_\-file\_\-is\_\-image}}
+\index{imagefield\_\-file\_\-is\_\-image@{imagefield\_\-file\_\-is\_\-image}!imagefield_file.inc@{imagefield\_\-file.inc}}
+\subsubsection[{imagefield\_\-file\_\-is\_\-image}]{\setlength{\rightskip}{0pt plus 5cm}imagefield\_\-file\_\-is\_\-image (\$ {\em file})}}
+\label{imagefield__file_8inc_4dc1eaffb4ea5cb05a516f47d858e84d}
+
+
+Simple utility function to check if a file is an image. \hypertarget{imagefield__file_8inc_12ca7ad4f9d02d9338d517f494e8883c}{
+\index{imagefield\_\-file.inc@{imagefield\_\-file.inc}!imagefield\_\-file\_\-references@{imagefield\_\-file\_\-references}}
+\index{imagefield\_\-file\_\-references@{imagefield\_\-file\_\-references}!imagefield_file.inc@{imagefield\_\-file.inc}}
+\subsubsection[{imagefield\_\-file\_\-references}]{\setlength{\rightskip}{0pt plus 5cm}imagefield\_\-file\_\-references (\$ {\em file})}}
+\label{imagefield__file_8inc_12ca7ad4f9d02d9338d517f494e8883c}
+
+
+Implementation of hook\_\-file\_\-references(). 

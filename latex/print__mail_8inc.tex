@@ -1,0 +1,55 @@
+\hypertarget{print__mail_8inc}{
+\section{sites/all/modules/contrib/print/print\_\-mail/print\_\-mail.inc File Reference}
+\label{print__mail_8inc}\index{sites/all/modules/contrib/print/print\_\-mail/print\_\-mail.inc@{sites/all/modules/contrib/print/print\_\-mail/print\_\-mail.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{group__forms_g4ed8b70bdf0ff196b847618f76378c06}{print\_\-mail\_\-form} (\$form\_\-state)
+\item 
+\hyperlink{group__forms_gdfd29c42f8222a01806b51c82db1a71b}{theme\_\-print\_\-mail\_\-form} (\$form)
+\item 
+\hyperlink{group__forms_ga2d6456473de55b23efba0e78f45a2ac}{print\_\-mail\_\-form\_\-validate} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{group__forms_g7246132b43dcb17338c06d0514cee450}{print\_\-mail\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{print__mail_8inc_a175d4328038cbbf573c81559f103af4}{print\_\-mail\_\-mail} (\$key, \&\$message, \$params)
+\item 
+\hyperlink{group__forms_gf9d1d6734a5f84ab0272b1ff7d9f0344}{print\_\-mail\_\-form\_\-cancel} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{print__mail_8inc_2990b685bfe404255640f6326a0fcfed}{\_\-print\_\-mail\_\-encode\_\-urls} (\$matches)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Displays and processes the mail send form.
+
+This file is included by the print\_\-mail module and includes the mail form display, validation and submit hooks. 
+
+\subsection{Function Documentation}
+\hypertarget{print__mail_8inc_2990b685bfe404255640f6326a0fcfed}{
+\index{print\_\-mail.inc@{print\_\-mail.inc}!\_\-print\_\-mail\_\-encode\_\-urls@{\_\-print\_\-mail\_\-encode\_\-urls}}
+\index{\_\-print\_\-mail\_\-encode\_\-urls@{\_\-print\_\-mail\_\-encode\_\-urls}!print_mail.inc@{print\_\-mail.inc}}
+\subsubsection[{\_\-print\_\-mail\_\-encode\_\-urls}]{\setlength{\rightskip}{0pt plus 5cm}\_\-print\_\-mail\_\-encode\_\-urls (\$ {\em matches})}}
+\label{print__mail_8inc_2990b685bfe404255640f6326a0fcfed}
+
+
+Callback function for the preg\_\-replace\_\-callback replacing spaces with 20
+
+Replace spaces in URLs with 20
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$matches}]array with the matched tag patterns, usually $<$a...$>$+text+ \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]tag with re-written URL \end{Desc}
+\hypertarget{print__mail_8inc_a175d4328038cbbf573c81559f103af4}{
+\index{print\_\-mail.inc@{print\_\-mail.inc}!print\_\-mail\_\-mail@{print\_\-mail\_\-mail}}
+\index{print\_\-mail\_\-mail@{print\_\-mail\_\-mail}!print_mail.inc@{print\_\-mail.inc}}
+\subsubsection[{print\_\-mail\_\-mail}]{\setlength{\rightskip}{0pt plus 5cm}print\_\-mail\_\-mail (\$ {\em key}, \/  \&\$ {\em message}, \/  \$ {\em params})}}
+\label{print__mail_8inc_a175d4328038cbbf573c81559f103af4}
+
+
+Implementation of hook\_\-mail(). 

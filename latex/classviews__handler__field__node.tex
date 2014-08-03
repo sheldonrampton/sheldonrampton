@@ -1,0 +1,107 @@
+\hypertarget{classviews__handler__field__node}{
+\section{views\_\-handler\_\-field\_\-node Class Reference}
+\label{classviews__handler__field__node}\index{views\_\-handler\_\-field\_\-node@{views\_\-handler\_\-field\_\-node}}
+}
+Inheritance diagram for views\_\-handler\_\-field\_\-node::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.44403cm]{classviews__handler__field__node}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__handler__field__node_70404545ab178e131881fa5c5edd4b87}{construct} ()
+\item 
+\hyperlink{classviews__handler__field__node_c2daf04495ea792ad0dd60c864f3a77e}{option\_\-definition} ()
+\item 
+\hyperlink{classviews__handler__field__node_f3d8a04be282a20079ea4fb82e768910}{options\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__handler__field__node_0ea7eeac3500e011ae0a83e67f56508d}{render\_\-link} (\$data, \$values)
+\item 
+\hyperlink{classviews__handler__field__node_fe7681e1188ad74ce9b604ad3ba864c0}{render} (\$values)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Field handler to provide simple renderer that allows linking to a node. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__handler__field__node_70404545ab178e131881fa5c5edd4b87}{
+\index{views\_\-handler\_\-field\_\-node@{views\_\-handler\_\-field\_\-node}!construct@{construct}}
+\index{construct@{construct}!views_handler_field_node@{views\_\-handler\_\-field\_\-node}}
+\subsubsection[{construct}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-node::construct ()}}
+\label{classviews__handler__field__node_70404545ab178e131881fa5c5edd4b87}
+
+
+Constructor to provide additional field to add. 
+
+Reimplemented from \hyperlink{classviews__handler__field_3d50050864c255b71c842972a45d39f6}{views\_\-handler\_\-field}.\hypertarget{classviews__handler__field__node_c2daf04495ea792ad0dd60c864f3a77e}{
+\index{views\_\-handler\_\-field\_\-node@{views\_\-handler\_\-field\_\-node}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!views_handler_field_node@{views\_\-handler\_\-field\_\-node}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-node::option\_\-definition ()}}
+\label{classviews__handler__field__node_c2daf04495ea792ad0dd60c864f3a77e}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented from \hyperlink{classviews__handler__field_64c69a8a3697603f8283405071c25b76}{views\_\-handler\_\-field}.
+
+Reimplemented in \hyperlink{classviews__handler__field__history__user__timestamp_2cedbce8f02c9c051606c89e6d349e6b}{views\_\-handler\_\-field\_\-history\_\-user\_\-timestamp}, and \hyperlink{classviews__handler__field__node__type_4e50103a014bff96644915cb0c8d33fd}{views\_\-handler\_\-field\_\-node\_\-type}.\hypertarget{classviews__handler__field__node_f3d8a04be282a20079ea4fb82e768910}{
+\index{views\_\-handler\_\-field\_\-node@{views\_\-handler\_\-field\_\-node}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!views_handler_field_node@{views\_\-handler\_\-field\_\-node}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-node::options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler__field__node_f3d8a04be282a20079ea4fb82e768910}
+
+
+Provide link to node option 
+
+Reimplemented from \hyperlink{classviews__handler__field_0435d161922b7b4b84f02a2e79bb947a}{views\_\-handler\_\-field}.
+
+Reimplemented in \hyperlink{classviews__handler__field__history__user__timestamp_785f6784b015c681b25f58573b1e6859}{views\_\-handler\_\-field\_\-history\_\-user\_\-timestamp}, and \hyperlink{classviews__handler__field__node__type_0152124a453b32265e512bace19d6de4}{views\_\-handler\_\-field\_\-node\_\-type}.\hypertarget{classviews__handler__field__node_fe7681e1188ad74ce9b604ad3ba864c0}{
+\index{views\_\-handler\_\-field\_\-node@{views\_\-handler\_\-field\_\-node}!render@{render}}
+\index{render@{render}!views_handler_field_node@{views\_\-handler\_\-field\_\-node}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-node::render (\$ {\em values})}}
+\label{classviews__handler__field__node_fe7681e1188ad74ce9b604ad3ba864c0}
+
+
+Render the field.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$values}]The values retrieved from the database. \end{description}
+\end{Desc}
+
+
+Reimplemented from \hyperlink{classviews__handler__field_82ff951c5e9ceb97b2eab86f880cbc1e}{views\_\-handler\_\-field}.
+
+Reimplemented in \hyperlink{classviews__handler__field__history__user__timestamp_cc2398dad2662ab9d4faf0ea9daba116}{views\_\-handler\_\-field\_\-history\_\-user\_\-timestamp}, \hyperlink{classviews__handler__field__node__type_13c9a516cca49870a1603fdd26071851}{views\_\-handler\_\-field\_\-node\_\-type}, and \hyperlink{classviews__handler__field__node__language_04be837ecac8fcbbb38fb1a17e45263a}{views\_\-handler\_\-field\_\-node\_\-language}.\hypertarget{classviews__handler__field__node_0ea7eeac3500e011ae0a83e67f56508d}{
+\index{views\_\-handler\_\-field\_\-node@{views\_\-handler\_\-field\_\-node}!render\_\-link@{render\_\-link}}
+\index{render\_\-link@{render\_\-link}!views_handler_field_node@{views\_\-handler\_\-field\_\-node}}
+\subsubsection[{render\_\-link}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-node::render\_\-link (\$ {\em data}, \/  \$ {\em values})}}
+\label{classviews__handler__field__node_0ea7eeac3500e011ae0a83e67f56508d}
+
+
+Render whatever the data is as a link to the node.
+
+Data should be made XSS safe prior to calling this function. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/modules/node/\hyperlink{views__handler__field__node_8inc}{views\_\-handler\_\-field\_\-node.inc}\end{CompactItemize}

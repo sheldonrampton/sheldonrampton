@@ -1,0 +1,59 @@
+\hypertarget{database_8inc}{
+\section{includes/database.inc File Reference}
+\label{database_8inc}\index{includes/database.inc@{includes/database.inc}}
+}
+\subsection*{Enumerations}
+\begin{CompactItemize}
+\item 
+enum \hyperlink{database_8inc_ba3c5d3a94c518ed8546dd33091b1939}{DB\_\-ERROR} 
+\item 
+enum \hyperlink{group__database_gac2405479299ce848b4c294cdba9b046}{DB\_\-QUERY\_\-REGEXP} 
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{group__database_g67680310ffaf72da52a9c2453325c0fb}{update\_\-sql} (\$sql)
+\item 
+\hyperlink{group__database_gdb274339376ae7e48e3ea4da4c1de0b1}{db\_\-prefix\_\-tables} (\$sql)
+\item 
+\hyperlink{group__database_g84e68f6dbf9cdec826e7b3852d1b283c}{db\_\-set\_\-active} (\$name= 'default')
+\item 
+\hyperlink{group__database_g5aab9d68ecdc1712369d5d1ef64d455c}{\_\-db\_\-error\_\-page} (\$error= '')
+\item 
+\hyperlink{group__database_g19eaaae8681bb72e7476ef0aa0a5d01f}{db\_\-is\_\-active} ()
+\item 
+\hyperlink{group__database_g337493a6287b3b48a5a2ba6d74e844bf}{\_\-db\_\-query\_\-callback} (\$match, \$init=FALSE)
+\item 
+\hyperlink{group__database_g8d4c967b43af1b9d9fec0466102c490c}{db\_\-placeholders} (\$arguments, \$type= 'int')
+\item 
+\hyperlink{group__database_g1c87af009b401cd8d695952f9eee20a9}{\_\-db\_\-rewrite\_\-sql} (\$query= '', \$primary\_\-table= 'n', \$primary\_\-field= 'nid', \$args=array())
+\item 
+\hyperlink{group__database_g0869f72f75d16bd0f9a52eaafa02e091}{db\_\-rewrite\_\-sql} (\$query, \$primary\_\-table= 'n', \$primary\_\-field= 'nid', \$args=array())
+\item 
+\hyperlink{group__database_gf07060b05ac825ab9d7bbb3ece2a699f}{db\_\-distinct\_\-field} (\$table, \$field, \$query)
+\item 
+\hyperlink{group__database_g5f9fd89ca517eed3dfd7f128c3d65dd1}{db\_\-escape\_\-table} (\$string)
+\item 
+\hyperlink{group__schemaapi_gb7a73e88621851e4bed62fd6063eb2f9}{db\_\-create\_\-table} (\&\$ret, \$name, \$table)
+\item 
+\hyperlink{group__schemaapi_geb423ba53e5133548abe3d999f86e787}{db\_\-field\_\-names} (\$fields)
+\item 
+\hyperlink{group__schemaapi_g1d594f0ad0eab77e4b925887be7e4b08}{db\_\-type\_\-placeholder} (\$type)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Wrapper for database interface code. 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{database_8inc_ba3c5d3a94c518ed8546dd33091b1939}{
+\index{database.inc@{database.inc}!DB\_\-ERROR@{DB\_\-ERROR}}
+\index{DB\_\-ERROR@{DB\_\-ERROR}!database.inc@{database.inc}}
+\subsubsection[{DB\_\-ERROR}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf DB\_\-ERROR}}}
+\label{database_8inc_ba3c5d3a94c518ed8546dd33091b1939}
+
+
+A hash value to check when outputting database errors, md5('DB\_\-ERROR').
+
+\begin{Desc}
+\item[See also:]\hyperlink{common_8inc_32d79f124e1b94540b0b4edbde95a892}{drupal\_\-error\_\-handler()} \end{Desc}

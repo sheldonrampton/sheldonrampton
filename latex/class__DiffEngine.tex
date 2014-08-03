@@ -1,0 +1,52 @@
+\hypertarget{class__DiffEngine}{
+\section{\_\-DiffEngine Class Reference}
+\label{class__DiffEngine}\index{\_\-DiffEngine@{\_\-DiffEngine}}
+}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{class__DiffEngine_296ddc238847dc847bc0ba03caa68f1f}{
+\textbf{diff} (\$from\_\-lines, \$to\_\-lines)}
+\label{class__DiffEngine_296ddc238847dc847bc0ba03caa68f1f}
+
+\item 
+\hypertarget{class__DiffEngine_0618824b8c3055fdfa150f4d08f8413a}{
+\textbf{\_\-diag} (\$xoff, \$xlim, \$yoff, \$ylim, \$nchunks)}
+\label{class__DiffEngine_0618824b8c3055fdfa150f4d08f8413a}
+
+\item 
+\hypertarget{class__DiffEngine_c5646563b449f31a61d1524b8ef2e6c6}{
+\textbf{\_\-lcs\_\-pos} (\$ypos)}
+\label{class__DiffEngine_c5646563b449f31a61d1524b8ef2e6c6}
+
+\item 
+\hypertarget{class__DiffEngine_f55fa4747075f309740db6aac6e5b909}{
+\textbf{\_\-compareseq} (\$xoff, \$xlim, \$yoff, \$ylim)}
+\label{class__DiffEngine_f55fa4747075f309740db6aac6e5b909}
+
+\item 
+\hypertarget{class__DiffEngine_30fe765bccbe006e66f7ba5342bbe2d7}{
+\textbf{\_\-shift\_\-boundaries} (\$lines, \&\$changed, \$other\_\-changed)}
+\label{class__DiffEngine_30fe765bccbe006e66f7ba5342bbe2d7}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Class used internally by \hyperlink{classDiff}{Diff} to actually compute the diffs.
+
+The algorithm used here is mostly lifted from the perl module Algorithm::Diff (version 1.06) by Ned Konz, which is available at: \href{http://www.perl.com/CPAN/authors/id/N/NE/NEDKONZ/Algorithm-Diff-1.06.zip}{\tt http://www.perl.com/CPAN/authors/id/N/NE/NEDKONZ/Algorithm-Diff-1.06.zip}
+
+More ideas are taken from: \href{http://www.ics.uci.edu/~eppstein/161/960229.html}{\tt http://www.ics.uci.edu/$\sim$eppstein/161/960229.html}
+
+Some ideas are (and a bit of code) are from from analyze.c, from GNU diffutils-2.7, which can be found at: \href{ftp://gnudist.gnu.org/pub/gnu/diffutils/diffutils-2.7.tar.gz}{\tt ftp://gnudist.gnu.org/pub/gnu/diffutils/diffutils-2.7.tar.gz}
+
+closingly, some ideas (subdivision by NCHUNKS $>$ 2, and some optimizations) are my own.
+
+\begin{Desc}
+\item[Author:]Geoffrey T. Dairiki  private \end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+mouse/DifferenceEngine.php\end{CompactItemize}

@@ -1,0 +1,72 @@
+\hypertarget{classviews__plugin__row__aggregator__rss}{
+\section{views\_\-plugin\_\-row\_\-aggregator\_\-rss Class Reference}
+\label{classviews__plugin__row__aggregator__rss}\index{views\_\-plugin\_\-row\_\-aggregator\_\-rss@{views\_\-plugin\_\-row\_\-aggregator\_\-rss}}
+}
+Inheritance diagram for views\_\-plugin\_\-row\_\-aggregator\_\-rss::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4cm]{classviews__plugin__row__aggregator__rss}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__plugin__row__aggregator__rss_653e8ed46f98dbbc630b58bb7212f617}{option\_\-definition} ()
+\item 
+\hyperlink{classviews__plugin__row__aggregator__rss_a5c9bce3143901863f1a446b622fda9c}{options\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__plugin__row__aggregator__rss_dd4aa0892bf305556bb9a04c62da6027}{render} (\$row)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Plugin which loads an aggregator item and formats it as an RSS item. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__plugin__row__aggregator__rss_653e8ed46f98dbbc630b58bb7212f617}{
+\index{views\_\-plugin\_\-row\_\-aggregator\_\-rss@{views\_\-plugin\_\-row\_\-aggregator\_\-rss}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!views_plugin_row_aggregator_rss@{views\_\-plugin\_\-row\_\-aggregator\_\-rss}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-row\_\-aggregator\_\-rss::option\_\-definition ()}}
+\label{classviews__plugin__row__aggregator__rss_653e8ed46f98dbbc630b58bb7212f617}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented from \hyperlink{classviews__plugin__row_ad6be1492eae8605e9aff37da9f19337}{views\_\-plugin\_\-row}.\hypertarget{classviews__plugin__row__aggregator__rss_a5c9bce3143901863f1a446b622fda9c}{
+\index{views\_\-plugin\_\-row\_\-aggregator\_\-rss@{views\_\-plugin\_\-row\_\-aggregator\_\-rss}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!views_plugin_row_aggregator_rss@{views\_\-plugin\_\-row\_\-aggregator\_\-rss}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-row\_\-aggregator\_\-rss::options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__plugin__row__aggregator__rss_a5c9bce3143901863f1a446b622fda9c}
+
+
+Provide a form for setting options. 
+
+Reimplemented from \hyperlink{classviews__plugin__row_6914c39d64977a0aa71da39cc1af004e}{views\_\-plugin\_\-row}.\hypertarget{classviews__plugin__row__aggregator__rss_dd4aa0892bf305556bb9a04c62da6027}{
+\index{views\_\-plugin\_\-row\_\-aggregator\_\-rss@{views\_\-plugin\_\-row\_\-aggregator\_\-rss}!render@{render}}
+\index{render@{render}!views_plugin_row_aggregator_rss@{views\_\-plugin\_\-row\_\-aggregator\_\-rss}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-row\_\-aggregator\_\-rss::render (\$ {\em row})}}
+\label{classviews__plugin__row__aggregator__rss_dd4aa0892bf305556bb9a04c62da6027}
+
+
+Render a row object. This usually passes through to a theme template of some form, but not always. 
+
+Reimplemented from \hyperlink{classviews__plugin__row_8243842e087dd28664b32cef0309f2a6}{views\_\-plugin\_\-row}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/modules/aggregator/\hyperlink{views__plugin__row__aggregator__rss_8inc}{views\_\-plugin\_\-row\_\-aggregator\_\-rss.inc}\end{CompactItemize}

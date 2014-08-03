@@ -1,0 +1,17 @@
+\hypertarget{lightbox2-insert-image_8tpl_8php}{
+\section{sites/all/modules/contrib/lightbox2/lightbox2-insert-image.tpl.php File Reference}
+\label{lightbox2-insert-image_8tpl_8php}\index{sites/all/modules/contrib/lightbox2/lightbox2-insert-image.tpl.php@{sites/all/modules/contrib/lightbox2/lightbox2-insert-image.tpl.php}}
+}
+
+
+\subsection{Detailed Description}
+Template file for Lightbox2 content inserted via the Insert module.
+
+Available variables:\begin{itemize}
+\item \$item: The complete item being inserted.\item \$url: The URL to the image.\item \$linkurl: The URL to the image being linked to.\item \$class: A set of classes assigned to this image (if any).\item \$image\_\-preset\_\-name: The ImageCache preset being used for the image.\item \$link\_\-preset\_\-name: The ImageCache preset being used for the linked to image.\item \$download\_\-link: The download original link.\end{itemize}
+
+
+Note that ALT and Title fields should not be filled in here, instead they should use placeholders that will be updated through JavaScript when the image is inserted.
+
+Available placeholders:\begin{itemize}
+\item \_\-\_\-alt\_\-\_\-: The ALT text, intended for use in the  tag.\item \_\-\_\-title\_\-\_\-: The Title text, intended for use in the  tag.\item \_\-\_\-description\_\-\_\-: A description of the image, sometimes used as a caption. \end{itemize}

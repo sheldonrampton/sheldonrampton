@@ -1,0 +1,1520 @@
+\hypertarget{common_8inc}{
+\section{includes/common.inc File Reference}
+\label{common_8inc}\index{includes/common.inc@{includes/common.inc}}
+}
+\subsection*{Enumerations}
+\begin{CompactItemize}
+\item 
+enum \hyperlink{common_8inc_7d54df6ca81759341e08f451d4f6c8cd}{SAVED\_\-NEW} 
+\item 
+enum \hyperlink{common_8inc_7daf0b68ef3b54562e9999ef017e28cb}{SAVED\_\-UPDATED} 
+\item 
+enum \hyperlink{common_8inc_38f401ae5a8d3c2f0a06307fa001fff5}{SAVED\_\-DELETED} 
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+if(!defined('E\_\-DEPRECATED')) \hyperlink{common_8inc_5dca93683c64a722bd4f277b8e9f488b}{drupal\_\-set\_\-content} (\$region=NULL, \$data=NULL)
+\item 
+\hyperlink{common_8inc_57f11487017e5fb889f797456300fc4c}{drupal\_\-get\_\-content} (\$region=NULL, \$delimiter= ' ')
+\item 
+\hyperlink{common_8inc_666113d06fa6ea461aff580e5c511eb0}{drupal\_\-set\_\-breadcrumb} (\$breadcrumb=NULL)
+\item 
+\hyperlink{common_8inc_f1e9626192d1d2e5e63b370e88c03c7c}{drupal\_\-get\_\-breadcrumb} ()
+\item 
+\hyperlink{common_8inc_6646f70c300f3a24a25350a47e90d3d1}{drupal\_\-set\_\-html\_\-head} (\$data=NULL)
+\item 
+\hyperlink{common_8inc_cdee011d76859a5a9280209df1175188}{drupal\_\-get\_\-html\_\-head} ()
+\item 
+\hyperlink{common_8inc_1c3a768c3c1b4751977330e20f098c32}{drupal\_\-clear\_\-path\_\-cache} ()
+\item 
+\hyperlink{common_8inc_412817c1abb5163a2deb44eb3469b62c}{drupal\_\-set\_\-header} (\$header=NULL)
+\item 
+\hyperlink{common_8inc_940dc177a758d9aa97e7e88a4cb839ca}{drupal\_\-get\_\-headers} ()
+\item 
+\hyperlink{common_8inc_2b6eb80241d0d2b40c483a4752389aa9}{drupal\_\-final\_\-markup} (\$content)
+\item 
+\hyperlink{common_8inc_42e1c8001e2609cb73a2f54f59e1020c}{drupal\_\-add\_\-feed} (\$url=NULL, \$title= '')
+\item 
+\hyperlink{common_8inc_c7df9703641369003434d49cf917c16e}{drupal\_\-get\_\-feeds} (\$delimiter=\char`\"{}$\backslash$n\char`\"{})
+\item 
+\hyperlink{common_8inc_32d79f124e1b94540b0b4edbde95a892}{drupal\_\-error\_\-handler} (\$errno, \$message, \$filename, \$line, \$context)
+\item 
+\hypertarget{common_8inc_4060ad61de80e6b8931ce8ad3c3aaebc}{
+\textbf{\_\-fix\_\-gpc\_\-magic} (\&\$item)}
+\label{common_8inc_4060ad61de80e6b8931ce8ad3c3aaebc}
+
+\item 
+\hyperlink{common_8inc_ca820a7438df9d2244148e4b8895291e}{\_\-fix\_\-gpc\_\-magic\_\-files} (\&\$item, \$key)
+\item 
+\hyperlink{common_8inc_befb935bf3c61840ba9ad50adb13f766}{fix\_\-gpc\_\-magic} ()
+\item 
+\hyperlink{common_8inc_41d20f0c822bf1f3c26a97981c762665}{t} (\$string, \$args=array(), \$langcode=NULL)
+\item 
+\hyperlink{group__validation_g486c51f034746a76618602e1e76fa718}{valid\_\-email\_\-address} (\$mail)
+\item 
+\hyperlink{group__validation_ge9221d1759a8d5a2ba2db93ae3a6feff}{valid\_\-url} (\$url, \$absolute=FALSE)
+\item 
+\hyperlink{common_8inc_368d89f553ff8bed006c18f801020778}{flood\_\-register\_\-event} (\$name)
+\item 
+\hyperlink{common_8inc_d2296ecb4750af9f666f72ec7ee3cae5}{flood\_\-is\_\-allowed} (\$name, \$threshold)
+\item 
+\hypertarget{common_8inc_28eab4ed3df6e6e3ae965f50ccac9227}{
+\textbf{check\_\-file} (\$filename)}
+\label{common_8inc_28eab4ed3df6e6e3ae965f50ccac9227}
+
+\item 
+\hyperlink{common_8inc_c024315b69035ef05c33674838707919}{check\_\-url} (\$uri)
+\item 
+\hyperlink{group__format_g44992b971aed4a6a5b8457678f57de50}{format\_\-rss\_\-channel} (\$title, \$link, \$description, \$items, \$langcode=NULL, \$args=array())
+\item 
+\hyperlink{group__format_g4ecc9b876a9eaa65abb24ef513b217ad}{format\_\-rss\_\-item} (\$title, \$link, \$description, \$args=array())
+\item 
+\hyperlink{group__format_gfb344c648e6b63c35950d2889430e4c7}{format\_\-xml\_\-elements} (\$array)
+\item 
+\hyperlink{group__format_g0acb4fb7ab13d4b5ca3267a253af2f74}{format\_\-plural} (\$count, \$singular, \$plural, \$args=array(), \$langcode=NULL)
+\item 
+\hyperlink{group__format_g08382023ada29bae2a6a94f22196b066}{parse\_\-size} (\$size)
+\item 
+\hyperlink{group__format_g2a0075e7646fa2f399286272faa2956e}{format\_\-size} (\$size, \$langcode=NULL)
+\item 
+\hyperlink{group__format_g583fbfbb3172036bef0b15bfa525679a}{format\_\-interval} (\$timestamp, \$granularity=2, \$langcode=NULL)
+\item 
+\hyperlink{group__format_g40553742a67f9c79c4669b9053fe202c}{format\_\-date} (\$timestamp, \$type= 'medium', \$format= '', \$timezone=NULL, \$langcode=NULL)
+\item 
+\hyperlink{common_8inc_7ef60c766e2d09e18b866dacf6b9eb1f}{url} (\$path=NULL, \$options=array())
+\item 
+\hyperlink{common_8inc_fcc26495094c3ea765071dfdc925ac27}{drupal\_\-attributes} (\$attributes=array())
+\item 
+\hyperlink{common_8inc_b1b47d5ab720066df684c335eda75cfd}{l} (\$text, \$path, \$options=array())
+\item 
+\hyperlink{common_8inc_64bc7d539a74e850935d73968788abd3}{drupal\_\-page\_\-footer} ()
+\item 
+\hyperlink{common_8inc_72b55fe42aa726cc506660138abd3307}{drupal\_\-map\_\-assoc} (\$array, \$function=NULL)
+\item 
+\hyperlink{common_8inc_97f587c4db32bc29e946f713b0c4be34}{drupal\_\-eval} (\$code)
+\item 
+\hyperlink{common_8inc_e3bbe8f97bf07bb0eaf4580c98f9bf94}{drupal\_\-get\_\-path} (\$type, \$name)
+\item 
+\hyperlink{common_8inc_e227697e9c239f09fd7e36f71afde771}{base\_\-path} ()
+\item 
+\hyperlink{common_8inc_14f9e44c0897f4950c1714483a811fc8}{drupal\_\-clone} (\$object)
+\item 
+\hyperlink{common_8inc_7eda2691396ef26c49e05d37a43bddfd}{drupal\_\-add\_\-link} (\$attributes)
+\item 
+\hyperlink{common_8inc_21f9e8d23b62a313faddaf211d7cc610}{drupal\_\-add\_\-css} (\$path=NULL, \$type= 'module', \$media= 'all', \$preprocess=TRUE)
+\item 
+\hyperlink{common_8inc_90f269c442c46417319a614057985a0c}{drupal\_\-get\_\-css} (\$css=NULL)
+\item 
+\hyperlink{common_8inc_e7fa84b77f1c157964f0105d9b4a9476}{drupal\_\-build\_\-css\_\-cache} (\$types, \$filename)
+\item 
+\hyperlink{common_8inc_f634d8ae0731015c73e039895890b42b}{\_\-drupal\_\-build\_\-css\_\-path} (\$matches, \$base=NULL)
+\item 
+\hyperlink{common_8inc_f20aa4e55e7003eaff27f5c6078a4ae0}{drupal\_\-load\_\-stylesheet} (\$file, \$optimize=NULL)
+\item 
+\hyperlink{common_8inc_5e60d91d60360fdbe187b7f7b7b60797}{\_\-process\_\-comment} (\$matches)
+\item 
+\hyperlink{common_8inc_79a5c2b6f50963f2e185b6c34d6bd10e}{\_\-drupal\_\-load\_\-stylesheet} (\$matches)
+\item 
+\hyperlink{common_8inc_e89dbd2b41a6623be2ed704d039a5c7c}{drupal\_\-clear\_\-css\_\-cache} ()
+\item 
+\hyperlink{common_8inc_a20ac74a08756427706432aa6bb33139}{drupal\_\-add\_\-js} (\$data=NULL, \$type= 'module', \$scope= 'header', \$defer=FALSE, \$cache=TRUE, \$preprocess=TRUE)
+\item 
+\hyperlink{common_8inc_56994274f0ab2fb17c15b41bcdbd81ce}{drupal\_\-get\_\-js} (\$scope= 'header', \$javascript=NULL)
+\item 
+\hyperlink{common_8inc_b905af5d90a84b5d48f3a517992875f5}{drupal\_\-add\_\-tabledrag} (\$table\_\-id, \$action, \$relationship, \$group, \$subgroup=NULL, \$source=NULL, \$hidden=TRUE, \$limit=0)
+\item 
+\hyperlink{common_8inc_1e8a20aeb8dd9bd6e03988936c42feb8}{drupal\_\-build\_\-js\_\-cache} (\$files, \$filename)
+\item 
+\hyperlink{common_8inc_c05e083cb7cb02084601f8d2103b0405}{drupal\_\-clear\_\-js\_\-cache} ()
+\item 
+\hyperlink{common_8inc_99da8b132160dbf03c14388e92cd9baf}{drupal\_\-to\_\-js} (\$var)
+\item 
+\hyperlink{common_8inc_7a19d30a73daf3e34ed67000c435afc5}{drupal\_\-json} (\$var=NULL)
+\item 
+\hyperlink{common_8inc_8478a3dfd0413b75418465e063d7f601}{drupal\_\-urlencode} (\$text)
+\item 
+\hyperlink{common_8inc_73373e2d357d0e624c209efe27515af6}{drupal\_\-get\_\-private\_\-key} ()
+\item 
+\hyperlink{common_8inc_16989177d9fa05df9b45e8797ce04994}{drupal\_\-get\_\-token} (\$value= '')
+\item 
+\hyperlink{common_8inc_343a6ad44cfc1007b618b245f9366be8}{drupal\_\-valid\_\-token} (\$token, \$value= '', \$skip\_\-anonymous=FALSE)
+\item 
+\hyperlink{common_8inc_2bbed4b1646f9ddc309a752e451a86b2}{xmlrpc} (\$url)
+\item 
+\hypertarget{common_8inc_b7818b78cd7ba93b8b7522324bddb72d}{
+\textbf{\_\-drupal\_\-bootstrap\_\-full} ()}
+\label{common_8inc_b7818b78cd7ba93b8b7522324bddb72d}
+
+\item 
+\hyperlink{common_8inc_1e3b3fde2d48f8ef01d6ddd0a16fb073}{page\_\-set\_\-cache} ()
+\item 
+\hyperlink{common_8inc_1d4a4362b30215023a7120b627a9fd4f}{drupal\_\-cron\_\-run} ()
+\item 
+\hyperlink{common_8inc_9067aaeb503fb9f994d98728130390a2}{drupal\_\-cron\_\-cleanup} ()
+\item 
+\hyperlink{common_8inc_60d1237b23d4e84a59656003596add4b}{drupal\_\-system\_\-listing} (\$mask, \$directory, \$key= 'name', \$min\_\-depth=1)
+\item 
+\hyperlink{common_8inc_d41a0d489123ca5b04976d9a3d7e11d4}{drupal\_\-alter} (\$type, \&\$data)
+\item 
+\hyperlink{common_8inc_05798b44e8d6c496d4bee5cc32fa7851}{drupal\_\-render} (\&\$elements)
+\item 
+\hyperlink{common_8inc_61f0cc62072ab44aa349478fb7219c74}{element\_\-sort} (\$a, \$b)
+\item 
+\hyperlink{common_8inc_7a93c74e138f24e5f7e672972644f1c3}{element\_\-property} (\$key)
+\item 
+\hyperlink{common_8inc_4ae6d339b27757556fe914f9d78d91e5}{element\_\-properties} (\$element)
+\item 
+\hyperlink{common_8inc_3063341f48382cc5ecce25eb1eaa7a0d}{element\_\-child} (\$key)
+\item 
+\hyperlink{common_8inc_6e3b741f1d5455829b04c356e3dc59a5}{element\_\-children} (\$element)
+\item 
+\hyperlink{common_8inc_1263ef82e0da5b85f8203783ed164872}{drupal\_\-common\_\-theme} ()
+\item 
+\hyperlink{common_8inc_277955232059631211fcfde533ea89d6}{drupal\_\-parse\_\-info\_\-file} (\$filename)
+\item 
+\hyperlink{common_8inc_fb5d4b58ec7e483153644c0f664e0ca4}{watchdog\_\-severity\_\-levels} ()
+\item 
+\hyperlink{common_8inc_e5bd302bab285bc819a70737f6121953}{drupal\_\-explode\_\-tags} (\$tags)
+\item 
+\hyperlink{common_8inc_29df41fde25e9fcace627a628806c978}{drupal\_\-implode\_\-tags} (\$tags)
+\item 
+\hyperlink{common_8inc_c119432cefbdbb25647944d4ca3f82f8}{drupal\_\-flush\_\-all\_\-caches} ()
+\item 
+\hyperlink{common_8inc_a53a3c794efc562f46a74688dabf27f6}{\_\-drupal\_\-flush\_\-css\_\-js} ()
+\end{CompactItemize}
+\begin{Indent}{\bf HTTP handling}\par
+{\em Functions to properly handle HTTP responses. }\begin{CompactItemize}
+\item 
+\hyperlink{common_8inc_1bd761730fc16bd2122dff2790c2842f}{drupal\_\-query\_\-string\_\-encode} (\$query, \$exclude=array(), \$parent= '')
+\item 
+\hyperlink{common_8inc_0c95c16e75ac4df882686daccc1f8ac5}{drupal\_\-get\_\-destination} ()
+\item 
+\hyperlink{common_8inc_74b81f841dbbac5a119a9cc7e3ffc614}{drupal\_\-goto} (\$path= '', \$query=NULL, \$fragment=NULL, \$http\_\-response\_\-code=302)
+\item 
+\hyperlink{common_8inc_fc3a1915f45be2ac8666778eef0e9758}{drupal\_\-site\_\-offline} ()
+\item 
+\hyperlink{common_8inc_52b08cd98e1756326c1bd5b56c39a884}{drupal\_\-not\_\-found} ()
+\item 
+\hyperlink{common_8inc_0bbff371f9373002e71f2e1347fcf481}{drupal\_\-access\_\-denied} ()
+\item 
+\hyperlink{common_8inc_7577e13ffd5887ab484be2e95aca08d9}{drupal\_\-http\_\-request} (\$url, \$headers=array(), \$method= 'GET', \$data=NULL, \$retry=3)
+\end{CompactItemize}
+\end{Indent}
+\begin{Indent}{\bf }\par
+\begin{CompactItemize}
+\item 
+\hyperlink{group__schemaapi_g979670bd6bd2e34337ffc5f0810f2d71}{drupal\_\-get\_\-schema} (\$table=NULL, \$rebuild=FALSE)
+\item 
+\hyperlink{group__schemaapi_g9706b8d6ecdac10302d83bd50935a698}{drupal\_\-install\_\-schema} (\$module)
+\item 
+\hyperlink{group__schemaapi_g0688b6627af9dc05f2618f81489c3db0}{drupal\_\-uninstall\_\-schema} (\$module)
+\item 
+\hyperlink{group__schemaapi_gecb0d63f03b96dd1426298804e091d3b}{drupal\_\-get\_\-schema\_\-unprocessed} (\$module, \$table=NULL)
+\item 
+\hyperlink{group__schemaapi_g7bd9447538f3e7c5baec5d8d67db164c}{\_\-drupal\_\-initialize\_\-schema} (\$module, \&\$schema)
+\item 
+\hyperlink{group__schemaapi_gacfcd6f676ee9062f0ba50a008a05443}{drupal\_\-schema\_\-fields\_\-sql} (\$table, \$prefix=NULL)
+\item 
+\hyperlink{group__schemaapi_g85da8424c4111b46aefb6fcb3a899c7d}{drupal\_\-write\_\-record} (\$table, \&\$object, \$update=array())
+\end{CompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+Common functions that many Drupal modules will need to reference.
+
+The functions that are critical and need to be available even when serving a cached page are instead located in \hyperlink{bootstrap_8inc}{bootstrap.inc}. 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{common_8inc_38f401ae5a8d3c2f0a06307fa001fff5}{
+\index{common.inc@{common.inc}!SAVED\_\-DELETED@{SAVED\_\-DELETED}}
+\index{SAVED\_\-DELETED@{SAVED\_\-DELETED}!common.inc@{common.inc}}
+\subsubsection[{SAVED\_\-DELETED}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf SAVED\_\-DELETED}}}
+\label{common_8inc_38f401ae5a8d3c2f0a06307fa001fff5}
+
+
+Return status for saving which deleted an existing item. \hypertarget{common_8inc_7d54df6ca81759341e08f451d4f6c8cd}{
+\index{common.inc@{common.inc}!SAVED\_\-NEW@{SAVED\_\-NEW}}
+\index{SAVED\_\-NEW@{SAVED\_\-NEW}!common.inc@{common.inc}}
+\subsubsection[{SAVED\_\-NEW}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf SAVED\_\-NEW}}}
+\label{common_8inc_7d54df6ca81759341e08f451d4f6c8cd}
+
+
+Return status for saving which involved creating a new item. \hypertarget{common_8inc_7daf0b68ef3b54562e9999ef017e28cb}{
+\index{common.inc@{common.inc}!SAVED\_\-UPDATED@{SAVED\_\-UPDATED}}
+\index{SAVED\_\-UPDATED@{SAVED\_\-UPDATED}!common.inc@{common.inc}}
+\subsubsection[{SAVED\_\-UPDATED}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf SAVED\_\-UPDATED}}}
+\label{common_8inc_7daf0b68ef3b54562e9999ef017e28cb}
+
+
+Return status for saving which involved an update to an existing item. 
+
+\subsection{Function Documentation}
+\hypertarget{common_8inc_f634d8ae0731015c73e039895890b42b}{
+\index{common.inc@{common.inc}!\_\-drupal\_\-build\_\-css\_\-path@{\_\-drupal\_\-build\_\-css\_\-path}}
+\index{\_\-drupal\_\-build\_\-css\_\-path@{\_\-drupal\_\-build\_\-css\_\-path}!common.inc@{common.inc}}
+\subsubsection[{\_\-drupal\_\-build\_\-css\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}\_\-drupal\_\-build\_\-css\_\-path (\$ {\em matches}, \/  \$ {\em base} = {\tt NULL})}}
+\label{common_8inc_f634d8ae0731015c73e039895890b42b}
+
+
+Helper function for \hyperlink{common_8inc_e7fa84b77f1c157964f0105d9b4a9476}{drupal\_\-build\_\-css\_\-cache()}.
+
+This function will prefix all paths within a CSS file. \hypertarget{common_8inc_a53a3c794efc562f46a74688dabf27f6}{
+\index{common.inc@{common.inc}!\_\-drupal\_\-flush\_\-css\_\-js@{\_\-drupal\_\-flush\_\-css\_\-js}}
+\index{\_\-drupal\_\-flush\_\-css\_\-js@{\_\-drupal\_\-flush\_\-css\_\-js}!common.inc@{common.inc}}
+\subsubsection[{\_\-drupal\_\-flush\_\-css\_\-js}]{\setlength{\rightskip}{0pt plus 5cm}\_\-drupal\_\-flush\_\-css\_\-js ()}}
+\label{common_8inc_a53a3c794efc562f46a74688dabf27f6}
+
+
+Helper function to change query-strings on css/js files.
+
+Changes the character added to all css/js files as dummy query-string, so that all browsers are forced to reload fresh files. We keep 20 characters history (FIFO) to avoid repeats, but only the first (newest) character is actually used on urls, to keep them short. This is also called from \hyperlink{update_8php}{update.php}. \hypertarget{common_8inc_79a5c2b6f50963f2e185b6c34d6bd10e}{
+\index{common.inc@{common.inc}!\_\-drupal\_\-load\_\-stylesheet@{\_\-drupal\_\-load\_\-stylesheet}}
+\index{\_\-drupal\_\-load\_\-stylesheet@{\_\-drupal\_\-load\_\-stylesheet}!common.inc@{common.inc}}
+\subsubsection[{\_\-drupal\_\-load\_\-stylesheet}]{\setlength{\rightskip}{0pt plus 5cm}\_\-drupal\_\-load\_\-stylesheet (\$ {\em matches})}}
+\label{common_8inc_79a5c2b6f50963f2e185b6c34d6bd10e}
+
+
+Loads stylesheets recursively and returns contents with corrected paths.
+
+This function is used for recursive loading of stylesheets and returns the stylesheet content with all \hyperlink{common_8inc_7ef60c766e2d09e18b866dacf6b9eb1f}{url()} paths corrected. \hypertarget{common_8inc_ca820a7438df9d2244148e4b8895291e}{
+\index{common.inc@{common.inc}!\_\-fix\_\-gpc\_\-magic\_\-files@{\_\-fix\_\-gpc\_\-magic\_\-files}}
+\index{\_\-fix\_\-gpc\_\-magic\_\-files@{\_\-fix\_\-gpc\_\-magic\_\-files}!common.inc@{common.inc}}
+\subsubsection[{\_\-fix\_\-gpc\_\-magic\_\-files}]{\setlength{\rightskip}{0pt plus 5cm}\_\-fix\_\-gpc\_\-magic\_\-files (\&\$ {\em item}, \/  \$ {\em key})}}
+\label{common_8inc_ca820a7438df9d2244148e4b8895291e}
+
+
+Helper function to strip slashes from \$\_\-FILES skipping over the tmp\_\-name keys since PHP generates single backslashes for file paths on Windows systems.
+
+tmp\_\-name does not have backslashes added see \href{http://php.net/manual/en/features.file-upload.php#42280}{\tt http://php.net/manual/en/features.file-upload.php\#42280} \hypertarget{common_8inc_5e60d91d60360fdbe187b7f7b7b60797}{
+\index{common.inc@{common.inc}!\_\-process\_\-comment@{\_\-process\_\-comment}}
+\index{\_\-process\_\-comment@{\_\-process\_\-comment}!common.inc@{common.inc}}
+\subsubsection[{\_\-process\_\-comment}]{\setlength{\rightskip}{0pt plus 5cm}\_\-process\_\-comment (\$ {\em matches})}}
+\label{common_8inc_5e60d91d60360fdbe187b7f7b7b60797}
+
+
+Process comment blocks.
+
+This is the callback function for the preg\_\-replace\_\-callback() used in drupal\_\-load\_\-stylesheet\_\-content(). Support for comment hacks is implemented here. \hypertarget{common_8inc_e227697e9c239f09fd7e36f71afde771}{
+\index{common.inc@{common.inc}!base\_\-path@{base\_\-path}}
+\index{base\_\-path@{base\_\-path}!common.inc@{common.inc}}
+\subsubsection[{base\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}base\_\-path ()}}
+\label{common_8inc_e227697e9c239f09fd7e36f71afde771}
+
+
+Returns the base URL path of the Drupal installation. At the very least, this will always default to /. \hypertarget{common_8inc_c024315b69035ef05c33674838707919}{
+\index{common.inc@{common.inc}!check\_\-url@{check\_\-url}}
+\index{check\_\-url@{check\_\-url}!common.inc@{common.inc}}
+\subsubsection[{check\_\-url}]{\setlength{\rightskip}{0pt plus 5cm}check\_\-url (\$ {\em uri})}}
+\label{common_8inc_c024315b69035ef05c33674838707919}
+
+
+Prepare a URL for use in an HTML attribute. Strips harmful protocols. \hypertarget{common_8inc_0bbff371f9373002e71f2e1347fcf481}{
+\index{common.inc@{common.inc}!drupal\_\-access\_\-denied@{drupal\_\-access\_\-denied}}
+\index{drupal\_\-access\_\-denied@{drupal\_\-access\_\-denied}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-access\_\-denied}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-access\_\-denied ()}}
+\label{common_8inc_0bbff371f9373002e71f2e1347fcf481}
+
+
+Generates a 403 error if the request is not allowed. \hypertarget{common_8inc_21f9e8d23b62a313faddaf211d7cc610}{
+\index{common.inc@{common.inc}!drupal\_\-add\_\-css@{drupal\_\-add\_\-css}}
+\index{drupal\_\-add\_\-css@{drupal\_\-add\_\-css}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-add\_\-css}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-add\_\-css (\$ {\em path} = {\tt NULL}, \/  \$ {\em type} = {\tt 'module'}, \/  \$ {\em media} = {\tt 'all'}, \/  \$ {\em preprocess} = {\tt TRUE})}}
+\label{common_8inc_21f9e8d23b62a313faddaf211d7cc610}
+
+
+Adds a CSS file to the stylesheet queue.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$path}](optional) The path to the CSS file relative to the \hyperlink{common_8inc_e227697e9c239f09fd7e36f71afde771}{base\_\-path()}, e.g., /modules/devel/devel.css.\end{description}
+\end{Desc}
+Modules should always prefix the names of their CSS files with the module name, for example: system-menus.css rather than simply menus.css. Themes can override module-supplied CSS files based on their filenames, and this prefixing helps prevent confusing name collisions for theme developers. See drupal\_\-get\_\-css where the overrides are performed.
+
+If the direction of the current language is right-to-left (Hebrew, Arabic, etc.), the function will also look for an RTL CSS file and append it to the list. The name of this file should have an '-rtl.css' suffix. For example a CSS file called 'name.css' will have a 'name-rtl.css' file added to the list, if exists in the same directory. This CSS file should contain overrides for properties which should be reversed or otherwise different in a right-to-left display. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$type}](optional) The type of stylesheet that is being added. Types are: module or theme. \item[{\em \$media}](optional) The media type for the stylesheet, e.g., all, print, screen. \item[{\em \$preprocess}](optional) Should this CSS file be aggregated and compressed if this feature has been turned on under the performance section?\end{description}
+\end{Desc}
+What does this actually mean? CSS preprocessing is the process of aggregating a bunch of separate CSS files into one file that is then compressed by removing all extraneous white space.
+
+The reason for merging the CSS files is outlined quite thoroughly here: \href{http://www.die.net/musings/page_load_time/}{\tt http://www.die.net/musings/page\_\-load\_\-time/} \char`\"{}Load fewer external objects. Due to request overhead, one bigger file just loads faster than two smaller ones half its size.\char`\"{}
+
+However, you should $\ast$not$\ast$ preprocess every file as this can lead to redundant caches. You should set \$preprocess = FALSE when:
+
+\begin{itemize}
+\item Your styles are only used rarely on the site. This could be a special admin page, the homepage, or a handful of pages that does not represent the majority of the pages on your site.\end{itemize}
+
+
+Typical candidates for caching are for example styles for nodes across the site, or used in the theme. \begin{Desc}
+\item[Returns:]An array of CSS files. \end{Desc}
+\hypertarget{common_8inc_42e1c8001e2609cb73a2f54f59e1020c}{
+\index{common.inc@{common.inc}!drupal\_\-add\_\-feed@{drupal\_\-add\_\-feed}}
+\index{drupal\_\-add\_\-feed@{drupal\_\-add\_\-feed}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-add\_\-feed}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-add\_\-feed (\$ {\em url} = {\tt NULL}, \/  \$ {\em title} = {\tt ''})}}
+\label{common_8inc_42e1c8001e2609cb73a2f54f59e1020c}
+
+
+Add a feed URL for the current page.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$url}]A url for the feed. \item[{\em \$title}]The title of the feed. \end{description}
+\end{Desc}
+\hypertarget{common_8inc_a20ac74a08756427706432aa6bb33139}{
+\index{common.inc@{common.inc}!drupal\_\-add\_\-js@{drupal\_\-add\_\-js}}
+\index{drupal\_\-add\_\-js@{drupal\_\-add\_\-js}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-add\_\-js}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-add\_\-js (\$ {\em data} = {\tt NULL}, \/  \$ {\em type} = {\tt 'module'}, \/  \$ {\em scope} = {\tt 'header'}, \/  \$ {\em defer} = {\tt FALSE}, \/  \$ {\em cache} = {\tt TRUE}, \/  \$ {\em preprocess} = {\tt TRUE})}}
+\label{common_8inc_a20ac74a08756427706432aa6bb33139}
+
+
+Add a JavaScript file, setting or inline code to the page.
+
+The behavior of this function depends on the parameters it is called with. Generally, it handles the addition of JavaScript to the page, either as reference to an existing file or as inline code. The following actions can be performed using this function:
+
+\begin{itemize}
+\item Add a file ('core', 'module' and 'theme'): Adds a reference to a JavaScript file to the page. JavaScript files are placed in a certain order, from 'core' first, to 'module' and finally 'theme' so that files, that are added later, can override previously added files with ease.\end{itemize}
+
+
+\begin{itemize}
+\item Add inline JavaScript code ('inline'): Executes a piece of JavaScript code on the current page by placing the code directly in the page. This can, for example, be useful to tell the user that a new message arrived, by opening a pop up, alert box etc.\end{itemize}
+
+
+\begin{itemize}
+\item Add settings ('setting'): Adds a setting to Drupal's global storage of JavaScript settings. Per-page settings are required by some modules to function properly. The settings will be accessible at Drupal.settings.\end{itemize}
+
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$data}](optional) If given, the value depends on the \$type parameter:\begin{itemize}
+\item 'core', 'module' or 'theme': Path to the file relative to \hyperlink{common_8inc_e227697e9c239f09fd7e36f71afde771}{base\_\-path()}.\item 'inline': The JavaScript code that should be placed in the given scope.\item 'setting': An array with configuration options as associative array. The array is directly placed in Drupal.settings. You might want to wrap your actual configuration settings in another variable to prevent the pollution of the Drupal.settings namespace. \end{itemize}
+\item[{\em \$type}](optional) The type of JavaScript that should be added to the page. Allowed values are 'core', 'module', 'theme', 'inline' and 'setting'. You can, however, specify any value. It is treated as a reference to a JavaScript file. Defaults to 'module'. \item[{\em \$scope}](optional) The location in which you want to place the script. Possible values are 'header' and 'footer' by default. If your theme implements different locations, however, you can also use these. \item[{\em \$defer}](optional) If set to TRUE, the defer attribute is set on the $<$script$>$ tag. Defaults to FALSE. This parameter is not used with \$type == 'setting'. \item[{\em \$cache}](optional) If set to FALSE, the JavaScript file is loaded anew on every page call, that means, it is not cached. Defaults to TRUE. Used only when \$type references a JavaScript file. \item[{\em \$preprocess}](optional) Should this JS file be aggregated if this feature has been turned on under the performance section? \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]If the first parameter is NULL, the JavaScript array that has been built so far for \$scope is returned. If the first three parameters are NULL, an array with all scopes is returned. \end{Desc}
+\hypertarget{common_8inc_7eda2691396ef26c49e05d37a43bddfd}{
+\index{common.inc@{common.inc}!drupal\_\-add\_\-link@{drupal\_\-add\_\-link}}
+\index{drupal\_\-add\_\-link@{drupal\_\-add\_\-link}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-add\_\-link}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-add\_\-link (\$ {\em attributes})}}
+\label{common_8inc_7eda2691396ef26c49e05d37a43bddfd}
+
+
+Add a $<$link$>$ tag to the page's HEAD. \hypertarget{common_8inc_b905af5d90a84b5d48f3a517992875f5}{
+\index{common.inc@{common.inc}!drupal\_\-add\_\-tabledrag@{drupal\_\-add\_\-tabledrag}}
+\index{drupal\_\-add\_\-tabledrag@{drupal\_\-add\_\-tabledrag}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-add\_\-tabledrag}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-add\_\-tabledrag (\$ {\em table\_\-id}, \/  \$ {\em action}, \/  \$ {\em relationship}, \/  \$ {\em group}, \/  \$ {\em subgroup} = {\tt NULL}, \/  \$ {\em source} = {\tt NULL}, \/  \$ {\em hidden} = {\tt TRUE}, \/  \$ {\em limit} = {\tt 0})}}
+\label{common_8inc_b905af5d90a84b5d48f3a517992875f5}
+
+
+Assist in adding the tableDrag JavaScript behavior to a themed table.
+
+Draggable tables should be used wherever an outline or list of sortable items needs to be arranged by an end-user. Draggable tables are very flexible and can manipulate the value of form elements placed within individual columns.
+
+To set up a table to use drag and drop in place of weight select-lists or in place of a form that contains parent relationships, the form must be themed into a table. The table must have an id attribute set. If using \hyperlink{group__themeable_g77f053aaa73bbeaa3943bf8f06ce625d}{theme\_\-table()}, the id may be set as such: 
+
+\begin{Code}\begin{verbatim} $output = theme('table', $header, $rows, array('id' => 'my-module-table'));
+ return $output;
+\end{verbatim}
+\end{Code}
+
+
+
+In the theme function for the form, a special class must be added to each form element within the same column, \char`\"{}grouping\char`\"{} them together.
+
+In a situation where a single weight column is being sorted in the table, the classes could be added like this (in the theme function): 
+
+\begin{Code}\begin{verbatim} $form['my_elements'][$delta]['weight']['#attributes']['class'] = "my-elements-weight";
+\end{verbatim}
+\end{Code}
+
+
+
+Each row of the table must also have a class of \char`\"{}draggable\char`\"{} in order to enable the drag handles: 
+
+\begin{Code}\begin{verbatim} $row = array(...);
+ $rows[] = array(
+   'data' => $row,
+   'class' => 'draggable',
+ );
+\end{verbatim}
+\end{Code}
+
+
+
+When tree relationships are present, the two additional classes 'tabledrag-leaf' and 'tabledrag-root' can be used to refine the behavior:\begin{itemize}
+\item Rows with the 'tabledrag-leaf' class cannot have child rows.\item Rows with the 'tabledrag-root' class cannot be nested under a parent row.\end{itemize}
+
+
+Calling \hyperlink{common_8inc_b905af5d90a84b5d48f3a517992875f5}{drupal\_\-add\_\-tabledrag()} would then be written as such: 
+
+\begin{Code}\begin{verbatim} drupal_add_tabledrag('my-module-table', 'order', 'sibling', 'my-elements-weight');
+\end{verbatim}
+\end{Code}
+
+
+
+In a more complex case where there are several groups in one column (such as the block regions on the admin/build/block page), a separate subgroup class must also be added to differentiate the groups. 
+
+\begin{Code}\begin{verbatim} $form['my_elements'][$region][$delta]['weight']['#attributes']['class'] = "my-elements-weight my-elements-weight-". $region;
+\end{verbatim}
+\end{Code}
+
+
+
+\$group is still 'my-element-weight', and the additional \$subgroup variable will be passed in as 'my-elements-weight-'. \$region. This also means that you'll need to call \hyperlink{common_8inc_b905af5d90a84b5d48f3a517992875f5}{drupal\_\-add\_\-tabledrag()} once for every region added.
+
+
+
+\begin{Code}\begin{verbatim} foreach ($regions as $region) {
+   drupal_add_tabledrag('my-module-table', 'order', 'sibling', 'my-elements-weight', 'my-elements-weight-'. $region);
+ }
+\end{verbatim}
+\end{Code}
+
+
+
+In a situation where tree relationships are present, adding multiple subgroups is not necessary, because the table will contain indentations that provide enough information about the sibling and parent relationships. See \hyperlink{group__themeable_g4af0d13e1a7fdd7c08283101bbed6d2c}{theme\_\-menu\_\-overview\_\-form()} for an example creating a table containing parent relationships.
+
+Please note that this function should be called from the theme layer, such as in a .tpl.php file, theme\_\- function, or in a template\_\-preprocess function, not in a form declartion. Though the same JavaScript could be added to the page using \hyperlink{common_8inc_a20ac74a08756427706432aa6bb33139}{drupal\_\-add\_\-js()} directly, this function helps keep template files clean and readable. It also prevents tabledrag.js from being added twice accidentally.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$table\_\-id}]String containing the target table's id attribute. If the table does not have an id, one will need to be set, such as \begin{TabularC}{0}
+\hline
+\end{TabularC}
+\item[{\em \$action}]String describing the action to be done on the form item. Either 'match' 'depth', or 'order'. Match is typically used for parent relationships. Order is typically used to set weights on other form elements with the same group. Depth updates the target element with the current indentation. \item[{\em \$relationship}]String describing where the \$action variable should be performed. Either 'parent', 'sibling', 'group', or 'self'. Parent will only look for fields up the tree. Sibling will look for fields in the same group in rows above and below it. Self affects the dragged row itself. Group affects the dragged row, plus any children below it (the entire dragged group). \item[{\em \$group}]A class name applied on all related form elements for this action. \item[{\em \$subgroup}](optional) If the group has several subgroups within it, this string should contain the class name identifying fields in the same subgroup. \item[{\em \$source}](optional) If the \$action is 'match', this string should contain the class name identifying what field will be used as the source value when matching the value in \$subgroup. \item[{\em \$hidden}](optional) The column containing the field elements may be entirely hidden from \hyperlink{classview}{view} dynamically when the JavaScript is loaded. Set to FALSE if the column should not be hidden. \item[{\em \$limit}](optional) Limit the maximum amount of parenting in this table. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{block-admin-display-form_8tpl_8php}{block-admin-display-form.tpl.php} 
+
+\hyperlink{group__themeable_g4af0d13e1a7fdd7c08283101bbed6d2c}{theme\_\-menu\_\-overview\_\-form()} \end{Desc}
+\hypertarget{common_8inc_d41a0d489123ca5b04976d9a3d7e11d4}{
+\index{common.inc@{common.inc}!drupal\_\-alter@{drupal\_\-alter}}
+\index{drupal\_\-alter@{drupal\_\-alter}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-alter}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-alter (\$ {\em type}, \/  \&\$ {\em data})}}
+\label{common_8inc_d41a0d489123ca5b04976d9a3d7e11d4}
+
+
+Hands off alterable variables to type-specific $\ast$\_\-alter implementations.
+
+This dispatch function hands off the passed in variables to type-specific hook\_\-TYPE\_\-alter() implementations in modules. It ensures a consistent interface for all altering operations.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$type}]The data type of the structured array. 'form', 'links', 'node\_\-content', and so on are several examples. \item[{\em \$data}]The structured array to be altered. \item[{\em ...}]Any additional params will be passed on to the called hook\_\-\$type\_\-alter functions. \end{description}
+\end{Desc}
+\hypertarget{common_8inc_fcc26495094c3ea765071dfdc925ac27}{
+\index{common.inc@{common.inc}!drupal\_\-attributes@{drupal\_\-attributes}}
+\index{drupal\_\-attributes@{drupal\_\-attributes}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-attributes}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-attributes (\$ {\em attributes} = {\tt array()})}}
+\label{common_8inc_fcc26495094c3ea765071dfdc925ac27}
+
+
+Format an attribute string to insert in a tag.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$attributes}]An associative array of HTML attributes. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An HTML string ready for insertion in a tag. \end{Desc}
+\hypertarget{common_8inc_e7fa84b77f1c157964f0105d9b4a9476}{
+\index{common.inc@{common.inc}!drupal\_\-build\_\-css\_\-cache@{drupal\_\-build\_\-css\_\-cache}}
+\index{drupal\_\-build\_\-css\_\-cache@{drupal\_\-build\_\-css\_\-cache}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-build\_\-css\_\-cache}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-build\_\-css\_\-cache (\$ {\em types}, \/  \$ {\em filename})}}
+\label{common_8inc_e7fa84b77f1c157964f0105d9b4a9476}
+
+
+Aggregate and optimize CSS files, putting them in the files directory.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$types}]An array of types of CSS files (e.g., screen, print) to aggregate and compress into one file. \item[{\em \$filename}]The name of the aggregate CSS file. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The name of the CSS file. \end{Desc}
+\hypertarget{common_8inc_1e8a20aeb8dd9bd6e03988936c42feb8}{
+\index{common.inc@{common.inc}!drupal\_\-build\_\-js\_\-cache@{drupal\_\-build\_\-js\_\-cache}}
+\index{drupal\_\-build\_\-js\_\-cache@{drupal\_\-build\_\-js\_\-cache}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-build\_\-js\_\-cache}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-build\_\-js\_\-cache (\$ {\em files}, \/  \$ {\em filename})}}
+\label{common_8inc_1e8a20aeb8dd9bd6e03988936c42feb8}
+
+
+Aggregate JS files, putting them in the files directory.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$files}]An array of JS files to aggregate and compress into one file. \item[{\em \$filename}]The name of the aggregate JS file. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The name of the JS file. \end{Desc}
+\hypertarget{common_8inc_e89dbd2b41a6623be2ed704d039a5c7c}{
+\index{common.inc@{common.inc}!drupal\_\-clear\_\-css\_\-cache@{drupal\_\-clear\_\-css\_\-cache}}
+\index{drupal\_\-clear\_\-css\_\-cache@{drupal\_\-clear\_\-css\_\-cache}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-clear\_\-css\_\-cache}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-clear\_\-css\_\-cache ()}}
+\label{common_8inc_e89dbd2b41a6623be2ed704d039a5c7c}
+
+
+Delete all cached CSS files. \hypertarget{common_8inc_c05e083cb7cb02084601f8d2103b0405}{
+\index{common.inc@{common.inc}!drupal\_\-clear\_\-js\_\-cache@{drupal\_\-clear\_\-js\_\-cache}}
+\index{drupal\_\-clear\_\-js\_\-cache@{drupal\_\-clear\_\-js\_\-cache}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-clear\_\-js\_\-cache}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-clear\_\-js\_\-cache ()}}
+\label{common_8inc_c05e083cb7cb02084601f8d2103b0405}
+
+
+Delete all cached JS files. \hypertarget{common_8inc_1c3a768c3c1b4751977330e20f098c32}{
+\index{common.inc@{common.inc}!drupal\_\-clear\_\-path\_\-cache@{drupal\_\-clear\_\-path\_\-cache}}
+\index{drupal\_\-clear\_\-path\_\-cache@{drupal\_\-clear\_\-path\_\-cache}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-clear\_\-path\_\-cache}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-clear\_\-path\_\-cache ()}}
+\label{common_8inc_1c3a768c3c1b4751977330e20f098c32}
+
+
+Reset the static variable which holds the aliases mapped for this request. \hypertarget{common_8inc_14f9e44c0897f4950c1714483a811fc8}{
+\index{common.inc@{common.inc}!drupal\_\-clone@{drupal\_\-clone}}
+\index{drupal\_\-clone@{drupal\_\-clone}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-clone}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-clone (\$ {\em object})}}
+\label{common_8inc_14f9e44c0897f4950c1714483a811fc8}
+
+
+Provide a substitute clone() function for PHP4. \hypertarget{common_8inc_1263ef82e0da5b85f8203783ed164872}{
+\index{common.inc@{common.inc}!drupal\_\-common\_\-theme@{drupal\_\-common\_\-theme}}
+\index{drupal\_\-common\_\-theme@{drupal\_\-common\_\-theme}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-common\_\-theme}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-common\_\-theme ()}}
+\label{common_8inc_1263ef82e0da5b85f8203783ed164872}
+
+
+Provide theme registration for themes across .inc files. \hypertarget{common_8inc_9067aaeb503fb9f994d98728130390a2}{
+\index{common.inc@{common.inc}!drupal\_\-cron\_\-cleanup@{drupal\_\-cron\_\-cleanup}}
+\index{drupal\_\-cron\_\-cleanup@{drupal\_\-cron\_\-cleanup}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-cron\_\-cleanup}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-cron\_\-cleanup ()}}
+\label{common_8inc_9067aaeb503fb9f994d98728130390a2}
+
+
+Shutdown function for cron cleanup. \hypertarget{common_8inc_1d4a4362b30215023a7120b627a9fd4f}{
+\index{common.inc@{common.inc}!drupal\_\-cron\_\-run@{drupal\_\-cron\_\-run}}
+\index{drupal\_\-cron\_\-run@{drupal\_\-cron\_\-run}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-cron\_\-run}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-cron\_\-run ()}}
+\label{common_8inc_1d4a4362b30215023a7120b627a9fd4f}
+
+
+Executes a cron run when called \begin{Desc}
+\item[Returns:]Returns TRUE if ran successfully \end{Desc}
+\hypertarget{common_8inc_32d79f124e1b94540b0b4edbde95a892}{
+\index{common.inc@{common.inc}!drupal\_\-error\_\-handler@{drupal\_\-error\_\-handler}}
+\index{drupal\_\-error\_\-handler@{drupal\_\-error\_\-handler}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-error\_\-handler}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-error\_\-handler (\$ {\em errno}, \/  \$ {\em message}, \/  \$ {\em filename}, \/  \$ {\em line}, \/  \$ {\em context})}}
+\label{common_8inc_32d79f124e1b94540b0b4edbde95a892}
+
+
+End of \char`\"{}HTTP handling\char`\"{}. Log errors as defined by administrator.
+
+Error levels:\begin{itemize}
+\item 0 = Log errors to database.\item 1 = Log errors to database and to screen. \end{itemize}
+\hypertarget{common_8inc_97f587c4db32bc29e946f713b0c4be34}{
+\index{common.inc@{common.inc}!drupal\_\-eval@{drupal\_\-eval}}
+\index{drupal\_\-eval@{drupal\_\-eval}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-eval}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-eval (\$ {\em code})}}
+\label{common_8inc_97f587c4db32bc29e946f713b0c4be34}
+
+
+Evaluate a string of PHP code.
+
+This is a wrapper around PHP's eval(). It uses output buffering to capture both returned and printed text. Unlike eval(), we require code to be surrounded by $<$?php ?$>$ tags; in other words, we evaluate the code as if it were a stand-alone PHP file.
+
+Using this wrapper also ensures that the PHP code which is evaluated can not overwrite any variables in the calling code, unlike a regular eval() call.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$code}]The code to evaluate. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]A string containing the printed output of the code, followed by the returned output of the code. \end{Desc}
+\hypertarget{common_8inc_e5bd302bab285bc819a70737f6121953}{
+\index{common.inc@{common.inc}!drupal\_\-explode\_\-tags@{drupal\_\-explode\_\-tags}}
+\index{drupal\_\-explode\_\-tags@{drupal\_\-explode\_\-tags}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-explode\_\-tags}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-explode\_\-tags (\$ {\em tags})}}
+\label{common_8inc_e5bd302bab285bc819a70737f6121953}
+
+
+Explode a string of given tags into an array.
+
+\begin{Desc}
+\item[See also:]\hyperlink{common_8inc_29df41fde25e9fcace627a628806c978}{drupal\_\-implode\_\-tags()} \end{Desc}
+\hypertarget{common_8inc_2b6eb80241d0d2b40c483a4752389aa9}{
+\index{common.inc@{common.inc}!drupal\_\-final\_\-markup@{drupal\_\-final\_\-markup}}
+\index{drupal\_\-final\_\-markup@{drupal\_\-final\_\-markup}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-final\_\-markup}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-final\_\-markup (\$ {\em content})}}
+\label{common_8inc_2b6eb80241d0d2b40c483a4752389aa9}
+
+
+Make any final alterations to the rendered xhtml. \hypertarget{common_8inc_c119432cefbdbb25647944d4ca3f82f8}{
+\index{common.inc@{common.inc}!drupal\_\-flush\_\-all\_\-caches@{drupal\_\-flush\_\-all\_\-caches}}
+\index{drupal\_\-flush\_\-all\_\-caches@{drupal\_\-flush\_\-all\_\-caches}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-flush\_\-all\_\-caches}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-flush\_\-all\_\-caches ()}}
+\label{common_8inc_c119432cefbdbb25647944d4ca3f82f8}
+
+
+Flush all cached data on the site.
+
+Empties cache tables, rebuilds the menu cache and theme registries, and invokes a hook so that other modules' cache data can be cleared as well. \hypertarget{common_8inc_f1e9626192d1d2e5e63b370e88c03c7c}{
+\index{common.inc@{common.inc}!drupal\_\-get\_\-breadcrumb@{drupal\_\-get\_\-breadcrumb}}
+\index{drupal\_\-get\_\-breadcrumb@{drupal\_\-get\_\-breadcrumb}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-get\_\-breadcrumb}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-get\_\-breadcrumb ()}}
+\label{common_8inc_f1e9626192d1d2e5e63b370e88c03c7c}
+
+
+Get the breadcrumb trail for the current page. \hypertarget{common_8inc_57f11487017e5fb889f797456300fc4c}{
+\index{common.inc@{common.inc}!drupal\_\-get\_\-content@{drupal\_\-get\_\-content}}
+\index{drupal\_\-get\_\-content@{drupal\_\-get\_\-content}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-get\_\-content}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-get\_\-content (\$ {\em region} = {\tt NULL}, \/  \$ {\em delimiter} = {\tt '~'})}}
+\label{common_8inc_57f11487017e5fb889f797456300fc4c}
+
+
+Get assigned content.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$region}]A specified region to fetch content for. If NULL, all regions will be returned. \item[{\em \$delimiter}]Content to be inserted between imploded array elements. \end{description}
+\end{Desc}
+\hypertarget{common_8inc_90f269c442c46417319a614057985a0c}{
+\index{common.inc@{common.inc}!drupal\_\-get\_\-css@{drupal\_\-get\_\-css}}
+\index{drupal\_\-get\_\-css@{drupal\_\-get\_\-css}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-get\_\-css}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-get\_\-css (\$ {\em css} = {\tt NULL})}}
+\label{common_8inc_90f269c442c46417319a614057985a0c}
+
+
+Returns a themed representation of all stylesheets that should be attached to the page.
+
+It loads the CSS in order, with 'module' first, then 'theme' afterwards. This ensures proper cascading of styles so themes can easily override module styles through CSS selectors.
+
+Themes may replace module-defined CSS files by adding a stylesheet with the same filename. For example, themes/garland/system-menus.css would replace modules/system/system-menus.css. This allows themes to override complete CSS files, rather than specific selectors, when necessary.
+
+If the original CSS file is being overridden by a theme, the theme is responsible for supplying an accompanying RTL CSS file to replace the module's.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$css}](optional) An array of CSS files. If no array is provided, the default stylesheets array is used instead. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]A string of XHTML CSS tags. \end{Desc}
+\hypertarget{common_8inc_0c95c16e75ac4df882686daccc1f8ac5}{
+\index{common.inc@{common.inc}!drupal\_\-get\_\-destination@{drupal\_\-get\_\-destination}}
+\index{drupal\_\-get\_\-destination@{drupal\_\-get\_\-destination}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-get\_\-destination}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-get\_\-destination ()}}
+\label{common_8inc_0c95c16e75ac4df882686daccc1f8ac5}
+
+
+Prepare a destination query string for use in combination with \hyperlink{common_8inc_74b81f841dbbac5a119a9cc7e3ffc614}{drupal\_\-goto()}.
+
+Used to direct the user back to the referring page after completing a form. By default the current URL is returned. If a destination exists in the previous request, that destination is returned. As such, a destination can persist across multiple pages.
+
+\begin{Desc}
+\item[See also:]\hyperlink{common_8inc_74b81f841dbbac5a119a9cc7e3ffc614}{drupal\_\-goto()} \end{Desc}
+\hypertarget{common_8inc_c7df9703641369003434d49cf917c16e}{
+\index{common.inc@{common.inc}!drupal\_\-get\_\-feeds@{drupal\_\-get\_\-feeds}}
+\index{drupal\_\-get\_\-feeds@{drupal\_\-get\_\-feeds}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-get\_\-feeds}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-get\_\-feeds (\$ {\em delimiter} = {\tt \char`\"{}$\backslash$n\char`\"{}})}}
+\label{common_8inc_c7df9703641369003434d49cf917c16e}
+
+
+Get the feed URLs for the current page.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$delimiter}]A delimiter to split feeds by. \end{description}
+\end{Desc}
+\hypertarget{common_8inc_940dc177a758d9aa97e7e88a4cb839ca}{
+\index{common.inc@{common.inc}!drupal\_\-get\_\-headers@{drupal\_\-get\_\-headers}}
+\index{drupal\_\-get\_\-headers@{drupal\_\-get\_\-headers}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-get\_\-headers}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-get\_\-headers ()}}
+\label{common_8inc_940dc177a758d9aa97e7e88a4cb839ca}
+
+
+Get the HTTP response headers for the current page. \hypertarget{common_8inc_cdee011d76859a5a9280209df1175188}{
+\index{common.inc@{common.inc}!drupal\_\-get\_\-html\_\-head@{drupal\_\-get\_\-html\_\-head}}
+\index{drupal\_\-get\_\-html\_\-head@{drupal\_\-get\_\-html\_\-head}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-get\_\-html\_\-head}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-get\_\-html\_\-head ()}}
+\label{common_8inc_cdee011d76859a5a9280209df1175188}
+
+
+Retrieve output to be displayed in the head tag of the HTML page. \hypertarget{common_8inc_56994274f0ab2fb17c15b41bcdbd81ce}{
+\index{common.inc@{common.inc}!drupal\_\-get\_\-js@{drupal\_\-get\_\-js}}
+\index{drupal\_\-get\_\-js@{drupal\_\-get\_\-js}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-get\_\-js}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-get\_\-js (\$ {\em scope} = {\tt 'header'}, \/  \$ {\em javascript} = {\tt NULL})}}
+\label{common_8inc_56994274f0ab2fb17c15b41bcdbd81ce}
+
+
+Returns a themed presentation of all JavaScript code for the current page.
+
+References to JavaScript files are placed in a certain order: first, all 'core' files, then all 'module' and finally all 'theme' JavaScript files are added to the page. Then, all settings are output, followed by 'inline' JavaScript code. If running \hyperlink{update_8php}{update.php}, all preprocessing is disabled.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$scope}](optional) The scope for which the JavaScript rules should be returned. Defaults to 'header'. \item[{\em \$javascript}](optional) An array with all JavaScript code. Defaults to the default JavaScript array for the given scope. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]All JavaScript code segments and includes for the scope as HTML tags. \end{Desc}
+\hypertarget{common_8inc_e3bbe8f97bf07bb0eaf4580c98f9bf94}{
+\index{common.inc@{common.inc}!drupal\_\-get\_\-path@{drupal\_\-get\_\-path}}
+\index{drupal\_\-get\_\-path@{drupal\_\-get\_\-path}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-get\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-get\_\-path (\$ {\em type}, \/  \$ {\em name})}}
+\label{common_8inc_e3bbe8f97bf07bb0eaf4580c98f9bf94}
+
+
+Returns the path to a system item (module, theme, etc.).
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$type}]The type of the item (i.e. theme, theme\_\-engine, module). \item[{\em \$name}]The name of the item for which the path is requested.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The path to the requested item. \end{Desc}
+\hypertarget{common_8inc_73373e2d357d0e624c209efe27515af6}{
+\index{common.inc@{common.inc}!drupal\_\-get\_\-private\_\-key@{drupal\_\-get\_\-private\_\-key}}
+\index{drupal\_\-get\_\-private\_\-key@{drupal\_\-get\_\-private\_\-key}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-get\_\-private\_\-key}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-get\_\-private\_\-key ()}}
+\label{common_8inc_73373e2d357d0e624c209efe27515af6}
+
+
+Ensure the private key variable used to generate tokens is set.
+
+\begin{Desc}
+\item[Returns:]The private key. \end{Desc}
+\hypertarget{common_8inc_16989177d9fa05df9b45e8797ce04994}{
+\index{common.inc@{common.inc}!drupal\_\-get\_\-token@{drupal\_\-get\_\-token}}
+\index{drupal\_\-get\_\-token@{drupal\_\-get\_\-token}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-get\_\-token}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-get\_\-token (\$ {\em value} = {\tt ''})}}
+\label{common_8inc_16989177d9fa05df9b45e8797ce04994}
+
+
+Generate a token based on \$value, the current user session and private key.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$value}]An additional value to base the token on. \end{description}
+\end{Desc}
+\hypertarget{common_8inc_74b81f841dbbac5a119a9cc7e3ffc614}{
+\index{common.inc@{common.inc}!drupal\_\-goto@{drupal\_\-goto}}
+\index{drupal\_\-goto@{drupal\_\-goto}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-goto}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-goto (\$ {\em path} = {\tt ''}, \/  \$ {\em query} = {\tt NULL}, \/  \$ {\em fragment} = {\tt NULL}, \/  \$ {\em http\_\-response\_\-code} = {\tt 302})}}
+\label{common_8inc_74b81f841dbbac5a119a9cc7e3ffc614}
+
+
+Send the user to a different Drupal page.
+
+This issues an on-site HTTP redirect. The function makes sure the redirected URL is formatted correctly.
+
+Usually the redirected URL is constructed from this function's input parameters. However you may override that behavior by setting a destination in either the \$\_\-REQUEST-array (i.e. by using the query string of an URI) or the \$\_\-REQUEST\mbox{[}'edit'\mbox{]}-array (i.e. by using a hidden form field). This is used to direct the user back to the proper page after completing a form. For example, after editing a post on the 'admin/content/node'-page or after having logged on using the 'user login'-block in a sidebar. The function \hyperlink{common_8inc_0c95c16e75ac4df882686daccc1f8ac5}{drupal\_\-get\_\-destination()} can be used to help set the destination URL.
+
+Drupal will ensure that messages set by \hyperlink{bootstrap_8inc_d9223d86c7b08b1288274ce211d9bfa6}{drupal\_\-set\_\-message()} and other session data are written to the database before the user is redirected.
+
+This function ends the request; use it rather than a print theme('page') statement in your menu callback.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$path}]A Drupal path or a full URL. \item[{\em \$query}]A query string component, if any. \item[{\em \$fragment}]A destination fragment identifier (named anchor). \item[{\em \$http\_\-response\_\-code}]Valid values for an actual \char`\"{}goto\char`\"{} as per RFC 2616 section 10.3 are:\begin{itemize}
+\item 301 Moved Permanently (the recommended value for most redirects)\item 302 Found (default in Drupal and PHP, sometimes used for spamming search engines)\item 303 See Other\item 304 Not Modified\item 305 Use Proxy\item 307 Temporary Redirect (alternative to \char`\"{}503 Site Down for Maintenance\char`\"{}) Note: Other values are defined by RFC 2616, but are rarely used and poorly supported. \end{itemize}
+\end{description}
+\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{common_8inc_0c95c16e75ac4df882686daccc1f8ac5}{drupal\_\-get\_\-destination()} \end{Desc}
+\hypertarget{common_8inc_7577e13ffd5887ab484be2e95aca08d9}{
+\index{common.inc@{common.inc}!drupal\_\-http\_\-request@{drupal\_\-http\_\-request}}
+\index{drupal\_\-http\_\-request@{drupal\_\-http\_\-request}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-http\_\-request}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-http\_\-request (\$ {\em url}, \/  \$ {\em headers} = {\tt array()}, \/  \$ {\em method} = {\tt 'GET'}, \/  \$ {\em data} = {\tt NULL}, \/  \$ {\em retry} = {\tt 3})}}
+\label{common_8inc_7577e13ffd5887ab484be2e95aca08d9}
+
+
+Perform an HTTP request.
+
+This is a flexible and powerful HTTP client implementation. Correctly handles GET, POST, PUT or any other HTTP requests. Handles redirects.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$url}]A string containing a fully qualified URI. \item[{\em \$headers}]An array containing an HTTP header =$>$ value pair. \item[{\em \$method}]A string defining the HTTP request to use. \item[{\em \$data}]A string containing data to include in the request. \item[{\em \$retry}]An integer representing how many times to retry the request in case of a redirect. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An object containing the HTTP request headers, response code, protocol, status message, headers, data and redirect status. \end{Desc}
+\hypertarget{common_8inc_29df41fde25e9fcace627a628806c978}{
+\index{common.inc@{common.inc}!drupal\_\-implode\_\-tags@{drupal\_\-implode\_\-tags}}
+\index{drupal\_\-implode\_\-tags@{drupal\_\-implode\_\-tags}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-implode\_\-tags}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-implode\_\-tags (\$ {\em tags})}}
+\label{common_8inc_29df41fde25e9fcace627a628806c978}
+
+
+Implode an array of tags into a string.
+
+\begin{Desc}
+\item[See also:]\hyperlink{common_8inc_e5bd302bab285bc819a70737f6121953}{drupal\_\-explode\_\-tags()} \end{Desc}
+\hypertarget{common_8inc_7a19d30a73daf3e34ed67000c435afc5}{
+\index{common.inc@{common.inc}!drupal\_\-json@{drupal\_\-json}}
+\index{drupal\_\-json@{drupal\_\-json}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-json}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-json (\$ {\em var} = {\tt NULL})}}
+\label{common_8inc_7a19d30a73daf3e34ed67000c435afc5}
+
+
+Return data in JSON format.
+
+This function should be used for JavaScript callback functions returning data in JSON format. It sets the header for JavaScript output.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$var}](optional) If set, the variable will be converted to JSON and output. \end{description}
+\end{Desc}
+\hypertarget{common_8inc_f20aa4e55e7003eaff27f5c6078a4ae0}{
+\index{common.inc@{common.inc}!drupal\_\-load\_\-stylesheet@{drupal\_\-load\_\-stylesheet}}
+\index{drupal\_\-load\_\-stylesheet@{drupal\_\-load\_\-stylesheet}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-load\_\-stylesheet}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-load\_\-stylesheet (\$ {\em file}, \/  \$ {\em optimize} = {\tt NULL})}}
+\label{common_8inc_f20aa4e55e7003eaff27f5c6078a4ae0}
+
+
+Loads the stylesheet and resolves all  commands.
+
+Loads a stylesheet and replaces  commands with the contents of the imported file. Use this instead of file\_\-get\_\-contents when processing stylesheets.
+
+The returned contents are compressed removing white space and comments only when CSS aggregation is enabled. This optimization will not apply for color.module enabled themes with CSS aggregation turned off.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$file}]Name of the stylesheet to be processed. \item[{\em \$optimize}]Defines if CSS contents should be compressed or not. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Contents of the stylesheet including the imported stylesheets. \end{Desc}
+\hypertarget{common_8inc_72b55fe42aa726cc506660138abd3307}{
+\index{common.inc@{common.inc}!drupal\_\-map\_\-assoc@{drupal\_\-map\_\-assoc}}
+\index{drupal\_\-map\_\-assoc@{drupal\_\-map\_\-assoc}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-map\_\-assoc}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-map\_\-assoc (\$ {\em array}, \/  \$ {\em function} = {\tt NULL})}}
+\label{common_8inc_72b55fe42aa726cc506660138abd3307}
+
+
+Form an associative array from a linear array.
+
+This function walks through the provided array and constructs an associative array out of it. The keys of the resulting array will be the values of the input array. The values will be the same as the keys unless a function is specified, in which case the output of the function is used for the values instead.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$array}]A linear array. \item[{\em \$function}]A name of a function to apply to all values before output. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An associative array. \end{Desc}
+\hypertarget{common_8inc_52b08cd98e1756326c1bd5b56c39a884}{
+\index{common.inc@{common.inc}!drupal\_\-not\_\-found@{drupal\_\-not\_\-found}}
+\index{drupal\_\-not\_\-found@{drupal\_\-not\_\-found}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-not\_\-found}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-not\_\-found ()}}
+\label{common_8inc_52b08cd98e1756326c1bd5b56c39a884}
+
+
+Generates a 404 error if the request can not be handled. \hypertarget{common_8inc_64bc7d539a74e850935d73968788abd3}{
+\index{common.inc@{common.inc}!drupal\_\-page\_\-footer@{drupal\_\-page\_\-footer}}
+\index{drupal\_\-page\_\-footer@{drupal\_\-page\_\-footer}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-page\_\-footer}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-page\_\-footer ()}}
+\label{common_8inc_64bc7d539a74e850935d73968788abd3}
+
+
+Perform end-of-request tasks.
+
+This function sets the page cache if appropriate, and allows modules to react to the closing of the page by calling hook\_\-exit(). \hypertarget{common_8inc_277955232059631211fcfde533ea89d6}{
+\index{common.inc@{common.inc}!drupal\_\-parse\_\-info\_\-file@{drupal\_\-parse\_\-info\_\-file}}
+\index{drupal\_\-parse\_\-info\_\-file@{drupal\_\-parse\_\-info\_\-file}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-parse\_\-info\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-parse\_\-info\_\-file (\$ {\em filename})}}
+\label{common_8inc_277955232059631211fcfde533ea89d6}
+
+
+End of \char`\"{}ingroup schemaapi\char`\"{}. Parse Drupal info file format.
+
+Files should use an ini-like format to specify values. White-space generally doesn't matter, except inside values. e.g.
+
+
+
+\begin{Code}\begin{verbatim}   key = value
+   key = "value"
+   key = 'value'
+   key = "multi-line
+
+   value"
+   key = 'multi-line
+
+   value'
+   key
+   =
+   'value'
+\end{verbatim}
+\end{Code}
+
+
+
+Arrays are created using a GET-like syntax:
+
+
+
+\begin{Code}\begin{verbatim}   key[] = "numeric array"
+   key[index] = "associative array"
+   key[index][] = "nested numeric array"
+   key[index][index] = "nested associative array"
+\end{verbatim}
+\end{Code}
+
+
+
+PHP constants are substituted in, but only when used as the entire value:
+
+Comments should start with a semi-colon at the beginning of a line.
+
+This function is NOT for placing arbitrary module-specific settings. Use \hyperlink{bootstrap_8inc_ba5d67193d1f9d9fd4636cff54fc4154}{variable\_\-get()} and \hyperlink{bootstrap_8inc_9859faa6fcd56ca6048be93dace95999}{variable\_\-set()} for that.
+
+Information stored in the module.info file:\begin{itemize}
+\item name: The real name of the module for display purposes.\item description: A brief description of the module.\item dependencies: An array of shortnames of other modules this module depends on.\item package: The name of the package of modules this module belongs to.\end{itemize}
+
+
+Example of .info file: 
+
+\begin{Code}\begin{verbatim}   name = Forum
+   description = Enables threaded discussions about general topics.
+   dependencies[] = taxonomy
+   dependencies[] = comment
+   package = Core - optional
+   version = VERSION
+\end{verbatim}
+\end{Code}
+
+
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$filename}]The file we are parsing. Accepts file with relative or absolute path. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The info array. \end{Desc}
+\hypertarget{common_8inc_1bd761730fc16bd2122dff2790c2842f}{
+\index{common.inc@{common.inc}!drupal\_\-query\_\-string\_\-encode@{drupal\_\-query\_\-string\_\-encode}}
+\index{drupal\_\-query\_\-string\_\-encode@{drupal\_\-query\_\-string\_\-encode}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-query\_\-string\_\-encode}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-query\_\-string\_\-encode (\$ {\em query}, \/  \$ {\em exclude} = {\tt array()}, \/  \$ {\em parent} = {\tt ''})}}
+\label{common_8inc_1bd761730fc16bd2122dff2790c2842f}
+
+
+Parse an array into a valid urlencoded query string.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$query}]The array to be processed e.g. \$\_\-GET. \item[{\em \$exclude}]The array filled with keys to be excluded. Use parent\mbox{[}child\mbox{]} to exclude nested items. \item[{\em \$parent}]Should not be passed, only used in recursive calls. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An urlencoded string which can be appended to/as the URL query string. \end{Desc}
+\hypertarget{common_8inc_05798b44e8d6c496d4bee5cc32fa7851}{
+\index{common.inc@{common.inc}!drupal\_\-render@{drupal\_\-render}}
+\index{drupal\_\-render@{drupal\_\-render}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-render}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-render (\&\$ {\em elements})}}
+\label{common_8inc_05798b44e8d6c496d4bee5cc32fa7851}
+
+
+Renders HTML given a structured array tree.
+
+Recursively iterates over each of the array elements, generating HTML code. This function is usually called from within another function, like \hyperlink{group__form__api_g720df81a837b06dfe19daf1c1eea3437}{drupal\_\-get\_\-form()} or node\_\-view().
+
+\hyperlink{common_8inc_05798b44e8d6c496d4bee5cc32fa7851}{drupal\_\-render()} flags each element with a 'printed' status to indicate that the element has been rendered, which allows individual elements of a given array to be rendered independently. This prevents elements from being rendered more than once on subsequent calls to \hyperlink{common_8inc_05798b44e8d6c496d4bee5cc32fa7851}{drupal\_\-render()} if, for example, they are part of a larger array. If the same array or array element is passed more than once to \hyperlink{common_8inc_05798b44e8d6c496d4bee5cc32fa7851}{drupal\_\-render()}, it simply returns a NULL value.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$elements}]The structured array describing the data to be rendered. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The rendered HTML. \end{Desc}
+\hypertarget{common_8inc_666113d06fa6ea461aff580e5c511eb0}{
+\index{common.inc@{common.inc}!drupal\_\-set\_\-breadcrumb@{drupal\_\-set\_\-breadcrumb}}
+\index{drupal\_\-set\_\-breadcrumb@{drupal\_\-set\_\-breadcrumb}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-set\_\-breadcrumb}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-set\_\-breadcrumb (\$ {\em breadcrumb} = {\tt NULL})}}
+\label{common_8inc_666113d06fa6ea461aff580e5c511eb0}
+
+
+Set the breadcrumb trail for the current page.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$breadcrumb}]Array of links, starting with \char`\"{}home\char`\"{} and proceeding up to but not including the current page. \end{description}
+\end{Desc}
+\hypertarget{common_8inc_5dca93683c64a722bd4f277b8e9f488b}{
+\index{common.inc@{common.inc}!drupal\_\-set\_\-content@{drupal\_\-set\_\-content}}
+\index{drupal\_\-set\_\-content@{drupal\_\-set\_\-content}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-set\_\-content}]{\setlength{\rightskip}{0pt plus 5cm}if (!defined('E\_\-DEPRECATED')) drupal\_\-set\_\-content (\$ {\em region} = {\tt NULL}, \/  \$ {\em data} = {\tt NULL})}}
+\label{common_8inc_5dca93683c64a722bd4f277b8e9f488b}
+
+
+Create E\_\-DEPRECATED constant for older PHP versions ($<$5.3). Set content for a specified region.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$region}]Page region the content is assigned to. \item[{\em \$data}]Content to be set. \end{description}
+\end{Desc}
+\hypertarget{common_8inc_412817c1abb5163a2deb44eb3469b62c}{
+\index{common.inc@{common.inc}!drupal\_\-set\_\-header@{drupal\_\-set\_\-header}}
+\index{drupal\_\-set\_\-header@{drupal\_\-set\_\-header}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-set\_\-header}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-set\_\-header (\$ {\em header} = {\tt NULL})}}
+\label{common_8inc_412817c1abb5163a2deb44eb3469b62c}
+
+
+Set an HTTP response header for the current page.
+
+Note: When sending a Content-Type header, always include a 'charset' type, too. This is necessary to avoid security bugs (e.g. UTF-7 XSS). \hypertarget{common_8inc_6646f70c300f3a24a25350a47e90d3d1}{
+\index{common.inc@{common.inc}!drupal\_\-set\_\-html\_\-head@{drupal\_\-set\_\-html\_\-head}}
+\index{drupal\_\-set\_\-html\_\-head@{drupal\_\-set\_\-html\_\-head}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-set\_\-html\_\-head}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-set\_\-html\_\-head (\$ {\em data} = {\tt NULL})}}
+\label{common_8inc_6646f70c300f3a24a25350a47e90d3d1}
+
+
+Add output to the head tag of the HTML page.
+
+This function can be called as long the headers aren't sent. \hypertarget{common_8inc_fc3a1915f45be2ac8666778eef0e9758}{
+\index{common.inc@{common.inc}!drupal\_\-site\_\-offline@{drupal\_\-site\_\-offline}}
+\index{drupal\_\-site\_\-offline@{drupal\_\-site\_\-offline}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-site\_\-offline}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-site\_\-offline ()}}
+\label{common_8inc_fc3a1915f45be2ac8666778eef0e9758}
+
+
+Generates a site off-line message. \hypertarget{common_8inc_60d1237b23d4e84a59656003596add4b}{
+\index{common.inc@{common.inc}!drupal\_\-system\_\-listing@{drupal\_\-system\_\-listing}}
+\index{drupal\_\-system\_\-listing@{drupal\_\-system\_\-listing}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-system\_\-listing}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-system\_\-listing (\$ {\em mask}, \/  \$ {\em directory}, \/  \$ {\em key} = {\tt 'name'}, \/  \$ {\em min\_\-depth} = {\tt 1})}}
+\label{common_8inc_60d1237b23d4e84a59656003596add4b}
+
+
+Return an array of system file objects.
+
+Returns an array of file objects of the given type from the site-wide directory (i.e. modules/), the all-sites directory (i.e. sites/all/modules/), the profiles directory, and site-specific directory (i.e. sites/somesite/modules/). The returned array will be keyed using the key specified (name, basename, filename). Using name or basename will cause site-specific files to be prioritized over similar files in the default directories. That is, if a file with the same name appears in both the site-wide directory and site-specific directory, only the site-specific version will be included.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$mask}]The regular expression of the files to find. \item[{\em \$directory}]The subdirectory name in which the files are found. For example, 'modules' will search in both modules/ and sites/somesite/modules/. \item[{\em \$key}]The key to be passed to \hyperlink{group__file_g374c73d3fe4f45c2d64a5fb0b22cb118}{file\_\-scan\_\-directory()}. \item[{\em \$min\_\-depth}]Minimum depth of directories to return files from.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An array of file objects of the specified type. \end{Desc}
+\hypertarget{common_8inc_99da8b132160dbf03c14388e92cd9baf}{
+\index{common.inc@{common.inc}!drupal\_\-to\_\-js@{drupal\_\-to\_\-js}}
+\index{drupal\_\-to\_\-js@{drupal\_\-to\_\-js}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-to\_\-js}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-to\_\-js (\$ {\em var})}}
+\label{common_8inc_99da8b132160dbf03c14388e92cd9baf}
+
+
+Converts a PHP variable into its Javascript equivalent.
+
+We use HTML-safe strings, i.e. with $<$, $>$ and \& escaped. \hypertarget{common_8inc_8478a3dfd0413b75418465e063d7f601}{
+\index{common.inc@{common.inc}!drupal\_\-urlencode@{drupal\_\-urlencode}}
+\index{drupal\_\-urlencode@{drupal\_\-urlencode}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-urlencode}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-urlencode (\$ {\em text})}}
+\label{common_8inc_8478a3dfd0413b75418465e063d7f601}
+
+
+Wrapper around urlencode() which avoids Apache quirks.
+
+Should be used when placing arbitrary data in an URL. Note that Drupal paths are urlencoded() when passed through \hyperlink{common_8inc_7ef60c766e2d09e18b866dacf6b9eb1f}{url()} and do not require urlencoding() of individual components.
+
+Notes:\begin{itemize}
+\item For esthetic reasons, we do not escape slashes. This also avoids a 'feature' in Apache where it 404s on any path containing '2F'.\item mod\_\-rewrite unescapes -encoded ampersands, hashes, and slashes when clean URLs are used, which are interpreted as delimiters by PHP. These characters are double escaped so PHP will still see the encoded version.\item With clean URLs, Apache changes '//' to '/', so every second slash is double escaped.\item This function should only be used on paths, not on query string arguments, otherwise unwanted double encoding will occur.\end{itemize}
+
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$text}]String to encode \end{description}
+\end{Desc}
+\hypertarget{common_8inc_343a6ad44cfc1007b618b245f9366be8}{
+\index{common.inc@{common.inc}!drupal\_\-valid\_\-token@{drupal\_\-valid\_\-token}}
+\index{drupal\_\-valid\_\-token@{drupal\_\-valid\_\-token}!common.inc@{common.inc}}
+\subsubsection[{drupal\_\-valid\_\-token}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-valid\_\-token (\$ {\em token}, \/  \$ {\em value} = {\tt ''}, \/  \$ {\em skip\_\-anonymous} = {\tt FALSE})}}
+\label{common_8inc_343a6ad44cfc1007b618b245f9366be8}
+
+
+Validate a token based on \$value, the current user session and private key.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$token}]The token to be validated. \item[{\em \$value}]An additional value to base the token on. \item[{\em \$skip\_\-anonymous}]Set to true to skip token validation for anonymous users. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]True for a valid token, false for an invalid token. When \$skip\_\-anonymous is true, the return value will always be true for anonymous users. \end{Desc}
+\hypertarget{common_8inc_3063341f48382cc5ecce25eb1eaa7a0d}{
+\index{common.inc@{common.inc}!element\_\-child@{element\_\-child}}
+\index{element\_\-child@{element\_\-child}!common.inc@{common.inc}}
+\subsubsection[{element\_\-child}]{\setlength{\rightskip}{0pt plus 5cm}element\_\-child (\$ {\em key})}}
+\label{common_8inc_3063341f48382cc5ecce25eb1eaa7a0d}
+
+
+Check if the key is a child. \hypertarget{common_8inc_6e3b741f1d5455829b04c356e3dc59a5}{
+\index{common.inc@{common.inc}!element\_\-children@{element\_\-children}}
+\index{element\_\-children@{element\_\-children}!common.inc@{common.inc}}
+\subsubsection[{element\_\-children}]{\setlength{\rightskip}{0pt plus 5cm}element\_\-children (\$ {\em element})}}
+\label{common_8inc_6e3b741f1d5455829b04c356e3dc59a5}
+
+
+Get keys of a structured array tree element that are not properties (i.e., do not begin with '\#'). \hypertarget{common_8inc_4ae6d339b27757556fe914f9d78d91e5}{
+\index{common.inc@{common.inc}!element\_\-properties@{element\_\-properties}}
+\index{element\_\-properties@{element\_\-properties}!common.inc@{common.inc}}
+\subsubsection[{element\_\-properties}]{\setlength{\rightskip}{0pt plus 5cm}element\_\-properties (\$ {\em element})}}
+\label{common_8inc_4ae6d339b27757556fe914f9d78d91e5}
+
+
+Get properties of a structured array element. Properties begin with '\#'. \hypertarget{common_8inc_7a93c74e138f24e5f7e672972644f1c3}{
+\index{common.inc@{common.inc}!element\_\-property@{element\_\-property}}
+\index{element\_\-property@{element\_\-property}!common.inc@{common.inc}}
+\subsubsection[{element\_\-property}]{\setlength{\rightskip}{0pt plus 5cm}element\_\-property (\$ {\em key})}}
+\label{common_8inc_7a93c74e138f24e5f7e672972644f1c3}
+
+
+Check if the key is a property. \hypertarget{common_8inc_61f0cc62072ab44aa349478fb7219c74}{
+\index{common.inc@{common.inc}!element\_\-sort@{element\_\-sort}}
+\index{element\_\-sort@{element\_\-sort}!common.inc@{common.inc}}
+\subsubsection[{element\_\-sort}]{\setlength{\rightskip}{0pt plus 5cm}element\_\-sort (\$ {\em a}, \/  \$ {\em b})}}
+\label{common_8inc_61f0cc62072ab44aa349478fb7219c74}
+
+
+Function used by uasort to sort structured arrays by weight. \hypertarget{common_8inc_befb935bf3c61840ba9ad50adb13f766}{
+\index{common.inc@{common.inc}!fix\_\-gpc\_\-magic@{fix\_\-gpc\_\-magic}}
+\index{fix\_\-gpc\_\-magic@{fix\_\-gpc\_\-magic}!common.inc@{common.inc}}
+\subsubsection[{fix\_\-gpc\_\-magic}]{\setlength{\rightskip}{0pt plus 5cm}fix\_\-gpc\_\-magic ()}}
+\label{common_8inc_befb935bf3c61840ba9ad50adb13f766}
+
+
+Fix double-escaping problems caused by \char`\"{}magic quotes\char`\"{} in some PHP installations. \hypertarget{common_8inc_d2296ecb4750af9f666f72ec7ee3cae5}{
+\index{common.inc@{common.inc}!flood\_\-is\_\-allowed@{flood\_\-is\_\-allowed}}
+\index{flood\_\-is\_\-allowed@{flood\_\-is\_\-allowed}!common.inc@{common.inc}}
+\subsubsection[{flood\_\-is\_\-allowed}]{\setlength{\rightskip}{0pt plus 5cm}flood\_\-is\_\-allowed (\$ {\em name}, \/  \$ {\em threshold})}}
+\label{common_8inc_d2296ecb4750af9f666f72ec7ee3cae5}
+
+
+Check if the current visitor (hostname/IP) is allowed to proceed with the specified event.
+
+The user is allowed to proceed if he did not trigger the specified event more than \$threshold times per hour.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$name}]The name of the event. \item[{\em \$threshold}]The maximum number of the specified event per hour (per visitor). \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]True if the user did not exceed the hourly threshold. False otherwise. \end{Desc}
+\hypertarget{common_8inc_368d89f553ff8bed006c18f801020778}{
+\index{common.inc@{common.inc}!flood\_\-register\_\-event@{flood\_\-register\_\-event}}
+\index{flood\_\-register\_\-event@{flood\_\-register\_\-event}!common.inc@{common.inc}}
+\subsubsection[{flood\_\-register\_\-event}]{\setlength{\rightskip}{0pt plus 5cm}flood\_\-register\_\-event (\$ {\em name})}}
+\label{common_8inc_368d89f553ff8bed006c18f801020778}
+
+
+End of \char`\"{}defgroup validation\char`\"{}. Register an event for the current visitor (hostname/IP) to the flood control mechanism.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$name}]The name of an event. \end{description}
+\end{Desc}
+\hypertarget{common_8inc_b1b47d5ab720066df684c335eda75cfd}{
+\index{common.inc@{common.inc}!l@{l}}
+\index{l@{l}!common.inc@{common.inc}}
+\subsubsection[{l}]{\setlength{\rightskip}{0pt plus 5cm}l (\$ {\em text}, \/  \$ {\em path}, \/  \$ {\em options} = {\tt array()})}}
+\label{common_8inc_b1b47d5ab720066df684c335eda75cfd}
+
+
+Formats an internal or external URL link as an HTML anchor tag.
+
+This function correctly handles aliased paths, and adds an 'active' class attribute to links that point to the current page (for theming), so all internal links output by modules should be generated by this function if possible.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$text}]The link text for the anchor tag. \item[{\em \$path}]The internal path or external URL being linked to, such as \char`\"{}node/34\char`\"{} or \char`\"{}http://example.com/foo\char`\"{}. After the \hyperlink{common_8inc_7ef60c766e2d09e18b866dacf6b9eb1f}{url()} function is called to construct the URL from \$path and \$options, the resulting URL is passed through \hyperlink{common_8inc_c024315b69035ef05c33674838707919}{check\_\-url()} before it is inserted into the HTML anchor tag, to ensure well-formed HTML. See \hyperlink{common_8inc_7ef60c766e2d09e18b866dacf6b9eb1f}{url()} for more information and notes. \item[{\em \$options}]An associative array of additional options, with the following elements:\begin{itemize}
+\item 'attributes': An associative array of HTML attributes to apply to the anchor tag.\item 'html' (default FALSE): Whether \$text is HTML or just plain-text. For example, to make an image tag into a link, this must be set to TRUE, or you will see the escaped HTML image tag.\item 'language': An optional language object. If the path being linked to is internal to the site, \$options\mbox{[}'language'\mbox{]} is used to look up the alias for the URL, and to determine whether the link is \char`\"{}active\char`\"{}, or pointing to the current page (the language as well as the path must match).This element is also used by \hyperlink{common_8inc_7ef60c766e2d09e18b866dacf6b9eb1f}{url()}.\item Additional \$options elements used by the \hyperlink{common_8inc_7ef60c766e2d09e18b866dacf6b9eb1f}{url()} function.\end{itemize}
+\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An HTML string containing a link to the given path. \end{Desc}
+\hypertarget{common_8inc_1e3b3fde2d48f8ef01d6ddd0a16fb073}{
+\index{common.inc@{common.inc}!page\_\-set\_\-cache@{page\_\-set\_\-cache}}
+\index{page\_\-set\_\-cache@{page\_\-set\_\-cache}!common.inc@{common.inc}}
+\subsubsection[{page\_\-set\_\-cache}]{\setlength{\rightskip}{0pt plus 5cm}page\_\-set\_\-cache ()}}
+\label{common_8inc_1e3b3fde2d48f8ef01d6ddd0a16fb073}
+
+
+Store the current page in the cache.
+
+If page\_\-compression is enabled, a gzipped version of the page is stored in the cache to avoid compressing the output on each request. The cache entry is unzipped in the relatively rare event that the page is requested by a client without gzip support.
+
+Page compression requires the PHP zlib extension (\href{http://php.net/manual/en/ref.zlib.php}{\tt http://php.net/manual/en/ref.zlib.php}).
+
+\begin{Desc}
+\item[See also:]\hyperlink{bootstrap_8inc_05f3dc0377da7898b9cb53977c30cca6}{drupal\_\-page\_\-header} \end{Desc}
+\hypertarget{common_8inc_41d20f0c822bf1f3c26a97981c762665}{
+\index{common.inc@{common.inc}!t@{t}}
+\index{t@{t}!common.inc@{common.inc}}
+\subsubsection[{t}]{\setlength{\rightskip}{0pt plus 5cm}t (\$ {\em string}, \/  \$ {\em args} = {\tt array()}, \/  \$ {\em langcode} = {\tt NULL})}}
+\label{common_8inc_41d20f0c822bf1f3c26a97981c762665}
+
+
+Translate strings to the page language or a given language.
+
+Human-readable text that will be displayed somewhere within a page should be run through the \hyperlink{common_8inc_41d20f0c822bf1f3c26a97981c762665}{t()} function.
+
+Examples: 
+
+\begin{Code}\begin{verbatim}   if (!$info || !$info['extension']) {
+     form_set_error('picture_upload', t('The uploaded file was not an image.'));
+   }
+
+   $form['submit'] = array(
+     '#type' => 'submit',
+     '#value' => t('Log in'),
+   );
+\end{verbatim}
+\end{Code}
+
+
+
+Any text within \hyperlink{common_8inc_41d20f0c822bf1f3c26a97981c762665}{t()} can be extracted by translators and changed into the equivalent text in their native language.
+
+Special variables called \char`\"{}placeholders\char`\"{} are used to signal dynamic information in a string which should not be translated. Placeholders can also be used for text that may change from time to time (such as link paths) to be changed without requiring updates to translations.
+
+For example: 
+
+\begin{Code}\begin{verbatim}   $output = t('There are currently %members and %visitors online.', array(
+     '%members' => format_plural($total_users, '1 user', '@count users'),
+     '%visitors' => format_plural($guests->count, '1 guest', '@count guests')));
+\end{verbatim}
+\end{Code}
+
+
+
+There are three styles of placeholders:\begin{itemize}
+\item !variable, which indicates that the text should be inserted as-is. This is useful for inserting variables into things like e-mail. 
+
+\begin{Code}\begin{verbatim}     $message[] = t("If you don't want to receive such e-mails, you can change your settings at !url.", array('!url' => url("user/$account->uid", array('absolute' => TRUE))));
+\end{verbatim}
+\end{Code}
+
+\end{itemize}
+
+
+\begin{itemize}
+\item , which indicates that the text should be run through check\_\-plain, to escape HTML characters. Use this for any output that's displayed within a Drupal page. 
+
+\begin{Code}\begin{verbatim}     drupal_set_title($title = t("@name's blog", array('@name' => $account->name)));
+\end{verbatim}
+\end{Code}
+
+\end{itemize}
+
+
+\begin{itemize}
+\item variable, which indicates that the string should be HTML escaped and highlighted with \hyperlink{group__themeable_gc300e87edb69de9245c38a1d09c66adc}{theme\_\-placeholder()} which shows up by default as {\em emphasized\/}. 
+
+\begin{Code}\begin{verbatim}     $message = t('%name-from sent %name-to an e-mail.', array('%name-from' => $user->name, '%name-to' => $account->name));
+\end{verbatim}
+\end{Code}
+
+\end{itemize}
+
+
+When using \hyperlink{common_8inc_41d20f0c822bf1f3c26a97981c762665}{t()}, try to put entire sentences and strings in one \hyperlink{common_8inc_41d20f0c822bf1f3c26a97981c762665}{t()} call. This makes it easier for translators, as it provides context as to what each word refers to. HTML markup within translation strings is allowed, but should be avoided if possible. The exception are embedded links; link titles add a context for translators, so should be kept in the main string.
+
+Here is an example of incorrect usage of \hyperlink{common_8inc_41d20f0c822bf1f3c26a97981c762665}{t()}: 
+
+\begin{Code}\begin{verbatim}   $output .= t('<p>Go to the @contact-page.</p>', array('@contact-page' => l(t('contact page'), 'contact')));
+\end{verbatim}
+\end{Code}
+
+
+
+Here is an example of \hyperlink{common_8inc_41d20f0c822bf1f3c26a97981c762665}{t()} used correctly: 
+
+\begin{Code}\begin{verbatim}   $output .= '<p>'. t('Go to the <a href="@contact-page">contact page</a>.', array('@contact-page' => url('contact'))) .'</p>';
+\end{verbatim}
+\end{Code}
+
+
+
+Avoid escaping quotation marks wherever possible.
+
+Incorrect: 
+
+\begin{Code}\begin{verbatim}   $output .= t('Don\'t click me.');
+\end{verbatim}
+\end{Code}
+
+
+
+Correct: 
+
+\begin{Code}\begin{verbatim}   $output .= t("Don't click me.");
+\end{verbatim}
+\end{Code}
+
+
+
+Because \hyperlink{common_8inc_41d20f0c822bf1f3c26a97981c762665}{t()} is designed for handling code-based strings, in almost all cases, the actual string and not a variable must be passed through \hyperlink{common_8inc_41d20f0c822bf1f3c26a97981c762665}{t()}.
+
+Extraction of translations is done based on the strings contained in \hyperlink{common_8inc_41d20f0c822bf1f3c26a97981c762665}{t()} calls. If a variable is passed through \hyperlink{common_8inc_41d20f0c822bf1f3c26a97981c762665}{t()}, the content of the variable cannot be extracted from the file for translation.
+
+Incorrect: 
+
+\begin{Code}\begin{verbatim}   $message = 'An error occurred.';
+   drupal_set_message(t($message), 'error');
+   $output .= t($message);
+\end{verbatim}
+\end{Code}
+
+
+
+Correct: 
+
+\begin{Code}\begin{verbatim}   $message = t('An error occurred.');
+   drupal_set_message($message, 'error');
+   $output .= $message;
+\end{verbatim}
+\end{Code}
+
+
+
+The only case in which variables can be passed safely through \hyperlink{common_8inc_41d20f0c822bf1f3c26a97981c762665}{t()} is when code-based versions of the same strings will be passed through \hyperlink{common_8inc_41d20f0c822bf1f3c26a97981c762665}{t()} (or otherwise extracted) elsewhere.
+
+In some cases, modules may include strings in code that can't use \hyperlink{common_8inc_41d20f0c822bf1f3c26a97981c762665}{t()} calls. For example, a module may use an external PHP application that produces strings that are loaded into variables in Drupal for output. In these cases, module authors may include a dummy file that passes the relevant strings through \hyperlink{common_8inc_41d20f0c822bf1f3c26a97981c762665}{t()}. This approach will allow the strings to be extracted.
+
+Sample external (non-Drupal) code: 
+
+\begin{Code}\begin{verbatim}   class Time {
+     public $yesterday = 'Yesterday';
+     public $today = 'Today';
+     public $tomorrow = 'Tomorrow';
+   }
+\end{verbatim}
+\end{Code}
+
+
+
+Sample dummy file. 
+
+\begin{Code}\begin{verbatim}   // Dummy function included in example.potx.inc.
+   function example_potx() {
+     $strings = array(
+       t('Yesterday'),
+       t('Today'),
+       t('Tomorrow'),
+     );
+     // No return value needed, since this is a dummy function.
+   }
+\end{verbatim}
+\end{Code}
+
+
+
+Having passed strings through \hyperlink{common_8inc_41d20f0c822bf1f3c26a97981c762665}{t()} in a dummy function, it is then okay to pass variables through \hyperlink{common_8inc_41d20f0c822bf1f3c26a97981c762665}{t()}.
+
+Correct (if a dummy file was used): 
+
+\begin{Code}\begin{verbatim}   $time = new Time();
+   $output .= t($time->today);
+\end{verbatim}
+\end{Code}
+
+
+
+However tempting it is, custom data from user input or other non-code sources should not be passed through \hyperlink{common_8inc_41d20f0c822bf1f3c26a97981c762665}{t()}. Doing so leads to the following problems and errors:\begin{itemize}
+\item The \hyperlink{common_8inc_41d20f0c822bf1f3c26a97981c762665}{t()} system doesn't support updates to existing strings. When user data is updated, the next time it's passed through \hyperlink{common_8inc_41d20f0c822bf1f3c26a97981c762665}{t()} a new record is created instead of an update. The database bloats over time and any existing translations are orphaned with each update.\item The \hyperlink{common_8inc_41d20f0c822bf1f3c26a97981c762665}{t()} system assumes any data it receives is in English. User data may be in another language, producing translation errors.\item The \char`\"{}Built-in interface\char`\"{} text group in the locale system is used to produce translations for storage in .po files. When non-code strings are passed through \hyperlink{common_8inc_41d20f0c822bf1f3c26a97981c762665}{t()}, they are added to this text group, which is rendered inaccurate since it is a mix of actual interface strings and various user input strings of uncertain origin.\end{itemize}
+
+
+Incorrect: 
+
+\begin{Code}\begin{verbatim}   $item = item_load();
+   $output .= check_plain(t($item['title']));
+\end{verbatim}
+\end{Code}
+
+
+
+Instead, translation of these data can be done through the locale system, either directly or through helper functions provided by contributed modules. \begin{Desc}
+\item[See also:]hook\_\-locale()\end{Desc}
+During installation, st() is used in place of \hyperlink{common_8inc_41d20f0c822bf1f3c26a97981c762665}{t()}. Code that may be called during installation or during normal operation should use the \hyperlink{bootstrap_8inc_a50232f577883a48731fc93530628a79}{get\_\-t()} helper function. \begin{Desc}
+\item[See also:]st() 
+
+\hyperlink{bootstrap_8inc_a50232f577883a48731fc93530628a79}{get\_\-t()}\end{Desc}
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$string}]A string containing the English string to translate. \item[{\em \$args}]An associative array of replacements to make after translation. Incidences of any key in this array are replaced with the corresponding value. Based on the first character of the key, the value is escaped and/or themed:\begin{itemize}
+\item !variable: inserted as is\item : escape plain text to HTML (check\_\-plain)\item variable: escape text and theme as a placeholder for user-submitted content (check\_\-plain + theme\_\-placeholder) \end{itemize}
+\item[{\em \$langcode}]Optional language code to translate to a language other than what is used to display the page. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The translated string. \end{Desc}
+\hypertarget{common_8inc_7ef60c766e2d09e18b866dacf6b9eb1f}{
+\index{common.inc@{common.inc}!url@{url}}
+\index{url@{url}!common.inc@{common.inc}}
+\subsubsection[{url}]{\setlength{\rightskip}{0pt plus 5cm}url (\$ {\em path} = {\tt NULL}, \/  \$ {\em options} = {\tt array()})}}
+\label{common_8inc_7ef60c766e2d09e18b866dacf6b9eb1f}
+
+
+End of \char`\"{}defgroup format\char`\"{}. Generates an internal or external URL.
+
+When creating links in modules, consider whether \hyperlink{common_8inc_b1b47d5ab720066df684c335eda75cfd}{l()} could be a better alternative than \hyperlink{common_8inc_7ef60c766e2d09e18b866dacf6b9eb1f}{url()}.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$path}]The internal path or external URL being linked to, such as \char`\"{}node/34\char`\"{} or \char`\"{}http://example.com/foo\char`\"{}. A few notes:\begin{itemize}
+\item If you provide a full URL, it will be considered an external URL.\item If you provide only the path (e.g. \char`\"{}node/34\char`\"{}), it will be considered an internal link. In this case, it should be a system URL, and it will be replaced with the alias, if one exists. Additional query arguments for internal paths must be supplied in \$options\mbox{[}'query'\mbox{]}, not included in \$path.\item If you provide an internal path and \$options\mbox{[}'alias'\mbox{]} is set to TRUE, the path is assumed already to be the correct path alias, and the alias is not looked up.\item The special string '$<$front$>$' generates a link to the site's base URL.\item If your external URL contains a query (e.g. \href{http://example.com/foo?a=b}{\tt http://example.com/foo?a=b}), then you can either URL encode the query keys and values yourself and include them in \$path, or use \$options\mbox{[}'query'\mbox{]} to let this function URL encode them. \end{itemize}
+\item[{\em \$options}]An associative array of additional options, with the following elements:\begin{itemize}
+\item 'query': A URL-encoded query string to append to the link, or an array of query key/value-pairs without any URL-encoding.\item 'fragment': A fragment identifier (named anchor) to append to the URL. Do not include the leading '\#' character.\item 'absolute' (default FALSE): Whether to force the output to be an absolute link (beginning with http:). Useful for links that will be displayed outside the site, such as in an RSS feed.\item 'alias' (default FALSE): Whether the given path is a URL alias already.\item 'external': Whether the given path is an external URL.\item 'language': An optional language object. Used to build the URL to link to and look up the proper alias for the link.\item 'base\_\-url': Only used internally, to modify the base URL when a language dependent URL requires so.\item 'prefix': Only used internally, to modify the path when a language dependent URL requires so.\end{itemize}
+\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]A string containing a URL to the given path. \end{Desc}
+\hypertarget{common_8inc_fb5d4b58ec7e483153644c0f664e0ca4}{
+\index{common.inc@{common.inc}!watchdog\_\-severity\_\-levels@{watchdog\_\-severity\_\-levels}}
+\index{watchdog\_\-severity\_\-levels@{watchdog\_\-severity\_\-levels}!common.inc@{common.inc}}
+\subsubsection[{watchdog\_\-severity\_\-levels}]{\setlength{\rightskip}{0pt plus 5cm}watchdog\_\-severity\_\-levels ()}}
+\label{common_8inc_fb5d4b58ec7e483153644c0f664e0ca4}
+
+
+\begin{Desc}
+\item[Returns:]Array of the possible severity levels for log messages.\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{bootstrap_8inc_cb7338e6740302727043d64e3ae1257b}{watchdog} \end{Desc}
+\hypertarget{common_8inc_2bbed4b1646f9ddc309a752e451a86b2}{
+\index{common.inc@{common.inc}!xmlrpc@{xmlrpc}}
+\index{xmlrpc@{xmlrpc}!common.inc@{common.inc}}
+\subsubsection[{xmlrpc}]{\setlength{\rightskip}{0pt plus 5cm}xmlrpc (\$ {\em url})}}
+\label{common_8inc_2bbed4b1646f9ddc309a752e451a86b2}
+
+
+Performs one or more XML-RPC request(s).
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$url}]An absolute URL of the XML-RPC endpoint. Example: \href{http://www.example.com/xmlrpc.php}{\tt http://www.example.com/xmlrpc.php} \item[{\em ...}]For one request: The method name followed by a variable number of arguments to the method. For multiple requests (system.multicall): An array of call arrays. Each call array follows the pattern of the single request: method name followed by the arguments to the method. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]For one request: Either the return value of the method on success, or FALSE. If FALSE is returned, see \hyperlink{xmlrpc_8inc_f9d29505279c00e66545f3859550ff88}{xmlrpc\_\-errno()} and \hyperlink{xmlrpc_8inc_baf990108687e6e764164984306dbd55}{xmlrpc\_\-error\_\-msg()}. For multiple requests: An array of results. Each result will either be the result returned by the method called, or an xmlrpc\_\-error object if the call failed. See xmlrpc\_\-error(). \end{Desc}

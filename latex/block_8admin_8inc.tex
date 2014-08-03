@@ -1,0 +1,130 @@
+\hypertarget{block_8admin_8inc}{
+\section{modules/block/block.admin.inc File Reference}
+\label{block_8admin_8inc}\index{modules/block/block.admin.inc@{modules/block/block.admin.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{block_8admin_8inc_46d186397b98e4faf46681f7f9cd86a1}{block\_\-admin\_\-display} (\$theme=NULL)
+\item 
+\hyperlink{block_8admin_8inc_576161bbf4ada256c05756fd9b2a7b07}{block\_\-admin\_\-display\_\-form} (\&\$form\_\-state, \$blocks, \$theme=NULL)
+\item 
+\hyperlink{block_8admin_8inc_9a7a5d16e2db34422f490e08d4bda247}{block\_\-admin\_\-display\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{block_8admin_8inc_821b5a94dc38440d9ae55657e4a2c1ea}{\_\-block\_\-compare} (\$a, \$b)
+\item 
+\hyperlink{block_8admin_8inc_372fcc9d5969bca36bb69c05608a8767}{block\_\-admin\_\-configure} (\&\$form\_\-state, \$module=NULL, \$delta=0)
+\item 
+\hypertarget{block_8admin_8inc_5c45bd363e4fcbacea89a31e60215b47}{
+\textbf{block\_\-admin\_\-configure\_\-validate} (\$form, \&\$form\_\-state)}
+\label{block_8admin_8inc_5c45bd363e4fcbacea89a31e60215b47}
+
+\item 
+\hypertarget{block_8admin_8inc_5f23480eb6a76d82ab516f09baaa2318}{
+\textbf{block\_\-admin\_\-configure\_\-submit} (\$form, \&\$form\_\-state)}
+\label{block_8admin_8inc_5f23480eb6a76d82ab516f09baaa2318}
+
+\item 
+\hyperlink{block_8admin_8inc_bcbf959ca716a7dccd1c642d95fc6f71}{block\_\-add\_\-block\_\-form} (\&\$form\_\-state)
+\item 
+\hypertarget{block_8admin_8inc_01e910bd6f2a2cab75dde1db2df7af9b}{
+\textbf{block\_\-add\_\-block\_\-form\_\-validate} (\$form, \&\$form\_\-state)}
+\label{block_8admin_8inc_01e910bd6f2a2cab75dde1db2df7af9b}
+
+\item 
+\hyperlink{block_8admin_8inc_b1b62b97e79a16ab5a83cc746429601d}{block\_\-add\_\-block\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{block_8admin_8inc_12e1e06e9bedb58ee6e14314ad211caf}{block\_\-box\_\-delete} (\&\$form\_\-state, \$bid=0)
+\item 
+\hyperlink{block_8admin_8inc_40e3265df938e03fb4eada48e559a109}{block\_\-box\_\-delete\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{block_8admin_8inc_790da1d1c8cea6bceca5374a4e410c01}{template\_\-preprocess\_\-block\_\-admin\_\-display\_\-form} (\&\$variables)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Admin page callbacks for the block module. 
+
+\subsection{Function Documentation}
+\hypertarget{block_8admin_8inc_821b5a94dc38440d9ae55657e4a2c1ea}{
+\index{block.admin.inc@{block.admin.inc}!\_\-block\_\-compare@{\_\-block\_\-compare}}
+\index{\_\-block\_\-compare@{\_\-block\_\-compare}!block.admin.inc@{block.admin.inc}}
+\subsubsection[{\_\-block\_\-compare}]{\setlength{\rightskip}{0pt plus 5cm}\_\-block\_\-compare (\$ {\em a}, \/  \$ {\em b})}}
+\label{block_8admin_8inc_821b5a94dc38440d9ae55657e4a2c1ea}
+
+
+Helper function for sorting blocks on admin/build/block.
+
+Active blocks are sorted by region, then by weight. Disabled blocks are sorted by name. \hypertarget{block_8admin_8inc_bcbf959ca716a7dccd1c642d95fc6f71}{
+\index{block.admin.inc@{block.admin.inc}!block\_\-add\_\-block\_\-form@{block\_\-add\_\-block\_\-form}}
+\index{block\_\-add\_\-block\_\-form@{block\_\-add\_\-block\_\-form}!block.admin.inc@{block.admin.inc}}
+\subsubsection[{block\_\-add\_\-block\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}block\_\-add\_\-block\_\-form (\&\$ {\em form\_\-state})}}
+\label{block_8admin_8inc_bcbf959ca716a7dccd1c642d95fc6f71}
+
+
+Menu callback: display the custom block addition form. \hypertarget{block_8admin_8inc_b1b62b97e79a16ab5a83cc746429601d}{
+\index{block.admin.inc@{block.admin.inc}!block\_\-add\_\-block\_\-form\_\-submit@{block\_\-add\_\-block\_\-form\_\-submit}}
+\index{block\_\-add\_\-block\_\-form\_\-submit@{block\_\-add\_\-block\_\-form\_\-submit}!block.admin.inc@{block.admin.inc}}
+\subsubsection[{block\_\-add\_\-block\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}block\_\-add\_\-block\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{block_8admin_8inc_b1b62b97e79a16ab5a83cc746429601d}
+
+
+Save the new custom block. \hypertarget{block_8admin_8inc_372fcc9d5969bca36bb69c05608a8767}{
+\index{block.admin.inc@{block.admin.inc}!block\_\-admin\_\-configure@{block\_\-admin\_\-configure}}
+\index{block\_\-admin\_\-configure@{block\_\-admin\_\-configure}!block.admin.inc@{block.admin.inc}}
+\subsubsection[{block\_\-admin\_\-configure}]{\setlength{\rightskip}{0pt plus 5cm}block\_\-admin\_\-configure (\&\$ {\em form\_\-state}, \/  \$ {\em module} = {\tt NULL}, \/  \$ {\em delta} = {\tt 0})}}
+\label{block_8admin_8inc_372fcc9d5969bca36bb69c05608a8767}
+
+
+Menu callback; displays the block configuration form. \hypertarget{block_8admin_8inc_46d186397b98e4faf46681f7f9cd86a1}{
+\index{block.admin.inc@{block.admin.inc}!block\_\-admin\_\-display@{block\_\-admin\_\-display}}
+\index{block\_\-admin\_\-display@{block\_\-admin\_\-display}!block.admin.inc@{block.admin.inc}}
+\subsubsection[{block\_\-admin\_\-display}]{\setlength{\rightskip}{0pt plus 5cm}block\_\-admin\_\-display (\$ {\em theme} = {\tt NULL})}}
+\label{block_8admin_8inc_46d186397b98e4faf46681f7f9cd86a1}
+
+
+Menu callback for admin/build/block. \hypertarget{block_8admin_8inc_576161bbf4ada256c05756fd9b2a7b07}{
+\index{block.admin.inc@{block.admin.inc}!block\_\-admin\_\-display\_\-form@{block\_\-admin\_\-display\_\-form}}
+\index{block\_\-admin\_\-display\_\-form@{block\_\-admin\_\-display\_\-form}!block.admin.inc@{block.admin.inc}}
+\subsubsection[{block\_\-admin\_\-display\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}block\_\-admin\_\-display\_\-form (\&\$ {\em form\_\-state}, \/  \$ {\em blocks}, \/  \$ {\em theme} = {\tt NULL})}}
+\label{block_8admin_8inc_576161bbf4ada256c05756fd9b2a7b07}
+
+
+Generate main blocks administration form. \hypertarget{block_8admin_8inc_9a7a5d16e2db34422f490e08d4bda247}{
+\index{block.admin.inc@{block.admin.inc}!block\_\-admin\_\-display\_\-form\_\-submit@{block\_\-admin\_\-display\_\-form\_\-submit}}
+\index{block\_\-admin\_\-display\_\-form\_\-submit@{block\_\-admin\_\-display\_\-form\_\-submit}!block.admin.inc@{block.admin.inc}}
+\subsubsection[{block\_\-admin\_\-display\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}block\_\-admin\_\-display\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{block_8admin_8inc_9a7a5d16e2db34422f490e08d4bda247}
+
+
+Process main blocks administration form submission. \hypertarget{block_8admin_8inc_12e1e06e9bedb58ee6e14314ad211caf}{
+\index{block.admin.inc@{block.admin.inc}!block\_\-box\_\-delete@{block\_\-box\_\-delete}}
+\index{block\_\-box\_\-delete@{block\_\-box\_\-delete}!block.admin.inc@{block.admin.inc}}
+\subsubsection[{block\_\-box\_\-delete}]{\setlength{\rightskip}{0pt plus 5cm}block\_\-box\_\-delete (\&\$ {\em form\_\-state}, \/  \$ {\em bid} = {\tt 0})}}
+\label{block_8admin_8inc_12e1e06e9bedb58ee6e14314ad211caf}
+
+
+Menu callback; confirm deletion of custom blocks. \hypertarget{block_8admin_8inc_40e3265df938e03fb4eada48e559a109}{
+\index{block.admin.inc@{block.admin.inc}!block\_\-box\_\-delete\_\-submit@{block\_\-box\_\-delete\_\-submit}}
+\index{block\_\-box\_\-delete\_\-submit@{block\_\-box\_\-delete\_\-submit}!block.admin.inc@{block.admin.inc}}
+\subsubsection[{block\_\-box\_\-delete\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}block\_\-box\_\-delete\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{block_8admin_8inc_40e3265df938e03fb4eada48e559a109}
+
+
+Deletion of custom blocks. \hypertarget{block_8admin_8inc_790da1d1c8cea6bceca5374a4e410c01}{
+\index{block.admin.inc@{block.admin.inc}!template\_\-preprocess\_\-block\_\-admin\_\-display\_\-form@{template\_\-preprocess\_\-block\_\-admin\_\-display\_\-form}}
+\index{template\_\-preprocess\_\-block\_\-admin\_\-display\_\-form@{template\_\-preprocess\_\-block\_\-admin\_\-display\_\-form}!block.admin.inc@{block.admin.inc}}
+\subsubsection[{template\_\-preprocess\_\-block\_\-admin\_\-display\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}template\_\-preprocess\_\-block\_\-admin\_\-display\_\-form (\&\$ {\em variables})}}
+\label{block_8admin_8inc_790da1d1c8cea6bceca5374a4e410c01}
+
+
+Process variables for block-admin-display.tpl.php.
+
+The \$variables array contains the following arguments:\begin{itemize}
+\item \$form\end{itemize}
+
+
+\begin{Desc}
+\item[See also:]block-admin-display.tpl.php 
+
+theme\_\-block\_\-admin\_\-display() \end{Desc}

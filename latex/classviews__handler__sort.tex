@@ -1,0 +1,89 @@
+\hypertarget{classviews__handler__sort}{
+\section{views\_\-handler\_\-sort Class Reference}
+\label{classviews__handler__sort}\index{views\_\-handler\_\-sort@{views\_\-handler\_\-sort}}
+}
+Inheritance diagram for views\_\-handler\_\-sort::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=11cm]{classviews__handler__sort}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__handler__sort_94fa33c5d037e41a927583fce2df3d18}{query} ()
+\item 
+\hyperlink{classviews__handler__sort_f1e8382befe67b9cd07d0bbfa9b98266}{option\_\-definition} ()
+\item 
+\hyperlink{classviews__handler__sort_94271a6ce69bf4acb37047b01f0decaa}{admin\_\-summary} ()
+\item 
+\hyperlink{classviews__handler__sort_ba953218e09ab9da8f6ed0a67f046455}{options\_\-form} (\&\$form, \&\$form\_\-state)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Base sort handler that has no options and performs a simple sort 
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__handler__sort_94271a6ce69bf4acb37047b01f0decaa}{
+\index{views\_\-handler\_\-sort@{views\_\-handler\_\-sort}!admin\_\-summary@{admin\_\-summary}}
+\index{admin\_\-summary@{admin\_\-summary}!views_handler_sort@{views\_\-handler\_\-sort}}
+\subsubsection[{admin\_\-summary}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-sort::admin\_\-summary ()}}
+\label{classviews__handler__sort_94271a6ce69bf4acb37047b01f0decaa}
+
+
+Display whether or not the sort order is ascending or descending 
+
+Reimplemented from \hyperlink{classviews__handler_27a5cb35f3f17322957730a95b6be11e}{views\_\-handler}.\hypertarget{classviews__handler__sort_f1e8382befe67b9cd07d0bbfa9b98266}{
+\index{views\_\-handler\_\-sort@{views\_\-handler\_\-sort}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!views_handler_sort@{views\_\-handler\_\-sort}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-sort::option\_\-definition ()}}
+\label{classviews__handler__sort_f1e8382befe67b9cd07d0bbfa9b98266}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented from \hyperlink{classviews__object_b0753d0001c8c9ff98beee696b4516ba}{views\_\-object}.
+
+Reimplemented in \hyperlink{classviews__handler__sort__date_e46b66b6623fc747b821664b60c98b10}{views\_\-handler\_\-sort\_\-date}.\hypertarget{classviews__handler__sort_ba953218e09ab9da8f6ed0a67f046455}{
+\index{views\_\-handler\_\-sort@{views\_\-handler\_\-sort}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!views_handler_sort@{views\_\-handler\_\-sort}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-sort::options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler__sort_ba953218e09ab9da8f6ed0a67f046455}
+
+
+Basic options for all sort criteria 
+
+Reimplemented from \hyperlink{classviews__handler_a41fcf16b177eb03e35facbae6320f74}{views\_\-handler}.
+
+Reimplemented in \hyperlink{classviews__handler__sort__broken_57d7f6176962083d4c17cbf448cb792f}{views\_\-handler\_\-sort\_\-broken}, \hyperlink{classviews__handler__sort__date_622c39d35c93e620cc6fa6ae2ab37ab4}{views\_\-handler\_\-sort\_\-date}, and \hyperlink{classviews__handler__sort__random_51a854154f820622661702ec10532cdb}{views\_\-handler\_\-sort\_\-random}.\hypertarget{classviews__handler__sort_94fa33c5d037e41a927583fce2df3d18}{
+\index{views\_\-handler\_\-sort@{views\_\-handler\_\-sort}!query@{query}}
+\index{query@{query}!views_handler_sort@{views\_\-handler\_\-sort}}
+\subsubsection[{query}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-sort::query ()}}
+\label{classviews__handler__sort_94fa33c5d037e41a927583fce2df3d18}
+
+
+Called to add the sort to a query. 
+
+Reimplemented from \hyperlink{classviews__handler_91e22c95696d9fdb9ed753a10d42a21d}{views\_\-handler}.
+
+Reimplemented in \hyperlink{classviews__handler__sort__broken_6298719637ac590b81496b4487b573ea}{views\_\-handler\_\-sort\_\-broken}, \hyperlink{classviews__handler__sort__date_3d3680d96fee82a746bac50c051016a8}{views\_\-handler\_\-sort\_\-date}, \hyperlink{classviews__handler__sort__formula_208dff453ab94f55000e8027ed3c8588}{views\_\-handler\_\-sort\_\-formula}, \hyperlink{classviews__handler__sort__menu__hierarchy_04fd6337ac7ec486789586b65cf545fd}{views\_\-handler\_\-sort\_\-menu\_\-hierarchy}, \hyperlink{classviews__handler__sort__random_eaf6fcc03c9d1a0f86a77b9e5314229a}{views\_\-handler\_\-sort\_\-random}, \hyperlink{classviews__handler__sort__comment__thread_6ea2c9fdba530fd022c1eafd5b0c4cea}{views\_\-handler\_\-sort\_\-comment\_\-thread}, \hyperlink{classviews__handler__sort__ncs__last__comment__name_23a0eb15347f118155df094a2cadd249}{views\_\-handler\_\-sort\_\-ncs\_\-last\_\-comment\_\-name}, \hyperlink{classviews__handler__sort__ncs__last__updated_05d2ef9eb8727ee81915b34254d99355}{views\_\-handler\_\-sort\_\-ncs\_\-last\_\-updated}, and \hyperlink{classviews__handler__sort__search__score_7d144db57e043dc594021228f8567726}{views\_\-handler\_\-sort\_\-search\_\-score}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/handlers/views\_\-handler\_\-sort.inc\end{CompactItemize}

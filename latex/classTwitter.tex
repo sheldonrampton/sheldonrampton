@@ -1,0 +1,223 @@
+\hypertarget{classTwitter}{
+\section{Twitter Class Reference}
+\label{classTwitter}\index{Twitter@{Twitter}}
+}
+Inheritance diagram for Twitter::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classTwitter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classTwitter_27a3a1498c3269a212e5907ffa8c6feb}{\_\-\_\-construct} (\$username=NULL, \$password=NULL)
+\item 
+\hyperlink{classTwitter_1f858ac6fd8c8f3ed4188435ad51957c}{set\_\-auth} (\$username, \$password)
+\item 
+\hyperlink{classTwitter_9a4bb9d8731491784df32c6f864a7cb9}{set\_\-host} (\$host)
+\item 
+\hyperlink{classTwitter_d510f44c049b383baef399f40fe46af5}{public\_\-timeline} ()
+\item 
+\hyperlink{classTwitter_b71b8679389a26cbba74c0b89c896dea}{friends\_\-timeline} (\$params=array())
+\item 
+\hyperlink{classTwitter_c551ee66261993a6722f1e056f0b3b1f}{user\_\-timeline} (\$id, \$params=array(), \$use\_\-auth=FALSE)
+\item 
+\hyperlink{classTwitter_f8edee3b3dd9cd0f689b10e35562351f}{mentions} (\$params=array())
+\item 
+\hyperlink{classTwitter_6f43168e0afff59d45a1ffc5db30d328}{status\_\-update} (\$status, \$params=array())
+\item 
+\hyperlink{classTwitter_b075baa3b9b5ac1dae324db84025d0af}{users\_\-show} (\$id)
+\item 
+\hyperlink{classTwitter_d66adb8eb0c9d1d6bd7b7b87045fd314}{verify\_\-credentials} ()
+\item 
+\hyperlink{classTwitter_0e92b39735606e39b14634ece323481f}{call} (\$path, \$params=array(), \$method= 'GET', \$use\_\-auth=FALSE)
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classTwitter_37f6425df087eb6bf1477fd0921c8d28}{get\_\-statuses} (\$path, \$params=array(), \$use\_\-auth=FALSE)
+\item 
+\hyperlink{classTwitter_be4761ddb2a687520077da1748675edd}{auth\_\-request} (\$path, \$params=array(), \$method= 'GET')
+\item 
+\hyperlink{classTwitter_066d888ba8cac684149f69174029d6f5}{request} (\$url, \$params=array(), \$method= 'GET', \$use\_\-auth=FALSE)
+\item 
+\hypertarget{classTwitter_e7ad23b5dbdb418c3b3460d43cdf5ead}{
+\textbf{parse\_\-response} (\$response, \$format=NULL)}
+\label{classTwitter_e7ad23b5dbdb418c3b3460d43cdf5ead}
+
+\item 
+\hypertarget{classTwitter_226ef437c514d7d7b040968f159413ec}{
+\textbf{create\_\-url} (\$path, \$format=NULL)}
+\label{classTwitter_226ef437c514d7d7b040968f159413ec}
+
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{classTwitter_823fbab56095681f25eb6e7d9dd7914e}{
+\textbf{\$format} = 'json'}
+\label{classTwitter_823fbab56095681f25eb6e7d9dd7914e}
+
+\item 
+\hypertarget{classTwitter_1e24d0bbd52dc164c4cf7c1ad0824d28}{
+\textbf{\$host} = 'twitter.com'}
+\label{classTwitter_1e24d0bbd52dc164c4cf7c1ad0824d28}
+
+\item 
+\hypertarget{classTwitter_7dabf043dee7e16d7576973cd841b039}{
+\textbf{\$source} = 'drupal'}
+\label{classTwitter_7dabf043dee7e16d7576973cd841b039}
+
+\item 
+\hypertarget{classTwitter_7b376410499064788b8f8257cdc3f774}{
+\textbf{\$username}}
+\label{classTwitter_7b376410499064788b8f8257cdc3f774}
+
+\item 
+\hypertarget{classTwitter_f20e53da27e07651602a3a3b5e03bf90}{
+\textbf{\$password}}
+\label{classTwitter_f20e53da27e07651602a3a3b5e03bf90}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Primary \hyperlink{classTwitter}{Twitter} API implementation class Supports the full REST API for twitter. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classTwitter_27a3a1498c3269a212e5907ffa8c6feb}{
+\index{Twitter@{Twitter}!\_\-\_\-construct@{\_\-\_\-construct}}
+\index{\_\-\_\-construct@{\_\-\_\-construct}!Twitter@{Twitter}}
+\subsubsection[{\_\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}Twitter::\_\-\_\-construct (\$ {\em username} = {\tt NULL}, \/  \$ {\em password} = {\tt NULL})}}
+\label{classTwitter_27a3a1498c3269a212e5907ffa8c6feb}
+
+
+Constructor for the \hyperlink{classTwitter}{Twitter} class 
+
+\subsection{Member Function Documentation}
+\hypertarget{classTwitter_be4761ddb2a687520077da1748675edd}{
+\index{Twitter@{Twitter}!auth\_\-request@{auth\_\-request}}
+\index{auth\_\-request@{auth\_\-request}!Twitter@{Twitter}}
+\subsubsection[{auth\_\-request}]{\setlength{\rightskip}{0pt plus 5cm}Twitter::auth\_\-request (\$ {\em path}, \/  \$ {\em params} = {\tt array()}, \/  \$ {\em method} = {\tt 'GET'})\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classTwitter_be4761ddb2a687520077da1748675edd}
+
+
+Perform an authentication required request. 
+
+Reimplemented in \hyperlink{classTwitterOAuth_186e14f18c9097450c53892405600b86}{TwitterOAuth}.\hypertarget{classTwitter_0e92b39735606e39b14634ece323481f}{
+\index{Twitter@{Twitter}!call@{call}}
+\index{call@{call}!Twitter@{Twitter}}
+\subsubsection[{call}]{\setlength{\rightskip}{0pt plus 5cm}Twitter::call (\$ {\em path}, \/  \$ {\em params} = {\tt array()}, \/  \$ {\em method} = {\tt 'GET'}, \/  \$ {\em use\_\-auth} = {\tt FALSE})}}
+\label{classTwitter_0e92b39735606e39b14634ece323481f}
+
+
+Method for calling any twitter api resource \hypertarget{classTwitter_b71b8679389a26cbba74c0b89c896dea}{
+\index{Twitter@{Twitter}!friends\_\-timeline@{friends\_\-timeline}}
+\index{friends\_\-timeline@{friends\_\-timeline}!Twitter@{Twitter}}
+\subsubsection[{friends\_\-timeline}]{\setlength{\rightskip}{0pt plus 5cm}Twitter::friends\_\-timeline (\$ {\em params} = {\tt array()})}}
+\label{classTwitter_b71b8679389a26cbba74c0b89c896dea}
+
+
+Fetch the authenticated user's friends timeline
+
+\begin{Desc}
+\item[See also:]\href{http://apiwiki.twitter.com/Twitter-REST-API-Method%3A-statuses-friends_timeline}{\tt http://apiwiki.twitter.com/Twitter-REST-API-Method\%3A-statuses-friends\_\-timeline} \end{Desc}
+\hypertarget{classTwitter_37f6425df087eb6bf1477fd0921c8d28}{
+\index{Twitter@{Twitter}!get\_\-statuses@{get\_\-statuses}}
+\index{get\_\-statuses@{get\_\-statuses}!Twitter@{Twitter}}
+\subsubsection[{get\_\-statuses}]{\setlength{\rightskip}{0pt plus 5cm}Twitter::get\_\-statuses (\$ {\em path}, \/  \$ {\em params} = {\tt array()}, \/  \$ {\em use\_\-auth} = {\tt FALSE})\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classTwitter_37f6425df087eb6bf1477fd0921c8d28}
+
+
+Get an array of \hyperlink{classTwitterStatus}{TwitterStatus} objects from an API endpoint \hypertarget{classTwitter_f8edee3b3dd9cd0f689b10e35562351f}{
+\index{Twitter@{Twitter}!mentions@{mentions}}
+\index{mentions@{mentions}!Twitter@{Twitter}}
+\subsubsection[{mentions}]{\setlength{\rightskip}{0pt plus 5cm}Twitter::mentions (\$ {\em params} = {\tt array()})}}
+\label{classTwitter_f8edee3b3dd9cd0f689b10e35562351f}
+
+
+\begin{Desc}
+\item[See also:]\href{http://apiwiki.twitter.com/Twitter-REST-API-Method%3A-statuses-mentions}{\tt http://apiwiki.twitter.com/Twitter-REST-API-Method\%3A-statuses-mentions} \end{Desc}
+\hypertarget{classTwitter_d510f44c049b383baef399f40fe46af5}{
+\index{Twitter@{Twitter}!public\_\-timeline@{public\_\-timeline}}
+\index{public\_\-timeline@{public\_\-timeline}!Twitter@{Twitter}}
+\subsubsection[{public\_\-timeline}]{\setlength{\rightskip}{0pt plus 5cm}Twitter::public\_\-timeline ()}}
+\label{classTwitter_d510f44c049b383baef399f40fe46af5}
+
+
+Fetch the public timeline
+
+\begin{Desc}
+\item[See also:]\href{http://apiwiki.twitter.com/Twitter-REST-API-Method%3A-statuses-public_timeline}{\tt http://apiwiki.twitter.com/Twitter-REST-API-Method\%3A-statuses-public\_\-timeline} \end{Desc}
+\hypertarget{classTwitter_066d888ba8cac684149f69174029d6f5}{
+\index{Twitter@{Twitter}!request@{request}}
+\index{request@{request}!Twitter@{Twitter}}
+\subsubsection[{request}]{\setlength{\rightskip}{0pt plus 5cm}Twitter::request (\$ {\em url}, \/  \$ {\em params} = {\tt array()}, \/  \$ {\em method} = {\tt 'GET'}, \/  \$ {\em use\_\-auth} = {\tt FALSE})\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classTwitter_066d888ba8cac684149f69174029d6f5}
+
+
+Perform a request \hypertarget{classTwitter_1f858ac6fd8c8f3ed4188435ad51957c}{
+\index{Twitter@{Twitter}!set\_\-auth@{set\_\-auth}}
+\index{set\_\-auth@{set\_\-auth}!Twitter@{Twitter}}
+\subsubsection[{set\_\-auth}]{\setlength{\rightskip}{0pt plus 5cm}Twitter::set\_\-auth (\$ {\em username}, \/  \$ {\em password})}}
+\label{classTwitter_1f858ac6fd8c8f3ed4188435ad51957c}
+
+
+Set the username and password \hypertarget{classTwitter_9a4bb9d8731491784df32c6f864a7cb9}{
+\index{Twitter@{Twitter}!set\_\-host@{set\_\-host}}
+\index{set\_\-host@{set\_\-host}!Twitter@{Twitter}}
+\subsubsection[{set\_\-host}]{\setlength{\rightskip}{0pt plus 5cm}Twitter::set\_\-host (\$ {\em host})}}
+\label{classTwitter_9a4bb9d8731491784df32c6f864a7cb9}
+
+
+Set the current host. This is good for using laconi.ca instances and anything else that utilizes the \hyperlink{classTwitter}{Twitter} API
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$host}]the hostname to set. \end{description}
+\end{Desc}
+\hypertarget{classTwitter_6f43168e0afff59d45a1ffc5db30d328}{
+\index{Twitter@{Twitter}!status\_\-update@{status\_\-update}}
+\index{status\_\-update@{status\_\-update}!Twitter@{Twitter}}
+\subsubsection[{status\_\-update}]{\setlength{\rightskip}{0pt plus 5cm}Twitter::status\_\-update (\$ {\em status}, \/  \$ {\em params} = {\tt array()})}}
+\label{classTwitter_6f43168e0afff59d45a1ffc5db30d328}
+
+
+\begin{Desc}
+\item[See also:]\href{http://apiwiki.twitter.com/Twitter-REST-API-Method%3A-statuses%C2%A0update}{\tt http://apiwiki.twitter.com/Twitter-REST-API-Method\%3A-statuses\%C2\%A0update} \end{Desc}
+\hypertarget{classTwitter_c551ee66261993a6722f1e056f0b3b1f}{
+\index{Twitter@{Twitter}!user\_\-timeline@{user\_\-timeline}}
+\index{user\_\-timeline@{user\_\-timeline}!Twitter@{Twitter}}
+\subsubsection[{user\_\-timeline}]{\setlength{\rightskip}{0pt plus 5cm}Twitter::user\_\-timeline (\$ {\em id}, \/  \$ {\em params} = {\tt array()}, \/  \$ {\em use\_\-auth} = {\tt FALSE})}}
+\label{classTwitter_c551ee66261993a6722f1e056f0b3b1f}
+
+
+Fetch a user's timeline
+
+\begin{Desc}
+\item[See also:]\href{http://apiwiki.twitter.com/Twitter-REST-API-Method%3A-statuses-user_timeline}{\tt http://apiwiki.twitter.com/Twitter-REST-API-Method\%3A-statuses-user\_\-timeline} \end{Desc}
+\hypertarget{classTwitter_b075baa3b9b5ac1dae324db84025d0af}{
+\index{Twitter@{Twitter}!users\_\-show@{users\_\-show}}
+\index{users\_\-show@{users\_\-show}!Twitter@{Twitter}}
+\subsubsection[{users\_\-show}]{\setlength{\rightskip}{0pt plus 5cm}Twitter::users\_\-show (\$ {\em id})}}
+\label{classTwitter_b075baa3b9b5ac1dae324db84025d0af}
+
+
+\begin{Desc}
+\item[See also:]\href{http://apiwiki.twitter.com/Twitter-REST-API-Method%3A-users%C2%A0show}{\tt http://apiwiki.twitter.com/Twitter-REST-API-Method\%3A-users\%C2\%A0show} \end{Desc}
+\hypertarget{classTwitter_d66adb8eb0c9d1d6bd7b7b87045fd314}{
+\index{Twitter@{Twitter}!verify\_\-credentials@{verify\_\-credentials}}
+\index{verify\_\-credentials@{verify\_\-credentials}!Twitter@{Twitter}}
+\subsubsection[{verify\_\-credentials}]{\setlength{\rightskip}{0pt plus 5cm}Twitter::verify\_\-credentials ()}}
+\label{classTwitter_d66adb8eb0c9d1d6bd7b7b87045fd314}
+
+
+\begin{Desc}
+\item[See also:]\href{http://apiwiki.twitter.com/Twitter-REST-API-Method%3A-account%C2%A0verify_credentials}{\tt http://apiwiki.twitter.com/Twitter-REST-API-Method\%3A-account\%C2\%A0verify\_\-credentials} \end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/twitter/\hyperlink{twitter_8lib_8php}{twitter.lib.php}\end{CompactItemize}

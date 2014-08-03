@@ -1,0 +1,35 @@
+#body{
+  width: 100%; 
+  height: 100%; 
+  overflow: hidden;
+  font-family: "Trebuchet MS", Helvetica, sans serif;
+}
+#countbox1{
+  margin: auto; 
+  padding: 10px; 
+  width: 750px;
+  text-align: center;
+  font-family: "Trebuchet MS", Helvetica, sans serif;
+}
+#titlebox{
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+  width: 750px;
+  text-align: center;
+  font-family: "Trebuchet MS", Helvetica, sans serif;
+  color: #ffffff;
+}
+#wrapper{
+  background-color: #FF8F00;
+  width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+}
+#fbWrapper{
+  width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+}

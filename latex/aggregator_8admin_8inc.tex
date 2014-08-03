@@ -1,0 +1,122 @@
+\hypertarget{aggregator_8admin_8inc}{
+\section{modules/aggregator/aggregator.admin.inc File Reference}
+\label{aggregator_8admin_8inc}\index{modules/aggregator/aggregator.admin.inc@{modules/aggregator/aggregator.admin.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{aggregator_8admin_8inc_9fe4f30b63dd656ba52c3af570556272}{aggregator\_\-admin\_\-overview} ()
+\item 
+\hyperlink{aggregator_8admin_8inc_dbb245c75bc2cb47e784fb454e134594}{aggregator\_\-view} ()
+\item 
+\hyperlink{group__forms_gf9a13eb9b0448eec9662f0b73c930bca}{aggregator\_\-form\_\-feed} (\&\$form\_\-state, \$edit=array('refresh'=$>$ 900, 'title'=$>$ '', 'url'=$>$ '', 'fid'=$>$ NULL))
+\item 
+\hyperlink{aggregator_8admin_8inc_4a4b42f6a1e73d72fb1e55c0f20fcf02}{aggregator\_\-form\_\-feed\_\-validate} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{aggregator_8admin_8inc_f98f428f07034e19622342875fe30984}{aggregator\_\-form\_\-feed\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hypertarget{aggregator_8admin_8inc_108f63a934f48ac0ba7de1a055655a40}{
+\textbf{aggregator\_\-admin\_\-remove\_\-feed} (\$form\_\-state, \$feed)}
+\label{aggregator_8admin_8inc_108f63a934f48ac0ba7de1a055655a40}
+
+\item 
+\hyperlink{aggregator_8admin_8inc_6129f0a0c72d8e0ada1fb2f4cd40519d}{aggregator\_\-admin\_\-remove\_\-feed\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{aggregator_8admin_8inc_eb33d62d98fcdc9c66379002613f497b}{aggregator\_\-admin\_\-refresh\_\-feed} (\$feed)
+\item 
+\hyperlink{group__forms_gfd14b28c0d63cab57fe23fbbb60bc479}{aggregator\_\-admin\_\-settings} ()
+\item 
+\hyperlink{group__forms_g2d93d2170760482c7f1fc28ae1549769}{aggregator\_\-form\_\-category} (\&\$form\_\-state, \$edit=array('title'=$>$ '', 'description'=$>$ '', 'cid'=$>$ NULL))
+\item 
+\hyperlink{aggregator_8admin_8inc_419c55e35895dea1f41d5b31908883d5}{aggregator\_\-form\_\-category\_\-validate} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{aggregator_8admin_8inc_56c1cadf416d17bd8dd8a53cc6ed5aeb}{aggregator\_\-form\_\-category\_\-submit} (\$form, \&\$form\_\-state)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Admin page callbacks for the aggregator module. 
+
+\subsection{Function Documentation}
+\hypertarget{aggregator_8admin_8inc_9fe4f30b63dd656ba52c3af570556272}{
+\index{aggregator.admin.inc@{aggregator.admin.inc}!aggregator\_\-admin\_\-overview@{aggregator\_\-admin\_\-overview}}
+\index{aggregator\_\-admin\_\-overview@{aggregator\_\-admin\_\-overview}!aggregator.admin.inc@{aggregator.admin.inc}}
+\subsubsection[{aggregator\_\-admin\_\-overview}]{\setlength{\rightskip}{0pt plus 5cm}aggregator\_\-admin\_\-overview ()}}
+\label{aggregator_8admin_8inc_9fe4f30b63dd656ba52c3af570556272}
+
+
+Menu callback; displays the aggregator administration page. \hypertarget{aggregator_8admin_8inc_eb33d62d98fcdc9c66379002613f497b}{
+\index{aggregator.admin.inc@{aggregator.admin.inc}!aggregator\_\-admin\_\-refresh\_\-feed@{aggregator\_\-admin\_\-refresh\_\-feed}}
+\index{aggregator\_\-admin\_\-refresh\_\-feed@{aggregator\_\-admin\_\-refresh\_\-feed}!aggregator.admin.inc@{aggregator.admin.inc}}
+\subsubsection[{aggregator\_\-admin\_\-refresh\_\-feed}]{\setlength{\rightskip}{0pt plus 5cm}aggregator\_\-admin\_\-refresh\_\-feed (\$ {\em feed})}}
+\label{aggregator_8admin_8inc_eb33d62d98fcdc9c66379002613f497b}
+
+
+Menu callback; refreshes a feed, then redirects to the overview page.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$feed}]An associative array describing the feed to be refreshed. \end{description}
+\end{Desc}
+\hypertarget{aggregator_8admin_8inc_6129f0a0c72d8e0ada1fb2f4cd40519d}{
+\index{aggregator.admin.inc@{aggregator.admin.inc}!aggregator\_\-admin\_\-remove\_\-feed\_\-submit@{aggregator\_\-admin\_\-remove\_\-feed\_\-submit}}
+\index{aggregator\_\-admin\_\-remove\_\-feed\_\-submit@{aggregator\_\-admin\_\-remove\_\-feed\_\-submit}!aggregator.admin.inc@{aggregator.admin.inc}}
+\subsubsection[{aggregator\_\-admin\_\-remove\_\-feed\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}aggregator\_\-admin\_\-remove\_\-feed\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{aggregator_8admin_8inc_6129f0a0c72d8e0ada1fb2f4cd40519d}
+
+
+Remove all items from a feed and redirect to the overview page.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$feed}]An associative array describing the feed to be cleared. \end{description}
+\end{Desc}
+\hypertarget{aggregator_8admin_8inc_56c1cadf416d17bd8dd8a53cc6ed5aeb}{
+\index{aggregator.admin.inc@{aggregator.admin.inc}!aggregator\_\-form\_\-category\_\-submit@{aggregator\_\-form\_\-category\_\-submit}}
+\index{aggregator\_\-form\_\-category\_\-submit@{aggregator\_\-form\_\-category\_\-submit}!aggregator.admin.inc@{aggregator.admin.inc}}
+\subsubsection[{aggregator\_\-form\_\-category\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}aggregator\_\-form\_\-category\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{aggregator_8admin_8inc_56c1cadf416d17bd8dd8a53cc6ed5aeb}
+
+
+Process aggregator\_\-form\_\-category form submissions.
+
+\begin{Desc}
+\item[\hyperlink{todo__todo000002}{Todo}]Add delete confirmation dialog. \end{Desc}
+\hypertarget{aggregator_8admin_8inc_419c55e35895dea1f41d5b31908883d5}{
+\index{aggregator.admin.inc@{aggregator.admin.inc}!aggregator\_\-form\_\-category\_\-validate@{aggregator\_\-form\_\-category\_\-validate}}
+\index{aggregator\_\-form\_\-category\_\-validate@{aggregator\_\-form\_\-category\_\-validate}!aggregator.admin.inc@{aggregator.admin.inc}}
+\subsubsection[{aggregator\_\-form\_\-category\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}aggregator\_\-form\_\-category\_\-validate (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{aggregator_8admin_8inc_419c55e35895dea1f41d5b31908883d5}
+
+
+Validate aggregator\_\-form\_\-feed form submissions. \hypertarget{aggregator_8admin_8inc_f98f428f07034e19622342875fe30984}{
+\index{aggregator.admin.inc@{aggregator.admin.inc}!aggregator\_\-form\_\-feed\_\-submit@{aggregator\_\-form\_\-feed\_\-submit}}
+\index{aggregator\_\-form\_\-feed\_\-submit@{aggregator\_\-form\_\-feed\_\-submit}!aggregator.admin.inc@{aggregator.admin.inc}}
+\subsubsection[{aggregator\_\-form\_\-feed\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}aggregator\_\-form\_\-feed\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{aggregator_8admin_8inc_f98f428f07034e19622342875fe30984}
+
+
+Process aggregator\_\-form\_\-feed form submissions.
+
+\begin{Desc}
+\item[\hyperlink{todo__todo000001}{Todo}]Add delete confirmation dialog. \end{Desc}
+\hypertarget{aggregator_8admin_8inc_4a4b42f6a1e73d72fb1e55c0f20fcf02}{
+\index{aggregator.admin.inc@{aggregator.admin.inc}!aggregator\_\-form\_\-feed\_\-validate@{aggregator\_\-form\_\-feed\_\-validate}}
+\index{aggregator\_\-form\_\-feed\_\-validate@{aggregator\_\-form\_\-feed\_\-validate}!aggregator.admin.inc@{aggregator.admin.inc}}
+\subsubsection[{aggregator\_\-form\_\-feed\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}aggregator\_\-form\_\-feed\_\-validate (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{aggregator_8admin_8inc_4a4b42f6a1e73d72fb1e55c0f20fcf02}
+
+
+Validate aggregator\_\-form\_\-feed form submissions. \hypertarget{aggregator_8admin_8inc_dbb245c75bc2cb47e784fb454e134594}{
+\index{aggregator.admin.inc@{aggregator.admin.inc}!aggregator\_\-view@{aggregator\_\-view}}
+\index{aggregator\_\-view@{aggregator\_\-view}!aggregator.admin.inc@{aggregator.admin.inc}}
+\subsubsection[{aggregator\_\-view}]{\setlength{\rightskip}{0pt plus 5cm}aggregator\_\-view ()}}
+\label{aggregator_8admin_8inc_dbb245c75bc2cb47e784fb454e134594}
+
+
+Displays the aggregator administration page.
+
+\begin{Desc}
+\item[Returns:]The page HTML. \end{Desc}

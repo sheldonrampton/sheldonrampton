@@ -1,0 +1,110 @@
+\hypertarget{flag_8admin_8inc}{
+\section{sites/all/modules/contrib/flag/includes/flag.admin.inc File Reference}
+\label{flag_8admin_8inc}\index{sites/all/modules/contrib/flag/includes/flag.admin.inc@{sites/all/modules/contrib/flag/includes/flag.admin.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{flag_8admin_8inc_4836a38f1988d95bbbe667f4696d9d33}{flag\_\-admin\_\-page} ()
+\item 
+\hyperlink{flag_8admin_8inc_f8043046f8852d720d2aa84b1ac3c607}{theme\_\-flag\_\-admin\_\-page} (\$flags, \$default\_\-flags)
+\item 
+\hyperlink{flag_8admin_8inc_8af993acc60c3b818942d8177d1525aa}{flag\_\-add\_\-page} (\$type=NULL, \$name=NULL)
+\item 
+\hyperlink{flag_8admin_8inc_8ad4dca3c0dbf588e00bbb28e7ceb53f}{flag\_\-add\_\-form} (\&\$form\_\-state)
+\item 
+\hypertarget{flag_8admin_8inc_ff940b79db78cadf27f522ffa3052a33}{
+\textbf{flag\_\-add\_\-form\_\-validate} (\$form, \&\$form\_\-state)}
+\label{flag_8admin_8inc_ff940b79db78cadf27f522ffa3052a33}
+
+\item 
+\hypertarget{flag_8admin_8inc_eff33be0149cb49069f78181b5328a6f}{
+\textbf{flag\_\-add\_\-form\_\-submit} (\$form, \&\$form\_\-state)}
+\label{flag_8admin_8inc_eff33be0149cb49069f78181b5328a6f}
+
+\item 
+\hyperlink{flag_8admin_8inc_924a401068a0ae9c660ff187e1c84e51}{flag\_\-form} (\&\$form\_\-state, \$name, \$type=NULL)
+\item 
+\hyperlink{flag_8admin_8inc_4fb77a5a0f2ab53f8823b3a0d79dc4bd}{flag\_\-form\_\-validate} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{flag_8admin_8inc_9f457d3b15f5bc2948a11dafe129efcb}{flag\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{flag_8admin_8inc_d8dc93ec56970ea7459c83e2462eb264}{flag\_\-delete\_\-confirm} (\&\$form\_\-state, \$name)
+\item 
+\hypertarget{flag_8admin_8inc_48e46fbbdf50c0c403efc6ae4c9598dd}{
+\textbf{flag\_\-delete\_\-confirm\_\-submit} (\$form, \&\$form\_\-state)}
+\label{flag_8admin_8inc_48e46fbbdf50c0c403efc6ae4c9598dd}
+
+\item 
+\hyperlink{flag_8admin_8inc_536576b3f0495a064f0941d1e070964f}{\_\-flag\_\-clear\_\-cache} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Contains administrative pages for creating, editing, and deleting flags. 
+
+\subsection{Function Documentation}
+\hypertarget{flag_8admin_8inc_536576b3f0495a064f0941d1e070964f}{
+\index{flag.admin.inc@{flag.admin.inc}!\_\-flag\_\-clear\_\-cache@{\_\-flag\_\-clear\_\-cache}}
+\index{\_\-flag\_\-clear\_\-cache@{\_\-flag\_\-clear\_\-cache}!flag.admin.inc@{flag.admin.inc}}
+\subsubsection[{\_\-flag\_\-clear\_\-cache}]{\setlength{\rightskip}{0pt plus 5cm}\_\-flag\_\-clear\_\-cache ()}}
+\label{flag_8admin_8inc_536576b3f0495a064f0941d1e070964f}
+
+
+Clears various caches when a flag is modified. \hypertarget{flag_8admin_8inc_8ad4dca3c0dbf588e00bbb28e7ceb53f}{
+\index{flag.admin.inc@{flag.admin.inc}!flag\_\-add\_\-form@{flag\_\-add\_\-form}}
+\index{flag\_\-add\_\-form@{flag\_\-add\_\-form}!flag.admin.inc@{flag.admin.inc}}
+\subsubsection[{flag\_\-add\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-add\_\-form (\&\$ {\em form\_\-state})}}
+\label{flag_8admin_8inc_8ad4dca3c0dbf588e00bbb28e7ceb53f}
+
+
+Present a form for creating a new flag, setting the type of flag. \hypertarget{flag_8admin_8inc_8af993acc60c3b818942d8177d1525aa}{
+\index{flag.admin.inc@{flag.admin.inc}!flag\_\-add\_\-page@{flag\_\-add\_\-page}}
+\index{flag\_\-add\_\-page@{flag\_\-add\_\-page}!flag.admin.inc@{flag.admin.inc}}
+\subsubsection[{flag\_\-add\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-add\_\-page (\$ {\em type} = {\tt NULL}, \/  \$ {\em name} = {\tt NULL})}}
+\label{flag_8admin_8inc_8af993acc60c3b818942d8177d1525aa}
+
+
+Menu callback for adding a new flag. \hypertarget{flag_8admin_8inc_4836a38f1988d95bbbe667f4696d9d33}{
+\index{flag.admin.inc@{flag.admin.inc}!flag\_\-admin\_\-page@{flag\_\-admin\_\-page}}
+\index{flag\_\-admin\_\-page@{flag\_\-admin\_\-page}!flag.admin.inc@{flag.admin.inc}}
+\subsubsection[{flag\_\-admin\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-admin\_\-page ()}}
+\label{flag_8admin_8inc_4836a38f1988d95bbbe667f4696d9d33}
+
+
+Flag administration page. Display a list of existing flags. \hypertarget{flag_8admin_8inc_d8dc93ec56970ea7459c83e2462eb264}{
+\index{flag.admin.inc@{flag.admin.inc}!flag\_\-delete\_\-confirm@{flag\_\-delete\_\-confirm}}
+\index{flag\_\-delete\_\-confirm@{flag\_\-delete\_\-confirm}!flag.admin.inc@{flag.admin.inc}}
+\subsubsection[{flag\_\-delete\_\-confirm}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-delete\_\-confirm (\&\$ {\em form\_\-state}, \/  \$ {\em name})}}
+\label{flag_8admin_8inc_d8dc93ec56970ea7459c83e2462eb264}
+
+
+Delete flag page. \hypertarget{flag_8admin_8inc_924a401068a0ae9c660ff187e1c84e51}{
+\index{flag.admin.inc@{flag.admin.inc}!flag\_\-form@{flag\_\-form}}
+\index{flag\_\-form@{flag\_\-form}!flag.admin.inc@{flag.admin.inc}}
+\subsubsection[{flag\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-form (\&\$ {\em form\_\-state}, \/  \$ {\em name}, \/  \$ {\em type} = {\tt NULL})}}
+\label{flag_8admin_8inc_924a401068a0ae9c660ff187e1c84e51}
+
+
+Add/Edit flag page. \hypertarget{flag_8admin_8inc_9f457d3b15f5bc2948a11dafe129efcb}{
+\index{flag.admin.inc@{flag.admin.inc}!flag\_\-form\_\-submit@{flag\_\-form\_\-submit}}
+\index{flag\_\-form\_\-submit@{flag\_\-form\_\-submit}!flag.admin.inc@{flag.admin.inc}}
+\subsubsection[{flag\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{flag_8admin_8inc_9f457d3b15f5bc2948a11dafe129efcb}
+
+
+Add/Edit flag form submit. \hypertarget{flag_8admin_8inc_4fb77a5a0f2ab53f8823b3a0d79dc4bd}{
+\index{flag.admin.inc@{flag.admin.inc}!flag\_\-form\_\-validate@{flag\_\-form\_\-validate}}
+\index{flag\_\-form\_\-validate@{flag\_\-form\_\-validate}!flag.admin.inc@{flag.admin.inc}}
+\subsubsection[{flag\_\-form\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-form\_\-validate (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{flag_8admin_8inc_4fb77a5a0f2ab53f8823b3a0d79dc4bd}
+
+
+Add/Edit flag form validate. \hypertarget{flag_8admin_8inc_f8043046f8852d720d2aa84b1ac3c607}{
+\index{flag.admin.inc@{flag.admin.inc}!theme\_\-flag\_\-admin\_\-page@{theme\_\-flag\_\-admin\_\-page}}
+\index{theme\_\-flag\_\-admin\_\-page@{theme\_\-flag\_\-admin\_\-page}!flag.admin.inc@{flag.admin.inc}}
+\subsubsection[{theme\_\-flag\_\-admin\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-flag\_\-admin\_\-page (\$ {\em flags}, \/  \$ {\em default\_\-flags})}}
+\label{flag_8admin_8inc_f8043046f8852d720d2aa84b1ac3c607}
+
+
+Theme the output for the main flag administration page. 

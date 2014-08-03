@@ -1,0 +1,187 @@
+\hypertarget{mollom_8admin_8inc}{
+\section{sites/all/modules/contrib/mollom/mollom.admin.inc File Reference}
+\label{mollom_8admin_8inc}\index{sites/all/modules/contrib/mollom/mollom.admin.inc@{sites/all/modules/contrib/mollom/mollom.admin.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{mollom_8admin_8inc_d38f5b9fd66d34954455d8acebfdeb3e}{mollom\_\-admin\_\-form\_\-list} ()
+\item 
+\hyperlink{mollom_8admin_8inc_e16b9fc7502f49e8a09771ce2566053b}{mollom\_\-sort\_\-by\_\-title} (\$a, \$b)
+\item 
+\hyperlink{mollom_8admin_8inc_e52028518c58476934227c248c38614c}{mollom\_\-admin\_\-form\_\-options} ()
+\item 
+\hyperlink{mollom_8admin_8inc_ef4774c8636c4437de390854c58b5852}{mollom\_\-admin\_\-configure\_\-form} (\&\$form\_\-state, \$mollom\_\-form=NULL)
+\item 
+\hyperlink{mollom_8admin_8inc_0565a3a427b7f3caee16a2ff658e77aa}{mollom\_\-admin\_\-configure\_\-form\_\-after\_\-build} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{mollom_8admin_8inc_4aa055b2b342650e86e6ecb46c92e5e2}{mollom\_\-admin\_\-configure\_\-form\_\-next\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{mollom_8admin_8inc_b6ebbb0ffebf1763d6ade7261b365c70}{mollom\_\-admin\_\-configure\_\-form\_\-validate} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{mollom_8admin_8inc_c2080295728d878025a0ed4c37cfc811}{mollom\_\-admin\_\-configure\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{mollom_8admin_8inc_28f6764e8ab7d9d7007daed2051eabde}{mollom\_\-admin\_\-unprotect\_\-form} (\&\$form\_\-state, \$mollom\_\-form)
+\item 
+\hyperlink{mollom_8admin_8inc_655b63c140bb3be5132635c9af7fbbc9}{mollom\_\-admin\_\-unprotect\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{mollom_8admin_8inc_258ff9526e5c2282bf3caa9d4e5b1d45}{mollom\_\-admin\_\-blacklist\_\-form} (\&\$form\_\-state, \$type= 'spam')
+\item 
+\hyperlink{mollom_8admin_8inc_96e8372bde3200d7bf2cb52f6be26d80}{mollom\_\-admin\_\-blacklist\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{mollom_8admin_8inc_d9c477f6506780058c78ce26e7c7faf2}{theme\_\-mollom\_\-admin\_\-blacklist\_\-form} (\$form)
+\item 
+\hyperlink{group__forms_g8aa3d33609ffa56c5eba65649c82eec8}{mollom\_\-admin\_\-blacklist\_\-delete} (\&\$form\_\-state)
+\item 
+\hyperlink{mollom_8admin_8inc_95f138b10a8be8da177bf7bbfe8d7a39}{mollom\_\-admin\_\-blacklist\_\-delete\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{mollom_8admin_8inc_74016f613ad66fa23c8169ef90978694}{mollom\_\-admin\_\-settings} (\&\$form\_\-state)
+\item 
+\hyperlink{mollom_8admin_8inc_9d2bf25920e01ea84e82fc8d3073e4b0}{mollom\_\-comment\_\-admin\_\-overview\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{mollom_8admin_8inc_c3a31b646ec25bf37f2b4723b991b487}{mollom\_\-node\_\-admin\_\-overview\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{mollom_8admin_8inc_e261b31f0d3924e898b4603eec0d5dad}{mollom\_\-reports\_\-page} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Administrative page callbacks for Mollom module. 
+
+\subsection{Function Documentation}
+\hypertarget{mollom_8admin_8inc_95f138b10a8be8da177bf7bbfe8d7a39}{
+\index{mollom.admin.inc@{mollom.admin.inc}!mollom\_\-admin\_\-blacklist\_\-delete\_\-submit@{mollom\_\-admin\_\-blacklist\_\-delete\_\-submit}}
+\index{mollom\_\-admin\_\-blacklist\_\-delete\_\-submit@{mollom\_\-admin\_\-blacklist\_\-delete\_\-submit}!mollom.admin.inc@{mollom.admin.inc}}
+\subsubsection[{mollom\_\-admin\_\-blacklist\_\-delete\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}mollom\_\-admin\_\-blacklist\_\-delete\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{mollom_8admin_8inc_95f138b10a8be8da177bf7bbfe8d7a39}
+
+
+Form submit handler to delete an entry from the blacklist. \hypertarget{mollom_8admin_8inc_258ff9526e5c2282bf3caa9d4e5b1d45}{
+\index{mollom.admin.inc@{mollom.admin.inc}!mollom\_\-admin\_\-blacklist\_\-form@{mollom\_\-admin\_\-blacklist\_\-form}}
+\index{mollom\_\-admin\_\-blacklist\_\-form@{mollom\_\-admin\_\-blacklist\_\-form}!mollom.admin.inc@{mollom.admin.inc}}
+\subsubsection[{mollom\_\-admin\_\-blacklist\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}mollom\_\-admin\_\-blacklist\_\-form (\&\$ {\em form\_\-state}, \/  \$ {\em type} = {\tt 'spam'})}}
+\label{mollom_8admin_8inc_258ff9526e5c2282bf3caa9d4e5b1d45}
+
+
+Form constructor to configure the blacklist.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$type}]The type of blacklist; i.e., 'spam', 'profanity', or 'unwanted'. \end{description}
+\end{Desc}
+\hypertarget{mollom_8admin_8inc_96e8372bde3200d7bf2cb52f6be26d80}{
+\index{mollom.admin.inc@{mollom.admin.inc}!mollom\_\-admin\_\-blacklist\_\-form\_\-submit@{mollom\_\-admin\_\-blacklist\_\-form\_\-submit}}
+\index{mollom\_\-admin\_\-blacklist\_\-form\_\-submit@{mollom\_\-admin\_\-blacklist\_\-form\_\-submit}!mollom.admin.inc@{mollom.admin.inc}}
+\subsubsection[{mollom\_\-admin\_\-blacklist\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}mollom\_\-admin\_\-blacklist\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{mollom_8admin_8inc_96e8372bde3200d7bf2cb52f6be26d80}
+
+
+Form submit handler to save a text string to the Mollom blacklist. \hypertarget{mollom_8admin_8inc_ef4774c8636c4437de390854c58b5852}{
+\index{mollom.admin.inc@{mollom.admin.inc}!mollom\_\-admin\_\-configure\_\-form@{mollom\_\-admin\_\-configure\_\-form}}
+\index{mollom\_\-admin\_\-configure\_\-form@{mollom\_\-admin\_\-configure\_\-form}!mollom.admin.inc@{mollom.admin.inc}}
+\subsubsection[{mollom\_\-admin\_\-configure\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}mollom\_\-admin\_\-configure\_\-form (\&\$ {\em form\_\-state}, \/  \$ {\em mollom\_\-form} = {\tt NULL})}}
+\label{mollom_8admin_8inc_ef4774c8636c4437de390854c58b5852}
+
+
+Form builder; Configure Mollom protection for a form. \hypertarget{mollom_8admin_8inc_0565a3a427b7f3caee16a2ff658e77aa}{
+\index{mollom.admin.inc@{mollom.admin.inc}!mollom\_\-admin\_\-configure\_\-form\_\-after\_\-build@{mollom\_\-admin\_\-configure\_\-form\_\-after\_\-build}}
+\index{mollom\_\-admin\_\-configure\_\-form\_\-after\_\-build@{mollom\_\-admin\_\-configure\_\-form\_\-after\_\-build}!mollom.admin.inc@{mollom.admin.inc}}
+\subsubsection[{mollom\_\-admin\_\-configure\_\-form\_\-after\_\-build}]{\setlength{\rightskip}{0pt plus 5cm}mollom\_\-admin\_\-configure\_\-form\_\-after\_\-build (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{mollom_8admin_8inc_0565a3a427b7f3caee16a2ff658e77aa}
+
+
+after\_\-build callback for \hyperlink{mollom_8admin_8inc_ef4774c8636c4437de390854c58b5852}{mollom\_\-admin\_\-configure\_\-form()}. \hypertarget{mollom_8admin_8inc_4aa055b2b342650e86e6ecb46c92e5e2}{
+\index{mollom.admin.inc@{mollom.admin.inc}!mollom\_\-admin\_\-configure\_\-form\_\-next\_\-submit@{mollom\_\-admin\_\-configure\_\-form\_\-next\_\-submit}}
+\index{mollom\_\-admin\_\-configure\_\-form\_\-next\_\-submit@{mollom\_\-admin\_\-configure\_\-form\_\-next\_\-submit}!mollom.admin.inc@{mollom.admin.inc}}
+\subsubsection[{mollom\_\-admin\_\-configure\_\-form\_\-next\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}mollom\_\-admin\_\-configure\_\-form\_\-next\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{mollom_8admin_8inc_4aa055b2b342650e86e6ecb46c92e5e2}
+
+
+Form submit handler for 'Next' button on Mollom form configuration form. \hypertarget{mollom_8admin_8inc_c2080295728d878025a0ed4c37cfc811}{
+\index{mollom.admin.inc@{mollom.admin.inc}!mollom\_\-admin\_\-configure\_\-form\_\-submit@{mollom\_\-admin\_\-configure\_\-form\_\-submit}}
+\index{mollom\_\-admin\_\-configure\_\-form\_\-submit@{mollom\_\-admin\_\-configure\_\-form\_\-submit}!mollom.admin.inc@{mollom.admin.inc}}
+\subsubsection[{mollom\_\-admin\_\-configure\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}mollom\_\-admin\_\-configure\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{mollom_8admin_8inc_c2080295728d878025a0ed4c37cfc811}
+
+
+Form submit handler for \hyperlink{mollom_8admin_8inc_ef4774c8636c4437de390854c58b5852}{mollom\_\-admin\_\-configure\_\-form()}. \hypertarget{mollom_8admin_8inc_b6ebbb0ffebf1763d6ade7261b365c70}{
+\index{mollom.admin.inc@{mollom.admin.inc}!mollom\_\-admin\_\-configure\_\-form\_\-validate@{mollom\_\-admin\_\-configure\_\-form\_\-validate}}
+\index{mollom\_\-admin\_\-configure\_\-form\_\-validate@{mollom\_\-admin\_\-configure\_\-form\_\-validate}!mollom.admin.inc@{mollom.admin.inc}}
+\subsubsection[{mollom\_\-admin\_\-configure\_\-form\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}mollom\_\-admin\_\-configure\_\-form\_\-validate (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{mollom_8admin_8inc_b6ebbb0ffebf1763d6ade7261b365c70}
+
+
+Form validation handler for \hyperlink{mollom_8admin_8inc_ef4774c8636c4437de390854c58b5852}{mollom\_\-admin\_\-configure\_\-form()}. \hypertarget{mollom_8admin_8inc_d38f5b9fd66d34954455d8acebfdeb3e}{
+\index{mollom.admin.inc@{mollom.admin.inc}!mollom\_\-admin\_\-form\_\-list@{mollom\_\-admin\_\-form\_\-list}}
+\index{mollom\_\-admin\_\-form\_\-list@{mollom\_\-admin\_\-form\_\-list}!mollom.admin.inc@{mollom.admin.inc}}
+\subsubsection[{mollom\_\-admin\_\-form\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}mollom\_\-admin\_\-form\_\-list ()}}
+\label{mollom_8admin_8inc_d38f5b9fd66d34954455d8acebfdeb3e}
+
+
+Menu callback; Displays a list of forms configured for Mollom. \hypertarget{mollom_8admin_8inc_e52028518c58476934227c248c38614c}{
+\index{mollom.admin.inc@{mollom.admin.inc}!mollom\_\-admin\_\-form\_\-options@{mollom\_\-admin\_\-form\_\-options}}
+\index{mollom\_\-admin\_\-form\_\-options@{mollom\_\-admin\_\-form\_\-options}!mollom.admin.inc@{mollom.admin.inc}}
+\subsubsection[{mollom\_\-admin\_\-form\_\-options}]{\setlength{\rightskip}{0pt plus 5cm}mollom\_\-admin\_\-form\_\-options ()}}
+\label{mollom_8admin_8inc_e52028518c58476934227c248c38614c}
+
+
+Return registered forms as an array suitable for a 'checkboxes' form element options property. \hypertarget{mollom_8admin_8inc_74016f613ad66fa23c8169ef90978694}{
+\index{mollom.admin.inc@{mollom.admin.inc}!mollom\_\-admin\_\-settings@{mollom\_\-admin\_\-settings}}
+\index{mollom\_\-admin\_\-settings@{mollom\_\-admin\_\-settings}!mollom.admin.inc@{mollom.admin.inc}}
+\subsubsection[{mollom\_\-admin\_\-settings}]{\setlength{\rightskip}{0pt plus 5cm}mollom\_\-admin\_\-settings (\&\$ {\em form\_\-state})}}
+\label{mollom_8admin_8inc_74016f613ad66fa23c8169ef90978694}
+
+
+Form builder; Global Mollom settings form.
+
+This form does not validate Mollom API keys, since the fallback method still needs to be able to be reconfigured in case Mollom services are down. mollom.verifyKey would invalidate the keys and throw an error; hence, \_\-mollom\_\-fallback() would invoke \hyperlink{group__form__api_g08508e9a72925348973bb1a051a3ab99}{form\_\-set\_\-error()}, effectively preventing this form from submitting. \hypertarget{mollom_8admin_8inc_28f6764e8ab7d9d7007daed2051eabde}{
+\index{mollom.admin.inc@{mollom.admin.inc}!mollom\_\-admin\_\-unprotect\_\-form@{mollom\_\-admin\_\-unprotect\_\-form}}
+\index{mollom\_\-admin\_\-unprotect\_\-form@{mollom\_\-admin\_\-unprotect\_\-form}!mollom.admin.inc@{mollom.admin.inc}}
+\subsubsection[{mollom\_\-admin\_\-unprotect\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}mollom\_\-admin\_\-unprotect\_\-form (\&\$ {\em form\_\-state}, \/  \$ {\em mollom\_\-form})}}
+\label{mollom_8admin_8inc_28f6764e8ab7d9d7007daed2051eabde}
+
+
+Form builder; Remove Mollom protection from a form. \hypertarget{mollom_8admin_8inc_655b63c140bb3be5132635c9af7fbbc9}{
+\index{mollom.admin.inc@{mollom.admin.inc}!mollom\_\-admin\_\-unprotect\_\-form\_\-submit@{mollom\_\-admin\_\-unprotect\_\-form\_\-submit}}
+\index{mollom\_\-admin\_\-unprotect\_\-form\_\-submit@{mollom\_\-admin\_\-unprotect\_\-form\_\-submit}!mollom.admin.inc@{mollom.admin.inc}}
+\subsubsection[{mollom\_\-admin\_\-unprotect\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}mollom\_\-admin\_\-unprotect\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{mollom_8admin_8inc_655b63c140bb3be5132635c9af7fbbc9}
+
+
+Form submit handler for \hyperlink{mollom_8admin_8inc_28f6764e8ab7d9d7007daed2051eabde}{mollom\_\-admin\_\-unprotect\_\-form()}. \hypertarget{mollom_8admin_8inc_9d2bf25920e01ea84e82fc8d3073e4b0}{
+\index{mollom.admin.inc@{mollom.admin.inc}!mollom\_\-comment\_\-admin\_\-overview\_\-submit@{mollom\_\-comment\_\-admin\_\-overview\_\-submit}}
+\index{mollom\_\-comment\_\-admin\_\-overview\_\-submit@{mollom\_\-comment\_\-admin\_\-overview\_\-submit}!mollom.admin.inc@{mollom.admin.inc}}
+\subsubsection[{mollom\_\-comment\_\-admin\_\-overview\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}mollom\_\-comment\_\-admin\_\-overview\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{mollom_8admin_8inc_9d2bf25920e01ea84e82fc8d3073e4b0}
+
+
+Form submit handler to mass-report and unpublish or delete comments. \hypertarget{mollom_8admin_8inc_c3a31b646ec25bf37f2b4723b991b487}{
+\index{mollom.admin.inc@{mollom.admin.inc}!mollom\_\-node\_\-admin\_\-overview\_\-submit@{mollom\_\-node\_\-admin\_\-overview\_\-submit}}
+\index{mollom\_\-node\_\-admin\_\-overview\_\-submit@{mollom\_\-node\_\-admin\_\-overview\_\-submit}!mollom.admin.inc@{mollom.admin.inc}}
+\subsubsection[{mollom\_\-node\_\-admin\_\-overview\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}mollom\_\-node\_\-admin\_\-overview\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{mollom_8admin_8inc_c3a31b646ec25bf37f2b4723b991b487}
+
+
+Form submit handler to mass-report and unpublish or delete nodes. \hypertarget{mollom_8admin_8inc_e261b31f0d3924e898b4603eec0d5dad}{
+\index{mollom.admin.inc@{mollom.admin.inc}!mollom\_\-reports\_\-page@{mollom\_\-reports\_\-page}}
+\index{mollom\_\-reports\_\-page@{mollom\_\-reports\_\-page}!mollom.admin.inc@{mollom.admin.inc}}
+\subsubsection[{mollom\_\-reports\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}mollom\_\-reports\_\-page ()}}
+\label{mollom_8admin_8inc_e261b31f0d3924e898b4603eec0d5dad}
+
+
+Menu callback; Displays the administrative reports page. \hypertarget{mollom_8admin_8inc_e16b9fc7502f49e8a09771ce2566053b}{
+\index{mollom.admin.inc@{mollom.admin.inc}!mollom\_\-sort\_\-by\_\-title@{mollom\_\-sort\_\-by\_\-title}}
+\index{mollom\_\-sort\_\-by\_\-title@{mollom\_\-sort\_\-by\_\-title}!mollom.admin.inc@{mollom.admin.inc}}
+\subsubsection[{mollom\_\-sort\_\-by\_\-title}]{\setlength{\rightskip}{0pt plus 5cm}mollom\_\-sort\_\-by\_\-title (\$ {\em a}, \/  \$ {\em b})}}
+\label{mollom_8admin_8inc_e16b9fc7502f49e8a09771ce2566053b}
+
+
+Array sorting callback; sorts elements by 'title' key. \hypertarget{mollom_8admin_8inc_d9c477f6506780058c78ce26e7c7faf2}{
+\index{mollom.admin.inc@{mollom.admin.inc}!theme\_\-mollom\_\-admin\_\-blacklist\_\-form@{theme\_\-mollom\_\-admin\_\-blacklist\_\-form}}
+\index{theme\_\-mollom\_\-admin\_\-blacklist\_\-form@{theme\_\-mollom\_\-admin\_\-blacklist\_\-form}!mollom.admin.inc@{mollom.admin.inc}}
+\subsubsection[{theme\_\-mollom\_\-admin\_\-blacklist\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-mollom\_\-admin\_\-blacklist\_\-form (\$ {\em form})}}
+\label{mollom_8admin_8inc_d9c477f6506780058c78ce26e7c7faf2}
+
+
+Formats the blacklist form as table to embed the form. 

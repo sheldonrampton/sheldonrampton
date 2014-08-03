@@ -1,0 +1,49 @@
+\hypertarget{group__ajax}{
+\section{Views ajax library}
+\label{group__ajax}\index{Views ajax library@{Views ajax library}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{group__ajax_g5f1adff7f07ea45d8ab62b456ffdd6e0}{views\_\-ajax} ()
+\item 
+\hyperlink{group__ajax_gb8d3fb5832b13ebecfc2367a923ea01d}{views\_\-ajax\_\-render} (\$output=NULL, \$title=NULL, \$url=NULL, \$js=NULL)
+\item 
+\hyperlink{group__ajax_g7eed0d665d7b4c8c8134eb060afbb2be}{views\_\-ajax\_\-form\_\-wrapper} (\$form\_\-id, \&\$form\_\-state)
+\item 
+\hyperlink{group__ajax_g0d9404f1a04f9f5102ffac0bef92d5ab}{views\_\-ajax\_\-autocomplete\_\-user} (\$string= '')
+\end{CompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{group__ajax_g5f1adff7f07ea45d8ab62b456ffdd6e0}{
+\index{ajax@{ajax}!views\_\-ajax@{views\_\-ajax}}
+\index{views\_\-ajax@{views\_\-ajax}!ajax@{ajax}}
+\subsubsection[{views\_\-ajax}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ajax ()}}
+\label{group__ajax_g5f1adff7f07ea45d8ab62b456ffdd6e0}
+
+
+Menu callback to load a \hyperlink{classview}{view} via AJAX. \hypertarget{group__ajax_g0d9404f1a04f9f5102ffac0bef92d5ab}{
+\index{ajax@{ajax}!views\_\-ajax\_\-autocomplete\_\-user@{views\_\-ajax\_\-autocomplete\_\-user}}
+\index{views\_\-ajax\_\-autocomplete\_\-user@{views\_\-ajax\_\-autocomplete\_\-user}!ajax@{ajax}}
+\subsubsection[{views\_\-ajax\_\-autocomplete\_\-user}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ajax\_\-autocomplete\_\-user (\$ {\em string} = {\tt ''})}}
+\label{group__ajax_g0d9404f1a04f9f5102ffac0bef92d5ab}
+
+
+Page callback for views user autocomplete \hypertarget{group__ajax_g7eed0d665d7b4c8c8134eb060afbb2be}{
+\index{ajax@{ajax}!views\_\-ajax\_\-form\_\-wrapper@{views\_\-ajax\_\-form\_\-wrapper}}
+\index{views\_\-ajax\_\-form\_\-wrapper@{views\_\-ajax\_\-form\_\-wrapper}!ajax@{ajax}}
+\subsubsection[{views\_\-ajax\_\-form\_\-wrapper}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ajax\_\-form\_\-wrapper (\$ {\em form\_\-id}, \/  \&\$ {\em form\_\-state})}}
+\label{group__ajax_g7eed0d665d7b4c8c8134eb060afbb2be}
+
+
+Wrapper around drupal\_\-build\_\-form to handle some AJAX stuff automatically. This makes some assumptions about the client. \hypertarget{group__ajax_gb8d3fb5832b13ebecfc2367a923ea01d}{
+\index{ajax@{ajax}!views\_\-ajax\_\-render@{views\_\-ajax\_\-render}}
+\index{views\_\-ajax\_\-render@{views\_\-ajax\_\-render}!ajax@{ajax}}
+\subsubsection[{views\_\-ajax\_\-render}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ajax\_\-render (\$ {\em output} = {\tt NULL}, \/  \$ {\em title} = {\tt NULL}, \/  \$ {\em url} = {\tt NULL}, \/  \$ {\em js} = {\tt NULL})}}
+\label{group__ajax_gb8d3fb5832b13ebecfc2367a923ea01d}
+
+
+Simple render function to make sure output is what we want.
+
+This function renders an object into JSON, and that object contains commands to the ajax response parser on the other side. The actual commands that can be sent are completely dependent upon the client javascript parser, which can be anything, but this function assumes that 'display', at least, will be displayed in some kind of ajax spot or popup. 

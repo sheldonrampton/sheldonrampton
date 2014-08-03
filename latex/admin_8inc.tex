@@ -1,0 +1,861 @@
+\hypertarget{admin_8inc}{
+\section{sites/all/modules/contrib/views/includes/admin.inc File Reference}
+\label{admin_8inc}\index{sites/all/modules/contrib/views/includes/admin.inc@{sites/all/modules/contrib/views/includes/admin.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{admin_8inc_aab40d1cdd76cf120dd01aa63a3944e9}{views\_\-ui\_\-list\_\-views} (\$arg=NULL)
+\item 
+\hyperlink{admin_8inc_def4f03f528e350d8153839789f69335}{views\_\-ui\_\-check\_\-advanced\_\-help} ()
+\item 
+\hyperlink{admin_8inc_e57b4aeb4a4c585ed098eec748cdee3f}{template\_\-preprocess\_\-views\_\-ui\_\-list\_\-views} (\&\$vars)
+\item 
+\hyperlink{admin_8inc_3f7e4656b6cc3f6b246e20a044f09504}{views\_\-ui\_\-list\_\-views\_\-form} (\&\$form\_\-state)
+\item 
+\hypertarget{admin_8inc_697df8d38aaee963afd2b1213a278c16}{
+\textbf{theme\_\-views\_\-ui\_\-list\_\-views\_\-form} (\$form)}
+\label{admin_8inc_697df8d38aaee963afd2b1213a278c16}
+
+\item 
+\hyperlink{admin_8inc_82e72453c3ff3f251677786b58bb66ec}{views\_\-ui\_\-preview} (\$js, \$\hyperlink{classview}{view})
+\item 
+\hyperlink{admin_8inc_4fb153a5a54a26dd25b421020cbe538a}{views\_\-ui\_\-preview\_\-form} (\&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_ea5410d3cb0285a98e318812447befd3}{views\_\-ui\_\-preview\_\-form\_\-submit} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_f5b029abb01c601d29c40a83733a725d}{views\_\-ui\_\-add\_\-page} ()
+\item 
+\hyperlink{admin_8inc_9578c8af80437c526f0f5e2edce270a2}{views\_\-ui\_\-clone\_\-page} (\$\hyperlink{classview}{view})
+\item 
+\hyperlink{admin_8inc_f710eec12e4548afda4d0c4345de257e}{views\_\-ui\_\-add\_\-form} (\&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_3df2229c5921bd94cf778c96d8630b6a}{views\_\-ui\_\-add\_\-form\_\-validate} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_10536694129577330ac66c50461331c3}{views\_\-ui\_\-add\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_6812d24763aef0dcc3bf12fd507ce889}{views\_\-ui\_\-delete\_\-confirm} (\&\$form\_\-state, \$\hyperlink{classview}{view})
+\item 
+\hyperlink{admin_8inc_5f90c80772fbdba6261594d21157d989}{views\_\-ui\_\-delete\_\-confirm\_\-submit} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_d33727efc8afa8203a7e81ce6a4675a6}{views\_\-ui\_\-break\_\-lock\_\-confirm} (\&\$form\_\-state, \$\hyperlink{classview}{view})
+\item 
+\hyperlink{admin_8inc_c4e4cf7b38cbca3119949d164226ab93}{views\_\-ui\_\-break\_\-lock\_\-confirm\_\-submit} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_6a5646e000d998b490692537945f1e80}{views\_\-ui\_\-edit\_\-page} (\$\hyperlink{classview}{view})
+\item 
+\hyperlink{admin_8inc_24de19609cbac147d353b05d1d0cf54d}{views\_\-ui\_\-export\_\-page} (\&\$form\_\-state, \$\hyperlink{classview}{view})
+\item 
+\hyperlink{admin_8inc_4cf23cf7b1b9b27fb6a3a93c90447b5f}{views\_\-ui\_\-import\_\-page} (\&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_d5771e62497700de3986f6b03a5a3ab6}{views\_\-ui\_\-import\_\-validate} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_f208375534e14a238da0f2979bd7c43e}{views\_\-ui\_\-import\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_1272fedcbb93770da96b8da5ec4bc611}{views\_\-ui\_\-edit\_\-view\_\-form} (\&\$form\_\-state, \$\hyperlink{classview}{view})
+\item 
+\hyperlink{admin_8inc_64c87654d6ff972d3755b11283257766}{views\_\-ui\_\-edit\_\-view\_\-form\_\-validate} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_1175fee9669154b7486a7e2fbfc6efae}{views\_\-ui\_\-edit\_\-view\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_c138be787565f55b939741a65574a8ea}{views\_\-ui\_\-edit\_\-view\_\-form\_\-cancel} (\$form, \&\$form\_\-state)
+\item 
+\hypertarget{admin_8inc_91797216dad6bf2d6ab57172c29f7e4d}{
+\textbf{views\_\-ui\_\-edit\_\-view\_\-form\_\-delete} (\$form, \&\$form\_\-state)}
+\label{admin_8inc_91797216dad6bf2d6ab57172c29f7e4d}
+
+\item 
+\hyperlink{admin_8inc_6f6cfa8a399d4ef25d9dab8f370c90d3}{template\_\-preprocess\_\-views\_\-ui\_\-edit\_\-view} (\&\$vars)
+\item 
+\hypertarget{admin_8inc_d2fe2b0d582e3708c732e032b27d008a}{
+\textbf{template\_\-preprocess\_\-views\_\-ui\_\-edit\_\-tab} (\&\$vars)}
+\label{admin_8inc_d2fe2b0d582e3708c732e032b27d008a}
+
+\item 
+\hyperlink{admin_8inc_1666f1ec5a2b78fd56d408c129007e43}{views\_\-ui\_\-display\_\-tab} (\$\hyperlink{classview}{view}, \$display)
+\item 
+\hyperlink{admin_8inc_c6486b2b23fb04adda523126d8eb9a9f}{template\_\-preprocess\_\-views\_\-ui\_\-edit\_\-item} (\&\$vars)
+\item 
+\hyperlink{admin_8inc_edcac3bc6fcf479946e4fcf5c8a5eb26}{views\_\-ui\_\-regenerate\_\-tabs} (\&\$\hyperlink{classview}{view}, \$display\_\-id=NULL, \$object=NULL)
+\item 
+\hyperlink{admin_8inc_14c82c16cedbaecf8fb20e1aabc1a15b}{views\_\-ui\_\-standard\_\-form\_\-buttons} (\&\$form, \&\$form\_\-state, \$form\_\-id, \$name=NULL, \$third=NULL, \$submit=NULL)
+\item 
+\hyperlink{admin_8inc_9af5bfc6978dc754bdfe126ac758deda}{views\_\-ui\_\-standard\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_69c20e73b4a54447f15797c44bdb8344}{views\_\-ui\_\-standard\_\-cancel} (\$form, \&\$form\_\-state)
+\item 
+\hypertarget{admin_8inc_28d1560f6713eda756f9463d635ba97f}{
+\textbf{views\_\-ui\_\-ajax\_\-forms} (\$key=NULL)}
+\label{admin_8inc_28d1560f6713eda756f9463d635ba97f}
+
+\item 
+\hyperlink{admin_8inc_70be38405376cc28c9f3c53643ae8581}{views\_\-ui\_\-build\_\-identifier} (\$key, \$\hyperlink{classview}{view}, \$display\_\-id, \$args)
+\item 
+\hyperlink{admin_8inc_fc1eec863da7b425bae3b0509fe17e4d}{views\_\-ui\_\-build\_\-form\_\-state} (\$js, \$key, \&\$\hyperlink{classview}{view}, \$display\_\-id, \$args)
+\item 
+\hyperlink{admin_8inc_89ecd86607b4c1d1928120aaa1004c0d}{views\_\-ui\_\-build\_\-form\_\-url} (\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_1bdfd28818165d752db6270d3676fcbb}{views\_\-ui\_\-add\_\-form\_\-to\_\-stack} (\$key, \&\$\hyperlink{classview}{view}, \$display\_\-id, \$args, \$top=FALSE)
+\item 
+\hyperlink{admin_8inc_ff8d306f0dd773c65acb1f93bdf64b00}{views\_\-ui\_\-ajax\_\-form} (\$js, \$key, \$\hyperlink{classview}{view}, \$display\_\-id)
+\item 
+\hyperlink{admin_8inc_a873e68cc2b1ed40f04cf5b8653f0973}{views\_\-ui\_\-add\_\-display} (\$js, \$\hyperlink{classview}{view})
+\item 
+\hyperlink{admin_8inc_7e4eac2a6fd8837f1d0d3c7fdd514d61}{views\_\-ui\_\-add\_\-display\_\-form} (\&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_15c3d469bfc61174dcf7846b6b2e5ea8}{views\_\-ui\_\-add\_\-display\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_f4e3e3ea2e61d0352567b4fed8bda83f}{views\_\-ui\_\-remove\_\-display\_\-form} (\&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_7f6a9599a03beef16e3917fa0a1c275d}{views\_\-ui\_\-remove\_\-display\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_85640b9f63281c89ed546c623c22c776}{views\_\-ui\_\-remove\_\-display\_\-form\_\-restore} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_eb3f9989feda5d808cba123a41047634}{views\_\-ui\_\-analyze\_\-view} (\$js, \$\hyperlink{classview}{view})
+\item 
+\hyperlink{admin_8inc_001b26005a3b21e7ae5df3dc780fa556}{views\_\-ui\_\-analyze\_\-view\_\-button} (\&\$form\_\-state, \$\hyperlink{classview}{view})
+\item 
+\hyperlink{admin_8inc_09ff526ff78c7d88d2c8f599d3aef176}{views\_\-ui\_\-analyze\_\-view\_\-form} (\&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_a1090e8a74ff37716f6b2365f188c73b}{views\_\-ui\_\-analyze\_\-view\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_44a59c2c2496856a1665b0a1351dbafc}{views\_\-ui\_\-edit\_\-details} (\$js, \$\hyperlink{classview}{view})
+\item 
+\hyperlink{admin_8inc_6d4b9deaef5d0ec9fc6a5185e88f6573}{views\_\-ui\_\-edit\_\-details\_\-form} (\&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_674154b3d2a6a378f121ec2f0a66d52c}{views\_\-ui\_\-edit\_\-details\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_f6122919e9513646e5dfeba97114ee35}{views\_\-ui\_\-edit\_\-display\_\-form} (\&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_a266b14e787266b24a7096f58d41667c}{views\_\-ui\_\-edit\_\-display\_\-form\_\-validate} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_2272bcea1334751c9c2e8d6b04ae64af}{views\_\-ui\_\-edit\_\-display\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_5d8a67bc769fcccdad46636e063079d2}{views\_\-ui\_\-edit\_\-display\_\-form\_\-override} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_bbebaee3c929f00492cf42bd8cb8db46}{views\_\-ui\_\-config\_\-type\_\-form} (\&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_61be3ab41a05febb0ec4c994beaf0b69}{views\_\-ui\_\-config\_\-type\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_94ed7bd014dce1a7f7f728fa6790e3f0}{views\_\-ui\_\-config\_\-filters\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_ed46401ae2bf055dc722299e6f041b9b}{views\_\-ui\_\-rearrange\_\-form} (\&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_45a823b50e25c9050b2d28a5eb53c023}{theme\_\-views\_\-ui\_\-rearrange\_\-form} (\$form)
+\item 
+\hyperlink{admin_8inc_6cc534f5a5904b1b21333fb063836be7}{views\_\-ui\_\-rearrange\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_c391db5551c2725f1c483ea09bc6551a}{views\_\-ui\_\-add\_\-item\_\-form} (\&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_b9af88d70446a68c6fac8afe2bc4cffe}{views\_\-ui\_\-add\_\-item\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_881698f18e68deadddd14f239f351922}{views\_\-ui\_\-config\_\-item\_\-form} (\&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_023993084cf3409a55a8831df1d0935b}{views\_\-ui\_\-config\_\-item\_\-form\_\-validate} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_f158b94f2b2f0886fde847d3f378c8ed}{views\_\-ui\_\-config\_\-item\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_7f602db6d4cc41b412a8ace2d6320ea8}{views\_\-ui\_\-config\_\-item\_\-form\_\-remove} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_3a3a7734f5b034e63b7866c326c70229}{views\_\-ui\_\-config\_\-item\_\-form\_\-expose} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_3394e32b3f8096b6edf8c2fec4906751}{views\_\-ui\_\-config\_\-item\_\-extra\_\-form} (\&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_70cfe0eb4a09c66d85dc24fd55a57b30}{views\_\-ui\_\-config\_\-item\_\-extra\_\-form\_\-validate} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_d5e1d436875b612146deb11b52a3b98e}{views\_\-ui\_\-config\_\-item\_\-extra\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_a94927cb8215f90a8b01211dae1e426f}{views\_\-ui\_\-change\_\-style\_\-form} (\&\$form\_\-state)
+\item 
+\hypertarget{admin_8inc_80324ec034d50a20b245c05b43e23578}{
+\textbf{views\_\-ui\_\-change\_\-style\_\-form\_\-validate} (\$form, \&\$form\_\-state)}
+\label{admin_8inc_80324ec034d50a20b245c05b43e23578}
+
+\item 
+\hyperlink{admin_8inc_f49405357d3cc5d22218ec2831c5dd71}{views\_\-ui\_\-change\_\-style\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_9cc05ea6bbc6009482ee71d374c4538e}{views\_\-ui\_\-config\_\-style\_\-form} (\&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_421a319ebb088e20841e643f67ab1cfe}{views\_\-ui\_\-config\_\-style\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_6c6227b21a8ca8e33eabfe00598410cd}{views\_\-ui\_\-get\_\-roles} ()
+\item 
+\hyperlink{admin_8inc_f6b6dd299deaebad2b2bb09dc78afab3}{views\_\-ui\_\-item\_\-css} (\$item)
+\item 
+\hyperlink{admin_8inc_82465b0f9577f7992268365fc49dee3d}{views\_\-ui\_\-enable\_\-page} (\$\hyperlink{classview}{view})
+\item 
+\hyperlink{admin_8inc_46be1cf8820f694e4d4fd2558167b9bb}{views\_\-ui\_\-disable\_\-page} (\$\hyperlink{classview}{view})
+\item 
+\hyperlink{admin_8inc_8d86dbe400c0ad869694a85f767be3d6}{views\_\-ui\_\-admin\_\-tools} ()
+\item 
+\hyperlink{admin_8inc_20d738f2a5405c5fbbdbd82954bbf050}{views\_\-ui\_\-tools\_\-clear\_\-cache} ()
+\item 
+\hyperlink{admin_8inc_2f6df8066d61dc4f84b6bdbfffc70c1c}{views\_\-ui\_\-config\_\-item\_\-form\_\-rescan} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_645b4cf556061727a6d09a0d64770b30}{views\_\-ui\_\-edit\_\-display\_\-form\_\-change\_\-theme} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{admin_8inc_1a3a91dbf973532f39cee36c1d99c87b}{views\_\-ui\_\-autocomplete\_\-tag} (\$string= '')
+\item 
+\hypertarget{admin_8inc_ca9b3ff2e8b27bbde5bfe852a06f8ac6}{
+\textbf{\_\-views\_\-weight\_\-sort} (\$a, \$b)}
+\label{admin_8inc_ca9b3ff2e8b27bbde5bfe852a06f8ac6}
+
+\item 
+\hyperlink{admin_8inc_36ed4b1513b45a8a358d2cb3fb287d06}{views\_\-fetch\_\-base\_\-tables} ()
+\item 
+\hypertarget{admin_8inc_33087fe4da0c42948a6c0973585ca1cd}{
+\textbf{\_\-views\_\-sort\_\-types} (\$a, \$b)}
+\label{admin_8inc_33087fe4da0c42948a6c0973585ca1cd}
+
+\item 
+\hyperlink{admin_8inc_cfe593e87bda99fc3263579ba22cb9a8}{views\_\-fetch\_\-fields} (\$base, \$type)
+\item 
+\hyperlink{admin_8inc_e7963b102753500f8de139bf60d59ca5}{views\_\-fetch\_\-plugin\_\-names} (\$type, \$key=NULL, \$base=array())
+\item 
+\hyperlink{admin_8inc_ca470c026194aeade2469d96c661fb8e}{theme\_\-views\_\-ui\_\-style\_\-plugin\_\-table} (\$form)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Provides the Views' administrative interface. 
+
+\subsection{Function Documentation}
+\hypertarget{admin_8inc_c6486b2b23fb04adda523126d8eb9a9f}{
+\index{admin.inc@{admin.inc}!template\_\-preprocess\_\-views\_\-ui\_\-edit\_\-item@{template\_\-preprocess\_\-views\_\-ui\_\-edit\_\-item}}
+\index{template\_\-preprocess\_\-views\_\-ui\_\-edit\_\-item@{template\_\-preprocess\_\-views\_\-ui\_\-edit\_\-item}!admin.inc@{admin.inc}}
+\subsubsection[{template\_\-preprocess\_\-views\_\-ui\_\-edit\_\-item}]{\setlength{\rightskip}{0pt plus 5cm}template\_\-preprocess\_\-views\_\-ui\_\-edit\_\-item (\&\$ {\em vars})}}
+\label{admin_8inc_c6486b2b23fb04adda523126d8eb9a9f}
+
+
+Add information about a section to a display. \hypertarget{admin_8inc_6f6cfa8a399d4ef25d9dab8f370c90d3}{
+\index{admin.inc@{admin.inc}!template\_\-preprocess\_\-views\_\-ui\_\-edit\_\-view@{template\_\-preprocess\_\-views\_\-ui\_\-edit\_\-view}}
+\index{template\_\-preprocess\_\-views\_\-ui\_\-edit\_\-view@{template\_\-preprocess\_\-views\_\-ui\_\-edit\_\-view}!admin.inc@{admin.inc}}
+\subsubsection[{template\_\-preprocess\_\-views\_\-ui\_\-edit\_\-view}]{\setlength{\rightskip}{0pt plus 5cm}template\_\-preprocess\_\-views\_\-ui\_\-edit\_\-view (\&\$ {\em vars})}}
+\label{admin_8inc_6f6cfa8a399d4ef25d9dab8f370c90d3}
+
+
+Preprocess the \hyperlink{classview}{view} edit page. \hypertarget{admin_8inc_e57b4aeb4a4c585ed098eec748cdee3f}{
+\index{admin.inc@{admin.inc}!template\_\-preprocess\_\-views\_\-ui\_\-list\_\-views@{template\_\-preprocess\_\-views\_\-ui\_\-list\_\-views}}
+\index{template\_\-preprocess\_\-views\_\-ui\_\-list\_\-views@{template\_\-preprocess\_\-views\_\-ui\_\-list\_\-views}!admin.inc@{admin.inc}}
+\subsubsection[{template\_\-preprocess\_\-views\_\-ui\_\-list\_\-views}]{\setlength{\rightskip}{0pt plus 5cm}template\_\-preprocess\_\-views\_\-ui\_\-list\_\-views (\&\$ {\em vars})}}
+\label{admin_8inc_e57b4aeb4a4c585ed098eec748cdee3f}
+
+
+Preprocess the list views theme \hypertarget{admin_8inc_45a823b50e25c9050b2d28a5eb53c023}{
+\index{admin.inc@{admin.inc}!theme\_\-views\_\-ui\_\-rearrange\_\-form@{theme\_\-views\_\-ui\_\-rearrange\_\-form}}
+\index{theme\_\-views\_\-ui\_\-rearrange\_\-form@{theme\_\-views\_\-ui\_\-rearrange\_\-form}!admin.inc@{admin.inc}}
+\subsubsection[{theme\_\-views\_\-ui\_\-rearrange\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-views\_\-ui\_\-rearrange\_\-form (\$ {\em form})}}
+\label{admin_8inc_45a823b50e25c9050b2d28a5eb53c023}
+
+
+Turn the rearrange form into a proper table \hypertarget{admin_8inc_ca470c026194aeade2469d96c661fb8e}{
+\index{admin.inc@{admin.inc}!theme\_\-views\_\-ui\_\-style\_\-plugin\_\-table@{theme\_\-views\_\-ui\_\-style\_\-plugin\_\-table}}
+\index{theme\_\-views\_\-ui\_\-style\_\-plugin\_\-table@{theme\_\-views\_\-ui\_\-style\_\-plugin\_\-table}!admin.inc@{admin.inc}}
+\subsubsection[{theme\_\-views\_\-ui\_\-style\_\-plugin\_\-table}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-views\_\-ui\_\-style\_\-plugin\_\-table (\$ {\em form})}}
+\label{admin_8inc_ca470c026194aeade2469d96c661fb8e}
+
+
+Theme the form for the table style plugin \hypertarget{admin_8inc_36ed4b1513b45a8a358d2cb3fb287d06}{
+\index{admin.inc@{admin.inc}!views\_\-fetch\_\-base\_\-tables@{views\_\-fetch\_\-base\_\-tables}}
+\index{views\_\-fetch\_\-base\_\-tables@{views\_\-fetch\_\-base\_\-tables}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-fetch\_\-base\_\-tables}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-fetch\_\-base\_\-tables ()}}
+\label{admin_8inc_36ed4b1513b45a8a358d2cb3fb287d06}
+
+
+Fetch a list of all base tables available
+
+\begin{Desc}
+\item[Returns:]A keyed array of in the form of 'base\_\-table' =$>$ 'Description'. \end{Desc}
+\hypertarget{admin_8inc_cfe593e87bda99fc3263579ba22cb9a8}{
+\index{admin.inc@{admin.inc}!views\_\-fetch\_\-fields@{views\_\-fetch\_\-fields}}
+\index{views\_\-fetch\_\-fields@{views\_\-fetch\_\-fields}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-fetch\_\-fields}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-fetch\_\-fields (\$ {\em base}, \/  \$ {\em type})}}
+\label{admin_8inc_cfe593e87bda99fc3263579ba22cb9a8}
+
+
+Fetch a list of all fields available for a given base type.
+
+\begin{Desc}
+\item[Returns:]A keyed array of in the form of 'base\_\-table' =$>$ 'Description'. \end{Desc}
+\hypertarget{admin_8inc_e7963b102753500f8de139bf60d59ca5}{
+\index{admin.inc@{admin.inc}!views\_\-fetch\_\-plugin\_\-names@{views\_\-fetch\_\-plugin\_\-names}}
+\index{views\_\-fetch\_\-plugin\_\-names@{views\_\-fetch\_\-plugin\_\-names}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-fetch\_\-plugin\_\-names}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-fetch\_\-plugin\_\-names (\$ {\em type}, \/  \$ {\em key} = {\tt NULL}, \/  \$ {\em base} = {\tt array()})}}
+\label{admin_8inc_e7963b102753500f8de139bf60d59ca5}
+
+
+Fetch a list of all base tables available
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$type}]Either 'display', 'style' or 'row' \item[{\em \$key}]For style plugins, this is an optional type to restrict to. May be 'normal', 'summary', 'feed' or others based on the neds of the display. \item[{\em \$base}]An array of possible base tables.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]A keyed array of in the form of 'base\_\-table' =$>$ 'Description'. \end{Desc}
+\hypertarget{admin_8inc_a873e68cc2b1ed40f04cf5b8653f0973}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-add\_\-display@{views\_\-ui\_\-add\_\-display}}
+\index{views\_\-ui\_\-add\_\-display@{views\_\-ui\_\-add\_\-display}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-add\_\-display}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-add\_\-display (\$ {\em js}, \/  \$ {\em view})}}
+\label{admin_8inc_a873e68cc2b1ed40f04cf5b8653f0973}
+
+
+AJAX callback to add a display. \hypertarget{admin_8inc_7e4eac2a6fd8837f1d0d3c7fdd514d61}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-add\_\-display\_\-form@{views\_\-ui\_\-add\_\-display\_\-form}}
+\index{views\_\-ui\_\-add\_\-display\_\-form@{views\_\-ui\_\-add\_\-display\_\-form}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-add\_\-display\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-add\_\-display\_\-form (\&\$ {\em form\_\-state})}}
+\label{admin_8inc_7e4eac2a6fd8837f1d0d3c7fdd514d61}
+
+
+Form to add a display to a \hyperlink{classview}{view}. \hypertarget{admin_8inc_15c3d469bfc61174dcf7846b6b2e5ea8}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-add\_\-display\_\-form\_\-submit@{views\_\-ui\_\-add\_\-display\_\-form\_\-submit}}
+\index{views\_\-ui\_\-add\_\-display\_\-form\_\-submit@{views\_\-ui\_\-add\_\-display\_\-form\_\-submit}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-add\_\-display\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-add\_\-display\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_15c3d469bfc61174dcf7846b6b2e5ea8}
+
+
+Submit handler to add a display to a \hyperlink{classview}{view}. \hypertarget{admin_8inc_f710eec12e4548afda4d0c4345de257e}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-add\_\-form@{views\_\-ui\_\-add\_\-form}}
+\index{views\_\-ui\_\-add\_\-form@{views\_\-ui\_\-add\_\-form}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-add\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-add\_\-form (\&\$ {\em form\_\-state})}}
+\label{admin_8inc_f710eec12e4548afda4d0c4345de257e}
+
+
+Form constructor callback to create the views Add Form, phase 1. \hypertarget{admin_8inc_10536694129577330ac66c50461331c3}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-add\_\-form\_\-submit@{views\_\-ui\_\-add\_\-form\_\-submit}}
+\index{views\_\-ui\_\-add\_\-form\_\-submit@{views\_\-ui\_\-add\_\-form\_\-submit}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-add\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-add\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_10536694129577330ac66c50461331c3}
+
+
+Process the add \hyperlink{classview}{view} form \hypertarget{admin_8inc_1bdfd28818165d752db6270d3676fcbb}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-add\_\-form\_\-to\_\-stack@{views\_\-ui\_\-add\_\-form\_\-to\_\-stack}}
+\index{views\_\-ui\_\-add\_\-form\_\-to\_\-stack@{views\_\-ui\_\-add\_\-form\_\-to\_\-stack}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-add\_\-form\_\-to\_\-stack}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-add\_\-form\_\-to\_\-stack (\$ {\em key}, \/  \&\$ {\em view}, \/  \$ {\em display\_\-id}, \/  \$ {\em args}, \/  \$ {\em top} = {\tt FALSE})}}
+\label{admin_8inc_1bdfd28818165d752db6270d3676fcbb}
+
+
+Add another form to the stack; clicking 'update' will go to this form rather than closing the ajax pad. \hypertarget{admin_8inc_3df2229c5921bd94cf778c96d8630b6a}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-add\_\-form\_\-validate@{views\_\-ui\_\-add\_\-form\_\-validate}}
+\index{views\_\-ui\_\-add\_\-form\_\-validate@{views\_\-ui\_\-add\_\-form\_\-validate}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-add\_\-form\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-add\_\-form\_\-validate (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_3df2229c5921bd94cf778c96d8630b6a}
+
+
+Validate the add \hyperlink{classview}{view} form. \hypertarget{admin_8inc_c391db5551c2725f1c483ea09bc6551a}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-add\_\-item\_\-form@{views\_\-ui\_\-add\_\-item\_\-form}}
+\index{views\_\-ui\_\-add\_\-item\_\-form@{views\_\-ui\_\-add\_\-item\_\-form}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-add\_\-item\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-add\_\-item\_\-form (\&\$ {\em form\_\-state})}}
+\label{admin_8inc_c391db5551c2725f1c483ea09bc6551a}
+
+
+Form to add\_\-item items in the views UI. \hypertarget{admin_8inc_b9af88d70446a68c6fac8afe2bc4cffe}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-add\_\-item\_\-form\_\-submit@{views\_\-ui\_\-add\_\-item\_\-form\_\-submit}}
+\index{views\_\-ui\_\-add\_\-item\_\-form\_\-submit@{views\_\-ui\_\-add\_\-item\_\-form\_\-submit}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-add\_\-item\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-add\_\-item\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_b9af88d70446a68c6fac8afe2bc4cffe}
+
+
+Submit handler for adding new item(s) to a \hyperlink{classview}{view}. \hypertarget{admin_8inc_f5b029abb01c601d29c40a83733a725d}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-add\_\-page@{views\_\-ui\_\-add\_\-page}}
+\index{views\_\-ui\_\-add\_\-page@{views\_\-ui\_\-add\_\-page}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-add\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-add\_\-page ()}}
+\label{admin_8inc_f5b029abb01c601d29c40a83733a725d}
+
+
+Page callback to add a new \hyperlink{classview}{view}. \hypertarget{admin_8inc_8d86dbe400c0ad869694a85f767be3d6}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-admin\_\-tools@{views\_\-ui\_\-admin\_\-tools}}
+\index{views\_\-ui\_\-admin\_\-tools@{views\_\-ui\_\-admin\_\-tools}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-admin\_\-tools}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-admin\_\-tools ()}}
+\label{admin_8inc_8d86dbe400c0ad869694a85f767be3d6}
+
+
+Page callback for the tools - other page \hypertarget{admin_8inc_ff8d306f0dd773c65acb1f93bdf64b00}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-ajax\_\-form@{views\_\-ui\_\-ajax\_\-form}}
+\index{views\_\-ui\_\-ajax\_\-form@{views\_\-ui\_\-ajax\_\-form}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-ajax\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-ajax\_\-form (\$ {\em js}, \/  \$ {\em key}, \/  \$ {\em view}, \/  \$ {\em display\_\-id})}}
+\label{admin_8inc_ff8d306f0dd773c65acb1f93bdf64b00}
+
+
+Generic entry point to handle forms.
+
+We do this for consistency and to make it easy to chain forms together. This only works for forms that use both \$view and \$display\_\-id, so we have a couple of ajax forms that we don't use with this system. \hypertarget{admin_8inc_eb3f9989feda5d808cba123a41047634}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-analyze\_\-view@{views\_\-ui\_\-analyze\_\-view}}
+\index{views\_\-ui\_\-analyze\_\-view@{views\_\-ui\_\-analyze\_\-view}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-analyze\_\-view}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-analyze\_\-view (\$ {\em js}, \/  \$ {\em view})}}
+\label{admin_8inc_eb3f9989feda5d808cba123a41047634}
+
+
+Page callback to display analysis information on a \hyperlink{classview}{view}. \hypertarget{admin_8inc_001b26005a3b21e7ae5df3dc780fa556}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-analyze\_\-view\_\-button@{views\_\-ui\_\-analyze\_\-view\_\-button}}
+\index{views\_\-ui\_\-analyze\_\-view\_\-button@{views\_\-ui\_\-analyze\_\-view\_\-button}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-analyze\_\-view\_\-button}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-analyze\_\-view\_\-button (\&\$ {\em form\_\-state}, \/  \$ {\em view})}}
+\label{admin_8inc_001b26005a3b21e7ae5df3dc780fa556}
+
+
+This form doesn't particularly do much; it's really just providing a link but a button seems like it would be nicer here.
+
+It has no submit or anything, as we will never actually submit this form where the form is placed. \hypertarget{admin_8inc_09ff526ff78c7d88d2c8f599d3aef176}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-analyze\_\-view\_\-form@{views\_\-ui\_\-analyze\_\-view\_\-form}}
+\index{views\_\-ui\_\-analyze\_\-view\_\-form@{views\_\-ui\_\-analyze\_\-view\_\-form}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-analyze\_\-view\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-analyze\_\-view\_\-form (\&\$ {\em form\_\-state})}}
+\label{admin_8inc_09ff526ff78c7d88d2c8f599d3aef176}
+
+
+Form constructor callback to display analysis information on a \hyperlink{classview}{view} \hypertarget{admin_8inc_a1090e8a74ff37716f6b2365f188c73b}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-analyze\_\-view\_\-form\_\-submit@{views\_\-ui\_\-analyze\_\-view\_\-form\_\-submit}}
+\index{views\_\-ui\_\-analyze\_\-view\_\-form\_\-submit@{views\_\-ui\_\-analyze\_\-view\_\-form\_\-submit}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-analyze\_\-view\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-analyze\_\-view\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_a1090e8a74ff37716f6b2365f188c73b}
+
+
+Submit handler for views\_\-ui\_\-analyze\_\-view\_\-form \hypertarget{admin_8inc_1a3a91dbf973532f39cee36c1d99c87b}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-autocomplete\_\-tag@{views\_\-ui\_\-autocomplete\_\-tag}}
+\index{views\_\-ui\_\-autocomplete\_\-tag@{views\_\-ui\_\-autocomplete\_\-tag}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-autocomplete\_\-tag}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-autocomplete\_\-tag (\$ {\em string} = {\tt ''})}}
+\label{admin_8inc_1a3a91dbf973532f39cee36c1d99c87b}
+
+
+Page callback for views tag autocomplete \hypertarget{admin_8inc_d33727efc8afa8203a7e81ce6a4675a6}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-break\_\-lock\_\-confirm@{views\_\-ui\_\-break\_\-lock\_\-confirm}}
+\index{views\_\-ui\_\-break\_\-lock\_\-confirm@{views\_\-ui\_\-break\_\-lock\_\-confirm}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-break\_\-lock\_\-confirm}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-break\_\-lock\_\-confirm (\&\$ {\em form\_\-state}, \/  \$ {\em view})}}
+\label{admin_8inc_d33727efc8afa8203a7e81ce6a4675a6}
+
+
+Page to delete a \hyperlink{classview}{view}. \hypertarget{admin_8inc_c4e4cf7b38cbca3119949d164226ab93}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-break\_\-lock\_\-confirm\_\-submit@{views\_\-ui\_\-break\_\-lock\_\-confirm\_\-submit}}
+\index{views\_\-ui\_\-break\_\-lock\_\-confirm\_\-submit@{views\_\-ui\_\-break\_\-lock\_\-confirm\_\-submit}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-break\_\-lock\_\-confirm\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-break\_\-lock\_\-confirm\_\-submit (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_c4e4cf7b38cbca3119949d164226ab93}
+
+
+Submit handler to break\_\-lock a \hyperlink{classview}{view}. \hypertarget{admin_8inc_fc1eec863da7b425bae3b0509fe17e4d}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-build\_\-form\_\-state@{views\_\-ui\_\-build\_\-form\_\-state}}
+\index{views\_\-ui\_\-build\_\-form\_\-state@{views\_\-ui\_\-build\_\-form\_\-state}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-build\_\-form\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-build\_\-form\_\-state (\$ {\em js}, \/  \$ {\em key}, \/  \&\$ {\em view}, \/  \$ {\em display\_\-id}, \/  \$ {\em args})}}
+\label{admin_8inc_fc1eec863da7b425bae3b0509fe17e4d}
+
+
+Build up a \$form\_\-state object suitable for use with drupal\_\-build\_\-form based on known information about a form. \hypertarget{admin_8inc_89ecd86607b4c1d1928120aaa1004c0d}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-build\_\-form\_\-url@{views\_\-ui\_\-build\_\-form\_\-url}}
+\index{views\_\-ui\_\-build\_\-form\_\-url@{views\_\-ui\_\-build\_\-form\_\-url}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-build\_\-form\_\-url}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-build\_\-form\_\-url (\$ {\em form\_\-state})}}
+\label{admin_8inc_89ecd86607b4c1d1928120aaa1004c0d}
+
+
+Create the URL for one of our standard AJAX forms based upon known information about the form. \hypertarget{admin_8inc_70be38405376cc28c9f3c53643ae8581}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-build\_\-identifier@{views\_\-ui\_\-build\_\-identifier}}
+\index{views\_\-ui\_\-build\_\-identifier@{views\_\-ui\_\-build\_\-identifier}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-build\_\-identifier}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-build\_\-identifier (\$ {\em key}, \/  \$ {\em view}, \/  \$ {\em display\_\-id}, \/  \$ {\em args})}}
+\label{admin_8inc_70be38405376cc28c9f3c53643ae8581}
+
+
+Build a form identifier that we can use to see if one form is the same as another. Since the arguments differ slightly we do a lot of spiffy concenation here. \hypertarget{admin_8inc_a94927cb8215f90a8b01211dae1e426f}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-change\_\-style\_\-form@{views\_\-ui\_\-change\_\-style\_\-form}}
+\index{views\_\-ui\_\-change\_\-style\_\-form@{views\_\-ui\_\-change\_\-style\_\-form}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-change\_\-style\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-change\_\-style\_\-form (\&\$ {\em form\_\-state})}}
+\label{admin_8inc_a94927cb8215f90a8b01211dae1e426f}
+
+
+Form to change\_\-style items in the views UI. \hypertarget{admin_8inc_f49405357d3cc5d22218ec2831c5dd71}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-change\_\-style\_\-form\_\-submit@{views\_\-ui\_\-change\_\-style\_\-form\_\-submit}}
+\index{views\_\-ui\_\-change\_\-style\_\-form\_\-submit@{views\_\-ui\_\-change\_\-style\_\-form\_\-submit}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-change\_\-style\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-change\_\-style\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_f49405357d3cc5d22218ec2831c5dd71}
+
+
+Submit handler for configing new item(s) to a \hyperlink{classview}{view}. \hypertarget{admin_8inc_def4f03f528e350d8153839789f69335}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-check\_\-advanced\_\-help@{views\_\-ui\_\-check\_\-advanced\_\-help}}
+\index{views\_\-ui\_\-check\_\-advanced\_\-help@{views\_\-ui\_\-check\_\-advanced\_\-help}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-check\_\-advanced\_\-help}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-check\_\-advanced\_\-help ()}}
+\label{admin_8inc_def4f03f528e350d8153839789f69335}
+
+
+Check to see if the advanced help module is installed, and if not put up a message.
+
+Only call this function if the user is already in a position for this to be useful. \hypertarget{admin_8inc_9578c8af80437c526f0f5e2edce270a2}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-clone\_\-page@{views\_\-ui\_\-clone\_\-page}}
+\index{views\_\-ui\_\-clone\_\-page@{views\_\-ui\_\-clone\_\-page}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-clone\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-clone\_\-page (\$ {\em view})}}
+\label{admin_8inc_9578c8af80437c526f0f5e2edce270a2}
+
+
+Page callback to add a new \hyperlink{classview}{view}. \hypertarget{admin_8inc_94ed7bd014dce1a7f7f728fa6790e3f0}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-config\_\-filters\_\-form@{views\_\-ui\_\-config\_\-filters\_\-form}}
+\index{views\_\-ui\_\-config\_\-filters\_\-form@{views\_\-ui\_\-config\_\-filters\_\-form}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-config\_\-filters\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-config\_\-filters\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_94ed7bd014dce1a7f7f728fa6790e3f0}
+
+
+Configure settings particular to filters. \hypertarget{admin_8inc_3394e32b3f8096b6edf8c2fec4906751}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-config\_\-item\_\-extra\_\-form@{views\_\-ui\_\-config\_\-item\_\-extra\_\-form}}
+\index{views\_\-ui\_\-config\_\-item\_\-extra\_\-form@{views\_\-ui\_\-config\_\-item\_\-extra\_\-form}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-config\_\-item\_\-extra\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-config\_\-item\_\-extra\_\-form (\&\$ {\em form\_\-state})}}
+\label{admin_8inc_3394e32b3f8096b6edf8c2fec4906751}
+
+
+Form to config\_\-item items in the views UI. \hypertarget{admin_8inc_d5e1d436875b612146deb11b52a3b98e}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-config\_\-item\_\-extra\_\-form\_\-submit@{views\_\-ui\_\-config\_\-item\_\-extra\_\-form\_\-submit}}
+\index{views\_\-ui\_\-config\_\-item\_\-extra\_\-form\_\-submit@{views\_\-ui\_\-config\_\-item\_\-extra\_\-form\_\-submit}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-config\_\-item\_\-extra\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-config\_\-item\_\-extra\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_d5e1d436875b612146deb11b52a3b98e}
+
+
+Submit handler for configing new item(s) to a \hyperlink{classview}{view}. \hypertarget{admin_8inc_70cfe0eb4a09c66d85dc24fd55a57b30}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-config\_\-item\_\-extra\_\-form\_\-validate@{views\_\-ui\_\-config\_\-item\_\-extra\_\-form\_\-validate}}
+\index{views\_\-ui\_\-config\_\-item\_\-extra\_\-form\_\-validate@{views\_\-ui\_\-config\_\-item\_\-extra\_\-form\_\-validate}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-config\_\-item\_\-extra\_\-form\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-config\_\-item\_\-extra\_\-form\_\-validate (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_70cfe0eb4a09c66d85dc24fd55a57b30}
+
+
+Submit handler for configing new item(s) to a \hyperlink{classview}{view}. \hypertarget{admin_8inc_881698f18e68deadddd14f239f351922}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-config\_\-item\_\-form@{views\_\-ui\_\-config\_\-item\_\-form}}
+\index{views\_\-ui\_\-config\_\-item\_\-form@{views\_\-ui\_\-config\_\-item\_\-form}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-config\_\-item\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-config\_\-item\_\-form (\&\$ {\em form\_\-state})}}
+\label{admin_8inc_881698f18e68deadddd14f239f351922}
+
+
+Form to config\_\-item items in the views UI. \hypertarget{admin_8inc_3a3a7734f5b034e63b7866c326c70229}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-config\_\-item\_\-form\_\-expose@{views\_\-ui\_\-config\_\-item\_\-form\_\-expose}}
+\index{views\_\-ui\_\-config\_\-item\_\-form\_\-expose@{views\_\-ui\_\-config\_\-item\_\-form\_\-expose}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-config\_\-item\_\-form\_\-expose}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-config\_\-item\_\-form\_\-expose (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_3a3a7734f5b034e63b7866c326c70229}
+
+
+Override handler for views\_\-ui\_\-edit\_\-display\_\-form \hypertarget{admin_8inc_7f602db6d4cc41b412a8ace2d6320ea8}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-config\_\-item\_\-form\_\-remove@{views\_\-ui\_\-config\_\-item\_\-form\_\-remove}}
+\index{views\_\-ui\_\-config\_\-item\_\-form\_\-remove@{views\_\-ui\_\-config\_\-item\_\-form\_\-remove}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-config\_\-item\_\-form\_\-remove}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-config\_\-item\_\-form\_\-remove (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_7f602db6d4cc41b412a8ace2d6320ea8}
+
+
+Submit handler for removing an item from a \hyperlink{classview}{view} \hypertarget{admin_8inc_2f6df8066d61dc4f84b6bdbfffc70c1c}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-config\_\-item\_\-form\_\-rescan@{views\_\-ui\_\-config\_\-item\_\-form\_\-rescan}}
+\index{views\_\-ui\_\-config\_\-item\_\-form\_\-rescan@{views\_\-ui\_\-config\_\-item\_\-form\_\-rescan}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-config\_\-item\_\-form\_\-rescan}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-config\_\-item\_\-form\_\-rescan (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_2f6df8066d61dc4f84b6bdbfffc70c1c}
+
+
+Submit hook to clear Drupal's theme registry (thereby triggering a templates rescan). \hypertarget{admin_8inc_f158b94f2b2f0886fde847d3f378c8ed}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-config\_\-item\_\-form\_\-submit@{views\_\-ui\_\-config\_\-item\_\-form\_\-submit}}
+\index{views\_\-ui\_\-config\_\-item\_\-form\_\-submit@{views\_\-ui\_\-config\_\-item\_\-form\_\-submit}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-config\_\-item\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-config\_\-item\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_f158b94f2b2f0886fde847d3f378c8ed}
+
+
+Submit handler for configing new item(s) to a \hyperlink{classview}{view}. \hypertarget{admin_8inc_023993084cf3409a55a8831df1d0935b}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-config\_\-item\_\-form\_\-validate@{views\_\-ui\_\-config\_\-item\_\-form\_\-validate}}
+\index{views\_\-ui\_\-config\_\-item\_\-form\_\-validate@{views\_\-ui\_\-config\_\-item\_\-form\_\-validate}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-config\_\-item\_\-form\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-config\_\-item\_\-form\_\-validate (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_023993084cf3409a55a8831df1d0935b}
+
+
+Submit handler for configing new item(s) to a \hyperlink{classview}{view}. \hypertarget{admin_8inc_9cc05ea6bbc6009482ee71d374c4538e}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-config\_\-style\_\-form@{views\_\-ui\_\-config\_\-style\_\-form}}
+\index{views\_\-ui\_\-config\_\-style\_\-form@{views\_\-ui\_\-config\_\-style\_\-form}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-config\_\-style\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-config\_\-style\_\-form (\&\$ {\em form\_\-state})}}
+\label{admin_8inc_9cc05ea6bbc6009482ee71d374c4538e}
+
+
+Form to config\_\-style items in the views UI. \hypertarget{admin_8inc_421a319ebb088e20841e643f67ab1cfe}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-config\_\-style\_\-form\_\-submit@{views\_\-ui\_\-config\_\-style\_\-form\_\-submit}}
+\index{views\_\-ui\_\-config\_\-style\_\-form\_\-submit@{views\_\-ui\_\-config\_\-style\_\-form\_\-submit}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-config\_\-style\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-config\_\-style\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_421a319ebb088e20841e643f67ab1cfe}
+
+
+Submit handler for configing new item(s) to a \hyperlink{classview}{view}. \hypertarget{admin_8inc_bbebaee3c929f00492cf42bd8cb8db46}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-config\_\-type\_\-form@{views\_\-ui\_\-config\_\-type\_\-form}}
+\index{views\_\-ui\_\-config\_\-type\_\-form@{views\_\-ui\_\-config\_\-type\_\-form}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-config\_\-type\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-config\_\-type\_\-form (\&\$ {\em form\_\-state})}}
+\label{admin_8inc_bbebaee3c929f00492cf42bd8cb8db46}
+
+
+Form to config items in the views UI. \hypertarget{admin_8inc_61be3ab41a05febb0ec4c994beaf0b69}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-config\_\-type\_\-form\_\-submit@{views\_\-ui\_\-config\_\-type\_\-form\_\-submit}}
+\index{views\_\-ui\_\-config\_\-type\_\-form\_\-submit@{views\_\-ui\_\-config\_\-type\_\-form\_\-submit}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-config\_\-type\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-config\_\-type\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_61be3ab41a05febb0ec4c994beaf0b69}
+
+
+Submit handler for type configuration form \hypertarget{admin_8inc_6812d24763aef0dcc3bf12fd507ce889}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-delete\_\-confirm@{views\_\-ui\_\-delete\_\-confirm}}
+\index{views\_\-ui\_\-delete\_\-confirm@{views\_\-ui\_\-delete\_\-confirm}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-delete\_\-confirm}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-delete\_\-confirm (\&\$ {\em form\_\-state}, \/  \$ {\em view})}}
+\label{admin_8inc_6812d24763aef0dcc3bf12fd507ce889}
+
+
+Page to delete a \hyperlink{classview}{view}. \hypertarget{admin_8inc_5f90c80772fbdba6261594d21157d989}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-delete\_\-confirm\_\-submit@{views\_\-ui\_\-delete\_\-confirm\_\-submit}}
+\index{views\_\-ui\_\-delete\_\-confirm\_\-submit@{views\_\-ui\_\-delete\_\-confirm\_\-submit}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-delete\_\-confirm\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-delete\_\-confirm\_\-submit (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_5f90c80772fbdba6261594d21157d989}
+
+
+Submit handler to delete a \hyperlink{classview}{view}. \hypertarget{admin_8inc_46be1cf8820f694e4d4fd2558167b9bb}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-disable\_\-page@{views\_\-ui\_\-disable\_\-page}}
+\index{views\_\-ui\_\-disable\_\-page@{views\_\-ui\_\-disable\_\-page}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-disable\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-disable\_\-page (\$ {\em view})}}
+\label{admin_8inc_46be1cf8820f694e4d4fd2558167b9bb}
+
+
+Page callback for the Views enable page \hypertarget{admin_8inc_1666f1ec5a2b78fd56d408c129007e43}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-display\_\-tab@{views\_\-ui\_\-display\_\-tab}}
+\index{views\_\-ui\_\-display\_\-tab@{views\_\-ui\_\-display\_\-tab}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-display\_\-tab}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-display\_\-tab (\$ {\em view}, \/  \$ {\em display})}}
+\label{admin_8inc_1666f1ec5a2b78fd56d408c129007e43}
+
+
+Generate the summary output for a single display to render in a tab. \hypertarget{admin_8inc_44a59c2c2496856a1665b0a1351dbafc}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-edit\_\-details@{views\_\-ui\_\-edit\_\-details}}
+\index{views\_\-ui\_\-edit\_\-details@{views\_\-ui\_\-edit\_\-details}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-edit\_\-details}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-edit\_\-details (\$ {\em js}, \/  \$ {\em view})}}
+\label{admin_8inc_44a59c2c2496856a1665b0a1351dbafc}
+
+
+Page callback to edit details of a \hyperlink{classview}{view}. \hypertarget{admin_8inc_6d4b9deaef5d0ec9fc6a5185e88f6573}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-edit\_\-details\_\-form@{views\_\-ui\_\-edit\_\-details\_\-form}}
+\index{views\_\-ui\_\-edit\_\-details\_\-form@{views\_\-ui\_\-edit\_\-details\_\-form}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-edit\_\-details\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-edit\_\-details\_\-form (\&\$ {\em form\_\-state})}}
+\label{admin_8inc_6d4b9deaef5d0ec9fc6a5185e88f6573}
+
+
+Form constructor callback to edit details of a \hyperlink{classview}{view} \hypertarget{admin_8inc_674154b3d2a6a378f121ec2f0a66d52c}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-edit\_\-details\_\-form\_\-submit@{views\_\-ui\_\-edit\_\-details\_\-form\_\-submit}}
+\index{views\_\-ui\_\-edit\_\-details\_\-form\_\-submit@{views\_\-ui\_\-edit\_\-details\_\-form\_\-submit}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-edit\_\-details\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-edit\_\-details\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_674154b3d2a6a378f121ec2f0a66d52c}
+
+
+Submit handler for views\_\-ui\_\-edit\_\-details\_\-form \hypertarget{admin_8inc_f6122919e9513646e5dfeba97114ee35}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-edit\_\-display\_\-form@{views\_\-ui\_\-edit\_\-display\_\-form}}
+\index{views\_\-ui\_\-edit\_\-display\_\-form@{views\_\-ui\_\-edit\_\-display\_\-form}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-edit\_\-display\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-edit\_\-display\_\-form (\&\$ {\em form\_\-state})}}
+\label{admin_8inc_f6122919e9513646e5dfeba97114ee35}
+
+
+Form constructor callback to edit display of a \hyperlink{classview}{view} \hypertarget{admin_8inc_645b4cf556061727a6d09a0d64770b30}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-edit\_\-display\_\-form\_\-change\_\-theme@{views\_\-ui\_\-edit\_\-display\_\-form\_\-change\_\-theme}}
+\index{views\_\-ui\_\-edit\_\-display\_\-form\_\-change\_\-theme@{views\_\-ui\_\-edit\_\-display\_\-form\_\-change\_\-theme}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-edit\_\-display\_\-form\_\-change\_\-theme}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-edit\_\-display\_\-form\_\-change\_\-theme (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_645b4cf556061727a6d09a0d64770b30}
+
+
+Override handler for views\_\-ui\_\-edit\_\-display\_\-form \hypertarget{admin_8inc_5d8a67bc769fcccdad46636e063079d2}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-edit\_\-display\_\-form\_\-override@{views\_\-ui\_\-edit\_\-display\_\-form\_\-override}}
+\index{views\_\-ui\_\-edit\_\-display\_\-form\_\-override@{views\_\-ui\_\-edit\_\-display\_\-form\_\-override}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-edit\_\-display\_\-form\_\-override}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-edit\_\-display\_\-form\_\-override (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_5d8a67bc769fcccdad46636e063079d2}
+
+
+Override handler for views\_\-ui\_\-edit\_\-display\_\-form \hypertarget{admin_8inc_2272bcea1334751c9c2e8d6b04ae64af}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-edit\_\-display\_\-form\_\-submit@{views\_\-ui\_\-edit\_\-display\_\-form\_\-submit}}
+\index{views\_\-ui\_\-edit\_\-display\_\-form\_\-submit@{views\_\-ui\_\-edit\_\-display\_\-form\_\-submit}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-edit\_\-display\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-edit\_\-display\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_2272bcea1334751c9c2e8d6b04ae64af}
+
+
+Submit handler for views\_\-ui\_\-edit\_\-display\_\-form \hypertarget{admin_8inc_a266b14e787266b24a7096f58d41667c}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-edit\_\-display\_\-form\_\-validate@{views\_\-ui\_\-edit\_\-display\_\-form\_\-validate}}
+\index{views\_\-ui\_\-edit\_\-display\_\-form\_\-validate@{views\_\-ui\_\-edit\_\-display\_\-form\_\-validate}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-edit\_\-display\_\-form\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-edit\_\-display\_\-form\_\-validate (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_a266b14e787266b24a7096f58d41667c}
+
+
+Validate handler for views\_\-ui\_\-edit\_\-display\_\-form \hypertarget{admin_8inc_6a5646e000d998b490692537945f1e80}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-edit\_\-page@{views\_\-ui\_\-edit\_\-page}}
+\index{views\_\-ui\_\-edit\_\-page@{views\_\-ui\_\-edit\_\-page}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-edit\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-edit\_\-page (\$ {\em view})}}
+\label{admin_8inc_6a5646e000d998b490692537945f1e80}
+
+
+The main \hyperlink{classview}{view} edit page \hypertarget{admin_8inc_1272fedcbb93770da96b8da5ec4bc611}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-edit\_\-view\_\-form@{views\_\-ui\_\-edit\_\-view\_\-form}}
+\index{views\_\-ui\_\-edit\_\-view\_\-form@{views\_\-ui\_\-edit\_\-view\_\-form}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-edit\_\-view\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-edit\_\-view\_\-form (\&\$ {\em form\_\-state}, \/  \$ {\em view})}}
+\label{admin_8inc_1272fedcbb93770da96b8da5ec4bc611}
+
+
+The main edit \hyperlink{classview}{view} form, which is really just a save/cancel/delete button. \hypertarget{admin_8inc_c138be787565f55b939741a65574a8ea}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-edit\_\-view\_\-form\_\-cancel@{views\_\-ui\_\-edit\_\-view\_\-form\_\-cancel}}
+\index{views\_\-ui\_\-edit\_\-view\_\-form\_\-cancel@{views\_\-ui\_\-edit\_\-view\_\-form\_\-cancel}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-edit\_\-view\_\-form\_\-cancel}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-edit\_\-view\_\-form\_\-cancel (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_c138be787565f55b939741a65574a8ea}
+
+
+Submit handler for the edit \hyperlink{classview}{view} form. \hypertarget{admin_8inc_1175fee9669154b7486a7e2fbfc6efae}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-edit\_\-view\_\-form\_\-submit@{views\_\-ui\_\-edit\_\-view\_\-form\_\-submit}}
+\index{views\_\-ui\_\-edit\_\-view\_\-form\_\-submit@{views\_\-ui\_\-edit\_\-view\_\-form\_\-submit}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-edit\_\-view\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-edit\_\-view\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_1175fee9669154b7486a7e2fbfc6efae}
+
+
+Submit handler for the edit \hyperlink{classview}{view} form. \hypertarget{admin_8inc_64c87654d6ff972d3755b11283257766}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-edit\_\-view\_\-form\_\-validate@{views\_\-ui\_\-edit\_\-view\_\-form\_\-validate}}
+\index{views\_\-ui\_\-edit\_\-view\_\-form\_\-validate@{views\_\-ui\_\-edit\_\-view\_\-form\_\-validate}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-edit\_\-view\_\-form\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-edit\_\-view\_\-form\_\-validate (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_64c87654d6ff972d3755b11283257766}
+
+
+Validate that a \hyperlink{classview}{view} is complete and whole. \hypertarget{admin_8inc_82465b0f9577f7992268365fc49dee3d}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-enable\_\-page@{views\_\-ui\_\-enable\_\-page}}
+\index{views\_\-ui\_\-enable\_\-page@{views\_\-ui\_\-enable\_\-page}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-enable\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-enable\_\-page (\$ {\em view})}}
+\label{admin_8inc_82465b0f9577f7992268365fc49dee3d}
+
+
+Page callback for the Views enable page. \hypertarget{admin_8inc_24de19609cbac147d353b05d1d0cf54d}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-export\_\-page@{views\_\-ui\_\-export\_\-page}}
+\index{views\_\-ui\_\-export\_\-page@{views\_\-ui\_\-export\_\-page}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-export\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-export\_\-page (\&\$ {\em form\_\-state}, \/  \$ {\em view})}}
+\label{admin_8inc_24de19609cbac147d353b05d1d0cf54d}
+
+
+Export a \hyperlink{classview}{view} for cut \& paste. \hypertarget{admin_8inc_6c6227b21a8ca8e33eabfe00598410cd}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-get\_\-roles@{views\_\-ui\_\-get\_\-roles}}
+\index{views\_\-ui\_\-get\_\-roles@{views\_\-ui\_\-get\_\-roles}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-get\_\-roles}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-get\_\-roles ()}}
+\label{admin_8inc_6c6227b21a8ca8e33eabfe00598410cd}
+
+
+Get a list of roles in the system. \hypertarget{admin_8inc_4cf23cf7b1b9b27fb6a3a93c90447b5f}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-import\_\-page@{views\_\-ui\_\-import\_\-page}}
+\index{views\_\-ui\_\-import\_\-page@{views\_\-ui\_\-import\_\-page}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-import\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-import\_\-page (\&\$ {\em form\_\-state})}}
+\label{admin_8inc_4cf23cf7b1b9b27fb6a3a93c90447b5f}
+
+
+Import a \hyperlink{classview}{view} from cut \& paste \hypertarget{admin_8inc_f208375534e14a238da0f2979bd7c43e}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-import\_\-submit@{views\_\-ui\_\-import\_\-submit}}
+\index{views\_\-ui\_\-import\_\-submit@{views\_\-ui\_\-import\_\-submit}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-import\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-import\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_f208375534e14a238da0f2979bd7c43e}
+
+
+Submit handler for \hyperlink{classview}{view} import \hypertarget{admin_8inc_d5771e62497700de3986f6b03a5a3ab6}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-import\_\-validate@{views\_\-ui\_\-import\_\-validate}}
+\index{views\_\-ui\_\-import\_\-validate@{views\_\-ui\_\-import\_\-validate}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-import\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-import\_\-validate (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_d5771e62497700de3986f6b03a5a3ab6}
+
+
+Validate handler to import a \hyperlink{classview}{view} \hypertarget{admin_8inc_f6b6dd299deaebad2b2bb09dc78afab3}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-item\_\-css@{views\_\-ui\_\-item\_\-css}}
+\index{views\_\-ui\_\-item\_\-css@{views\_\-ui\_\-item\_\-css}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-item\_\-css}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-item\_\-css (\$ {\em item})}}
+\label{admin_8inc_f6b6dd299deaebad2b2bb09dc78afab3}
+
+
+Get a css safe id for a particular section. \hypertarget{admin_8inc_aab40d1cdd76cf120dd01aa63a3944e9}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-list\_\-views@{views\_\-ui\_\-list\_\-views}}
+\index{views\_\-ui\_\-list\_\-views@{views\_\-ui\_\-list\_\-views}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-list\_\-views}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-list\_\-views (\$ {\em arg} = {\tt NULL})}}
+\label{admin_8inc_aab40d1cdd76cf120dd01aa63a3944e9}
+
+
+Page callback to list views in the system. \hypertarget{admin_8inc_3f7e4656b6cc3f6b246e20a044f09504}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-list\_\-views\_\-form@{views\_\-ui\_\-list\_\-views\_\-form}}
+\index{views\_\-ui\_\-list\_\-views\_\-form@{views\_\-ui\_\-list\_\-views\_\-form}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-list\_\-views\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-list\_\-views\_\-form (\&\$ {\em form\_\-state})}}
+\label{admin_8inc_3f7e4656b6cc3f6b246e20a044f09504}
+
+
+Provide a form for sorting and filtering the list of views. \hypertarget{admin_8inc_82e72453c3ff3f251677786b58bb66ec}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-preview@{views\_\-ui\_\-preview}}
+\index{views\_\-ui\_\-preview@{views\_\-ui\_\-preview}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-preview}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-preview (\$ {\em js}, \/  \$ {\em view})}}
+\label{admin_8inc_82e72453c3ff3f251677786b58bb66ec}
+
+
+Page callback for the live preview.
+
+\begin{Desc}
+\item[\hyperlink{todo__todo000007}{Todo}]make this use a template \end{Desc}
+\hypertarget{admin_8inc_4fb153a5a54a26dd25b421020cbe538a}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-preview\_\-form@{views\_\-ui\_\-preview\_\-form}}
+\index{views\_\-ui\_\-preview\_\-form@{views\_\-ui\_\-preview\_\-form}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-preview\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-preview\_\-form (\&\$ {\em form\_\-state})}}
+\label{admin_8inc_4fb153a5a54a26dd25b421020cbe538a}
+
+
+Form for generating argument information for the live preview. \hypertarget{admin_8inc_ea5410d3cb0285a98e318812447befd3}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-preview\_\-form\_\-submit@{views\_\-ui\_\-preview\_\-form\_\-submit}}
+\index{views\_\-ui\_\-preview\_\-form\_\-submit@{views\_\-ui\_\-preview\_\-form\_\-submit}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-preview\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-preview\_\-form\_\-submit (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_ea5410d3cb0285a98e318812447befd3}
+
+
+Submit the preview form.
+
+This just takes the data and stores it on the form state in a known location. The caller will be responsible for using it. \hypertarget{admin_8inc_ed46401ae2bf055dc722299e6f041b9b}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-rearrange\_\-form@{views\_\-ui\_\-rearrange\_\-form}}
+\index{views\_\-ui\_\-rearrange\_\-form@{views\_\-ui\_\-rearrange\_\-form}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-rearrange\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-rearrange\_\-form (\&\$ {\em form\_\-state})}}
+\label{admin_8inc_ed46401ae2bf055dc722299e6f041b9b}
+
+
+Form to rearrange items in the views UI. \hypertarget{admin_8inc_6cc534f5a5904b1b21333fb063836be7}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-rearrange\_\-form\_\-submit@{views\_\-ui\_\-rearrange\_\-form\_\-submit}}
+\index{views\_\-ui\_\-rearrange\_\-form\_\-submit@{views\_\-ui\_\-rearrange\_\-form\_\-submit}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-rearrange\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-rearrange\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_6cc534f5a5904b1b21333fb063836be7}
+
+
+Submit handler for rearranging form \hypertarget{admin_8inc_edcac3bc6fcf479946e4fcf5c8a5eb26}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-regenerate\_\-tabs@{views\_\-ui\_\-regenerate\_\-tabs}}
+\index{views\_\-ui\_\-regenerate\_\-tabs@{views\_\-ui\_\-regenerate\_\-tabs}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-regenerate\_\-tabs}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-regenerate\_\-tabs (\&\$ {\em view}, \/  \$ {\em display\_\-id} = {\tt NULL}, \/  \$ {\em object} = {\tt NULL})}}
+\label{admin_8inc_edcac3bc6fcf479946e4fcf5c8a5eb26}
+
+
+Regenerate the tabs for AJAX updates. \hypertarget{admin_8inc_f4e3e3ea2e61d0352567b4fed8bda83f}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-remove\_\-display\_\-form@{views\_\-ui\_\-remove\_\-display\_\-form}}
+\index{views\_\-ui\_\-remove\_\-display\_\-form@{views\_\-ui\_\-remove\_\-display\_\-form}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-remove\_\-display\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-remove\_\-display\_\-form (\&\$ {\em form\_\-state})}}
+\label{admin_8inc_f4e3e3ea2e61d0352567b4fed8bda83f}
+
+
+Form to remove a display from a \hyperlink{classview}{view}. \hypertarget{admin_8inc_85640b9f63281c89ed546c623c22c776}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-remove\_\-display\_\-form\_\-restore@{views\_\-ui\_\-remove\_\-display\_\-form\_\-restore}}
+\index{views\_\-ui\_\-remove\_\-display\_\-form\_\-restore@{views\_\-ui\_\-remove\_\-display\_\-form\_\-restore}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-remove\_\-display\_\-form\_\-restore}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-remove\_\-display\_\-form\_\-restore (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_85640b9f63281c89ed546c623c22c776}
+
+
+Submit handler to add a restore a removed display to a \hyperlink{classview}{view}. \hypertarget{admin_8inc_7f6a9599a03beef16e3917fa0a1c275d}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-remove\_\-display\_\-form\_\-submit@{views\_\-ui\_\-remove\_\-display\_\-form\_\-submit}}
+\index{views\_\-ui\_\-remove\_\-display\_\-form\_\-submit@{views\_\-ui\_\-remove\_\-display\_\-form\_\-submit}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-remove\_\-display\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-remove\_\-display\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_7f6a9599a03beef16e3917fa0a1c275d}
+
+
+Submit handler to add a remove to a display from a \hyperlink{classview}{view}. \hypertarget{admin_8inc_69c20e73b4a54447f15797c44bdb8344}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-standard\_\-cancel@{views\_\-ui\_\-standard\_\-cancel}}
+\index{views\_\-ui\_\-standard\_\-cancel@{views\_\-ui\_\-standard\_\-cancel}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-standard\_\-cancel}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-standard\_\-cancel (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_69c20e73b4a54447f15797c44bdb8344}
+
+
+Submit handler for cancel button \hypertarget{admin_8inc_14c82c16cedbaecf8fb20e1aabc1a15b}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-standard\_\-form\_\-buttons@{views\_\-ui\_\-standard\_\-form\_\-buttons}}
+\index{views\_\-ui\_\-standard\_\-form\_\-buttons@{views\_\-ui\_\-standard\_\-form\_\-buttons}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-standard\_\-form\_\-buttons}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-standard\_\-form\_\-buttons (\&\$ {\em form}, \/  \&\$ {\em form\_\-state}, \/  \$ {\em form\_\-id}, \/  \$ {\em name} = {\tt NULL}, \/  \$ {\em third} = {\tt NULL}, \/  \$ {\em submit} = {\tt NULL})}}
+\label{admin_8inc_14c82c16cedbaecf8fb20e1aabc1a15b}
+
+
+Provide standard buttons for the forms to make it easy. Also provide a hidden op operator because the forms plugin doesn't seem to properly provide which button was clicked. \hypertarget{admin_8inc_9af5bfc6978dc754bdfe126ac758deda}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-standard\_\-submit@{views\_\-ui\_\-standard\_\-submit}}
+\index{views\_\-ui\_\-standard\_\-submit@{views\_\-ui\_\-standard\_\-submit}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-standard\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-standard\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{admin_8inc_9af5bfc6978dc754bdfe126ac758deda}
+
+
+Basic submit handler applicable to all 'standard' forms \hypertarget{admin_8inc_20d738f2a5405c5fbbdbd82954bbf050}{
+\index{admin.inc@{admin.inc}!views\_\-ui\_\-tools\_\-clear\_\-cache@{views\_\-ui\_\-tools\_\-clear\_\-cache}}
+\index{views\_\-ui\_\-tools\_\-clear\_\-cache@{views\_\-ui\_\-tools\_\-clear\_\-cache}!admin.inc@{admin.inc}}
+\subsubsection[{views\_\-ui\_\-tools\_\-clear\_\-cache}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-ui\_\-tools\_\-clear\_\-cache ()}}
+\label{admin_8inc_20d738f2a5405c5fbbdbd82954bbf050}
+
+
+Submit hook to clear the views cache. 

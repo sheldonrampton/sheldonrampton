@@ -1,0 +1,439 @@
+\hypertarget{classviews__query}{
+\section{views\_\-query Class Reference}
+\label{classviews__query}\index{views\_\-query@{views\_\-query}}
+}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__query_fa6130b3c7d7a5a5edb03069bb7d8995}{views\_\-query} (\$base\_\-table= 'node', \$base\_\-field= 'nid')
+\item 
+\hyperlink{classviews__query_cb3f17ef4ae3d80a44ee7b6962165247}{set\_\-distinct} (\$value=TRUE)
+\item 
+\hyperlink{classviews__query_b669461223ddaae12248f28b4ccfb525}{set\_\-count\_\-field} (\$table, \$field, \$alias=NULL)
+\item 
+\hyperlink{classviews__query_83e8dfa6c88442e0f34b00d467f3b35e}{set\_\-header} (\$header)
+\item 
+\hyperlink{classviews__query_db0faccc1a266ce414a3dc58f4de22d0}{add\_\-relationship} (\$alias, \$join, \$base, \$link\_\-point=NULL)
+\item 
+\hyperlink{classviews__query_52cdfc5396008424c4c232cca1a8f8bb}{add\_\-table} (\$table, \$relationship=NULL, \$join=NULL, \$alias=NULL)
+\item 
+\hyperlink{classviews__query_0ed3905be8cddfdbde96a39569686bcb}{queue\_\-table} (\$table, \$relationship=NULL, \$join=NULL, \$alias=NULL)
+\item 
+\hypertarget{classviews__query_60d0c1c4304248692893fda0a3281af3}{
+\textbf{mark\_\-table} (\$table, \$relationship, \$alias)}
+\label{classviews__query_60d0c1c4304248692893fda0a3281af3}
+
+\item 
+\hyperlink{classviews__query_78c615fc19826e8a640ab27874e2fdaf}{ensure\_\-table} (\$table, \$relationship=NULL, \$join=NULL)
+\item 
+\hyperlink{classviews__query_2571123727140d93d8ee3357968a626e}{ensure\_\-path} (\$table, \$relationship=NULL, \$join=NULL, \$traced=array(), \$add=array())
+\item 
+\hyperlink{classviews__query_9eb7d6626aa24ae83d922cc59682318c}{adjust\_\-join} (\$join, \$relationship)
+\item 
+\hyperlink{classviews__query_de77e3ef670bde3a2eacf8d73f5859fa}{get\_\-join\_\-data} (\$table, \$base\_\-table)
+\item 
+\hyperlink{classviews__query_e4b476ae432575dab501ed30b5421b7d}{get\_\-table\_\-info} (\$table)
+\item 
+\hyperlink{classviews__query_7d073b7dde56cfb8c0e97696b50d5da4}{add\_\-field} (\$table, \$field, \$alias= '', \$params=NULL)
+\item 
+\hyperlink{classviews__query_f36b1f088b20f1d98d23dbf49ee68e97}{clear\_\-fields} ()
+\item 
+\hyperlink{classviews__query_7c803401b485f379a93688efd7aa2886}{set\_\-where\_\-group} (\$type= 'AND', \$group=NULL, \$where= 'where')
+\item 
+\hyperlink{classviews__query_8dfc6f355b29f697401f0dc7f7aa82a1}{set\_\-group\_\-operator} (\$type= 'AND')
+\item 
+\hyperlink{classviews__query_88733d15379fa820cc588b11a298a3af}{add\_\-where} (\$group, \$clause)
+\item 
+\hyperlink{classviews__query_db01fc3898236d7f3c9134cd5971ff67}{add\_\-having} (\$group, \$clause)
+\item 
+\hyperlink{classviews__query_d6ad02de9d393f27da6b998ff54a91ec}{add\_\-orderby} (\$table, \$field, \$order, \$alias= '')
+\item 
+\hyperlink{classviews__query_089b7eab81ec9cb4b24aa489ff4ac448}{add\_\-groupby} (\$clause)
+\item 
+\hyperlink{classviews__query_2048d9a8aefd815a30833b26f6070fb2}{condition\_\-sql} (\$where= 'where')
+\item 
+\hyperlink{classviews__query_50460c7856f25847d361a45a6c1d4b69}{query} (\$get\_\-count=FALSE)
+\item 
+\hyperlink{classviews__query_caf5f2625a89d8b29e6d9ad6127d1b17}{get\_\-where\_\-args} ()
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__query_209ff1ef3916cfbdfc70560e567a9cc0}{\$table\_\-queue} = array()
+\item 
+\hyperlink{classviews__query_cec1482297b871cac1fddcef0a0e8ab1}{\$tables} = array()
+\item 
+\hyperlink{classviews__query_deed5f6f13a7d105ada7c1329c3169d6}{\$relationships} = array()
+\item 
+\hyperlink{classviews__query_2654e7db457f1b7ec34ca1ac3345fc83}{\$where} = array()
+\item 
+\hyperlink{classviews__query_a63f09e8b8810660bbc0c480f763c8a7}{\$having} = array()
+\item 
+\hyperlink{classviews__query_a290c68d4f2fd7ccc73219ce5e57d0f7}{\$group\_\-operator} = 'AND'
+\item 
+\hyperlink{classviews__query_03a5999bf0fcd2bd5a51dfea6c78ebdb}{\$orderby} = array()
+\item 
+\hyperlink{classviews__query_9e680695793121eceb7da5e5f8f0105a}{\$groupby} = array()
+\item 
+\hyperlink{classviews__query_8c8dc5000b07e8a5ade3691ddabecbc3}{\$header} = array()
+\item 
+\hyperlink{classviews__query_48c0f8c68da79257d96109835021305c}{\$distinct} = FALSE
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Object used to create a SELECT query. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__query_7d073b7dde56cfb8c0e97696b50d5da4}{
+\index{views\_\-query@{views\_\-query}!add\_\-field@{add\_\-field}}
+\index{add\_\-field@{add\_\-field}!views_query@{views\_\-query}}
+\subsubsection[{add\_\-field}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::add\_\-field (\$ {\em table}, \/  \$ {\em field}, \/  \$ {\em alias} = {\tt ''}, \/  \$ {\em params} = {\tt NULL})}}
+\label{classviews__query_7d073b7dde56cfb8c0e97696b50d5da4}
+
+
+Add a field to the query table, possibly with an alias. This will automatically call ensure\_\-table to make sure the required table exists, $\ast$unless$\ast$ \$table is unset.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$table}]The table this field is attached to. If NULL, it is assumed this will be a formula; otherwise, ensure\_\-table is used to make sure the table exists. \item[{\em \$field}]The name of the field to add. This may be a real field or a formula. \item[{\em \$alias}]The alias to create. If not specified, the alias will be \$table\_\-\$field unless \$table is NULL. When adding formulae, it is recommended that an alias be used.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]\$name The name that this field can be referred to as. Usually this is the alias. \end{Desc}
+\hypertarget{classviews__query_089b7eab81ec9cb4b24aa489ff4ac448}{
+\index{views\_\-query@{views\_\-query}!add\_\-groupby@{add\_\-groupby}}
+\index{add\_\-groupby@{add\_\-groupby}!views_query@{views\_\-query}}
+\subsubsection[{add\_\-groupby}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::add\_\-groupby (\$ {\em clause})}}
+\label{classviews__query_089b7eab81ec9cb4b24aa489ff4ac448}
+
+
+Add a simple GROUP BY clause to the query. The caller is responsible for ensuring that the fields are fully qualified and the table is properly added. \hypertarget{classviews__query_db01fc3898236d7f3c9134cd5971ff67}{
+\index{views\_\-query@{views\_\-query}!add\_\-having@{add\_\-having}}
+\index{add\_\-having@{add\_\-having}!views_query@{views\_\-query}}
+\subsubsection[{add\_\-having}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::add\_\-having (\$ {\em group}, \/  \$ {\em clause})}}
+\label{classviews__query_db01fc3898236d7f3c9134cd5971ff67}
+
+
+Add a simple HAVING clause to the query. The caller is responsible for ensuring that all fields are fully qualified (TABLE.FIELD) and that the table and an appropriate GROUP BY already exist in the query.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$group}]The HAVING group to add these to; groups are used to create AND/OR sections. Groups cannot be nested. Use 0 as the default group. If the group does not yet exist it will be created as an AND group. \item[{\em \$clause}]The actual clause to add. When adding a having clause it is important that all tables are addressed by the alias provided by add\_\-table or ensure\_\-table and that all fields are addressed by their alias wehn possible. Please use d and s for arguments. \item[{\em ...}]A number of arguments as used in \hyperlink{database_8mysql-common_8inc_9e096321b86945d128746ac7bedce8f3}{db\_\-query()}. May be many args or one array full of args. \end{description}
+\end{Desc}
+\hypertarget{classviews__query_d6ad02de9d393f27da6b998ff54a91ec}{
+\index{views\_\-query@{views\_\-query}!add\_\-orderby@{add\_\-orderby}}
+\index{add\_\-orderby@{add\_\-orderby}!views_query@{views\_\-query}}
+\subsubsection[{add\_\-orderby}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::add\_\-orderby (\$ {\em table}, \/  \$ {\em field}, \/  \$ {\em order}, \/  \$ {\em alias} = {\tt ''})}}
+\label{classviews__query_d6ad02de9d393f27da6b998ff54a91ec}
+
+
+Add an ORDER BY clause to the query.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$table}]The table this field is part of. If a formula, enter NULL. \item[{\em \$field}]The field or formula to sort on. If already a field, enter NULL and put in the alias. \item[{\em \$order}]Either ASC or DESC. \item[{\em \$alias}]The alias to add the field as. In SQL, all fields in the order by must also be in the SELECT portion. If an \$alias isn't specified one will be generated for from the \$field; however, if the \$field is a formula, this alias will likely fail. \end{description}
+\end{Desc}
+\hypertarget{classviews__query_db0faccc1a266ce414a3dc58f4de22d0}{
+\index{views\_\-query@{views\_\-query}!add\_\-relationship@{add\_\-relationship}}
+\index{add\_\-relationship@{add\_\-relationship}!views_query@{views\_\-query}}
+\subsubsection[{add\_\-relationship}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::add\_\-relationship (\$ {\em alias}, \/  \$ {\em join}, \/  \$ {\em base}, \/  \$ {\em link\_\-point} = {\tt NULL})}}
+\label{classviews__query_db0faccc1a266ce414a3dc58f4de22d0}
+
+
+A relationship is an alternative endpoint to a series of table joins. Relationships must be aliases of the primary table and they must join either to the primary table or to a pre-existing relationship.
+
+An example of a relationship would be a nodereference table. If you have a nodereference named 'book\_\-parent' which links to a parent node, you could set up a relationship 'node\_\-book\_\-parent' to 'node'. Then, anything that links to 'node' can link to 'node\_\-book\_\-parent' instead, thus allowing all properties of both nodes to be available in the query.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$alias}]What this relationship will be called, and is also the alias for the table. \item[{\em \$join}]A \hyperlink{classviews__join}{views\_\-join} object (or derived object) to join the alias in. \item[{\em \$base}]The name of the 'base' table this relationship represents; this tells the join search which path to attempt to use when finding the path to this relationship. \item[{\em \$link\_\-point}]If this relationship links to something other than the primary table, specify that table here. For example, a 'track' node might have a relationship to an 'album' node, which might have a relationship to an 'artist' node. \end{description}
+\end{Desc}
+\hypertarget{classviews__query_52cdfc5396008424c4c232cca1a8f8bb}{
+\index{views\_\-query@{views\_\-query}!add\_\-table@{add\_\-table}}
+\index{add\_\-table@{add\_\-table}!views_query@{views\_\-query}}
+\subsubsection[{add\_\-table}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::add\_\-table (\$ {\em table}, \/  \$ {\em relationship} = {\tt NULL}, \/  \$ {\em join} = {\tt NULL}, \/  \$ {\em alias} = {\tt NULL})}}
+\label{classviews__query_52cdfc5396008424c4c232cca1a8f8bb}
+
+
+Add a table to the query, ensuring the path exists.
+
+This function will test to ensure that the path back to the primary table is valid and exists; if you do not wish for this testing to occur, use \$query-$>$\hyperlink{classviews__query_0ed3905be8cddfdbde96a39569686bcb}{queue\_\-table()} instead.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$table}]The name of the table to add. It needs to exist in the global table array. \item[{\em \$relationship}]An alias of a table; if this is set, the path back to this table will be tested prior to adding the table, making sure that all intermediary tables exist and are properly aliased. If set to NULL the path to the primary table will be ensured. If the path cannot be made, the table will NOT be added. \item[{\em \$join}]In some join configurations this table may actually join back through a different method; this is most likely to be used when tracing a hierarchy path. (node-$>$parent-$>$parent2-$>$parent3). This parameter will specify how this table joins if it is not the default. \item[{\em \$alias}]A specific alias to use, rather than the default alias.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]\$alias The alias of the table; this alias can be used to access information about the table and should always be used to refer to the table when adding parts to the query. Or FALSE if the table was not able to be added. \end{Desc}
+\hypertarget{classviews__query_88733d15379fa820cc588b11a298a3af}{
+\index{views\_\-query@{views\_\-query}!add\_\-where@{add\_\-where}}
+\index{add\_\-where@{add\_\-where}!views_query@{views\_\-query}}
+\subsubsection[{add\_\-where}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::add\_\-where (\$ {\em group}, \/  \$ {\em clause})}}
+\label{classviews__query_88733d15379fa820cc588b11a298a3af}
+
+
+Add a simple WHERE clause to the query. The caller is responsible for ensuring that all fields are fully qualified (TABLE.FIELD) and that the table already exists in the query.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$group}]The WHERE group to add these to; groups are used to create AND/OR sections. Groups cannot be nested. Use 0 as the default group. If the group does not yet exist it will be created as an AND group. \item[{\em \$clause}]The actual clause to add. When adding a where clause it is important that all tables are addressed by the alias provided by add\_\-table or ensure\_\-table and that all fields are addressed by their alias wehn possible. Please use d and s for arguments. \item[{\em ...}]A number of arguments as used in \hyperlink{database_8mysql-common_8inc_9e096321b86945d128746ac7bedce8f3}{db\_\-query()}. May be many args or one array full of args. \end{description}
+\end{Desc}
+\hypertarget{classviews__query_9eb7d6626aa24ae83d922cc59682318c}{
+\index{views\_\-query@{views\_\-query}!adjust\_\-join@{adjust\_\-join}}
+\index{adjust\_\-join@{adjust\_\-join}!views_query@{views\_\-query}}
+\subsubsection[{adjust\_\-join}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::adjust\_\-join (\$ {\em join}, \/  \$ {\em relationship})}}
+\label{classviews__query_9eb7d6626aa24ae83d922cc59682318c}
+
+
+Fix a join to adhere to the proper relationship; the left table can vary based upon what relationship items are joined in on. \hypertarget{classviews__query_f36b1f088b20f1d98d23dbf49ee68e97}{
+\index{views\_\-query@{views\_\-query}!clear\_\-fields@{clear\_\-fields}}
+\index{clear\_\-fields@{clear\_\-fields}!views_query@{views\_\-query}}
+\subsubsection[{clear\_\-fields}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::clear\_\-fields ()}}
+\label{classviews__query_f36b1f088b20f1d98d23dbf49ee68e97}
+
+
+Remove all fields that may've been added; primarily used for summary mode where we're changing the query because we didn't get data we needed. \hypertarget{classviews__query_2048d9a8aefd815a30833b26f6070fb2}{
+\index{views\_\-query@{views\_\-query}!condition\_\-sql@{condition\_\-sql}}
+\index{condition\_\-sql@{condition\_\-sql}!views_query@{views\_\-query}}
+\subsubsection[{condition\_\-sql}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::condition\_\-sql (\$ {\em where} = {\tt 'where'})}}
+\label{classviews__query_2048d9a8aefd815a30833b26f6070fb2}
+
+
+Construct the \char`\"{}WHERE\char`\"{} or \char`\"{}HAVING\char`\"{} part of the query.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$where}]'where' or 'having'. \end{description}
+\end{Desc}
+\hypertarget{classviews__query_2571123727140d93d8ee3357968a626e}{
+\index{views\_\-query@{views\_\-query}!ensure\_\-path@{ensure\_\-path}}
+\index{ensure\_\-path@{ensure\_\-path}!views_query@{views\_\-query}}
+\subsubsection[{ensure\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::ensure\_\-path (\$ {\em table}, \/  \$ {\em relationship} = {\tt NULL}, \/  \$ {\em join} = {\tt NULL}, \/  \$ {\em traced} = {\tt array()}, \/  \$ {\em add} = {\tt array()})}}
+\label{classviews__query_2571123727140d93d8ee3357968a626e}
+
+
+Make sure that the specified table can be properly linked to the primary table in the JOINs. This function uses recursion. If the tables needed to complete the path back to the primary table are not in the query they will be added, but additional copies will NOT be added if the table is already there. \hypertarget{classviews__query_78c615fc19826e8a640ab27874e2fdaf}{
+\index{views\_\-query@{views\_\-query}!ensure\_\-table@{ensure\_\-table}}
+\index{ensure\_\-table@{ensure\_\-table}!views_query@{views\_\-query}}
+\subsubsection[{ensure\_\-table}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::ensure\_\-table (\$ {\em table}, \/  \$ {\em relationship} = {\tt NULL}, \/  \$ {\em join} = {\tt NULL})}}
+\label{classviews__query_78c615fc19826e8a640ab27874e2fdaf}
+
+
+Ensure a table exists in the queue; if it already exists it won't do anything, but if it doesn't it will add the table queue. It will ensure a path leads back to the relationship table.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$table}]The unaliased name of the table to ensure. \item[{\em \$relationship}]The relationship to ensure the table links to. Each relationship will get a unique instance of the table being added. If not specified, will be the primary table. \item[{\em \$join}]A \hyperlink{classviews__join}{views\_\-join} object (or derived object) to join the alias in.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The alias used to refer to this specific table, or NULL if the table cannot be ensured. \end{Desc}
+\hypertarget{classviews__query_de77e3ef670bde3a2eacf8d73f5859fa}{
+\index{views\_\-query@{views\_\-query}!get\_\-join\_\-data@{get\_\-join\_\-data}}
+\index{get\_\-join\_\-data@{get\_\-join\_\-data}!views_query@{views\_\-query}}
+\subsubsection[{get\_\-join\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::get\_\-join\_\-data (\$ {\em table}, \/  \$ {\em base\_\-table})}}
+\label{classviews__query_de77e3ef670bde3a2eacf8d73f5859fa}
+
+
+Retrieve join data from the larger join data cache.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$table}]The table to get the join information for. \item[{\em \$base\_\-table}]The path we're following to get this join.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]A \hyperlink{classviews__join}{views\_\-join} object or child object, if one exists. \end{Desc}
+\hypertarget{classviews__query_e4b476ae432575dab501ed30b5421b7d}{
+\index{views\_\-query@{views\_\-query}!get\_\-table\_\-info@{get\_\-table\_\-info}}
+\index{get\_\-table\_\-info@{get\_\-table\_\-info}!views_query@{views\_\-query}}
+\subsubsection[{get\_\-table\_\-info}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::get\_\-table\_\-info (\$ {\em table})}}
+\label{classviews__query_e4b476ae432575dab501ed30b5421b7d}
+
+
+Get the information associated with a table.
+
+If you need the alias of a table with a particular relationship, use \hyperlink{classviews__query_78c615fc19826e8a640ab27874e2fdaf}{ensure\_\-table()}. \hypertarget{classviews__query_caf5f2625a89d8b29e6d9ad6127d1b17}{
+\index{views\_\-query@{views\_\-query}!get\_\-where\_\-args@{get\_\-where\_\-args}}
+\index{get\_\-where\_\-args@{get\_\-where\_\-args}!views_query@{views\_\-query}}
+\subsubsection[{get\_\-where\_\-args}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::get\_\-where\_\-args ()}}
+\label{classviews__query_caf5f2625a89d8b29e6d9ad6127d1b17}
+
+
+Get the arguments attached to the WHERE and HAVING clauses of this query. \hypertarget{classviews__query_50460c7856f25847d361a45a6c1d4b69}{
+\index{views\_\-query@{views\_\-query}!query@{query}}
+\index{query@{query}!views_query@{views\_\-query}}
+\subsubsection[{query}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::query (\$ {\em get\_\-count} = {\tt FALSE})}}
+\label{classviews__query_50460c7856f25847d361a45a6c1d4b69}
+
+
+Generate a query and a countquery from all of the information supplied to the object.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$get\_\-count}]Provide a countquery if this is true, otherwise provide a normal query. \end{description}
+\end{Desc}
+
+
+An optimized count query includes just the base field instead of all the fields. Determine of this query qualifies by checking for a groupby or distinct.\hypertarget{classviews__query_0ed3905be8cddfdbde96a39569686bcb}{
+\index{views\_\-query@{views\_\-query}!queue\_\-table@{queue\_\-table}}
+\index{queue\_\-table@{queue\_\-table}!views_query@{views\_\-query}}
+\subsubsection[{queue\_\-table}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::queue\_\-table (\$ {\em table}, \/  \$ {\em relationship} = {\tt NULL}, \/  \$ {\em join} = {\tt NULL}, \/  \$ {\em alias} = {\tt NULL})}}
+\label{classviews__query_0ed3905be8cddfdbde96a39569686bcb}
+
+
+Add a table to the query, without ensuring the path.
+
+This function will test to ensure that the path back to the primary table is valid and exists; if you do not wish for this testing to occur, use \$query-$>$\hyperlink{classviews__query_0ed3905be8cddfdbde96a39569686bcb}{queue\_\-table()} instead.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$table}]The name of the table to add. It needs to exist in the global table array. \item[{\em \$relationship}]The primary table alias this table is related to. If not set, the primary table will be used. \item[{\em \$join}]In some join configurations this table may actually join back through a different method; this is most likely to be used when tracing a hierarchy path. (node-$>$parent-$>$parent2-$>$parent3). This parameter will specify how this table joins if it is not the default. \item[{\em \$alias}]A specific alias to use, rather than the default alias.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]\$alias The alias of the table; this alias can be used to access information about the table and should always be used to refer to the table when adding parts to the query. Or FALSE if the table was not able to be added. \end{Desc}
+\hypertarget{classviews__query_b669461223ddaae12248f28b4ccfb525}{
+\index{views\_\-query@{views\_\-query}!set\_\-count\_\-field@{set\_\-count\_\-field}}
+\index{set\_\-count\_\-field@{set\_\-count\_\-field}!views_query@{views\_\-query}}
+\subsubsection[{set\_\-count\_\-field}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::set\_\-count\_\-field (\$ {\em table}, \/  \$ {\em field}, \/  \$ {\em alias} = {\tt NULL})}}
+\label{classviews__query_b669461223ddaae12248f28b4ccfb525}
+
+
+Set what field the query will count() on for paging. \hypertarget{classviews__query_cb3f17ef4ae3d80a44ee7b6962165247}{
+\index{views\_\-query@{views\_\-query}!set\_\-distinct@{set\_\-distinct}}
+\index{set\_\-distinct@{set\_\-distinct}!views_query@{views\_\-query}}
+\subsubsection[{set\_\-distinct}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::set\_\-distinct (\$ {\em value} = {\tt TRUE})}}
+\label{classviews__query_cb3f17ef4ae3d80a44ee7b6962165247}
+
+
+Set the base field to be distinct. \hypertarget{classviews__query_8dfc6f355b29f697401f0dc7f7aa82a1}{
+\index{views\_\-query@{views\_\-query}!set\_\-group\_\-operator@{set\_\-group\_\-operator}}
+\index{set\_\-group\_\-operator@{set\_\-group\_\-operator}!views_query@{views\_\-query}}
+\subsubsection[{set\_\-group\_\-operator}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::set\_\-group\_\-operator (\$ {\em type} = {\tt 'AND'})}}
+\label{classviews__query_8dfc6f355b29f697401f0dc7f7aa82a1}
+
+
+Control how all WHERE and HAVING groups are put together.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$type}]Either 'AND' or 'OR' \end{description}
+\end{Desc}
+\hypertarget{classviews__query_83e8dfa6c88442e0f34b00d467f3b35e}{
+\index{views\_\-query@{views\_\-query}!set\_\-header@{set\_\-header}}
+\index{set\_\-header@{set\_\-header}!views_query@{views\_\-query}}
+\subsubsection[{set\_\-header}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::set\_\-header (\$ {\em header})}}
+\label{classviews__query_83e8dfa6c88442e0f34b00d467f3b35e}
+
+
+Set the table header; used for click-sorting because it's needed info to modify the ORDER BY clause. \hypertarget{classviews__query_7c803401b485f379a93688efd7aa2886}{
+\index{views\_\-query@{views\_\-query}!set\_\-where\_\-group@{set\_\-where\_\-group}}
+\index{set\_\-where\_\-group@{set\_\-where\_\-group}!views_query@{views\_\-query}}
+\subsubsection[{set\_\-where\_\-group}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::set\_\-where\_\-group (\$ {\em type} = {\tt 'AND'}, \/  \$ {\em group} = {\tt NULL}, \/  \$ {\em where} = {\tt 'where'})}}
+\label{classviews__query_7c803401b485f379a93688efd7aa2886}
+
+
+Create a new grouping for the WHERE or HAVING clause.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$type}]Either 'AND' or 'OR'. All items within this group will be added to the WHERE clause with this logical operator. \item[{\em \$group}]An ID to use for this group. If unspecified, an ID will be generated. \item[{\em \$where}]'where' or 'having'.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]\$group The group ID generated. \end{Desc}
+\hypertarget{classviews__query_fa6130b3c7d7a5a5edb03069bb7d8995}{
+\index{views\_\-query@{views\_\-query}!views\_\-query@{views\_\-query}}
+\index{views\_\-query@{views\_\-query}!views_query@{views\_\-query}}
+\subsubsection[{views\_\-query}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::views\_\-query (\$ {\em base\_\-table} = {\tt 'node'}, \/  \$ {\em base\_\-field} = {\tt 'nid'})}}
+\label{classviews__query_fa6130b3c7d7a5a5edb03069bb7d8995}
+
+
+Constructor; Create the basic query object and fill with default values. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classviews__query_48c0f8c68da79257d96109835021305c}{
+\index{views\_\-query@{views\_\-query}!\$distinct@{\$distinct}}
+\index{\$distinct@{\$distinct}!views_query@{views\_\-query}}
+\subsubsection[{\$distinct}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::\$distinct = FALSE}}
+\label{classviews__query_48c0f8c68da79257d96109835021305c}
+
+
+A flag as to whether or not to make the primary field distinct. \hypertarget{classviews__query_a290c68d4f2fd7ccc73219ce5e57d0f7}{
+\index{views\_\-query@{views\_\-query}!\$group\_\-operator@{\$group\_\-operator}}
+\index{\$group\_\-operator@{\$group\_\-operator}!views_query@{views\_\-query}}
+\subsubsection[{\$group\_\-operator}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::\$group\_\-operator = 'AND'}}
+\label{classviews__query_a290c68d4f2fd7ccc73219ce5e57d0f7}
+
+
+The default operator to use when connecting the WHERE groups. May be AND or OR. \hypertarget{classviews__query_9e680695793121eceb7da5e5f8f0105a}{
+\index{views\_\-query@{views\_\-query}!\$groupby@{\$groupby}}
+\index{\$groupby@{\$groupby}!views_query@{views\_\-query}}
+\subsubsection[{\$groupby}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::\$groupby = array()}}
+\label{classviews__query_9e680695793121eceb7da5e5f8f0105a}
+
+
+A simple array of group by clauses. \hypertarget{classviews__query_a63f09e8b8810660bbc0c480f763c8a7}{
+\index{views\_\-query@{views\_\-query}!\$having@{\$having}}
+\index{\$having@{\$having}!views_query@{views\_\-query}}
+\subsubsection[{\$having}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::\$having = array()}}
+\label{classviews__query_a63f09e8b8810660bbc0c480f763c8a7}
+
+
+An array of sections of the HAVING query. Each section is in itself an array of pieces and a flag as to whether or not it should be AND or OR. \hypertarget{classviews__query_8c8dc5000b07e8a5ade3691ddabecbc3}{
+\index{views\_\-query@{views\_\-query}!\$header@{\$header}}
+\index{\$header@{\$header}!views_query@{views\_\-query}}
+\subsubsection[{\$header}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::\$header = array()}}
+\label{classviews__query_8c8dc5000b07e8a5ade3691ddabecbc3}
+
+
+The table header to use for tablesort. This matters because tablesort needs to modify the query and needs the header. \hypertarget{classviews__query_03a5999bf0fcd2bd5a51dfea6c78ebdb}{
+\index{views\_\-query@{views\_\-query}!\$orderby@{\$orderby}}
+\index{\$orderby@{\$orderby}!views_query@{views\_\-query}}
+\subsubsection[{\$orderby}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::\$orderby = array()}}
+\label{classviews__query_03a5999bf0fcd2bd5a51dfea6c78ebdb}
+
+
+A simple array of order by clauses. \hypertarget{classviews__query_deed5f6f13a7d105ada7c1329c3169d6}{
+\index{views\_\-query@{views\_\-query}!\$relationships@{\$relationships}}
+\index{\$relationships@{\$relationships}!views_query@{views\_\-query}}
+\subsubsection[{\$relationships}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::\$relationships = array()}}
+\label{classviews__query_deed5f6f13a7d105ada7c1329c3169d6}
+
+
+Holds an array of relationships, which are aliases of the primary table that represent different ways to join the same table in. \hypertarget{classviews__query_209ff1ef3916cfbdfc70560e567a9cc0}{
+\index{views\_\-query@{views\_\-query}!\$table\_\-queue@{\$table\_\-queue}}
+\index{\$table\_\-queue@{\$table\_\-queue}!views_query@{views\_\-query}}
+\subsubsection[{\$table\_\-queue}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::\$table\_\-queue = array()}}
+\label{classviews__query_209ff1ef3916cfbdfc70560e567a9cc0}
+
+
+A list of tables in the order they should be added, keyed by alias. \hypertarget{classviews__query_cec1482297b871cac1fddcef0a0e8ab1}{
+\index{views\_\-query@{views\_\-query}!\$tables@{\$tables}}
+\index{\$tables@{\$tables}!views_query@{views\_\-query}}
+\subsubsection[{\$tables}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::\$tables = array()}}
+\label{classviews__query_cec1482297b871cac1fddcef0a0e8ab1}
+
+
+Holds an array of tables and counts added so that we can create aliases \hypertarget{classviews__query_2654e7db457f1b7ec34ca1ac3345fc83}{
+\index{views\_\-query@{views\_\-query}!\$where@{\$where}}
+\index{\$where@{\$where}!views_query@{views\_\-query}}
+\subsubsection[{\$where}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-query::\$where = array()}}
+\label{classviews__query_2654e7db457f1b7ec34ca1ac3345fc83}
+
+
+An array of sections of the WHERE query. Each section is in itself an array of pieces and a flag as to whether or not it should be AND or OR. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/includes/\hyperlink{query_8inc}{query.inc}\end{CompactItemize}

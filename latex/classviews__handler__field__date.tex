@@ -1,0 +1,83 @@
+\hypertarget{classviews__handler__field__date}{
+\section{views\_\-handler\_\-field\_\-date Class Reference}
+\label{classviews__handler__field__date}\index{views\_\-handler\_\-field\_\-date@{views\_\-handler\_\-field\_\-date}}
+}
+Inheritance diagram for views\_\-handler\_\-field\_\-date::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5cm]{classviews__handler__field__date}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__handler__field__date_c2c907d5403ef2085b21619293d701c4}{option\_\-definition} ()
+\item 
+\hyperlink{classviews__handler__field__date_cc152b1ff3dd0a65bc4d372c97c7c8e0}{options\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__handler__field__date_4ed821df9270dc90bd3c2103d7136d47}{render} (\$values)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A handler to provide proper displays for dates. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__handler__field__date_c2c907d5403ef2085b21619293d701c4}{
+\index{views\_\-handler\_\-field\_\-date@{views\_\-handler\_\-field\_\-date}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!views_handler_field_date@{views\_\-handler\_\-field\_\-date}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-date::option\_\-definition ()}}
+\label{classviews__handler__field__date_c2c907d5403ef2085b21619293d701c4}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented from \hyperlink{classviews__handler__field_64c69a8a3697603f8283405071c25b76}{views\_\-handler\_\-field}.\hypertarget{classviews__handler__field__date_cc152b1ff3dd0a65bc4d372c97c7c8e0}{
+\index{views\_\-handler\_\-field\_\-date@{views\_\-handler\_\-field\_\-date}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!views_handler_field_date@{views\_\-handler\_\-field\_\-date}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-date::options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler__field__date_cc152b1ff3dd0a65bc4d372c97c7c8e0}
+
+
+Default options form that provides the label widget that all fields should have. 
+
+Reimplemented from \hyperlink{classviews__handler__field_0435d161922b7b4b84f02a2e79bb947a}{views\_\-handler\_\-field}.
+
+Reimplemented in \hyperlink{classviews__handler__field__profile__date_ede3f5f93411ff64dd780b9837d19aec}{views\_\-handler\_\-field\_\-profile\_\-date}.\hypertarget{classviews__handler__field__date_4ed821df9270dc90bd3c2103d7136d47}{
+\index{views\_\-handler\_\-field\_\-date@{views\_\-handler\_\-field\_\-date}!render@{render}}
+\index{render@{render}!views_handler_field_date@{views\_\-handler\_\-field\_\-date}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-date::render (\$ {\em values})}}
+\label{classviews__handler__field__date_4ed821df9270dc90bd3c2103d7136d47}
+
+
+Render the field.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$values}]The values retrieved from the database. \end{description}
+\end{Desc}
+
+
+Reimplemented from \hyperlink{classviews__handler__field_82ff951c5e9ceb97b2eab86f880cbc1e}{views\_\-handler\_\-field}.
+
+Reimplemented in \hyperlink{classviews__handler__field__profile__date_63151e2577405b9fec938ed9ff5926d4}{views\_\-handler\_\-field\_\-profile\_\-date}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/handlers/views\_\-handler\_\-field\_\-date.inc\end{CompactItemize}

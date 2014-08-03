@@ -1,0 +1,69 @@
+\hypertarget{content_8node__form_8inc}{
+\section{sites/all/modules/contrib/cck/includes/content.node\_\-form.inc File Reference}
+\label{content_8node__form_8inc}\index{sites/all/modules/contrib/cck/includes/content.node\_\-form.inc@{sites/all/modules/contrib/cck/includes/content.node\_\-form.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{content_8node__form_8inc_0148930471e8b619f05e90f412ad006b}{
+\textbf{content\_\-form} (\&\$form, \&\$form\_\-state)}
+\label{content_8node__form_8inc_0148930471e8b619f05e90f412ad006b}
+
+\item 
+\hyperlink{content_8node__form_8inc_71a4a36ac11328e4421fbfab0d61ce53}{content\_\-field\_\-form} (\&\$form, \&\$form\_\-state, \$field, \$get\_\-delta=NULL)
+\item 
+\hyperlink{content_8node__form_8inc_2b35316dcffea9939af18ab1a24b5ab8}{content\_\-multiple\_\-value\_\-form} (\&\$form, \&\$form\_\-state, \$field, \$items)
+\item 
+\hyperlink{content_8node__form_8inc_7a3e05d2af0db78a12f4da6389c65f4e}{content\_\-add\_\-more\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{content_8node__form_8inc_e0819b693cd927505231ced9dfc0150e}{content\_\-add\_\-more\_\-js} (\$type\_\-name\_\-url, \$field\_\-name)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Create fields' form for a content type.
+
+Each field defines its own component of the content entry form, via its chosen widget. 
+
+\subsection{Function Documentation}
+\hypertarget{content_8node__form_8inc_e0819b693cd927505231ced9dfc0150e}{
+\index{content.node\_\-form.inc@{content.node\_\-form.inc}!content\_\-add\_\-more\_\-js@{content\_\-add\_\-more\_\-js}}
+\index{content\_\-add\_\-more\_\-js@{content\_\-add\_\-more\_\-js}!content.node_form.inc@{content.node\_\-form.inc}}
+\subsubsection[{content\_\-add\_\-more\_\-js}]{\setlength{\rightskip}{0pt plus 5cm}content\_\-add\_\-more\_\-js (\$ {\em type\_\-name\_\-url}, \/  \$ {\em field\_\-name})}}
+\label{content_8node__form_8inc_e0819b693cd927505231ced9dfc0150e}
+
+
+Menu callback for AHAH addition of new empty widgets. \hypertarget{content_8node__form_8inc_7a3e05d2af0db78a12f4da6389c65f4e}{
+\index{content.node\_\-form.inc@{content.node\_\-form.inc}!content\_\-add\_\-more\_\-submit@{content\_\-add\_\-more\_\-submit}}
+\index{content\_\-add\_\-more\_\-submit@{content\_\-add\_\-more\_\-submit}!content.node_form.inc@{content.node\_\-form.inc}}
+\subsubsection[{content\_\-add\_\-more\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}content\_\-add\_\-more\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{content_8node__form_8inc_7a3e05d2af0db78a12f4da6389c65f4e}
+
+
+Submit handler to add more choices to a content form. This handler is used when JavaScript is not available. It makes changes to the form state and the entire form is rebuilt during the page reload. \hypertarget{content_8node__form_8inc_71a4a36ac11328e4421fbfab0d61ce53}{
+\index{content.node\_\-form.inc@{content.node\_\-form.inc}!content\_\-field\_\-form@{content\_\-field\_\-form}}
+\index{content\_\-field\_\-form@{content\_\-field\_\-form}!content.node_form.inc@{content.node\_\-form.inc}}
+\subsubsection[{content\_\-field\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}content\_\-field\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state}, \/  \$ {\em field}, \/  \$ {\em get\_\-delta} = {\tt NULL})}}
+\label{content_8node__form_8inc_71a4a36ac11328e4421fbfab0d61ce53}
+
+
+Create a separate form element for each field.
+
+// TODO: \$count param ? not used anymore ? Hook\_\-widget() picks up two new values, \$count and \$delta, to help widgets know what information to return since multiple values are sometimes controlled by the content module.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$form}]the form to add this field element to \item[{\em \$form\_\-state}]the form\_\-state for the above form \item[{\em \$field}]the field array to use to create the form element \item[{\em \$get\_\-delta}]use to get only a specific delta value of a multiple value field, otherwise function will return the entire \$field form element. \end{description}
+\end{Desc}
+\hypertarget{content_8node__form_8inc_2b35316dcffea9939af18ab1a24b5ab8}{
+\index{content.node\_\-form.inc@{content.node\_\-form.inc}!content\_\-multiple\_\-value\_\-form@{content\_\-multiple\_\-value\_\-form}}
+\index{content\_\-multiple\_\-value\_\-form@{content\_\-multiple\_\-value\_\-form}!content.node_form.inc@{content.node\_\-form.inc}}
+\subsubsection[{content\_\-multiple\_\-value\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}content\_\-multiple\_\-value\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state}, \/  \$ {\em field}, \/  \$ {\em items})}}
+\label{content_8node__form_8inc_2b35316dcffea9939af18ab1a24b5ab8}
+
+
+Special handling to create form elements for multiple values.
+
+Handles generic features for multiple fields:\begin{itemize}
+\item number of widgets\item AHAH-'add more' button\item drag-n-drop value reordering \end{itemize}

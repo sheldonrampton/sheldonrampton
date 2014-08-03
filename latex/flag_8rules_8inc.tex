@@ -1,0 +1,107 @@
+\hypertarget{flag_8rules_8inc}{
+\section{sites/all/modules/contrib/flag/includes/flag.rules.inc File Reference}
+\label{flag_8rules_8inc}\index{sites/all/modules/contrib/flag/includes/flag.rules.inc@{sites/all/modules/contrib/flag/includes/flag.rules.inc}}
+}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classflag__rules__data__type}{flag\_\-rules\_\-data\_\-type}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{group__rules_g79d47f2b9589f76b339066ca3d6dee1e}{flag\_\-rules\_\-data\_\-type\_\-info} ()
+\item 
+\hyperlink{flag_8rules_8inc_f4819490ed1f860605a31544ab188855}{flag\_\-rules\_\-event\_\-info} ()
+\item 
+\hyperlink{flag_8rules_8inc_fa153ce513fb7e21a85f35bda9d730dd}{flag\_\-rules\_\-get\_\-event\_\-argument} (\$flag, \$content\_\-id, \$account)
+\item 
+\hypertarget{flag_8rules_8inc_5f4c799ec32420802d0894aaa191d147}{
+\textbf{flag\_\-rules\_\-get\_\-comment\_\-content} (\$flag, \$content\_\-id, \$account)}
+\label{flag_8rules_8inc_5f4c799ec32420802d0894aaa191d147}
+
+\item 
+\hyperlink{flag_8rules_8inc_0e96be6705a5b3a0ffee87553491c831}{flag\_\-rules\_\-action\_\-info} ()
+\item 
+\hyperlink{flag_8rules_8inc_f1ae8e72fd6b91d64a2813620ec2a37c}{flag\_\-rules\_\-action\_\-flag} (\$flag, \$object, \$flagging\_\-user, \$settings)
+\item 
+\hyperlink{flag_8rules_8inc_4b6594e3196980112aa2c66bf9c01aee}{flag\_\-rules\_\-action\_\-unflag} (\$flag, \$object, \$flagging\_\-user, \$settings)
+\item 
+\hyperlink{flag_8rules_8inc_30f73bf152c69a689ab7ebed25aed70d}{flag\_\-rules\_\-action\_\-trim} (\$flag, \$flagging\_\-user, \$cutoff\_\-size, \$settings)
+\item 
+\hyperlink{flag_8rules_8inc_ff1b49547204500da520d93710e5b8a5}{flag\_\-rules\_\-condition\_\-info} ()
+\item 
+\hyperlink{flag_8rules_8inc_2c2dcf4a344e8af58b1fa3d1c101c3db}{flag\_\-rules\_\-condition\_\-threshold} (\$flag, \$object, \$number, \$settings)
+\item 
+\hyperlink{flag_8rules_8inc_e7df524a480d9efa4d45cbbb5c553b77}{flag\_\-rules\_\-condition\_\-flagged} (\$flag, \$object, \$account, \$settings)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Rules integration for the Flag module. 
+
+\subsection{Function Documentation}
+\hypertarget{flag_8rules_8inc_f1ae8e72fd6b91d64a2813620ec2a37c}{
+\index{flag.rules.inc@{flag.rules.inc}!flag\_\-rules\_\-action\_\-flag@{flag\_\-rules\_\-action\_\-flag}}
+\index{flag\_\-rules\_\-action\_\-flag@{flag\_\-rules\_\-action\_\-flag}!flag.rules.inc@{flag.rules.inc}}
+\subsubsection[{flag\_\-rules\_\-action\_\-flag}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-rules\_\-action\_\-flag (\$ {\em flag}, \/  \$ {\em object}, \/  \$ {\em flagging\_\-user}, \/  \$ {\em settings})}}
+\label{flag_8rules_8inc_f1ae8e72fd6b91d64a2813620ec2a37c}
+
+
+Base action implementation: Flag. \hypertarget{flag_8rules_8inc_0e96be6705a5b3a0ffee87553491c831}{
+\index{flag.rules.inc@{flag.rules.inc}!flag\_\-rules\_\-action\_\-info@{flag\_\-rules\_\-action\_\-info}}
+\index{flag\_\-rules\_\-action\_\-info@{flag\_\-rules\_\-action\_\-info}!flag.rules.inc@{flag.rules.inc}}
+\subsubsection[{flag\_\-rules\_\-action\_\-info}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-rules\_\-action\_\-info ()}}
+\label{flag_8rules_8inc_0e96be6705a5b3a0ffee87553491c831}
+
+
+Implementation of hook\_\-rules\_\-action\_\-info(). \hypertarget{flag_8rules_8inc_30f73bf152c69a689ab7ebed25aed70d}{
+\index{flag.rules.inc@{flag.rules.inc}!flag\_\-rules\_\-action\_\-trim@{flag\_\-rules\_\-action\_\-trim}}
+\index{flag\_\-rules\_\-action\_\-trim@{flag\_\-rules\_\-action\_\-trim}!flag.rules.inc@{flag.rules.inc}}
+\subsubsection[{flag\_\-rules\_\-action\_\-trim}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-rules\_\-action\_\-trim (\$ {\em flag}, \/  \$ {\em flagging\_\-user}, \/  \$ {\em cutoff\_\-size}, \/  \$ {\em settings})}}
+\label{flag_8rules_8inc_30f73bf152c69a689ab7ebed25aed70d}
+
+
+Base action implementation. \hypertarget{flag_8rules_8inc_4b6594e3196980112aa2c66bf9c01aee}{
+\index{flag.rules.inc@{flag.rules.inc}!flag\_\-rules\_\-action\_\-unflag@{flag\_\-rules\_\-action\_\-unflag}}
+\index{flag\_\-rules\_\-action\_\-unflag@{flag\_\-rules\_\-action\_\-unflag}!flag.rules.inc@{flag.rules.inc}}
+\subsubsection[{flag\_\-rules\_\-action\_\-unflag}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-rules\_\-action\_\-unflag (\$ {\em flag}, \/  \$ {\em object}, \/  \$ {\em flagging\_\-user}, \/  \$ {\em settings})}}
+\label{flag_8rules_8inc_4b6594e3196980112aa2c66bf9c01aee}
+
+
+Base action implementation: Unflag. \hypertarget{flag_8rules_8inc_e7df524a480d9efa4d45cbbb5c553b77}{
+\index{flag.rules.inc@{flag.rules.inc}!flag\_\-rules\_\-condition\_\-flagged@{flag\_\-rules\_\-condition\_\-flagged}}
+\index{flag\_\-rules\_\-condition\_\-flagged@{flag\_\-rules\_\-condition\_\-flagged}!flag.rules.inc@{flag.rules.inc}}
+\subsubsection[{flag\_\-rules\_\-condition\_\-flagged}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-rules\_\-condition\_\-flagged (\$ {\em flag}, \/  \$ {\em object}, \/  \$ {\em account}, \/  \$ {\em settings})}}
+\label{flag_8rules_8inc_e7df524a480d9efa4d45cbbb5c553b77}
+
+
+Condition: Flag is flagged. \hypertarget{flag_8rules_8inc_ff1b49547204500da520d93710e5b8a5}{
+\index{flag.rules.inc@{flag.rules.inc}!flag\_\-rules\_\-condition\_\-info@{flag\_\-rules\_\-condition\_\-info}}
+\index{flag\_\-rules\_\-condition\_\-info@{flag\_\-rules\_\-condition\_\-info}!flag.rules.inc@{flag.rules.inc}}
+\subsubsection[{flag\_\-rules\_\-condition\_\-info}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-rules\_\-condition\_\-info ()}}
+\label{flag_8rules_8inc_ff1b49547204500da520d93710e5b8a5}
+
+
+Implementation of hook\_\-rules\_\-condition\_\-info(). \hypertarget{flag_8rules_8inc_2c2dcf4a344e8af58b1fa3d1c101c3db}{
+\index{flag.rules.inc@{flag.rules.inc}!flag\_\-rules\_\-condition\_\-threshold@{flag\_\-rules\_\-condition\_\-threshold}}
+\index{flag\_\-rules\_\-condition\_\-threshold@{flag\_\-rules\_\-condition\_\-threshold}!flag.rules.inc@{flag.rules.inc}}
+\subsubsection[{flag\_\-rules\_\-condition\_\-threshold}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-rules\_\-condition\_\-threshold (\$ {\em flag}, \/  \$ {\em object}, \/  \$ {\em number}, \/  \$ {\em settings})}}
+\label{flag_8rules_8inc_2c2dcf4a344e8af58b1fa3d1c101c3db}
+
+
+Condition: Check flagging count. \hypertarget{flag_8rules_8inc_f4819490ed1f860605a31544ab188855}{
+\index{flag.rules.inc@{flag.rules.inc}!flag\_\-rules\_\-event\_\-info@{flag\_\-rules\_\-event\_\-info}}
+\index{flag\_\-rules\_\-event\_\-info@{flag\_\-rules\_\-event\_\-info}!flag.rules.inc@{flag.rules.inc}}
+\subsubsection[{flag\_\-rules\_\-event\_\-info}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-rules\_\-event\_\-info ()}}
+\label{flag_8rules_8inc_f4819490ed1f860605a31544ab188855}
+
+
+Implementation of hook\_\-rules\_\-event\_\-info(). \hypertarget{flag_8rules_8inc_fa153ce513fb7e21a85f35bda9d730dd}{
+\index{flag.rules.inc@{flag.rules.inc}!flag\_\-rules\_\-get\_\-event\_\-argument@{flag\_\-rules\_\-get\_\-event\_\-argument}}
+\index{flag\_\-rules\_\-get\_\-event\_\-argument@{flag\_\-rules\_\-get\_\-event\_\-argument}!flag.rules.inc@{flag.rules.inc}}
+\subsubsection[{flag\_\-rules\_\-get\_\-event\_\-argument}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-rules\_\-get\_\-event\_\-argument (\$ {\em flag}, \/  \$ {\em content\_\-id}, \/  \$ {\em account})}}
+\label{flag_8rules_8inc_fa153ce513fb7e21a85f35bda9d730dd}
+
+
+Argument handler: Fetches the flags content for use with rules. 

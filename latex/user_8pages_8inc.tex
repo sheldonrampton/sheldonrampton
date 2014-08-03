@@ -1,0 +1,176 @@
+\hypertarget{user_8pages_8inc}{
+\section{modules/user/user.pages.inc File Reference}
+\label{user_8pages_8inc}\index{modules/user/user.pages.inc@{modules/user/user.pages.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{user_8pages_8inc_3a77600d6ab7b9af11a3692207b5533a}{user\_\-autocomplete} (\$string= '')
+\item 
+\hyperlink{group__forms_gd7f952e136ebcff493ca8de7209100cf}{user\_\-pass} ()
+\item 
+\hypertarget{user_8pages_8inc_518f9714e8a92fe4ad96560928dba138}{
+\textbf{user\_\-pass\_\-validate} (\$form, \&\$form\_\-state)}
+\label{user_8pages_8inc_518f9714e8a92fe4ad96560928dba138}
+
+\item 
+\hypertarget{user_8pages_8inc_e3bac17377ceac5fa4e81efbe0ebfebf}{
+\textbf{user\_\-pass\_\-submit} (\$form, \&\$form\_\-state)}
+\label{user_8pages_8inc_e3bac17377ceac5fa4e81efbe0ebfebf}
+
+\item 
+\hyperlink{user_8pages_8inc_b0f668164fa4eb84a181a32eb4d3a57f}{user\_\-pass\_\-reset} (\&\$form\_\-state, \$uid, \$timestamp, \$hashed\_\-pass, \$action=NULL)
+\item 
+\hyperlink{user_8pages_8inc_239a2e50f18165d4a8b4c8bd3917466e}{user\_\-logout} ()
+\item 
+\hyperlink{user_8pages_8inc_f70d615c07069b8c6c9c68c1c3e132f7}{user\_\-view} (\$account)
+\item 
+\hyperlink{user_8pages_8inc_5a1229a0cb26128b7efab80c025e2d75}{template\_\-preprocess\_\-user\_\-profile} (\&\$variables)
+\item 
+\hyperlink{user_8pages_8inc_b6e6ed16b5647c626cc0468506abd3e9}{template\_\-preprocess\_\-user\_\-profile\_\-item} (\&\$variables)
+\item 
+\hyperlink{user_8pages_8inc_0b8961894318ad623017b48569515d4a}{template\_\-preprocess\_\-user\_\-profile\_\-category} (\&\$variables)
+\item 
+\hyperlink{group__forms_gd1dd92a806e43b841305962c7331818b}{user\_\-edit} (\$account, \$category= 'account')
+\item 
+\hyperlink{group__forms_g7e8a3661add00171d560bec439570fd7}{user\_\-profile\_\-form} (\$form\_\-state, \$account, \$category= 'account')
+\item 
+\hyperlink{user_8pages_8inc_fca5f516f0fadcb918e6d13dff66db76}{user\_\-profile\_\-form\_\-validate} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{user_8pages_8inc_c10455f162f61cbf551fe7ec7b5c92cc}{user\_\-profile\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{user_8pages_8inc_13c3ecd9255448bd605fcd4ee0daa294}{user\_\-edit\_\-delete\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{group__forms_gd250319bfea19c155bc374bad024be1a}{user\_\-confirm\_\-delete} (\&\$form\_\-state, \$account)
+\item 
+\hyperlink{user_8pages_8inc_462a20e1dc458d7fd3f0a3214863d46f}{user\_\-confirm\_\-delete\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hypertarget{user_8pages_8inc_95517820decd18bee7ff2e614888cd72}{
+\textbf{user\_\-edit\_\-validate} (\$form, \&\$form\_\-state)}
+\label{user_8pages_8inc_95517820decd18bee7ff2e614888cd72}
+
+\item 
+\hypertarget{user_8pages_8inc_23834f105a8877cbf513ba05210e1380}{
+\textbf{user\_\-edit\_\-submit} (\$form, \&\$form\_\-state)}
+\label{user_8pages_8inc_23834f105a8877cbf513ba05210e1380}
+
+\item 
+\hyperlink{user_8pages_8inc_ac56f8d931a31fe423974228cec2cf57}{user\_\-page} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+User page callback file for the user module. 
+
+\subsection{Function Documentation}
+\hypertarget{user_8pages_8inc_5a1229a0cb26128b7efab80c025e2d75}{
+\index{user.pages.inc@{user.pages.inc}!template\_\-preprocess\_\-user\_\-profile@{template\_\-preprocess\_\-user\_\-profile}}
+\index{template\_\-preprocess\_\-user\_\-profile@{template\_\-preprocess\_\-user\_\-profile}!user.pages.inc@{user.pages.inc}}
+\subsubsection[{template\_\-preprocess\_\-user\_\-profile}]{\setlength{\rightskip}{0pt plus 5cm}template\_\-preprocess\_\-user\_\-profile (\&\$ {\em variables})}}
+\label{user_8pages_8inc_5a1229a0cb26128b7efab80c025e2d75}
+
+
+Process variables for \hyperlink{user-profile_8tpl_8php}{user-profile.tpl.php}.
+
+The \$variables array contains the following arguments:\begin{itemize}
+\item \$account\end{itemize}
+
+
+\begin{Desc}
+\item[See also:]\hyperlink{user-picture_8tpl_8php}{user-picture.tpl.php} \end{Desc}
+\hypertarget{user_8pages_8inc_0b8961894318ad623017b48569515d4a}{
+\index{user.pages.inc@{user.pages.inc}!template\_\-preprocess\_\-user\_\-profile\_\-category@{template\_\-preprocess\_\-user\_\-profile\_\-category}}
+\index{template\_\-preprocess\_\-user\_\-profile\_\-category@{template\_\-preprocess\_\-user\_\-profile\_\-category}!user.pages.inc@{user.pages.inc}}
+\subsubsection[{template\_\-preprocess\_\-user\_\-profile\_\-category}]{\setlength{\rightskip}{0pt plus 5cm}template\_\-preprocess\_\-user\_\-profile\_\-category (\&\$ {\em variables})}}
+\label{user_8pages_8inc_0b8961894318ad623017b48569515d4a}
+
+
+Process variables for \hyperlink{user-profile-category_8tpl_8php}{user-profile-category.tpl.php}.
+
+The \$variables array contains the following arguments:\begin{itemize}
+\item \$element\end{itemize}
+
+
+\begin{Desc}
+\item[See also:]\hyperlink{user-profile-category_8tpl_8php}{user-profile-category.tpl.php} \end{Desc}
+\hypertarget{user_8pages_8inc_b6e6ed16b5647c626cc0468506abd3e9}{
+\index{user.pages.inc@{user.pages.inc}!template\_\-preprocess\_\-user\_\-profile\_\-item@{template\_\-preprocess\_\-user\_\-profile\_\-item}}
+\index{template\_\-preprocess\_\-user\_\-profile\_\-item@{template\_\-preprocess\_\-user\_\-profile\_\-item}!user.pages.inc@{user.pages.inc}}
+\subsubsection[{template\_\-preprocess\_\-user\_\-profile\_\-item}]{\setlength{\rightskip}{0pt plus 5cm}template\_\-preprocess\_\-user\_\-profile\_\-item (\&\$ {\em variables})}}
+\label{user_8pages_8inc_b6e6ed16b5647c626cc0468506abd3e9}
+
+
+Process variables for \hyperlink{user-profile-item_8tpl_8php}{user-profile-item.tpl.php}.
+
+The \$variables array contains the following arguments:\begin{itemize}
+\item \$element\end{itemize}
+
+
+\begin{Desc}
+\item[See also:]\hyperlink{user-profile-item_8tpl_8php}{user-profile-item.tpl.php} \end{Desc}
+\hypertarget{user_8pages_8inc_3a77600d6ab7b9af11a3692207b5533a}{
+\index{user.pages.inc@{user.pages.inc}!user\_\-autocomplete@{user\_\-autocomplete}}
+\index{user\_\-autocomplete@{user\_\-autocomplete}!user.pages.inc@{user.pages.inc}}
+\subsubsection[{user\_\-autocomplete}]{\setlength{\rightskip}{0pt plus 5cm}user\_\-autocomplete (\$ {\em string} = {\tt ''})}}
+\label{user_8pages_8inc_3a77600d6ab7b9af11a3692207b5533a}
+
+
+Menu callback; Retrieve a JSON object containing autocomplete suggestions for existing users. \hypertarget{user_8pages_8inc_462a20e1dc458d7fd3f0a3214863d46f}{
+\index{user.pages.inc@{user.pages.inc}!user\_\-confirm\_\-delete\_\-submit@{user\_\-confirm\_\-delete\_\-submit}}
+\index{user\_\-confirm\_\-delete\_\-submit@{user\_\-confirm\_\-delete\_\-submit}!user.pages.inc@{user.pages.inc}}
+\subsubsection[{user\_\-confirm\_\-delete\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}user\_\-confirm\_\-delete\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{user_8pages_8inc_462a20e1dc458d7fd3f0a3214863d46f}
+
+
+Submit function for the confirm form for user deletion. \hypertarget{user_8pages_8inc_13c3ecd9255448bd605fcd4ee0daa294}{
+\index{user.pages.inc@{user.pages.inc}!user\_\-edit\_\-delete\_\-submit@{user\_\-edit\_\-delete\_\-submit}}
+\index{user\_\-edit\_\-delete\_\-submit@{user\_\-edit\_\-delete\_\-submit}!user.pages.inc@{user.pages.inc}}
+\subsubsection[{user\_\-edit\_\-delete\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}user\_\-edit\_\-delete\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{user_8pages_8inc_13c3ecd9255448bd605fcd4ee0daa294}
+
+
+Submit function for the 'Delete' button on the user edit form. \hypertarget{user_8pages_8inc_239a2e50f18165d4a8b4c8bd3917466e}{
+\index{user.pages.inc@{user.pages.inc}!user\_\-logout@{user\_\-logout}}
+\index{user\_\-logout@{user\_\-logout}!user.pages.inc@{user.pages.inc}}
+\subsubsection[{user\_\-logout}]{\setlength{\rightskip}{0pt plus 5cm}user\_\-logout ()}}
+\label{user_8pages_8inc_239a2e50f18165d4a8b4c8bd3917466e}
+
+
+Menu callback; logs the current user out, and redirects to the home page. \hypertarget{user_8pages_8inc_ac56f8d931a31fe423974228cec2cf57}{
+\index{user.pages.inc@{user.pages.inc}!user\_\-page@{user\_\-page}}
+\index{user\_\-page@{user\_\-page}!user.pages.inc@{user.pages.inc}}
+\subsubsection[{user\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}user\_\-page ()}}
+\label{user_8pages_8inc_ac56f8d931a31fe423974228cec2cf57}
+
+
+Access callback for path /user.
+
+Displays user profile if user is logged in, or login form for anonymous users. \hypertarget{user_8pages_8inc_b0f668164fa4eb84a181a32eb4d3a57f}{
+\index{user.pages.inc@{user.pages.inc}!user\_\-pass\_\-reset@{user\_\-pass\_\-reset}}
+\index{user\_\-pass\_\-reset@{user\_\-pass\_\-reset}!user.pages.inc@{user.pages.inc}}
+\subsubsection[{user\_\-pass\_\-reset}]{\setlength{\rightskip}{0pt plus 5cm}user\_\-pass\_\-reset (\&\$ {\em form\_\-state}, \/  \$ {\em uid}, \/  \$ {\em timestamp}, \/  \$ {\em hashed\_\-pass}, \/  \$ {\em action} = {\tt NULL})}}
+\label{user_8pages_8inc_b0f668164fa4eb84a181a32eb4d3a57f}
+
+
+Menu callback; process one time login link and redirects to the user page on success. \hypertarget{user_8pages_8inc_c10455f162f61cbf551fe7ec7b5c92cc}{
+\index{user.pages.inc@{user.pages.inc}!user\_\-profile\_\-form\_\-submit@{user\_\-profile\_\-form\_\-submit}}
+\index{user\_\-profile\_\-form\_\-submit@{user\_\-profile\_\-form\_\-submit}!user.pages.inc@{user.pages.inc}}
+\subsubsection[{user\_\-profile\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}user\_\-profile\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{user_8pages_8inc_c10455f162f61cbf551fe7ec7b5c92cc}
+
+
+Submit function for the user account and profile editing form. \hypertarget{user_8pages_8inc_fca5f516f0fadcb918e6d13dff66db76}{
+\index{user.pages.inc@{user.pages.inc}!user\_\-profile\_\-form\_\-validate@{user\_\-profile\_\-form\_\-validate}}
+\index{user\_\-profile\_\-form\_\-validate@{user\_\-profile\_\-form\_\-validate}!user.pages.inc@{user.pages.inc}}
+\subsubsection[{user\_\-profile\_\-form\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}user\_\-profile\_\-form\_\-validate (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{user_8pages_8inc_fca5f516f0fadcb918e6d13dff66db76}
+
+
+Validation function for the user account and profile editing form. \hypertarget{user_8pages_8inc_f70d615c07069b8c6c9c68c1c3e132f7}{
+\index{user.pages.inc@{user.pages.inc}!user\_\-view@{user\_\-view}}
+\index{user\_\-view@{user\_\-view}!user.pages.inc@{user.pages.inc}}
+\subsubsection[{user\_\-view}]{\setlength{\rightskip}{0pt plus 5cm}user\_\-view (\$ {\em account})}}
+\label{user_8pages_8inc_f70d615c07069b8c6c9c68c1c3e132f7}
+
+
+Menu callback; Displays a user or user profile page. 

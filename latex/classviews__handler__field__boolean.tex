@@ -1,0 +1,109 @@
+\hypertarget{classviews__handler__field__boolean}{
+\section{views\_\-handler\_\-field\_\-boolean Class Reference}
+\label{classviews__handler__field__boolean}\index{views\_\-handler\_\-field\_\-boolean@{views\_\-handler\_\-field\_\-boolean}}
+}
+Inheritance diagram for views\_\-handler\_\-field\_\-boolean::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4cm]{classviews__handler__field__boolean}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__handler__field__boolean_53f8c9215cddcfb3cab33f742a1e6c52}{option\_\-definition} ()
+\item 
+\hyperlink{classviews__handler__field__boolean_0150fb8a25c2f1f2537d476b1c448238}{init} (\&\$\hyperlink{classview}{view}, \$options)
+\item 
+\hyperlink{classviews__handler__field__boolean_3addce6b85348a630627f348907082e3}{options\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__handler__field__boolean_d7d7fc1b29362cee6b2f043e029052af}{render} (\$values)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A handler to provide proper displays for booleans.
+
+Allows for display of true/false, yes/no, on/off.
+
+Definition terms:\begin{itemize}
+\item output formats: An array where the first entry is displayed on boolean false and the second is displayed on boolean true. An example for sticky is: 
+
+\begin{Code}\begin{verbatim}      'output formats' => array(
+        'sticky' => array('', t('Sticky')),
+      ),
+\end{verbatim}
+\end{Code}
+
+ \end{itemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__handler__field__boolean_0150fb8a25c2f1f2537d476b1c448238}{
+\index{views\_\-handler\_\-field\_\-boolean@{views\_\-handler\_\-field\_\-boolean}!init@{init}}
+\index{init@{init}!views_handler_field_boolean@{views\_\-handler\_\-field\_\-boolean}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-boolean::init (\&\$ {\em view}, \/  \$ {\em options})}}
+\label{classviews__handler__field__boolean_0150fb8a25c2f1f2537d476b1c448238}
+
+
+init the handler with necessary data. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$view}]The \$view object this handler is attached to. \item[{\em \$options}]The item from the database; the actual contents of this will vary based upon the type of handler. \end{description}
+\end{Desc}
+
+
+Reimplemented from \hyperlink{classviews__handler__field_7eaaf0fd6fbc57c2955f88b257394d19}{views\_\-handler\_\-field}.\hypertarget{classviews__handler__field__boolean_53f8c9215cddcfb3cab33f742a1e6c52}{
+\index{views\_\-handler\_\-field\_\-boolean@{views\_\-handler\_\-field\_\-boolean}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!views_handler_field_boolean@{views\_\-handler\_\-field\_\-boolean}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-boolean::option\_\-definition ()}}
+\label{classviews__handler__field__boolean_53f8c9215cddcfb3cab33f742a1e6c52}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented from \hyperlink{classviews__handler__field_64c69a8a3697603f8283405071c25b76}{views\_\-handler\_\-field}.\hypertarget{classviews__handler__field__boolean_3addce6b85348a630627f348907082e3}{
+\index{views\_\-handler\_\-field\_\-boolean@{views\_\-handler\_\-field\_\-boolean}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!views_handler_field_boolean@{views\_\-handler\_\-field\_\-boolean}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-boolean::options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler__field__boolean_3addce6b85348a630627f348907082e3}
+
+
+Default options form that provides the label widget that all fields should have. 
+
+Reimplemented from \hyperlink{classviews__handler__field_0435d161922b7b4b84f02a2e79bb947a}{views\_\-handler\_\-field}.\hypertarget{classviews__handler__field__boolean_d7d7fc1b29362cee6b2f043e029052af}{
+\index{views\_\-handler\_\-field\_\-boolean@{views\_\-handler\_\-field\_\-boolean}!render@{render}}
+\index{render@{render}!views_handler_field_boolean@{views\_\-handler\_\-field\_\-boolean}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-boolean::render (\$ {\em values})}}
+\label{classviews__handler__field__boolean_d7d7fc1b29362cee6b2f043e029052af}
+
+
+Render the field.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$values}]The values retrieved from the database. \end{description}
+\end{Desc}
+
+
+Reimplemented from \hyperlink{classviews__handler__field_82ff951c5e9ceb97b2eab86f880cbc1e}{views\_\-handler\_\-field}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/handlers/views\_\-handler\_\-field\_\-boolean.inc\end{CompactItemize}

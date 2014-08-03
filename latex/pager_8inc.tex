@@ -1,0 +1,56 @@
+\hypertarget{pager_8inc}{
+\section{includes/pager.inc File Reference}
+\label{pager_8inc}\index{includes/pager.inc@{includes/pager.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{group__database_ge456e13108bb88fa7a532e1cccdeaa50}{pager\_\-query} (\$query, \$limit=10, \$element=0, \$count\_\-query=NULL)
+\item 
+\hyperlink{pager_8inc_45070c26384d1b35761df2299e223d24}{pager\_\-get\_\-querystring} ()
+\item 
+\hyperlink{group__themeable_g6901a5d4e96c9b81a92b3fa2e43cfebd}{theme\_\-pager} (\$tags=array(), \$limit=10, \$element=0, \$parameters=array(), \$quantity=9)
+\item 
+\hyperlink{pager_8inc_0f82d7cb1702f6d160285903378a9919}{pager\_\-load\_\-array} (\$value, \$element, \$old\_\-array)
+\end{CompactItemize}
+\begin{Indent}{\bf Pager pieces}\par
+{\em Use these pieces to construct your own custom pagers in your theme. Note that you should NOT modify this file to customize your pager. }\begin{CompactItemize}
+\item 
+\hyperlink{group__themeable_gbbe311616a2243c759c81e3b87ef06bf}{theme\_\-pager\_\-first} (\$text, \$limit, \$element=0, \$parameters=array())
+\item 
+\hyperlink{group__themeable_gd41c6c0b85a0a041610f9310fd1e39fd}{theme\_\-pager\_\-previous} (\$text, \$limit, \$element=0, \$interval=1, \$parameters=array())
+\item 
+\hyperlink{group__themeable_g69523320b2d45d957066b2428a19f5fa}{theme\_\-pager\_\-next} (\$text, \$limit, \$element=0, \$interval=1, \$parameters=array())
+\item 
+\hyperlink{group__themeable_g311db2dbb5acbda9d0938f28f161c9a8}{theme\_\-pager\_\-last} (\$text, \$limit, \$element=0, \$parameters=array())
+\item 
+\hyperlink{group__themeable_gecd911fe0400d240d1b93298cb83f07e}{theme\_\-pager\_\-link} (\$text, \$page\_\-new, \$element, \$parameters=array(), \$attributes=array())
+\end{CompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+Functions to aid in presenting database results as a set of pages. 
+
+\subsection{Function Documentation}
+\hypertarget{pager_8inc_45070c26384d1b35761df2299e223d24}{
+\index{pager.inc@{pager.inc}!pager\_\-get\_\-querystring@{pager\_\-get\_\-querystring}}
+\index{pager\_\-get\_\-querystring@{pager\_\-get\_\-querystring}!pager.inc@{pager.inc}}
+\subsubsection[{pager\_\-get\_\-querystring}]{\setlength{\rightskip}{0pt plus 5cm}pager\_\-get\_\-querystring ()}}
+\label{pager_8inc_45070c26384d1b35761df2299e223d24}
+
+
+Compose a query string to append to pager requests.
+
+\begin{Desc}
+\item[Returns:]A query string that consists of all components of the current page request except for those pertaining to paging. \end{Desc}
+\hypertarget{pager_8inc_0f82d7cb1702f6d160285903378a9919}{
+\index{pager.inc@{pager.inc}!pager\_\-load\_\-array@{pager\_\-load\_\-array}}
+\index{pager\_\-load\_\-array@{pager\_\-load\_\-array}!pager.inc@{pager.inc}}
+\subsubsection[{pager\_\-load\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}pager\_\-load\_\-array (\$ {\em value}, \/  \$ {\em element}, \/  \$ {\em old\_\-array})}}
+\label{pager_8inc_0f82d7cb1702f6d160285903378a9919}
+
+
+End of \char`\"{}Pager pieces\char`\"{}. Helper function
+
+Copies \$old\_\-array to \$new\_\-array and sets \$new\_\-array\mbox{[}\$element\mbox{]} = \$value Fills in \$new\_\-array\mbox{[}0 .. \$element - 1\mbox{]} = 0 

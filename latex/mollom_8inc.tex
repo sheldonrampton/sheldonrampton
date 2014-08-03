@@ -1,0 +1,47 @@
+\hypertarget{mollom_8inc}{
+\section{sites/all/modules/contrib/mollom/mollom.inc File Reference}
+\label{mollom_8inc}\index{sites/all/modules/contrib/mollom/mollom.inc@{sites/all/modules/contrib/mollom/mollom.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{mollom_8inc_027317b9bb44de2770544cec20ef8b5a}{\_\-mollom\_\-authentication} (\$public\_\-key=NULL, \$private\_\-key=NULL)
+\item 
+\hyperlink{mollom_8inc_bbc5f0df68f47e7a174c955e127c7489}{\_\-mollom\_\-retrieve\_\-server\_\-list} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Mollom client/server interaction functions. 
+
+\subsection{Function Documentation}
+\hypertarget{mollom_8inc_027317b9bb44de2770544cec20ef8b5a}{
+\index{mollom.inc@{mollom.inc}!\_\-mollom\_\-authentication@{\_\-mollom\_\-authentication}}
+\index{\_\-mollom\_\-authentication@{\_\-mollom\_\-authentication}!mollom.inc@{mollom.inc}}
+\subsubsection[{\_\-mollom\_\-authentication}]{\setlength{\rightskip}{0pt plus 5cm}\_\-mollom\_\-authentication (\$ {\em public\_\-key} = {\tt NULL}, \/  \$ {\em private\_\-key} = {\tt NULL})}}
+\label{mollom_8inc_027317b9bb44de2770544cec20ef8b5a}
+
+
+Generate authentication data for XML-RPC communication with Mollom servers.
+
+This function generates an array with all information required to authenticate against Mollom. To prevent forged requests where you are impersonated, each request is signed with a hash based on a private key and a timestamp.
+
+Both the client and the server share the secret key used to create the authentication hash. They both hash a timestamp with the secret key, and if the hashes match, the authenticity of the message is validated.
+
+To avoid someone intercepting a (hash, timestamp)-pair and using it to impersonate a client, Mollom reject any request where the timestamp is more than 15 minutes off.
+
+Make sure your server's time is synchronized with the world clocks, and that you don't share your private key with anyone else.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$public\_\-key}](optional) The public key to use for authentication. Only used internally. \item[{\em \$private\_\-key}](optional) The private key to use for authentication. Only used internally. \end{description}
+\end{Desc}
+\hypertarget{mollom_8inc_bbc5f0df68f47e7a174c955e127c7489}{
+\index{mollom.inc@{mollom.inc}!\_\-mollom\_\-retrieve\_\-server\_\-list@{\_\-mollom\_\-retrieve\_\-server\_\-list}}
+\index{\_\-mollom\_\-retrieve\_\-server\_\-list@{\_\-mollom\_\-retrieve\_\-server\_\-list}!mollom.inc@{mollom.inc}}
+\subsubsection[{\_\-mollom\_\-retrieve\_\-server\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}\_\-mollom\_\-retrieve\_\-server\_\-list ()}}
+\label{mollom_8inc_bbc5f0df68f47e7a174c955e127c7489}
+
+
+Refreshes the list of Mollom's XML-RPC servers. 

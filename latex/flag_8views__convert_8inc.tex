@@ -1,0 +1,34 @@
+\hypertarget{flag_8views__convert_8inc}{
+\section{sites/all/modules/contrib/flag/includes/flag.views\_\-convert.inc File Reference}
+\label{flag_8views__convert_8inc}\index{sites/all/modules/contrib/flag/includes/flag.views\_\-convert.inc@{sites/all/modules/contrib/flag/includes/flag.views\_\-convert.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{flag_8views__convert_8inc_6fcd7434ef6cae3b822e1f8e2633b63a}{flag\_\-views\_\-convert} (\$display, \$type, \&\$\hyperlink{classview}{view}, \$field, \$id)
+\item 
+\hyperlink{flag_8views__convert_8inc_cab0389970f9bad22da831d1ef2ee0db}{flag\_\-views\_\-convert\_\-timestamp\_\-value} (\$value)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Update Views 1 views provided by both views\_\-bookmark and flag modules. 
+
+\subsection{Function Documentation}
+\hypertarget{flag_8views__convert_8inc_6fcd7434ef6cae3b822e1f8e2633b63a}{
+\index{flag.views\_\-convert.inc@{flag.views\_\-convert.inc}!flag\_\-views\_\-convert@{flag\_\-views\_\-convert}}
+\index{flag\_\-views\_\-convert@{flag\_\-views\_\-convert}!flag.views_convert.inc@{flag.views\_\-convert.inc}}
+\subsubsection[{flag\_\-views\_\-convert}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-views\_\-convert (\$ {\em display}, \/  \$ {\em type}, \/  \&\$ {\em view}, \/  \$ {\em field}, \/  \$ {\em id})}}
+\label{flag_8views__convert_8inc_6fcd7434ef6cae3b822e1f8e2633b63a}
+
+
+Implementation of \hyperlink{group__views__hooks_ge98b0a1c700fe1406af390dfc8c7262e}{hook\_\-views\_\-convert()}.
+
+Intervene to convert field values from the Views 1 format to the Views 2 format. Intervene only if \$view-$>$add\_\-item() won't produce the right results, usually needed to set field options or values. \hypertarget{flag_8views__convert_8inc_cab0389970f9bad22da831d1ef2ee0db}{
+\index{flag.views\_\-convert.inc@{flag.views\_\-convert.inc}!flag\_\-views\_\-convert\_\-timestamp\_\-value@{flag\_\-views\_\-convert\_\-timestamp\_\-value}}
+\index{flag\_\-views\_\-convert\_\-timestamp\_\-value@{flag\_\-views\_\-convert\_\-timestamp\_\-value}!flag.views_convert.inc@{flag.views\_\-convert.inc}}
+\subsubsection[{flag\_\-views\_\-convert\_\-timestamp\_\-value}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-views\_\-convert\_\-timestamp\_\-value (\$ {\em value})}}
+\label{flag_8views__convert_8inc_cab0389970f9bad22da831d1ef2ee0db}
+
+
+In Views 1, dates were simply stored as a single string. In Views 2, the value is stored as an array of options. 

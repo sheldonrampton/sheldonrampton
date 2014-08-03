@@ -1,0 +1,528 @@
+\hypertarget{classCKEditor}{
+\section{CKEditor Class Reference}
+\label{classCKEditor}\index{CKEditor@{CKEditor}}
+}
+\hyperlink{classCKEditor}{CKEditor} class that can be used to create editor instances in PHP pages on server side.  
+
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classCKEditor_17bed5f81d2db60032f0b384a9b4e237}{CKEditor} (\$basePath=null)
+\item 
+\hyperlink{classCKEditor_bd6f81ca7539169b55b8f0556bc594c6}{editor} (\$name, \$value=\char`\"{}\char`\"{}, \$config=array(), \$events=array())
+\item 
+\hyperlink{classCKEditor_82ebacb89f96be38393ebd53a6a9ab52}{replace} (\$id, \$config=array(), \$events=array())
+\item 
+\hyperlink{classCKEditor_31836dd682c8d9d6bc5d59063b37c8b8}{replaceAll} (\$className=null)
+\item 
+\hyperlink{classCKEditor_a9617d6c05e2ecca9f59b89e08dfc311}{addEventHandler} (\$event, \$javascriptCode)
+\item 
+\hyperlink{classCKEditor_1b92304a2eef124810dd2be4f30e18f9}{clearEventHandlers} (\$event=null)
+\item 
+\hyperlink{classCKEditor_3bc88e349a30e84ddbdee5d55950ddb1}{addGlobalEventHandler} (\$event, \$javascriptCode)
+\item 
+\hyperlink{classCKEditor_8eff2f69ca071cf793b719ef4ddea97e}{clearGlobalEventHandlers} (\$event=null)
+\item 
+\hyperlink{classCKEditor_e58532c32cc95a2c2c34c6135024a428}{\_\-\_\-construct} (\$basePath=null)
+\item 
+\hyperlink{classCKEditor_bd6f81ca7539169b55b8f0556bc594c6}{editor} (\$name, \$value=\char`\"{}\char`\"{}, \$config=array(), \$events=array())
+\item 
+\hyperlink{classCKEditor_82ebacb89f96be38393ebd53a6a9ab52}{replace} (\$id, \$config=array(), \$events=array())
+\item 
+\hyperlink{classCKEditor_31836dd682c8d9d6bc5d59063b37c8b8}{replaceAll} (\$className=null)
+\item 
+\hyperlink{classCKEditor_a9617d6c05e2ecca9f59b89e08dfc311}{addEventHandler} (\$event, \$javascriptCode)
+\item 
+\hyperlink{classCKEditor_1b92304a2eef124810dd2be4f30e18f9}{clearEventHandlers} (\$event=null)
+\item 
+\hyperlink{classCKEditor_3bc88e349a30e84ddbdee5d55950ddb1}{addGlobalEventHandler} (\$event, \$javascriptCode)
+\item 
+\hyperlink{classCKEditor_8eff2f69ca071cf793b719ef4ddea97e}{clearGlobalEventHandlers} (\$event=null)
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+\hyperlink{classCKEditor_5a276aca7f1883ad38e53e1510846c19}{\$basePath}
+\item 
+\hyperlink{classCKEditor_54173f65f448c2f1afaade3b6cbe0cb9}{\$config} = array()
+\item 
+\hyperlink{classCKEditor_bc1853e9e41b16bc32e7d201b9b8f560}{\$initialized} = false
+\item 
+\hyperlink{classCKEditor_8c1b2e12b69f023e484aab53a960b15c}{\$returnOutput} = false
+\item 
+\hyperlink{classCKEditor_98970663df037c33f4841cbfbe38e5f9}{\$textareaAttributes} = array( \char`\"{}rows\char`\"{} =$>$ 8, \char`\"{}cols\char`\"{} =$>$ 60 )
+\item 
+\hyperlink{classCKEditor_6c4f7cd772f7ae66a405ad2d54c33125}{\$timestamp} = \char`\"{}A1QD\char`\"{}
+\item 
+const \hyperlink{classCKEditor_f23ec1a6cfb30139f39bf4ffbc7d36d7}{version} = '3.2'
+\item 
+const \hyperlink{classCKEditor_25b4e99a756a8c5d1dc101ecccecbcf7}{timestamp} = 'A1QD'
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classCKEditor}{CKEditor} class that can be used to create editor instances in PHP pages on server side. 
+
+\begin{Desc}
+\item[See also:]\href{http://ckeditor.com}{\tt http://ckeditor.com}\end{Desc}
+Sample usage: 
+
+\begin{Code}\begin{verbatim} $CKEditor = new CKEditor();
+ $CKEditor->editor("editor1", "<p>Initial value.</p>");
+\end{verbatim}
+\end{Code}
+
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCKEditor_e58532c32cc95a2c2c34c6135024a428}{
+\index{CKEditor@{CKEditor}!\_\-\_\-construct@{\_\-\_\-construct}}
+\index{\_\-\_\-construct@{\_\-\_\-construct}!CKEditor@{CKEditor}}
+\subsubsection[{\_\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}CKEditor::\_\-\_\-construct (\$ {\em basePath} = {\tt null})}}
+\label{classCKEditor_e58532c32cc95a2c2c34c6135024a428}
+
+
+Main Constructor.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$basePath}](string) URL to the CKEditor installation directory (optional). \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCKEditor_a9617d6c05e2ecca9f59b89e08dfc311}{
+\index{CKEditor@{CKEditor}!addEventHandler@{addEventHandler}}
+\index{addEventHandler@{addEventHandler}!CKEditor@{CKEditor}}
+\subsubsection[{addEventHandler}]{\setlength{\rightskip}{0pt plus 5cm}CKEditor::addEventHandler (\$ {\em event}, \/  \$ {\em javascriptCode})}}
+\label{classCKEditor_a9617d6c05e2ecca9f59b89e08dfc311}
+
+
+Adds event listener. Events are fired by CKEditor in various situations.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$event}](string) Event name. \item[{\em \$javascriptCode}](string) Javascript anonymous function or function name.\end{description}
+\end{Desc}
+Example usage: 
+
+\begin{Code}\begin{verbatim} $CKEditor->addEventHandler('instanceReady', 'function (ev) {
+     alert("Loaded: " + ev.editor.name);
+ }');
+\end{verbatim}
+\end{Code}
+
+ \hypertarget{classCKEditor_a9617d6c05e2ecca9f59b89e08dfc311}{
+\index{CKEditor@{CKEditor}!addEventHandler@{addEventHandler}}
+\index{addEventHandler@{addEventHandler}!CKEditor@{CKEditor}}
+\subsubsection[{addEventHandler}]{\setlength{\rightskip}{0pt plus 5cm}CKEditor::addEventHandler (\$ {\em event}, \/  \$ {\em javascriptCode})}}
+\label{classCKEditor_a9617d6c05e2ecca9f59b89e08dfc311}
+
+
+Adds event listener. Events are fired by CKEditor in various situations.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$event}](string) Event name. \item[{\em \$javascriptCode}](string) Javascript anonymous function or function name.\end{description}
+\end{Desc}
+Example usage: 
+
+\begin{Code}\begin{verbatim} $CKEditor->addEventHandler('instanceReady', 'function (ev) {
+     alert("Loaded: " + ev.editor.name);
+ }');
+\end{verbatim}
+\end{Code}
+
+ \hypertarget{classCKEditor_3bc88e349a30e84ddbdee5d55950ddb1}{
+\index{CKEditor@{CKEditor}!addGlobalEventHandler@{addGlobalEventHandler}}
+\index{addGlobalEventHandler@{addGlobalEventHandler}!CKEditor@{CKEditor}}
+\subsubsection[{addGlobalEventHandler}]{\setlength{\rightskip}{0pt plus 5cm}CKEditor::addGlobalEventHandler (\$ {\em event}, \/  \$ {\em javascriptCode})}}
+\label{classCKEditor_3bc88e349a30e84ddbdee5d55950ddb1}
+
+
+Adds global event listener.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$event}](string) Event name. \item[{\em \$javascriptCode}](string) Javascript anonymous function or function name.\end{description}
+\end{Desc}
+Example usage: 
+
+\begin{Code}\begin{verbatim} $CKEditor->addGlobalEventHandler('dialogDefinition', 'function (ev) {
+     alert("Loading dialog: " + ev.data.name);
+ }');
+\end{verbatim}
+\end{Code}
+
+ \hypertarget{classCKEditor_3bc88e349a30e84ddbdee5d55950ddb1}{
+\index{CKEditor@{CKEditor}!addGlobalEventHandler@{addGlobalEventHandler}}
+\index{addGlobalEventHandler@{addGlobalEventHandler}!CKEditor@{CKEditor}}
+\subsubsection[{addGlobalEventHandler}]{\setlength{\rightskip}{0pt plus 5cm}CKEditor::addGlobalEventHandler (\$ {\em event}, \/  \$ {\em javascriptCode})}}
+\label{classCKEditor_3bc88e349a30e84ddbdee5d55950ddb1}
+
+
+Adds global event listener.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$event}](string) Event name. \item[{\em \$javascriptCode}](string) Javascript anonymous function or function name.\end{description}
+\end{Desc}
+Example usage: 
+
+\begin{Code}\begin{verbatim} $CKEditor->addGlobalEventHandler('dialogDefinition', 'function (ev) {
+     alert("Loading dialog: " + ev.data.name);
+ }');
+\end{verbatim}
+\end{Code}
+
+ \hypertarget{classCKEditor_17bed5f81d2db60032f0b384a9b4e237}{
+\index{CKEditor@{CKEditor}!CKEditor@{CKEditor}}
+\index{CKEditor@{CKEditor}!CKEditor@{CKEditor}}
+\subsubsection[{CKEditor}]{\setlength{\rightskip}{0pt plus 5cm}CKEditor::CKEditor (\$ {\em basePath} = {\tt null})}}
+\label{classCKEditor_17bed5f81d2db60032f0b384a9b4e237}
+
+
+Main Constructor.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$basePath}](string) URL to the CKEditor installation directory (optional). \end{description}
+\end{Desc}
+\hypertarget{classCKEditor_1b92304a2eef124810dd2be4f30e18f9}{
+\index{CKEditor@{CKEditor}!clearEventHandlers@{clearEventHandlers}}
+\index{clearEventHandlers@{clearEventHandlers}!CKEditor@{CKEditor}}
+\subsubsection[{clearEventHandlers}]{\setlength{\rightskip}{0pt plus 5cm}CKEditor::clearEventHandlers (\$ {\em event} = {\tt null})}}
+\label{classCKEditor_1b92304a2eef124810dd2be4f30e18f9}
+
+
+Clear registered event handlers. Note: this function will have no effect on already created editor instances.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$event}](string) Event name, if not set all event handlers will be removed (optional). \end{description}
+\end{Desc}
+\hypertarget{classCKEditor_1b92304a2eef124810dd2be4f30e18f9}{
+\index{CKEditor@{CKEditor}!clearEventHandlers@{clearEventHandlers}}
+\index{clearEventHandlers@{clearEventHandlers}!CKEditor@{CKEditor}}
+\subsubsection[{clearEventHandlers}]{\setlength{\rightskip}{0pt plus 5cm}CKEditor::clearEventHandlers (\$ {\em event} = {\tt null})}}
+\label{classCKEditor_1b92304a2eef124810dd2be4f30e18f9}
+
+
+Clear registered event handlers. Note: this function will have no effect on already created editor instances.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$event}](string) Event name, if not set all event handlers will be removed (optional). \end{description}
+\end{Desc}
+\hypertarget{classCKEditor_8eff2f69ca071cf793b719ef4ddea97e}{
+\index{CKEditor@{CKEditor}!clearGlobalEventHandlers@{clearGlobalEventHandlers}}
+\index{clearGlobalEventHandlers@{clearGlobalEventHandlers}!CKEditor@{CKEditor}}
+\subsubsection[{clearGlobalEventHandlers}]{\setlength{\rightskip}{0pt plus 5cm}CKEditor::clearGlobalEventHandlers (\$ {\em event} = {\tt null})}}
+\label{classCKEditor_8eff2f69ca071cf793b719ef4ddea97e}
+
+
+Clear registered global event handlers. Note: this function will have no effect if the event handler has been already printed/returned.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$event}](string) Event name, if not set all event handlers will be removed (optional). \end{description}
+\end{Desc}
+\hypertarget{classCKEditor_8eff2f69ca071cf793b719ef4ddea97e}{
+\index{CKEditor@{CKEditor}!clearGlobalEventHandlers@{clearGlobalEventHandlers}}
+\index{clearGlobalEventHandlers@{clearGlobalEventHandlers}!CKEditor@{CKEditor}}
+\subsubsection[{clearGlobalEventHandlers}]{\setlength{\rightskip}{0pt plus 5cm}CKEditor::clearGlobalEventHandlers (\$ {\em event} = {\tt null})}}
+\label{classCKEditor_8eff2f69ca071cf793b719ef4ddea97e}
+
+
+Clear registered global event handlers. Note: this function will have no effect if the event handler has been already printed/returned.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$event}](string) Event name, if not set all event handlers will be removed (optional). \end{description}
+\end{Desc}
+\hypertarget{classCKEditor_bd6f81ca7539169b55b8f0556bc594c6}{
+\index{CKEditor@{CKEditor}!editor@{editor}}
+\index{editor@{editor}!CKEditor@{CKEditor}}
+\subsubsection[{editor}]{\setlength{\rightskip}{0pt plus 5cm}CKEditor::editor (\$ {\em name}, \/  \$ {\em value} = {\tt \char`\"{}\char`\"{}}, \/  \$ {\em config} = {\tt array()}, \/  \$ {\em events} = {\tt array()})}}
+\label{classCKEditor_bd6f81ca7539169b55b8f0556bc594c6}
+
+
+Creates a CKEditor instance. In incompatible browsers CKEditor will downgrade to plain HTML $<$textarea$>$ element.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$name}](string) Name of the CKEditor instance (this will be also the \char`\"{}name\char`\"{} attribute of textarea element). \item[{\em \$value}](string) Initial value (optional). \item[{\em \$config}](array) The specific configurations to apply to this editor instance (optional). \item[{\em \$events}](array) Event listeners for this editor instance (optional).\end{description}
+\end{Desc}
+Example usage: 
+
+\begin{Code}\begin{verbatim} $CKEditor = new CKEditor();
+ $CKEditor->editor("field1", "<p>Initial value.</p>");
+\end{verbatim}
+\end{Code}
+
+
+
+Advanced example: 
+
+\begin{Code}\begin{verbatim} $CKEditor = new CKEditor();
+ $config = array();
+ $config['toolbar'] = array(
+     array( 'Source', '-', 'Bold', 'Italic', 'Underline', 'Strike' ),
+     array( 'Image', 'Link', 'Unlink', 'Anchor' )
+ );
+ $events['instanceReady'] = 'function (ev) {
+     alert("Loaded: " + ev.editor.name);
+ }';
+ $CKEditor->editor("field1", "<p>Initial value.</p>", $config, $events);
+\end{verbatim}
+\end{Code}
+
+ \hypertarget{classCKEditor_bd6f81ca7539169b55b8f0556bc594c6}{
+\index{CKEditor@{CKEditor}!editor@{editor}}
+\index{editor@{editor}!CKEditor@{CKEditor}}
+\subsubsection[{editor}]{\setlength{\rightskip}{0pt plus 5cm}CKEditor::editor (\$ {\em name}, \/  \$ {\em value} = {\tt \char`\"{}\char`\"{}}, \/  \$ {\em config} = {\tt array()}, \/  \$ {\em events} = {\tt array()})}}
+\label{classCKEditor_bd6f81ca7539169b55b8f0556bc594c6}
+
+
+Creates a CKEditor instance. In incompatible browsers CKEditor will downgrade to plain HTML $<$textarea$>$ element.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$name}](string) Name of the CKEditor instance (this will be also the \char`\"{}name\char`\"{} attribute of textarea element). \item[{\em \$value}](string) Initial value (optional). \item[{\em \$config}](array) The specific configurations to apply to this editor instance (optional). \item[{\em \$events}](array) Event listeners for this editor instance (optional).\end{description}
+\end{Desc}
+Example usage: 
+
+\begin{Code}\begin{verbatim} $CKEditor = new CKEditor();
+ $CKEditor->editor("field1", "<p>Initial value.</p>");
+\end{verbatim}
+\end{Code}
+
+
+
+Advanced example: 
+
+\begin{Code}\begin{verbatim} $CKEditor = new CKEditor();
+ $config = array();
+ $config['toolbar'] = array(
+     array( 'Source', '-', 'Bold', 'Italic', 'Underline', 'Strike' ),
+     array( 'Image', 'Link', 'Unlink', 'Anchor' )
+ );
+ $events['instanceReady'] = 'function (ev) {
+     alert("Loaded: " + ev.editor.name);
+ }';
+ $CKEditor->editor("field1", "<p>Initial value.</p>", $config, $events);
+\end{verbatim}
+\end{Code}
+
+ \hypertarget{classCKEditor_82ebacb89f96be38393ebd53a6a9ab52}{
+\index{CKEditor@{CKEditor}!replace@{replace}}
+\index{replace@{replace}!CKEditor@{CKEditor}}
+\subsubsection[{replace}]{\setlength{\rightskip}{0pt plus 5cm}CKEditor::replace (\$ {\em id}, \/  \$ {\em config} = {\tt array()}, \/  \$ {\em events} = {\tt array()})}}
+\label{classCKEditor_82ebacb89f96be38393ebd53a6a9ab52}
+
+
+Replaces a $<$textarea$>$ with a CKEditor instance.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$id}](string) The id or name of textarea element. \item[{\em \$config}](array) The specific configurations to apply to this editor instance (optional). \item[{\em \$events}](array) Event listeners for this editor instance (optional).\end{description}
+\end{Desc}
+Example 1: adding CKEditor to $<$textarea name=\char`\"{}article\char`\"{}$>$$<$/textarea$>$ element: 
+
+\begin{Code}\begin{verbatim} $CKEditor = new CKEditor();
+ $CKEditor->replace("article");
+\end{verbatim}
+\end{Code}
+
+ \hypertarget{classCKEditor_82ebacb89f96be38393ebd53a6a9ab52}{
+\index{CKEditor@{CKEditor}!replace@{replace}}
+\index{replace@{replace}!CKEditor@{CKEditor}}
+\subsubsection[{replace}]{\setlength{\rightskip}{0pt plus 5cm}CKEditor::replace (\$ {\em id}, \/  \$ {\em config} = {\tt array()}, \/  \$ {\em events} = {\tt array()})}}
+\label{classCKEditor_82ebacb89f96be38393ebd53a6a9ab52}
+
+
+Replaces a $<$textarea$>$ with a CKEditor instance.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$id}](string) The id or name of textarea element. \item[{\em \$config}](array) The specific configurations to apply to this editor instance (optional). \item[{\em \$events}](array) Event listeners for this editor instance (optional).\end{description}
+\end{Desc}
+Example 1: adding CKEditor to $<$textarea name=\char`\"{}article\char`\"{}$>$$<$/textarea$>$ element: 
+
+\begin{Code}\begin{verbatim} $CKEditor = new CKEditor();
+ $CKEditor->replace("article");
+\end{verbatim}
+\end{Code}
+
+ \hypertarget{classCKEditor_31836dd682c8d9d6bc5d59063b37c8b8}{
+\index{CKEditor@{CKEditor}!replaceAll@{replaceAll}}
+\index{replaceAll@{replaceAll}!CKEditor@{CKEditor}}
+\subsubsection[{replaceAll}]{\setlength{\rightskip}{0pt plus 5cm}CKEditor::replaceAll (\$ {\em className} = {\tt null})}}
+\label{classCKEditor_31836dd682c8d9d6bc5d59063b37c8b8}
+
+
+Replace all $<$textarea$>$ elements available in the document with editor instances.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$className}](string) If set, replace all textareas with class className in the page.\end{description}
+\end{Desc}
+Example 1: replace all $<$textarea$>$ elements in the page. 
+
+\begin{Code}\begin{verbatim} $CKEditor = new CKEditor();
+ $CKEditor->replaceAll();
+\end{verbatim}
+\end{Code}
+
+
+
+Example 2: replace all $<$textarea class=\char`\"{}myClassName\char`\"{}$>$ elements in the page. 
+
+\begin{Code}\begin{verbatim} $CKEditor = new CKEditor();
+ $CKEditor->replaceAll( 'myClassName' );
+\end{verbatim}
+\end{Code}
+
+ \hypertarget{classCKEditor_31836dd682c8d9d6bc5d59063b37c8b8}{
+\index{CKEditor@{CKEditor}!replaceAll@{replaceAll}}
+\index{replaceAll@{replaceAll}!CKEditor@{CKEditor}}
+\subsubsection[{replaceAll}]{\setlength{\rightskip}{0pt plus 5cm}CKEditor::replaceAll (\$ {\em className} = {\tt null})}}
+\label{classCKEditor_31836dd682c8d9d6bc5d59063b37c8b8}
+
+
+Replace all $<$textarea$>$ elements available in the document with editor instances.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$className}](string) If set, replace all textareas with class className in the page.\end{description}
+\end{Desc}
+Example 1: replace all $<$textarea$>$ elements in the page. 
+
+\begin{Code}\begin{verbatim} $CKEditor = new CKEditor();
+ $CKEditor->replaceAll();
+\end{verbatim}
+\end{Code}
+
+
+
+Example 2: replace all $<$textarea class=\char`\"{}myClassName\char`\"{}$>$ elements in the page. 
+
+\begin{Code}\begin{verbatim} $CKEditor = new CKEditor();
+ $CKEditor->replaceAll( 'myClassName' );
+\end{verbatim}
+\end{Code}
+
+ 
+
+\subsection{Member Data Documentation}
+\hypertarget{classCKEditor_5a276aca7f1883ad38e53e1510846c19}{
+\index{CKEditor@{CKEditor}!\$basePath@{\$basePath}}
+\index{\$basePath@{\$basePath}!CKEditor@{CKEditor}}
+\subsubsection[{\$basePath}]{\setlength{\rightskip}{0pt plus 5cm}CKEditor::\$basePath}}
+\label{classCKEditor_5a276aca7f1883ad38e53e1510846c19}
+
+
+URL to the CKEditor installation directory (absolute or relative to document root). If not set, \hyperlink{classCKEditor}{CKEditor} will try to guess it's path.
+
+Example usage: 
+
+\begin{Code}\begin{verbatim} $CKEditor->basePath = '/ckeditor/';
+\end{verbatim}
+\end{Code}
+
+ \hypertarget{classCKEditor_54173f65f448c2f1afaade3b6cbe0cb9}{
+\index{CKEditor@{CKEditor}!\$config@{\$config}}
+\index{\$config@{\$config}!CKEditor@{CKEditor}}
+\subsubsection[{\$config}]{\setlength{\rightskip}{0pt plus 5cm}CKEditor::\$config = array()}}
+\label{classCKEditor_54173f65f448c2f1afaade3b6cbe0cb9}
+
+
+An array that holds the global CKEditor configuration. For the list of available options, see \href{http://docs.cksource.com/ckeditor_api/symbols/CKEDITOR.config.html}{\tt http://docs.cksource.com/ckeditor\_\-api/symbols/CKEDITOR.config.html}
+
+Example usage: 
+
+\begin{Code}\begin{verbatim} $CKEditor->config['height'] = 400;
+ // Use @@ at the beggining of a string to ouput it without surrounding quotes.
+ $CKEditor->config['width'] = '@@screen.width * 0.8';
+\end{verbatim}
+\end{Code}
+
+ \hypertarget{classCKEditor_bc1853e9e41b16bc32e7d201b9b8f560}{
+\index{CKEditor@{CKEditor}!\$initialized@{\$initialized}}
+\index{\$initialized@{\$initialized}!CKEditor@{CKEditor}}
+\subsubsection[{\$initialized}]{\setlength{\rightskip}{0pt plus 5cm}CKEditor::\$initialized = false}}
+\label{classCKEditor_bc1853e9e41b16bc32e7d201b9b8f560}
+
+
+A boolean variable indicating whether \hyperlink{classCKEditor}{CKEditor} has been initialized. Set it to true only if you have already included $<$script$>$ tag loading ckeditor.js in your website. \hypertarget{classCKEditor_8c1b2e12b69f023e484aab53a960b15c}{
+\index{CKEditor@{CKEditor}!\$returnOutput@{\$returnOutput}}
+\index{\$returnOutput@{\$returnOutput}!CKEditor@{CKEditor}}
+\subsubsection[{\$returnOutput}]{\setlength{\rightskip}{0pt plus 5cm}CKEditor::\$returnOutput = false}}
+\label{classCKEditor_8c1b2e12b69f023e484aab53a960b15c}
+
+
+Boolean variable indicating whether created code should be printed out or returned by a function.
+
+Example 1: get the code creating CKEditor instance and print it on a page with the \char`\"{}echo\char`\"{} function. 
+
+\begin{Code}\begin{verbatim} $CKEditor = new CKEditor();
+ $CKEditor->returnOutput = true;
+ $code = $CKEditor->editor("editor1", "<p>Initial value.</p>");
+ echo "<p>Editor 1:</p>";
+ echo $code;
+\end{verbatim}
+\end{Code}
+
+ \hypertarget{classCKEditor_98970663df037c33f4841cbfbe38e5f9}{
+\index{CKEditor@{CKEditor}!\$textareaAttributes@{\$textareaAttributes}}
+\index{\$textareaAttributes@{\$textareaAttributes}!CKEditor@{CKEditor}}
+\subsubsection[{\$textareaAttributes}]{\setlength{\rightskip}{0pt plus 5cm}CKEditor::\$textareaAttributes = array( \char`\"{}rows\char`\"{} =$>$ 8, \char`\"{}cols\char`\"{} =$>$ 60 )}}
+\label{classCKEditor_98970663df037c33f4841cbfbe38e5f9}
+
+
+An array with textarea attributes.
+
+When CKEditor is created with the \hyperlink{classCKEditor_bd6f81ca7539169b55b8f0556bc594c6}{editor()} method, a HTML $<$textarea$>$ element is created, it will be displayed to anyone with JavaScript disabled or with incompatible browser. \hypertarget{classCKEditor_6c4f7cd772f7ae66a405ad2d54c33125}{
+\index{CKEditor@{CKEditor}!\$timestamp@{\$timestamp}}
+\index{\$timestamp@{\$timestamp}!CKEditor@{CKEditor}}
+\subsubsection[{\$timestamp}]{\setlength{\rightskip}{0pt plus 5cm}CKEditor::\${\bf timestamp} = \char`\"{}A1QD\char`\"{}}}
+\label{classCKEditor_6c4f7cd772f7ae66a405ad2d54c33125}
+
+
+A string indicating the creation date of CKEditor. Do not change it unless you want to force browsers to not use previously cached version of CKEditor. \hypertarget{classCKEditor_25b4e99a756a8c5d1dc101ecccecbcf7}{
+\index{CKEditor@{CKEditor}!timestamp@{timestamp}}
+\index{timestamp@{timestamp}!CKEditor@{CKEditor}}
+\subsubsection[{timestamp}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf CKEditor::timestamp} = 'A1QD'}}
+\label{classCKEditor_25b4e99a756a8c5d1dc101ecccecbcf7}
+
+
+A constant string unique for each release of CKEditor. \hypertarget{classCKEditor_f23ec1a6cfb30139f39bf4ffbc7d36d7}{
+\index{CKEditor@{CKEditor}!version@{version}}
+\index{version@{version}!CKEditor@{CKEditor}}
+\subsubsection[{version}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf CKEditor::version} = '3.2'}}
+\label{classCKEditor_f23ec1a6cfb30139f39bf4ffbc7d36d7}
+
+
+The version of CKEditor. 
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+sites/all/libraries/ckeditor/ckeditor\_\-php4.php\item 
+sites/all/libraries/ckeditor/ckeditor\_\-php5.php\end{CompactItemize}

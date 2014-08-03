@@ -1,0 +1,121 @@
+\hypertarget{classflag__handler__field__ops}{
+\section{flag\_\-handler\_\-field\_\-ops Class Reference}
+\label{classflag__handler__field__ops}\index{flag\_\-handler\_\-field\_\-ops@{flag\_\-handler\_\-field\_\-ops}}
+}
+Inheritance diagram for flag\_\-handler\_\-field\_\-ops::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4cm]{classflag__handler__field__ops}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classflag__handler__field__ops_378ce25780095e34a818eabe862d61a9}{get\_\-flag} ()
+\item 
+\hyperlink{classflag__handler__field__ops_bd0b18279699026a09a1b8d21142d696}{get\_\-parent\_\-relationship} ()
+\item 
+\hyperlink{classflag__handler__field__ops_05750d85d477c51b5fa267a75e245d5a}{option\_\-definition} ()
+\item 
+\hyperlink{classflag__handler__field__ops_88b37806cdb2d420b830d0030ef7028a}{options\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classflag__handler__field__ops_a42722b03427da1e009f3b6075af703a}{query} ()
+\item 
+\hyperlink{classflag__handler__field__ops_5ad942714340d84d5462f3fd928a230c}{pre\_\-render} (\$values)
+\item 
+\hyperlink{classflag__handler__field__ops_3732dd37e3011699c7489e02e2aa3655}{render} (\$values)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Views field handler for the Flag operations links (flag/unflag). 
+
+\subsection{Member Function Documentation}
+\hypertarget{classflag__handler__field__ops_378ce25780095e34a818eabe862d61a9}{
+\index{flag\_\-handler\_\-field\_\-ops@{flag\_\-handler\_\-field\_\-ops}!get\_\-flag@{get\_\-flag}}
+\index{get\_\-flag@{get\_\-flag}!flag_handler_field_ops@{flag\_\-handler\_\-field\_\-ops}}
+\subsubsection[{get\_\-flag}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-handler\_\-field\_\-ops::get\_\-flag ()}}
+\label{classflag__handler__field__ops_378ce25780095e34a818eabe862d61a9}
+
+
+Returns the flag object associated with our field.
+
+A field is in some relationship. This function reaches out for this relationship and reads its 'flag' option, which holds the flag name. \hypertarget{classflag__handler__field__ops_bd0b18279699026a09a1b8d21142d696}{
+\index{flag\_\-handler\_\-field\_\-ops@{flag\_\-handler\_\-field\_\-ops}!get\_\-parent\_\-relationship@{get\_\-parent\_\-relationship}}
+\index{get\_\-parent\_\-relationship@{get\_\-parent\_\-relationship}!flag_handler_field_ops@{flag\_\-handler\_\-field\_\-ops}}
+\subsubsection[{get\_\-parent\_\-relationship}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-handler\_\-field\_\-ops::get\_\-parent\_\-relationship ()}}
+\label{classflag__handler__field__ops_bd0b18279699026a09a1b8d21142d696}
+
+
+Return the the relationship we're linked to. That is, the alias for its table (which is suitbale for use with the various methods of the 'query' object). \hypertarget{classflag__handler__field__ops_05750d85d477c51b5fa267a75e245d5a}{
+\index{flag\_\-handler\_\-field\_\-ops@{flag\_\-handler\_\-field\_\-ops}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!flag_handler_field_ops@{flag\_\-handler\_\-field\_\-ops}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-handler\_\-field\_\-ops::option\_\-definition ()}}
+\label{classflag__handler__field__ops_05750d85d477c51b5fa267a75e245d5a}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented from \hyperlink{classviews__handler__field_64c69a8a3697603f8283405071c25b76}{views\_\-handler\_\-field}.\hypertarget{classflag__handler__field__ops_88b37806cdb2d420b830d0030ef7028a}{
+\index{flag\_\-handler\_\-field\_\-ops@{flag\_\-handler\_\-field\_\-ops}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!flag_handler_field_ops@{flag\_\-handler\_\-field\_\-ops}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-handler\_\-field\_\-ops::options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classflag__handler__field__ops_88b37806cdb2d420b830d0030ef7028a}
+
+
+Default options form that provides the label widget that all fields should have. 
+
+Reimplemented from \hyperlink{classviews__handler__field_0435d161922b7b4b84f02a2e79bb947a}{views\_\-handler\_\-field}.\hypertarget{classflag__handler__field__ops_5ad942714340d84d5462f3fd928a230c}{
+\index{flag\_\-handler\_\-field\_\-ops@{flag\_\-handler\_\-field\_\-ops}!pre\_\-render@{pre\_\-render}}
+\index{pre\_\-render@{pre\_\-render}!flag_handler_field_ops@{flag\_\-handler\_\-field\_\-ops}}
+\subsubsection[{pre\_\-render}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-handler\_\-field\_\-ops::pre\_\-render (\$ {\em values})}}
+\label{classflag__handler__field__ops_5ad942714340d84d5462f3fd928a230c}
+
+
+Find out if the flag applies to each item seen on the page. It's done in a separate DB query to to avoid complexity and to make 'many to one' tests (e.g. checking user roles) possible without causing duplicate rows. 
+
+Reimplemented from \hyperlink{classviews__handler__field_e30a1d9c98c62ae40c90b938e09cd0ec}{views\_\-handler\_\-field}.\hypertarget{classflag__handler__field__ops_a42722b03427da1e009f3b6075af703a}{
+\index{flag\_\-handler\_\-field\_\-ops@{flag\_\-handler\_\-field\_\-ops}!query@{query}}
+\index{query@{query}!flag_handler_field_ops@{flag\_\-handler\_\-field\_\-ops}}
+\subsubsection[{query}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-handler\_\-field\_\-ops::query ()}}
+\label{classflag__handler__field__ops_a42722b03427da1e009f3b6075af703a}
+
+
+Override base query(). The purpose here is to make it possible for the \hyperlink{classflag__handler__field__ops_3732dd37e3011699c7489e02e2aa3655}{render()} method to know two things: what's the content ID, and whether it's flagged. 
+
+Reimplemented from \hyperlink{classviews__handler__field_4f661f91bcbe80d4a00c30a31456c502}{views\_\-handler\_\-field}.\hypertarget{classflag__handler__field__ops_3732dd37e3011699c7489e02e2aa3655}{
+\index{flag\_\-handler\_\-field\_\-ops@{flag\_\-handler\_\-field\_\-ops}!render@{render}}
+\index{render@{render}!flag_handler_field_ops@{flag\_\-handler\_\-field\_\-ops}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-handler\_\-field\_\-ops::render (\$ {\em values})}}
+\label{classflag__handler__field__ops_3732dd37e3011699c7489e02e2aa3655}
+
+
+Render the field.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$values}]The values retrieved from the database. \end{description}
+\end{Desc}
+
+
+Reimplemented from \hyperlink{classviews__handler__field_82ff951c5e9ceb97b2eab86f880cbc1e}{views\_\-handler\_\-field}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/flag/includes/\hyperlink{flag__handler__field__ops_8inc}{flag\_\-handler\_\-field\_\-ops.inc}\end{CompactItemize}

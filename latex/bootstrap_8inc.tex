@@ -1,0 +1,926 @@
+\hypertarget{bootstrap_8inc}{
+\section{includes/bootstrap.inc File Reference}
+\label{bootstrap_8inc}\index{includes/bootstrap.inc@{includes/bootstrap.inc}}
+}
+\subsection*{Enumerations}
+\begin{CompactItemize}
+\item 
+enum \hyperlink{bootstrap_8inc_d987330fff5fa7c75800762ddedf300c}{CACHE\_\-PERMANENT} 
+\item 
+enum \hyperlink{bootstrap_8inc_1f2558e91eb9f33d14168bb8dfd99690}{CACHE\_\-TEMPORARY} 
+\item 
+enum \hyperlink{bootstrap_8inc_14fac00bc515c0931ce0a5b0193e00c0}{CACHE\_\-DISABLED} 
+\item 
+enum \hyperlink{bootstrap_8inc_068072633e0369efaf063d814bdacf9a}{CACHE\_\-NORMAL} 
+\item 
+enum \hyperlink{bootstrap_8inc_c48cd3663e21507376bbbe62d3436223}{CACHE\_\-AGGRESSIVE} 
+\item 
+enum \hyperlink{bootstrap_8inc_878c4376d15611196e4a5f50e8287084}{WATCHDOG\_\-EMERG} 
+\item 
+enum \hyperlink{bootstrap_8inc_9fdd40d55b14109f09f091f401f237c0}{WATCHDOG\_\-ALERT} 
+\item 
+enum \hyperlink{bootstrap_8inc_b4129b98c8480bea3cbcd62083ae81e3}{WATCHDOG\_\-CRITICAL} 
+\item 
+enum \hyperlink{bootstrap_8inc_174c9df2936096e11986fcf184d48576}{WATCHDOG\_\-ERROR} 
+\item 
+enum \hyperlink{bootstrap_8inc_5361f835e10b39b553ee73c1b9414bf1}{WATCHDOG\_\-WARNING} 
+\item 
+enum \hyperlink{bootstrap_8inc_757a33416683e8c44636a8799f60b477}{WATCHDOG\_\-NOTICE} 
+\item 
+enum \hyperlink{bootstrap_8inc_9629ff808fd20ce4abb297db5976af4d}{WATCHDOG\_\-INFO} 
+\item 
+enum \hyperlink{bootstrap_8inc_f672cd38d5654f8a4a12e32d9b9e749d}{WATCHDOG\_\-DEBUG} 
+\item 
+enum \hyperlink{bootstrap_8inc_d71394314c3ad7cef54b5f566e3ec177}{DRUPAL\_\-BOOTSTRAP\_\-CONFIGURATION} 
+\item 
+enum \hyperlink{bootstrap_8inc_2a31f7dd5f742243b66f16c9d3237407}{DRUPAL\_\-BOOTSTRAP\_\-EARLY\_\-PAGE\_\-CACHE} 
+\item 
+enum \hyperlink{bootstrap_8inc_693d842eaaf448b1e6c37cc4ef068e3a}{DRUPAL\_\-BOOTSTRAP\_\-DATABASE} 
+\item 
+enum \hyperlink{bootstrap_8inc_1f2edb3f8e05ef17adfb116fa0cfac8e}{DRUPAL\_\-BOOTSTRAP\_\-ACCESS} 
+\item 
+enum \hyperlink{bootstrap_8inc_a6c510376f042cd2d05fc9bb458e7138}{DRUPAL\_\-BOOTSTRAP\_\-SESSION} 
+\item 
+enum \hyperlink{bootstrap_8inc_ddfe2406691de4bbb8fceba3ac83ee1a}{DRUPAL\_\-BOOTSTRAP\_\-LATE\_\-PAGE\_\-CACHE} 
+\item 
+enum \hyperlink{bootstrap_8inc_e4a0a1bc1243082285abc3fc052e5d38}{DRUPAL\_\-BOOTSTRAP\_\-LANGUAGE} 
+\item 
+enum \hyperlink{bootstrap_8inc_4366634a7ebd903c25d1f04737f17f4f}{DRUPAL\_\-BOOTSTRAP\_\-PATH} 
+\item 
+enum \hyperlink{bootstrap_8inc_2c8ac509af1924cf2fa7420a22e1b048}{DRUPAL\_\-BOOTSTRAP\_\-FULL} 
+\item 
+enum \hyperlink{bootstrap_8inc_c7816037c6b6b794a56dcce4dea70569}{DRUPAL\_\-ANONYMOUS\_\-RID} 
+\item 
+enum \hyperlink{bootstrap_8inc_c2d2d9cd4c8559510f9baa997525373e}{DRUPAL\_\-AUTHENTICATED\_\-RID} 
+\item 
+enum \hyperlink{bootstrap_8inc_ea1c293260404804b9cd8317f9559e70}{LANGUAGE\_\-NEGOTIATION\_\-NONE} 
+\item 
+enum \hyperlink{bootstrap_8inc_1614b466569aa36b6c7214c154ec766b}{LANGUAGE\_\-NEGOTIATION\_\-PATH\_\-DEFAULT} 
+\item 
+enum \hyperlink{bootstrap_8inc_5a3d6548cae60a6c58cb7673b31abfeb}{LANGUAGE\_\-NEGOTIATION\_\-PATH} 
+\item 
+enum \hyperlink{bootstrap_8inc_4364d1b8742532db73639f34457529ef}{LANGUAGE\_\-NEGOTIATION\_\-DOMAIN} 
+\item 
+enum \hyperlink{bootstrap_8inc_8790965df4de009fe8bdcf17f6a5c738}{LANGUAGE\_\-LTR} 
+\item 
+enum \hyperlink{bootstrap_8inc_c3c2ed4c787f238d2d39d644dbdcb6d4}{LANGUAGE\_\-RTL} 
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+if(defined('E\_\-DEPRECATED')) \hyperlink{bootstrap_8inc_a033ad6f8e530b98c9024a20e554423b}{timer\_\-start} (\$name)
+\item 
+\hyperlink{bootstrap_8inc_d093007ebd04feb2a1394ff5774eb6d4}{timer\_\-read} (\$name)
+\item 
+\hyperlink{bootstrap_8inc_8cb56b8962398895710c35a3584a7d11}{timer\_\-stop} (\$name)
+\item 
+\hyperlink{bootstrap_8inc_cef612ef19c49f6259531f0bee5c26cc}{conf\_\-path} (\$require\_\-settings=TRUE, \$reset=FALSE)
+\item 
+\hyperlink{bootstrap_8inc_f4eb5dc356848a28e53aed5ee6eff6a8}{drupal\_\-unset\_\-globals} ()
+\item 
+\hyperlink{bootstrap_8inc_e65d9d5f6c34309eb884e51fd39ffb6d}{drupal\_\-valid\_\-http\_\-host} (\$host)
+\item 
+\hyperlink{bootstrap_8inc_fedab27d166f281dfc2b4068866ab896}{conf\_\-init} ()
+\item 
+\hyperlink{bootstrap_8inc_e2af73b6b16cc9d723e931748aa6c853}{drupal\_\-get\_\-filename} (\$type, \$name, \$filename=NULL)
+\item 
+\hyperlink{bootstrap_8inc_222324598cdafc327254344a6c2d2aa2}{variable\_\-init} (\$conf=array())
+\item 
+\hyperlink{bootstrap_8inc_ba5d67193d1f9d9fd4636cff54fc4154}{variable\_\-get} (\$name, \$default)
+\item 
+\hyperlink{bootstrap_8inc_9859faa6fcd56ca6048be93dace95999}{variable\_\-set} (\$name, \$value)
+\item 
+\hyperlink{bootstrap_8inc_7850bff5f313f85335f418e6d87606b1}{variable\_\-del} (\$name)
+\item 
+\hyperlink{bootstrap_8inc_51e89d55fa18dc4ba2ae09a1f5f936ef}{page\_\-get\_\-cache} (\$status\_\-only=FALSE)
+\item 
+\hyperlink{bootstrap_8inc_3f13159d2e93ecfd09823d8dca30f5d9}{bootstrap\_\-invoke\_\-all} (\$hook)
+\item 
+\hyperlink{bootstrap_8inc_13a2254228f213a980dc1f09886b8802}{drupal\_\-load} (\$type, \$name)
+\item 
+\hyperlink{bootstrap_8inc_05f3dc0377da7898b9cb53977c30cca6}{drupal\_\-page\_\-header} ()
+\item 
+\hyperlink{bootstrap_8inc_e493c235ee5e28b3b5c664db14294dce}{drupal\_\-page\_\-cache\_\-header} (\$cache)
+\item 
+\hyperlink{bootstrap_8inc_7a24c0b200b76c22c63b99e935e1bd5a}{bootstrap\_\-hooks} ()
+\item 
+\hyperlink{bootstrap_8inc_4ca39fd7bed1a45e340f86bc2d59224d}{drupal\_\-unpack} (\$obj, \$field= 'data')
+\item 
+\hyperlink{bootstrap_8inc_fbe92bfb1695e3710ae4136c6972be5c}{referer\_\-uri} ()
+\item 
+\hyperlink{bootstrap_8inc_76fc67a30fd8d75ddd80565e6e65a13d}{check\_\-plain} (\$text)
+\item 
+\hyperlink{bootstrap_8inc_bf62947a33393477301b0070b1ff0c7a}{drupal\_\-validate\_\-utf8} (\$text)
+\item 
+\hyperlink{bootstrap_8inc_80b52d5331d840440b5e3dfe82dd7ea2}{request\_\-uri} ()
+\item 
+\hyperlink{bootstrap_8inc_cb7338e6740302727043d64e3ae1257b}{watchdog} (\$type, \$message, \$variables=array(), \$severity=\hyperlink{bootstrap_8inc_757a33416683e8c44636a8799f60b477}{WATCHDOG\_\-NOTICE}, \$link=NULL)
+\item 
+\hyperlink{bootstrap_8inc_d9223d86c7b08b1288274ce211d9bfa6}{drupal\_\-set\_\-message} (\$message=NULL, \$type= 'status', \$repeat=TRUE)
+\item 
+\hyperlink{bootstrap_8inc_2c9915d030bad8c5bacf6de25e6fd14c}{drupal\_\-get\_\-messages} (\$type=NULL, \$clear\_\-queue=TRUE)
+\item 
+\hyperlink{bootstrap_8inc_81a621ba76a61bc21124da331cc7e4af}{drupal\_\-is\_\-denied} (\$type, \$mask)
+\item 
+\hyperlink{bootstrap_8inc_e529fccbab60752dd4f91acc6b7fce06}{drupal\_\-anonymous\_\-user} (\$session= '')
+\item 
+\hyperlink{bootstrap_8inc_878e64af36fcd5f173b07ae57b07ea10}{drupal\_\-bootstrap} (\$phase)
+\item 
+\hypertarget{bootstrap_8inc_5b8c2006a61d66b1b2f4180e0fb62b06}{
+\textbf{\_\-drupal\_\-bootstrap} (\$phase)}
+\label{bootstrap_8inc_5b8c2006a61d66b1b2f4180e0fb62b06}
+
+\item 
+\hyperlink{bootstrap_8inc_861d3f7c553fe62829f6c0f2e4fe89e6}{drupal\_\-maintenance\_\-theme} ()
+\item 
+\hyperlink{bootstrap_8inc_a50232f577883a48731fc93530628a79}{get\_\-t} ()
+\item 
+\hyperlink{bootstrap_8inc_5f67d97a363fcc3f51bf6a7b135778e7}{drupal\_\-init\_\-language} ()
+\item 
+\hyperlink{bootstrap_8inc_0811ad6f8df4a2f64457914aeafcee3d}{language\_\-list} (\$field= 'language', \$reset=FALSE)
+\item 
+\hyperlink{bootstrap_8inc_336c0878074791056c62640cd95d8067}{language\_\-default} (\$property=NULL)
+\item 
+\hyperlink{bootstrap_8inc_ec2f772317b4fb79cc696412c2e455c3}{ip\_\-address} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Functions that need to be loaded on every Drupal request. 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{bootstrap_8inc_c48cd3663e21507376bbbe62d3436223}{
+\index{bootstrap.inc@{bootstrap.inc}!CACHE\_\-AGGRESSIVE@{CACHE\_\-AGGRESSIVE}}
+\index{CACHE\_\-AGGRESSIVE@{CACHE\_\-AGGRESSIVE}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{CACHE\_\-AGGRESSIVE}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf CACHE\_\-AGGRESSIVE}}}
+\label{bootstrap_8inc_c48cd3663e21507376bbbe62d3436223}
+
+
+Indicates that page caching is using \char`\"{}aggressive\char`\"{} mode. This bypasses loading any modules for additional speed, which may break functionality in modules that expect to be run on each page load. \hypertarget{bootstrap_8inc_14fac00bc515c0931ce0a5b0193e00c0}{
+\index{bootstrap.inc@{bootstrap.inc}!CACHE\_\-DISABLED@{CACHE\_\-DISABLED}}
+\index{CACHE\_\-DISABLED@{CACHE\_\-DISABLED}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{CACHE\_\-DISABLED}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf CACHE\_\-DISABLED}}}
+\label{bootstrap_8inc_14fac00bc515c0931ce0a5b0193e00c0}
+
+
+Indicates that page caching is disabled. \hypertarget{bootstrap_8inc_068072633e0369efaf063d814bdacf9a}{
+\index{bootstrap.inc@{bootstrap.inc}!CACHE\_\-NORMAL@{CACHE\_\-NORMAL}}
+\index{CACHE\_\-NORMAL@{CACHE\_\-NORMAL}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{CACHE\_\-NORMAL}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf CACHE\_\-NORMAL}}}
+\label{bootstrap_8inc_068072633e0369efaf063d814bdacf9a}
+
+
+Indicates that page caching is enabled, using \char`\"{}normal\char`\"{} mode. \hypertarget{bootstrap_8inc_d987330fff5fa7c75800762ddedf300c}{
+\index{bootstrap.inc@{bootstrap.inc}!CACHE\_\-PERMANENT@{CACHE\_\-PERMANENT}}
+\index{CACHE\_\-PERMANENT@{CACHE\_\-PERMANENT}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{CACHE\_\-PERMANENT}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf CACHE\_\-PERMANENT}}}
+\label{bootstrap_8inc_d987330fff5fa7c75800762ddedf300c}
+
+
+Indicates that the item should never be removed unless explicitly told to using cache\_\-clear\_\-all() with a cache ID. \hypertarget{bootstrap_8inc_1f2558e91eb9f33d14168bb8dfd99690}{
+\index{bootstrap.inc@{bootstrap.inc}!CACHE\_\-TEMPORARY@{CACHE\_\-TEMPORARY}}
+\index{CACHE\_\-TEMPORARY@{CACHE\_\-TEMPORARY}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{CACHE\_\-TEMPORARY}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf CACHE\_\-TEMPORARY}}}
+\label{bootstrap_8inc_1f2558e91eb9f33d14168bb8dfd99690}
+
+
+Indicates that the item should be removed at the next general cache wipe. \hypertarget{bootstrap_8inc_c7816037c6b6b794a56dcce4dea70569}{
+\index{bootstrap.inc@{bootstrap.inc}!DRUPAL\_\-ANONYMOUS\_\-RID@{DRUPAL\_\-ANONYMOUS\_\-RID}}
+\index{DRUPAL\_\-ANONYMOUS\_\-RID@{DRUPAL\_\-ANONYMOUS\_\-RID}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{DRUPAL\_\-ANONYMOUS\_\-RID}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf DRUPAL\_\-ANONYMOUS\_\-RID}}}
+\label{bootstrap_8inc_c7816037c6b6b794a56dcce4dea70569}
+
+
+Role ID for anonymous users; should match what's in the \char`\"{}role\char`\"{} table. \hypertarget{bootstrap_8inc_c2d2d9cd4c8559510f9baa997525373e}{
+\index{bootstrap.inc@{bootstrap.inc}!DRUPAL\_\-AUTHENTICATED\_\-RID@{DRUPAL\_\-AUTHENTICATED\_\-RID}}
+\index{DRUPAL\_\-AUTHENTICATED\_\-RID@{DRUPAL\_\-AUTHENTICATED\_\-RID}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{DRUPAL\_\-AUTHENTICATED\_\-RID}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf DRUPAL\_\-AUTHENTICATED\_\-RID}}}
+\label{bootstrap_8inc_c2d2d9cd4c8559510f9baa997525373e}
+
+
+Role ID for authenticated users; should match what's in the \char`\"{}role\char`\"{} table. \hypertarget{bootstrap_8inc_1f2edb3f8e05ef17adfb116fa0cfac8e}{
+\index{bootstrap.inc@{bootstrap.inc}!DRUPAL\_\-BOOTSTRAP\_\-ACCESS@{DRUPAL\_\-BOOTSTRAP\_\-ACCESS}}
+\index{DRUPAL\_\-BOOTSTRAP\_\-ACCESS@{DRUPAL\_\-BOOTSTRAP\_\-ACCESS}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{DRUPAL\_\-BOOTSTRAP\_\-ACCESS}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf DRUPAL\_\-BOOTSTRAP\_\-ACCESS}}}
+\label{bootstrap_8inc_1f2edb3f8e05ef17adfb116fa0cfac8e}
+
+
+Fourth bootstrap phase: identify and reject banned hosts. \hypertarget{bootstrap_8inc_d71394314c3ad7cef54b5f566e3ec177}{
+\index{bootstrap.inc@{bootstrap.inc}!DRUPAL\_\-BOOTSTRAP\_\-CONFIGURATION@{DRUPAL\_\-BOOTSTRAP\_\-CONFIGURATION}}
+\index{DRUPAL\_\-BOOTSTRAP\_\-CONFIGURATION@{DRUPAL\_\-BOOTSTRAP\_\-CONFIGURATION}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{DRUPAL\_\-BOOTSTRAP\_\-CONFIGURATION}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf DRUPAL\_\-BOOTSTRAP\_\-CONFIGURATION}}}
+\label{bootstrap_8inc_d71394314c3ad7cef54b5f566e3ec177}
+
+
+First bootstrap phase: initialize configuration. \hypertarget{bootstrap_8inc_693d842eaaf448b1e6c37cc4ef068e3a}{
+\index{bootstrap.inc@{bootstrap.inc}!DRUPAL\_\-BOOTSTRAP\_\-DATABASE@{DRUPAL\_\-BOOTSTRAP\_\-DATABASE}}
+\index{DRUPAL\_\-BOOTSTRAP\_\-DATABASE@{DRUPAL\_\-BOOTSTRAP\_\-DATABASE}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{DRUPAL\_\-BOOTSTRAP\_\-DATABASE}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf DRUPAL\_\-BOOTSTRAP\_\-DATABASE}}}
+\label{bootstrap_8inc_693d842eaaf448b1e6c37cc4ef068e3a}
+
+
+Third bootstrap phase: initialize database layer. \hypertarget{bootstrap_8inc_2a31f7dd5f742243b66f16c9d3237407}{
+\index{bootstrap.inc@{bootstrap.inc}!DRUPAL\_\-BOOTSTRAP\_\-EARLY\_\-PAGE\_\-CACHE@{DRUPAL\_\-BOOTSTRAP\_\-EARLY\_\-PAGE\_\-CACHE}}
+\index{DRUPAL\_\-BOOTSTRAP\_\-EARLY\_\-PAGE\_\-CACHE@{DRUPAL\_\-BOOTSTRAP\_\-EARLY\_\-PAGE\_\-CACHE}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{DRUPAL\_\-BOOTSTRAP\_\-EARLY\_\-PAGE\_\-CACHE}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf DRUPAL\_\-BOOTSTRAP\_\-EARLY\_\-PAGE\_\-CACHE}}}
+\label{bootstrap_8inc_2a31f7dd5f742243b66f16c9d3237407}
+
+
+Second bootstrap phase: try to call a non-database cache fetch routine. \hypertarget{bootstrap_8inc_2c8ac509af1924cf2fa7420a22e1b048}{
+\index{bootstrap.inc@{bootstrap.inc}!DRUPAL\_\-BOOTSTRAP\_\-FULL@{DRUPAL\_\-BOOTSTRAP\_\-FULL}}
+\index{DRUPAL\_\-BOOTSTRAP\_\-FULL@{DRUPAL\_\-BOOTSTRAP\_\-FULL}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{DRUPAL\_\-BOOTSTRAP\_\-FULL}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf DRUPAL\_\-BOOTSTRAP\_\-FULL}}}
+\label{bootstrap_8inc_2c8ac509af1924cf2fa7420a22e1b048}
+
+
+Final bootstrap phase: Drupal is fully loaded; validate and fix input data. \hypertarget{bootstrap_8inc_e4a0a1bc1243082285abc3fc052e5d38}{
+\index{bootstrap.inc@{bootstrap.inc}!DRUPAL\_\-BOOTSTRAP\_\-LANGUAGE@{DRUPAL\_\-BOOTSTRAP\_\-LANGUAGE}}
+\index{DRUPAL\_\-BOOTSTRAP\_\-LANGUAGE@{DRUPAL\_\-BOOTSTRAP\_\-LANGUAGE}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{DRUPAL\_\-BOOTSTRAP\_\-LANGUAGE}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf DRUPAL\_\-BOOTSTRAP\_\-LANGUAGE}}}
+\label{bootstrap_8inc_e4a0a1bc1243082285abc3fc052e5d38}
+
+
+Seventh bootstrap phase: find out language of the page. \hypertarget{bootstrap_8inc_ddfe2406691de4bbb8fceba3ac83ee1a}{
+\index{bootstrap.inc@{bootstrap.inc}!DRUPAL\_\-BOOTSTRAP\_\-LATE\_\-PAGE\_\-CACHE@{DRUPAL\_\-BOOTSTRAP\_\-LATE\_\-PAGE\_\-CACHE}}
+\index{DRUPAL\_\-BOOTSTRAP\_\-LATE\_\-PAGE\_\-CACHE@{DRUPAL\_\-BOOTSTRAP\_\-LATE\_\-PAGE\_\-CACHE}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{DRUPAL\_\-BOOTSTRAP\_\-LATE\_\-PAGE\_\-CACHE}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf DRUPAL\_\-BOOTSTRAP\_\-LATE\_\-PAGE\_\-CACHE}}}
+\label{bootstrap_8inc_ddfe2406691de4bbb8fceba3ac83ee1a}
+
+
+Sixth bootstrap phase: load \hyperlink{bootstrap_8inc}{bootstrap.inc} and \hyperlink{module_8inc}{module.inc}, start the variable system and try to serve a page from the cache. \hypertarget{bootstrap_8inc_4366634a7ebd903c25d1f04737f17f4f}{
+\index{bootstrap.inc@{bootstrap.inc}!DRUPAL\_\-BOOTSTRAP\_\-PATH@{DRUPAL\_\-BOOTSTRAP\_\-PATH}}
+\index{DRUPAL\_\-BOOTSTRAP\_\-PATH@{DRUPAL\_\-BOOTSTRAP\_\-PATH}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{DRUPAL\_\-BOOTSTRAP\_\-PATH}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf DRUPAL\_\-BOOTSTRAP\_\-PATH}}}
+\label{bootstrap_8inc_4366634a7ebd903c25d1f04737f17f4f}
+
+
+Eighth bootstrap phase: set \$\_\-GET\mbox{[}'q'\mbox{]} to Drupal path of request. \hypertarget{bootstrap_8inc_a6c510376f042cd2d05fc9bb458e7138}{
+\index{bootstrap.inc@{bootstrap.inc}!DRUPAL\_\-BOOTSTRAP\_\-SESSION@{DRUPAL\_\-BOOTSTRAP\_\-SESSION}}
+\index{DRUPAL\_\-BOOTSTRAP\_\-SESSION@{DRUPAL\_\-BOOTSTRAP\_\-SESSION}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{DRUPAL\_\-BOOTSTRAP\_\-SESSION}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf DRUPAL\_\-BOOTSTRAP\_\-SESSION}}}
+\label{bootstrap_8inc_a6c510376f042cd2d05fc9bb458e7138}
+
+
+Fifth bootstrap phase: initialize session handling. \hypertarget{bootstrap_8inc_8790965df4de009fe8bdcf17f6a5c738}{
+\index{bootstrap.inc@{bootstrap.inc}!LANGUAGE\_\-LTR@{LANGUAGE\_\-LTR}}
+\index{LANGUAGE\_\-LTR@{LANGUAGE\_\-LTR}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{LANGUAGE\_\-LTR}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf LANGUAGE\_\-LTR}}}
+\label{bootstrap_8inc_8790965df4de009fe8bdcf17f6a5c738}
+
+
+Language written left to right. Possible value of \$language-$>$direction. \hypertarget{bootstrap_8inc_4364d1b8742532db73639f34457529ef}{
+\index{bootstrap.inc@{bootstrap.inc}!LANGUAGE\_\-NEGOTIATION\_\-DOMAIN@{LANGUAGE\_\-NEGOTIATION\_\-DOMAIN}}
+\index{LANGUAGE\_\-NEGOTIATION\_\-DOMAIN@{LANGUAGE\_\-NEGOTIATION\_\-DOMAIN}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{LANGUAGE\_\-NEGOTIATION\_\-DOMAIN}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf LANGUAGE\_\-NEGOTIATION\_\-DOMAIN}}}
+\label{bootstrap_8inc_4364d1b8742532db73639f34457529ef}
+
+
+Domain based negotiation with fallback to default language if no language identified by domain. \hypertarget{bootstrap_8inc_ea1c293260404804b9cd8317f9559e70}{
+\index{bootstrap.inc@{bootstrap.inc}!LANGUAGE\_\-NEGOTIATION\_\-NONE@{LANGUAGE\_\-NEGOTIATION\_\-NONE}}
+\index{LANGUAGE\_\-NEGOTIATION\_\-NONE@{LANGUAGE\_\-NEGOTIATION\_\-NONE}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{LANGUAGE\_\-NEGOTIATION\_\-NONE}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf LANGUAGE\_\-NEGOTIATION\_\-NONE}}}
+\label{bootstrap_8inc_ea1c293260404804b9cd8317f9559e70}
+
+
+No language negotiation. The default language is used. \hypertarget{bootstrap_8inc_5a3d6548cae60a6c58cb7673b31abfeb}{
+\index{bootstrap.inc@{bootstrap.inc}!LANGUAGE\_\-NEGOTIATION\_\-PATH@{LANGUAGE\_\-NEGOTIATION\_\-PATH}}
+\index{LANGUAGE\_\-NEGOTIATION\_\-PATH@{LANGUAGE\_\-NEGOTIATION\_\-PATH}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{LANGUAGE\_\-NEGOTIATION\_\-PATH}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf LANGUAGE\_\-NEGOTIATION\_\-PATH}}}
+\label{bootstrap_8inc_5a3d6548cae60a6c58cb7673b31abfeb}
+
+
+Path based negotiation with fallback to user preferences and browser language detection if no defined path prefix identified. \hypertarget{bootstrap_8inc_1614b466569aa36b6c7214c154ec766b}{
+\index{bootstrap.inc@{bootstrap.inc}!LANGUAGE\_\-NEGOTIATION\_\-PATH\_\-DEFAULT@{LANGUAGE\_\-NEGOTIATION\_\-PATH\_\-DEFAULT}}
+\index{LANGUAGE\_\-NEGOTIATION\_\-PATH\_\-DEFAULT@{LANGUAGE\_\-NEGOTIATION\_\-PATH\_\-DEFAULT}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{LANGUAGE\_\-NEGOTIATION\_\-PATH\_\-DEFAULT}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf LANGUAGE\_\-NEGOTIATION\_\-PATH\_\-DEFAULT}}}
+\label{bootstrap_8inc_1614b466569aa36b6c7214c154ec766b}
+
+
+Path based negotiation with fallback to default language if no defined path prefix identified. \hypertarget{bootstrap_8inc_c3c2ed4c787f238d2d39d644dbdcb6d4}{
+\index{bootstrap.inc@{bootstrap.inc}!LANGUAGE\_\-RTL@{LANGUAGE\_\-RTL}}
+\index{LANGUAGE\_\-RTL@{LANGUAGE\_\-RTL}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{LANGUAGE\_\-RTL}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf LANGUAGE\_\-RTL}}}
+\label{bootstrap_8inc_c3c2ed4c787f238d2d39d644dbdcb6d4}
+
+
+Language written right to left. Possible value of \$language-$>$direction. \hypertarget{bootstrap_8inc_9fdd40d55b14109f09f091f401f237c0}{
+\index{bootstrap.inc@{bootstrap.inc}!WATCHDOG\_\-ALERT@{WATCHDOG\_\-ALERT}}
+\index{WATCHDOG\_\-ALERT@{WATCHDOG\_\-ALERT}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{WATCHDOG\_\-ALERT}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf WATCHDOG\_\-ALERT}}}
+\label{bootstrap_8inc_9fdd40d55b14109f09f091f401f237c0}
+
+
+Log message severity -- Alert: action must be taken immediately.
+
+The WATCHDOG\_\-$\ast$ constant definitions correspond to the logging severity levels defined in RFC 3164, section 4.1.1: \href{http://www.faqs.org/rfcs/rfc3164.html}{\tt http://www.faqs.org/rfcs/rfc3164.html}
+
+\begin{Desc}
+\item[See also:]\hyperlink{bootstrap_8inc_cb7338e6740302727043d64e3ae1257b}{watchdog()} 
+
+\hyperlink{common_8inc_fb5d4b58ec7e483153644c0f664e0ca4}{watchdog\_\-severity\_\-levels()} \end{Desc}
+\hypertarget{bootstrap_8inc_b4129b98c8480bea3cbcd62083ae81e3}{
+\index{bootstrap.inc@{bootstrap.inc}!WATCHDOG\_\-CRITICAL@{WATCHDOG\_\-CRITICAL}}
+\index{WATCHDOG\_\-CRITICAL@{WATCHDOG\_\-CRITICAL}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{WATCHDOG\_\-CRITICAL}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf WATCHDOG\_\-CRITICAL}}}
+\label{bootstrap_8inc_b4129b98c8480bea3cbcd62083ae81e3}
+
+
+Log message severity -- Critical: critical conditions.
+
+The WATCHDOG\_\-$\ast$ constant definitions correspond to the logging severity levels defined in RFC 3164, section 4.1.1: \href{http://www.faqs.org/rfcs/rfc3164.html}{\tt http://www.faqs.org/rfcs/rfc3164.html}
+
+\begin{Desc}
+\item[See also:]\hyperlink{bootstrap_8inc_cb7338e6740302727043d64e3ae1257b}{watchdog()} 
+
+\hyperlink{common_8inc_fb5d4b58ec7e483153644c0f664e0ca4}{watchdog\_\-severity\_\-levels()} \end{Desc}
+\hypertarget{bootstrap_8inc_f672cd38d5654f8a4a12e32d9b9e749d}{
+\index{bootstrap.inc@{bootstrap.inc}!WATCHDOG\_\-DEBUG@{WATCHDOG\_\-DEBUG}}
+\index{WATCHDOG\_\-DEBUG@{WATCHDOG\_\-DEBUG}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{WATCHDOG\_\-DEBUG}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf WATCHDOG\_\-DEBUG}}}
+\label{bootstrap_8inc_f672cd38d5654f8a4a12e32d9b9e749d}
+
+
+Log message severity -- Debug: debug-level messages.
+
+The WATCHDOG\_\-$\ast$ constant definitions correspond to the logging severity levels defined in RFC 3164, section 4.1.1: \href{http://www.faqs.org/rfcs/rfc3164.html}{\tt http://www.faqs.org/rfcs/rfc3164.html}
+
+\begin{Desc}
+\item[See also:]\hyperlink{bootstrap_8inc_cb7338e6740302727043d64e3ae1257b}{watchdog()} 
+
+\hyperlink{common_8inc_fb5d4b58ec7e483153644c0f664e0ca4}{watchdog\_\-severity\_\-levels()} \end{Desc}
+\hypertarget{bootstrap_8inc_878c4376d15611196e4a5f50e8287084}{
+\index{bootstrap.inc@{bootstrap.inc}!WATCHDOG\_\-EMERG@{WATCHDOG\_\-EMERG}}
+\index{WATCHDOG\_\-EMERG@{WATCHDOG\_\-EMERG}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{WATCHDOG\_\-EMERG}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf WATCHDOG\_\-EMERG}}}
+\label{bootstrap_8inc_878c4376d15611196e4a5f50e8287084}
+
+
+Log message severity -- Emergency: system is unusable.
+
+The WATCHDOG\_\-$\ast$ constant definitions correspond to the logging severity levels defined in RFC 3164, section 4.1.1: \href{http://www.faqs.org/rfcs/rfc3164.html}{\tt http://www.faqs.org/rfcs/rfc3164.html}
+
+\begin{Desc}
+\item[See also:]\hyperlink{bootstrap_8inc_cb7338e6740302727043d64e3ae1257b}{watchdog()} 
+
+\hyperlink{common_8inc_fb5d4b58ec7e483153644c0f664e0ca4}{watchdog\_\-severity\_\-levels()} \end{Desc}
+\hypertarget{bootstrap_8inc_174c9df2936096e11986fcf184d48576}{
+\index{bootstrap.inc@{bootstrap.inc}!WATCHDOG\_\-ERROR@{WATCHDOG\_\-ERROR}}
+\index{WATCHDOG\_\-ERROR@{WATCHDOG\_\-ERROR}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{WATCHDOG\_\-ERROR}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf WATCHDOG\_\-ERROR}}}
+\label{bootstrap_8inc_174c9df2936096e11986fcf184d48576}
+
+
+Log message severity -- Error: error conditions.
+
+The WATCHDOG\_\-$\ast$ constant definitions correspond to the logging severity levels defined in RFC 3164, section 4.1.1: \href{http://www.faqs.org/rfcs/rfc3164.html}{\tt http://www.faqs.org/rfcs/rfc3164.html}
+
+\begin{Desc}
+\item[See also:]\hyperlink{bootstrap_8inc_cb7338e6740302727043d64e3ae1257b}{watchdog()} 
+
+\hyperlink{common_8inc_fb5d4b58ec7e483153644c0f664e0ca4}{watchdog\_\-severity\_\-levels()} \end{Desc}
+\hypertarget{bootstrap_8inc_9629ff808fd20ce4abb297db5976af4d}{
+\index{bootstrap.inc@{bootstrap.inc}!WATCHDOG\_\-INFO@{WATCHDOG\_\-INFO}}
+\index{WATCHDOG\_\-INFO@{WATCHDOG\_\-INFO}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{WATCHDOG\_\-INFO}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf WATCHDOG\_\-INFO}}}
+\label{bootstrap_8inc_9629ff808fd20ce4abb297db5976af4d}
+
+
+Log message severity -- Informational: informational messages.
+
+The WATCHDOG\_\-$\ast$ constant definitions correspond to the logging severity levels defined in RFC 3164, section 4.1.1: \href{http://www.faqs.org/rfcs/rfc3164.html}{\tt http://www.faqs.org/rfcs/rfc3164.html}
+
+\begin{Desc}
+\item[See also:]\hyperlink{bootstrap_8inc_cb7338e6740302727043d64e3ae1257b}{watchdog()} 
+
+\hyperlink{common_8inc_fb5d4b58ec7e483153644c0f664e0ca4}{watchdog\_\-severity\_\-levels()} \end{Desc}
+\hypertarget{bootstrap_8inc_757a33416683e8c44636a8799f60b477}{
+\index{bootstrap.inc@{bootstrap.inc}!WATCHDOG\_\-NOTICE@{WATCHDOG\_\-NOTICE}}
+\index{WATCHDOG\_\-NOTICE@{WATCHDOG\_\-NOTICE}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{WATCHDOG\_\-NOTICE}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf WATCHDOG\_\-NOTICE}}}
+\label{bootstrap_8inc_757a33416683e8c44636a8799f60b477}
+
+
+Log message severity -- Notice: normal but significant condition.
+
+The WATCHDOG\_\-$\ast$ constant definitions correspond to the logging severity levels defined in RFC 3164, section 4.1.1: \href{http://www.faqs.org/rfcs/rfc3164.html}{\tt http://www.faqs.org/rfcs/rfc3164.html}
+
+\begin{Desc}
+\item[See also:]\hyperlink{bootstrap_8inc_cb7338e6740302727043d64e3ae1257b}{watchdog()} 
+
+\hyperlink{common_8inc_fb5d4b58ec7e483153644c0f664e0ca4}{watchdog\_\-severity\_\-levels()} \end{Desc}
+\hypertarget{bootstrap_8inc_5361f835e10b39b553ee73c1b9414bf1}{
+\index{bootstrap.inc@{bootstrap.inc}!WATCHDOG\_\-WARNING@{WATCHDOG\_\-WARNING}}
+\index{WATCHDOG\_\-WARNING@{WATCHDOG\_\-WARNING}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{WATCHDOG\_\-WARNING}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf WATCHDOG\_\-WARNING}}}
+\label{bootstrap_8inc_5361f835e10b39b553ee73c1b9414bf1}
+
+
+Log message severity -- Warning: warning conditions.
+
+The WATCHDOG\_\-$\ast$ constant definitions correspond to the logging severity levels defined in RFC 3164, section 4.1.1: \href{http://www.faqs.org/rfcs/rfc3164.html}{\tt http://www.faqs.org/rfcs/rfc3164.html}
+
+\begin{Desc}
+\item[See also:]\hyperlink{bootstrap_8inc_cb7338e6740302727043d64e3ae1257b}{watchdog()} 
+
+\hyperlink{common_8inc_fb5d4b58ec7e483153644c0f664e0ca4}{watchdog\_\-severity\_\-levels()} \end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{bootstrap_8inc_7a24c0b200b76c22c63b99e935e1bd5a}{
+\index{bootstrap.inc@{bootstrap.inc}!bootstrap\_\-hooks@{bootstrap\_\-hooks}}
+\index{bootstrap\_\-hooks@{bootstrap\_\-hooks}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{bootstrap\_\-hooks}]{\setlength{\rightskip}{0pt plus 5cm}bootstrap\_\-hooks ()}}
+\label{bootstrap_8inc_7a24c0b200b76c22c63b99e935e1bd5a}
+
+
+Define the critical hooks that force modules to always be loaded. \hypertarget{bootstrap_8inc_3f13159d2e93ecfd09823d8dca30f5d9}{
+\index{bootstrap.inc@{bootstrap.inc}!bootstrap\_\-invoke\_\-all@{bootstrap\_\-invoke\_\-all}}
+\index{bootstrap\_\-invoke\_\-all@{bootstrap\_\-invoke\_\-all}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{bootstrap\_\-invoke\_\-all}]{\setlength{\rightskip}{0pt plus 5cm}bootstrap\_\-invoke\_\-all (\$ {\em hook})}}
+\label{bootstrap_8inc_3f13159d2e93ecfd09823d8dca30f5d9}
+
+
+Call all init or exit hooks without including all modules.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$hook}]The name of the bootstrap hook we wish to invoke. \end{description}
+\end{Desc}
+\hypertarget{bootstrap_8inc_76fc67a30fd8d75ddd80565e6e65a13d}{
+\index{bootstrap.inc@{bootstrap.inc}!check\_\-plain@{check\_\-plain}}
+\index{check\_\-plain@{check\_\-plain}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{check\_\-plain}]{\setlength{\rightskip}{0pt plus 5cm}check\_\-plain (\$ {\em text})}}
+\label{bootstrap_8inc_76fc67a30fd8d75ddd80565e6e65a13d}
+
+
+Encode special characters in a plain-text string for display as HTML.
+
+Also validates strings as UTF-8 to prevent cross site scripting attacks on Internet Explorer 6.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$text}]The text to be checked or processed. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An HTML safe version of \$text, or an empty string if \$text is not valid UTF-8.\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{bootstrap_8inc_bf62947a33393477301b0070b1ff0c7a}{drupal\_\-validate\_\-utf8()}. \end{Desc}
+\hypertarget{bootstrap_8inc_fedab27d166f281dfc2b4068866ab896}{
+\index{bootstrap.inc@{bootstrap.inc}!conf\_\-init@{conf\_\-init}}
+\index{conf\_\-init@{conf\_\-init}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{conf\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}conf\_\-init ()}}
+\label{bootstrap_8inc_fedab27d166f281dfc2b4068866ab896}
+
+
+Loads the configuration and sets the base URL, cookie domain, and session name correctly. \hypertarget{bootstrap_8inc_cef612ef19c49f6259531f0bee5c26cc}{
+\index{bootstrap.inc@{bootstrap.inc}!conf\_\-path@{conf\_\-path}}
+\index{conf\_\-path@{conf\_\-path}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{conf\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}conf\_\-path (\$ {\em require\_\-settings} = {\tt TRUE}, \/  \$ {\em reset} = {\tt FALSE})}}
+\label{bootstrap_8inc_cef612ef19c49f6259531f0bee5c26cc}
+
+
+Find the appropriate configuration directory.
+
+Try finding a matching configuration directory by stripping the website's hostname from left to right and pathname from right to left. The first configuration file found will be used; the remaining will ignored. If no configuration file is found, return a default value '\$confdir/default'.
+
+Example for a fictitious site installed at \href{http://www.drupal.org:8080/mysite/test/}{\tt http://www.drupal.org:8080/mysite/test/} the 'settings.php' is searched in the following directories:
+
+1. \$confdir/8080.www.drupal.org.mysite.test 2. \$confdir/www.drupal.org.mysite.test 3. \$confdir/drupal.org.mysite.test 4. \$confdir/org.mysite.test
+
+5. \$confdir/8080.www.drupal.org.mysite 6. \$confdir/www.drupal.org.mysite 7. \$confdir/drupal.org.mysite 8. \$confdir/org.mysite
+
+9. \$confdir/8080.www.drupal.org 10. \$confdir/www.drupal.org 11. \$confdir/drupal.org 12. \$confdir/org
+
+13. \$confdir/default
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$require\_\-settings}]Only configuration directories with an existing settings.php file will be recognized. Defaults to TRUE. During initial installation, this is set to FALSE so that Drupal can detect a matching directory, then create a new settings.php file in it. \item[{\em reset}]Force a full search for matching directories even if one had been found previously. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The path of the matching directory. \end{Desc}
+\hypertarget{bootstrap_8inc_e529fccbab60752dd4f91acc6b7fce06}{
+\index{bootstrap.inc@{bootstrap.inc}!drupal\_\-anonymous\_\-user@{drupal\_\-anonymous\_\-user}}
+\index{drupal\_\-anonymous\_\-user@{drupal\_\-anonymous\_\-user}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{drupal\_\-anonymous\_\-user}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-anonymous\_\-user (\$ {\em session} = {\tt ''})}}
+\label{bootstrap_8inc_e529fccbab60752dd4f91acc6b7fce06}
+
+
+Generates a default anonymous \$user object.
+
+\begin{Desc}
+\item[Returns:]Object - the user object. \end{Desc}
+\hypertarget{bootstrap_8inc_878e64af36fcd5f173b07ae57b07ea10}{
+\index{bootstrap.inc@{bootstrap.inc}!drupal\_\-bootstrap@{drupal\_\-bootstrap}}
+\index{drupal\_\-bootstrap@{drupal\_\-bootstrap}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{drupal\_\-bootstrap}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-bootstrap (\$ {\em phase})}}
+\label{bootstrap_8inc_878e64af36fcd5f173b07ae57b07ea10}
+
+
+A string describing a phase of Drupal to load. Each phase adds to the previous one, so invoking a later phase automatically runs the earlier phases too. The most important usage is that if you want to access the Drupal database from a script without loading anything else, you can include \hyperlink{bootstrap_8inc}{bootstrap.inc}, and call drupal\_\-bootstrap(DRUPAL\_\-BOOTSTRAP\_\-DATABASE).
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$phase}]A constant. Allowed values are: DRUPAL\_\-BOOTSTRAP\_\-CONFIGURATION: initialize configuration. DRUPAL\_\-BOOTSTRAP\_\-EARLY\_\-PAGE\_\-CACHE: try to call a non-database cache fetch routine. DRUPAL\_\-BOOTSTRAP\_\-DATABASE: initialize database layer. DRUPAL\_\-BOOTSTRAP\_\-ACCESS: identify and reject banned hosts. DRUPAL\_\-BOOTSTRAP\_\-SESSION: initialize session handling. DRUPAL\_\-BOOTSTRAP\_\-LATE\_\-PAGE\_\-CACHE: load \hyperlink{bootstrap_8inc}{bootstrap.inc} and \hyperlink{module_8inc}{module.inc}, start the variable system and try to serve a page from the cache. DRUPAL\_\-BOOTSTRAP\_\-LANGUAGE: identify the language used on the page. DRUPAL\_\-BOOTSTRAP\_\-PATH: set \$\_\-GET\mbox{[}'q'\mbox{]} to Drupal path of request. DRUPAL\_\-BOOTSTRAP\_\-FULL: Drupal is fully loaded, validate and fix input data. \end{description}
+\end{Desc}
+\hypertarget{bootstrap_8inc_e2af73b6b16cc9d723e931748aa6c853}{
+\index{bootstrap.inc@{bootstrap.inc}!drupal\_\-get\_\-filename@{drupal\_\-get\_\-filename}}
+\index{drupal\_\-get\_\-filename@{drupal\_\-get\_\-filename}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{drupal\_\-get\_\-filename}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-get\_\-filename (\$ {\em type}, \/  \$ {\em name}, \/  \$ {\em filename} = {\tt NULL})}}
+\label{bootstrap_8inc_e2af73b6b16cc9d723e931748aa6c853}
+
+
+Returns and optionally sets the filename for a system item (module, theme, etc.). The filename, whether provided, cached, or retrieved from the database, is only returned if the file exists.
+
+This function plays a key role in allowing Drupal's resources (modules and themes) to be located in different places depending on a site's configuration. For example, a module 'foo' may legally be be located in any of these three places:
+
+modules/foo/foo.module sites/all/modules/foo/foo.module sites/example.com/modules/foo/foo.module
+
+Calling drupal\_\-get\_\-filename('module', 'foo') will give you one of the above, depending on where the module is located.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$type}]The type of the item (i.e. theme, theme\_\-engine, module). \item[{\em \$name}]The name of the item for which the filename is requested. \item[{\em \$filename}]The filename of the item if it is to be set explicitly rather than by consulting the database.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The filename of the requested item. \end{Desc}
+\hypertarget{bootstrap_8inc_2c9915d030bad8c5bacf6de25e6fd14c}{
+\index{bootstrap.inc@{bootstrap.inc}!drupal\_\-get\_\-messages@{drupal\_\-get\_\-messages}}
+\index{drupal\_\-get\_\-messages@{drupal\_\-get\_\-messages}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{drupal\_\-get\_\-messages}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-get\_\-messages (\$ {\em type} = {\tt NULL}, \/  \$ {\em clear\_\-queue} = {\tt TRUE})}}
+\label{bootstrap_8inc_2c9915d030bad8c5bacf6de25e6fd14c}
+
+
+Return all messages that have been set.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$type}](optional) Only return messages of this type. \item[{\em \$clear\_\-queue}](optional) Set to FALSE if you do not want to clear the messages queue \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An associative array, the key is the message type, the value an array of messages. If the \$type parameter is passed, you get only that type, or an empty array if there are no such messages. If \$type is not passed, all message types are returned, or an empty array if none exist. \end{Desc}
+\hypertarget{bootstrap_8inc_5f67d97a363fcc3f51bf6a7b135778e7}{
+\index{bootstrap.inc@{bootstrap.inc}!drupal\_\-init\_\-language@{drupal\_\-init\_\-language}}
+\index{drupal\_\-init\_\-language@{drupal\_\-init\_\-language}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{drupal\_\-init\_\-language}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-init\_\-language ()}}
+\label{bootstrap_8inc_5f67d97a363fcc3f51bf6a7b135778e7}
+
+
+Choose a language for the current page, based on site and user preferences. \hypertarget{bootstrap_8inc_81a621ba76a61bc21124da331cc7e4af}{
+\index{bootstrap.inc@{bootstrap.inc}!drupal\_\-is\_\-denied@{drupal\_\-is\_\-denied}}
+\index{drupal\_\-is\_\-denied@{drupal\_\-is\_\-denied}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{drupal\_\-is\_\-denied}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-is\_\-denied (\$ {\em type}, \/  \$ {\em mask})}}
+\label{bootstrap_8inc_81a621ba76a61bc21124da331cc7e4af}
+
+
+Perform an access check for a given mask and rule type. Rules are usually created via admin/user/rules page.
+
+If any allow rule matches, access is allowed. Otherwise, if any deny rule matches, access is denied. If no rule matches, access is allowed.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$type}]string Type of access to check: Allowed values are:\begin{itemize}
+\item 'host': host name or IP address\item 'mail': e-mail address\item 'user': username \end{itemize}
+\item[{\em \$mask}]string String or mask to test: '\_\-' matches any character, '' matches any number of characters. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]bool TRUE if access is denied, FALSE if access is allowed. \end{Desc}
+\hypertarget{bootstrap_8inc_13a2254228f213a980dc1f09886b8802}{
+\index{bootstrap.inc@{bootstrap.inc}!drupal\_\-load@{drupal\_\-load}}
+\index{drupal\_\-load@{drupal\_\-load}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{drupal\_\-load}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-load (\$ {\em type}, \/  \$ {\em name})}}
+\label{bootstrap_8inc_13a2254228f213a980dc1f09886b8802}
+
+
+Includes a file with the provided type and name. This prevents including a theme, engine, module, etc., more than once.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$type}]The type of item to load (i.e. theme, theme\_\-engine, module). \item[{\em \$name}]The name of the item to load.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]TRUE if the item is loaded or has already been loaded. \end{Desc}
+\hypertarget{bootstrap_8inc_861d3f7c553fe62829f6c0f2e4fe89e6}{
+\index{bootstrap.inc@{bootstrap.inc}!drupal\_\-maintenance\_\-theme@{drupal\_\-maintenance\_\-theme}}
+\index{drupal\_\-maintenance\_\-theme@{drupal\_\-maintenance\_\-theme}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{drupal\_\-maintenance\_\-theme}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-maintenance\_\-theme ()}}
+\label{bootstrap_8inc_861d3f7c553fe62829f6c0f2e4fe89e6}
+
+
+Enables use of the theme system without requiring database access.
+
+Loads and initializes the theme system for site installs, updates and when the site is in off-line mode. This also applies when the database fails.
+
+\begin{Desc}
+\item[See also:]\hyperlink{theme_8maintenance_8inc_8f521a6aba04fc11935a874df3ad9f05}{\_\-drupal\_\-maintenance\_\-theme()} \end{Desc}
+\hypertarget{bootstrap_8inc_e493c235ee5e28b3b5c664db14294dce}{
+\index{bootstrap.inc@{bootstrap.inc}!drupal\_\-page\_\-cache\_\-header@{drupal\_\-page\_\-cache\_\-header}}
+\index{drupal\_\-page\_\-cache\_\-header@{drupal\_\-page\_\-cache\_\-header}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{drupal\_\-page\_\-cache\_\-header}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-page\_\-cache\_\-header (\$ {\em cache})}}
+\label{bootstrap_8inc_e493c235ee5e28b3b5c664db14294dce}
+
+
+Set HTTP headers in preparation for a cached page response.
+
+The general approach here is that anonymous users can keep a local cache of the page, but must revalidate it on every request. Then, they are given a '304 Not Modified' response as long as they stay logged out and the page has not been modified. \hypertarget{bootstrap_8inc_05f3dc0377da7898b9cb53977c30cca6}{
+\index{bootstrap.inc@{bootstrap.inc}!drupal\_\-page\_\-header@{drupal\_\-page\_\-header}}
+\index{drupal\_\-page\_\-header@{drupal\_\-page\_\-header}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{drupal\_\-page\_\-header}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-page\_\-header ()}}
+\label{bootstrap_8inc_05f3dc0377da7898b9cb53977c30cca6}
+
+
+Set HTTP headers in preparation for a page response.
+
+Authenticated users are always given a 'no-cache' header, and will fetch a fresh page on every request. This prevents authenticated users seeing locally cached pages that show them as logged out.
+
+\begin{Desc}
+\item[See also:]\hyperlink{common_8inc_1e3b3fde2d48f8ef01d6ddd0a16fb073}{page\_\-set\_\-cache()} \end{Desc}
+\hypertarget{bootstrap_8inc_d9223d86c7b08b1288274ce211d9bfa6}{
+\index{bootstrap.inc@{bootstrap.inc}!drupal\_\-set\_\-message@{drupal\_\-set\_\-message}}
+\index{drupal\_\-set\_\-message@{drupal\_\-set\_\-message}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{drupal\_\-set\_\-message}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-set\_\-message (\$ {\em message} = {\tt NULL}, \/  \$ {\em type} = {\tt 'status'}, \/  \$ {\em repeat} = {\tt TRUE})}}
+\label{bootstrap_8inc_d9223d86c7b08b1288274ce211d9bfa6}
+
+
+Set a message which reflects the status of the performed operation.
+
+If the function is called with no arguments, this function returns all set messages without clearing them.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$message}]The message should begin with a capital letter and always ends with a period '.'. \item[{\em \$type}]The type of the message. One of the following values are possible:\begin{itemize}
+\item 'status'\item 'warning'\item 'error' \end{itemize}
+\item[{\em \$repeat}]If this is FALSE and the message is already set, then the message won't be repeated. \end{description}
+\end{Desc}
+\hypertarget{bootstrap_8inc_4ca39fd7bed1a45e340f86bc2d59224d}{
+\index{bootstrap.inc@{bootstrap.inc}!drupal\_\-unpack@{drupal\_\-unpack}}
+\index{drupal\_\-unpack@{drupal\_\-unpack}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{drupal\_\-unpack}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-unpack (\$ {\em obj}, \/  \$ {\em field} = {\tt 'data'})}}
+\label{bootstrap_8inc_4ca39fd7bed1a45e340f86bc2d59224d}
+
+
+Unserializes and appends elements from a serialized string.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$obj}]The object to which the elements are appended. \item[{\em \$field}]The attribute of \$obj whose value should be unserialized. \end{description}
+\end{Desc}
+\hypertarget{bootstrap_8inc_f4eb5dc356848a28e53aed5ee6eff6a8}{
+\index{bootstrap.inc@{bootstrap.inc}!drupal\_\-unset\_\-globals@{drupal\_\-unset\_\-globals}}
+\index{drupal\_\-unset\_\-globals@{drupal\_\-unset\_\-globals}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{drupal\_\-unset\_\-globals}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-unset\_\-globals ()}}
+\label{bootstrap_8inc_f4eb5dc356848a28e53aed5ee6eff6a8}
+
+
+Unsets all disallowed global variables. See \$allowed for what's allowed. \hypertarget{bootstrap_8inc_e65d9d5f6c34309eb884e51fd39ffb6d}{
+\index{bootstrap.inc@{bootstrap.inc}!drupal\_\-valid\_\-http\_\-host@{drupal\_\-valid\_\-http\_\-host}}
+\index{drupal\_\-valid\_\-http\_\-host@{drupal\_\-valid\_\-http\_\-host}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{drupal\_\-valid\_\-http\_\-host}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-valid\_\-http\_\-host (\$ {\em host})}}
+\label{bootstrap_8inc_e65d9d5f6c34309eb884e51fd39ffb6d}
+
+
+Validate that a hostname (for example \$\_\-SERVER\mbox{[}'HTTP\_\-HOST'\mbox{]}) is safe.
+
+As \$\_\-SERVER\mbox{[}'HTTP\_\-HOST'\mbox{]} is user input, ensure it only contains characters allowed in hostnames. See RFC 952 (and RFC 2181). \$\_\-SERVER\mbox{[}'HTTP\_\-HOST'\mbox{]} is lowercased.
+
+\begin{Desc}
+\item[Returns:]TRUE if only containing valid characters, or FALSE otherwise. \end{Desc}
+\hypertarget{bootstrap_8inc_bf62947a33393477301b0070b1ff0c7a}{
+\index{bootstrap.inc@{bootstrap.inc}!drupal\_\-validate\_\-utf8@{drupal\_\-validate\_\-utf8}}
+\index{drupal\_\-validate\_\-utf8@{drupal\_\-validate\_\-utf8}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{drupal\_\-validate\_\-utf8}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-validate\_\-utf8 (\$ {\em text})}}
+\label{bootstrap_8inc_bf62947a33393477301b0070b1ff0c7a}
+
+
+Checks whether a string is valid UTF-8.
+
+All functions designed to filter input should use drupal\_\-validate\_\-utf8 to ensure they operate on valid UTF-8 strings to prevent bypass of the filter.
+
+When text containing an invalid UTF-8 lead byte (0xC0 - 0xFF) is presented as UTF-8 to Internet Explorer 6, the program may misinterpret subsequent bytes. When these subsequent bytes are HTML control characters such as quotes or angle brackets, parts of the text that were deemed safe by filters end up in locations that are potentially unsafe; An onerror attribute that is outside of a tag, and thus deemed safe by a filter, can be interpreted by the browser as if it were inside the tag.
+
+This function exploits preg\_\-match behaviour (since PHP 4.3.5) when used with the u modifier, as a fast way to find invalid UTF-8. When the matched string contains an invalid byte sequence, it will fail silently.
+
+preg\_\-match may not fail on 4 and 5 octet sequences, even though they are not supported by the specification.
+
+The specific preg\_\-match behaviour is present since PHP 4.3.5.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$text}]The text to check. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]TRUE if the text is valid UTF-8, FALSE if not. \end{Desc}
+\hypertarget{bootstrap_8inc_a50232f577883a48731fc93530628a79}{
+\index{bootstrap.inc@{bootstrap.inc}!get\_\-t@{get\_\-t}}
+\index{get\_\-t@{get\_\-t}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{get\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}get\_\-t ()}}
+\label{bootstrap_8inc_a50232f577883a48731fc93530628a79}
+
+
+Return the name of the localisation function. Use in code that needs to run both during installation and normal operation. \hypertarget{bootstrap_8inc_ec2f772317b4fb79cc696412c2e455c3}{
+\index{bootstrap.inc@{bootstrap.inc}!ip\_\-address@{ip\_\-address}}
+\index{ip\_\-address@{ip\_\-address}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{ip\_\-address}]{\setlength{\rightskip}{0pt plus 5cm}ip\_\-address ()}}
+\label{bootstrap_8inc_ec2f772317b4fb79cc696412c2e455c3}
+
+
+If Drupal is behind a reverse proxy, we use the X-Forwarded-For header instead of \$\_\-SERVER\mbox{[}'REMOTE\_\-ADDR'\mbox{]}, which would be the IP address of the proxy server, and not the client's.
+
+\begin{Desc}
+\item[Returns:]IP address of client machine, adjusted for reverse proxy. \end{Desc}
+\hypertarget{bootstrap_8inc_336c0878074791056c62640cd95d8067}{
+\index{bootstrap.inc@{bootstrap.inc}!language\_\-default@{language\_\-default}}
+\index{language\_\-default@{language\_\-default}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{language\_\-default}]{\setlength{\rightskip}{0pt plus 5cm}language\_\-default (\$ {\em property} = {\tt NULL})}}
+\label{bootstrap_8inc_336c0878074791056c62640cd95d8067}
+
+
+Default language used on the site
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$property}]Optional property of the language object to return \end{description}
+\end{Desc}
+\hypertarget{bootstrap_8inc_0811ad6f8df4a2f64457914aeafcee3d}{
+\index{bootstrap.inc@{bootstrap.inc}!language\_\-list@{language\_\-list}}
+\index{language\_\-list@{language\_\-list}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{language\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}language\_\-list (\$ {\em field} = {\tt 'language'}, \/  \$ {\em reset} = {\tt FALSE})}}
+\label{bootstrap_8inc_0811ad6f8df4a2f64457914aeafcee3d}
+
+
+Get a list of languages set up indexed by the specified key
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$field}]The field to index the list with. \item[{\em \$reset}]Boolean to request a reset of the list. \end{description}
+\end{Desc}
+\hypertarget{bootstrap_8inc_51e89d55fa18dc4ba2ae09a1f5f936ef}{
+\index{bootstrap.inc@{bootstrap.inc}!page\_\-get\_\-cache@{page\_\-get\_\-cache}}
+\index{page\_\-get\_\-cache@{page\_\-get\_\-cache}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{page\_\-get\_\-cache}]{\setlength{\rightskip}{0pt plus 5cm}page\_\-get\_\-cache (\$ {\em status\_\-only} = {\tt FALSE})}}
+\label{bootstrap_8inc_51e89d55fa18dc4ba2ae09a1f5f936ef}
+
+
+Retrieve the current page from the cache.
+
+Note: we do not serve cached pages when status messages are waiting (from a redirected form submission which was completed).
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$status\_\-only}]When set to TRUE, retrieve the status of the page cache only (whether it was started in this request or not). \end{description}
+\end{Desc}
+\hypertarget{bootstrap_8inc_fbe92bfb1695e3710ae4136c6972be5c}{
+\index{bootstrap.inc@{bootstrap.inc}!referer\_\-uri@{referer\_\-uri}}
+\index{referer\_\-uri@{referer\_\-uri}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{referer\_\-uri}]{\setlength{\rightskip}{0pt plus 5cm}referer\_\-uri ()}}
+\label{bootstrap_8inc_fbe92bfb1695e3710ae4136c6972be5c}
+
+
+Return the URI of the referring page. \hypertarget{bootstrap_8inc_80b52d5331d840440b5e3dfe82dd7ea2}{
+\index{bootstrap.inc@{bootstrap.inc}!request\_\-uri@{request\_\-uri}}
+\index{request\_\-uri@{request\_\-uri}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{request\_\-uri}]{\setlength{\rightskip}{0pt plus 5cm}request\_\-uri ()}}
+\label{bootstrap_8inc_80b52d5331d840440b5e3dfe82dd7ea2}
+
+
+Since \$\_\-SERVER\mbox{[}'REQUEST\_\-URI'\mbox{]} is only available on Apache, we generate an equivalent using other environment variables. \hypertarget{bootstrap_8inc_d093007ebd04feb2a1394ff5774eb6d4}{
+\index{bootstrap.inc@{bootstrap.inc}!timer\_\-read@{timer\_\-read}}
+\index{timer\_\-read@{timer\_\-read}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{timer\_\-read}]{\setlength{\rightskip}{0pt plus 5cm}timer\_\-read (\$ {\em name})}}
+\label{bootstrap_8inc_d093007ebd04feb2a1394ff5774eb6d4}
+
+
+Read the current timer value without stopping the timer.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em name}]The name of the timer. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The current timer value in ms. \end{Desc}
+\hypertarget{bootstrap_8inc_a033ad6f8e530b98c9024a20e554423b}{
+\index{bootstrap.inc@{bootstrap.inc}!timer\_\-start@{timer\_\-start}}
+\index{timer\_\-start@{timer\_\-start}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{timer\_\-start}]{\setlength{\rightskip}{0pt plus 5cm}if (defined('E\_\-DEPRECATED')) timer\_\-start (\$ {\em name})}}
+\label{bootstrap_8inc_a033ad6f8e530b98c9024a20e554423b}
+
+
+Start the timer with the specified name. If you start and stop the same timer multiple times, the measured intervals will be accumulated.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em name}]The name of the timer. \end{description}
+\end{Desc}
+\hypertarget{bootstrap_8inc_8cb56b8962398895710c35a3584a7d11}{
+\index{bootstrap.inc@{bootstrap.inc}!timer\_\-stop@{timer\_\-stop}}
+\index{timer\_\-stop@{timer\_\-stop}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{timer\_\-stop}]{\setlength{\rightskip}{0pt plus 5cm}timer\_\-stop (\$ {\em name})}}
+\label{bootstrap_8inc_8cb56b8962398895710c35a3584a7d11}
+
+
+Stop the timer with the specified name.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em name}]The name of the timer. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]A timer array. The array contains the number of times the timer has been started and stopped (count) and the accumulated timer value in ms (time). \end{Desc}
+\hypertarget{bootstrap_8inc_7850bff5f313f85335f418e6d87606b1}{
+\index{bootstrap.inc@{bootstrap.inc}!variable\_\-del@{variable\_\-del}}
+\index{variable\_\-del@{variable\_\-del}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{variable\_\-del}]{\setlength{\rightskip}{0pt plus 5cm}variable\_\-del (\$ {\em name})}}
+\label{bootstrap_8inc_7850bff5f313f85335f418e6d87606b1}
+
+
+Unsets a persistent variable.
+
+Case-sensitivity of the variable\_\-$\ast$ functions depends on the database collation used. To avoid problems, always use lower case for persistent variable names.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$name}]The name of the variable to undefine.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{bootstrap_8inc_ba5d67193d1f9d9fd4636cff54fc4154}{variable\_\-get()}, \hyperlink{bootstrap_8inc_9859faa6fcd56ca6048be93dace95999}{variable\_\-set()} \end{Desc}
+\hypertarget{bootstrap_8inc_ba5d67193d1f9d9fd4636cff54fc4154}{
+\index{bootstrap.inc@{bootstrap.inc}!variable\_\-get@{variable\_\-get}}
+\index{variable\_\-get@{variable\_\-get}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{variable\_\-get}]{\setlength{\rightskip}{0pt plus 5cm}variable\_\-get (\$ {\em name}, \/  \$ {\em default})}}
+\label{bootstrap_8inc_ba5d67193d1f9d9fd4636cff54fc4154}
+
+
+Returns a persistent variable.
+
+Case-sensitivity of the variable\_\-$\ast$ functions depends on the database collation used. To avoid problems, always use lower case for persistent variable names.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$name}]The name of the variable to return. \item[{\em \$default}]The default value to use if this variable has never been set. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The value of the variable.\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{bootstrap_8inc_7850bff5f313f85335f418e6d87606b1}{variable\_\-del()}, \hyperlink{bootstrap_8inc_9859faa6fcd56ca6048be93dace95999}{variable\_\-set()} \end{Desc}
+\hypertarget{bootstrap_8inc_222324598cdafc327254344a6c2d2aa2}{
+\index{bootstrap.inc@{bootstrap.inc}!variable\_\-init@{variable\_\-init}}
+\index{variable\_\-init@{variable\_\-init}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{variable\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}variable\_\-init (\$ {\em conf} = {\tt array()})}}
+\label{bootstrap_8inc_222324598cdafc327254344a6c2d2aa2}
+
+
+Load the persistent variable table.
+
+The variable table is composed of values that have been saved in the table with \hyperlink{bootstrap_8inc_9859faa6fcd56ca6048be93dace95999}{variable\_\-set()} as well as those explicitly specified in the configuration file. \hypertarget{bootstrap_8inc_9859faa6fcd56ca6048be93dace95999}{
+\index{bootstrap.inc@{bootstrap.inc}!variable\_\-set@{variable\_\-set}}
+\index{variable\_\-set@{variable\_\-set}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{variable\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}variable\_\-set (\$ {\em name}, \/  \$ {\em value})}}
+\label{bootstrap_8inc_9859faa6fcd56ca6048be93dace95999}
+
+
+Sets a persistent variable.
+
+Case-sensitivity of the variable\_\-$\ast$ functions depends on the database collation used. To avoid problems, always use lower case for persistent variable names.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$name}]The name of the variable to set. \item[{\em \$value}]The value to set. This can be any PHP data type; these functions take care of serialization as necessary.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{bootstrap_8inc_7850bff5f313f85335f418e6d87606b1}{variable\_\-del()}, \hyperlink{bootstrap_8inc_ba5d67193d1f9d9fd4636cff54fc4154}{variable\_\-get()} \end{Desc}
+\hypertarget{bootstrap_8inc_cb7338e6740302727043d64e3ae1257b}{
+\index{bootstrap.inc@{bootstrap.inc}!watchdog@{watchdog}}
+\index{watchdog@{watchdog}!bootstrap.inc@{bootstrap.inc}}
+\subsubsection[{watchdog}]{\setlength{\rightskip}{0pt plus 5cm}watchdog (\$ {\em type}, \/  \$ {\em message}, \/  \$ {\em variables} = {\tt array()}, \/  \$ {\em severity} = {\tt {\bf WATCHDOG\_\-NOTICE}}, \/  \$ {\em link} = {\tt NULL})}}
+\label{bootstrap_8inc_cb7338e6740302727043d64e3ae1257b}
+
+
+Log a system message.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$type}]The category to which this message belongs. Can be any string, but the general practice is to use the name of the module calling \hyperlink{bootstrap_8inc_cb7338e6740302727043d64e3ae1257b}{watchdog()}. \item[{\em \$message}]The message to store in the log. See \hyperlink{common_8inc_41d20f0c822bf1f3c26a97981c762665}{t()} for documentation on how \$message and \$variables interact. Keep \$message translatable by not concatenating dynamic values into it! \item[{\em \$variables}]Array of variables to replace in the message on display or NULL if message is already translated or not possible to translate. \item[{\em \$severity}]The severity of the message, as per RFC 3164. Possible values are WATCHDOG\_\-ERROR, WATCHDOG\_\-WARNING, etc. \item[{\em \$link}]A link to associate with the message.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{common_8inc_fb5d4b58ec7e483153644c0f664e0ca4}{watchdog\_\-severity\_\-levels()} \end{Desc}

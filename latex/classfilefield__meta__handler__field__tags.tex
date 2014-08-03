@@ -1,0 +1,79 @@
+\hypertarget{classfilefield__meta__handler__field__tags}{
+\section{filefield\_\-meta\_\-handler\_\-field\_\-tags Class Reference}
+\label{classfilefield__meta__handler__field__tags}\index{filefield\_\-meta\_\-handler\_\-field\_\-tags@{filefield\_\-meta\_\-handler\_\-field\_\-tags}}
+}
+Inheritance diagram for filefield\_\-meta\_\-handler\_\-field\_\-tags::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4cm]{classfilefield__meta__handler__field__tags}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classfilefield__meta__handler__field__tags_9e809bb733cce1fcd37a59a251c70014}{option\_\-definition} ()
+\item 
+\hyperlink{classfilefield__meta__handler__field__tags_b95bd58dd3d2486b63c2498410cc65be}{options\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classfilefield__meta__handler__field__tags_65aaea80f0139f1a83bd876273fdec51}{render} (\$values)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Render a field as a readable value in hours, minutes, and seconds. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classfilefield__meta__handler__field__tags_9e809bb733cce1fcd37a59a251c70014}{
+\index{filefield\_\-meta\_\-handler\_\-field\_\-tags@{filefield\_\-meta\_\-handler\_\-field\_\-tags}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!filefield_meta_handler_field_tags@{filefield\_\-meta\_\-handler\_\-field\_\-tags}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}filefield\_\-meta\_\-handler\_\-field\_\-tags::option\_\-definition ()}}
+\label{classfilefield__meta__handler__field__tags_9e809bb733cce1fcd37a59a251c70014}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented from \hyperlink{classviews__handler__field_64c69a8a3697603f8283405071c25b76}{views\_\-handler\_\-field}.\hypertarget{classfilefield__meta__handler__field__tags_b95bd58dd3d2486b63c2498410cc65be}{
+\index{filefield\_\-meta\_\-handler\_\-field\_\-tags@{filefield\_\-meta\_\-handler\_\-field\_\-tags}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!filefield_meta_handler_field_tags@{filefield\_\-meta\_\-handler\_\-field\_\-tags}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}filefield\_\-meta\_\-handler\_\-field\_\-tags::options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classfilefield__meta__handler__field__tags_b95bd58dd3d2486b63c2498410cc65be}
+
+
+Default options form that provides the label widget that all fields should have. 
+
+Reimplemented from \hyperlink{classviews__handler__field_0435d161922b7b4b84f02a2e79bb947a}{views\_\-handler\_\-field}.\hypertarget{classfilefield__meta__handler__field__tags_65aaea80f0139f1a83bd876273fdec51}{
+\index{filefield\_\-meta\_\-handler\_\-field\_\-tags@{filefield\_\-meta\_\-handler\_\-field\_\-tags}!render@{render}}
+\index{render@{render}!filefield_meta_handler_field_tags@{filefield\_\-meta\_\-handler\_\-field\_\-tags}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}filefield\_\-meta\_\-handler\_\-field\_\-tags::render (\$ {\em values})}}
+\label{classfilefield__meta__handler__field__tags_65aaea80f0139f1a83bd876273fdec51}
+
+
+Render the field.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$values}]The values retrieved from the database. \end{description}
+\end{Desc}
+
+
+Reimplemented from \hyperlink{classviews__handler__field_82ff951c5e9ceb97b2eab86f880cbc1e}{views\_\-handler\_\-field}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/filefield/filefield\_\-meta/includes/\hyperlink{filefield__meta__handler__field__tags_8inc}{filefield\_\-meta\_\-handler\_\-field\_\-tags.inc}\end{CompactItemize}

@@ -1,0 +1,37 @@
+\hypertarget{search-theme-form_8tpl_8php}{
+\section{modules/search/search-theme-form.tpl.php File Reference}
+\label{search-theme-form_8tpl_8php}\index{modules/search/search-theme-form.tpl.php@{modules/search/search-theme-form.tpl.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hypertarget{search-theme-form_8tpl_8php_fd923baf84a0be7eed66628a9497cc0d}{
+print \textbf{\$search\_\-form}}
+\label{search-theme-form_8tpl_8php_fd923baf84a0be7eed66628a9497cc0d}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Default theme implementation for displaying a search form directly into the theme layout. Not to be confused with the search block or the search page.
+
+Available variables:\begin{itemize}
+\item \$search\_\-form: The complete search form ready for print.\item \$search: Array of keyed search elements. Can be used to print each form element separately.\end{itemize}
+
+
+Default keys within \$search:\begin{itemize}
+\item \$search\mbox{[}'search\_\-theme\_\-form'\mbox{]}: Text input area wrapped in a div.\item \$search\mbox{[}'submit'\mbox{]}: Form submit button.\item \$search\mbox{[}'hidden'\mbox{]}: Hidden form elements. Used to validate forms when submitted.\end{itemize}
+
+
+Since \$search is keyed, a direct print of the form element is possible. Modules can add to the search form so it is recommended to check for their existance before printing. The default keys will always exist.
+
+$<$?php if (isset(\$search\mbox{[}'extra\_\-field'\mbox{]})): ?$>$  $<$?php print \$search\mbox{[}'extra\_\-field'\mbox{]}; ?$>$  $<$?php endif; ?$>$
+
+To check for all available data within \$search, use the code below.
+
+$<$?php print '\small\begin{alltt}'. check\_plain(print\_r($search, 1)) .'\end{alltt}
+\normalsize 
+'; ?$>$
+
+\begin{Desc}
+\item[See also:]template\_\-preprocess\_\-search\_\-theme\_\-form() \end{Desc}

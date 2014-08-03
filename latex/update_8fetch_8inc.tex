@@ -1,0 +1,94 @@
+\hypertarget{update_8fetch_8inc}{
+\section{modules/update/update.fetch.inc File Reference}
+\label{update_8fetch_8inc}\index{modules/update/update.fetch.inc@{modules/update/update.fetch.inc}}
+}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classupdate__xml__parser}{update\_\-xml\_\-parser}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{update_8fetch_8inc_cb92114e3c9f719e50f66ac62ff78e01}{update\_\-manual\_\-status} ()
+\item 
+\hyperlink{update_8fetch_8inc_a9814236d331f2e6822435215e9acd8e}{\_\-update\_\-refresh} ()
+\item 
+\hyperlink{update_8fetch_8inc_6d937d41a6ccf645109deefae0f6e5d3}{\_\-update\_\-build\_\-fetch\_\-url} (\$project, \$site\_\-key= '')
+\item 
+\hyperlink{update_8fetch_8inc_53552af8849428ac6faba273936eb00a}{\_\-update\_\-get\_\-fetch\_\-url\_\-base} (\$project)
+\item 
+\hyperlink{update_8fetch_8inc_55d78e25faf69f49cfc88f2642c06f4e}{\_\-update\_\-cron\_\-notify} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Code required only when fetching information about available updates. 
+
+\subsection{Function Documentation}
+\hypertarget{update_8fetch_8inc_6d937d41a6ccf645109deefae0f6e5d3}{
+\index{update.fetch.inc@{update.fetch.inc}!\_\-update\_\-build\_\-fetch\_\-url@{\_\-update\_\-build\_\-fetch\_\-url}}
+\index{\_\-update\_\-build\_\-fetch\_\-url@{\_\-update\_\-build\_\-fetch\_\-url}!update.fetch.inc@{update.fetch.inc}}
+\subsubsection[{\_\-update\_\-build\_\-fetch\_\-url}]{\setlength{\rightskip}{0pt plus 5cm}\_\-update\_\-build\_\-fetch\_\-url (\$ {\em project}, \/  \$ {\em site\_\-key} = {\tt ''})}}
+\label{update_8fetch_8inc_6d937d41a6ccf645109deefae0f6e5d3}
+
+
+Generates the URL to fetch information about project updates.
+
+This figures out the right URL to use, based on the project's .info file and the global defaults. Appends optional query arguments when the site is configured to report usage stats.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$project}]The array of project information from \hyperlink{update_8compare_8inc_7e1ea49d91f2d2b81b8101d481d10300}{update\_\-get\_\-projects()}. \item[{\em \$site\_\-key}]The anonymous site key hash (optional).\end{description}
+\end{Desc}
+\begin{Desc}
+\item[See also:]update\_\-refresh() 
+
+\hyperlink{update_8compare_8inc_7e1ea49d91f2d2b81b8101d481d10300}{update\_\-get\_\-projects()} \end{Desc}
+\hypertarget{update_8fetch_8inc_55d78e25faf69f49cfc88f2642c06f4e}{
+\index{update.fetch.inc@{update.fetch.inc}!\_\-update\_\-cron\_\-notify@{\_\-update\_\-cron\_\-notify}}
+\index{\_\-update\_\-cron\_\-notify@{\_\-update\_\-cron\_\-notify}!update.fetch.inc@{update.fetch.inc}}
+\subsubsection[{\_\-update\_\-cron\_\-notify}]{\setlength{\rightskip}{0pt plus 5cm}\_\-update\_\-cron\_\-notify ()}}
+\label{update_8fetch_8inc_55d78e25faf69f49cfc88f2642c06f4e}
+
+
+Perform any notifications that should be done once cron fetches new data.
+
+This method checks the status of the site using the new data and depending on the configuration of the site, notifies administrators via email if there are new releases or missing security updates.
+
+\begin{Desc}
+\item[See also:]update\_\-requirements() \end{Desc}
+\hypertarget{update_8fetch_8inc_53552af8849428ac6faba273936eb00a}{
+\index{update.fetch.inc@{update.fetch.inc}!\_\-update\_\-get\_\-fetch\_\-url\_\-base@{\_\-update\_\-get\_\-fetch\_\-url\_\-base}}
+\index{\_\-update\_\-get\_\-fetch\_\-url\_\-base@{\_\-update\_\-get\_\-fetch\_\-url\_\-base}!update.fetch.inc@{update.fetch.inc}}
+\subsubsection[{\_\-update\_\-get\_\-fetch\_\-url\_\-base}]{\setlength{\rightskip}{0pt plus 5cm}\_\-update\_\-get\_\-fetch\_\-url\_\-base (\$ {\em project})}}
+\label{update_8fetch_8inc_53552af8849428ac6faba273936eb00a}
+
+
+Return the base of the URL to fetch available update data for a project.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$project}]The array of project information from \hyperlink{update_8compare_8inc_7e1ea49d91f2d2b81b8101d481d10300}{update\_\-get\_\-projects()}. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The base of the URL used for fetching available update data. This does not include the path elements to specify a particular project, version, site\_\-key, etc.\end{Desc}
+\begin{Desc}
+\item[See also:]\hyperlink{update_8fetch_8inc_6d937d41a6ccf645109deefae0f6e5d3}{\_\-update\_\-build\_\-fetch\_\-url()} \end{Desc}
+\hypertarget{update_8fetch_8inc_a9814236d331f2e6822435215e9acd8e}{
+\index{update.fetch.inc@{update.fetch.inc}!\_\-update\_\-refresh@{\_\-update\_\-refresh}}
+\index{\_\-update\_\-refresh@{\_\-update\_\-refresh}!update.fetch.inc@{update.fetch.inc}}
+\subsubsection[{\_\-update\_\-refresh}]{\setlength{\rightskip}{0pt plus 5cm}\_\-update\_\-refresh ()}}
+\label{update_8fetch_8inc_a9814236d331f2e6822435215e9acd8e}
+
+
+Fetch project info via XML from a central server. \hypertarget{update_8fetch_8inc_cb92114e3c9f719e50f66ac62ff78e01}{
+\index{update.fetch.inc@{update.fetch.inc}!update\_\-manual\_\-status@{update\_\-manual\_\-status}}
+\index{update\_\-manual\_\-status@{update\_\-manual\_\-status}!update.fetch.inc@{update.fetch.inc}}
+\subsubsection[{update\_\-manual\_\-status}]{\setlength{\rightskip}{0pt plus 5cm}update\_\-manual\_\-status ()}}
+\label{update_8fetch_8inc_cb92114e3c9f719e50f66ac62ff78e01}
+
+
+Callback to manually check the update status without cron. 

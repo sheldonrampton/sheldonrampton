@@ -1,0 +1,86 @@
+\hypertarget{block-admin-display-form_8tpl_8php}{
+\section{modules/block/block-admin-display-form.tpl.php File Reference}
+\label{block-admin-display-form_8tpl_8php}\index{modules/block/block-admin-display-form.tpl.php@{modules/block/block-admin-display-form.tpl.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hypertarget{block-admin-display-form_8tpl_8php_83f8c6b3a45c84dd22ae447bc1db4a02}{
+\textbf{endif}}
+\label{block-admin-display-form_8tpl_8php_83f8c6b3a45c84dd22ae447bc1db4a02}
+
+\item 
+\hypertarget{block-admin-display-form_8tpl_8php_a1d731aa570613e5bcff831bb10e9b87}{
+\textbf{\$row} = 0}
+\label{block-admin-display-form_8tpl_8php_a1d731aa570613e5bcff831bb10e9b87}
+
+\item 
+\hypertarget{block-admin-display-form_8tpl_8php_f8411aa82d563d45a6b9fdff2acd0b2a}{
+foreach(\$block\_\-regions as \$region=$>$ \$title) print \textbf{\$title}}
+\label{block-admin-display-form_8tpl_8php_f8411aa82d563d45a6b9fdff2acd0b2a}
+
+\item 
+\hypertarget{block-admin-display-form_8tpl_8php_ec492a7b7b58c16cf244f957247309af}{
+print \$region print empty(\$block\_\-listing\mbox{[}\$region\mbox{]})? 'region-empty'print \textbf{\$throttle}}
+\label{block-admin-display-form_8tpl_8php_ec492a7b7b58c16cf244f957247309af}
+
+\item 
+\hypertarget{block-admin-display-form_8tpl_8php_67d2c28c51080109034a41a89093b8a5}{
+foreach(\$block\_\-listing\mbox{[}\$region\mbox{]} as \$delta=$>$ \$data) print \$data row\_\-class \$data \textbf{row\_\-class}}
+\label{block-admin-display-form_8tpl_8php_67d2c28c51080109034a41a89093b8a5}
+
+\item 
+\hypertarget{block-admin-display-form_8tpl_8php_e6f124c3cfec71296c1effa62aa1f702}{
+print \$data \textbf{block\_\-title}}
+\label{block-admin-display-form_8tpl_8php_e6f124c3cfec71296c1effa62aa1f702}
+
+\item 
+\hypertarget{block-admin-display-form_8tpl_8php_4b2728655aa79683aba2c2a202a7aca8}{
+print \$data \textbf{region\_\-select}}
+\label{block-admin-display-form_8tpl_8php_4b2728655aa79683aba2c2a202a7aca8}
+
+\item 
+\hypertarget{block-admin-display-form_8tpl_8php_1317c2a993afcc9094c904696bf545a3}{
+print \$data \textbf{weight\_\-select}}
+\label{block-admin-display-form_8tpl_8php_1317c2a993afcc9094c904696bf545a3}
+
+\item 
+\hypertarget{block-admin-display-form_8tpl_8php_3b905d71bafd9f290185e863d5ecbb74}{
+print \$data \textbf{configure\_\-link}}
+\label{block-admin-display-form_8tpl_8php_3b905d71bafd9f290185e863d5ecbb74}
+
+\item 
+\hypertarget{block-admin-display-form_8tpl_8php_023a97f76e36659b1f43c5162246e185}{
+print \$data \textbf{delete\_\-link}}
+\label{block-admin-display-form_8tpl_8php_023a97f76e36659b1f43c5162246e185}
+
+\item 
+\hypertarget{block-admin-display-form_8tpl_8php_672d9707ef91db026c210f98cc601123}{
+\textbf{endforeach}}
+\label{block-admin-display-form_8tpl_8php_672d9707ef91db026c210f98cc601123}
+
+\item 
+\hypertarget{block-admin-display-form_8tpl_8php_781a0b4540f3c04b33978b845353b2ab}{
+print \textbf{\$form\_\-submit}}
+\label{block-admin-display-form_8tpl_8php_781a0b4540f3c04b33978b845353b2ab}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Default theme implementation to configure blocks.
+
+Available variables:\begin{itemize}
+\item \$block\_\-regions: An array of regions. Keyed by name with the title as value.\item \$block\_\-listing: An array of blocks keyed by region and then delta.\item \$form\_\-submit: Form submit button.\item \$throttle: TRUE or FALSE depending on throttle module being enabled.\end{itemize}
+
+
+Each \$block\_\-listing\mbox{[}\$region\mbox{]} contains an array of blocks for that region.
+
+Each \$data in \$block\_\-listing\mbox{[}\$region\mbox{]} contains:\begin{itemize}
+\item \$data-$>$region\_\-title: Region title for the listed block.\item \$data-$>$block\_\-title: Block title.\item \$data-$>$region\_\-select: Drop-down menu for assigning a region.\item \$data-$>$weight\_\-select: Drop-down menu for setting weights.\item \$data-$>$throttle\_\-check: Checkbox to enable throttling.\item \$data-$>$configure\_\-link: Block configuration link.\item \$data-$>$delete\_\-link: For deleting user added blocks.\end{itemize}
+
+
+\begin{Desc}
+\item[See also:]\hyperlink{block_8admin_8inc_790da1d1c8cea6bceca5374a4e410c01}{template\_\-preprocess\_\-block\_\-admin\_\-display\_\-form()} 
+
+theme\_\-block\_\-admin\_\-display() \end{Desc}

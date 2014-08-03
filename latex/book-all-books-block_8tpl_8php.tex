@@ -1,0 +1,28 @@
+\hypertarget{book-all-books-block_8tpl_8php}{
+\section{modules/book/book-all-books-block.tpl.php File Reference}
+\label{book-all-books-block_8tpl_8php}\index{modules/book/book-all-books-block.tpl.php@{modules/book/book-all-books-block.tpl.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hypertarget{book-all-books-block_8tpl_8php_c0cb1c6382b1c2617e55b97ab05c7e6a}{
+foreach(\$book\_\-menus as \$book\_\-id=$>$ \$menu) print \textbf{\$menu}}
+\label{book-all-books-block_8tpl_8php_c0cb1c6382b1c2617e55b97ab05c7e6a}
+
+\item 
+\hypertarget{book-all-books-block_8tpl_8php_672d9707ef91db026c210f98cc601123}{
+\textbf{endforeach}}
+\label{book-all-books-block_8tpl_8php_672d9707ef91db026c210f98cc601123}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Default theme implementation for rendering book outlines within a block. This template is used only when the block is configured to \char`\"{}show block on all pages\char`\"{} which presents Multiple independent books on all pages.
+
+Available variables:\begin{itemize}
+\item \$book\_\-menus: Array of book outlines rendered as an unordered list. It is keyed to the parent book ID which is also the ID of the parent node containing an entire outline.\end{itemize}
+
+
+\begin{Desc}
+\item[See also:]template\_\-preprocess\_\-book\_\-all\_\-books\_\-block() \end{Desc}

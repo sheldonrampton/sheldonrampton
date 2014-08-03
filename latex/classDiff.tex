@@ -1,0 +1,132 @@
+\hypertarget{classDiff}{
+\section{Diff Class Reference}
+\label{classDiff}\index{Diff@{Diff}}
+}
+Inheritance diagram for Diff::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classDiff}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classDiff_b9e4cd646aac6b13f68d0eeb017a7e42}{Diff} (\$from\_\-lines, \$to\_\-lines)
+\item 
+\hyperlink{classDiff_4ce63c7d52bd2081787cd9603e441763}{reverse} ()
+\item 
+\hyperlink{classDiff_a0892a16fe2b987cdddd0a554b48d851}{isEmpty} ()
+\item 
+\hyperlink{classDiff_aafd3d0e3e8bd79dc39de040cf7e7005}{lcs} ()
+\item 
+\hyperlink{classDiff_531ed79c9805cfca36f8d827120af685}{orig} ()
+\item 
+\hyperlink{classDiff_be492d508c318cdaa2a031297ab046b5}{closing} ()
+\item 
+\hyperlink{classDiff_f7e9122d5f4ccb16a2d6b91b577ccf12}{\_\-check} (\$from\_\-lines, \$to\_\-lines)
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{classDiff_2b1502bdb3339780d108cd605c44b3e7}{
+\textbf{\$edits}}
+\label{classDiff_2b1502bdb3339780d108cd605c44b3e7}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Class representing a 'diff' between two sequences of strings. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classDiff_f7e9122d5f4ccb16a2d6b91b577ccf12}{
+\index{Diff@{Diff}!\_\-check@{\_\-check}}
+\index{\_\-check@{\_\-check}!Diff@{Diff}}
+\subsubsection[{\_\-check}]{\setlength{\rightskip}{0pt plus 5cm}Diff::\_\-check (\$ {\em from\_\-lines}, \/  \$ {\em to\_\-lines})}}
+\label{classDiff_f7e9122d5f4ccb16a2d6b91b577ccf12}
+
+
+Check a \hyperlink{classDiff}{Diff} for validity.
+
+This is here only for debugging purposes. \hypertarget{classDiff_be492d508c318cdaa2a031297ab046b5}{
+\index{Diff@{Diff}!closing@{closing}}
+\index{closing@{closing}!Diff@{Diff}}
+\subsubsection[{closing}]{\setlength{\rightskip}{0pt plus 5cm}Diff::closing ()}}
+\label{classDiff_be492d508c318cdaa2a031297ab046b5}
+
+
+Get the closing set of lines.
+
+This reconstructs the \$to\_\-lines parameter passed to the constructor.
+
+\begin{Desc}
+\item[Returns:]array The sequence of strings. \end{Desc}
+\hypertarget{classDiff_b9e4cd646aac6b13f68d0eeb017a7e42}{
+\index{Diff@{Diff}!Diff@{Diff}}
+\index{Diff@{Diff}!Diff@{Diff}}
+\subsubsection[{Diff}]{\setlength{\rightskip}{0pt plus 5cm}Diff::Diff (\$ {\em from\_\-lines}, \/  \$ {\em to\_\-lines})}}
+\label{classDiff_b9e4cd646aac6b13f68d0eeb017a7e42}
+
+
+Constructor. Computes diff between sequences of strings.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$from\_\-lines}]array An array of strings. (Typically these are lines from a file.) \item[{\em \$to\_\-lines}]array An array of strings. \end{description}
+\end{Desc}
+\hypertarget{classDiff_a0892a16fe2b987cdddd0a554b48d851}{
+\index{Diff@{Diff}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Diff@{Diff}}
+\subsubsection[{isEmpty}]{\setlength{\rightskip}{0pt plus 5cm}Diff::isEmpty ()}}
+\label{classDiff_a0892a16fe2b987cdddd0a554b48d851}
+
+
+Check for empty diff.
+
+\begin{Desc}
+\item[Returns:]bool True iff two sequences were identical. \end{Desc}
+\hypertarget{classDiff_aafd3d0e3e8bd79dc39de040cf7e7005}{
+\index{Diff@{Diff}!lcs@{lcs}}
+\index{lcs@{lcs}!Diff@{Diff}}
+\subsubsection[{lcs}]{\setlength{\rightskip}{0pt plus 5cm}Diff::lcs ()}}
+\label{classDiff_aafd3d0e3e8bd79dc39de040cf7e7005}
+
+
+Compute the length of the Longest Common Subsequence (LCS).
+
+This is mostly for diagnostic purposed.
+
+\begin{Desc}
+\item[Returns:]int The length of the LCS. \end{Desc}
+\hypertarget{classDiff_531ed79c9805cfca36f8d827120af685}{
+\index{Diff@{Diff}!orig@{orig}}
+\index{orig@{orig}!Diff@{Diff}}
+\subsubsection[{orig}]{\setlength{\rightskip}{0pt plus 5cm}Diff::orig ()}}
+\label{classDiff_531ed79c9805cfca36f8d827120af685}
+
+
+Get the original set of lines.
+
+This reconstructs the \$from\_\-lines parameter passed to the constructor.
+
+\begin{Desc}
+\item[Returns:]array The original sequence of strings. \end{Desc}
+\hypertarget{classDiff_4ce63c7d52bd2081787cd9603e441763}{
+\index{Diff@{Diff}!reverse@{reverse}}
+\index{reverse@{reverse}!Diff@{Diff}}
+\subsubsection[{reverse}]{\setlength{\rightskip}{0pt plus 5cm}Diff::reverse ()}}
+\label{classDiff_4ce63c7d52bd2081787cd9603e441763}
+
+
+Compute reversed \hyperlink{classDiff}{Diff}.
+
+SYNOPSIS:
+
+\$diff = new \hyperlink{classDiff}{Diff}(\$lines1, \$lines2); \$rev = \$diff-$>$\hyperlink{classDiff_4ce63c7d52bd2081787cd9603e441763}{reverse()}; \begin{Desc}
+\item[Returns:]object A \hyperlink{classDiff}{Diff} object representing the inverse of the original diff. \end{Desc}
+
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+mouse/DifferenceEngine.php\end{CompactItemize}

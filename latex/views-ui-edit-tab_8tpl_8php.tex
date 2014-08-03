@@ -1,0 +1,76 @@
+\hypertarget{views-ui-edit-tab_8tpl_8php}{
+\section{sites/all/modules/contrib/views/theme/views-ui-edit-tab.tpl.php File Reference}
+\label{views-ui-edit-tab_8tpl_8php}\index{sites/all/modules/contrib/views/theme/views-ui-edit-tab.tpl.php@{sites/all/modules/contrib/views/theme/views-ui-edit-tab.tpl.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hypertarget{views-ui-edit-tab_8tpl_8php_6249769d5f56badf1c465f2733fe3ca3}{
+print \$display \textbf{id}}
+\label{views-ui-edit-tab_8tpl_8php_6249769d5f56badf1c465f2733fe3ca3}
+
+\item 
+\hypertarget{views-ui-edit-tab_8tpl_8php_7a01cd194331923276551c586c20c1bb}{
+\textbf{if} (!empty(\$display $\rightarrow$ deleted))}
+\label{views-ui-edit-tab_8tpl_8php_7a01cd194331923276551c586c20c1bb}
+
+\item 
+\hypertarget{views-ui-edit-tab_8tpl_8php_52eef91fb888d5015d1a7dc6415a1382}{
+if(\$remove) print \textbf{\$display\_\-help\_\-icon}}
+\label{views-ui-edit-tab_8tpl_8php_52eef91fb888d5015d1a7dc6415a1382}
+
+\item 
+\hypertarget{views-ui-edit-tab_8tpl_8php_ec2795512d255332f57cacd930a090b4}{
+print \textbf{\$title}}
+\label{views-ui-edit-tab_8tpl_8php_ec2795512d255332f57cacd930a090b4}
+
+\item 
+\hypertarget{views-ui-edit-tab_8tpl_8php_6f52c29993b17bf2650a9337fb56d41d}{
+print \textbf{\$description}}
+\label{views-ui-edit-tab_8tpl_8php_6f52c29993b17bf2650a9337fb56d41d}
+
+\item 
+\hypertarget{views-ui-edit-tab_8tpl_8php_90778131641d39df504f0a2a8f8c1391}{
+\textbf{\$details\_\-class}}
+\label{views-ui-edit-tab_8tpl_8php_90778131641d39df504f0a2a8f8c1391}
+
+\item 
+\hypertarget{views-ui-edit-tab_8tpl_8php_161016dde7b624db94186204cb6cf325}{
+if(!empty(\$details\_\-changed)) print \$details \textbf{endif}}
+\label{views-ui-edit-tab_8tpl_8php_161016dde7b624db94186204cb6cf325}
+
+\item 
+\hypertarget{views-ui-edit-tab_8tpl_8php_cb034b20b384dd4a3c80d5dd2352c00b}{
+foreach(\$categories as \$category\_\-id=$>$ \$category) print \textbf{\$category} \mbox{[}'title'\mbox{]}}
+\label{views-ui-edit-tab_8tpl_8php_cb034b20b384dd4a3c80d5dd2352c00b}
+
+\item 
+\hypertarget{views-ui-edit-tab_8tpl_8php_672d9707ef91db026c210f98cc601123}{
+foreach(\$category\mbox{[}'data'\mbox{]} as \$data) if(!empty(\$data\mbox{[}'overridden'\mbox{]})) if(!empty(\$data\mbox{[}'defaulted'\mbox{]})) if(!empty(\$data\mbox{[}'changed'\mbox{]})) print \$data\mbox{[}'links'\mbox{]} \$data\mbox{[}'content'\mbox{]} \textbf{endforeach}}
+\label{views-ui-edit-tab_8tpl_8php_672d9707ef91db026c210f98cc601123}
+
+\item 
+\hypertarget{views-ui-edit-tab_8tpl_8php_f9d5a3fd50f4e0fee86106ca9d287dc8}{
+$<$ divclass=\char`\"{}middletab-section\char`\"{}$>$$<$ divclass=\char`\"{}inside\char`\"{}$>$$<$ divclass=\char`\"{}views-category\char`\"{}$>$ print \textbf{\$relationships}}
+\label{views-ui-edit-tab_8tpl_8php_f9d5a3fd50f4e0fee86106ca9d287dc8}
+
+\item 
+\hypertarget{views-ui-edit-tab_8tpl_8php_90dd5cf4537202eec0a4b73aed12035b}{
+print \textbf{\$arguments}}
+\label{views-ui-edit-tab_8tpl_8php_90dd5cf4537202eec0a4b73aed12035b}
+
+\item 
+\hypertarget{views-ui-edit-tab_8tpl_8php_c4219867966e2af2c532513197f9e36f}{
+$<$ divclass=\char`\"{}righttab-section\char`\"{}$>$$<$ divclass=\char`\"{}inside\char`\"{}$>$$<$ divclass=\char`\"{}views-category\char`\"{}$>$ print \textbf{\$sorts}}
+\label{views-ui-edit-tab_8tpl_8php_c4219867966e2af2c532513197f9e36f}
+
+\item 
+\hypertarget{views-ui-edit-tab_8tpl_8php_467d41e2242c36599dae09a629633ad5}{
+print \textbf{\$filters}}
+\label{views-ui-edit-tab_8tpl_8php_467d41e2242c36599dae09a629633ad5}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Template for the primary \hyperlink{classview}{view} editing window. 

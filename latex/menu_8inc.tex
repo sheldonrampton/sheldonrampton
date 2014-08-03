@@ -1,0 +1,209 @@
+\hypertarget{menu_8inc}{
+\section{includes/menu.inc File Reference}
+\label{menu_8inc}\index{includes/menu.inc@{includes/menu.inc}}
+}
+\subsection*{Enumerations}
+\begin{Indent}{\bf Menu flags}\par
+{\em Flags for use in the \char`\"{}type\char`\"{} attribute of menu items. }\begin{CompactItemize}
+\item 
+enum \textbf{MENU\_\-IS\_\-ROOT} 
+\item 
+enum \textbf{MENU\_\-VISIBLE\_\-IN\_\-TREE} 
+\item 
+enum \textbf{MENU\_\-VISIBLE\_\-IN\_\-BREADCRUMB} 
+\item 
+enum \textbf{MENU\_\-LINKS\_\-TO\_\-PARENT} 
+\item 
+enum \textbf{MENU\_\-MODIFIED\_\-BY\_\-ADMIN} 
+\item 
+enum \textbf{MENU\_\-CREATED\_\-BY\_\-ADMIN} 
+\item 
+enum \textbf{MENU\_\-IS\_\-LOCAL\_\-TASK} 
+\end{CompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Menu item types}\par
+{\em End of \char`\"{}Menu flags\char`\"{}.
+
+Menu item definitions provide one of these constants, which are shortcuts for combinations of the above flags. }\begin{CompactItemize}
+\item 
+enum \hyperlink{group__menu_gc42144282c42a943b05511b38c451e4c}{MENU\_\-NORMAL\_\-ITEM} 
+\item 
+enum \hyperlink{group__menu_g92850b428279a637ce9bac5c1757700f}{MENU\_\-CALLBACK} 
+\item 
+enum \hyperlink{group__menu_g0860a2534ce61dc1334dc7ede68e20b3}{MENU\_\-SUGGESTED\_\-ITEM} 
+\item 
+enum \hyperlink{group__menu_g4dc67226400f237bd3c0a5ef7126008b}{MENU\_\-LOCAL\_\-TASK} 
+\item 
+enum \hyperlink{group__menu_g251e324e062f2e4c703f51231c0d7dc5}{MENU\_\-DEFAULT\_\-LOCAL\_\-TASK} 
+\end{CompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Menu status codes}\par
+{\em End of \char`\"{}Menu item types\char`\"{}.
+
+Status codes for menu callbacks. }\begin{CompactItemize}
+\item 
+enum \textbf{MENU\_\-FOUND} 
+\item 
+enum \textbf{MENU\_\-NOT\_\-FOUND} 
+\item 
+enum \textbf{MENU\_\-ACCESS\_\-DENIED} 
+\item 
+enum \textbf{MENU\_\-SITE\_\-OFFLINE} 
+\end{CompactItemize}
+\end{Indent}
+\begin{Indent}{\bf }\par
+\begin{CompactItemize}
+\item 
+enum \hyperlink{group__menu_g57d50c60b259e886bac766d4ef33abb5}{MENU\_\-MAX\_\-PARTS} 
+\item 
+enum \hyperlink{group__menu_gae0d9e2610b50124cc0d2b120058c9b8}{MENU\_\-MAX\_\-DEPTH} 
+\end{CompactItemize}
+\end{Indent}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{group__menu_g24ddfa75da5f03482a2df2c9c8d1f711}{menu\_\-get\_\-ancestors} (\$parts)
+\item 
+\hyperlink{group__menu_g3f9fe4d53dc9d9c3724f956f1465b5be}{menu\_\-unserialize} (\$data, \$map)
+\item 
+\hyperlink{group__menu_g731543157fbe59176d20af2282df5f75}{menu\_\-set\_\-item} (\$path, \$router\_\-item)
+\item 
+\hyperlink{group__menu_g855b1ca6ef9e44eb6107a2b9d0f581df}{menu\_\-get\_\-item} (\$path=NULL, \$router\_\-item=NULL)
+\item 
+\hyperlink{group__menu_gc2cef001e8197fecd49924e6e0e251c6}{menu\_\-execute\_\-active\_\-handler} (\$path=NULL)
+\item 
+\hyperlink{group__menu_g8aeba67f5ade33d997f9869ce3e41fa6}{\_\-menu\_\-load\_\-objects} (\&\$item, \&\$map)
+\item 
+\hyperlink{group__menu_g255e3052e7679155b37b82d9bcbe19c9}{\_\-menu\_\-check\_\-access} (\&\$item, \$map)
+\item 
+\hyperlink{group__menu_g3b0c0f37db66372ac4e90afa35b191e9}{\_\-menu\_\-item\_\-localize} (\&\$item, \$map, \$link\_\-translate=FALSE)
+\item 
+\hyperlink{group__menu_g0e8535f35bcd1a03e71120a2d6ecc099}{\_\-menu\_\-translate} (\&\$router\_\-item, \$map, \$to\_\-arg=FALSE)
+\item 
+\hyperlink{group__menu_gac930b7a3cacbf70430c8dc3aa884198}{\_\-menu\_\-link\_\-map\_\-translate} (\&\$map, \$to\_\-arg\_\-functions)
+\item 
+\hypertarget{group__menu_gad6215c5bf31dffe08a2b75e66345d10}{
+\textbf{menu\_\-tail\_\-to\_\-arg} (\$arg, \$map, \$index)}
+\label{group__menu_gad6215c5bf31dffe08a2b75e66345d10}
+
+\item 
+\hyperlink{group__menu_g360d727a77cd570860dc7b8382cdba05}{\_\-menu\_\-link\_\-translate} (\&\$item)
+\item 
+\hyperlink{group__menu_g8b1c8825ae7b6ae31b50cadaa1f7c920}{menu\_\-get\_\-object} (\$type= 'node', \$position=1, \$path=NULL)
+\item 
+\hyperlink{group__menu_ga43c3a496679a1cc16d02d76d0422752}{menu\_\-tree} (\$menu\_\-name= 'navigation')
+\item 
+\hyperlink{group__menu_g2ef0691992a9df71eb3455ba774053e7}{menu\_\-tree\_\-output} (\$tree)
+\item 
+\hyperlink{group__menu_ga4b0957cc1027dae4f4093b1b884227d}{menu\_\-tree\_\-all\_\-data} (\$menu\_\-name= 'navigation', \$item=NULL)
+\item 
+\hyperlink{group__menu_g84e2ecf44d5b72159370c74c910e93e3}{menu\_\-tree\_\-page\_\-data} (\$menu\_\-name= 'navigation')
+\item 
+\hyperlink{group__menu_g165ee791b785630b578b0f737812b8b7}{\_\-menu\_\-tree\_\-cid} (\$menu\_\-name, \$data)
+\item 
+\hyperlink{group__menu_g0c9a63fbbdf8496828f1f80d37459475}{menu\_\-tree\_\-collect\_\-node\_\-links} (\&\$tree, \&\$node\_\-links)
+\item 
+\hyperlink{group__menu_g6374db210d96026fb70431def083a7a5}{menu\_\-tree\_\-check\_\-access} (\&\$tree, \$node\_\-links=array())
+\item 
+\hyperlink{group__menu_gd59ba7ae64f452408201f82f8cb7dc25}{\_\-menu\_\-tree\_\-check\_\-access} (\&\$tree)
+\item 
+\hyperlink{group__menu_gbf77de9e90a7f2c4f889a74cde1ee3e4}{menu\_\-tree\_\-data} (\$result=NULL, \$parents=array(), \$depth=1)
+\item 
+\hyperlink{group__menu_g70d13ba2c42c6b0da4b0ef68bcc7ed0d}{\_\-menu\_\-tree\_\-data} (\$result, \$parents, \$depth, \$previous\_\-element= '')
+\item 
+\hyperlink{group__themeable_g77f59240b3aead5df8a777e4f69961b5}{theme\_\-menu\_\-item\_\-link} (\$link)
+\item 
+\hyperlink{group__themeable_g88e49eaff39c8953c4ac72f4d2752ab1}{theme\_\-menu\_\-tree} (\$tree)
+\item 
+\hyperlink{group__themeable_gcb681206cbcb99f33b633da5c9d843c2}{theme\_\-menu\_\-item} (\$link, \$has\_\-children, \$menu= '', \$in\_\-active\_\-trail=FALSE, \$extra\_\-class=NULL)
+\item 
+\hyperlink{group__themeable_gea1a8b949266dc4264f73d64bb0a8ecd}{theme\_\-menu\_\-local\_\-task} (\$link, \$active=FALSE)
+\item 
+\hyperlink{group__menu_g00dce79e81030a75c94c7a279794b253}{drupal\_\-help\_\-arg} (\$arg=array())
+\item 
+\hyperlink{group__menu_g21c6572391132f4e1f5b3fd108220bf4}{menu\_\-get\_\-active\_\-help} ()
+\item 
+\hyperlink{group__menu_gb537c9640c2d63c4c5208412987d7045}{menu\_\-get\_\-names} (\$reset=FALSE)
+\item 
+\hyperlink{group__menu_g28e765ff428a3f18978af564ee0147d6}{menu\_\-list\_\-system\_\-menus} ()
+\item 
+\hyperlink{group__menu_g472245ad15500b2f7b253f679afd90c7}{menu\_\-primary\_\-links} ()
+\item 
+\hyperlink{group__menu_gea7d8f0da28d4082b03e6cadf7af69bd}{menu\_\-secondary\_\-links} ()
+\item 
+\hyperlink{group__menu_gb4cdacc813ae9e06271aa4aa2d9495a7}{menu\_\-navigation\_\-links} (\$menu\_\-name, \$level=0)
+\item 
+\hyperlink{group__menu_g6641ad95c6f964fbdc3f594d86696569}{menu\_\-local\_\-tasks} (\$level=0, \$return\_\-root=FALSE)
+\item 
+\hyperlink{group__menu_g83613b83f90d6a12e2f4170ed0ede9b1}{menu\_\-primary\_\-local\_\-tasks} ()
+\item 
+\hyperlink{group__menu_gbf84c295da2c986cd8ad305935e31ffb}{menu\_\-secondary\_\-local\_\-tasks} ()
+\item 
+\hyperlink{group__menu_gcf647362fc7151bbaa1dbe5568a0b6b5}{menu\_\-tab\_\-root\_\-path} ()
+\item 
+\hyperlink{group__themeable_g11a9f127932a0b272cc0c0dabb4e7d0b}{theme\_\-menu\_\-local\_\-tasks} ()
+\item 
+\hyperlink{group__menu_g017400eafe570a87460d4e6a4a305407}{menu\_\-set\_\-active\_\-menu\_\-name} (\$menu\_\-name=NULL)
+\item 
+\hyperlink{group__menu_g7f449034a05c47e985f5ce8ec31344e2}{menu\_\-get\_\-active\_\-menu\_\-name} ()
+\item 
+\hyperlink{group__menu_gcdd22102c2ba6545645ae34be563d1d4}{menu\_\-set\_\-active\_\-item} (\$path)
+\item 
+\hyperlink{group__menu_g9328a9a4f297d8bb095d924e75a8abd7}{menu\_\-set\_\-active\_\-trail} (\$new\_\-trail=NULL)
+\item 
+\hyperlink{group__menu_g55105d602c5c5ea5b39aae25aa47f8c5}{menu\_\-get\_\-active\_\-trail} ()
+\item 
+\hyperlink{group__menu_g009731c4b3e736ebb620ba90e7f04207}{menu\_\-get\_\-active\_\-breadcrumb} ()
+\item 
+\hyperlink{group__menu_gf0a358447097959e53ad1a20b8d811ed}{menu\_\-get\_\-active\_\-title} ()
+\item 
+\hyperlink{group__menu_gc2b338fa3a449c826661aade7a7d486e}{menu\_\-link\_\-load} (\$mlid)
+\item 
+\hyperlink{group__menu_g032d6b78c7deab10685ebfa6f32ad7eb}{menu\_\-cache\_\-clear} (\$menu\_\-name= 'navigation')
+\item 
+\hyperlink{group__menu_g0a10fa44ca152a12091747e515b6a655}{menu\_\-cache\_\-clear\_\-all} ()
+\item 
+\hyperlink{group__menu_gf36dcb9d5491ef5e7d2cf22c1f5c69f4}{menu\_\-rebuild} ()
+\item 
+\hyperlink{group__menu_ge6e2fcdb614d7988c160c22d563919ba}{menu\_\-router\_\-build} (\$reset=FALSE)
+\item 
+\hyperlink{group__menu_g02af3d3800722e9ff5be36485b655905}{\_\-menu\_\-router\_\-cache} (\$new\_\-menu=NULL)
+\item 
+\hyperlink{group__menu_gdf1f694a2079dcdd6526150eb195915b}{\_\-menu\_\-link\_\-build} (\$item)
+\item 
+\hyperlink{group__menu_g69fdf86c20d033bc7ba46a14937e20ea}{\_\-menu\_\-navigation\_\-links\_\-rebuild} (\$menu)
+\item 
+\hyperlink{group__menu_gcb2dddc8ca84476f38a90f4487156b12}{menu\_\-link\_\-delete} (\$mlid, \$path=NULL)
+\item 
+\hyperlink{group__menu_gf60be5755b46e635c04963e61cdc809a}{\_\-menu\_\-delete\_\-item} (\$item, \$force=FALSE)
+\item 
+\hyperlink{group__menu_g4fe84fbe31b5a3b6c7fa43e8fe912fb0}{menu\_\-link\_\-save} (\&\$item)
+\item 
+\hyperlink{group__menu_g6b3bf9ba8f43f983382911beb62ffba0}{\_\-menu\_\-clear\_\-page\_\-cache} ()
+\item 
+\hyperlink{group__menu_g08212e3890c64045fcf6b44032b343a0}{\_\-menu\_\-set\_\-expanded\_\-menus} ()
+\item 
+\hyperlink{group__menu_g0842f6b9cf84f5e5ff159159063a78dd}{\_\-menu\_\-find\_\-router\_\-path} (\$link\_\-path)
+\item 
+\hyperlink{group__menu_ge3248649fb437dedad940df74fb129dc}{menu\_\-link\_\-maintain} (\$module, \$op, \$link\_\-path, \$link\_\-title)
+\item 
+\hyperlink{group__menu_g75c0660b49841423d8d3c8908e9023fc}{menu\_\-link\_\-children\_\-relative\_\-depth} (\$item)
+\item 
+\hyperlink{group__menu_geb7542558d6fab7c79b96c1188ee6d67}{\_\-menu\_\-link\_\-move\_\-children} (\$item, \$existing\_\-item)
+\item 
+\hyperlink{group__menu_g9df6c2183ab9ee0e934eec54a67761d8}{\_\-menu\_\-update\_\-parental\_\-status} (\$item, \$exclude=FALSE)
+\item 
+\hyperlink{group__menu_g67ab71fff6e17ce3c32752c3bfa00d96}{\_\-menu\_\-link\_\-parents\_\-set} (\&\$item, \$parent)
+\item 
+\hyperlink{group__menu_g662b13ca71a8b780c9a3b372b25492c3}{\_\-menu\_\-router\_\-build} (\$callbacks)
+\item 
+\hyperlink{group__menu_gd025fe7dfd80513f2f7baaa66519c508}{menu\_\-path\_\-is\_\-external} (\$path)
+\item 
+\hyperlink{group__menu_g9ec5f4bcbe8cb76396c1fa9dbbecae5a}{\_\-menu\_\-site\_\-is\_\-offline} ()
+\item 
+\hyperlink{group__menu_g69ff205e60d5766a074c254060e07456}{menu\_\-valid\_\-path} (\$form\_\-item)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+API for the Drupal menu system. 

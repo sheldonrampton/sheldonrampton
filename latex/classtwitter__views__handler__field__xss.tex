@@ -1,0 +1,79 @@
+\hypertarget{classtwitter__views__handler__field__xss}{
+\section{twitter\_\-views\_\-handler\_\-field\_\-xss Class Reference}
+\label{classtwitter__views__handler__field__xss}\index{twitter\_\-views\_\-handler\_\-field\_\-xss@{twitter\_\-views\_\-handler\_\-field\_\-xss}}
+}
+Inheritance diagram for twitter\_\-views\_\-handler\_\-field\_\-xss::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4cm]{classtwitter__views__handler__field__xss}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classtwitter__views__handler__field__xss_b4f2a99eda9640650d83f2b485e9a753}{option\_\-definition} ()
+\item 
+\hyperlink{classtwitter__views__handler__field__xss_4896b110fa64c3beed9fb17b5f01b437}{options\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classtwitter__views__handler__field__xss_bdab73a5e799f01200e58edcd603a32d}{render} (\$values)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Process Twitter-style  and URLs before filtering XSS. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classtwitter__views__handler__field__xss_b4f2a99eda9640650d83f2b485e9a753}{
+\index{twitter\_\-views\_\-handler\_\-field\_\-xss@{twitter\_\-views\_\-handler\_\-field\_\-xss}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!twitter_views_handler_field_xss@{twitter\_\-views\_\-handler\_\-field\_\-xss}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}twitter\_\-views\_\-handler\_\-field\_\-xss::option\_\-definition ()}}
+\label{classtwitter__views__handler__field__xss_b4f2a99eda9640650d83f2b485e9a753}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented from \hyperlink{classviews__handler__field_64c69a8a3697603f8283405071c25b76}{views\_\-handler\_\-field}.\hypertarget{classtwitter__views__handler__field__xss_4896b110fa64c3beed9fb17b5f01b437}{
+\index{twitter\_\-views\_\-handler\_\-field\_\-xss@{twitter\_\-views\_\-handler\_\-field\_\-xss}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!twitter_views_handler_field_xss@{twitter\_\-views\_\-handler\_\-field\_\-xss}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}twitter\_\-views\_\-handler\_\-field\_\-xss::options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classtwitter__views__handler__field__xss_4896b110fa64c3beed9fb17b5f01b437}
+
+
+Default options form that provides the label widget that all fields should have. 
+
+Reimplemented from \hyperlink{classviews__handler__field_0435d161922b7b4b84f02a2e79bb947a}{views\_\-handler\_\-field}.\hypertarget{classtwitter__views__handler__field__xss_bdab73a5e799f01200e58edcd603a32d}{
+\index{twitter\_\-views\_\-handler\_\-field\_\-xss@{twitter\_\-views\_\-handler\_\-field\_\-xss}!render@{render}}
+\index{render@{render}!twitter_views_handler_field_xss@{twitter\_\-views\_\-handler\_\-field\_\-xss}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}twitter\_\-views\_\-handler\_\-field\_\-xss::render (\$ {\em values})}}
+\label{classtwitter__views__handler__field__xss_bdab73a5e799f01200e58edcd603a32d}
+
+
+Render the field.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$values}]The values retrieved from the database. \end{description}
+\end{Desc}
+
+
+Reimplemented from \hyperlink{classviews__handler__field_82ff951c5e9ceb97b2eab86f880cbc1e}{views\_\-handler\_\-field}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/twitter/twitter\_\-views\_\-field\_\-handlers.inc\end{CompactItemize}

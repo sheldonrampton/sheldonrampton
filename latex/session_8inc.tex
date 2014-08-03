@@ -1,0 +1,117 @@
+\hypertarget{session_8inc}{
+\section{includes/session.inc File Reference}
+\label{session_8inc}\index{includes/session.inc@{includes/session.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{session_8inc_a57b9e3f9d8c3a7cd59ee8f5e0a18c32}{
+\textbf{sess\_\-open} (\$save\_\-path, \$session\_\-name)}
+\label{session_8inc_a57b9e3f9d8c3a7cd59ee8f5e0a18c32}
+
+\item 
+\hypertarget{session_8inc_2df8e2d2199bd3f93fd52ee1a6d5a6b7}{
+\textbf{sess\_\-close} ()}
+\label{session_8inc_2df8e2d2199bd3f93fd52ee1a6d5a6b7}
+
+\item 
+\hypertarget{session_8inc_0f7954005527dba422f3f25b42d32ae0}{
+\textbf{sess\_\-read} (\$key)}
+\label{session_8inc_0f7954005527dba422f3f25b42d32ae0}
+
+\item 
+\hypertarget{session_8inc_f16fe7bb14568e6eeae0b8153ef528c9}{
+\textbf{sess\_\-write} (\$key, \$value)}
+\label{session_8inc_f16fe7bb14568e6eeae0b8153ef528c9}
+
+\item 
+\hyperlink{session_8inc_621c1d926868f31898dbf7c90c82620d}{sess\_\-regenerate} ()
+\item 
+\hyperlink{session_8inc_ad174594c4667d63374cc5e119b41c16}{sess\_\-count} (\$timestamp=0, \$anonymous=true)
+\item 
+\hyperlink{session_8inc_7afedd239d078990780ecc2745e64afb}{sess\_\-destroy\_\-sid} (\$sid)
+\item 
+\hyperlink{session_8inc_599b7909c42608adabc65b7fa3b00864}{sess\_\-destroy\_\-uid} (\$uid)
+\item 
+\hypertarget{session_8inc_a7ccf5242a2bb482c5e9cd7471740d30}{
+\textbf{sess\_\-gc} (\$lifetime)}
+\label{session_8inc_a7ccf5242a2bb482c5e9cd7471740d30}
+
+\item 
+\hyperlink{session_8inc_3b87e39800b48ccf96e034198ec2317b}{session\_\-save\_\-session} (\$status=NULL)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+User session handling functions. 
+
+\subsection{Function Documentation}
+\hypertarget{session_8inc_ad174594c4667d63374cc5e119b41c16}{
+\index{session.inc@{session.inc}!sess\_\-count@{sess\_\-count}}
+\index{sess\_\-count@{sess\_\-count}!session.inc@{session.inc}}
+\subsubsection[{sess\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}sess\_\-count (\$ {\em timestamp} = {\tt 0}, \/  \$ {\em anonymous} = {\tt true})}}
+\label{session_8inc_ad174594c4667d63374cc5e119b41c16}
+
+
+Counts how many users have sessions. Can count either anonymous sessions or authenticated sessions.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em int}]\$timestamp A Unix timestamp representing a point of time in the past. The default is 0, which counts all existing sessions. \item[{\em boolean}]\$anonymous TRUE counts only anonymous users. FALSE counts only authenticated users. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]int The number of users with sessions. \end{Desc}
+\hypertarget{session_8inc_7afedd239d078990780ecc2745e64afb}{
+\index{session.inc@{session.inc}!sess\_\-destroy\_\-sid@{sess\_\-destroy\_\-sid}}
+\index{sess\_\-destroy\_\-sid@{sess\_\-destroy\_\-sid}!session.inc@{session.inc}}
+\subsubsection[{sess\_\-destroy\_\-sid}]{\setlength{\rightskip}{0pt plus 5cm}sess\_\-destroy\_\-sid (\$ {\em sid})}}
+\label{session_8inc_7afedd239d078990780ecc2745e64afb}
+
+
+Called by PHP session handling with the PHP session ID to end a user's session.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em string}]\$sid the session id \end{description}
+\end{Desc}
+\hypertarget{session_8inc_599b7909c42608adabc65b7fa3b00864}{
+\index{session.inc@{session.inc}!sess\_\-destroy\_\-uid@{sess\_\-destroy\_\-uid}}
+\index{sess\_\-destroy\_\-uid@{sess\_\-destroy\_\-uid}!session.inc@{session.inc}}
+\subsubsection[{sess\_\-destroy\_\-uid}]{\setlength{\rightskip}{0pt plus 5cm}sess\_\-destroy\_\-uid (\$ {\em uid})}}
+\label{session_8inc_599b7909c42608adabc65b7fa3b00864}
+
+
+End a specific user's session
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em string}]\$uid the user id \end{description}
+\end{Desc}
+\hypertarget{session_8inc_621c1d926868f31898dbf7c90c82620d}{
+\index{session.inc@{session.inc}!sess\_\-regenerate@{sess\_\-regenerate}}
+\index{sess\_\-regenerate@{sess\_\-regenerate}!session.inc@{session.inc}}
+\subsubsection[{sess\_\-regenerate}]{\setlength{\rightskip}{0pt plus 5cm}sess\_\-regenerate ()}}
+\label{session_8inc_621c1d926868f31898dbf7c90c82620d}
+
+
+Called when an anonymous user becomes authenticated or vice-versa. \hypertarget{session_8inc_3b87e39800b48ccf96e034198ec2317b}{
+\index{session.inc@{session.inc}!session\_\-save\_\-session@{session\_\-save\_\-session}}
+\index{session\_\-save\_\-session@{session\_\-save\_\-session}!session.inc@{session.inc}}
+\subsubsection[{session\_\-save\_\-session}]{\setlength{\rightskip}{0pt plus 5cm}session\_\-save\_\-session (\$ {\em status} = {\tt NULL})}}
+\label{session_8inc_3b87e39800b48ccf96e034198ec2317b}
+
+
+Determine whether to save session data of the current request.
+
+This function allows the caller to temporarily disable writing of session data, should the request end while performing potentially dangerous operations, such as manipulating the global \$user object. See \href{http://drupal.org/node/218104}{\tt http://drupal.org/node/218104} for usage
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$status}]Disables writing of session data when FALSE, (re-)enables writing when TRUE. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]FALSE if writing session data has been disabled. Otherwise, TRUE. \end{Desc}

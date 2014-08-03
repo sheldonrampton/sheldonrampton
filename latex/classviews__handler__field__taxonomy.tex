@@ -1,0 +1,103 @@
+\hypertarget{classviews__handler__field__taxonomy}{
+\section{views\_\-handler\_\-field\_\-taxonomy Class Reference}
+\label{classviews__handler__field__taxonomy}\index{views\_\-handler\_\-field\_\-taxonomy@{views\_\-handler\_\-field\_\-taxonomy}}
+}
+Inheritance diagram for views\_\-handler\_\-field\_\-taxonomy::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4cm]{classviews__handler__field__taxonomy}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__handler__field__taxonomy_7020806fbe7b4b7c182c422dd327b0fc}{construct} ()
+\item 
+\hyperlink{classviews__handler__field__taxonomy_c32837e44167ccaf8901f9782298c75b}{option\_\-definition} ()
+\item 
+\hyperlink{classviews__handler__field__taxonomy_df66d3026b9409dd3237c5ebef994595}{options\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__handler__field__taxonomy_eeaf9833824a87e8fe2717880dc389af}{render\_\-link} (\$data, \$values)
+\item 
+\hyperlink{classviews__handler__field__taxonomy_02a50e2e97c9faf4e86c5461edf5d547}{render} (\$values)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Field handler to provide simple renderer that allows linking to a taxonomy term. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__handler__field__taxonomy_7020806fbe7b4b7c182c422dd327b0fc}{
+\index{views\_\-handler\_\-field\_\-taxonomy@{views\_\-handler\_\-field\_\-taxonomy}!construct@{construct}}
+\index{construct@{construct}!views_handler_field_taxonomy@{views\_\-handler\_\-field\_\-taxonomy}}
+\subsubsection[{construct}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-taxonomy::construct ()}}
+\label{classviews__handler__field__taxonomy_7020806fbe7b4b7c182c422dd327b0fc}
+
+
+Constructor to provide additional field to add.
+
+This constructer assumes the term\_\-data table. If using another table, we'll need to be more specific. 
+
+Reimplemented from \hyperlink{classviews__handler__field_3d50050864c255b71c842972a45d39f6}{views\_\-handler\_\-field}.\hypertarget{classviews__handler__field__taxonomy_c32837e44167ccaf8901f9782298c75b}{
+\index{views\_\-handler\_\-field\_\-taxonomy@{views\_\-handler\_\-field\_\-taxonomy}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!views_handler_field_taxonomy@{views\_\-handler\_\-field\_\-taxonomy}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-taxonomy::option\_\-definition ()}}
+\label{classviews__handler__field__taxonomy_c32837e44167ccaf8901f9782298c75b}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented from \hyperlink{classviews__handler__field_64c69a8a3697603f8283405071c25b76}{views\_\-handler\_\-field}.\hypertarget{classviews__handler__field__taxonomy_df66d3026b9409dd3237c5ebef994595}{
+\index{views\_\-handler\_\-field\_\-taxonomy@{views\_\-handler\_\-field\_\-taxonomy}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!views_handler_field_taxonomy@{views\_\-handler\_\-field\_\-taxonomy}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-taxonomy::options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler__field__taxonomy_df66d3026b9409dd3237c5ebef994595}
+
+
+Provide link to taxonomy option 
+
+Reimplemented from \hyperlink{classviews__handler__field_0435d161922b7b4b84f02a2e79bb947a}{views\_\-handler\_\-field}.\hypertarget{classviews__handler__field__taxonomy_02a50e2e97c9faf4e86c5461edf5d547}{
+\index{views\_\-handler\_\-field\_\-taxonomy@{views\_\-handler\_\-field\_\-taxonomy}!render@{render}}
+\index{render@{render}!views_handler_field_taxonomy@{views\_\-handler\_\-field\_\-taxonomy}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-taxonomy::render (\$ {\em values})}}
+\label{classviews__handler__field__taxonomy_02a50e2e97c9faf4e86c5461edf5d547}
+
+
+Render the field.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$values}]The values retrieved from the database. \end{description}
+\end{Desc}
+
+
+Reimplemented from \hyperlink{classviews__handler__field_82ff951c5e9ceb97b2eab86f880cbc1e}{views\_\-handler\_\-field}.\hypertarget{classviews__handler__field__taxonomy_eeaf9833824a87e8fe2717880dc389af}{
+\index{views\_\-handler\_\-field\_\-taxonomy@{views\_\-handler\_\-field\_\-taxonomy}!render\_\-link@{render\_\-link}}
+\index{render\_\-link@{render\_\-link}!views_handler_field_taxonomy@{views\_\-handler\_\-field\_\-taxonomy}}
+\subsubsection[{render\_\-link}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-taxonomy::render\_\-link (\$ {\em data}, \/  \$ {\em values})}}
+\label{classviews__handler__field__taxonomy_eeaf9833824a87e8fe2717880dc389af}
+
+
+Render whatever the data is as a link to the taxonomy.
+
+Data should be made XSS safe prior to calling this function. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/modules/taxonomy/views\_\-handler\_\-field\_\-taxonomy.inc\end{CompactItemize}

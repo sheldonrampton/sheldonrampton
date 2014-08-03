@@ -1,0 +1,198 @@
+\hypertarget{module_8inc}{
+\section{includes/module.inc File Reference}
+\label{module_8inc}\index{includes/module.inc@{includes/module.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{module_8inc_7fcc599da5ee48260c6372b51d28dbe5}{module\_\-load\_\-all} ()
+\item 
+\hyperlink{module_8inc_11da9b347b2de5df27272537417f6272}{module\_\-iterate} (\$function, \$argument= '')
+\item 
+\hyperlink{module_8inc_2adef9e0d4a1d838d1bf6a5643bb9ebd}{module\_\-list} (\$refresh=FALSE, \$bootstrap=TRUE, \$sort=FALSE, \$fixed\_\-list=NULL)
+\item 
+\hyperlink{module_8inc_d906a52cfba472d859805466e64a5312}{module\_\-rebuild\_\-cache} ()
+\item 
+\hyperlink{module_8inc_4a43fd8278bb4e660eff9a74aaba3dd4}{\_\-module\_\-build\_\-dependencies} (\$files)
+\item 
+\hyperlink{module_8inc_83bfe4eac372da50ff3eaf949b1b6ff8}{module\_\-exists} (\$module)
+\item 
+\hyperlink{module_8inc_77a6101f363c066eafbe29b26af5bfd3}{module\_\-load\_\-install} (\$module)
+\item 
+\hyperlink{module_8inc_49098ed4d33650ee5ab52aab40982423}{module\_\-load\_\-include} (\$type, \$module, \$name=NULL)
+\item 
+\hyperlink{module_8inc_4e2123e44529b4d307fc1ac78519e966}{module\_\-load\_\-all\_\-includes} (\$type, \$name=NULL)
+\item 
+\hyperlink{module_8inc_23013c512e0fdb2dacefbe388f713841}{module\_\-enable} (\$module\_\-list)
+\item 
+\hyperlink{module_8inc_30b7c8c58fd142f2df58e8de113ccd55}{module\_\-disable} (\$module\_\-list)
+\item 
+\hyperlink{group__hooks_g0d7a0b03039c561b63424b2a6cf6103f}{module\_\-hook} (\$module, \$hook)
+\item 
+\hyperlink{group__hooks_g55275aa404ced19ade543dec984cb93f}{module\_\-implements} (\$hook, \$sort=FALSE, \$refresh=FALSE)
+\item 
+\hyperlink{group__hooks_gbd6f189b7bcc74d05755d41ec1dfdfc3}{module\_\-invoke} ()
+\item 
+\hyperlink{group__hooks_g85e2028954b5e23c5ba2c5f1bd4e3e14}{module\_\-invoke\_\-all} ()
+\item 
+\hyperlink{module_8inc_029be29693701bd21b6810e8d047c5a8}{drupal\_\-required\_\-modules} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+API for loading and interacting with Drupal modules. 
+
+\subsection{Function Documentation}
+\hypertarget{module_8inc_4a43fd8278bb4e660eff9a74aaba3dd4}{
+\index{module.inc@{module.inc}!\_\-module\_\-build\_\-dependencies@{\_\-module\_\-build\_\-dependencies}}
+\index{\_\-module\_\-build\_\-dependencies@{\_\-module\_\-build\_\-dependencies}!module.inc@{module.inc}}
+\subsubsection[{\_\-module\_\-build\_\-dependencies}]{\setlength{\rightskip}{0pt plus 5cm}\_\-module\_\-build\_\-dependencies (\$ {\em files})}}
+\label{module_8inc_4a43fd8278bb4e660eff9a74aaba3dd4}
+
+
+Find dependencies any level deep and fill in dependents information too.
+
+If module A depends on B which in turn depends on C then this function will add C to the list of modules A depends on. This will be repeated until module A has a list of all modules it depends on. If it depends on itself, called a circular dependency, that's marked by adding a nonexistent module, called -circular- to this list of modules. Because this does not exist, it'll be impossible to switch module A on.
+
+Also we fill in a dependents array in \$file-$>$info. Using the names above, the dependents array of module B lists A.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$files}]The array of filesystem objects used to rebuild the cache. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The same array with dependencies and dependents added where applicable. \end{Desc}
+\hypertarget{module_8inc_029be29693701bd21b6810e8d047c5a8}{
+\index{module.inc@{module.inc}!drupal\_\-required\_\-modules@{drupal\_\-required\_\-modules}}
+\index{drupal\_\-required\_\-modules@{drupal\_\-required\_\-modules}!module.inc@{module.inc}}
+\subsubsection[{drupal\_\-required\_\-modules}]{\setlength{\rightskip}{0pt plus 5cm}drupal\_\-required\_\-modules ()}}
+\label{module_8inc_029be29693701bd21b6810e8d047c5a8}
+
+
+End of \char`\"{}defgroup hooks\char`\"{}. Array of modules required by core. \hypertarget{module_8inc_30b7c8c58fd142f2df58e8de113ccd55}{
+\index{module.inc@{module.inc}!module\_\-disable@{module\_\-disable}}
+\index{module\_\-disable@{module\_\-disable}!module.inc@{module.inc}}
+\subsubsection[{module\_\-disable}]{\setlength{\rightskip}{0pt plus 5cm}module\_\-disable (\$ {\em module\_\-list})}}
+\label{module_8inc_30b7c8c58fd142f2df58e8de113ccd55}
+
+
+Disable a given set of modules.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$module\_\-list}]An array of module names. \end{description}
+\end{Desc}
+\hypertarget{module_8inc_23013c512e0fdb2dacefbe388f713841}{
+\index{module.inc@{module.inc}!module\_\-enable@{module\_\-enable}}
+\index{module\_\-enable@{module\_\-enable}!module.inc@{module.inc}}
+\subsubsection[{module\_\-enable}]{\setlength{\rightskip}{0pt plus 5cm}module\_\-enable (\$ {\em module\_\-list})}}
+\label{module_8inc_23013c512e0fdb2dacefbe388f713841}
+
+
+Enable a given list of modules.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$module\_\-list}]An array of module names. \end{description}
+\end{Desc}
+\hypertarget{module_8inc_83bfe4eac372da50ff3eaf949b1b6ff8}{
+\index{module.inc@{module.inc}!module\_\-exists@{module\_\-exists}}
+\index{module\_\-exists@{module\_\-exists}!module.inc@{module.inc}}
+\subsubsection[{module\_\-exists}]{\setlength{\rightskip}{0pt plus 5cm}module\_\-exists (\$ {\em module})}}
+\label{module_8inc_83bfe4eac372da50ff3eaf949b1b6ff8}
+
+
+Determine whether a given module exists.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$module}]The name of the module (without the .module extension). \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]TRUE if the module is both installed and enabled. \end{Desc}
+\hypertarget{module_8inc_11da9b347b2de5df27272537417f6272}{
+\index{module.inc@{module.inc}!module\_\-iterate@{module\_\-iterate}}
+\index{module\_\-iterate@{module\_\-iterate}!module.inc@{module.inc}}
+\subsubsection[{module\_\-iterate}]{\setlength{\rightskip}{0pt plus 5cm}module\_\-iterate (\$ {\em function}, \/  \$ {\em argument} = {\tt ''})}}
+\label{module_8inc_11da9b347b2de5df27272537417f6272}
+
+
+Call a function repeatedly with each module in turn as an argument. \hypertarget{module_8inc_2adef9e0d4a1d838d1bf6a5643bb9ebd}{
+\index{module.inc@{module.inc}!module\_\-list@{module\_\-list}}
+\index{module\_\-list@{module\_\-list}!module.inc@{module.inc}}
+\subsubsection[{module\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}module\_\-list (\$ {\em refresh} = {\tt FALSE}, \/  \$ {\em bootstrap} = {\tt TRUE}, \/  \$ {\em sort} = {\tt FALSE}, \/  \$ {\em fixed\_\-list} = {\tt NULL})}}
+\label{module_8inc_2adef9e0d4a1d838d1bf6a5643bb9ebd}
+
+
+Collect a list of all loaded modules. During the bootstrap, return only vital modules. See \hyperlink{bootstrap_8inc}{bootstrap.inc}
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$refresh}]Whether to force the module list to be regenerated (such as after the administrator has changed the system settings). \item[{\em \$bootstrap}]Whether to return the reduced set of modules loaded in \char`\"{}bootstrap mode\char`\"{} for cached pages. See \hyperlink{bootstrap_8inc}{bootstrap.inc}. \item[{\em \$sort}]By default, modules are ordered by weight and filename, settings this option to TRUE, module list will be ordered by module name. \item[{\em \$fixed\_\-list}](Optional) Override the module list with the given modules. Stays until the next call with \$refresh = TRUE. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An associative array whose keys and values are the names of all loaded modules. \end{Desc}
+\hypertarget{module_8inc_7fcc599da5ee48260c6372b51d28dbe5}{
+\index{module.inc@{module.inc}!module\_\-load\_\-all@{module\_\-load\_\-all}}
+\index{module\_\-load\_\-all@{module\_\-load\_\-all}!module.inc@{module.inc}}
+\subsubsection[{module\_\-load\_\-all}]{\setlength{\rightskip}{0pt plus 5cm}module\_\-load\_\-all ()}}
+\label{module_8inc_7fcc599da5ee48260c6372b51d28dbe5}
+
+
+Load all the modules that have been enabled in the system table. \hypertarget{module_8inc_4e2123e44529b4d307fc1ac78519e966}{
+\index{module.inc@{module.inc}!module\_\-load\_\-all\_\-includes@{module\_\-load\_\-all\_\-includes}}
+\index{module\_\-load\_\-all\_\-includes@{module\_\-load\_\-all\_\-includes}!module.inc@{module.inc}}
+\subsubsection[{module\_\-load\_\-all\_\-includes}]{\setlength{\rightskip}{0pt plus 5cm}module\_\-load\_\-all\_\-includes (\$ {\em type}, \/  \$ {\em name} = {\tt NULL})}}
+\label{module_8inc_4e2123e44529b4d307fc1ac78519e966}
+
+
+Load an include file for each of the modules that have been enabled in the system table. \hypertarget{module_8inc_49098ed4d33650ee5ab52aab40982423}{
+\index{module.inc@{module.inc}!module\_\-load\_\-include@{module\_\-load\_\-include}}
+\index{module\_\-load\_\-include@{module\_\-load\_\-include}!module.inc@{module.inc}}
+\subsubsection[{module\_\-load\_\-include}]{\setlength{\rightskip}{0pt plus 5cm}module\_\-load\_\-include (\$ {\em type}, \/  \$ {\em module}, \/  \$ {\em name} = {\tt NULL})}}
+\label{module_8inc_49098ed4d33650ee5ab52aab40982423}
+
+
+Load a module include file.
+
+Examples: 
+
+\begin{Code}\begin{verbatim}   // Load node.admin.inc from the node module.
+   module_load_include('inc', 'node', 'node.admin');
+   // Load content_types.inc from the node module.
+   module_load_include('inc', 'node', 'content_types');  
+\end{verbatim}
+\end{Code}
+
+
+
+Do not use this function to load an install file. Use \hyperlink{module_8inc_77a6101f363c066eafbe29b26af5bfd3}{module\_\-load\_\-install()} instead.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$type}]The include file's type (file extension). \item[{\em \$module}]The module to which the include file belongs. \item[{\em \$name}]Optionally, specify the base file name (without the \$type extension). If not set, \$module is used. \end{description}
+\end{Desc}
+\hypertarget{module_8inc_77a6101f363c066eafbe29b26af5bfd3}{
+\index{module.inc@{module.inc}!module\_\-load\_\-install@{module\_\-load\_\-install}}
+\index{module\_\-load\_\-install@{module\_\-load\_\-install}!module.inc@{module.inc}}
+\subsubsection[{module\_\-load\_\-install}]{\setlength{\rightskip}{0pt plus 5cm}module\_\-load\_\-install (\$ {\em module})}}
+\label{module_8inc_77a6101f363c066eafbe29b26af5bfd3}
+
+
+Load a module's installation hooks. \hypertarget{module_8inc_d906a52cfba472d859805466e64a5312}{
+\index{module.inc@{module.inc}!module\_\-rebuild\_\-cache@{module\_\-rebuild\_\-cache}}
+\index{module\_\-rebuild\_\-cache@{module\_\-rebuild\_\-cache}!module.inc@{module.inc}}
+\subsubsection[{module\_\-rebuild\_\-cache}]{\setlength{\rightskip}{0pt plus 5cm}module\_\-rebuild\_\-cache ()}}
+\label{module_8inc_d906a52cfba472d859805466e64a5312}
+
+
+Rebuild the database cache of module files.
+
+\begin{Desc}
+\item[Returns:]The array of filesystem objects used to rebuild the cache. \end{Desc}

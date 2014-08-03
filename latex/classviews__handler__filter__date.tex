@@ -1,0 +1,113 @@
+\hypertarget{classviews__handler__filter__date}{
+\section{views\_\-handler\_\-filter\_\-date Class Reference}
+\label{classviews__handler__filter__date}\index{views\_\-handler\_\-filter\_\-date@{views\_\-handler\_\-filter\_\-date}}
+}
+Inheritance diagram for views\_\-handler\_\-filter\_\-date::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6cm]{classviews__handler__filter__date}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__handler__filter__date_5fdeb678009a8c8c23395826caee3062}{option\_\-definition} ()
+\item 
+\hyperlink{classviews__handler__filter__date_5c7fb298feef092a2cb3bc3f75f54f29}{value\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__handler__filter__date_6d4e05f04a0f9ea5663f165777f54003}{options\_\-validate} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__handler__filter__date_0146f5fd6dee328506fc6f29006eb401}{exposed\_\-validate} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__handler__filter__date_d19ed65f3335ed1ac6896fe17a480b4e}{validate\_\-valid\_\-time} (\&\$form, \$operator, \$value)
+\item 
+\hyperlink{classviews__handler__filter__date_063da758bf1832f38454620cbc94e304}{accept\_\-exposed\_\-input} (\$input)
+\item 
+\hypertarget{classviews__handler__filter__date_b097983da22dfe68e579d92147189a9c}{
+\textbf{op\_\-between} (\$field)}
+\label{classviews__handler__filter__date_b097983da22dfe68e579d92147189a9c}
+
+\item 
+\hypertarget{classviews__handler__filter__date_3da46dbfd7a36f8b8ac327de68674c71}{
+\textbf{op\_\-simple} (\$field)}
+\label{classviews__handler__filter__date_3da46dbfd7a36f8b8ac327de68674c71}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Filter to handle dates stored as a timestamp. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__handler__filter__date_063da758bf1832f38454620cbc94e304}{
+\index{views\_\-handler\_\-filter\_\-date@{views\_\-handler\_\-filter\_\-date}!accept\_\-exposed\_\-input@{accept\_\-exposed\_\-input}}
+\index{accept\_\-exposed\_\-input@{accept\_\-exposed\_\-input}!views_handler_filter_date@{views\_\-handler\_\-filter\_\-date}}
+\subsubsection[{accept\_\-exposed\_\-input}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-filter\_\-date::accept\_\-exposed\_\-input (\$ {\em input})}}
+\label{classviews__handler__filter__date_063da758bf1832f38454620cbc94e304}
+
+
+Do some minor translation of the exposed input 
+
+Reimplemented from \hyperlink{classviews__handler__filter__numeric_0fd6abb3062be32410bef3c1cefdaaf5}{views\_\-handler\_\-filter\_\-numeric}.\hypertarget{classviews__handler__filter__date_0146f5fd6dee328506fc6f29006eb401}{
+\index{views\_\-handler\_\-filter\_\-date@{views\_\-handler\_\-filter\_\-date}!exposed\_\-validate@{exposed\_\-validate}}
+\index{exposed\_\-validate@{exposed\_\-validate}!views_handler_filter_date@{views\_\-handler\_\-filter\_\-date}}
+\subsubsection[{exposed\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-filter\_\-date::exposed\_\-validate (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler__filter__date_0146f5fd6dee328506fc6f29006eb401}
+
+
+Validate the exposed filter form 
+
+Reimplemented from \hyperlink{classviews__handler_2dd536754e4764cc82ffe7c864f54b16}{views\_\-handler}.\hypertarget{classviews__handler__filter__date_5fdeb678009a8c8c23395826caee3062}{
+\index{views\_\-handler\_\-filter\_\-date@{views\_\-handler\_\-filter\_\-date}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!views_handler_filter_date@{views\_\-handler\_\-filter\_\-date}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-filter\_\-date::option\_\-definition ()}}
+\label{classviews__handler__filter__date_5fdeb678009a8c8c23395826caee3062}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented from \hyperlink{classviews__handler__filter__numeric_a6c2de73a4c7eda8575e1691b8218b3b}{views\_\-handler\_\-filter\_\-numeric}.\hypertarget{classviews__handler__filter__date_6d4e05f04a0f9ea5663f165777f54003}{
+\index{views\_\-handler\_\-filter\_\-date@{views\_\-handler\_\-filter\_\-date}!options\_\-validate@{options\_\-validate}}
+\index{options\_\-validate@{options\_\-validate}!views_handler_filter_date@{views\_\-handler\_\-filter\_\-date}}
+\subsubsection[{options\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-filter\_\-date::options\_\-validate (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler__filter__date_6d4e05f04a0f9ea5663f165777f54003}
+
+
+Simple validate handler 
+
+Reimplemented from \hyperlink{classviews__handler__filter_1156751e912662ce47ad680cbe2c03a3}{views\_\-handler\_\-filter}.\hypertarget{classviews__handler__filter__date_d19ed65f3335ed1ac6896fe17a480b4e}{
+\index{views\_\-handler\_\-filter\_\-date@{views\_\-handler\_\-filter\_\-date}!validate\_\-valid\_\-time@{validate\_\-valid\_\-time}}
+\index{validate\_\-valid\_\-time@{validate\_\-valid\_\-time}!views_handler_filter_date@{views\_\-handler\_\-filter\_\-date}}
+\subsubsection[{validate\_\-valid\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-filter\_\-date::validate\_\-valid\_\-time (\&\$ {\em form}, \/  \$ {\em operator}, \/  \$ {\em value})}}
+\label{classviews__handler__filter__date_d19ed65f3335ed1ac6896fe17a480b4e}
+
+
+Validate that the time values convert to something usable. \hypertarget{classviews__handler__filter__date_5c7fb298feef092a2cb3bc3f75f54f29}{
+\index{views\_\-handler\_\-filter\_\-date@{views\_\-handler\_\-filter\_\-date}!value\_\-form@{value\_\-form}}
+\index{value\_\-form@{value\_\-form}!views_handler_filter_date@{views\_\-handler\_\-filter\_\-date}}
+\subsubsection[{value\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-filter\_\-date::value\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler__filter__date_5c7fb298feef092a2cb3bc3f75f54f29}
+
+
+Add a type selector to the value form 
+
+Reimplemented from \hyperlink{classviews__handler__filter__numeric_b0888218590f7c620f10fc04a98d135e}{views\_\-handler\_\-filter\_\-numeric}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/handlers/views\_\-handler\_\-filter\_\-date.inc\end{CompactItemize}

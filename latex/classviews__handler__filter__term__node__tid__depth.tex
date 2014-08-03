@@ -1,0 +1,87 @@
+\hypertarget{classviews__handler__filter__term__node__tid__depth}{
+\section{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid\_\-depth Class Reference}
+\label{classviews__handler__filter__term__node__tid__depth}\index{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid\_\-depth@{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid\_\-depth}}
+}
+Inheritance diagram for views\_\-handler\_\-filter\_\-term\_\-node\_\-tid\_\-depth::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7cm]{classviews__handler__filter__term__node__tid__depth}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__handler__filter__term__node__tid__depth_fb7fceb94e0b622039906c0d97d64f4d}{operator\_\-options} ()
+\item 
+\hyperlink{classviews__handler__filter__term__node__tid__depth_e0822209bc155abaec93555bbeb93e78}{option\_\-definition} ()
+\item 
+\hyperlink{classviews__handler__filter__term__node__tid__depth_704c5e42a5a41ee12bd01b1b153431e4}{extra\_\-options\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__handler__filter__term__node__tid__depth_ff1d2c0057597790a56bffd0674f391a}{query} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Filter handler for taxonomy terms with depth.
+
+This handler is actually part of the node table and has some restrictions, because it uses a subquery to find nodes with 
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__handler__filter__term__node__tid__depth_704c5e42a5a41ee12bd01b1b153431e4}{
+\index{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid\_\-depth@{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid\_\-depth}!extra\_\-options\_\-form@{extra\_\-options\_\-form}}
+\index{extra\_\-options\_\-form@{extra\_\-options\_\-form}!views_handler_filter_term_node_tid_depth@{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid\_\-depth}}
+\subsubsection[{extra\_\-options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-filter\_\-term\_\-node\_\-tid\_\-depth::extra\_\-options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler__filter__term__node__tid__depth_704c5e42a5a41ee12bd01b1b153431e4}
+
+
+Provide a form for setting options. 
+
+Reimplemented from \hyperlink{classviews__handler__filter__term__node__tid_df599d1bef08003b1b734dfd397030a6}{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid}.\hypertarget{classviews__handler__filter__term__node__tid__depth_fb7fceb94e0b622039906c0d97d64f4d}{
+\index{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid\_\-depth@{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid\_\-depth}!operator\_\-options@{operator\_\-options}}
+\index{operator\_\-options@{operator\_\-options}!views_handler_filter_term_node_tid_depth@{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid\_\-depth}}
+\subsubsection[{operator\_\-options}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-filter\_\-term\_\-node\_\-tid\_\-depth::operator\_\-options ()}}
+\label{classviews__handler__filter__term__node__tid__depth_fb7fceb94e0b622039906c0d97d64f4d}
+
+
+Provide a list of options for the default operator form. Should be overridden by classes that don't override operator\_\-form 
+
+Reimplemented from \hyperlink{classviews__handler__filter_cbd69b92e9199530a54069c79368db7f}{views\_\-handler\_\-filter}.\hypertarget{classviews__handler__filter__term__node__tid__depth_e0822209bc155abaec93555bbeb93e78}{
+\index{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid\_\-depth@{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid\_\-depth}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!views_handler_filter_term_node_tid_depth@{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid\_\-depth}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-filter\_\-term\_\-node\_\-tid\_\-depth::option\_\-definition ()}}
+\label{classviews__handler__filter__term__node__tid__depth_e0822209bc155abaec93555bbeb93e78}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented from \hyperlink{classviews__handler__filter__term__node__tid_e81fb582295a2c8871b32bbf8b3ea915}{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid}.\hypertarget{classviews__handler__filter__term__node__tid__depth_ff1d2c0057597790a56bffd0674f391a}{
+\index{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid\_\-depth@{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid\_\-depth}!query@{query}}
+\index{query@{query}!views_handler_filter_term_node_tid_depth@{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid\_\-depth}}
+\subsubsection[{query}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-filter\_\-term\_\-node\_\-tid\_\-depth::query ()}}
+\label{classviews__handler__filter__term__node__tid__depth_ff1d2c0057597790a56bffd0674f391a}
+
+
+Add this filter to the query.
+
+Due to the nature of fapi, the value and the operator have an unintended level of indirection. You will find them in \$this-$>$operator and \$this-$>$value respectively. 
+
+Reimplemented from \hyperlink{classviews__handler__filter__in__operator_f4b9a596ad1e6fbee116977ca0a7d8a9}{views\_\-handler\_\-filter\_\-in\_\-operator}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/modules/taxonomy/views\_\-handler\_\-filter\_\-term\_\-node\_\-tid\_\-depth.inc\end{CompactItemize}

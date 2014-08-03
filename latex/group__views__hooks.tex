@@ -1,0 +1,235 @@
+\hypertarget{group__views__hooks}{
+\section{Views' hooks}
+\label{group__views__hooks}\index{Views' hooks@{Views' hooks}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{group__views__hooks_g227057901681e4a33e33c199c7a8c989}{hook\_\-views\_\-data} ()
+\item 
+\hyperlink{group__views__hooks_g23f6e9972b2ed84fc54b7ff63f44477d}{hook\_\-views\_\-plugins} ()
+\item 
+\hyperlink{group__views__hooks_g6c4e4c2a769b0017bf0edcd0adae57e9}{hook\_\-views\_\-plugins\_\-alter} (\&\$plugins)
+\item 
+\hyperlink{group__views__hooks_gbf506f44bd8d8a86876f27396f5341ed}{hook\_\-views\_\-handlers} ()
+\item 
+\hyperlink{group__views__hooks_gc67ffd4a2f61f9814ee37b541c472c47}{hook\_\-views\_\-api} ()
+\item 
+\hyperlink{group__views__hooks_g23edb74860682fa88f75cf94b97c2e15}{hook\_\-views\_\-default\_\-views} ()
+\item 
+\hyperlink{group__views__hooks_gcd31035a6ae9c7baf05ad034d6a65768}{hook\_\-views\_\-default\_\-views\_\-alter} (\&\$views)
+\item 
+\hyperlink{group__views__hooks_ge98b0a1c700fe1406af390dfc8c7262e}{hook\_\-views\_\-convert} ()
+\item 
+\hyperlink{group__views__hooks_g2a2f60cadfec300b51a4960080ef8ac5}{hook\_\-views\_\-query\_\-substitutions} ()
+\item 
+\hyperlink{group__views__hooks_g471b90caa886a4e4239a839d6bf7a963}{hook\_\-views\_\-pre\_\-view} (\&\$\hyperlink{classview}{view}, \&\$display\_\-id, \&\$args)
+\item 
+\hyperlink{group__views__hooks_g1c3fc52e2854310f84eeb43b98a0ba64}{hook\_\-views\_\-pre\_\-build} (\&\$\hyperlink{classview}{view})
+\item 
+\hyperlink{group__views__hooks_gf7582b210bdd367d6006c7dc62304475}{hook\_\-views\_\-pre\_\-execute} (\&\$\hyperlink{classview}{view})
+\item 
+\hyperlink{group__views__hooks_gb88d5c49ec4ad30dba2be34327d5b0cc}{hook\_\-views\_\-pre\_\-render} (\&\$\hyperlink{classview}{view})
+\item 
+\hyperlink{group__views__hooks_g21cc61642e5cafc23ec621f07dae1f4b}{hook\_\-views\_\-post\_\-render} (\&\$\hyperlink{classview}{view}, \&\$output, \&\$cache)
+\item 
+\hyperlink{group__views__hooks_gf4d538493930fe0fa0ce6fb3bf42c156}{hook\_\-views\_\-query\_\-alter} (\&\$\hyperlink{classview}{view}, \&\$query)
+\item 
+\hyperlink{group__views__hooks_ge8633ca67e214bf3e676eb032c06b395}{hook\_\-views\_\-admin\_\-links\_\-alter} (\&\$links, \$\hyperlink{classview}{view})
+\item 
+\hyperlink{group__views__hooks_gfeafa28dd3e140b2d4f8cfdfc7d76922}{hook\_\-views\_\-preview\_\-info\_\-alter} (\&\$rows, \$\hyperlink{classview}{view})
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Hooks that can be implemented by other modules in order to implement the Views API. 
+
+\subsection{Function Documentation}
+\hypertarget{group__views__hooks_ge8633ca67e214bf3e676eb032c06b395}{
+\index{views\_\-hooks@{views\_\-hooks}!hook\_\-views\_\-admin\_\-links\_\-alter@{hook\_\-views\_\-admin\_\-links\_\-alter}}
+\index{hook\_\-views\_\-admin\_\-links\_\-alter@{hook\_\-views\_\-admin\_\-links\_\-alter}!views_hooks@{views\_\-hooks}}
+\subsubsection[{hook\_\-views\_\-admin\_\-links\_\-alter}]{\setlength{\rightskip}{0pt plus 5cm}hook\_\-views\_\-admin\_\-links\_\-alter (\&\$ {\em links}, \/  \$ {\em view})}}
+\label{group__views__hooks_ge8633ca67e214bf3e676eb032c06b395}
+
+
+This hook should be placed in MODULENAME.views.inc and it will be auto-loaded. This must either be in the same directory as the .module file or in a subdirectory named 'includes'.
+
+Alter the links that appear over a \hyperlink{classview}{view}. They are in a format suitable for theme('links').
+
+Warning: \$view is not a reference in PHP4 and cannot be modified here. But it IS a reference in PHP5, and can be modified. Please be careful with it.
+
+\begin{Desc}
+\item[See also:]\hyperlink{group__themeable_g6a23e012993ee8a2494249148d15d2bf}{theme\_\-links} \end{Desc}
+\hypertarget{group__views__hooks_gc67ffd4a2f61f9814ee37b541c472c47}{
+\index{views\_\-hooks@{views\_\-hooks}!hook\_\-views\_\-api@{hook\_\-views\_\-api}}
+\index{hook\_\-views\_\-api@{hook\_\-views\_\-api}!views_hooks@{views\_\-hooks}}
+\subsubsection[{hook\_\-views\_\-api}]{\setlength{\rightskip}{0pt plus 5cm}hook\_\-views\_\-api ()}}
+\label{group__views__hooks_gc67ffd4a2f61f9814ee37b541c472c47}
+
+
+Register View API information. This is required for your module to have its include files loaded; for example, when implementing \hyperlink{group__views__hooks_g23edb74860682fa88f75cf94b97c2e15}{hook\_\-views\_\-default\_\-views()}.
+
+\begin{Desc}
+\item[Returns:]An array with the following possible keys:\begin{itemize}
+\item api: (required) The version of the Views API the module implements.\item path: (optional) If includes are stored somewhere other than within the root module directory or a subdirectory called includes, specify its path here. \end{itemize}
+\end{Desc}
+\hypertarget{group__views__hooks_ge98b0a1c700fe1406af390dfc8c7262e}{
+\index{views\_\-hooks@{views\_\-hooks}!hook\_\-views\_\-convert@{hook\_\-views\_\-convert}}
+\index{hook\_\-views\_\-convert@{hook\_\-views\_\-convert}!views_hooks@{views\_\-hooks}}
+\subsubsection[{hook\_\-views\_\-convert}]{\setlength{\rightskip}{0pt plus 5cm}hook\_\-views\_\-convert ()}}
+\label{group__views__hooks_ge98b0a1c700fe1406af390dfc8c7262e}
+
+
+Stub hook documentation
+
+This hook should be placed in MODULENAME.views\_\-convert.inc and it will be auto-loaded. This must either be in the same directory as the .module file or in a subdirectory named 'includes'. \hypertarget{group__views__hooks_g227057901681e4a33e33c199c7a8c989}{
+\index{views\_\-hooks@{views\_\-hooks}!hook\_\-views\_\-data@{hook\_\-views\_\-data}}
+\index{hook\_\-views\_\-data@{hook\_\-views\_\-data}!views_hooks@{views\_\-hooks}}
+\subsubsection[{hook\_\-views\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}hook\_\-views\_\-data ()}}
+\label{group__views__hooks_g227057901681e4a33e33c199c7a8c989}
+
+
+Describe table structure to Views.
+
+This hook should be placed in MODULENAME.views.inc and it will be auto-loaded. This must either be in the same directory as the .module file or in a subdirectory named 'includes'.
+
+The full documentation for this hook is in the advanced help. \hyperlink{}{http://views-help.doc.logrus.com/help/views/api-tables} \hypertarget{group__views__hooks_g23edb74860682fa88f75cf94b97c2e15}{
+\index{views\_\-hooks@{views\_\-hooks}!hook\_\-views\_\-default\_\-views@{hook\_\-views\_\-default\_\-views}}
+\index{hook\_\-views\_\-default\_\-views@{hook\_\-views\_\-default\_\-views}!views_hooks@{views\_\-hooks}}
+\subsubsection[{hook\_\-views\_\-default\_\-views}]{\setlength{\rightskip}{0pt plus 5cm}hook\_\-views\_\-default\_\-views ()}}
+\label{group__views__hooks_g23edb74860682fa88f75cf94b97c2e15}
+
+
+This hook allows modules to provide their own views which can either be used as-is or as a \char`\"{}starter\char`\"{} for users to build from.
+
+This hook should be placed in MODULENAME.views\_\-default.inc and it will be auto-loaded. This must either be in the same directory as the .module file or in a subdirectory named 'includes'.
+
+The \$view-$>$disabled boolean flag indicates whether the View should be enabled or disabled by default.
+
+\begin{Desc}
+\item[Returns:]An associative array containing the structures of views, as generated from the Export tab, keyed by the \hyperlink{classview}{view} name. A best practice is to go through and add \hyperlink{common_8inc_41d20f0c822bf1f3c26a97981c762665}{t()} to all title and label strings, with the exception of menu strings. \end{Desc}
+\hypertarget{group__views__hooks_gcd31035a6ae9c7baf05ad034d6a65768}{
+\index{views\_\-hooks@{views\_\-hooks}!hook\_\-views\_\-default\_\-views\_\-alter@{hook\_\-views\_\-default\_\-views\_\-alter}}
+\index{hook\_\-views\_\-default\_\-views\_\-alter@{hook\_\-views\_\-default\_\-views\_\-alter}!views_hooks@{views\_\-hooks}}
+\subsubsection[{hook\_\-views\_\-default\_\-views\_\-alter}]{\setlength{\rightskip}{0pt plus 5cm}hook\_\-views\_\-default\_\-views\_\-alter (\&\$ {\em views})}}
+\label{group__views__hooks_gcd31035a6ae9c7baf05ad034d6a65768}
+
+
+This hook is called right before all default views are cached to the database. It takes a keyed array of views by reference. \hypertarget{group__views__hooks_gbf506f44bd8d8a86876f27396f5341ed}{
+\index{views\_\-hooks@{views\_\-hooks}!hook\_\-views\_\-handlers@{hook\_\-views\_\-handlers}}
+\index{hook\_\-views\_\-handlers@{hook\_\-views\_\-handlers}!views_hooks@{views\_\-hooks}}
+\subsubsection[{hook\_\-views\_\-handlers}]{\setlength{\rightskip}{0pt plus 5cm}hook\_\-views\_\-handlers ()}}
+\label{group__views__hooks_gbf506f44bd8d8a86876f27396f5341ed}
+
+
+Register handler, file and parent information so that handlers can be loaded only on request.
+
+The full documentation for this hook is in the advanced help. \hypertarget{group__views__hooks_g23f6e9972b2ed84fc54b7ff63f44477d}{
+\index{views\_\-hooks@{views\_\-hooks}!hook\_\-views\_\-plugins@{hook\_\-views\_\-plugins}}
+\index{hook\_\-views\_\-plugins@{hook\_\-views\_\-plugins}!views_hooks@{views\_\-hooks}}
+\subsubsection[{hook\_\-views\_\-plugins}]{\setlength{\rightskip}{0pt plus 5cm}hook\_\-views\_\-plugins ()}}
+\label{group__views__hooks_g23f6e9972b2ed84fc54b7ff63f44477d}
+
+
+The full documentation for this hook is now in the advanced help.
+
+This hook should be placed in MODULENAME.views.inc and it will be auto-loaded. This must either be in the same directory as the .module file or in a subdirectory named 'includes'.
+
+This is a stub list as a reminder that this needs to be doc'd and is not used in views anywhere so might not be remembered when this is formally documented:\begin{itemize}
+\item style: 'even empty' \end{itemize}
+\hypertarget{group__views__hooks_g6c4e4c2a769b0017bf0edcd0adae57e9}{
+\index{views\_\-hooks@{views\_\-hooks}!hook\_\-views\_\-plugins\_\-alter@{hook\_\-views\_\-plugins\_\-alter}}
+\index{hook\_\-views\_\-plugins\_\-alter@{hook\_\-views\_\-plugins\_\-alter}!views_hooks@{views\_\-hooks}}
+\subsubsection[{hook\_\-views\_\-plugins\_\-alter}]{\setlength{\rightskip}{0pt plus 5cm}hook\_\-views\_\-plugins\_\-alter (\&\$ {\em plugins})}}
+\label{group__views__hooks_g6c4e4c2a769b0017bf0edcd0adae57e9}
+
+
+Alter existing plugins data, defined by modules. \hypertarget{group__views__hooks_g21cc61642e5cafc23ec621f07dae1f4b}{
+\index{views\_\-hooks@{views\_\-hooks}!hook\_\-views\_\-post\_\-render@{hook\_\-views\_\-post\_\-render}}
+\index{hook\_\-views\_\-post\_\-render@{hook\_\-views\_\-post\_\-render}!views_hooks@{views\_\-hooks}}
+\subsubsection[{hook\_\-views\_\-post\_\-render}]{\setlength{\rightskip}{0pt plus 5cm}hook\_\-views\_\-post\_\-render (\&\$ {\em view}, \/  \&\$ {\em output}, \/  \&\$ {\em cache})}}
+\label{group__views__hooks_g21cc61642e5cafc23ec621f07dae1f4b}
+
+
+Post process any rendered data.
+
+This can be valuable to be able to cache a \hyperlink{classview}{view} and still have some level of dynamic output. In an ideal world, the actual output will include HTML comment based tokens, and then the post process can replace those tokens.
+
+Example usage. If it is known that the \hyperlink{classview}{view} is a node \hyperlink{classview}{view} and that the primary field will be a nid, you can do something like this:
+
+And then in the post render, create an array with the text that should go there:
+
+strtr(\$output, array('', 'output for FIELD of nid 1');
+
+All of the cached result data will be available in \$view-$>$result, as well, so all ids used in the query should be discoverable.
+
+This hook can be utilized by themes. \hypertarget{group__views__hooks_g1c3fc52e2854310f84eeb43b98a0ba64}{
+\index{views\_\-hooks@{views\_\-hooks}!hook\_\-views\_\-pre\_\-build@{hook\_\-views\_\-pre\_\-build}}
+\index{hook\_\-views\_\-pre\_\-build@{hook\_\-views\_\-pre\_\-build}!views_hooks@{views\_\-hooks}}
+\subsubsection[{hook\_\-views\_\-pre\_\-build}]{\setlength{\rightskip}{0pt plus 5cm}hook\_\-views\_\-pre\_\-build (\&\$ {\em view})}}
+\label{group__views__hooks_g1c3fc52e2854310f84eeb43b98a0ba64}
+
+
+This hook is called right before the build process, but after displays are attached and the display performs its pre\_\-execute phase.
+
+Adding output to the \hyperlink{classview}{view} can be accomplished by placing text on \$view-$>$attachment\_\-before and \$view-$>$attachment\_\-after. \hypertarget{group__views__hooks_gf7582b210bdd367d6006c7dc62304475}{
+\index{views\_\-hooks@{views\_\-hooks}!hook\_\-views\_\-pre\_\-execute@{hook\_\-views\_\-pre\_\-execute}}
+\index{hook\_\-views\_\-pre\_\-execute@{hook\_\-views\_\-pre\_\-execute}!views_hooks@{views\_\-hooks}}
+\subsubsection[{hook\_\-views\_\-pre\_\-execute}]{\setlength{\rightskip}{0pt plus 5cm}hook\_\-views\_\-pre\_\-execute (\&\$ {\em view})}}
+\label{group__views__hooks_gf7582b210bdd367d6006c7dc62304475}
+
+
+This hook is called right before the execute process. The query is now fully built, but it has not yet been run through db\_\-rewrite\_\-sql.
+
+Adding output to the \hyperlink{classview}{view} can be accomplished by placing text on \$view-$>$attachment\_\-before and \$view-$>$attachment\_\-after. \hypertarget{group__views__hooks_gb88d5c49ec4ad30dba2be34327d5b0cc}{
+\index{views\_\-hooks@{views\_\-hooks}!hook\_\-views\_\-pre\_\-render@{hook\_\-views\_\-pre\_\-render}}
+\index{hook\_\-views\_\-pre\_\-render@{hook\_\-views\_\-pre\_\-render}!views_hooks@{views\_\-hooks}}
+\subsubsection[{hook\_\-views\_\-pre\_\-render}]{\setlength{\rightskip}{0pt plus 5cm}hook\_\-views\_\-pre\_\-render (\&\$ {\em view})}}
+\label{group__views__hooks_gb88d5c49ec4ad30dba2be34327d5b0cc}
+
+
+This hook is called right before the render process. The query has been executed, and the pre\_\-render() phase has already happened for handlers, so all data should be available.
+
+Adding output to the \hyperlink{classview}{view} can be accomplished by placing text on \$view-$>$attachment\_\-before and \$view-$>$attachment\_\-after. Altering the content can be achieved by editing the items of \$view-$>$result.
+
+This hook can be utilized by themes. \hypertarget{group__views__hooks_g471b90caa886a4e4239a839d6bf7a963}{
+\index{views\_\-hooks@{views\_\-hooks}!hook\_\-views\_\-pre\_\-view@{hook\_\-views\_\-pre\_\-view}}
+\index{hook\_\-views\_\-pre\_\-view@{hook\_\-views\_\-pre\_\-view}!views_hooks@{views\_\-hooks}}
+\subsubsection[{hook\_\-views\_\-pre\_\-view}]{\setlength{\rightskip}{0pt plus 5cm}hook\_\-views\_\-pre\_\-view (\&\$ {\em view}, \/  \&\$ {\em display\_\-id}, \/  \&\$ {\em args})}}
+\label{group__views__hooks_g471b90caa886a4e4239a839d6bf7a963}
+
+
+This hook is called at the very beginning of views processing, before anything is done.
+
+Adding output to the \hyperlink{classview}{view} can be accomplished by placing text on \$view-$>$attachment\_\-before and \$view-$>$attachment\_\-after. \hypertarget{group__views__hooks_gfeafa28dd3e140b2d4f8cfdfc7d76922}{
+\index{views\_\-hooks@{views\_\-hooks}!hook\_\-views\_\-preview\_\-info\_\-alter@{hook\_\-views\_\-preview\_\-info\_\-alter}}
+\index{hook\_\-views\_\-preview\_\-info\_\-alter@{hook\_\-views\_\-preview\_\-info\_\-alter}!views_hooks@{views\_\-hooks}}
+\subsubsection[{hook\_\-views\_\-preview\_\-info\_\-alter}]{\setlength{\rightskip}{0pt plus 5cm}hook\_\-views\_\-preview\_\-info\_\-alter (\&\$ {\em rows}, \/  \$ {\em view})}}
+\label{group__views__hooks_gfeafa28dd3e140b2d4f8cfdfc7d76922}
+
+
+This hook should be placed in MODULENAME.views.inc and it will be auto-loaded. This must either be in the same directory as the .module file or in a subdirectory named 'includes'.
+
+Alter the rows that appear with a \hyperlink{classview}{view}, which includes path and query information. The rows are suitable for theme('table').
+
+Warning: \$view is not a reference in PHP4 and cannot be modified here. But it IS a reference in PHP5, and can be modified. Please be careful with it.
+
+\begin{Desc}
+\item[See also:]\hyperlink{group__themeable_g77f053aaa73bbeaa3943bf8f06ce625d}{theme\_\-table} \end{Desc}
+\hypertarget{group__views__hooks_gf4d538493930fe0fa0ce6fb3bf42c156}{
+\index{views\_\-hooks@{views\_\-hooks}!hook\_\-views\_\-query\_\-alter@{hook\_\-views\_\-query\_\-alter}}
+\index{hook\_\-views\_\-query\_\-alter@{hook\_\-views\_\-query\_\-alter}!views_hooks@{views\_\-hooks}}
+\subsubsection[{hook\_\-views\_\-query\_\-alter}]{\setlength{\rightskip}{0pt plus 5cm}hook\_\-views\_\-query\_\-alter (\&\$ {\em view}, \/  \&\$ {\em query})}}
+\label{group__views__hooks_gf4d538493930fe0fa0ce6fb3bf42c156}
+
+
+Stub hook documentation
+
+This hook should be placed in MODULENAME.views.inc and it will be auto-loaded. This must either be in the same directory as the .module file or in a subdirectory named 'includes'. \hypertarget{group__views__hooks_g2a2f60cadfec300b51a4960080ef8ac5}{
+\index{views\_\-hooks@{views\_\-hooks}!hook\_\-views\_\-query\_\-substitutions@{hook\_\-views\_\-query\_\-substitutions}}
+\index{hook\_\-views\_\-query\_\-substitutions@{hook\_\-views\_\-query\_\-substitutions}!views_hooks@{views\_\-hooks}}
+\subsubsection[{hook\_\-views\_\-query\_\-substitutions}]{\setlength{\rightskip}{0pt plus 5cm}hook\_\-views\_\-query\_\-substitutions ()}}
+\label{group__views__hooks_g2a2f60cadfec300b51a4960080ef8ac5}
+
+
+Stub hook documentation 

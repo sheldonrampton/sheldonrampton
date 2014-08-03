@@ -1,0 +1,58 @@
+\hypertarget{filefield_8devel_8inc}{
+\section{sites/all/modules/contrib/filefield/filefield.devel.inc File Reference}
+\label{filefield_8devel_8inc}\index{sites/all/modules/contrib/filefield/filefield.devel.inc@{sites/all/modules/contrib/filefield/filefield.devel.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{filefield_8devel_8inc_9ba053d2dfbae4508a467564b75fdbec}{\_\-filefield\_\-content\_\-generate} (\$node, \$field)
+\item 
+\hyperlink{filefield_8devel_8inc_d00f635cf5efbb788362e6da3af48427}{\_\-filefield\_\-generate\_\-file} (\$field)
+\item 
+\hyperlink{filefield_8devel_8inc_705cf7c67b9e42aae82a3b208449ac6a}{\_\-filefield\_\-generate\_\-textfile} (\$filesize=1024)
+\item 
+\hyperlink{filefield_8devel_8inc_d445fcfee3758c9ddb23429c42c29597}{\_\-filefield\_\-generate\_\-image} (\$extension= 'png', \$min\_\-resolution, \$max\_\-resolution)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Utility functions for generating FileField content. Note that image generation support requires the GD toolkit. 
+
+\subsection{Function Documentation}
+\hypertarget{filefield_8devel_8inc_9ba053d2dfbae4508a467564b75fdbec}{
+\index{filefield.devel.inc@{filefield.devel.inc}!\_\-filefield\_\-content\_\-generate@{\_\-filefield\_\-content\_\-generate}}
+\index{\_\-filefield\_\-content\_\-generate@{\_\-filefield\_\-content\_\-generate}!filefield.devel.inc@{filefield.devel.inc}}
+\subsubsection[{\_\-filefield\_\-content\_\-generate}]{\setlength{\rightskip}{0pt plus 5cm}\_\-filefield\_\-content\_\-generate (\$ {\em node}, \/  \$ {\em field})}}
+\label{filefield_8devel_8inc_9ba053d2dfbae4508a467564b75fdbec}
+
+
+Private function used by filefield\_\-content\_\-generate(). \hypertarget{filefield_8devel_8inc_d00f635cf5efbb788362e6da3af48427}{
+\index{filefield.devel.inc@{filefield.devel.inc}!\_\-filefield\_\-generate\_\-file@{\_\-filefield\_\-generate\_\-file}}
+\index{\_\-filefield\_\-generate\_\-file@{\_\-filefield\_\-generate\_\-file}!filefield.devel.inc@{filefield.devel.inc}}
+\subsubsection[{\_\-filefield\_\-generate\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}\_\-filefield\_\-generate\_\-file (\$ {\em field})}}
+\label{filefield_8devel_8inc_d00f635cf5efbb788362e6da3af48427}
+
+
+Generate an image based on the properties of a field.
+
+This is made to work with ImageField, and inspects the minimum and maximum image sizes and makes sure the generated image matches the requirements.
+
+\begin{Desc}
+\item[Returns:]The path to the new file, in the temporary directory. \end{Desc}
+\hypertarget{filefield_8devel_8inc_d445fcfee3758c9ddb23429c42c29597}{
+\index{filefield.devel.inc@{filefield.devel.inc}!\_\-filefield\_\-generate\_\-image@{\_\-filefield\_\-generate\_\-image}}
+\index{\_\-filefield\_\-generate\_\-image@{\_\-filefield\_\-generate\_\-image}!filefield.devel.inc@{filefield.devel.inc}}
+\subsubsection[{\_\-filefield\_\-generate\_\-image}]{\setlength{\rightskip}{0pt plus 5cm}\_\-filefield\_\-generate\_\-image (\$ {\em extension} = {\tt 'png'}, \/  \$ {\em min\_\-resolution}, \/  \$ {\em max\_\-resolution})}}
+\label{filefield_8devel_8inc_d445fcfee3758c9ddb23429c42c29597}
+
+
+Private function for creating a random image.
+
+This function only works with the GD toolkit. ImageMagick is not supported. \hypertarget{filefield_8devel_8inc_705cf7c67b9e42aae82a3b208449ac6a}{
+\index{filefield.devel.inc@{filefield.devel.inc}!\_\-filefield\_\-generate\_\-textfile@{\_\-filefield\_\-generate\_\-textfile}}
+\index{\_\-filefield\_\-generate\_\-textfile@{\_\-filefield\_\-generate\_\-textfile}!filefield.devel.inc@{filefield.devel.inc}}
+\subsubsection[{\_\-filefield\_\-generate\_\-textfile}]{\setlength{\rightskip}{0pt plus 5cm}\_\-filefield\_\-generate\_\-textfile (\$ {\em filesize} = {\tt 1024})}}
+\label{filefield_8devel_8inc_705cf7c67b9e42aae82a3b208449ac6a}
+
+
+Private function for generating a random text file. 

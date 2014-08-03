@@ -1,0 +1,172 @@
+<?php
+
+/**
+ * Implementation of hook_install().
+ */
+function facility_install() {
+  switch ($GLOBALS['db_type']) {
+    case 'mysql':
+    case 'mysqli':
+      // the {tablename} syntax is so multisite installs can add a
+      // prefix to the table name as set in the settings.php file
+      db_query("CREATE TABLE {facility} (
+        nid int(10) unsigned NOT NULL default '0',
+        courts int(10) unsigned NOT NULL default '0',
+        available int(4) unsigned NOT NULL default '0',
+        hard_court int(2) unsigned NOT NULL default '0',
+        clay int(2) unsigned NOT NULL default '0',
+        grass int(2) unsigned NOT NULL default '0',
+        ownership varchar(255) NOT NULL default '',
+        backboard int(2) unsigned NOT NULL default '0',
+        pro_shop int(2) unsigned NOT NULL default '0',
+        hours varchar(255) NOT NULL default '',
+        staff varchar(255) NOT NULL default '',
+        contact varchar(255) NOT NULL default '',
+        phone varchar(255) NOT NULL default '',
+        url varchar(255) NOT NULL default '',
+        business varchar(255) NOT NULL default '',
+        club_id int(10) unsigned NOT NULL default '0',
+        PRIMARY KEY (nid)
+      ) TYPE=MyISAM /*!40100 DEFAULT CHARACTER SET utf8 */;");
+    break;
+	}
+}
+
+function facility_uninstall() {
+  db_query('DROP TABLE {facility}');
+}
+
+
+/* Matches:
+1		Body
+30	Court
+29	Players
+
+1  	1  	Body  	   	0  	0  	1  	0  	5  	textarea  	a:0:{}  	 
+30 	1 	Court 	  	0 	0 	1 	1 	0 	nodeselect 	a:6:{i:1;a:1:{s:4:"type";a:1:{i:0;s:11:"flexinode-... 	 
+29 	1 	Players 	  	0 	0 	1 	1 	0 	userselect 	a:5:{i:1;a:1:{s:5:"where";s:0:"";}i:2;a:1:{s:5:"li... 	 
+
+*/
+
+/* Facilities:
+6 	Number of courts	textfield
+5		Available					select 	a:2:{i:1;s:10:"Seasonally";i:2;s:10:"Year round";}		
+19	hard court				checkbox
+20	clay							checkbox
+21	grass							checkbox
+4		Ownership					select
+11	backboard					checkbox
+16	pro shop					checkbox
+3		Hours							textfield
+17	Teaching staff		textfield
+14	Main contact			textfield
+9		Phone number			textfield
+10	Website						url
+8		Comments					textarea
+13	Business					textfield
+12	Club ID						textfield
+*/
+
+/*
+3 	2 	Hours 	  					textfield 	a:0:{} 	Days and times of operation, e.g., "M-F 7 a.m.-9 p...
+4 	2 	Ownership 	  			select 	a:5:{i:1;s:6:"public";i:2;s:7:"private";i:3;s:28:"... 	 
+5 	2 	Available 	  			select 	a:2:{i:1;s:10:"Seasonally";i:2;s:10:"Year round";} 	 
+6 	2 	Number of courts 	  textfield 	a:0:{} 	 
+8 	2 	Comments 	  				textarea 	a:0:{} 	 
+9 	2 	Phone number 	  		textfield 	a:0:{} 	 
+10 	2 	Website 	  				url 	a:0:{} 	If the facility has a website, enter the full URL (e....
+11 	2 	backboard 					checkbox 	a:0:{} 	 
+12 	2 	Club ID 	  				textfield 	a:0:{} 	 
+13 	2 	Business 	  				textfield 	a:0:{} 	the name of the business or organization that owns...
+14 	2 	Main contact 	  		textfield 	a:0:{} 	The main person to contact regarding this tennis f...
+16 	2 	pro shop 		 				checkbox 	a:0:{} 	 
+17 	2 	Teaching staff 	  	textfield 	a:0:{} 	For details, see our <a href="node/80">list of acc...
+19 	2 	hard court 					checkbox 	a:0:{} 	 
+20 	2 	clay 								checkbox 	a:0:{} 	 
+21 	2 	grass 							checkbox 	a:0:{} 	 
+*/
+
+function facility_update_1() {
+	$result1 = db_query("SELECT DISTINCT fd.nid FROM {flexinode_data} fd INNER JOIN {flexinode_field} ff ON fd.field_id = ff.field_id WHERE ff.ctype_id = 2");
+	while ($row1 = mysql_fetch_array($result1, MYSQL_ASSOC)) {
+		$result = db_query("SELECT * FROM {flexinode_data} WHERE nid = %d", $row1['nid']);
+		$courts = 0;
+		$available = 0;
+		$hard_court = 0;
+		$clay = 0;
+		$grass = 0;
+		$ownership = '';
+		$backboard = 0;
+		$pro_shop = 0;
+		$hours = '';
+		$staff = '';
+		$contact = '';
+		$phone = '';
+		$url = '';
+		$comments = '';
+		$comments_format = 0;
+		$business = '';
+		$club_id = 0;
+		while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+			switch ($row['field_id']) {
+				case 6: // Number of courts
+					$courts = $row['textual_data'] ? $row['textual_data'] : 0;
+					break;
+				case 5: // Available: 1 => seasonally, 2 => year round
+					$available = $row['numeric_data'];
+					break;
+				case 19: // hard court
+					$hard_court = $row['numeric_data'];
+					break;
+				case 20: // clay
+					$clay = $row['numeric_data'];
+					break;
+				case 21: // grass
+					$grass = $row['numeric_data'];
+					break;
+				case 4: // Ownership: 1 => "public", 2 => "private", 3 => "private - accepts nonmembers", 4 => "hotel/resort", 5 => "school/university"
+					$ownership = $row['numeric_data'];
+					break;
+				case 11: // backboard
+					$backboard = $row['numeric_data'];
+					break;
+				case 16: // pro shop
+					$pro_shop = $row['numeric_data'];
+					break;
+				case 3: // hours
+					$hours = $row['textual_data'];
+					break;
+				case 17: // teaching staff
+					$staff = $row['textual_data'];
+					break;
+				case 14: // main contact
+					$contact = $row['textual_data'];
+					break;
+				case 9: // phone number
+					$phone = $row['textual_data'];
+					break;
+				case 10: // website
+					$url = $row['textual_data'];
+					break;
+				case 8: // comments
+					$comments = $row['textual_data'];
+					$comments_format = $row['numeric_data'];
+					break;
+				case 13: // business
+					$business = $row['textual_data'];
+					break;
+				case 12: // club ID
+					$club_id = $row['textual_data'] ? $row['textual_data'] : 0;
+					break;
+			}
+		}
+		db_query("INSERT INTO {facility} 
+				(nid, courts, available, hard_court, clay, grass, ownership, backboard, pro_shop, hours, 
+							staff, contact, phone, url, business, club_id) 
+    		VALUES (%d, %d, %d, %d, %d, %d, %d, %d, %d, '%s', '%s', '%s', '%s', '%s', '%s', %d)", 
+				$row1['nid'], $courts, $available, $hard_court, $clay, $grass, $ownership, $backboard, $pro_shop, $hours, 
+							$staff, $contact, $phone, $url, $business, $club_id
+			);
+		db_query("UPDATE {node_revisions} SET body='%s', teaser='%s', format=%d WHERE nid = %d", $comments, $comments, $comments_format, $row1['nid']);
+	}
+}

@@ -1,0 +1,61 @@
+\hypertarget{mollom_8pages_8inc}{
+\section{sites/all/modules/contrib/mollom/mollom.pages.inc File Reference}
+\label{mollom_8pages_8inc}\index{sites/all/modules/contrib/mollom/mollom.pages.inc@{sites/all/modules/contrib/mollom/mollom.pages.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{mollom_8pages_8inc_4cce4473bb53417b30e6858a4f746d70}{mollom\_\-captcha\_\-js} (\$type, \$session\_\-id)
+\item 
+\hyperlink{mollom_8pages_8inc_0aa683f81a3e5993abd967762344272a}{mollom\_\-report\_\-form} (\&\$form\_\-state, \$entity, \$id)
+\item 
+\hyperlink{mollom_8pages_8inc_6b60683fcd61a267fa8f7861194f6484}{mollom\_\-report\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Various non-administration page callbacks for the mollom module. 
+
+\subsection{Function Documentation}
+\hypertarget{mollom_8pages_8inc_4cce4473bb53417b30e6858a4f746d70}{
+\index{mollom.pages.inc@{mollom.pages.inc}!mollom\_\-captcha\_\-js@{mollom\_\-captcha\_\-js}}
+\index{mollom\_\-captcha\_\-js@{mollom\_\-captcha\_\-js}!mollom.pages.inc@{mollom.pages.inc}}
+\subsubsection[{mollom\_\-captcha\_\-js}]{\setlength{\rightskip}{0pt plus 5cm}mollom\_\-captcha\_\-js (\$ {\em type}, \/  \$ {\em session\_\-id})}}
+\label{mollom_8pages_8inc_4cce4473bb53417b30e6858a4f746d70}
+
+
+AJAX callback to retrieve a CAPTCHA.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$type}]The new CAPTCHA type to retrieve, e.g. 'image' or 'audio'. \item[{\em \$session\_\-id}]The last known Mollom session id contained in the form.\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]A JSON array containing:\begin{itemize}
+\item content: The HTML markup for the new CAPTCHA.\item session\_\-id: The Mollom session id for the new CAPTCHA.\end{itemize}
+\end{Desc}
+\begin{Desc}
+\item[\hyperlink{todo__todo000006}{Todo}]Add error handling. \end{Desc}
+\hypertarget{mollom_8pages_8inc_0aa683f81a3e5993abd967762344272a}{
+\index{mollom.pages.inc@{mollom.pages.inc}!mollom\_\-report\_\-form@{mollom\_\-report\_\-form}}
+\index{mollom\_\-report\_\-form@{mollom\_\-report\_\-form}!mollom.pages.inc@{mollom.pages.inc}}
+\subsubsection[{mollom\_\-report\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}mollom\_\-report\_\-form (\&\$ {\em form\_\-state}, \/  \$ {\em entity}, \/  \$ {\em id})}}
+\label{mollom_8pages_8inc_0aa683f81a3e5993abd967762344272a}
+
+
+Form builder for report to Mollom form.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$entity}]The entity type of the data to report, e.g. 'node' or 'comment'. \item[{\em \$id}]The entity id the data belongs to. If 'session' is passed as \$entity, then \$id is assumed to be a Mollom session\_\-id, as returned by Mollom servers, which should only be used to report session data that was not stored for an entity in the database (such as contact form submissions). \end{description}
+\end{Desc}
+\hypertarget{mollom_8pages_8inc_6b60683fcd61a267fa8f7861194f6484}{
+\index{mollom.pages.inc@{mollom.pages.inc}!mollom\_\-report\_\-form\_\-submit@{mollom\_\-report\_\-form\_\-submit}}
+\index{mollom\_\-report\_\-form\_\-submit@{mollom\_\-report\_\-form\_\-submit}!mollom.pages.inc@{mollom.pages.inc}}
+\subsubsection[{mollom\_\-report\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}mollom\_\-report\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{mollom_8pages_8inc_6b60683fcd61a267fa8f7861194f6484}
+
+
+Form submit handler for \hyperlink{mollom_8pages_8inc_0aa683f81a3e5993abd967762344272a}{mollom\_\-report\_\-form()}. 

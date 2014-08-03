@@ -1,0 +1,79 @@
+\hypertarget{flag_8inc}{
+\section{sites/all/modules/contrib/flag/flag.inc File Reference}
+\label{flag_8inc}\index{sites/all/modules/contrib/flag/flag.inc@{sites/all/modules/contrib/flag/flag.inc}}
+}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+class \hyperlink{classflag__flag}{flag\_\-flag}
+\item 
+class \hyperlink{classflag__node}{flag\_\-node}
+\item 
+class \hyperlink{classflag__comment}{flag\_\-comment}
+\item 
+class \hyperlink{classflag__user}{flag\_\-user}
+\item 
+class \hyperlink{classflag__broken}{flag\_\-broken}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{flag_8inc_7dca6c37b1fef3d06a063a2e3b0105d9}{flag\_\-flag\_\-definitions} ()
+\item 
+\hyperlink{flag_8inc_de183158b0c6693a4ddd93443524813a}{flag\_\-fetch\_\-definition} (\$content\_\-type=NULL)
+\item 
+\hyperlink{flag_8inc_9c51bca58c6862b4c48420cadc932265}{flag\_\-get\_\-types} ()
+\item 
+\hyperlink{flag_8inc_0e5203bf1b4aeac5a5a59ee9916f90f0}{flag\_\-create\_\-handler} (\$content\_\-type)
+\item 
+\hypertarget{flag_8inc_6a54702139f5c214801ea54849d07513}{
+\textbf{\_\-flag\_\-is\_\-drupal\_\-5} ()}
+\label{flag_8inc_6a54702139f5c214801ea54849d07513}
+
+\item 
+\hypertarget{flag_8inc_b385626fff1779a71bbd8b702c9a1cb3}{
+\textbf{\_\-flag\_\-url} (\$path, \$fragment=NULL, \$absolute=TRUE)}
+\label{flag_8inc_b385626fff1779a71bbd8b702c9a1cb3}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Implements various flags. Uses object oriented style inspired by that of Views 2. 
+
+\subsection{Function Documentation}
+\hypertarget{flag_8inc_0e5203bf1b4aeac5a5a59ee9916f90f0}{
+\index{flag.inc@{flag.inc}!flag\_\-create\_\-handler@{flag\_\-create\_\-handler}}
+\index{flag\_\-create\_\-handler@{flag\_\-create\_\-handler}!flag.inc@{flag.inc}}
+\subsubsection[{flag\_\-create\_\-handler}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-create\_\-handler (\$ {\em content\_\-type})}}
+\label{flag_8inc_0e5203bf1b4aeac5a5a59ee9916f90f0}
+
+
+Instantiates a new flag handler. A flag handler is more commonly know as \char`\"{}a flag\char`\"{}. A factory method usually populates this empty flag with settings loaded from the database. \hypertarget{flag_8inc_de183158b0c6693a4ddd93443524813a}{
+\index{flag.inc@{flag.inc}!flag\_\-fetch\_\-definition@{flag\_\-fetch\_\-definition}}
+\index{flag\_\-fetch\_\-definition@{flag\_\-fetch\_\-definition}!flag.inc@{flag.inc}}
+\subsubsection[{flag\_\-fetch\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-fetch\_\-definition (\$ {\em content\_\-type} = {\tt NULL})}}
+\label{flag_8inc_de183158b0c6693a4ddd93443524813a}
+
+
+Returns a flag definition. \hypertarget{flag_8inc_7dca6c37b1fef3d06a063a2e3b0105d9}{
+\index{flag.inc@{flag.inc}!flag\_\-flag\_\-definitions@{flag\_\-flag\_\-definitions}}
+\index{flag\_\-flag\_\-definitions@{flag\_\-flag\_\-definitions}!flag.inc@{flag.inc}}
+\subsubsection[{flag\_\-flag\_\-definitions}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-flag\_\-definitions ()}}
+\label{flag_8inc_7dca6c37b1fef3d06a063a2e3b0105d9}
+
+
+Implementation of hook\_\-flag\_\-definitions().
+
+Defines the flags this module implements.
+
+\begin{Desc}
+\item[Returns:]An \char`\"{}array of arrays\char`\"{}, keyed by content-types. The 'handler' slot should point to the PHP class implementing this flag. \end{Desc}
+\hypertarget{flag_8inc_9c51bca58c6862b4c48420cadc932265}{
+\index{flag.inc@{flag.inc}!flag\_\-get\_\-types@{flag\_\-get\_\-types}}
+\index{flag\_\-get\_\-types@{flag\_\-get\_\-types}!flag.inc@{flag.inc}}
+\subsubsection[{flag\_\-get\_\-types}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-get\_\-types ()}}
+\label{flag_8inc_9c51bca58c6862b4c48420cadc932265}
+
+
+Returns all flag types defined on the system. 

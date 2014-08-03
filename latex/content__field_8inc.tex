@@ -1,0 +1,75 @@
+\hypertarget{content__field_8inc}{
+\section{sites/all/modules/contrib/cck/includes/panels/content\_\-types/content\_\-field.inc File Reference}
+\label{content__field_8inc}\index{sites/all/modules/contrib/cck/includes/panels/content\_\-types/content\_\-field.inc@{sites/all/modules/contrib/cck/includes/panels/content\_\-types/content\_\-field.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{content__field_8inc_eccf10c30b3cac5fdc4e7cf6edd832fd}{content\_\-content\_\-field\_\-ctools\_\-content\_\-types} ()
+\item 
+\hyperlink{content__field_8inc_ce193b46260a22dbea7f033805ba6e7d}{content\_\-content\_\-field\_\-content\_\-type\_\-content\_\-types} ()
+\item 
+\hyperlink{content__field_8inc_088097e7bf301073fd54ed08020812a8}{content\_\-content\_\-field\_\-content\_\-type\_\-content\_\-type} (\$subtype)
+\item 
+\hyperlink{content__field_8inc_979d19ca8a7bbc19224856d4f97a733b}{content\_\-content\_\-field\_\-content\_\-type\_\-render} (\$subtype, \$conf, \$panel\_\-args, \$context)
+\item 
+\hyperlink{content__field_8inc_977a3ade87db904419cc1c2230a57e25}{content\_\-content\_\-field\_\-content\_\-type\_\-edit\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hypertarget{content__field_8inc_afbb2aeaa50f2394c5c5611a165f51d1}{
+\textbf{content\_\-content\_\-field\_\-content\_\-type\_\-edit\_\-form\_\-submit} (\&\$form, \&\$form\_\-state)}
+\label{content__field_8inc_afbb2aeaa50f2394c5c5611a165f51d1}
+
+\item 
+\hyperlink{content__field_8inc_cbe550b74a9f2f7158e87ec726115f0d}{content\_\-content\_\-field\_\-content\_\-type\_\-admin\_\-title} (\$subtype, \$conf, \$context)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+This file provides a CTools content type for fields. 
+
+\subsection{Function Documentation}
+\hypertarget{content__field_8inc_cbe550b74a9f2f7158e87ec726115f0d}{
+\index{content\_\-field.inc@{content\_\-field.inc}!content\_\-content\_\-field\_\-content\_\-type\_\-admin\_\-title@{content\_\-content\_\-field\_\-content\_\-type\_\-admin\_\-title}}
+\index{content\_\-content\_\-field\_\-content\_\-type\_\-admin\_\-title@{content\_\-content\_\-field\_\-content\_\-type\_\-admin\_\-title}!content_field.inc@{content\_\-field.inc}}
+\subsubsection[{content\_\-content\_\-field\_\-content\_\-type\_\-admin\_\-title}]{\setlength{\rightskip}{0pt plus 5cm}content\_\-content\_\-field\_\-content\_\-type\_\-admin\_\-title (\$ {\em subtype}, \/  \$ {\em conf}, \/  \$ {\em context})}}
+\label{content__field_8inc_cbe550b74a9f2f7158e87ec726115f0d}
+
+
+Admin title for field content type. \hypertarget{content__field_8inc_088097e7bf301073fd54ed08020812a8}{
+\index{content\_\-field.inc@{content\_\-field.inc}!content\_\-content\_\-field\_\-content\_\-type\_\-content\_\-type@{content\_\-content\_\-field\_\-content\_\-type\_\-content\_\-type}}
+\index{content\_\-content\_\-field\_\-content\_\-type\_\-content\_\-type@{content\_\-content\_\-field\_\-content\_\-type\_\-content\_\-type}!content_field.inc@{content\_\-field.inc}}
+\subsubsection[{content\_\-content\_\-field\_\-content\_\-type\_\-content\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}content\_\-content\_\-field\_\-content\_\-type\_\-content\_\-type (\$ {\em subtype})}}
+\label{content__field_8inc_088097e7bf301073fd54ed08020812a8}
+
+
+Just one subtype.
+
+Ordinarily this function is meant to get just one subtype. However, we are using it to deal with the fact that we have changed the subtype names. This lets us translate the name properly. \hypertarget{content__field_8inc_ce193b46260a22dbea7f033805ba6e7d}{
+\index{content\_\-field.inc@{content\_\-field.inc}!content\_\-content\_\-field\_\-content\_\-type\_\-content\_\-types@{content\_\-content\_\-field\_\-content\_\-type\_\-content\_\-types}}
+\index{content\_\-content\_\-field\_\-content\_\-type\_\-content\_\-types@{content\_\-content\_\-field\_\-content\_\-type\_\-content\_\-types}!content_field.inc@{content\_\-field.inc}}
+\subsubsection[{content\_\-content\_\-field\_\-content\_\-type\_\-content\_\-types}]{\setlength{\rightskip}{0pt plus 5cm}content\_\-content\_\-field\_\-content\_\-type\_\-content\_\-types ()}}
+\label{content__field_8inc_ce193b46260a22dbea7f033805ba6e7d}
+
+
+Return all field content types available. \hypertarget{content__field_8inc_977a3ade87db904419cc1c2230a57e25}{
+\index{content\_\-field.inc@{content\_\-field.inc}!content\_\-content\_\-field\_\-content\_\-type\_\-edit\_\-form@{content\_\-content\_\-field\_\-content\_\-type\_\-edit\_\-form}}
+\index{content\_\-content\_\-field\_\-content\_\-type\_\-edit\_\-form@{content\_\-content\_\-field\_\-content\_\-type\_\-edit\_\-form}!content_field.inc@{content\_\-field.inc}}
+\subsubsection[{content\_\-content\_\-field\_\-content\_\-type\_\-edit\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}content\_\-content\_\-field\_\-content\_\-type\_\-edit\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{content__field_8inc_977a3ade87db904419cc1c2230a57e25}
+
+
+Returns a settings form for the custom type. \hypertarget{content__field_8inc_979d19ca8a7bbc19224856d4f97a733b}{
+\index{content\_\-field.inc@{content\_\-field.inc}!content\_\-content\_\-field\_\-content\_\-type\_\-render@{content\_\-content\_\-field\_\-content\_\-type\_\-render}}
+\index{content\_\-content\_\-field\_\-content\_\-type\_\-render@{content\_\-content\_\-field\_\-content\_\-type\_\-render}!content_field.inc@{content\_\-field.inc}}
+\subsubsection[{content\_\-content\_\-field\_\-content\_\-type\_\-render}]{\setlength{\rightskip}{0pt plus 5cm}content\_\-content\_\-field\_\-content\_\-type\_\-render (\$ {\em subtype}, \/  \$ {\em conf}, \/  \$ {\em panel\_\-args}, \/  \$ {\em context})}}
+\label{content__field_8inc_979d19ca8a7bbc19224856d4f97a733b}
+
+
+Output function for the 'field' content type. \hypertarget{content__field_8inc_eccf10c30b3cac5fdc4e7cf6edd832fd}{
+\index{content\_\-field.inc@{content\_\-field.inc}!content\_\-content\_\-field\_\-ctools\_\-content\_\-types@{content\_\-content\_\-field\_\-ctools\_\-content\_\-types}}
+\index{content\_\-content\_\-field\_\-ctools\_\-content\_\-types@{content\_\-content\_\-field\_\-ctools\_\-content\_\-types}!content_field.inc@{content\_\-field.inc}}
+\subsubsection[{content\_\-content\_\-field\_\-ctools\_\-content\_\-types}]{\setlength{\rightskip}{0pt plus 5cm}content\_\-content\_\-field\_\-ctools\_\-content\_\-types ()}}
+\label{content__field_8inc_eccf10c30b3cac5fdc4e7cf6edd832fd}
+
+
+Callback function to supply a list of content types. 

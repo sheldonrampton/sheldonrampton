@@ -1,0 +1,104 @@
+\hypertarget{modules_2system_2page_8tpl_8php}{
+\section{modules/system/page.tpl.php File Reference}
+\label{modules_2system_2page_8tpl_8php}\index{modules/system/page.tpl.php@{modules/system/page.tpl.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hypertarget{modules_2system_2page_8tpl_8php_a39baa067b61ab1dab26b85467109804}{
+print \$language language print \$language language print \$language dir print \textbf{\$head}}
+\label{modules_2system_2page_8tpl_8php_a39baa067b61ab1dab26b85467109804}
+
+\item 
+\hypertarget{modules_2system_2page_8tpl_8php_107cec09f27fd63715a39ba222571e1e}{
+print \textbf{\$head\_\-title}}
+\label{modules_2system_2page_8tpl_8php_107cec09f27fd63715a39ba222571e1e}
+
+\item 
+\hypertarget{modules_2system_2page_8tpl_8php_8f1db0526d0e6b99ae580d83209e717f}{
+print \textbf{\$styles}}
+\label{modules_2system_2page_8tpl_8php_8f1db0526d0e6b99ae580d83209e717f}
+
+\item 
+\hypertarget{modules_2system_2page_8tpl_8php_2163fdf9fe7af884a6291084c2811896}{
+print \textbf{\$scripts}}
+\label{modules_2system_2page_8tpl_8php_2163fdf9fe7af884a6291084c2811896}
+
+\item 
+\hypertarget{modules_2system_2page_8tpl_8php_2f8fed7975bdbd67afbc008ef7b0c2ca}{
+print \textbf{\$body\_\-classes}}
+\label{modules_2system_2page_8tpl_8php_2f8fed7975bdbd67afbc008ef7b0c2ca}
+
+\item 
+\hypertarget{modules_2system_2page_8tpl_8php_0fa695c12e5240657bb07a7742cf8391}{
+print \textbf{\$logo}}
+\label{modules_2system_2page_8tpl_8php_0fa695c12e5240657bb07a7742cf8391}
+
+\item 
+\hypertarget{modules_2system_2page_8tpl_8php_9ecbffef21ad2507edfcf60b871713c6}{
+\textbf{endif}}
+\label{modules_2system_2page_8tpl_8php_9ecbffef21ad2507edfcf60b871713c6}
+
+\item 
+\hypertarget{modules_2system_2page_8tpl_8php_d500e3900e86a2e78f15afbe44b1f849}{
+print \textbf{\$site\_\-name}}
+\label{modules_2system_2page_8tpl_8php_d500e3900e86a2e78f15afbe44b1f849}
+
+\item 
+\hypertarget{modules_2system_2page_8tpl_8php_b7b7210f43aa78e34f0b202de894a74c}{
+print \textbf{\$content}}
+\label{modules_2system_2page_8tpl_8php_b7b7210f43aa78e34f0b202de894a74c}
+
+\item 
+\hypertarget{modules_2system_2page_8tpl_8php_b467b853777a9bfda790f67537c97eca}{
+print \textbf{\$feed\_\-icons}}
+\label{modules_2system_2page_8tpl_8php_b467b853777a9bfda790f67537c97eca}
+
+\item 
+\hypertarget{modules_2system_2page_8tpl_8php_21c33de89f84315eed89e5ee1418adb1}{
+print \textbf{\$footer\_\-message}}
+\label{modules_2system_2page_8tpl_8php_21c33de89f84315eed89e5ee1418adb1}
+
+\item 
+\hypertarget{modules_2system_2page_8tpl_8php_0a9345d407f230cc6db96e95c6093854}{
+print \textbf{\$closure}}
+\label{modules_2system_2page_8tpl_8php_0a9345d407f230cc6db96e95c6093854}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Displays a single Drupal page.
+
+Available variables:
+
+General utility variables:\begin{itemize}
+\item \$base\_\-path: The base URL path of the Drupal installation. At the very least, this will always default to /.\item \$css: An array of CSS files for the current page.\item \$directory: The directory the theme is located in, e.g. themes/garland or themes/garland/minelli.\item \$is\_\-front: TRUE if the current page is the front page.\item \$logged\_\-in: TRUE if the user is registered and signed in.\item \$is\_\-admin: TRUE if the user has permission to access administration pages.\end{itemize}
+
+
+Page metadata:\begin{itemize}
+\item \$language: (object) The language the site is being displayed in. \$language-$>$language contains its textual representation. \$language-$>$dir contains the language direction. It will either be 'ltr' or 'rtl'.\item \$head\_\-title: A modified version of the page title, for use in the TITLE element.\item \$head: Markup for the HEAD element (including meta tags, keyword tags, and so on).\item \$styles: Style tags necessary to import all CSS files for the page.\item \$scripts: Script tags necessary to load the JavaScript files and settings for the page.\item \$body\_\-classes: A set of CSS classes for the BODY tag. This contains flags indicating the current layout (multiple columns, single column), the current path, whether the user is logged in, and so on.\end{itemize}
+
+
+Site identity:\begin{itemize}
+\item \begin{Desc}
+\item[front\_\-page]The URL of the front page. Use this instead of \end{Desc}
+base\_\-path, when linking to the front page. This includes the language domain or prefix.\item \$logo: The path to the logo image, as defined in theme configuration.\item \$site\_\-name: The name of the site, empty when display has been disabled in theme settings.\item \$site\_\-slogan: The slogan of the site, empty when display has been disabled in theme settings.\item \$mission: The text of the site mission, empty when display has been disabled in theme settings.\end{itemize}
+
+
+Navigation:\begin{itemize}
+\item \$search\_\-box: HTML to display the search box, empty if search has been disabled.\item \$primary\_\-links (array): An array containing primary navigation links for the site, if they have been configured.\item \$secondary\_\-links (array): An array containing secondary navigation links for the site, if they have been configured.\end{itemize}
+
+
+Page content (in order of occurrence in the default page.tpl.php):\begin{itemize}
+\item \$left: The HTML for the left sidebar.\item \$breadcrumb: The breadcrumb trail for the current page.\item \$title: The page title, for use in the actual HTML content.\item \$help: Dynamic help text, mostly for admin pages.\item \$messages: HTML for status and error messages. Should be displayed prominently.\item \$tabs: Tabs linking to any sub-pages beneath the current page (e.g., the \hyperlink{classview}{view} and edit tabs when displaying a node).\item \$content: The main content of the current Drupal page.\item \$right: The HTML for the right sidebar.\item \$node: The node object, if there is an automatically-loaded node associated with the page, and the node ID is the second argument in the page's path (e.g. node/12345 and node/12345/revisions, but not comment/reply/12345).\end{itemize}
+
+
+Footer/closing data:\begin{itemize}
+\item \$feed\_\-icons: A string of all feed icons for the current page.\item \$footer\_\-message: The footer message as defined in the admin settings.\item \$footer : The footer region.\item \$closure: Final closing markup from any modules that have altered the page. This variable should always be output last, after all other dynamic content.\end{itemize}
+
+
+\begin{Desc}
+\item[See also:]\hyperlink{includes_2theme_8inc_3eeb7bcdba7ef4859f99586da264d347}{template\_\-preprocess()} 
+
+\hyperlink{includes_2theme_8inc_128dae24f990d8ba4710ac78b0584c11}{template\_\-preprocess\_\-page()} \end{Desc}

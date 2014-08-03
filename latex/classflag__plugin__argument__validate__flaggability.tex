@@ -1,0 +1,113 @@
+\hypertarget{classflag__plugin__argument__validate__flaggability}{
+\section{flag\_\-plugin\_\-argument\_\-validate\_\-flaggability Class Reference}
+\label{classflag__plugin__argument__validate__flaggability}\index{flag\_\-plugin\_\-argument\_\-validate\_\-flaggability@{flag\_\-plugin\_\-argument\_\-validate\_\-flaggability}}
+}
+Inheritance diagram for flag\_\-plugin\_\-argument\_\-validate\_\-flaggability::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4cm]{classflag__plugin__argument__validate__flaggability}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classflag__plugin__argument__validate__flaggability_6eb16f6ded91625eb61ea1af4ac22e9d}{construct} ()
+\item 
+\hypertarget{classflag__plugin__argument__validate__flaggability_0d57b4aef86d9c014c58c491f3869612}{
+\textbf{validate\_\-form} (\&\$form, \&\$form\_\-state)}
+\label{classflag__plugin__argument__validate__flaggability_0d57b4aef86d9c014c58c491f3869612}
+
+\item 
+\hyperlink{classflag__plugin__argument__validate__flaggability_4c3bce43163725971479413be31a1c0c}{flags\_\-options} ()
+\item 
+\hyperlink{classflag__plugin__argument__validate__flaggability_add59b32c44ce29fd772d80641087e21}{\_\-get\_\-option} (\$option, \$default)
+\item 
+\hypertarget{classflag__plugin__argument__validate__flaggability_01bdfefc91191953b5a6bbadd488aec5}{
+\textbf{\_\-option\_\-name} (\$option)}
+\label{classflag__plugin__argument__validate__flaggability_01bdfefc91191953b5a6bbadd488aec5}
+
+\item 
+\hyperlink{classflag__plugin__argument__validate__flaggability_2ec92ee4546bfb70b7d81b183a6236c5}{tests\_\-info} (\$which=NULL)
+\item 
+\hypertarget{classflag__plugin__argument__validate__flaggability_a7076d2e4ba2d8e3f845fa2a9d54474f}{
+\textbf{tests\_\-options} ()}
+\label{classflag__plugin__argument__validate__flaggability_a7076d2e4ba2d8e3f845fa2a9d54474f}
+
+\item 
+\hypertarget{classflag__plugin__argument__validate__flaggability_9b3e97ae8e2e4162e809cac22b08d8f3}{
+\textbf{get\_\-flag} ()}
+\label{classflag__plugin__argument__validate__flaggability_9b3e97ae8e2e4162e809cac22b08d8f3}
+
+\item 
+\hyperlink{classflag__plugin__argument__validate__flaggability_7a0ea8ffaee8f3d6d32956ce68dbd458}{validate\_\-argument} (\$argument)
+\item 
+\hypertarget{classflag__plugin__argument__validate__flaggability_bb52aceb7819d06e78a3ae8e5a199176}{
+\textbf{test\_\-flaggable} (\$ids, \$flag)}
+\label{classflag__plugin__argument__validate__flaggability_bb52aceb7819d06e78a3ae8e5a199176}
+
+\item 
+\hypertarget{classflag__plugin__argument__validate__flaggability_739ca2c56fb18425e1b871869fa284e6}{
+\textbf{test\_\-flagged} (\$ids, \$flag)}
+\label{classflag__plugin__argument__validate__flaggability_739ca2c56fb18425e1b871869fa284e6}
+
+\item 
+\hypertarget{classflag__plugin__argument__validate__flaggability_ab3ca9b95828c2715a2c3810745fc6ad}{
+\textbf{test\_\-flagged\_\-by\_\-current\_\-user} (\$ids, \$flag)}
+\label{classflag__plugin__argument__validate__flaggability_ab3ca9b95828c2715a2c3810745fc6ad}
+
+\item 
+\hypertarget{classflag__plugin__argument__validate__flaggability_7f51bd1b0ff2b58be0648ad15dc2bd95}{
+\textbf{\_\-test\_\-by\_\-sql} (\$sql, \$args)}
+\label{classflag__plugin__argument__validate__flaggability_7f51bd1b0ff2b58be0648ad15dc2bd95}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Validates whether an argument is a flaggable/flagged object. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classflag__plugin__argument__validate__flaggability_add59b32c44ce29fd772d80641087e21}{
+\index{flag\_\-plugin\_\-argument\_\-validate\_\-flaggability@{flag\_\-plugin\_\-argument\_\-validate\_\-flaggability}!\_\-get\_\-option@{\_\-get\_\-option}}
+\index{\_\-get\_\-option@{\_\-get\_\-option}!flag_plugin_argument_validate_flaggability@{flag\_\-plugin\_\-argument\_\-validate\_\-flaggability}}
+\subsubsection[{\_\-get\_\-option}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-plugin\_\-argument\_\-validate\_\-flaggability::\_\-get\_\-option (\$ {\em option}, \/  \$ {\em default})}}
+\label{classflag__plugin__argument__validate__flaggability_add59b32c44ce29fd772d80641087e21}
+
+
+Validator arguments are stored in the argument object, not here, so we define a convenience method for fetching them. \hypertarget{classflag__plugin__argument__validate__flaggability_6eb16f6ded91625eb61ea1af4ac22e9d}{
+\index{flag\_\-plugin\_\-argument\_\-validate\_\-flaggability@{flag\_\-plugin\_\-argument\_\-validate\_\-flaggability}!construct@{construct}}
+\index{construct@{construct}!flag_plugin_argument_validate_flaggability@{flag\_\-plugin\_\-argument\_\-validate\_\-flaggability}}
+\subsubsection[{construct}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-plugin\_\-argument\_\-validate\_\-flaggability::construct ()}}
+\label{classflag__plugin__argument__validate__flaggability_6eb16f6ded91625eb61ea1af4ac22e9d}
+
+
+Views handlers use a special construct function so that we can more easily construct them with variable arguments. 
+
+Reimplemented from \hyperlink{classviews__object_6583d6be7e59dd1e39056e320ea2c2d4}{views\_\-object}.\hypertarget{classflag__plugin__argument__validate__flaggability_4c3bce43163725971479413be31a1c0c}{
+\index{flag\_\-plugin\_\-argument\_\-validate\_\-flaggability@{flag\_\-plugin\_\-argument\_\-validate\_\-flaggability}!flags\_\-options@{flags\_\-options}}
+\index{flags\_\-options@{flags\_\-options}!flag_plugin_argument_validate_flaggability@{flag\_\-plugin\_\-argument\_\-validate\_\-flaggability}}
+\subsubsection[{flags\_\-options}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-plugin\_\-argument\_\-validate\_\-flaggability::flags\_\-options ()}}
+\label{classflag__plugin__argument__validate__flaggability_4c3bce43163725971479413be31a1c0c}
+
+
+Returns form \hyperlink{classviews__object_894c01006e88dee15ef867272d22b3ee}{options} for the flags. Returns empty array if no flags were found. \hypertarget{classflag__plugin__argument__validate__flaggability_2ec92ee4546bfb70b7d81b183a6236c5}{
+\index{flag\_\-plugin\_\-argument\_\-validate\_\-flaggability@{flag\_\-plugin\_\-argument\_\-validate\_\-flaggability}!tests\_\-info@{tests\_\-info}}
+\index{tests\_\-info@{tests\_\-info}!flag_plugin_argument_validate_flaggability@{flag\_\-plugin\_\-argument\_\-validate\_\-flaggability}}
+\subsubsection[{tests\_\-info}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-plugin\_\-argument\_\-validate\_\-flaggability::tests\_\-info (\$ {\em which} = {\tt NULL})}}
+\label{classflag__plugin__argument__validate__flaggability_2ec92ee4546bfb70b7d81b183a6236c5}
+
+
+Declares all tests. This scheme makes it easy for derived classes to add and remove tests. \hypertarget{classflag__plugin__argument__validate__flaggability_7a0ea8ffaee8f3d6d32956ce68dbd458}{
+\index{flag\_\-plugin\_\-argument\_\-validate\_\-flaggability@{flag\_\-plugin\_\-argument\_\-validate\_\-flaggability}!validate\_\-argument@{validate\_\-argument}}
+\index{validate\_\-argument@{validate\_\-argument}!flag_plugin_argument_validate_flaggability@{flag\_\-plugin\_\-argument\_\-validate\_\-flaggability}}
+\subsubsection[{validate\_\-argument}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-plugin\_\-argument\_\-validate\_\-flaggability::validate\_\-argument (\$ {\em argument})}}
+\label{classflag__plugin__argument__validate__flaggability_7a0ea8ffaee8f3d6d32956ce68dbd458}
+
+
+Tests whether the argument is flaggable, or flagged, or flagged by current user. These are three possible tests, and which of the three to actually carry out is determined by 'flag\_\-test'. 
+
+Reimplemented from \hyperlink{classviews__plugin__argument__validate}{views\_\-plugin\_\-argument\_\-validate}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/flag/includes/\hyperlink{flag__plugin__argument__validate__flaggability_8inc}{flag\_\-plugin\_\-argument\_\-validate\_\-flaggability.inc}\end{CompactItemize}

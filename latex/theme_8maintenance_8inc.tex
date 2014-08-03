@@ -1,0 +1,90 @@
+\hypertarget{theme_8maintenance_8inc}{
+\section{includes/theme.maintenance.inc File Reference}
+\label{theme_8maintenance_8inc}\index{includes/theme.maintenance.inc@{includes/theme.maintenance.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{theme_8maintenance_8inc_8f521a6aba04fc11935a874df3ad9f05}{\_\-drupal\_\-maintenance\_\-theme} ()
+\item 
+\hyperlink{theme_8maintenance_8inc_7bf7a7faa37b3475038eca9a2ecf97e5}{\_\-theme\_\-load\_\-offline\_\-registry} (\$theme, \$base\_\-theme=NULL, \$theme\_\-engine=NULL)
+\item 
+\hyperlink{group__themeable_g83bdead8c42251faaf93ddc2480b9d7f}{theme\_\-task\_\-list} (\$items, \$active=NULL)
+\item 
+\hyperlink{theme_8maintenance_8inc_5f691f589f18990cce7f967be939172d}{theme\_\-install\_\-page} (\$content)
+\item 
+\hyperlink{theme_8maintenance_8inc_c6c65623ac5a4e2ba448b2df7a1ccd66}{theme\_\-update\_\-page} (\$content, \$show\_\-messages=TRUE)
+\item 
+\hyperlink{theme_8maintenance_8inc_14a92df5f5e74cebcf7fb680885e58a5}{template\_\-preprocess\_\-maintenance\_\-page} (\&\$variables)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Theming for maintenance pages. 
+
+\subsection{Function Documentation}
+\hypertarget{theme_8maintenance_8inc_8f521a6aba04fc11935a874df3ad9f05}{
+\index{theme.maintenance.inc@{theme.maintenance.inc}!\_\-drupal\_\-maintenance\_\-theme@{\_\-drupal\_\-maintenance\_\-theme}}
+\index{\_\-drupal\_\-maintenance\_\-theme@{\_\-drupal\_\-maintenance\_\-theme}!theme.maintenance.inc@{theme.maintenance.inc}}
+\subsubsection[{\_\-drupal\_\-maintenance\_\-theme}]{\setlength{\rightskip}{0pt plus 5cm}\_\-drupal\_\-maintenance\_\-theme ()}}
+\label{theme_8maintenance_8inc_8f521a6aba04fc11935a874df3ad9f05}
+
+
+Sets up the theming system for site installs, updates and when the site is in off-line mode. It also applies when the database is unavailable.
+
+Minnelli is always used for the initial install and update operations. In other cases, \char`\"{}settings.php\char`\"{} must have a \char`\"{}maintenance\_\-theme\char`\"{} key set for the \$conf variable in order to change the maintenance theme. \hypertarget{theme_8maintenance_8inc_7bf7a7faa37b3475038eca9a2ecf97e5}{
+\index{theme.maintenance.inc@{theme.maintenance.inc}!\_\-theme\_\-load\_\-offline\_\-registry@{\_\-theme\_\-load\_\-offline\_\-registry}}
+\index{\_\-theme\_\-load\_\-offline\_\-registry@{\_\-theme\_\-load\_\-offline\_\-registry}!theme.maintenance.inc@{theme.maintenance.inc}}
+\subsubsection[{\_\-theme\_\-load\_\-offline\_\-registry}]{\setlength{\rightskip}{0pt plus 5cm}\_\-theme\_\-load\_\-offline\_\-registry (\$ {\em theme}, \/  \$ {\em base\_\-theme} = {\tt NULL}, \/  \$ {\em theme\_\-engine} = {\tt NULL})}}
+\label{theme_8maintenance_8inc_7bf7a7faa37b3475038eca9a2ecf97e5}
+
+
+This builds the registry when the site needs to bypass any database calls. \hypertarget{theme_8maintenance_8inc_14a92df5f5e74cebcf7fb680885e58a5}{
+\index{theme.maintenance.inc@{theme.maintenance.inc}!template\_\-preprocess\_\-maintenance\_\-page@{template\_\-preprocess\_\-maintenance\_\-page}}
+\index{template\_\-preprocess\_\-maintenance\_\-page@{template\_\-preprocess\_\-maintenance\_\-page}!theme.maintenance.inc@{theme.maintenance.inc}}
+\subsubsection[{template\_\-preprocess\_\-maintenance\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}template\_\-preprocess\_\-maintenance\_\-page (\&\$ {\em variables})}}
+\label{theme_8maintenance_8inc_14a92df5f5e74cebcf7fb680885e58a5}
+
+
+The variables generated here is a mirror of \hyperlink{includes_2theme_8inc_128dae24f990d8ba4710ac78b0584c11}{template\_\-preprocess\_\-page()}. This preprocessor will run it's course when theme\_\-maintenance\_\-page() is invoked. It is also used in \hyperlink{theme_8maintenance_8inc_5f691f589f18990cce7f967be939172d}{theme\_\-install\_\-page()} and \hyperlink{theme_8maintenance_8inc_c6c65623ac5a4e2ba448b2df7a1ccd66}{theme\_\-update\_\-page()} to keep all the variables consistent.
+
+An alternate template file of \char`\"{}maintenance-page-offline.tpl.php\char`\"{} can be used when the database is offline to hide errors and completely replace the content.
+
+The \$variables array contains the following arguments:\begin{itemize}
+\item \$content\item \$show\_\-blocks\end{itemize}
+
+
+\begin{Desc}
+\item[See also:]maintenance-page.tpl.php \end{Desc}
+\hypertarget{theme_8maintenance_8inc_5f691f589f18990cce7f967be939172d}{
+\index{theme.maintenance.inc@{theme.maintenance.inc}!theme\_\-install\_\-page@{theme\_\-install\_\-page}}
+\index{theme\_\-install\_\-page@{theme\_\-install\_\-page}!theme.maintenance.inc@{theme.maintenance.inc}}
+\subsubsection[{theme\_\-install\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-install\_\-page (\$ {\em content})}}
+\label{theme_8maintenance_8inc_5f691f589f18990cce7f967be939172d}
+
+
+Generate a themed installation page.
+
+Note: this function is not themeable.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$content}]The page content to show. \end{description}
+\end{Desc}
+\hypertarget{theme_8maintenance_8inc_c6c65623ac5a4e2ba448b2df7a1ccd66}{
+\index{theme.maintenance.inc@{theme.maintenance.inc}!theme\_\-update\_\-page@{theme\_\-update\_\-page}}
+\index{theme\_\-update\_\-page@{theme\_\-update\_\-page}!theme.maintenance.inc@{theme.maintenance.inc}}
+\subsubsection[{theme\_\-update\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-update\_\-page (\$ {\em content}, \/  \$ {\em show\_\-messages} = {\tt TRUE})}}
+\label{theme_8maintenance_8inc_c6c65623ac5a4e2ba448b2df7a1ccd66}
+
+
+Generate a themed update page.
+
+Note: this function is not themeable.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$content}]The page content to show. \item[{\em \$show\_\-messages}]Whether to output status and error messages. FALSE can be useful to postpone the messages to a subsequent page. \end{description}
+\end{Desc}

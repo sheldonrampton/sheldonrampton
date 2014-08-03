@@ -1,0 +1,144 @@
+\hypertarget{classviews__tabset}{
+\section{views\_\-tabset Class Reference}
+\label{classviews__tabset}\index{views\_\-tabset@{views\_\-tabset}}
+}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__tabset_53c8d38fb9e23724d643b94839f3b685}{add} (\$name, \$title= '', \$body= '')
+\item 
+\hyperlink{classviews__tabset_ebabe797dcf1de48823d819369de57de}{add\_\-tab} (\$tab)
+\item 
+\hyperlink{classviews__tabset_6a74f667b324b252c1ce316df2974c66}{set} (\$name, \$title, \$body=NULL)
+\item 
+\hyperlink{classviews__tabset_8113b59319c48a6813e93540935fd6d6}{set\_\-body} (\$name, \$body)
+\item 
+\hyperlink{classviews__tabset_e7e6a38da5921084b76e30e96ac38d95}{add\_\-extra} (\$text)
+\item 
+\hyperlink{classviews__tabset_26ae206ad01174f0601ae90971e11071}{remove} (\$tab)
+\item 
+\hyperlink{classviews__tabset_2d39109f3630ad7d26ff2078ba465dea}{set\_\-selected} (\$name)
+\item 
+\hyperlink{classviews__tabset_9f0d471c518fe5877dd0d9ca044fa154}{render} ()
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{classviews__tabset_7d90e91432762069e958e011dd36df01}{
+\textbf{\$tabs} = array()}
+\label{classviews__tabset_7d90e91432762069e958e011dd36df01}
+
+\item 
+\hypertarget{classviews__tabset_a3500aa762b72bebc08458bc6b9364c8}{
+\textbf{\$extra} = ''}
+\label{classviews__tabset_a3500aa762b72bebc08458bc6b9364c8}
+
+\item 
+\hypertarget{classviews__tabset_950267e7b31ecacaf6f1049780c05164}{
+\textbf{\$selected} = NULL}
+\label{classviews__tabset_950267e7b31ecacaf6f1049780c05164}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Contain a set of tabs as well as the ability to render them.
+
+There are three 'areas' of a tabset.\begin{itemize}
+\item title: The clickable link to display the tab area. These are always visible.\item body: The actual HTML body of the tab. Only one body is visible at a time.\item extra: An optional decorative area around the tabs. \end{itemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__tabset_53c8d38fb9e23724d643b94839f3b685}{
+\index{views\_\-tabset@{views\_\-tabset}!add@{add}}
+\index{add@{add}!views_tabset@{views\_\-tabset}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-tabset::add (\$ {\em name}, \/  \$ {\em title} = {\tt ''}, \/  \$ {\em body} = {\tt ''})}}
+\label{classviews__tabset_53c8d38fb9e23724d643b94839f3b685}
+
+
+Add a tab to the tabset.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$name}]The name of the tab; this is the internal identifier and must be unique within the tabset. \item[{\em \$title}]If given, this will be the visible title of the tab. This can also be set via \$tabset-$>$\hyperlink{classviews__tabset_6a74f667b324b252c1ce316df2974c66}{set()}. This will be the link to click on to \hyperlink{classview}{view} the tab. \item[{\em \$body}]If given, this is the body of the tab itself. It will display when the tab title is clicked on. \end{description}
+\end{Desc}
+\hypertarget{classviews__tabset_e7e6a38da5921084b76e30e96ac38d95}{
+\index{views\_\-tabset@{views\_\-tabset}!add\_\-extra@{add\_\-extra}}
+\index{add\_\-extra@{add\_\-extra}!views_tabset@{views\_\-tabset}}
+\subsubsection[{add\_\-extra}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-tabset::add\_\-extra (\$ {\em text})}}
+\label{classviews__tabset_e7e6a38da5921084b76e30e96ac38d95}
+
+
+Add text to the 'extra' region of the tabset. \hypertarget{classviews__tabset_ebabe797dcf1de48823d819369de57de}{
+\index{views\_\-tabset@{views\_\-tabset}!add\_\-tab@{add\_\-tab}}
+\index{add\_\-tab@{add\_\-tab}!views_tabset@{views\_\-tabset}}
+\subsubsection[{add\_\-tab}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-tabset::add\_\-tab (\$ {\em tab})}}
+\label{classviews__tabset_ebabe797dcf1de48823d819369de57de}
+
+
+Add a fully realized tab object to the tabset.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$tab}]A fully populated \hyperlink{classviews__tab}{views\_\-tab} object. \end{description}
+\end{Desc}
+\hypertarget{classviews__tabset_26ae206ad01174f0601ae90971e11071}{
+\index{views\_\-tabset@{views\_\-tabset}!remove@{remove}}
+\index{remove@{remove}!views_tabset@{views\_\-tabset}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-tabset::remove (\$ {\em tab})}}
+\label{classviews__tabset_26ae206ad01174f0601ae90971e11071}
+
+
+Remove a tab.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$tab}]May be the name of the tab or a \hyperlink{classviews__tab}{views\_\-tab} object. \end{description}
+\end{Desc}
+\hypertarget{classviews__tabset_9f0d471c518fe5877dd0d9ca044fa154}{
+\index{views\_\-tabset@{views\_\-tabset}!render@{render}}
+\index{render@{render}!views_tabset@{views\_\-tabset}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-tabset::render ()}}
+\label{classviews__tabset_9f0d471c518fe5877dd0d9ca044fa154}
+
+
+Output the HTML for the tabs.
+
+\begin{Desc}
+\item[Returns:]HTML representation of the tabs. \end{Desc}
+\hypertarget{classviews__tabset_6a74f667b324b252c1ce316df2974c66}{
+\index{views\_\-tabset@{views\_\-tabset}!set@{set}}
+\index{set@{set}!views_tabset@{views\_\-tabset}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-tabset::set (\$ {\em name}, \/  \$ {\em title}, \/  \$ {\em body} = {\tt NULL})}}
+\label{classviews__tabset_6a74f667b324b252c1ce316df2974c66}
+
+
+Set the values of a tab.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$name}]The unique identifier of the tab to set. \item[{\em \$title}]The title of the tab; this will be clickable. \item[{\em \$body}]The HTML body of the tab. \end{description}
+\end{Desc}
+\hypertarget{classviews__tabset_8113b59319c48a6813e93540935fd6d6}{
+\index{views\_\-tabset@{views\_\-tabset}!set\_\-body@{set\_\-body}}
+\index{set\_\-body@{set\_\-body}!views_tabset@{views\_\-tabset}}
+\subsubsection[{set\_\-body}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-tabset::set\_\-body (\$ {\em name}, \/  \$ {\em body})}}
+\label{classviews__tabset_8113b59319c48a6813e93540935fd6d6}
+
+
+Set the body of a tab. \hypertarget{classviews__tabset_2d39109f3630ad7d26ff2078ba465dea}{
+\index{views\_\-tabset@{views\_\-tabset}!set\_\-selected@{set\_\-selected}}
+\index{set\_\-selected@{set\_\-selected}!views_tabset@{views\_\-tabset}}
+\subsubsection[{set\_\-selected}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-tabset::set\_\-selected (\$ {\em name})}}
+\label{classviews__tabset_2d39109f3630ad7d26ff2078ba465dea}
+
+
+Control which tab will be selected when it is rendered. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/includes/\hyperlink{tabs_8inc}{tabs.inc}\end{CompactItemize}

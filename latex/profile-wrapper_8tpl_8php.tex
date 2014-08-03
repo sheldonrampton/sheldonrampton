@@ -1,0 +1,25 @@
+\hypertarget{profile-wrapper_8tpl_8php}{
+\section{modules/profile/profile-wrapper.tpl.php File Reference}
+\label{profile-wrapper_8tpl_8php}\index{modules/profile/profile-wrapper.tpl.php@{modules/profile/profile-wrapper.tpl.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hypertarget{profile-wrapper_8tpl_8php_b7b7210f43aa78e34f0b202de894a74c}{
+print \textbf{\$content}}
+\label{profile-wrapper_8tpl_8php_b7b7210f43aa78e34f0b202de894a74c}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Default theme implementation for wrapping member listings and their profiles.
+
+This template is used when viewing a list of users. It can be a general list for viewing all users with the url of \char`\"{}example.com/profile\char`\"{} or when viewing a set of users who share a specific value for a profile such as \char`\"{}example.com/profile/country/belgium\char`\"{}.
+
+Available variables:\begin{itemize}
+\item \$content: User account profiles iterated through \hyperlink{profile-listing_8tpl_8php}{profile-listing.tpl.php}.\item \$current\_\-field: The named field being browsed. Provided here for context. The above example would result in \char`\"{}last\_\-name\char`\"{}. An alternate template name is also based on this, e.g., \char`\"{}profile-wrapper-last\_\-name.tpl.php\char`\"{}.\end{itemize}
+
+
+\begin{Desc}
+\item[See also:]template\_\-preprocess\_\-profile\_\-wrapper() \end{Desc}

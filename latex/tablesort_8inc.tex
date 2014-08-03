@@ -1,0 +1,118 @@
+\hypertarget{tablesort_8inc}{
+\section{includes/tablesort.inc File Reference}
+\label{tablesort_8inc}\index{includes/tablesort.inc@{includes/tablesort.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{tablesort_8inc_fee7fc97d83c8e51399e9b41ccbae927}{tablesort\_\-init} (\$header)
+\item 
+\hyperlink{group__database_gd893ca6e60341e448203269c520696ce}{tablesort\_\-sql} (\$header, \$before= '')
+\item 
+\hyperlink{tablesort_8inc_9c93c8e235c5013f0f494ba207ec1bdf}{tablesort\_\-header} (\$cell, \$header, \$ts)
+\item 
+\hyperlink{tablesort_8inc_32db61218906caa4bd22dffeb6bd5e00}{tablesort\_\-cell} (\$cell, \$header, \$ts, \$i)
+\item 
+\hyperlink{tablesort_8inc_028ba1bfddfb391f52b8795d17e5593f}{tablesort\_\-get\_\-querystring} ()
+\item 
+\hyperlink{tablesort_8inc_185527ebc6d0d3f4b8681b60debddf21}{tablesort\_\-get\_\-order} (\$headers)
+\item 
+\hyperlink{tablesort_8inc_e0824a39d518b2e6dc8e603093be2146}{tablesort\_\-get\_\-sort} (\$headers)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Functions to aid in the creation of sortable tables.
+
+All tables created with a call to theme('table') have the option of having column headers that the user can click on to sort the table by that column. 
+
+\subsection{Function Documentation}
+\hypertarget{tablesort_8inc_32db61218906caa4bd22dffeb6bd5e00}{
+\index{tablesort.inc@{tablesort.inc}!tablesort\_\-cell@{tablesort\_\-cell}}
+\index{tablesort\_\-cell@{tablesort\_\-cell}!tablesort.inc@{tablesort.inc}}
+\subsubsection[{tablesort\_\-cell}]{\setlength{\rightskip}{0pt plus 5cm}tablesort\_\-cell (\$ {\em cell}, \/  \$ {\em header}, \/  \$ {\em ts}, \/  \$ {\em i})}}
+\label{tablesort_8inc_32db61218906caa4bd22dffeb6bd5e00}
+
+
+Format a table cell.
+
+Adds a class attribute to all cells in the currently active column.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$cell}]The cell to format. \item[{\em \$header}]An array of column headers in the format described in \hyperlink{group__themeable_g77f053aaa73bbeaa3943bf8f06ce625d}{theme\_\-table()}. \item[{\em \$ts}]The current table sort context as returned from \hyperlink{tablesort_8inc_fee7fc97d83c8e51399e9b41ccbae927}{tablesort\_\-init()}. \item[{\em \$i}]The index of the cell's table column. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]A properly formatted cell, ready for \hyperlink{includes_2theme_8inc_df2a29e2c6631b7c0ecd833cafda9b40}{\_\-theme\_\-table\_\-cell()}. \end{Desc}
+\hypertarget{tablesort_8inc_185527ebc6d0d3f4b8681b60debddf21}{
+\index{tablesort.inc@{tablesort.inc}!tablesort\_\-get\_\-order@{tablesort\_\-get\_\-order}}
+\index{tablesort\_\-get\_\-order@{tablesort\_\-get\_\-order}!tablesort.inc@{tablesort.inc}}
+\subsubsection[{tablesort\_\-get\_\-order}]{\setlength{\rightskip}{0pt plus 5cm}tablesort\_\-get\_\-order (\$ {\em headers})}}
+\label{tablesort_8inc_185527ebc6d0d3f4b8681b60debddf21}
+
+
+Determine the current sort criterion.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$headers}]An array of column headers in the format described in \hyperlink{group__themeable_g77f053aaa73bbeaa3943bf8f06ce625d}{theme\_\-table()}. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An associative array describing the criterion, containing the keys:\begin{itemize}
+\item \char`\"{}name\char`\"{}: The localized title of the table column.\item \char`\"{}sql\char`\"{}: The name of the database field to sort on. \end{itemize}
+\end{Desc}
+\hypertarget{tablesort_8inc_028ba1bfddfb391f52b8795d17e5593f}{
+\index{tablesort.inc@{tablesort.inc}!tablesort\_\-get\_\-querystring@{tablesort\_\-get\_\-querystring}}
+\index{tablesort\_\-get\_\-querystring@{tablesort\_\-get\_\-querystring}!tablesort.inc@{tablesort.inc}}
+\subsubsection[{tablesort\_\-get\_\-querystring}]{\setlength{\rightskip}{0pt plus 5cm}tablesort\_\-get\_\-querystring ()}}
+\label{tablesort_8inc_028ba1bfddfb391f52b8795d17e5593f}
+
+
+Compose a query string to append to table sorting requests.
+
+\begin{Desc}
+\item[Returns:]A query string that consists of all components of the current page request except for those pertaining to table sorting. \end{Desc}
+\hypertarget{tablesort_8inc_e0824a39d518b2e6dc8e603093be2146}{
+\index{tablesort.inc@{tablesort.inc}!tablesort\_\-get\_\-sort@{tablesort\_\-get\_\-sort}}
+\index{tablesort\_\-get\_\-sort@{tablesort\_\-get\_\-sort}!tablesort.inc@{tablesort.inc}}
+\subsubsection[{tablesort\_\-get\_\-sort}]{\setlength{\rightskip}{0pt plus 5cm}tablesort\_\-get\_\-sort (\$ {\em headers})}}
+\label{tablesort_8inc_e0824a39d518b2e6dc8e603093be2146}
+
+
+Determine the current sort direction.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$headers}]An array of column headers in the format described in \hyperlink{group__themeable_g77f053aaa73bbeaa3943bf8f06ce625d}{theme\_\-table()}. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]The current sort direction (\char`\"{}asc\char`\"{} or \char`\"{}desc\char`\"{}). \end{Desc}
+\hypertarget{tablesort_8inc_9c93c8e235c5013f0f494ba207ec1bdf}{
+\index{tablesort.inc@{tablesort.inc}!tablesort\_\-header@{tablesort\_\-header}}
+\index{tablesort\_\-header@{tablesort\_\-header}!tablesort.inc@{tablesort.inc}}
+\subsubsection[{tablesort\_\-header}]{\setlength{\rightskip}{0pt plus 5cm}tablesort\_\-header (\$ {\em cell}, \/  \$ {\em header}, \/  \$ {\em ts})}}
+\label{tablesort_8inc_9c93c8e235c5013f0f494ba207ec1bdf}
+
+
+Format a column header.
+
+If the cell in question is the column header for the current sort criterion, it gets special formatting. All possible sort criteria become links.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$cell}]The cell to format. \item[{\em \$header}]An array of column headers in the format described in \hyperlink{group__themeable_g77f053aaa73bbeaa3943bf8f06ce625d}{theme\_\-table()}. \item[{\em \$ts}]The current table sort context as returned from \hyperlink{tablesort_8inc_fee7fc97d83c8e51399e9b41ccbae927}{tablesort\_\-init()}. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]A properly formatted cell, ready for \hyperlink{includes_2theme_8inc_df2a29e2c6631b7c0ecd833cafda9b40}{\_\-theme\_\-table\_\-cell()}. \end{Desc}
+\hypertarget{tablesort_8inc_fee7fc97d83c8e51399e9b41ccbae927}{
+\index{tablesort.inc@{tablesort.inc}!tablesort\_\-init@{tablesort\_\-init}}
+\index{tablesort\_\-init@{tablesort\_\-init}!tablesort.inc@{tablesort.inc}}
+\subsubsection[{tablesort\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}tablesort\_\-init (\$ {\em header})}}
+\label{tablesort_8inc_fee7fc97d83c8e51399e9b41ccbae927}
+
+
+Initialize the table sort context. 

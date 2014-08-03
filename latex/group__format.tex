@@ -1,0 +1,170 @@
+\hypertarget{group__format}{
+\section{Formatting}
+\label{group__format}\index{Formatting@{Formatting}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{group__format_g44992b971aed4a6a5b8457678f57de50}{format\_\-rss\_\-channel} (\$title, \$link, \$description, \$items, \$langcode=NULL, \$args=array())
+\item 
+\hyperlink{group__format_g4ecc9b876a9eaa65abb24ef513b217ad}{format\_\-rss\_\-item} (\$title, \$link, \$description, \$args=array())
+\item 
+\hyperlink{group__format_gfb344c648e6b63c35950d2889430e4c7}{format\_\-xml\_\-elements} (\$array)
+\item 
+\hyperlink{group__format_g0acb4fb7ab13d4b5ca3267a253af2f74}{format\_\-plural} (\$count, \$singular, \$plural, \$args=array(), \$langcode=NULL)
+\item 
+\hyperlink{group__format_g08382023ada29bae2a6a94f22196b066}{parse\_\-size} (\$size)
+\item 
+\hyperlink{group__format_g2a0075e7646fa2f399286272faa2956e}{format\_\-size} (\$size, \$langcode=NULL)
+\item 
+\hyperlink{group__format_g583fbfbb3172036bef0b15bfa525679a}{format\_\-interval} (\$timestamp, \$granularity=2, \$langcode=NULL)
+\item 
+\hyperlink{group__format_g40553742a67f9c79c4669b9053fe202c}{format\_\-date} (\$timestamp, \$type= 'medium', \$format= '', \$timezone=NULL, \$langcode=NULL)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Functions to format numbers, strings, dates, etc. 
+
+\subsection{Function Documentation}
+\hypertarget{group__format_g40553742a67f9c79c4669b9053fe202c}{
+\index{format@{format}!format\_\-date@{format\_\-date}}
+\index{format\_\-date@{format\_\-date}!format@{format}}
+\subsubsection[{format\_\-date}]{\setlength{\rightskip}{0pt plus 5cm}format\_\-date (\$ {\em timestamp}, \/  \$ {\em type} = {\tt 'medium'}, \/  \$ {\em format} = {\tt ''}, \/  \$ {\em timezone} = {\tt NULL}, \/  \$ {\em langcode} = {\tt NULL})}}
+\label{group__format_g40553742a67f9c79c4669b9053fe202c}
+
+
+Format a date with the given configured format or a custom format string.
+
+Drupal allows administrators to select formatting strings for 'small', 'medium' and 'large' date formats. This function can handle these formats, as well as any custom format.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$timestamp}]The exact date to format, as a UNIX timestamp. \item[{\em \$type}]The format to use. Can be \char`\"{}small\char`\"{}, \char`\"{}medium\char`\"{} or \char`\"{}large\char`\"{} for the preconfigured date formats. If \char`\"{}custom\char`\"{} is specified, then \$format is required as well. \item[{\em \$format}]A PHP date format string as required by date(). A backslash should be used before a character to avoid interpreting the character as part of a date format. \item[{\em \$timezone}]Time zone offset in seconds; if omitted, the user's time zone is used. \item[{\em \$langcode}]Optional language code to translate to a language other than what is used to display the page. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]A translated date string in the requested format. \end{Desc}
+\hypertarget{group__format_g583fbfbb3172036bef0b15bfa525679a}{
+\index{format@{format}!format\_\-interval@{format\_\-interval}}
+\index{format\_\-interval@{format\_\-interval}!format@{format}}
+\subsubsection[{format\_\-interval}]{\setlength{\rightskip}{0pt plus 5cm}format\_\-interval (\$ {\em timestamp}, \/  \$ {\em granularity} = {\tt 2}, \/  \$ {\em langcode} = {\tt NULL})}}
+\label{group__format_g583fbfbb3172036bef0b15bfa525679a}
+
+
+Format a time interval with the requested granularity.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$timestamp}]The length of the interval in seconds. \item[{\em \$granularity}]How many different units to display in the string. \item[{\em \$langcode}]Optional language code to translate to a language other than what is used to display the page. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]A translated string representation of the interval. \end{Desc}
+\hypertarget{group__format_g0acb4fb7ab13d4b5ca3267a253af2f74}{
+\index{format@{format}!format\_\-plural@{format\_\-plural}}
+\index{format\_\-plural@{format\_\-plural}!format@{format}}
+\subsubsection[{format\_\-plural}]{\setlength{\rightskip}{0pt plus 5cm}format\_\-plural (\$ {\em count}, \/  \$ {\em singular}, \/  \$ {\em plural}, \/  \$ {\em args} = {\tt array()}, \/  \$ {\em langcode} = {\tt NULL})}}
+\label{group__format_g0acb4fb7ab13d4b5ca3267a253af2f74}
+
+
+Format a string containing a count of items.
+
+This function ensures that the string is pluralized correctly. Since \hyperlink{common_8inc_41d20f0c822bf1f3c26a97981c762665}{t()} is called by this function, make sure not to pass already-localized strings to it.
+
+For example: 
+
+\begin{Code}\begin{verbatim}   $output = format_plural($node->comment_count, '1 comment', '@count comments');
+\end{verbatim}
+\end{Code}
+
+
+
+Example with additional replacements: 
+
+\begin{Code}\begin{verbatim}   $output = format_plural($update_count,
+     'Changed the content type of 1 post from %old-type to %new-type.',
+     'Changed the content type of @count posts from %old-type to %new-type.',
+     array('%old-type' => $info->old_type, '%new-type' => $info->new_type)));
+\end{verbatim}
+\end{Code}
+
+
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$count}]The item count to display. \item[{\em \$singular}]The string for the singular case. Please make sure it is clear this is singular, to ease translation (e.g. use \char`\"{}1 new comment\char`\"{} instead of \char`\"{}1 new\char`\"{}). Do not use  in the singular string. \item[{\em \$plural}]The string for the plural case. Please make sure it is clear this is plural, to ease translation. Use  in place of the item count, as in \char`\"{} new comments\char`\"{}. \item[{\em \$args}]An associative array of replacements to make after translation. Incidences of any key in this array are replaced with the corresponding value. Based on the first character of the key, the value is escaped and/or themed:\begin{itemize}
+\item !variable: inserted as is\item : escape plain text to HTML (check\_\-plain)\item variable: escape text and theme as a placeholder for user-submitted content (check\_\-plain + theme\_\-placeholder) Note that you do not need to include  in this array. This replacement is done automatically for the plural case. \end{itemize}
+\item[{\em \$langcode}]Optional language code to translate to a language other than what is used to display the page. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]A translated string. \end{Desc}
+\hypertarget{group__format_g44992b971aed4a6a5b8457678f57de50}{
+\index{format@{format}!format\_\-rss\_\-channel@{format\_\-rss\_\-channel}}
+\index{format\_\-rss\_\-channel@{format\_\-rss\_\-channel}!format@{format}}
+\subsubsection[{format\_\-rss\_\-channel}]{\setlength{\rightskip}{0pt plus 5cm}format\_\-rss\_\-channel (\$ {\em title}, \/  \$ {\em link}, \/  \$ {\em description}, \/  \$ {\em items}, \/  \$ {\em langcode} = {\tt NULL}, \/  \$ {\em args} = {\tt array()})}}
+\label{group__format_g44992b971aed4a6a5b8457678f57de50}
+
+
+Formats an RSS channel.
+
+Arbitrary elements may be added using the \$args associative array. \hypertarget{group__format_g4ecc9b876a9eaa65abb24ef513b217ad}{
+\index{format@{format}!format\_\-rss\_\-item@{format\_\-rss\_\-item}}
+\index{format\_\-rss\_\-item@{format\_\-rss\_\-item}!format@{format}}
+\subsubsection[{format\_\-rss\_\-item}]{\setlength{\rightskip}{0pt plus 5cm}format\_\-rss\_\-item (\$ {\em title}, \/  \$ {\em link}, \/  \$ {\em description}, \/  \$ {\em args} = {\tt array()})}}
+\label{group__format_g4ecc9b876a9eaa65abb24ef513b217ad}
+
+
+Format a single RSS item.
+
+Arbitrary elements may be added using the \$args associative array. \hypertarget{group__format_g2a0075e7646fa2f399286272faa2956e}{
+\index{format@{format}!format\_\-size@{format\_\-size}}
+\index{format\_\-size@{format\_\-size}!format@{format}}
+\subsubsection[{format\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}format\_\-size (\$ {\em size}, \/  \$ {\em langcode} = {\tt NULL})}}
+\label{group__format_g2a0075e7646fa2f399286272faa2956e}
+
+
+Generate a string representation for the given byte count.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$size}]A size in bytes. \item[{\em \$langcode}]Optional language code to translate to a language other than what is used to display the page. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]A translated string representation of the size. \end{Desc}
+\hypertarget{group__format_gfb344c648e6b63c35950d2889430e4c7}{
+\index{format@{format}!format\_\-xml\_\-elements@{format\_\-xml\_\-elements}}
+\index{format\_\-xml\_\-elements@{format\_\-xml\_\-elements}!format@{format}}
+\subsubsection[{format\_\-xml\_\-elements}]{\setlength{\rightskip}{0pt plus 5cm}format\_\-xml\_\-elements (\$ {\em array})}}
+\label{group__format_gfb344c648e6b63c35950d2889430e4c7}
+
+
+Format XML elements.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$array}]An array where each item represent an element and is either a:\begin{itemize}
+\item (key =$>$ value) pair ($<$key$>$value$<$/key$>$)\item Associative array with fields:\begin{itemize}
+\item 'key': element name\item 'value': element contents\item 'attributes': associative array of element attributes\end{itemize}
+\end{itemize}
+\end{description}
+\end{Desc}
+In both cases, 'value' can be a simple string, or it can be another array with the same format as \$array itself for nesting. \hypertarget{group__format_g08382023ada29bae2a6a94f22196b066}{
+\index{format@{format}!parse\_\-size@{parse\_\-size}}
+\index{parse\_\-size@{parse\_\-size}!format@{format}}
+\subsubsection[{parse\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}parse\_\-size (\$ {\em size})}}
+\label{group__format_g08382023ada29bae2a6a94f22196b066}
+
+
+Parse a given byte count.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$size}]A size expressed as a number of bytes with optional SI size and unit suffix (e.g. 2, 3K, 5MB, 10G). \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]An integer representation of the size. \end{Desc}

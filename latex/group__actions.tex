@@ -1,0 +1,48 @@
+\hypertarget{group__actions}{
+\section{Actions}
+\label{group__actions}\index{Actions@{Actions}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{group__actions_gbe1aa2bfc551fab8660cc3bacfc9d509}{flag\_\-flag::get\_\-valid\_\-actions} ()
+\item 
+\hyperlink{group__actions_g8f1b472c7f072dbfa682cc5b3fac9be6}{flag\_\-flag::get\_\-relevant\_\-action\_\-objects} (\$content\_\-id)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Functions that perform an action on a certain system object.
+
+All modules should declare their action functions to be in this group and each action function should reference its configuration form, validate, and submit functions using @see. Conversely, form, validate, and submit functions should reference the action function using @see. For examples of this see comment\_\-unpublish\_\-by\_\-keyword\_\-action(), which has the following in its doxygen documentation:
+
+@ingroup actions @see comment\_\-unpublish\_\-by\_\-keyword\_\-action\_\-form(). @see comment\_\-unpublish\_\-by\_\-keyword\_\-action\_\-submit().
+
+End of \char`\"{}defgroup actions\char`\"{}.
+
+Methods that can be overridden to support Actions. 
+
+\subsection{Function Documentation}
+\hypertarget{group__actions_g8f1b472c7f072dbfa682cc5b3fac9be6}{
+\index{actions@{actions}!get\_\-relevant\_\-action\_\-objects@{get\_\-relevant\_\-action\_\-objects}}
+\index{get\_\-relevant\_\-action\_\-objects@{get\_\-relevant\_\-action\_\-objects}!actions@{actions}}
+\subsubsection[{get\_\-relevant\_\-action\_\-objects}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-flag::get\_\-relevant\_\-action\_\-objects (\$ {\em content\_\-id})\hspace{0.3cm}{\tt  \mbox{[}inherited\mbox{]}}}}
+\label{group__actions_g8f1b472c7f072dbfa682cc5b3fac9be6}
+
+
+Returns objects the action may possibly need. This method should return at least the 'primary' object the action operates on.
+
+This method is needed because \hyperlink{group__actions_gbe1aa2bfc551fab8660cc3bacfc9d509}{get\_\-valid\_\-actions()} returns actions that don't necessarily operate on an object of a type this flag manages. For example, flagging a comment may trigger an 'Unpublish post' action on a node; So the comment flag needs to tell the action about some node.
+
+Derived classes must implement this.
+
+Reimplemented in \hyperlink{classflag__node_9578593ef74f207710a83242de8325f9}{flag\_\-node}, \hyperlink{classflag__comment_9092237266a5e5fce69be0a4cdfd602e}{flag\_\-comment}, and \hyperlink{classflag__user_92be6b0492226ca0feb1f2dc486d519e}{flag\_\-user}.\hypertarget{group__actions_gbe1aa2bfc551fab8660cc3bacfc9d509}{
+\index{actions@{actions}!get\_\-valid\_\-actions@{get\_\-valid\_\-actions}}
+\index{get\_\-valid\_\-actions@{get\_\-valid\_\-actions}!actions@{actions}}
+\subsubsection[{get\_\-valid\_\-actions}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-flag::get\_\-valid\_\-actions ()\hspace{0.3cm}{\tt  \mbox{[}inherited\mbox{]}}}}
+\label{group__actions_gbe1aa2bfc551fab8660cc3bacfc9d509}
+
+
+Returns an array of all actions that are executable with this flag. 
+
+Reimplemented in \hyperlink{classflag__node_6bb9b8d25c34816cd3e7b5c11038374a}{flag\_\-node}.

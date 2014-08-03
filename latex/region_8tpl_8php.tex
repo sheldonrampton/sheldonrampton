@@ -1,0 +1,40 @@
+\hypertarget{region_8tpl_8php}{
+\section{sites/all/themes/zen/templates/region.tpl.php File Reference}
+\label{region_8tpl_8php}\index{sites/all/themes/zen/templates/region.tpl.php@{sites/all/themes/zen/templates/region.tpl.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hypertarget{region_8tpl_8php_6d48ecbdbc70ca1812e665169b5fa1e2}{
+print \textbf{\$classes}}
+\label{region_8tpl_8php_6d48ecbdbc70ca1812e665169b5fa1e2}
+
+\item 
+\hypertarget{region_8tpl_8php_b7b7210f43aa78e34f0b202de894a74c}{
+print \textbf{\$content}}
+\label{region_8tpl_8php_b7b7210f43aa78e34f0b202de894a74c}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Default theme implementation to display a region.
+
+Available variables:\begin{itemize}
+\item \$content: The content for this region, typically blocks.\item \$classes: String of classes that can be used to style contextually through CSS. It can be manipulated through the variable \$classes\_\-array from preprocess functions. The default values can be one or more of the following:\begin{itemize}
+\item region: The current template type, i.e., \char`\"{}theming hook\char`\"{}.\item region-\mbox{[}name\mbox{]}: The name of the region with underscores replaced with dashes. For example, the page\_\-top region would have a region-page-top class.\end{itemize}
+\item \$region: The name of the region variable as defined in the theme's .info file.\end{itemize}
+
+
+Helper variables:\begin{itemize}
+\item \$classes\_\-array: Array of html class attribute values. It is flattened into a string within the variable \$classes.\item \$is\_\-admin: Flags true when the current user is an administrator.\item \$is\_\-front: Flags true when presented in the front page.\item \$logged\_\-in: Flags true when the current user is a logged-in member.\end{itemize}
+
+
+\begin{Desc}
+\item[See also:]\hyperlink{includes_2theme_8inc_3eeb7bcdba7ef4859f99586da264d347}{template\_\-preprocess()} 
+
+\hyperlink{sites_2all_2themes_2zen_2template_8php_34cb06c8098f8e1c710c501bb9a64d8b}{zen\_\-preprocess()} 
+
+\hyperlink{sites_2all_2themes_2zen_2template_8php_1fa9b7695fa6d89f176bb01c32ad837f}{zen\_\-preprocess\_\-region()} 
+
+\hyperlink{sites_2all_2themes_2zen_2template_8php_3790b825810aa4bfd00c27c37817a7d8}{zen\_\-process()} \end{Desc}

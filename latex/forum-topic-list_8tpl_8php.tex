@@ -1,0 +1,81 @@
+\hypertarget{forum-topic-list_8tpl_8php}{
+\section{modules/forum/forum-topic-list.tpl.php File Reference}
+\label{forum-topic-list_8tpl_8php}\index{modules/forum/forum-topic-list.tpl.php@{modules/forum/forum-topic-list.tpl.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hypertarget{forum-topic-list_8tpl_8php_d63adef8ed61a62f2c83572cd6273445}{
+print \textbf{\$topic\_\-id}}
+\label{forum-topic-list_8tpl_8php_d63adef8ed61a62f2c83572cd6273445}
+
+\item 
+\hypertarget{forum-topic-list_8tpl_8php_fdbae16fe43949b38217397064ddaf03}{
+print \textbf{\$header}}
+\label{forum-topic-list_8tpl_8php_fdbae16fe43949b38217397064ddaf03}
+
+\item 
+\hypertarget{forum-topic-list_8tpl_8php_77e5d07abebe3261741e5786016785e0}{
+foreach(\$topics as \$topic) print \$topic \textbf{icon}}
+\label{forum-topic-list_8tpl_8php_77e5d07abebe3261741e5786016785e0}
+
+\item 
+\hypertarget{forum-topic-list_8tpl_8php_72edd12ee8bba1e113c562a074d20bfd}{
+print \$topic \textbf{title}}
+\label{forum-topic-list_8tpl_8php_72edd12ee8bba1e113c562a074d20bfd}
+
+\item 
+\hypertarget{forum-topic-list_8tpl_8php_03febd59c2d78f68da28db70f0873f2b}{
+if(\$topic $\rightarrow$ moved) \textbf{else}}
+\label{forum-topic-list_8tpl_8php_03febd59c2d78f68da28db70f0873f2b}
+
+\item 
+\hypertarget{forum-topic-list_8tpl_8php_32a751e033725f54390f66ac625aaf99}{
+if(\$topic $\rightarrow$ new\_\-replies) print \$topic \textbf{new\_\-text}}
+\label{forum-topic-list_8tpl_8php_32a751e033725f54390f66ac625aaf99}
+
+\item 
+\hypertarget{forum-topic-list_8tpl_8php_82cd33ca97ff99f2fcc5e9c81d65251b}{
+\textbf{endif}}
+\label{forum-topic-list_8tpl_8php_82cd33ca97ff99f2fcc5e9c81d65251b}
+
+\item 
+\hypertarget{forum-topic-list_8tpl_8php_ef00d19b024cca51c2589602fd667f2e}{
+print \$topic \textbf{created}}
+\label{forum-topic-list_8tpl_8php_ef00d19b024cca51c2589602fd667f2e}
+
+\item 
+\hypertarget{forum-topic-list_8tpl_8php_146df04f10b09ef6f4f986b0ab1dafde}{
+print \$topic \textbf{last\_\-reply}}
+\label{forum-topic-list_8tpl_8php_146df04f10b09ef6f4f986b0ab1dafde}
+
+\item 
+\hypertarget{forum-topic-list_8tpl_8php_672d9707ef91db026c210f98cc601123}{
+\textbf{endforeach}}
+\label{forum-topic-list_8tpl_8php_672d9707ef91db026c210f98cc601123}
+
+\item 
+\hypertarget{forum-topic-list_8tpl_8php_832d48720a0d8c51e6a14792173c3a61}{
+print \textbf{\$pager}}
+\label{forum-topic-list_8tpl_8php_832d48720a0d8c51e6a14792173c3a61}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Theme implementation to display a list of forum topics.
+
+Available variables:\begin{itemize}
+\item \$header: The table header. This is pre-generated with click-sorting information. If you need to change this, \begin{Desc}
+\item[See also:]template\_\-preprocess\_\-forum\_\-topic\_\-list().\end{Desc}
+\item \$pager: The pager to display beneath the table.\item \$topics: An array of topics to be displayed.\item \$topic\_\-id: Numeric id for the current forum topic.\end{itemize}
+
+
+Each \$topic in \$topics contains:\begin{itemize}
+\item \$topic-$>$icon: The icon to display.\item \$topic-$>$moved: A flag to indicate whether the topic has been moved to another forum.\item \$topic-$>$title: The title of the topic. Safe to output.\item \$topic-$>$message: If the topic has been moved, this contains an explanation and a link.\item \$topic-$>$zebra: 'even' or 'odd' string used for row class.\item \$topic-$>$num\_\-comments: The number of replies on this topic.\item \$topic-$>$new\_\-replies: A flag to indicate whether there are unread comments.\item \$topic-$>$new\_\-url: If there are unread replies, this is a link to them.\item \$topic-$>$new\_\-text: Text containing the translated, properly pluralized count.\item \$topic-$>$created: An outputtable string represented when the topic was posted.\item \$topic-$>$last\_\-reply: An outputtable string representing when the topic was last replied to.\item \$topic-$>$timestamp: The raw timestamp this topic was posted.\end{itemize}
+
+
+\begin{Desc}
+\item[See also:]template\_\-preprocess\_\-forum\_\-topic\_\-list() 
+
+theme\_\-forum\_\-topic\_\-list() \end{Desc}

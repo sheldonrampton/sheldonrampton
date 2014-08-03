@@ -1,0 +1,49 @@
+\hypertarget{sites_2all_2themes_2zen_2templates_2comment-wrapper_8tpl_8php}{
+\section{sites/all/themes/zen/templates/comment-wrapper.tpl.php File Reference}
+\label{sites_2all_2themes_2zen_2templates_2comment-wrapper_8tpl_8php}\index{sites/all/themes/zen/templates/comment-wrapper.tpl.php@{sites/all/themes/zen/templates/comment-wrapper.tpl.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hypertarget{sites_2all_2themes_2zen_2templates_2comment-wrapper_8tpl_8php_6d48ecbdbc70ca1812e665169b5fa1e2}{
+print \textbf{\$classes}}
+\label{sites_2all_2themes_2zen_2templates_2comment-wrapper_8tpl_8php_6d48ecbdbc70ca1812e665169b5fa1e2}
+
+\item 
+\hypertarget{sites_2all_2themes_2zen_2templates_2comment-wrapper_8tpl_8php_82cd33ca97ff99f2fcc5e9c81d65251b}{
+\textbf{endif}}
+\label{sites_2all_2themes_2zen_2templates_2comment-wrapper_8tpl_8php_82cd33ca97ff99f2fcc5e9c81d65251b}
+
+\item 
+\hypertarget{sites_2all_2themes_2zen_2templates_2comment-wrapper_8tpl_8php_b7b7210f43aa78e34f0b202de894a74c}{
+print \textbf{\$content}}
+\label{sites_2all_2themes_2zen_2templates_2comment-wrapper_8tpl_8php_b7b7210f43aa78e34f0b202de894a74c}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Default theme implementation to wrap comments.
+
+Available variables:\begin{itemize}
+\item \$content: All comments for a given page. Also contains sorting controls and comment forms if the site is configured for it.\item \$classes: String of classes that can be used to style contextually through CSS. It can be manipulated through the variable \$classes\_\-array from preprocess functions. The default value has the following:\begin{itemize}
+\item comment-wrapper: The current template type, i.e., \char`\"{}theming hook\char`\"{}.\end{itemize}
+\end{itemize}
+
+
+The following variables are provided for contextual information.\begin{itemize}
+\item \$node: Node object the comments are attached to. The constants below the variables show the possible values and should be used for comparison.\item \$display\_\-mode\begin{itemize}
+\item COMMENT\_\-MODE\_\-FLAT\_\-COLLAPSED\item COMMENT\_\-MODE\_\-FLAT\_\-EXPANDED\item COMMENT\_\-MODE\_\-THREADED\_\-COLLAPSED\item COMMENT\_\-MODE\_\-THREADED\_\-EXPANDED\end{itemize}
+\item \$display\_\-order\begin{itemize}
+\item COMMENT\_\-ORDER\_\-NEWEST\_\-FIRST\item COMMENT\_\-ORDER\_\-OLDEST\_\-FIRST\end{itemize}
+\item \$comment\_\-controls\_\-state\begin{itemize}
+\item COMMENT\_\-CONTROLS\_\-ABOVE\item COMMENT\_\-CONTROLS\_\-BELOW\item COMMENT\_\-CONTROLS\_\-ABOVE\_\-BELOW\item COMMENT\_\-CONTROLS\_\-HIDDEN\end{itemize}
+\end{itemize}
+
+
+Other variables:\begin{itemize}
+\item \$classes\_\-array: Array of html class attribute values. It is flattened into a string within the variable \$classes.\end{itemize}
+
+
+\begin{Desc}
+\item[See also:]template\_\-preprocess\_\-comment\_\-wrapper() \end{Desc}

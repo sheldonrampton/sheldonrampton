@@ -1,0 +1,90 @@
+\hypertarget{classviews__plugin__style__rss}{
+\section{views\_\-plugin\_\-style\_\-rss Class Reference}
+\label{classviews__plugin__style__rss}\index{views\_\-plugin\_\-style\_\-rss@{views\_\-plugin\_\-style\_\-rss}}
+}
+Inheritance diagram for views\_\-plugin\_\-style\_\-rss::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4cm]{classviews__plugin__style__rss}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classviews__plugin__style__rss_9cd5c1f8c310e28c6e6f99d4fc4ed295}{
+\textbf{attach\_\-to} (\$display\_\-id, \$path, \$title)}
+\label{classviews__plugin__style__rss_9cd5c1f8c310e28c6e6f99d4fc4ed295}
+
+\item 
+\hyperlink{classviews__plugin__style__rss_b65464713d5256b32dbb4eea3e6d76ed}{option\_\-definition} ()
+\item 
+\hyperlink{classviews__plugin__style__rss_317b1867ddd97f969977368031e04fee}{options\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__plugin__style__rss_fce443c4f7053fc7e9a2043ae0848cd7}{get\_\-channel\_\-elements} ()
+\item 
+\hyperlink{classviews__plugin__style__rss_a6331538ac5b9cdc80478f98ba5e0de4}{render} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Default style plugin to render an RSS feed. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__plugin__style__rss_fce443c4f7053fc7e9a2043ae0848cd7}{
+\index{views\_\-plugin\_\-style\_\-rss@{views\_\-plugin\_\-style\_\-rss}!get\_\-channel\_\-elements@{get\_\-channel\_\-elements}}
+\index{get\_\-channel\_\-elements@{get\_\-channel\_\-elements}!views_plugin_style_rss@{views\_\-plugin\_\-style\_\-rss}}
+\subsubsection[{get\_\-channel\_\-elements}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-style\_\-rss::get\_\-channel\_\-elements ()}}
+\label{classviews__plugin__style__rss_fce443c4f7053fc7e9a2043ae0848cd7}
+
+
+Return an array of additional XHTML elements to add to the channel.
+
+\begin{Desc}
+\item[Returns:]An array that can be passed to \hyperlink{group__format_gfb344c648e6b63c35950d2889430e4c7}{format\_\-xml\_\-elements()}. \end{Desc}
+\hypertarget{classviews__plugin__style__rss_b65464713d5256b32dbb4eea3e6d76ed}{
+\index{views\_\-plugin\_\-style\_\-rss@{views\_\-plugin\_\-style\_\-rss}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!views_plugin_style_rss@{views\_\-plugin\_\-style\_\-rss}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-style\_\-rss::option\_\-definition ()}}
+\label{classviews__plugin__style__rss_b65464713d5256b32dbb4eea3e6d76ed}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented from \hyperlink{classviews__plugin__style_95b6f2eadf403ff36f1ff2860294b3c2}{views\_\-plugin\_\-style}.\hypertarget{classviews__plugin__style__rss_317b1867ddd97f969977368031e04fee}{
+\index{views\_\-plugin\_\-style\_\-rss@{views\_\-plugin\_\-style\_\-rss}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!views_plugin_style_rss@{views\_\-plugin\_\-style\_\-rss}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-style\_\-rss::options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__plugin__style__rss_317b1867ddd97f969977368031e04fee}
+
+
+Provide a form to edit options for this plugin. 
+
+Reimplemented from \hyperlink{classviews__plugin__style_fe3d437ff4398315b15c4e60975dbb1c}{views\_\-plugin\_\-style}.\hypertarget{classviews__plugin__style__rss_a6331538ac5b9cdc80478f98ba5e0de4}{
+\index{views\_\-plugin\_\-style\_\-rss@{views\_\-plugin\_\-style\_\-rss}!render@{render}}
+\index{render@{render}!views_plugin_style_rss@{views\_\-plugin\_\-style\_\-rss}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-style\_\-rss::render ()}}
+\label{classviews__plugin__style__rss_a6331538ac5b9cdc80478f98ba5e0de4}
+
+
+Render the display in this style. 
+
+Reimplemented from \hyperlink{classviews__plugin__style_a52b618e91b11a7d10ad1feadbc891f1}{views\_\-plugin\_\-style}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/plugins/\hyperlink{views__plugin__style__rss_8inc}{views\_\-plugin\_\-style\_\-rss.inc}\end{CompactItemize}

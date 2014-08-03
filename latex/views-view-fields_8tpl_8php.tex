@@ -1,0 +1,53 @@
+\hypertarget{views-view-fields_8tpl_8php}{
+\section{sites/all/modules/contrib/views/theme/views-view-fields.tpl.php File Reference}
+\label{views-view-fields_8tpl_8php}\index{sites/all/modules/contrib/views/theme/views-view-fields.tpl.php@{sites/all/modules/contrib/views/theme/views-view-fields.tpl.php}}
+}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hypertarget{views-view-fields_8tpl_8php_82cd33ca97ff99f2fcc5e9c81d65251b}{
+foreach(\$fields as \$id=$>$ \$field)(!empty(\$field $\rightarrow$ separator)) \textbf{endif}}
+\label{views-view-fields_8tpl_8php_82cd33ca97ff99f2fcc5e9c81d65251b}
+
+\item 
+\hypertarget{views-view-fields_8tpl_8php_298e750db56fc4c260852aff71219713}{
+print \$field \textbf{inline\_\-html}}
+\label{views-view-fields_8tpl_8php_298e750db56fc4c260852aff71219713}
+
+\item 
+\hypertarget{views-view-fields_8tpl_8php_2ea91f7c5f35299ea09f8e00a18a26b0}{
+print \$field \textbf{class}}
+\label{views-view-fields_8tpl_8php_2ea91f7c5f35299ea09f8e00a18a26b0}
+
+\item 
+\hypertarget{views-view-fields_8tpl_8php_9382b3bdafeb897561b91922c967c16e}{
+if(\$field $\rightarrow$ label) print \$field \textbf{label}}
+\label{views-view-fields_8tpl_8php_9382b3bdafeb897561b91922c967c16e}
+
+\item 
+\hypertarget{views-view-fields_8tpl_8php_80508bd2b439e4cd38ce36c9e345b33b}{
+print \$field \textbf{element\_\-type}}
+\label{views-view-fields_8tpl_8php_80508bd2b439e4cd38ce36c9e345b33b}
+
+\item 
+\hypertarget{views-view-fields_8tpl_8php_b9c021825db1d9cdc4bf17f40b3bd76c}{
+print \$field \textbf{content}}
+\label{views-view-fields_8tpl_8php_b9c021825db1d9cdc4bf17f40b3bd76c}
+
+\item 
+\hypertarget{views-view-fields_8tpl_8php_672d9707ef91db026c210f98cc601123}{
+\textbf{endforeach}}
+\label{views-view-fields_8tpl_8php_672d9707ef91db026c210f98cc601123}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Default simple \hyperlink{classview}{view} template to all the fields as a row.
+
+\begin{itemize}
+\item \$view: The \hyperlink{classview}{view} in use.\item \begin{Desc}
+\item[fields]an array of \end{Desc}
+field objects. Each one contains:\begin{itemize}
+\item \$field-$>$content: The output of the field.\item \$field-$>$raw: The raw data for the field, if it exists. This is NOT output safe.\item \$field-$>$class: The safe class id to use.\item \$field-$>$handler: The Views field handler object controlling this field. Do not use var\_\-export to dump this object, as it can't handle the recursion.\item \$field-$>$inline: Whether or not the field should be inline.\item \$field-$>$inline\_\-html: either div or span based on the above flag.\item \$field-$>$separator: an optional separator that may appear before a field.\end{itemize}
+\item \$row: The raw result object from the query, with all data it fetched. \end{itemize}

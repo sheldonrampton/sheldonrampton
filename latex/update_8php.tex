@@ -1,0 +1,192 @@
+\hypertarget{update_8php}{
+\section{update.php File Reference}
+\label{update_8php}\index{update.php@{update.php}}
+}
+\subsection*{Enumerations}
+\begin{CompactItemize}
+\item 
+enum \hyperlink{update_8php_5bf6dfe9ba7ee16c648e3932aa76535d}{MAINTENANCE\_\-MODE} 
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{update_8php_68749bcc3e7949ede51c5dd2db91f39e}{db\_\-add\_\-column} (\&\$ret, \$table, \$column, \$type, \$attributes=array())
+\item 
+\hyperlink{update_8php_f6bd7fe55aa398bb18266c56be8bf97b}{db\_\-change\_\-column} (\&\$ret, \$table, \$column, \$column\_\-new, \$type, \$attributes=array())
+\item 
+\hyperlink{update_8php_2ee6f43ad07357556589cfcee024e203}{update\_\-do\_\-one} (\$module, \$number, \&\$context)
+\item 
+\hypertarget{update_8php_48489df1aa5e2189ef6e7fae71de8203}{
+\textbf{update\_\-selection\_\-page} ()}
+\label{update_8php_48489df1aa5e2189ef6e7fae71de8203}
+
+\item 
+\hypertarget{update_8php_6190d3cb165751d2620de354a95bccda}{
+\textbf{update\_\-script\_\-selection\_\-form} ()}
+\label{update_8php_6190d3cb165751d2620de354a95bccda}
+
+\item 
+\hypertarget{update_8php_0609048e545eeffbc24aafae61dbbe40}{
+\textbf{update\_\-batch} ()}
+\label{update_8php_0609048e545eeffbc24aafae61dbbe40}
+
+\item 
+\hypertarget{update_8php_80f7fdd8ca66ebda4959b9429fc343f3}{
+\textbf{update\_\-finished} (\$success, \$results, \$operations)}
+\label{update_8php_80f7fdd8ca66ebda4959b9429fc343f3}
+
+\item 
+\hypertarget{update_8php_b8c386cf40f35717b820735b5a8f7745}{
+\textbf{update\_\-results\_\-page} ()}
+\label{update_8php_b8c386cf40f35717b820735b5a8f7745}
+
+\item 
+\hypertarget{update_8php_1c9b293ee11117ef8911b52809e75bde}{
+\textbf{update\_\-info\_\-page} ()}
+\label{update_8php_1c9b293ee11117ef8911b52809e75bde}
+
+\item 
+\hypertarget{update_8php_a43f1c9a3442570821ad190a3dd429db}{
+\textbf{update\_\-access\_\-denied\_\-page} ()}
+\label{update_8php_a43f1c9a3442570821ad190a3dd429db}
+
+\item 
+\hyperlink{update_8php_123fb38f4b7623d8ee5948c0d2e748eb}{update\_\-create\_\-batch\_\-table} ()
+\item 
+\hyperlink{update_8php_b86cb0f00b89fc52f7f6294be9a1e33c}{update\_\-fix\_\-compatibility} ()
+\item 
+\hyperlink{update_8php_39592132a77fd791c44a8d6faf362cb0}{update\_\-check\_\-incompatibility} (\$name, \$type= 'module')
+\item 
+\hyperlink{update_8php_f9abb57ca11fefe877843be4211307c4}{update\_\-fix\_\-d6\_\-requirements} ()
+\item 
+\hyperlink{update_8php_3563d865f4b5eb7e86e9254410438679}{update\_\-task\_\-list} (\$active=NULL)
+\item 
+\hyperlink{update_8php_d0b8cf7510033800502402c275add53b}{update\_\-check\_\-requirements} ()
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+\hypertarget{update_8php_7c93a81c9b28ec2f78f33cdabda28c76}{
+\textbf{\$op} = isset(\$\_\-REQUEST\mbox{[}'op'\mbox{]}) ? \$\_\-REQUEST\mbox{[}'op'\mbox{]} : ''}
+\label{update_8php_7c93a81c9b28ec2f78f33cdabda28c76}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Administrative page for handling updates from one Drupal version to another.
+
+Point your browser to \char`\"{}http://www.example.com/update.php\char`\"{} and follow the instructions.
+
+If you are not logged in as administrator, you will need to modify the access check statement inside your settings.php file. After finishing the upgrade, be sure to open settings.php again, and change it back to its original state! 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{update_8php_5bf6dfe9ba7ee16c648e3932aa76535d}{
+\index{update.php@{update.php}!MAINTENANCE\_\-MODE@{MAINTENANCE\_\-MODE}}
+\index{MAINTENANCE\_\-MODE@{MAINTENANCE\_\-MODE}!update.php@{update.php}}
+\subsubsection[{MAINTENANCE\_\-MODE}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf MAINTENANCE\_\-MODE}}}
+\label{update_8php_5bf6dfe9ba7ee16c648e3932aa76535d}
+
+
+Global flag to identify \hyperlink{update_8php}{update.php} run, and so avoid various unwanted operations, such as hook\_\-init() and hook\_\-exit() invokes, css/js preprocessing and translation, and solve some theming issues. This flag is checked on several places in Drupal code (not just \hyperlink{update_8php}{update.php}). 
+
+\subsection{Function Documentation}
+\hypertarget{update_8php_68749bcc3e7949ede51c5dd2db91f39e}{
+\index{update.php@{update.php}!db\_\-add\_\-column@{db\_\-add\_\-column}}
+\index{db\_\-add\_\-column@{db\_\-add\_\-column}!update.php@{update.php}}
+\subsubsection[{db\_\-add\_\-column}]{\setlength{\rightskip}{0pt plus 5cm}db\_\-add\_\-column (\&\$ {\em ret}, \/  \$ {\em table}, \/  \$ {\em column}, \/  \$ {\em type}, \/  \$ {\em attributes} = {\tt array()})}}
+\label{update_8php_68749bcc3e7949ede51c5dd2db91f39e}
+
+
+Add a column to a database using syntax appropriate for PostgreSQL. Save result of SQL commands in \$ret array.
+
+Note: when you add a column with NOT NULL and you are not sure if there are already rows in the table, you MUST also add DEFAULT. Otherwise PostgreSQL won't work when the table is not empty, and \hyperlink{update_8php_68749bcc3e7949ede51c5dd2db91f39e}{db\_\-add\_\-column()} will fail. To have an empty string as the default, you must use: 'default' =$>$ \char`\"{}''\char`\"{} in the \$attributes array. If NOT NULL and DEFAULT are set the PostgreSQL version will set values of the added column in old rows to the DEFAULT value.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$ret}]Array to which results will be added. \item[{\em \$table}]Name of the table, without \{\} \item[{\em \$column}]Name of the column \item[{\em \$type}]Type of column \item[{\em \$attributes}]Additional optional attributes. Recognized attributes: not null =$>$ TRUE$|$FALSE default =$>$ NULL$|$FALSE$|$value (the value must be enclosed in '' marks) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]nothing, but modifies \$ret parameter. \end{Desc}
+\hypertarget{update_8php_f6bd7fe55aa398bb18266c56be8bf97b}{
+\index{update.php@{update.php}!db\_\-change\_\-column@{db\_\-change\_\-column}}
+\index{db\_\-change\_\-column@{db\_\-change\_\-column}!update.php@{update.php}}
+\subsubsection[{db\_\-change\_\-column}]{\setlength{\rightskip}{0pt plus 5cm}db\_\-change\_\-column (\&\$ {\em ret}, \/  \$ {\em table}, \/  \$ {\em column}, \/  \$ {\em column\_\-new}, \/  \$ {\em type}, \/  \$ {\em attributes} = {\tt array()})}}
+\label{update_8php_f6bd7fe55aa398bb18266c56be8bf97b}
+
+
+Change a column definition using syntax appropriate for PostgreSQL. Save result of SQL commands in \$ret array.
+
+Remember that changing a column definition involves adding a new column and dropping an old one. This means that any indices, primary keys and sequences from serial-type columns are dropped and might need to be recreated.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$ret}]Array to which results will be added. \item[{\em \$table}]Name of the table, without \{\} \item[{\em \$column}]Name of the column to change \item[{\em \$column\_\-new}]New name for the column (set to the same as \$column if you don't want to change the name) \item[{\em \$type}]Type of column \item[{\em \$attributes}]Additional optional attributes. Recognized attributes: not null =$>$ TRUE$|$FALSE default =$>$ NULL$|$FALSE$|$value (with or without '', it won't be added) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]nothing, but modifies \$ret parameter. \end{Desc}
+\hypertarget{update_8php_39592132a77fd791c44a8d6faf362cb0}{
+\index{update.php@{update.php}!update\_\-check\_\-incompatibility@{update\_\-check\_\-incompatibility}}
+\index{update\_\-check\_\-incompatibility@{update\_\-check\_\-incompatibility}!update.php@{update.php}}
+\subsubsection[{update\_\-check\_\-incompatibility}]{\setlength{\rightskip}{0pt plus 5cm}update\_\-check\_\-incompatibility (\$ {\em name}, \/  \$ {\em type} = {\tt 'module'})}}
+\label{update_8php_39592132a77fd791c44a8d6faf362cb0}
+
+
+Helper function to test compatibility of a module or theme. \hypertarget{update_8php_d0b8cf7510033800502402c275add53b}{
+\index{update.php@{update.php}!update\_\-check\_\-requirements@{update\_\-check\_\-requirements}}
+\index{update\_\-check\_\-requirements@{update\_\-check\_\-requirements}!update.php@{update.php}}
+\subsubsection[{update\_\-check\_\-requirements}]{\setlength{\rightskip}{0pt plus 5cm}update\_\-check\_\-requirements ()}}
+\label{update_8php_d0b8cf7510033800502402c275add53b}
+
+
+Check update requirements and report any errors. \hypertarget{update_8php_123fb38f4b7623d8ee5948c0d2e748eb}{
+\index{update.php@{update.php}!update\_\-create\_\-batch\_\-table@{update\_\-create\_\-batch\_\-table}}
+\index{update\_\-create\_\-batch\_\-table@{update\_\-create\_\-batch\_\-table}!update.php@{update.php}}
+\subsubsection[{update\_\-create\_\-batch\_\-table}]{\setlength{\rightskip}{0pt plus 5cm}update\_\-create\_\-batch\_\-table ()}}
+\label{update_8php_123fb38f4b7623d8ee5948c0d2e748eb}
+
+
+Create the batch table.
+
+This is part of the Drupal 5.x to 6.x migration. \hypertarget{update_8php_2ee6f43ad07357556589cfcee024e203}{
+\index{update.php@{update.php}!update\_\-do\_\-one@{update\_\-do\_\-one}}
+\index{update\_\-do\_\-one@{update\_\-do\_\-one}!update.php@{update.php}}
+\subsubsection[{update\_\-do\_\-one}]{\setlength{\rightskip}{0pt plus 5cm}update\_\-do\_\-one (\$ {\em module}, \/  \$ {\em number}, \/  \&\$ {\em context})}}
+\label{update_8php_2ee6f43ad07357556589cfcee024e203}
+
+
+Perform one update and store the results which will later be displayed on the finished page.
+
+An update function can force the current and all later updates for this module to abort by returning a \$ret array with an element like: \$ret\mbox{[}'abort'\mbox{]} = array('success' =$>$ FALSE, 'query' =$>$ 'What went wrong'); The schema version will not be updated in this case, and all the aborted updates will continue to appear on \hyperlink{update_8php}{update.php} as updates that have not yet been run.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$module}]The module whose update will be run. \item[{\em \$number}]The update number to run. \item[{\em \$context}]The batch context array \end{description}
+\end{Desc}
+\hypertarget{update_8php_b86cb0f00b89fc52f7f6294be9a1e33c}{
+\index{update.php@{update.php}!update\_\-fix\_\-compatibility@{update\_\-fix\_\-compatibility}}
+\index{update\_\-fix\_\-compatibility@{update\_\-fix\_\-compatibility}!update.php@{update.php}}
+\subsubsection[{update\_\-fix\_\-compatibility}]{\setlength{\rightskip}{0pt plus 5cm}update\_\-fix\_\-compatibility ()}}
+\label{update_8php_b86cb0f00b89fc52f7f6294be9a1e33c}
+
+
+Disable anything in the \{system\} table that is not compatible with the current version of Drupal core. \hypertarget{update_8php_f9abb57ca11fefe877843be4211307c4}{
+\index{update.php@{update.php}!update\_\-fix\_\-d6\_\-requirements@{update\_\-fix\_\-d6\_\-requirements}}
+\index{update\_\-fix\_\-d6\_\-requirements@{update\_\-fix\_\-d6\_\-requirements}!update.php@{update.php}}
+\subsubsection[{update\_\-fix\_\-d6\_\-requirements}]{\setlength{\rightskip}{0pt plus 5cm}update\_\-fix\_\-d6\_\-requirements ()}}
+\label{update_8php_f9abb57ca11fefe877843be4211307c4}
+
+
+Perform Drupal 5.x to 6.x updates that are required for \hyperlink{update_8php}{update.php} to function properly.
+
+This function runs when \hyperlink{update_8php}{update.php} is run the first time for 6.x, even before updates are selected or performed. It is important that if updates are not ultimately performed that no changes are made which make it impossible to continue using the prior version. Just adding columns is safe. However, renaming the system.description column to owner is not. Therefore, we add the system.owner column and leave it to system\_\-update\_\-6008() to copy the data from description and remove description. The same for renaming locales\_\-target.locale to locales\_\-target.language, which will be finished by locale\_\-update\_\-6002(). \hypertarget{update_8php_3563d865f4b5eb7e86e9254410438679}{
+\index{update.php@{update.php}!update\_\-task\_\-list@{update\_\-task\_\-list}}
+\index{update\_\-task\_\-list@{update\_\-task\_\-list}!update.php@{update.php}}
+\subsubsection[{update\_\-task\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}update\_\-task\_\-list (\$ {\em active} = {\tt NULL})}}
+\label{update_8php_3563d865f4b5eb7e86e9254410438679}
+
+
+Add the update task list to the current page. 

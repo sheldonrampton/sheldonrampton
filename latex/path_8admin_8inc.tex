@@ -1,0 +1,99 @@
+\hypertarget{path_8admin_8inc}{
+\section{modules/path/path.admin.inc File Reference}
+\label{path_8admin_8inc}\index{modules/path/path.admin.inc@{modules/path/path.admin.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{path_8admin_8inc_08b0593e253b2d3813fc7fb9514b9142}{path\_\-admin\_\-overview} (\$keys=NULL)
+\item 
+\hyperlink{path_8admin_8inc_9956956a3d5f93a0462fd8bdb1ed6154}{path\_\-admin\_\-edit} (\$pid=0)
+\item 
+\hyperlink{group__forms_gbd04af41e3afa56ef5dd7bffdeea7459}{path\_\-admin\_\-form} (\&\$form\_\-state, \$edit=array('src'=$>$ '', 'dst'=$>$ '', 'language'=$>$ '', 'pid'=$>$ NULL))
+\item 
+\hyperlink{path_8admin_8inc_4251683f0b26edf9f54db68f4aa5e0b3}{path\_\-admin\_\-form\_\-validate} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{path_8admin_8inc_9e4a6b6f202fad04dcdb2bbcd800d168}{path\_\-admin\_\-form\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{path_8admin_8inc_52aa64c47584180398592cec25cc53d5}{path\_\-admin\_\-delete\_\-confirm} (\$form\_\-state, \$pid)
+\item 
+\hyperlink{path_8admin_8inc_11e17265eec5e2e31acf2c251f270e78}{path\_\-admin\_\-delete\_\-confirm\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{group__forms_g7596ad03b96a0cf739d4d33a5fb2fd71}{path\_\-admin\_\-filter\_\-form} (\&\$form\_\-state, \$keys= '')
+\item 
+\hyperlink{path_8admin_8inc_250d1de05853ce7562fb1b9530dba273}{path\_\-admin\_\-filter\_\-form\_\-submit\_\-filter} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{path_8admin_8inc_89dc681fab5e84263049933d97823291}{path\_\-admin\_\-filter\_\-form\_\-submit\_\-reset} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{path_8admin_8inc_191749aff70cdc1cf300221d9f641206}{path\_\-admin\_\-filter\_\-get\_\-keys} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Administrative page callbacks for the path module. 
+
+\subsection{Function Documentation}
+\hypertarget{path_8admin_8inc_52aa64c47584180398592cec25cc53d5}{
+\index{path.admin.inc@{path.admin.inc}!path\_\-admin\_\-delete\_\-confirm@{path\_\-admin\_\-delete\_\-confirm}}
+\index{path\_\-admin\_\-delete\_\-confirm@{path\_\-admin\_\-delete\_\-confirm}!path.admin.inc@{path.admin.inc}}
+\subsubsection[{path\_\-admin\_\-delete\_\-confirm}]{\setlength{\rightskip}{0pt plus 5cm}path\_\-admin\_\-delete\_\-confirm (\$ {\em form\_\-state}, \/  \$ {\em pid})}}
+\label{path_8admin_8inc_52aa64c47584180398592cec25cc53d5}
+
+
+Menu callback; confirms deleting an URL alias \hypertarget{path_8admin_8inc_11e17265eec5e2e31acf2c251f270e78}{
+\index{path.admin.inc@{path.admin.inc}!path\_\-admin\_\-delete\_\-confirm\_\-submit@{path\_\-admin\_\-delete\_\-confirm\_\-submit}}
+\index{path\_\-admin\_\-delete\_\-confirm\_\-submit@{path\_\-admin\_\-delete\_\-confirm\_\-submit}!path.admin.inc@{path.admin.inc}}
+\subsubsection[{path\_\-admin\_\-delete\_\-confirm\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}path\_\-admin\_\-delete\_\-confirm\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{path_8admin_8inc_11e17265eec5e2e31acf2c251f270e78}
+
+
+Execute URL alias deletion \hypertarget{path_8admin_8inc_9956956a3d5f93a0462fd8bdb1ed6154}{
+\index{path.admin.inc@{path.admin.inc}!path\_\-admin\_\-edit@{path\_\-admin\_\-edit}}
+\index{path\_\-admin\_\-edit@{path\_\-admin\_\-edit}!path.admin.inc@{path.admin.inc}}
+\subsubsection[{path\_\-admin\_\-edit}]{\setlength{\rightskip}{0pt plus 5cm}path\_\-admin\_\-edit (\$ {\em pid} = {\tt 0})}}
+\label{path_8admin_8inc_9956956a3d5f93a0462fd8bdb1ed6154}
+
+
+Menu callback; handles pages for creating and editing URL aliases. \hypertarget{path_8admin_8inc_250d1de05853ce7562fb1b9530dba273}{
+\index{path.admin.inc@{path.admin.inc}!path\_\-admin\_\-filter\_\-form\_\-submit\_\-filter@{path\_\-admin\_\-filter\_\-form\_\-submit\_\-filter}}
+\index{path\_\-admin\_\-filter\_\-form\_\-submit\_\-filter@{path\_\-admin\_\-filter\_\-form\_\-submit\_\-filter}!path.admin.inc@{path.admin.inc}}
+\subsubsection[{path\_\-admin\_\-filter\_\-form\_\-submit\_\-filter}]{\setlength{\rightskip}{0pt plus 5cm}path\_\-admin\_\-filter\_\-form\_\-submit\_\-filter (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{path_8admin_8inc_250d1de05853ce7562fb1b9530dba273}
+
+
+Process filter form submission when the Filter button is pressed. \hypertarget{path_8admin_8inc_89dc681fab5e84263049933d97823291}{
+\index{path.admin.inc@{path.admin.inc}!path\_\-admin\_\-filter\_\-form\_\-submit\_\-reset@{path\_\-admin\_\-filter\_\-form\_\-submit\_\-reset}}
+\index{path\_\-admin\_\-filter\_\-form\_\-submit\_\-reset@{path\_\-admin\_\-filter\_\-form\_\-submit\_\-reset}!path.admin.inc@{path.admin.inc}}
+\subsubsection[{path\_\-admin\_\-filter\_\-form\_\-submit\_\-reset}]{\setlength{\rightskip}{0pt plus 5cm}path\_\-admin\_\-filter\_\-form\_\-submit\_\-reset (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{path_8admin_8inc_89dc681fab5e84263049933d97823291}
+
+
+Process filter form submission when the Reset button is pressed. \hypertarget{path_8admin_8inc_191749aff70cdc1cf300221d9f641206}{
+\index{path.admin.inc@{path.admin.inc}!path\_\-admin\_\-filter\_\-get\_\-keys@{path\_\-admin\_\-filter\_\-get\_\-keys}}
+\index{path\_\-admin\_\-filter\_\-get\_\-keys@{path\_\-admin\_\-filter\_\-get\_\-keys}!path.admin.inc@{path.admin.inc}}
+\subsubsection[{path\_\-admin\_\-filter\_\-get\_\-keys}]{\setlength{\rightskip}{0pt plus 5cm}path\_\-admin\_\-filter\_\-get\_\-keys ()}}
+\label{path_8admin_8inc_191749aff70cdc1cf300221d9f641206}
+
+
+Helper function for grabbing filter keys. \hypertarget{path_8admin_8inc_9e4a6b6f202fad04dcdb2bbcd800d168}{
+\index{path.admin.inc@{path.admin.inc}!path\_\-admin\_\-form\_\-submit@{path\_\-admin\_\-form\_\-submit}}
+\index{path\_\-admin\_\-form\_\-submit@{path\_\-admin\_\-form\_\-submit}!path.admin.inc@{path.admin.inc}}
+\subsubsection[{path\_\-admin\_\-form\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}path\_\-admin\_\-form\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{path_8admin_8inc_9e4a6b6f202fad04dcdb2bbcd800d168}
+
+
+Save a new URL alias to the database. \hypertarget{path_8admin_8inc_4251683f0b26edf9f54db68f4aa5e0b3}{
+\index{path.admin.inc@{path.admin.inc}!path\_\-admin\_\-form\_\-validate@{path\_\-admin\_\-form\_\-validate}}
+\index{path\_\-admin\_\-form\_\-validate@{path\_\-admin\_\-form\_\-validate}!path.admin.inc@{path.admin.inc}}
+\subsubsection[{path\_\-admin\_\-form\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}path\_\-admin\_\-form\_\-validate (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{path_8admin_8inc_4251683f0b26edf9f54db68f4aa5e0b3}
+
+
+Verify that a new URL alias is valid \hypertarget{path_8admin_8inc_08b0593e253b2d3813fc7fb9514b9142}{
+\index{path.admin.inc@{path.admin.inc}!path\_\-admin\_\-overview@{path\_\-admin\_\-overview}}
+\index{path\_\-admin\_\-overview@{path\_\-admin\_\-overview}!path.admin.inc@{path.admin.inc}}
+\subsubsection[{path\_\-admin\_\-overview}]{\setlength{\rightskip}{0pt plus 5cm}path\_\-admin\_\-overview (\$ {\em keys} = {\tt NULL})}}
+\label{path_8admin_8inc_08b0593e253b2d3813fc7fb9514b9142}
+
+
+Return a listing of all defined URL aliases. When filter key passed, perform a standard search on the given key, and return the list of matching URL aliases. 

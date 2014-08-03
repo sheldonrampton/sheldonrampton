@@ -1,0 +1,34 @@
+\hypertarget{content_8devel_8inc}{
+\section{sites/all/modules/contrib/cck/includes/content.devel.inc File Reference}
+\label{content_8devel_8inc}\index{sites/all/modules/contrib/cck/includes/content.devel.inc@{sites/all/modules/contrib/cck/includes/content.devel.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{content_8devel_8inc_91c3f71a6d3bc64f29e75cd81d9b72d0}{content\_\-generate\_\-fields} (\&\$node, \$field)
+\item 
+\hyperlink{content_8devel_8inc_c8b4eddf0f0ddaa44fc84c2f5a7cffa6}{content\_\-devel\_\-multiple} (\$function, \$node, \$field)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Functions needed for Devel module integration.
+
+TODO This is not really working correctly yet. It is getting called once for every field and then generating every field each time. But if you only process one field at a time the earlier ones lose their values. The current method works to create values, but is overly processor- intensive and needs to be reworked in a way that each field is only processed once and all values are retained. 
+
+\subsection{Function Documentation}
+\hypertarget{content_8devel_8inc_c8b4eddf0f0ddaa44fc84c2f5a7cffa6}{
+\index{content.devel.inc@{content.devel.inc}!content\_\-devel\_\-multiple@{content\_\-devel\_\-multiple}}
+\index{content\_\-devel\_\-multiple@{content\_\-devel\_\-multiple}!content.devel.inc@{content.devel.inc}}
+\subsubsection[{content\_\-devel\_\-multiple}]{\setlength{\rightskip}{0pt plus 5cm}content\_\-devel\_\-multiple (\$ {\em function}, \/  \$ {\em node}, \/  \$ {\em field})}}
+\label{content_8devel_8inc_c8b4eddf0f0ddaa44fc84c2f5a7cffa6}
+
+
+A simple function to return multiple values for fields that use custom multiple value widgets but don't need any other special multiple values handling. This will call the field generation function a random number of times and compile the results into a node array. \hypertarget{content_8devel_8inc_91c3f71a6d3bc64f29e75cd81d9b72d0}{
+\index{content.devel.inc@{content.devel.inc}!content\_\-generate\_\-fields@{content\_\-generate\_\-fields}}
+\index{content\_\-generate\_\-fields@{content\_\-generate\_\-fields}!content.devel.inc@{content.devel.inc}}
+\subsubsection[{content\_\-generate\_\-fields}]{\setlength{\rightskip}{0pt plus 5cm}content\_\-generate\_\-fields (\&\$ {\em node}, \/  \$ {\em field})}}
+\label{content_8devel_8inc_91c3f71a6d3bc64f29e75cd81d9b72d0}
+
+
+Enrich the \$node that is about to be saved with arbitrary information in each of its CCK fields. 

@@ -1,0 +1,96 @@
+\hypertarget{classviews__handler__argument__null}{
+\section{views\_\-handler\_\-argument\_\-null Class Reference}
+\label{classviews__handler__argument__null}\index{views\_\-handler\_\-argument\_\-null@{views\_\-handler\_\-argument\_\-null}}
+}
+Inheritance diagram for views\_\-handler\_\-argument\_\-null::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4cm]{classviews__handler__argument__null}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__handler__argument__null_8ba4c40627657d548ad011a1e203d00f}{option\_\-definition} ()
+\item 
+\hyperlink{classviews__handler__argument__null_414f383de12d08f6e1e5eccb572cf9c8}{options\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__handler__argument__null_82da8fd1448e1ce346aa38d5b6021e05}{default\_\-actions} (\$which=NULL)
+\item 
+\hyperlink{classviews__handler__argument__null_fc4fd62d96247a2ebebbd7e44f0742ce}{validate\_\-argument\_\-basic} (\$arg)
+\item 
+\hyperlink{classviews__handler__argument__null_887c3f8e9f97a75cc9d91a7b685b5f12}{query} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Argument handler that ignores the argument. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__handler__argument__null_82da8fd1448e1ce346aa38d5b6021e05}{
+\index{views\_\-handler\_\-argument\_\-null@{views\_\-handler\_\-argument\_\-null}!default\_\-actions@{default\_\-actions}}
+\index{default\_\-actions@{default\_\-actions}!views_handler_argument_null@{views\_\-handler\_\-argument\_\-null}}
+\subsubsection[{default\_\-actions}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-argument\_\-null::default\_\-actions (\$ {\em which} = {\tt NULL})}}
+\label{classviews__handler__argument__null_82da8fd1448e1ce346aa38d5b6021e05}
+
+
+Override \hyperlink{classviews__handler__argument__null_82da8fd1448e1ce346aa38d5b6021e05}{default\_\-actions()} to remove actions that don't make sense for a null argument. 
+
+Reimplemented from \hyperlink{classviews__handler__argument_bf38ef334b6e18e0aa43e5a829e3ce33}{views\_\-handler\_\-argument}.\hypertarget{classviews__handler__argument__null_8ba4c40627657d548ad011a1e203d00f}{
+\index{views\_\-handler\_\-argument\_\-null@{views\_\-handler\_\-argument\_\-null}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!views_handler_argument_null@{views\_\-handler\_\-argument\_\-null}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-argument\_\-null::option\_\-definition ()}}
+\label{classviews__handler__argument__null_8ba4c40627657d548ad011a1e203d00f}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented from \hyperlink{classviews__handler__argument_117ab20a53624e082e6e32a22d4521cc}{views\_\-handler\_\-argument}.\hypertarget{classviews__handler__argument__null_414f383de12d08f6e1e5eccb572cf9c8}{
+\index{views\_\-handler\_\-argument\_\-null@{views\_\-handler\_\-argument\_\-null}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!views_handler_argument_null@{views\_\-handler\_\-argument\_\-null}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-argument\_\-null::options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler__argument__null_414f383de12d08f6e1e5eccb572cf9c8}
+
+
+Override \hyperlink{classviews__handler__argument__null_414f383de12d08f6e1e5eccb572cf9c8}{options\_\-form()} so that only the relevant options are displayed to the user. 
+
+Reimplemented from \hyperlink{classviews__handler__argument_44f015a0d527983ae6df2689f66b2c24}{views\_\-handler\_\-argument}.\hypertarget{classviews__handler__argument__null_887c3f8e9f97a75cc9d91a7b685b5f12}{
+\index{views\_\-handler\_\-argument\_\-null@{views\_\-handler\_\-argument\_\-null}!query@{query}}
+\index{query@{query}!views_handler_argument_null@{views\_\-handler\_\-argument\_\-null}}
+\subsubsection[{query}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-argument\_\-null::query ()}}
+\label{classviews__handler__argument__null_887c3f8e9f97a75cc9d91a7b685b5f12}
+
+
+Override the behavior of \hyperlink{classviews__handler__argument__null_887c3f8e9f97a75cc9d91a7b685b5f12}{query()} to prevent the query from being changed in any way. 
+
+Reimplemented from \hyperlink{classviews__handler__argument_c4b0ce6704a10f515b2aea2f9e790994}{views\_\-handler\_\-argument}.\hypertarget{classviews__handler__argument__null_fc4fd62d96247a2ebebbd7e44f0742ce}{
+\index{views\_\-handler\_\-argument\_\-null@{views\_\-handler\_\-argument\_\-null}!validate\_\-argument\_\-basic@{validate\_\-argument\_\-basic}}
+\index{validate\_\-argument\_\-basic@{validate\_\-argument\_\-basic}!views_handler_argument_null@{views\_\-handler\_\-argument\_\-null}}
+\subsubsection[{validate\_\-argument\_\-basic}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-argument\_\-null::validate\_\-argument\_\-basic (\$ {\em arg})}}
+\label{classviews__handler__argument__null_fc4fd62d96247a2ebebbd7e44f0742ce}
+
+
+Provide a basic argument validation.
+
+This can be overridden for more complex types; the basic validator only checks to see if the argument is not NULL or is numeric if the definition says it's numeric. 
+
+Reimplemented from \hyperlink{classviews__handler__argument_b2ca8b443e4b53e1ca532faf0f4565f5}{views\_\-handler\_\-argument}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/handlers/views\_\-handler\_\-argument\_\-null.inc\end{CompactItemize}

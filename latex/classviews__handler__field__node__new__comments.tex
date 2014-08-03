@@ -1,0 +1,127 @@
+\hypertarget{classviews__handler__field__node__new__comments}{
+\section{views\_\-handler\_\-field\_\-node\_\-new\_\-comments Class Reference}
+\label{classviews__handler__field__node__new__comments}\index{views\_\-handler\_\-field\_\-node\_\-new\_\-comments@{views\_\-handler\_\-field\_\-node\_\-new\_\-comments}}
+}
+Inheritance diagram for views\_\-handler\_\-field\_\-node\_\-new\_\-comments::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5cm]{classviews__handler__field__node__new__comments}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__handler__field__node__new__comments_8f93300640b88efd9401dc2666fcc64a}{init} (\&\$\hyperlink{classview}{view}, \$options)
+\item 
+\hyperlink{classviews__handler__field__node__new__comments_a496a5184a390c29a60e0dc7d16c23e5}{construct} ()
+\item 
+\hyperlink{classviews__handler__field__node__new__comments_eea2f5790d310ddcaba82c05593e82e7}{option\_\-definition} ()
+\item 
+\hyperlink{classviews__handler__field__node__new__comments_2a209d3acbaa47e781df96bc0ca85156}{options\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__handler__field__node__new__comments_b49cfad0c25d081f0ee70e2e0d0db809}{query} ()
+\item 
+\hypertarget{classviews__handler__field__node__new__comments_a5442b95bd06e86ca293e30ae4ca96bb}{
+\textbf{pre\_\-render} (\&\$values)}
+\label{classviews__handler__field__node__new__comments_a5442b95bd06e86ca293e30ae4ca96bb}
+
+\item 
+\hypertarget{classviews__handler__field__node__new__comments_b8eb504af9ca179f32c2abeb4582bf75}{
+\textbf{render\_\-link} (\$data, \$values)}
+\label{classviews__handler__field__node__new__comments_b8eb504af9ca179f32c2abeb4582bf75}
+
+\item 
+\hyperlink{classviews__handler__field__node__new__comments_6b1e79531ba28eb32e71c7ff2129e82d}{render} (\$values)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Field handler to display the number of new comments 
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__handler__field__node__new__comments_a496a5184a390c29a60e0dc7d16c23e5}{
+\index{views\_\-handler\_\-field\_\-node\_\-new\_\-comments@{views\_\-handler\_\-field\_\-node\_\-new\_\-comments}!construct@{construct}}
+\index{construct@{construct}!views_handler_field_node_new_comments@{views\_\-handler\_\-field\_\-node\_\-new\_\-comments}}
+\subsubsection[{construct}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-node\_\-new\_\-comments::construct ()}}
+\label{classviews__handler__field__node__new__comments_a496a5184a390c29a60e0dc7d16c23e5}
+
+
+Construct a new field handler. 
+
+Reimplemented from \hyperlink{classviews__handler__field_3d50050864c255b71c842972a45d39f6}{views\_\-handler\_\-field}.\hypertarget{classviews__handler__field__node__new__comments_8f93300640b88efd9401dc2666fcc64a}{
+\index{views\_\-handler\_\-field\_\-node\_\-new\_\-comments@{views\_\-handler\_\-field\_\-node\_\-new\_\-comments}!init@{init}}
+\index{init@{init}!views_handler_field_node_new_comments@{views\_\-handler\_\-field\_\-node\_\-new\_\-comments}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-node\_\-new\_\-comments::init (\&\$ {\em view}, \/  \$ {\em options})}}
+\label{classviews__handler__field__node__new__comments_8f93300640b88efd9401dc2666fcc64a}
+
+
+init the handler with necessary data. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$view}]The \$view object this handler is attached to. \item[{\em \$options}]The item from the database; the actual contents of this will vary based upon the type of handler. \end{description}
+\end{Desc}
+
+
+Reimplemented from \hyperlink{classviews__handler__field_7eaaf0fd6fbc57c2955f88b257394d19}{views\_\-handler\_\-field}.\hypertarget{classviews__handler__field__node__new__comments_eea2f5790d310ddcaba82c05593e82e7}{
+\index{views\_\-handler\_\-field\_\-node\_\-new\_\-comments@{views\_\-handler\_\-field\_\-node\_\-new\_\-comments}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!views_handler_field_node_new_comments@{views\_\-handler\_\-field\_\-node\_\-new\_\-comments}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-node\_\-new\_\-comments::option\_\-definition ()}}
+\label{classviews__handler__field__node__new__comments_eea2f5790d310ddcaba82c05593e82e7}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented from \hyperlink{classviews__handler__field__numeric_ab74a55c8b3c564ee995e210a503947b}{views\_\-handler\_\-field\_\-numeric}.\hypertarget{classviews__handler__field__node__new__comments_2a209d3acbaa47e781df96bc0ca85156}{
+\index{views\_\-handler\_\-field\_\-node\_\-new\_\-comments@{views\_\-handler\_\-field\_\-node\_\-new\_\-comments}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!views_handler_field_node_new_comments@{views\_\-handler\_\-field\_\-node\_\-new\_\-comments}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-node\_\-new\_\-comments::options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__handler__field__node__new__comments_2a209d3acbaa47e781df96bc0ca85156}
+
+
+Default options form that provides the label widget that all fields should have. 
+
+Reimplemented from \hyperlink{classviews__handler__field__numeric_e6f81d1896ece64e9450ebc2d60da2fd}{views\_\-handler\_\-field\_\-numeric}.\hypertarget{classviews__handler__field__node__new__comments_b49cfad0c25d081f0ee70e2e0d0db809}{
+\index{views\_\-handler\_\-field\_\-node\_\-new\_\-comments@{views\_\-handler\_\-field\_\-node\_\-new\_\-comments}!query@{query}}
+\index{query@{query}!views_handler_field_node_new_comments@{views\_\-handler\_\-field\_\-node\_\-new\_\-comments}}
+\subsubsection[{query}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-node\_\-new\_\-comments::query ()}}
+\label{classviews__handler__field__node__new__comments_b49cfad0c25d081f0ee70e2e0d0db809}
+
+
+Called to add the field to a query. 
+
+Reimplemented from \hyperlink{classviews__handler__field_4f661f91bcbe80d4a00c30a31456c502}{views\_\-handler\_\-field}.\hypertarget{classviews__handler__field__node__new__comments_6b1e79531ba28eb32e71c7ff2129e82d}{
+\index{views\_\-handler\_\-field\_\-node\_\-new\_\-comments@{views\_\-handler\_\-field\_\-node\_\-new\_\-comments}!render@{render}}
+\index{render@{render}!views_handler_field_node_new_comments@{views\_\-handler\_\-field\_\-node\_\-new\_\-comments}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-handler\_\-field\_\-node\_\-new\_\-comments::render (\$ {\em values})}}
+\label{classviews__handler__field__node__new__comments_6b1e79531ba28eb32e71c7ff2129e82d}
+
+
+Render the field.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$values}]The values retrieved from the database. \end{description}
+\end{Desc}
+
+
+Reimplemented from \hyperlink{classviews__handler__field__numeric_9c76aeef951c45385fd91a22e5e656aa}{views\_\-handler\_\-field\_\-numeric}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/modules/comment/views\_\-handler\_\-field\_\-node\_\-new\_\-comments.inc\end{CompactItemize}

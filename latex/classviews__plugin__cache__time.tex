@@ -1,0 +1,77 @@
+\hypertarget{classviews__plugin__cache__time}{
+\section{views\_\-plugin\_\-cache\_\-time Class Reference}
+\label{classviews__plugin__cache__time}\index{views\_\-plugin\_\-cache\_\-time@{views\_\-plugin\_\-cache\_\-time}}
+}
+Inheritance diagram for views\_\-plugin\_\-cache\_\-time::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4cm]{classviews__plugin__cache__time}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__plugin__cache__time_c89ed6d01b1bd3b9853166b2048ece8e}{option\_\-defaults} (\&\$options)
+\item 
+\hyperlink{classviews__plugin__cache__time_c12d2ba054e232ae1d425d189a2d78d9}{options\_\-form} (\&\$form, \&\$form\_\-state)
+\item 
+\hyperlink{classviews__plugin__cache__time_c8eaac0cd0c620c7583dbbe0481ca62c}{summary\_\-title} ()
+\item 
+\hyperlink{classviews__plugin__cache__time_6e04720a6807812cfb5840ea7b49baaa}{cache\_\-expire} (\$type)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Simple caching of query results for Views displays. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__plugin__cache__time_6e04720a6807812cfb5840ea7b49baaa}{
+\index{views\_\-plugin\_\-cache\_\-time@{views\_\-plugin\_\-cache\_\-time}!cache\_\-expire@{cache\_\-expire}}
+\index{cache\_\-expire@{cache\_\-expire}!views_plugin_cache_time@{views\_\-plugin\_\-cache\_\-time}}
+\subsubsection[{cache\_\-expire}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-cache\_\-time::cache\_\-expire (\$ {\em type})}}
+\label{classviews__plugin__cache__time_6e04720a6807812cfb5840ea7b49baaa}
+
+
+Determine the expiration time of the cache type, or NULL if no expire.
+
+Plugins must override this to implement expiration.
+
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \$type}]The cache type, either 'query', 'result' or 'output'. \end{description}
+\end{Desc}
+
+
+Reimplemented from \hyperlink{classviews__plugin__cache_babefa702965b1e9123a9cdc620f7d52}{views\_\-plugin\_\-cache}.\hypertarget{classviews__plugin__cache__time_c89ed6d01b1bd3b9853166b2048ece8e}{
+\index{views\_\-plugin\_\-cache\_\-time@{views\_\-plugin\_\-cache\_\-time}!option\_\-defaults@{option\_\-defaults}}
+\index{option\_\-defaults@{option\_\-defaults}!views_plugin_cache_time@{views\_\-plugin\_\-cache\_\-time}}
+\subsubsection[{option\_\-defaults}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-cache\_\-time::option\_\-defaults (\&\$ {\em options})}}
+\label{classviews__plugin__cache__time_c89ed6d01b1bd3b9853166b2048ece8e}
+
+
+Retrieve the default options when this is a new access control plugin 
+
+Reimplemented from \hyperlink{classviews__plugin__cache_80e03aac3729dd6c35dbcf817466469e}{views\_\-plugin\_\-cache}.\hypertarget{classviews__plugin__cache__time_c12d2ba054e232ae1d425d189a2d78d9}{
+\index{views\_\-plugin\_\-cache\_\-time@{views\_\-plugin\_\-cache\_\-time}!options\_\-form@{options\_\-form}}
+\index{options\_\-form@{options\_\-form}!views_plugin_cache_time@{views\_\-plugin\_\-cache\_\-time}}
+\subsubsection[{options\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-cache\_\-time::options\_\-form (\&\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{classviews__plugin__cache__time_c12d2ba054e232ae1d425d189a2d78d9}
+
+
+Provide a form to edit options for this plugin. 
+
+Reimplemented from \hyperlink{classviews__plugin_1aaed8da1afd9f45293a37358c159837}{views\_\-plugin}.\hypertarget{classviews__plugin__cache__time_c8eaac0cd0c620c7583dbbe0481ca62c}{
+\index{views\_\-plugin\_\-cache\_\-time@{views\_\-plugin\_\-cache\_\-time}!summary\_\-title@{summary\_\-title}}
+\index{summary\_\-title@{summary\_\-title}!views_plugin_cache_time@{views\_\-plugin\_\-cache\_\-time}}
+\subsubsection[{summary\_\-title}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-plugin\_\-cache\_\-time::summary\_\-title ()}}
+\label{classviews__plugin__cache__time_c8eaac0cd0c620c7583dbbe0481ca62c}
+
+
+Return a string to display as the clickable title for the access control. 
+
+Reimplemented from \hyperlink{classviews__plugin__cache_35e5232e39c8148476328e302787d16b}{views\_\-plugin\_\-cache}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/plugins/views\_\-plugin\_\-cache\_\-time.inc\end{CompactItemize}

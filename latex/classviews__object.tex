@@ -1,0 +1,122 @@
+\hypertarget{classviews__object}{
+\section{views\_\-object Class Reference}
+\label{classviews__object}\index{views\_\-object@{views\_\-object}}
+}
+Inheritance diagram for views\_\-object::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.2069cm]{classviews__object}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__object_b0753d0001c8c9ff98beee696b4516ba}{option\_\-definition} ()
+\item 
+\hyperlink{classviews__object_6583d6be7e59dd1e39056e320ea2c2d4}{construct} ()
+\item 
+\hyperlink{classviews__object_894c01006e88dee15ef867272d22b3ee}{options} ()
+\item 
+\hyperlink{classviews__object_9f3d363b8751bfc945cc29bcf43b44e8}{set\_\-default\_\-options} ()
+\item 
+\hypertarget{classviews__object_e45628aa5cbfbb29fcc17ffaf114a4bd}{
+\textbf{\_\-set\_\-option\_\-defaults} (\&\$storage, \$options, \$level=0)}
+\label{classviews__object_e45628aa5cbfbb29fcc17ffaf114a4bd}
+
+\item 
+\hyperlink{classviews__object_1979b404c08604c5fd45dc5ab6eaebe3}{unpack\_\-options} (\&\$storage, \$options, \$definition=NULL)
+\item 
+\hyperlink{classviews__object_43e41e54bd99737667224d8d3a0bdc7f}{set\_\-definition} (\$definition)
+\item 
+\hypertarget{classviews__object_9ec270afabb44bb0ea3b2128d07cf723}{
+\textbf{destroy} ()}
+\label{classviews__object_9ec270afabb44bb0ea3b2128d07cf723}
+
+\end{CompactItemize}
+\subsection*{Public Attributes}
+\begin{CompactItemize}
+\item 
+\hyperlink{classviews__object_cfeb20d60cb18400bcfdcaa3e6c9835f}{\$options} = array()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Basic definition for many views objects 
+
+\subsection{Member Function Documentation}
+\hypertarget{classviews__object_6583d6be7e59dd1e39056e320ea2c2d4}{
+\index{views\_\-object@{views\_\-object}!construct@{construct}}
+\index{construct@{construct}!views_object@{views\_\-object}}
+\subsubsection[{construct}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-object::construct ()}}
+\label{classviews__object_6583d6be7e59dd1e39056e320ea2c2d4}
+
+
+Views handlers use a special construct function so that we can more easily construct them with variable arguments. 
+
+Reimplemented in \hyperlink{classflag__plugin__argument__validate__flaggability_6eb16f6ded91625eb61ea1af4ac22e9d}{flag\_\-plugin\_\-argument\_\-validate\_\-flaggability}, \hyperlink{classviews__handler__field__node__link__export_1ccad9b1e274a9345a3f167a58e7f997}{views\_\-handler\_\-field\_\-node\_\-link\_\-export}, \hyperlink{classviews__handler__argument_93594a31e95e1a14cead4f038d7b321b}{views\_\-handler\_\-argument}, \hyperlink{classviews__handler__argument__formula_01284402427de2bcfa1b1da5792a2332}{views\_\-handler\_\-argument\_\-formula}, \hyperlink{classviews__handler__field_3d50050864c255b71c842972a45d39f6}{views\_\-handler\_\-field}, \hyperlink{classviews__handler__field__markup_ddc5d6e6130133c1d65d8b96dce502a5}{views\_\-handler\_\-field\_\-markup}, \hyperlink{classviews__handler__filter__boolean__operator_659352df10ef3144359e90247f450ef2}{views\_\-handler\_\-filter\_\-boolean\_\-operator}, \hyperlink{classviews__handler__filter__in__operator_1ec0f531f2c590ef15468ae06c5d0284}{views\_\-handler\_\-filter\_\-in\_\-operator}, \hyperlink{classviews__handler__sort__formula_19d1b335b939c45903815256b5a6e0b8}{views\_\-handler\_\-sort\_\-formula}, \hyperlink{classviews__handler__field__aggregator__category_d85fc06aa0e07281e3989dee8bd0c975}{views\_\-handler\_\-field\_\-aggregator\_\-category}, \hyperlink{classviews__handler__field__aggregator__title__link_bcde91e341b70cc842fec304c7de8376}{views\_\-handler\_\-field\_\-aggregator\_\-title\_\-link}, \hyperlink{classviews__handler__field__comment__link_11c7fcae5ff5f91fa48fc1581115869b}{views\_\-handler\_\-field\_\-comment\_\-link}, \hyperlink{classviews__handler__field__comment__link__edit_b18ca319bec910ab7771786522718d0e}{views\_\-handler\_\-field\_\-comment\_\-link\_\-edit}, \hyperlink{classviews__handler__field__comment__node__link_6a8823310c2ef5c3a70e6a394e45e699}{views\_\-handler\_\-field\_\-comment\_\-node\_\-link}, \hyperlink{classviews__handler__field__node__new__comments_a496a5184a390c29a60e0dc7d16c23e5}{views\_\-handler\_\-field\_\-node\_\-new\_\-comments}, \hyperlink{classviews__handler__field__filter__format__name_eacc272fd36677b2d56063a578e23d3a}{views\_\-handler\_\-field\_\-filter\_\-format\_\-name}, \hyperlink{classviews__handler__argument__locale__group_5dd96da33f67166727c6af6547ccbb7a}{views\_\-handler\_\-argument\_\-locale\_\-group}, \hyperlink{classviews__handler__argument__locale__language_de5af4ea7ada57c6716a6712bbc767c5}{views\_\-handler\_\-argument\_\-locale\_\-language}, \hyperlink{classviews__handler__field__locale__link__edit_6f7db94c0dc07564c1853fd7ef153a6e}{views\_\-handler\_\-field\_\-locale\_\-link\_\-edit}, \hyperlink{classviews__handler__argument__node__created__fulldate_f5b74c0204c9da9285cbe3e07ebed345}{views\_\-handler\_\-argument\_\-node\_\-created\_\-fulldate}, \hyperlink{classviews__handler__argument__node__created__year_a40b34ab0d297264f7378fc995e06bc7}{views\_\-handler\_\-argument\_\-node\_\-created\_\-year}, \hyperlink{classviews__handler__argument__node__created__year__month_9e090c0caf0a169fe3f9a78160896d01}{views\_\-handler\_\-argument\_\-node\_\-created\_\-year\_\-month}, \hyperlink{classviews__handler__argument__node__created__month_0f9b4da1f37a58ca3e416667dc8d9bbb}{views\_\-handler\_\-argument\_\-node\_\-created\_\-month}, \hyperlink{classviews__handler__argument__node__created__day_eb33813a3cc0da642e45a12625da5bde}{views\_\-handler\_\-argument\_\-node\_\-created\_\-day}, \hyperlink{classviews__handler__argument__node__created__week_e90c3f8a723cfa081198075d2fe67c52}{views\_\-handler\_\-argument\_\-node\_\-created\_\-week}, \hyperlink{classviews__handler__argument__node__language_96f52469109294ad151b3ca21c261795}{views\_\-handler\_\-argument\_\-node\_\-language}, \hyperlink{classviews__handler__argument__node__type_46ce861fa61b59bb22f001501c3b2650}{views\_\-handler\_\-argument\_\-node\_\-type}, \hyperlink{classviews__handler__field__node_70404545ab178e131881fa5c5edd4b87}{views\_\-handler\_\-field\_\-node}, \hyperlink{classviews__handler__field__node__link_c3f643ba7dd0435fc03c7bf477907484}{views\_\-handler\_\-field\_\-node\_\-link}, \hyperlink{classviews__handler__field__node__link__delete_e00ce6a645c0545eec54fac96a3a5cf9}{views\_\-handler\_\-field\_\-node\_\-link\_\-delete}, \hyperlink{classviews__handler__field__node__link__edit_8b0caf63f855b91c68b7dd000e2bef9e}{views\_\-handler\_\-field\_\-node\_\-link\_\-edit}, \hyperlink{classviews__handler__field__node__path_9f8110039f0e7f6bb87792c222c7fd06}{views\_\-handler\_\-field\_\-node\_\-path}, \hyperlink{classviews__handler__field__node__revision__link__delete_bec2f48d4827ff818da9c22716ccbd78}{views\_\-handler\_\-field\_\-node\_\-revision\_\-link\_\-delete}, \hyperlink{classviews__handler__field__node__revision__link__revert_51850ebf69c6cdbc043378a538931fc0}{views\_\-handler\_\-field\_\-node\_\-revision\_\-link\_\-revert}, \hyperlink{classviews__handler__field__taxonomy_7020806fbe7b4b7c182c422dd327b0fc}{views\_\-handler\_\-field\_\-taxonomy}, \hyperlink{classviews__handler__argument__node__language_96f52469109294ad151b3ca21c261795}{views\_\-handler\_\-argument\_\-node\_\-language}, \hyperlink{classviews__handler__field__node__link__translate_99c65887da95497fc89023f57d07bc34}{views\_\-handler\_\-field\_\-node\_\-link\_\-translate}, \hyperlink{classviews__handler__field__node__translation__link_834c20607c0a929900b7ace53425847a}{views\_\-handler\_\-field\_\-node\_\-translation\_\-link}, \hyperlink{classviews__handler__field__upload__fid_e651b7971cdda48c84d470f5c86cf492}{views\_\-handler\_\-field\_\-upload\_\-fid}, \hyperlink{classviews__handler__filter__upload__fid_a70c80a1b2c56da91501e496d7c29eb7}{views\_\-handler\_\-filter\_\-upload\_\-fid}, \hyperlink{classviews__handler__field__user__link_3c0e66ff0504b344066db923819456f7}{views\_\-handler\_\-field\_\-user\_\-link}, \hyperlink{classviews__handler__field__user__picture_65f7bf025afe7e60df88cfe9a72eaf4a}{views\_\-handler\_\-field\_\-user\_\-picture}, \hyperlink{classviews__handler__field__user__roles_bf8254566ae390355b35d4593514b033}{views\_\-handler\_\-field\_\-user\_\-roles}, and \hyperlink{classviews__handler__filter__user__current_2e747ed7a374f3c16abd60b5065520a9}{views\_\-handler\_\-filter\_\-user\_\-current}.\hypertarget{classviews__object_b0753d0001c8c9ff98beee696b4516ba}{
+\index{views\_\-object@{views\_\-object}!option\_\-definition@{option\_\-definition}}
+\index{option\_\-definition@{option\_\-definition}!views_object@{views\_\-object}}
+\subsubsection[{option\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-object::option\_\-definition ()}}
+\label{classviews__object_b0753d0001c8c9ff98beee696b4516ba}
+
+
+Information about options for all kinds of purposes will be held here. 
+
+\begin{Code}\begin{verbatim} 'option_name' => array(
+  - 'default' => default value,
+  - 'translatable' => TRUE/FALSE (wrap in t() on export if true),
+  - 'contains' => array of items this contains, with its own defaults, etc.
+      If contains is set, the default will be ignored and assumed to
+      be array()
+
+  ),
+\end{verbatim}
+\end{Code}
+
+ Each option may have any of the following functions:\begin{itemize}
+\item export\_\-option\_\-OPTIONNAME -- Special export handling if necessary.\item translate\_\-option\_\-OPTIONNAME -- Special handling for translating data within the option, if necessary. \end{itemize}
+
+
+Reimplemented in \hyperlink{classfilefield__meta__handler__field__bitrate_678b8ef891e4b4024d22e2b914e20b15}{filefield\_\-meta\_\-handler\_\-field\_\-bitrate}, \hyperlink{classfilefield__meta__handler__field__duration_3bf4ecb0dbaa680516e6e27306771dd4}{filefield\_\-meta\_\-handler\_\-field\_\-duration}, \hyperlink{classfilefield__meta__handler__field__samplerate_007d94cba3f5de5e8e0c78e8b3b1ef5a}{filefield\_\-meta\_\-handler\_\-field\_\-samplerate}, \hyperlink{classfilefield__meta__handler__field__tags_9e809bb733cce1fcd37a59a251c70014}{filefield\_\-meta\_\-handler\_\-field\_\-tags}, \hyperlink{classflag__handler__field__ops_05750d85d477c51b5fa267a75e245d5a}{flag\_\-handler\_\-field\_\-ops}, \hyperlink{classflag__handler__filter__flagged_c840d3d9514263a5645c551c15e1daf2}{flag\_\-handler\_\-filter\_\-flagged}, \hyperlink{classflag__handler__relationship__content_54e7c1074698289ef34aa1cdd31db4bf}{flag\_\-handler\_\-relationship\_\-content}, \hyperlink{classflag__handler__relationship__counts_d72acb678e22ecdaeb867b89f051863e}{flag\_\-handler\_\-relationship\_\-counts}, \hyperlink{classflag__handler__relationship__user__content_2bbdef4e35eff90f4a109390bca06d95}{flag\_\-handler\_\-relationship\_\-user\_\-content}, \hyperlink{classlightbox2__handler__field__lightbox2_641e7b72ac54a1c6baf7fd2bd6424438}{lightbox2\_\-handler\_\-field\_\-lightbox2}, \hyperlink{classtwitter__views__handler__field__xss_b4f2a99eda9640650d83f2b485e9a753}{twitter\_\-views\_\-handler\_\-field\_\-xss}, \hyperlink{classviews__handler__argument_117ab20a53624e082e6e32a22d4521cc}{views\_\-handler\_\-argument}, \hyperlink{classviews__handler__argument__many__to__one_4c28692f87058983cc6a4a4d018d710e}{views\_\-handler\_\-argument\_\-many\_\-to\_\-one}, \hyperlink{classviews__handler__argument__null_8ba4c40627657d548ad011a1e203d00f}{views\_\-handler\_\-argument\_\-null}, \hyperlink{classviews__handler__argument__numeric_d2b7dc4afcf4d444e18752cfbd23ec63}{views\_\-handler\_\-argument\_\-numeric}, \hyperlink{classviews__handler__argument__string_f27f79196cc9e29b2bbc635a896510e1}{views\_\-handler\_\-argument\_\-string}, \hyperlink{classviews__handler__field_64c69a8a3697603f8283405071c25b76}{views\_\-handler\_\-field}, \hyperlink{classviews__handler__field__file__size_d89ade5ab0f9d3db4fe71df7588c0f34}{views\_\-handler\_\-field\_\-file\_\-size}, \hyperlink{classviews__handler__field__boolean_53f8c9215cddcfb3cab33f742a1e6c52}{views\_\-handler\_\-field\_\-boolean}, \hyperlink{classviews__handler__field__custom_4089ad30293453649f51d4a68005bea1}{views\_\-handler\_\-field\_\-custom}, \hyperlink{classviews__handler__field__date_c2c907d5403ef2085b21619293d701c4}{views\_\-handler\_\-field\_\-date}, \hyperlink{classviews__handler__field__numeric_ab74a55c8b3c564ee995e210a503947b}{views\_\-handler\_\-field\_\-numeric}, \hyperlink{classviews__handler__field__prerender__list_3787d1e3974a37c72f71c062eee52b3d}{views\_\-handler\_\-field\_\-prerender\_\-list}, \hyperlink{classviews__handler__field__url_0b9b0b58eb2fbe175927c6e16d9142f9}{views\_\-handler\_\-field\_\-url}, \hyperlink{classviews__handler__filter_053c9173084f1409a92eb390854ec304}{views\_\-handler\_\-filter}, \hyperlink{classviews__handler__filter__boolean__operator_f2103bf9a481a2a2eb4d5c0e6baf2b77}{views\_\-handler\_\-filter\_\-boolean\_\-operator}, \hyperlink{classviews__handler__filter__date_5fdeb678009a8c8c23395826caee3062}{views\_\-handler\_\-filter\_\-date}, \hyperlink{classviews__handler__filter__in__operator_76892fbc2f6206e88d83925e187c4ab7}{views\_\-handler\_\-filter\_\-in\_\-operator}, \hyperlink{classviews__handler__filter__many__to__one_e72e4f1ca6a64f22737671275d8d7a92}{views\_\-handler\_\-filter\_\-many\_\-to\_\-one}, \hyperlink{classviews__handler__filter__numeric_a6c2de73a4c7eda8575e1691b8218b3b}{views\_\-handler\_\-filter\_\-numeric}, \hyperlink{classviews__handler__filter__string_12b7ca0453039900efde58e2c14bf0c8}{views\_\-handler\_\-filter\_\-string}, \hyperlink{classviews__handler__relationship_7e7b7a0056836612aa50a60575a3d549}{views\_\-handler\_\-relationship}, \hyperlink{classviews__handler__sort_f1e8382befe67b9cd07d0bbfa9b98266}{views\_\-handler\_\-sort}, \hyperlink{classviews__handler__sort__date_e46b66b6623fc747b821664b60c98b10}{views\_\-handler\_\-sort\_\-date}, \hyperlink{classviews__handler__field__aggregator__category_ff9a96fdcd4350cbe9323a9801996016}{views\_\-handler\_\-field\_\-aggregator\_\-category}, \hyperlink{classviews__handler__field__aggregator__title__link_92ccca19cd954e8522c77dd75119d42a}{views\_\-handler\_\-field\_\-aggregator\_\-title\_\-link}, \hyperlink{classviews__plugin__row__aggregator__rss_653e8ed46f98dbbc630b58bb7212f617}{views\_\-plugin\_\-row\_\-aggregator\_\-rss}, \hyperlink{classviews__handler__field__comment_73136303aae33442ce2ea156c1262b22}{views\_\-handler\_\-field\_\-comment}, \hyperlink{classviews__handler__field__comment__link_9f066947db597494928b57423b1b7d30}{views\_\-handler\_\-field\_\-comment\_\-link}, \hyperlink{classviews__handler__field__comment__node__link_b4da7290cf0b97776fcc70c4f799e567}{views\_\-handler\_\-field\_\-comment\_\-node\_\-link}, \hyperlink{classviews__handler__field__comment__username_6a9ac27498f1ddce0a8d680d6d33b7c5}{views\_\-handler\_\-field\_\-comment\_\-username}, \hyperlink{classviews__handler__field__ncs__last__comment__name_ef3ee7ac3c57f689148d8909e0a3a3df}{views\_\-handler\_\-field\_\-ncs\_\-last\_\-comment\_\-name}, \hyperlink{classviews__handler__field__node__new__comments_eea2f5790d310ddcaba82c05593e82e7}{views\_\-handler\_\-field\_\-node\_\-new\_\-comments}, \hyperlink{classviews__plugin__row__comment__view_ec46add7efd08b097100a4cc6d60b50e}{views\_\-plugin\_\-row\_\-comment\_\-view}, \hyperlink{classviews__handler__field__contact__link_33c1b1091d417e0e5a1b82bfdc81b83b}{views\_\-handler\_\-field\_\-contact\_\-link}, \hyperlink{classviews__handler__field__locale__link__edit_b96dd9ff121303f96d4f9cdbbb3ca906}{views\_\-handler\_\-field\_\-locale\_\-link\_\-edit}, \hyperlink{classviews__handler__field__history__user__timestamp_2cedbce8f02c9c051606c89e6d349e6b}{views\_\-handler\_\-field\_\-history\_\-user\_\-timestamp}, \hyperlink{classviews__handler__field__node_c2daf04495ea792ad0dd60c864f3a77e}{views\_\-handler\_\-field\_\-node}, \hyperlink{classviews__handler__field__node__link_68b2956fb07cb821f9f9ece53ddf7a20}{views\_\-handler\_\-field\_\-node\_\-link}, \hyperlink{classviews__handler__field__node__path_90ca65d2d782d1f58ceee0c9d53f4d23}{views\_\-handler\_\-field\_\-node\_\-path}, \hyperlink{classviews__handler__field__node__type_4e50103a014bff96644915cb0c8d33fd}{views\_\-handler\_\-field\_\-node\_\-type}, \hyperlink{classviews__plugin__row__node__rss_160237bd0d2f6ee0e9c22cf7d08d8082}{views\_\-plugin\_\-row\_\-node\_\-rss}, \hyperlink{classviews__plugin__row__node__view_f489a0ff40c6b85382d9611cce0c509b}{views\_\-plugin\_\-row\_\-node\_\-view}, \hyperlink{classviews__handler__field__search__score_ac88046a858aad74c178cd019b2f236b}{views\_\-handler\_\-field\_\-search\_\-score}, \hyperlink{classviews__handler__filter__search_f41b61b9dc7a676fbe0110c1d7ffcfdb}{views\_\-handler\_\-filter\_\-search}, \hyperlink{classviews__plugin__row__search__view_c0117a0bbff00e4833a081abb564dbf0}{views\_\-plugin\_\-row\_\-search\_\-view}, \hyperlink{classviews__handler__field__accesslog__path_11c091160e8e55c604aeb1241581f748}{views\_\-handler\_\-field\_\-accesslog\_\-path}, \hyperlink{classviews__handler__field__file_0bf24a6e9139daa5206f209b39aea824}{views\_\-handler\_\-field\_\-file}, \hyperlink{classviews__handler__argument__term__node__tid_aa442cbd37f901be13e6db17f61e8d02}{views\_\-handler\_\-argument\_\-term\_\-node\_\-tid}, \hyperlink{classviews__handler__argument__term__node__tid__depth_e285fe11521bfb9a6cd4f79b498a28a7}{views\_\-handler\_\-argument\_\-term\_\-node\_\-tid\_\-depth}, \hyperlink{classviews__handler__field__taxonomy_c32837e44167ccaf8901f9782298c75b}{views\_\-handler\_\-field\_\-taxonomy}, \hyperlink{classviews__handler__field__term__node__tid_6c6e6369b1897f4f6643a609b1a802a5}{views\_\-handler\_\-field\_\-term\_\-node\_\-tid}, \hyperlink{classviews__handler__filter__term__node__tid_e81fb582295a2c8871b32bbf8b3ea915}{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid}, \hyperlink{classviews__handler__filter__term__node__tid__depth_e0822209bc155abaec93555bbeb93e78}{views\_\-handler\_\-filter\_\-term\_\-node\_\-tid\_\-depth}, \hyperlink{classviews__handler__filter__node__tnid_ab1f73e93ba261fff47a93a698612e25}{views\_\-handler\_\-filter\_\-node\_\-tnid}, \hyperlink{classviews__handler__relationship__translation_0bf8fe73b167b63fd5ac38bd5e8b1efe}{views\_\-handler\_\-relationship\_\-translation}, \hyperlink{classviews__handler__field__upload__description_506091a767dacc29b687de0f0802933b}{views\_\-handler\_\-field\_\-upload\_\-description}, \hyperlink{classviews__handler__field__upload__fid_740ca6ec94e724e23023400ddbeb5978}{views\_\-handler\_\-field\_\-upload\_\-fid}, \hyperlink{classviews__handler__field__user_545d229a041bf920b95ac59d89b1e4b2}{views\_\-handler\_\-field\_\-user}, \hyperlink{classviews__handler__field__user__link_61509d4fd4bc1c98a52e550c56d42b5d}{views\_\-handler\_\-field\_\-user\_\-link}, \hyperlink{classviews__handler__field__user__mail_747c64da5c9bdbd55c7a8908779db5a1}{views\_\-handler\_\-field\_\-user\_\-mail}, \hyperlink{classviews__handler__field__user__name_11092f8f1854e14f245b644a2fed8434}{views\_\-handler\_\-field\_\-user\_\-name}, \hyperlink{classviews__plugin__display_6eb433a3ccd4225c11b54955d86e2e01}{views\_\-plugin\_\-display}, \hyperlink{classviews__plugin__display__attachment_fd104a6bde92eab82cd1a8e1b654179f}{views\_\-plugin\_\-display\_\-attachment}, \hyperlink{classviews__plugin__display__block_aa7cd040bd224b13bb6cada38451b26b}{views\_\-plugin\_\-display\_\-block}, \hyperlink{classviews__plugin__display__feed_9f737ab801100dafa8f1020c0737b598}{views\_\-plugin\_\-display\_\-feed}, \hyperlink{classviews__plugin__display__page_19b25a55cb43755a944d1f37c0180ff4}{views\_\-plugin\_\-display\_\-page}, \hyperlink{classviews__plugin__row_ad6be1492eae8605e9aff37da9f19337}{views\_\-plugin\_\-row}, \hyperlink{classviews__plugin__row__fields_85538eaa61f4a19de68a693876137934}{views\_\-plugin\_\-row\_\-fields}, \hyperlink{classviews__plugin__style_95b6f2eadf403ff36f1ff2860294b3c2}{views\_\-plugin\_\-style}, \hyperlink{classviews__plugin__style__grid_f20dafba4e79fdb15ff8553d2733552b}{views\_\-plugin\_\-style\_\-grid}, \hyperlink{classviews__plugin__style__jump__menu_6e27e595ed6a3115705f13b76367b637}{views\_\-plugin\_\-style\_\-jump\_\-menu}, \hyperlink{classviews__plugin__style__list_a95419c3a9f3a6db10f6c6858e5c5bd1}{views\_\-plugin\_\-style\_\-list}, \hyperlink{classviews__plugin__style__rss_b65464713d5256b32dbb4eea3e6d76ed}{views\_\-plugin\_\-style\_\-rss}, \hyperlink{classviews__plugin__style__summary_7b016dd1af2076e3cf3199cede83d953}{views\_\-plugin\_\-style\_\-summary}, \hyperlink{classviews__plugin__style__summary__jump__menu_f8b62f282687c9670850c990c376f2c4}{views\_\-plugin\_\-style\_\-summary\_\-jump\_\-menu}, \hyperlink{classviews__plugin__style__summary__unformatted_3bc8b50051e4681461dedb8099f54c24}{views\_\-plugin\_\-style\_\-summary\_\-unformatted}, and \hyperlink{classviews__plugin__style__table_e3d77e484f3e8ff4e2df07dfcfc44aab}{views\_\-plugin\_\-style\_\-table}.\hypertarget{classviews__object_894c01006e88dee15ef867272d22b3ee}{
+\index{views\_\-object@{views\_\-object}!options@{options}}
+\index{options@{options}!views_object@{views\_\-object}}
+\subsubsection[{options}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-object::options ()}}
+\label{classviews__object_894c01006e88dee15ef867272d22b3ee}
+
+
+Set default options on this object. Called by the constructor in a complex chain to deal with backward compatibility. \hypertarget{classviews__object_9f3d363b8751bfc945cc29bcf43b44e8}{
+\index{views\_\-object@{views\_\-object}!set\_\-default\_\-options@{set\_\-default\_\-options}}
+\index{set\_\-default\_\-options@{set\_\-default\_\-options}!views_object@{views\_\-object}}
+\subsubsection[{set\_\-default\_\-options}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-object::set\_\-default\_\-options ()}}
+\label{classviews__object_9f3d363b8751bfc945cc29bcf43b44e8}
+
+
+Set default options. For backward compatibility, it sends the options array; this is a feature that will likely disappear at some point. \hypertarget{classviews__object_43e41e54bd99737667224d8d3a0bdc7f}{
+\index{views\_\-object@{views\_\-object}!set\_\-definition@{set\_\-definition}}
+\index{set\_\-definition@{set\_\-definition}!views_object@{views\_\-object}}
+\subsubsection[{set\_\-definition}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-object::set\_\-definition (\$ {\em definition})}}
+\label{classviews__object_43e41e54bd99737667224d8d3a0bdc7f}
+
+
+Let the handler know what its full definition is. \hypertarget{classviews__object_1979b404c08604c5fd45dc5ab6eaebe3}{
+\index{views\_\-object@{views\_\-object}!unpack\_\-options@{unpack\_\-options}}
+\index{unpack\_\-options@{unpack\_\-options}!views_object@{views\_\-object}}
+\subsubsection[{unpack\_\-options}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-object::unpack\_\-options (\&\$ {\em storage}, \/  \$ {\em options}, \/  \$ {\em definition} = {\tt NULL})}}
+\label{classviews__object_1979b404c08604c5fd45dc5ab6eaebe3}
+
+
+Unpack options over our existing defaults, drilling down into arrays so that defaults don't get totally blown away. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classviews__object_cfeb20d60cb18400bcfdcaa3e6c9835f}{
+\index{views\_\-object@{views\_\-object}!\$options@{\$options}}
+\index{\$options@{\$options}!views_object@{views\_\-object}}
+\subsubsection[{\$options}]{\setlength{\rightskip}{0pt plus 5cm}views\_\-object::\$options = array()}}
+\label{classviews__object_cfeb20d60cb18400bcfdcaa3e6c9835f}
+
+
+Except for displays, options for the object will be held here. 
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+sites/all/modules/contrib/views/includes/\hyperlink{base_8inc}{base.inc}\end{CompactItemize}

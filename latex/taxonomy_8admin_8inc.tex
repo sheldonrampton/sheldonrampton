@@ -1,0 +1,164 @@
+\hypertarget{taxonomy_8admin_8inc}{
+\section{modules/taxonomy/taxonomy.admin.inc File Reference}
+\label{taxonomy_8admin_8inc}\index{modules/taxonomy/taxonomy.admin.inc@{modules/taxonomy/taxonomy.admin.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{group__forms_g1540d991eabc53c2c1af6629455035ff}{taxonomy\_\-overview\_\-vocabularies} ()
+\item 
+\hyperlink{taxonomy_8admin_8inc_2c0c58c11c7f85fa38bab165004f98e2}{taxonomy\_\-overview\_\-vocabularies\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{group__themeable_gc13e7fb950bcb43c38a2bf373d5ea348}{theme\_\-taxonomy\_\-overview\_\-vocabularies} (\$form)
+\item 
+\hyperlink{group__forms_gba5c105f6b3e1a7e85f65fdaa067e0eb}{taxonomy\_\-form\_\-vocabulary} (\&\$form\_\-state, \$edit=array())
+\item 
+\hyperlink{taxonomy_8admin_8inc_5fe8d2d826372a29a068cd2c39e38636}{taxonomy\_\-form\_\-vocabulary\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{taxonomy_8admin_8inc_0aad51b0e07b0eed3689a78edc2b17cb}{taxonomy\_\-admin\_\-vocabulary\_\-edit} (\$vocabulary)
+\item 
+\hyperlink{taxonomy_8admin_8inc_120bfb94c940af0d98d447e47aec0c0b}{taxonomy\_\-admin\_\-term\_\-edit} (\$tid)
+\item 
+\hyperlink{group__forms_g27f78faeeac394ba8359e22501c5b333}{taxonomy\_\-overview\_\-terms} (\&\$form\_\-state, \$vocabulary)
+\item 
+\hyperlink{taxonomy_8admin_8inc_fb672457712a0a215cdeaa91748b4517}{taxonomy\_\-overview\_\-terms\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{group__themeable_ga6eed299548007f120519d1e353b811f}{theme\_\-taxonomy\_\-overview\_\-terms} (\$form)
+\item 
+\hyperlink{taxonomy_8admin_8inc_fc43b3075dc456fcc785d0aa4f65bd3d}{taxonomy\_\-add\_\-term\_\-page} (\$vocabulary)
+\item 
+\hyperlink{group__forms_gc57918eae4868ce5e1c8d62c995ae295}{taxonomy\_\-form\_\-term} (\&\$form\_\-state, \$vocabulary, \$edit=array())
+\item 
+\hyperlink{taxonomy_8admin_8inc_b8a69acec84eb6217604c066b33deab1}{taxonomy\_\-form\_\-term\_\-validate} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{taxonomy_8admin_8inc_47414380bfb0caa70eb3d35a7e153ac0}{taxonomy\_\-form\_\-term\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{group__forms_gc82e5e08d7d2fb7ce069411512dbc524}{taxonomy\_\-term\_\-confirm\_\-parents} (\&\$form\_\-state, \$vocabulary)
+\item 
+\hyperlink{group__forms_g409c50f3f4727ec2856079e7abb01eba}{taxonomy\_\-term\_\-confirm\_\-delete} (\&\$form\_\-state, \$tid)
+\item 
+\hyperlink{taxonomy_8admin_8inc_b96dee24a79d706b4b28d26ceac5e946}{taxonomy\_\-term\_\-confirm\_\-delete\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{group__forms_gc5c29e41ed1c0a05b4678e69aff1d947}{taxonomy\_\-vocabulary\_\-confirm\_\-delete} (\&\$form\_\-state, \$vid)
+\item 
+\hyperlink{taxonomy_8admin_8inc_37c587803cac8e509913d1374e897040}{taxonomy\_\-vocabulary\_\-confirm\_\-delete\_\-submit} (\$form, \&\$form\_\-state)
+\item 
+\hyperlink{group__forms_g439f9d499952ff3647ffe0c660d0bd65}{taxonomy\_\-vocabulary\_\-confirm\_\-reset\_\-alphabetical} (\&\$form\_\-state, \$vid)
+\item 
+\hyperlink{taxonomy_8admin_8inc_682c533b8249e033ce7e612550c9b68d}{taxonomy\_\-vocabulary\_\-confirm\_\-reset\_\-alphabetical\_\-submit} (\$form, \&\$form\_\-state)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Administrative page callbacks for the taxonomy module. 
+
+\subsection{Function Documentation}
+\hypertarget{taxonomy_8admin_8inc_fc43b3075dc456fcc785d0aa4f65bd3d}{
+\index{taxonomy.admin.inc@{taxonomy.admin.inc}!taxonomy\_\-add\_\-term\_\-page@{taxonomy\_\-add\_\-term\_\-page}}
+\index{taxonomy\_\-add\_\-term\_\-page@{taxonomy\_\-add\_\-term\_\-page}!taxonomy.admin.inc@{taxonomy.admin.inc}}
+\subsubsection[{taxonomy\_\-add\_\-term\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}taxonomy\_\-add\_\-term\_\-page (\$ {\em vocabulary})}}
+\label{taxonomy_8admin_8inc_fc43b3075dc456fcc785d0aa4f65bd3d}
+
+
+Menu callback; return the edit form for a new term after setting the title. \hypertarget{taxonomy_8admin_8inc_120bfb94c940af0d98d447e47aec0c0b}{
+\index{taxonomy.admin.inc@{taxonomy.admin.inc}!taxonomy\_\-admin\_\-term\_\-edit@{taxonomy\_\-admin\_\-term\_\-edit}}
+\index{taxonomy\_\-admin\_\-term\_\-edit@{taxonomy\_\-admin\_\-term\_\-edit}!taxonomy.admin.inc@{taxonomy.admin.inc}}
+\subsubsection[{taxonomy\_\-admin\_\-term\_\-edit}]{\setlength{\rightskip}{0pt plus 5cm}taxonomy\_\-admin\_\-term\_\-edit (\$ {\em tid})}}
+\label{taxonomy_8admin_8inc_120bfb94c940af0d98d447e47aec0c0b}
+
+
+Page to edit a vocabulary term. \hypertarget{taxonomy_8admin_8inc_0aad51b0e07b0eed3689a78edc2b17cb}{
+\index{taxonomy.admin.inc@{taxonomy.admin.inc}!taxonomy\_\-admin\_\-vocabulary\_\-edit@{taxonomy\_\-admin\_\-vocabulary\_\-edit}}
+\index{taxonomy\_\-admin\_\-vocabulary\_\-edit@{taxonomy\_\-admin\_\-vocabulary\_\-edit}!taxonomy.admin.inc@{taxonomy.admin.inc}}
+\subsubsection[{taxonomy\_\-admin\_\-vocabulary\_\-edit}]{\setlength{\rightskip}{0pt plus 5cm}taxonomy\_\-admin\_\-vocabulary\_\-edit (\$ {\em vocabulary})}}
+\label{taxonomy_8admin_8inc_0aad51b0e07b0eed3689a78edc2b17cb}
+
+
+Page to edit a vocabulary. \hypertarget{taxonomy_8admin_8inc_47414380bfb0caa70eb3d35a7e153ac0}{
+\index{taxonomy.admin.inc@{taxonomy.admin.inc}!taxonomy\_\-form\_\-term\_\-submit@{taxonomy\_\-form\_\-term\_\-submit}}
+\index{taxonomy\_\-form\_\-term\_\-submit@{taxonomy\_\-form\_\-term\_\-submit}!taxonomy.admin.inc@{taxonomy.admin.inc}}
+\subsubsection[{taxonomy\_\-form\_\-term\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}taxonomy\_\-form\_\-term\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{taxonomy_8admin_8inc_47414380bfb0caa70eb3d35a7e153ac0}
+
+
+Submit handler to insert or update a term.
+
+\begin{Desc}
+\item[See also:]\hyperlink{group__forms_gc57918eae4868ce5e1c8d62c995ae295}{taxonomy\_\-form\_\-term()} \end{Desc}
+\hypertarget{taxonomy_8admin_8inc_b8a69acec84eb6217604c066b33deab1}{
+\index{taxonomy.admin.inc@{taxonomy.admin.inc}!taxonomy\_\-form\_\-term\_\-validate@{taxonomy\_\-form\_\-term\_\-validate}}
+\index{taxonomy\_\-form\_\-term\_\-validate@{taxonomy\_\-form\_\-term\_\-validate}!taxonomy.admin.inc@{taxonomy.admin.inc}}
+\subsubsection[{taxonomy\_\-form\_\-term\_\-validate}]{\setlength{\rightskip}{0pt plus 5cm}taxonomy\_\-form\_\-term\_\-validate (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{taxonomy_8admin_8inc_b8a69acec84eb6217604c066b33deab1}
+
+
+Validation handler for the term edit form. Ensure numeric weight values.
+
+\begin{Desc}
+\item[See also:]\hyperlink{group__forms_gc57918eae4868ce5e1c8d62c995ae295}{taxonomy\_\-form\_\-term()} \end{Desc}
+\hypertarget{taxonomy_8admin_8inc_5fe8d2d826372a29a068cd2c39e38636}{
+\index{taxonomy.admin.inc@{taxonomy.admin.inc}!taxonomy\_\-form\_\-vocabulary\_\-submit@{taxonomy\_\-form\_\-vocabulary\_\-submit}}
+\index{taxonomy\_\-form\_\-vocabulary\_\-submit@{taxonomy\_\-form\_\-vocabulary\_\-submit}!taxonomy.admin.inc@{taxonomy.admin.inc}}
+\subsubsection[{taxonomy\_\-form\_\-vocabulary\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}taxonomy\_\-form\_\-vocabulary\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{taxonomy_8admin_8inc_5fe8d2d826372a29a068cd2c39e38636}
+
+
+Accept the form submission for a vocabulary and save the results. \hypertarget{taxonomy_8admin_8inc_fb672457712a0a215cdeaa91748b4517}{
+\index{taxonomy.admin.inc@{taxonomy.admin.inc}!taxonomy\_\-overview\_\-terms\_\-submit@{taxonomy\_\-overview\_\-terms\_\-submit}}
+\index{taxonomy\_\-overview\_\-terms\_\-submit@{taxonomy\_\-overview\_\-terms\_\-submit}!taxonomy.admin.inc@{taxonomy.admin.inc}}
+\subsubsection[{taxonomy\_\-overview\_\-terms\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}taxonomy\_\-overview\_\-terms\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{taxonomy_8admin_8inc_fb672457712a0a215cdeaa91748b4517}
+
+
+Submit handler for terms overview form.
+
+Rather than using a textfield or weight field, this form depends entirely upon the order of form elements on the page to determine new weights.
+
+Because there might be hundreds or thousands of taxonomy terms that need to be ordered, terms are weighted from 0 to the number of terms in the vocabulary, rather than the standard -10 to 10 scale. Numbers are sorted lowest to highest, but are not necessarily sequential. Numbers may be skipped when a term has children so that reordering is minimal when a child is added or removed from a term.
+
+\begin{Desc}
+\item[See also:]\hyperlink{group__forms_g27f78faeeac394ba8359e22501c5b333}{taxonomy\_\-overview\_\-terms()} \end{Desc}
+\hypertarget{taxonomy_8admin_8inc_2c0c58c11c7f85fa38bab165004f98e2}{
+\index{taxonomy.admin.inc@{taxonomy.admin.inc}!taxonomy\_\-overview\_\-vocabularies\_\-submit@{taxonomy\_\-overview\_\-vocabularies\_\-submit}}
+\index{taxonomy\_\-overview\_\-vocabularies\_\-submit@{taxonomy\_\-overview\_\-vocabularies\_\-submit}!taxonomy.admin.inc@{taxonomy.admin.inc}}
+\subsubsection[{taxonomy\_\-overview\_\-vocabularies\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}taxonomy\_\-overview\_\-vocabularies\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{taxonomy_8admin_8inc_2c0c58c11c7f85fa38bab165004f98e2}
+
+
+Submit handler for vocabularies overview. Updates changed vocabulary weights.
+
+\begin{Desc}
+\item[See also:]\hyperlink{group__forms_g1540d991eabc53c2c1af6629455035ff}{taxonomy\_\-overview\_\-vocabularies()} \end{Desc}
+\hypertarget{taxonomy_8admin_8inc_b96dee24a79d706b4b28d26ceac5e946}{
+\index{taxonomy.admin.inc@{taxonomy.admin.inc}!taxonomy\_\-term\_\-confirm\_\-delete\_\-submit@{taxonomy\_\-term\_\-confirm\_\-delete\_\-submit}}
+\index{taxonomy\_\-term\_\-confirm\_\-delete\_\-submit@{taxonomy\_\-term\_\-confirm\_\-delete\_\-submit}!taxonomy.admin.inc@{taxonomy.admin.inc}}
+\subsubsection[{taxonomy\_\-term\_\-confirm\_\-delete\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}taxonomy\_\-term\_\-confirm\_\-delete\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{taxonomy_8admin_8inc_b96dee24a79d706b4b28d26ceac5e946}
+
+
+Submit handler to delete a term after confirmation.
+
+\begin{Desc}
+\item[See also:]\hyperlink{group__forms_g409c50f3f4727ec2856079e7abb01eba}{taxonomy\_\-term\_\-confirm\_\-delete()} \end{Desc}
+\hypertarget{taxonomy_8admin_8inc_37c587803cac8e509913d1374e897040}{
+\index{taxonomy.admin.inc@{taxonomy.admin.inc}!taxonomy\_\-vocabulary\_\-confirm\_\-delete\_\-submit@{taxonomy\_\-vocabulary\_\-confirm\_\-delete\_\-submit}}
+\index{taxonomy\_\-vocabulary\_\-confirm\_\-delete\_\-submit@{taxonomy\_\-vocabulary\_\-confirm\_\-delete\_\-submit}!taxonomy.admin.inc@{taxonomy.admin.inc}}
+\subsubsection[{taxonomy\_\-vocabulary\_\-confirm\_\-delete\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}taxonomy\_\-vocabulary\_\-confirm\_\-delete\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{taxonomy_8admin_8inc_37c587803cac8e509913d1374e897040}
+
+
+Submit handler to delete a vocabulary after confirmation.
+
+\begin{Desc}
+\item[See also:]\hyperlink{group__forms_gc5c29e41ed1c0a05b4678e69aff1d947}{taxonomy\_\-vocabulary\_\-confirm\_\-delete()} \end{Desc}
+\hypertarget{taxonomy_8admin_8inc_682c533b8249e033ce7e612550c9b68d}{
+\index{taxonomy.admin.inc@{taxonomy.admin.inc}!taxonomy\_\-vocabulary\_\-confirm\_\-reset\_\-alphabetical\_\-submit@{taxonomy\_\-vocabulary\_\-confirm\_\-reset\_\-alphabetical\_\-submit}}
+\index{taxonomy\_\-vocabulary\_\-confirm\_\-reset\_\-alphabetical\_\-submit@{taxonomy\_\-vocabulary\_\-confirm\_\-reset\_\-alphabetical\_\-submit}!taxonomy.admin.inc@{taxonomy.admin.inc}}
+\subsubsection[{taxonomy\_\-vocabulary\_\-confirm\_\-reset\_\-alphabetical\_\-submit}]{\setlength{\rightskip}{0pt plus 5cm}taxonomy\_\-vocabulary\_\-confirm\_\-reset\_\-alphabetical\_\-submit (\$ {\em form}, \/  \&\$ {\em form\_\-state})}}
+\label{taxonomy_8admin_8inc_682c533b8249e033ce7e612550c9b68d}
+
+
+Submit handler to reset a vocabulary to alphabetical order after confirmation.
+
+\begin{Desc}
+\item[See also:]\hyperlink{group__forms_g439f9d499952ff3647ffe0c660d0bd65}{taxonomy\_\-vocabulary\_\-confirm\_\-reset\_\-alphabetical()} \end{Desc}

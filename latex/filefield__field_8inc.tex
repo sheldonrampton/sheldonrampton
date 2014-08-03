@@ -1,0 +1,113 @@
+\hypertarget{filefield__field_8inc}{
+\section{sites/all/modules/contrib/filefield/filefield\_\-field.inc File Reference}
+\label{filefield__field_8inc}\index{sites/all/modules/contrib/filefield/filefield\_\-field.inc@{sites/all/modules/contrib/filefield/filefield\_\-field.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{filefield__field_8inc_469d1a37efae31ac9b3ce301d23b5891}{filefield\_\-field\_\-settings\_\-form} (\$field)
+\item 
+\hyperlink{filefield__field_8inc_3140908db83ca6d2ec9d8cdabbea3941}{filefield\_\-field\_\-settings\_\-save} (\$field)
+\item 
+\hyperlink{filefield__field_8inc_3a17fa6008257cf098c9b3ef2a9a2435}{filefield\_\-field\_\-settings\_\-database\_\-columns} (\$field)
+\item 
+\hyperlink{filefield__field_8inc_735b23726b4588e308eac69da0533a19}{filefield\_\-field\_\-settings\_\-views\_\-data} (\$field)
+\item 
+\hyperlink{filefield__field_8inc_429bfccbecd02b27fb1760a160abeb5b}{filefield\_\-field\_\-load} (\$node, \$field, \&\$items, \$teaser, \$page)
+\item 
+\hyperlink{filefield__field_8inc_3f9f2f89477b183d503f9eb59c0551c5}{filefield\_\-field\_\-insert} (\$node, \$field, \&\$items, \$teaser, \$page)
+\item 
+\hyperlink{filefield__field_8inc_abf42e1b91a512b7155b5f288988a430}{filefield\_\-field\_\-update} (\$node, \$field, \&\$items, \$teaser, \$page)
+\item 
+\hyperlink{filefield__field_8inc_26f46f57f945be430fa7e9deace57943}{filefield\_\-field\_\-delete\_\-revision} (\$node, \$field, \&\$items, \$teaser, \$page)
+\item 
+\hyperlink{filefield__field_8inc_4b835916ff7d11082a0b5fc9e6622779}{filefield\_\-field\_\-delete} (\$node, \$field, \&\$items, \$teaser, \$page)
+\item 
+\hyperlink{filefield__field_8inc_1768f079c1bbd55733755f2f43baf815}{filefield\_\-field\_\-delete\_\-file} (\$file, \$field)
+\item 
+\hyperlink{filefield__field_8inc_11dd9e9ff671f58111cb7cbc79129819}{filefield\_\-field\_\-sanitize} (\$node, \$field, \&\$items, \$teaser, \$page)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+FileField CCK field hooks and callbacks. 
+
+\subsection{Function Documentation}
+\hypertarget{filefield__field_8inc_4b835916ff7d11082a0b5fc9e6622779}{
+\index{filefield\_\-field.inc@{filefield\_\-field.inc}!filefield\_\-field\_\-delete@{filefield\_\-field\_\-delete}}
+\index{filefield\_\-field\_\-delete@{filefield\_\-field\_\-delete}!filefield_field.inc@{filefield\_\-field.inc}}
+\subsubsection[{filefield\_\-field\_\-delete}]{\setlength{\rightskip}{0pt plus 5cm}filefield\_\-field\_\-delete (\$ {\em node}, \/  \$ {\em field}, \/  \&\$ {\em items}, \/  \$ {\em teaser}, \/  \$ {\em page})}}
+\label{filefield__field_8inc_4b835916ff7d11082a0b5fc9e6622779}
+
+
+Implementation of CCK's hook\_\-field(\$op = 'delete'). \hypertarget{filefield__field_8inc_1768f079c1bbd55733755f2f43baf815}{
+\index{filefield\_\-field.inc@{filefield\_\-field.inc}!filefield\_\-field\_\-delete\_\-file@{filefield\_\-field\_\-delete\_\-file}}
+\index{filefield\_\-field\_\-delete\_\-file@{filefield\_\-field\_\-delete\_\-file}!filefield_field.inc@{filefield\_\-field.inc}}
+\subsubsection[{filefield\_\-field\_\-delete\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}filefield\_\-field\_\-delete\_\-file (\$ {\em file}, \/  \$ {\em field})}}
+\label{filefield__field_8inc_1768f079c1bbd55733755f2f43baf815}
+
+
+Check that FileField controls a file before attempting to deleting it. \hypertarget{filefield__field_8inc_26f46f57f945be430fa7e9deace57943}{
+\index{filefield\_\-field.inc@{filefield\_\-field.inc}!filefield\_\-field\_\-delete\_\-revision@{filefield\_\-field\_\-delete\_\-revision}}
+\index{filefield\_\-field\_\-delete\_\-revision@{filefield\_\-field\_\-delete\_\-revision}!filefield_field.inc@{filefield\_\-field.inc}}
+\subsubsection[{filefield\_\-field\_\-delete\_\-revision}]{\setlength{\rightskip}{0pt plus 5cm}filefield\_\-field\_\-delete\_\-revision (\$ {\em node}, \/  \$ {\em field}, \/  \&\$ {\em items}, \/  \$ {\em teaser}, \/  \$ {\em page})}}
+\label{filefield__field_8inc_26f46f57f945be430fa7e9deace57943}
+
+
+Implementation of CCK's hook\_\-field(\$op = 'delete\_\-revision'). \hypertarget{filefield__field_8inc_3f9f2f89477b183d503f9eb59c0551c5}{
+\index{filefield\_\-field.inc@{filefield\_\-field.inc}!filefield\_\-field\_\-insert@{filefield\_\-field\_\-insert}}
+\index{filefield\_\-field\_\-insert@{filefield\_\-field\_\-insert}!filefield_field.inc@{filefield\_\-field.inc}}
+\subsubsection[{filefield\_\-field\_\-insert}]{\setlength{\rightskip}{0pt plus 5cm}filefield\_\-field\_\-insert (\$ {\em node}, \/  \$ {\em field}, \/  \&\$ {\em items}, \/  \$ {\em teaser}, \/  \$ {\em page})}}
+\label{filefield__field_8inc_3f9f2f89477b183d503f9eb59c0551c5}
+
+
+Implementation of CCK's hook\_\-field(\$op = 'insert'). \hypertarget{filefield__field_8inc_429bfccbecd02b27fb1760a160abeb5b}{
+\index{filefield\_\-field.inc@{filefield\_\-field.inc}!filefield\_\-field\_\-load@{filefield\_\-field\_\-load}}
+\index{filefield\_\-field\_\-load@{filefield\_\-field\_\-load}!filefield_field.inc@{filefield\_\-field.inc}}
+\subsubsection[{filefield\_\-field\_\-load}]{\setlength{\rightskip}{0pt plus 5cm}filefield\_\-field\_\-load (\$ {\em node}, \/  \$ {\em field}, \/  \&\$ {\em items}, \/  \$ {\em teaser}, \/  \$ {\em page})}}
+\label{filefield__field_8inc_429bfccbecd02b27fb1760a160abeb5b}
+
+
+Implementation of CCK's hook\_\-field(\$op = 'load'). \hypertarget{filefield__field_8inc_11dd9e9ff671f58111cb7cbc79129819}{
+\index{filefield\_\-field.inc@{filefield\_\-field.inc}!filefield\_\-field\_\-sanitize@{filefield\_\-field\_\-sanitize}}
+\index{filefield\_\-field\_\-sanitize@{filefield\_\-field\_\-sanitize}!filefield_field.inc@{filefield\_\-field.inc}}
+\subsubsection[{filefield\_\-field\_\-sanitize}]{\setlength{\rightskip}{0pt plus 5cm}filefield\_\-field\_\-sanitize (\$ {\em node}, \/  \$ {\em field}, \/  \&\$ {\em items}, \/  \$ {\em teaser}, \/  \$ {\em page})}}
+\label{filefield__field_8inc_11dd9e9ff671f58111cb7cbc79129819}
+
+
+Implementation of CCK's hook\_\-field(\$op = 'sanitize'). \hypertarget{filefield__field_8inc_3a17fa6008257cf098c9b3ef2a9a2435}{
+\index{filefield\_\-field.inc@{filefield\_\-field.inc}!filefield\_\-field\_\-settings\_\-database\_\-columns@{filefield\_\-field\_\-settings\_\-database\_\-columns}}
+\index{filefield\_\-field\_\-settings\_\-database\_\-columns@{filefield\_\-field\_\-settings\_\-database\_\-columns}!filefield_field.inc@{filefield\_\-field.inc}}
+\subsubsection[{filefield\_\-field\_\-settings\_\-database\_\-columns}]{\setlength{\rightskip}{0pt plus 5cm}filefield\_\-field\_\-settings\_\-database\_\-columns (\$ {\em field})}}
+\label{filefield__field_8inc_3a17fa6008257cf098c9b3ef2a9a2435}
+
+
+Implementation of CCK's hook\_\-field\_\-settings(\$op = 'database\_\-columns'). \hypertarget{filefield__field_8inc_469d1a37efae31ac9b3ce301d23b5891}{
+\index{filefield\_\-field.inc@{filefield\_\-field.inc}!filefield\_\-field\_\-settings\_\-form@{filefield\_\-field\_\-settings\_\-form}}
+\index{filefield\_\-field\_\-settings\_\-form@{filefield\_\-field\_\-settings\_\-form}!filefield_field.inc@{filefield\_\-field.inc}}
+\subsubsection[{filefield\_\-field\_\-settings\_\-form}]{\setlength{\rightskip}{0pt plus 5cm}filefield\_\-field\_\-settings\_\-form (\$ {\em field})}}
+\label{filefield__field_8inc_469d1a37efae31ac9b3ce301d23b5891}
+
+
+Implementation of CCK's hook\_\-field\_\-settings(\$op = 'form'). \hypertarget{filefield__field_8inc_3140908db83ca6d2ec9d8cdabbea3941}{
+\index{filefield\_\-field.inc@{filefield\_\-field.inc}!filefield\_\-field\_\-settings\_\-save@{filefield\_\-field\_\-settings\_\-save}}
+\index{filefield\_\-field\_\-settings\_\-save@{filefield\_\-field\_\-settings\_\-save}!filefield_field.inc@{filefield\_\-field.inc}}
+\subsubsection[{filefield\_\-field\_\-settings\_\-save}]{\setlength{\rightskip}{0pt plus 5cm}filefield\_\-field\_\-settings\_\-save (\$ {\em field})}}
+\label{filefield__field_8inc_3140908db83ca6d2ec9d8cdabbea3941}
+
+
+Implementation of CCK's hook\_\-field\_\-settings(\$op = 'save'). \hypertarget{filefield__field_8inc_735b23726b4588e308eac69da0533a19}{
+\index{filefield\_\-field.inc@{filefield\_\-field.inc}!filefield\_\-field\_\-settings\_\-views\_\-data@{filefield\_\-field\_\-settings\_\-views\_\-data}}
+\index{filefield\_\-field\_\-settings\_\-views\_\-data@{filefield\_\-field\_\-settings\_\-views\_\-data}!filefield_field.inc@{filefield\_\-field.inc}}
+\subsubsection[{filefield\_\-field\_\-settings\_\-views\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}filefield\_\-field\_\-settings\_\-views\_\-data (\$ {\em field})}}
+\label{filefield__field_8inc_735b23726b4588e308eac69da0533a19}
+
+
+Implementation of CCK's hook\_\-field\_\-settings(\$op = 'views\_\-data'). \hypertarget{filefield__field_8inc_abf42e1b91a512b7155b5f288988a430}{
+\index{filefield\_\-field.inc@{filefield\_\-field.inc}!filefield\_\-field\_\-update@{filefield\_\-field\_\-update}}
+\index{filefield\_\-field\_\-update@{filefield\_\-field\_\-update}!filefield_field.inc@{filefield\_\-field.inc}}
+\subsubsection[{filefield\_\-field\_\-update}]{\setlength{\rightskip}{0pt plus 5cm}filefield\_\-field\_\-update (\$ {\em node}, \/  \$ {\em field}, \/  \&\$ {\em items}, \/  \$ {\em teaser}, \/  \$ {\em page})}}
+\label{filefield__field_8inc_abf42e1b91a512b7155b5f288988a430}
+
+
+Implementation of CCK's hook\_\-field(\$op = 'update'). 

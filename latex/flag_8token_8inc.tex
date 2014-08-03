@@ -1,0 +1,63 @@
+\hypertarget{flag_8token_8inc}{
+\section{sites/all/modules/contrib/flag/includes/flag.token.inc File Reference}
+\label{flag_8token_8inc}\index{sites/all/modules/contrib/flag/includes/flag.token.inc@{sites/all/modules/contrib/flag/includes/flag.token.inc}}
+}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{flag_8token_8inc_1f02eb9b8c7ce2009805b9c47ec45b20}{flag\_\-token\_\-list} (\$type= 'all')
+\item 
+\hyperlink{flag_8token_8inc_52a7ba3fca937ebf4d95df90dc531151}{flag\_\-token\_\-values} (\$type, \$object=NULL)
+\item 
+\hyperlink{flag_8token_8inc_19695478804e51a9c21274a3acbf3387}{theme\_\-flag\_\-token\_\-help} (\$types=array('all'), \$prefix= '\mbox{[}', \$suffix= '\mbox{]}')
+\item 
+\hyperlink{flag_8token_8inc_bd1686618a4a8ef7eaf9a80e8b3089ba}{flag\_\-token\_\-get\_\-list} (\$types=array('all'))
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Flag module tokens support. 
+
+\subsection{Function Documentation}
+\hypertarget{flag_8token_8inc_bd1686618a4a8ef7eaf9a80e8b3089ba}{
+\index{flag.token.inc@{flag.token.inc}!flag\_\-token\_\-get\_\-list@{flag\_\-token\_\-get\_\-list}}
+\index{flag\_\-token\_\-get\_\-list@{flag\_\-token\_\-get\_\-list}!flag.token.inc@{flag.token.inc}}
+\subsubsection[{flag\_\-token\_\-get\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-token\_\-get\_\-list (\$ {\em types} = {\tt array('all')})}}
+\label{flag_8token_8inc_bd1686618a4a8ef7eaf9a80e8b3089ba}
+
+
+This is a replacement for Token's token\_\-get\_\-list().
+
+It is used only by \hyperlink{flag_8token_8inc_19695478804e51a9c21274a3acbf3387}{theme\_\-flag\_\-token\_\-help()}, above.
+
+This is a duplicate of the Token's function, but with a small modification: the \$type parameter is now \$types, allowing for listing tokens from several categories.
+
+\begin{Desc}
+\item[\hyperlink{todo__todo000005}{Todo}]Incorporate this feature into the Token module(?) \end{Desc}
+\hypertarget{flag_8token_8inc_1f02eb9b8c7ce2009805b9c47ec45b20}{
+\index{flag.token.inc@{flag.token.inc}!flag\_\-token\_\-list@{flag\_\-token\_\-list}}
+\index{flag\_\-token\_\-list@{flag\_\-token\_\-list}!flag.token.inc@{flag.token.inc}}
+\subsubsection[{flag\_\-token\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-token\_\-list (\$ {\em type} = {\tt 'all'})}}
+\label{flag_8token_8inc_1f02eb9b8c7ce2009805b9c47ec45b20}
+
+
+Implementation of hook\_\-token\_\-list(). \hypertarget{flag_8token_8inc_52a7ba3fca937ebf4d95df90dc531151}{
+\index{flag.token.inc@{flag.token.inc}!flag\_\-token\_\-values@{flag\_\-token\_\-values}}
+\index{flag\_\-token\_\-values@{flag\_\-token\_\-values}!flag.token.inc@{flag.token.inc}}
+\subsubsection[{flag\_\-token\_\-values}]{\setlength{\rightskip}{0pt plus 5cm}flag\_\-token\_\-values (\$ {\em type}, \/  \$ {\em object} = {\tt NULL})}}
+\label{flag_8token_8inc_52a7ba3fca937ebf4d95df90dc531151}
+
+
+Implementation of hook\_\-token\_\-values(). \hypertarget{flag_8token_8inc_19695478804e51a9c21274a3acbf3387}{
+\index{flag.token.inc@{flag.token.inc}!theme\_\-flag\_\-token\_\-help@{theme\_\-flag\_\-token\_\-help}}
+\index{theme\_\-flag\_\-token\_\-help@{theme\_\-flag\_\-token\_\-help}!flag.token.inc@{flag.token.inc}}
+\subsubsection[{theme\_\-flag\_\-token\_\-help}]{\setlength{\rightskip}{0pt plus 5cm}theme\_\-flag\_\-token\_\-help (\$ {\em types} = {\tt array('all')}, \/  \$ {\em prefix} = {\tt '\mbox{[}'}, \/  \$ {\em suffix} = {\tt '\mbox{]}'})}}
+\label{flag_8token_8inc_19695478804e51a9c21274a3acbf3387}
+
+
+This is a replacement for Token's theme\_\-token\_\-help().
+
+This is a duplicate of the Token's function, but with a small modification: the \$type parameter is now \$types, allowing for listing tokens from several categories.
+
+\begin{Desc}
+\item[\hyperlink{todo__todo000004}{Todo}]Incorporate this feature into the Token module(?) \end{Desc}
