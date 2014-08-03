@@ -1,1 +1,0 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="LoadXml.aspx.cs" Inherits="LoadXml" %>
