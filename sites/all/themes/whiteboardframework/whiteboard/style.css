@@ -52,6 +52,13 @@ header {
 #content {
 	
 }
+#content p {
+  margin-bottom: 16px;
+}
+#sidebar ul, #sidebar li {
+  list-style: disc;
+}
+
 	article {
 		
 	}
@@ -167,6 +174,13 @@ nav.oldernewer {
 
 #sidebar {
 	
+}
+
+#sidebar .block h2 {
+  font-size: 24px;
+}
+#sidebar .block {
+  margin-bottom: 20px;
 }
 	#widget-sidebar {
 		

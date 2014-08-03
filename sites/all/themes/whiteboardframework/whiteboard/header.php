@@ -31,9 +31,11 @@
 			<div id="title">
         <?php if ($logo || $site_name): ?>
           <h1 id="logo">
-            <?php if (!empty($logo)): ?>
+            <?php if (!empty($logo) || $site_name): ?>
               <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
-                <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" / >
+                <?php if (!empty($logo)): ?>
+                  <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" / >
+                <?php endif; ?>
                 <?php if (!empty($site_name)): ?>
                   <?php print $site_name; ?>
                 <?php endif; ?>
