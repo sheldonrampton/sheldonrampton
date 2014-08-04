@@ -55,12 +55,20 @@ header {
 #content p {
   margin-bottom: 16px;
 }
+#content a {
+  color: blue;
+}
+
 #sidebar ul, #sidebar li {
   list-style: disc;
 }
 #tagline {
   line-height: 0px;
 }
+#post-meta {
+  font-style: italic;
+}
+
 	article {
 		
 	}
