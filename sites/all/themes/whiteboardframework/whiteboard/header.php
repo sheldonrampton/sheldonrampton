@@ -47,12 +47,12 @@
           <h2 id="tagline"><?php print $site_slogan; ?></h2>
         <?php endif; ?>
 			</div><!--#title-->
-			<div id="header-image" class="container">
-			  <?php $header_image = theme_get_setting('header_image'); ?>
-        <?php if ($header_image): ?>
+		  <?php $header_image = theme_get_setting('header_image'); ?>
+      <?php if ($header_image): ?>
+			  <div id="header-image" class="container">
   			  <img alt="<?php print $site_name; ?>" src="<?php print base_path() . path_to_theme() . '/images/default-header.png' ?>">
-        <?php endif; ?>
-			</div><!--#header-image-->
+			  </div><!--#header-image-->
+      <?php endif; ?>
 			<div id="nav-primary" class="nav"><nav>
         <?php if (isset($primary_links)) {
           print theme("links", $primary_links, array("class" => "navmenu primary-links"));
